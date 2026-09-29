@@ -2,6 +2,8 @@
 
 Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM. Hay cinco canales; cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
 
+**Sitio público:** [andrescge.github.io/news-tv](https://andrescge.github.io/news-tv/). La carcasa de madera y la pantalla CRT están dibujadas con CSS; no se usa ninguna fotografía de terceros.
+
 ## Uso local
 
 Requiere Node.js 24 o posterior. Desde la raíz:
@@ -23,12 +25,9 @@ Los boletines del BCE y SEPS se identifican como publicaciones oficiales. Chaina
 
 Si una fuente falla, el recopilador conserva sus entradas válidas de la edición anterior, respetando el límite de 30 días. La página muestra el estado y la última consulta correcta de cada fuente. Si fallan todas, la recopilación termina con error y conserva la edición anterior.
 
-## Publicar en GitHub Pages
+## Publicación y actualización
 
-1. Sube **este repositorio raíz** a un repositorio público propio llamado `news-tv`, con rama principal `main`. La carpeta local `devtv` es una referencia al proyecto original y está excluida de Git.
-2. En GitHub abre **Settings → Pages → Build and deployment → Source** y elige **GitHub Actions**.
-3. Abre **Actions → Actualizar noticias y publicar → Run workflow** para iniciar la primera publicación. El sitio quedará en `https://<usuario>.github.io/news-tv/`.
-4. El workflow actualizará las noticias cada hora, al minuto 17, y publicará también tras cambios en `main`. Conserva la última edición en la rama `data`. Los horarios del sitio se muestran en `America/Guayaquil`.
+El repositorio público está en [GitHub](https://github.com/andrescge/news-tv) y GitHub Pages usa el workflow [Actualizar noticias y publicar](https://github.com/andrescge/news-tv/actions/workflows/publish.yml). Cada push a `main` publica una nueva versión. El workflow también consulta las fuentes cada hora, al minuto 17, y publica la edición actualizada; conserva la última edición en la rama `data`. Para adelantar una actualización, abre el workflow en GitHub y elige **Run workflow**. Los horarios del sitio se muestran en `America/Guayaquil`.
 
 GitHub puede retrasar ejecuciones programadas. También desactiva los workflows programados de repositorios públicos tras 60 días sin actividad: revisa la pestaña **Actions** si la actualización aparece atrasada.
 

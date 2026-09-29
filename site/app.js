@@ -53,6 +53,7 @@ function renderScreen() {
     $('#story-excerpt').textContent = story.excerpt || 'Este medio no ofrece un extracto. Abre la fuente para leer la publicación.';
     $('#story-meta').textContent = `${story.source} · ${date(story.publishedAt)}${story.via ? ` · ${story.via}` : ''}`;
     const url = safeUrl(story.url); $('#original-link').hidden = !url; $('#original-link').href = url || '#';
+    $('#original-link').textContent = story.via ? 'VER EN GOOGLE NEWS ↗' : 'FUENTE ORIGINAL ↗';
   } else {
     $('#story-kind').textContent = state.data ? 'SIN NOVEDADES RECIENTES' : 'CARGANDO SEÑAL';
     $('#story-title').textContent = state.data ? `Sin noticias en ${channel.name}.` : 'Preparando señal…';
@@ -97,7 +98,7 @@ function showStory() {
   $('#dialog-title').textContent = story.title;
   $('#dialog-meta').textContent = `${story.source} · ${date(story.publishedAt, true)} · ${story.kind === 'official' ? 'Publicación oficial' : story.kind === 'analysis' ? 'Análisis sectorial' : 'Noticia'} · ${story.language === 'en' ? 'Inglés' : 'Español'}`;
   $('#dialog-excerpt').textContent = story.excerpt || 'No hay un extracto disponible. Puedes leer la publicación en la fuente original.';
-  $('#dialog-link').href = url; $('#dialog-via').textContent = story.via || '';
+  $('#dialog-link').href = url; $('#dialog-link').textContent = story.via ? 'ABRIR VÍA GOOGLE NEWS ↗' : 'LEER EN LA FUENTE ↗'; $('#dialog-via').textContent = story.via || '';
   $('#story-dialog').showModal(); $('#close-story').focus();
 }
 function showSources() { state.dialogFocus = document.activeElement; $('#sources-dialog').showModal(); $('#close-sources').focus(); }
@@ -135,7 +136,6 @@ $('#open-sources').addEventListener('click', showSources);
 $('#close-story').addEventListener('click', () => closeDialog($('#story-dialog')));
 $('#close-sources').addEventListener('click', () => closeDialog($('#sources-dialog')));
 $('#story-dialog').addEventListener('close', onDialogClose); $('#sources-dialog').addEventListener('close', onDialogClose);
-for (const dialog of [$('#story-dialog'), $('#sources-dialog')]) dialog.addEventListener('click', event => { if (event.target === dialog) closeDialog(dialog); });
 $('#fullscreen').addEventListener('click', async () => {
   try { if (document.fullscreenElement) await document.exitFullscreen(); else await $('.tv-case').requestFullscreen(); }
   catch { $('#update-status').textContent = 'La pantalla completa no está disponible en este navegador.'; }
