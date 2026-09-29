@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#eae8e1">
+  <meta name="description" content="NEWS·TV: una televisión de noticias sobre banca, regulación, fintech, pagos y cripto, con canales, fuentes y fechas verificables.">
+  <title>NEWS·TV — Finanzas en pantalla</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#televisor">Saltar al televisor</a>
+  <div class="site-shell">
+    <header class="masthead">
+      <div class="brand"><span class="brand-icon" aria-hidden="true">N</span><span>NEWS<span class="brand-dot">·</span>TV</span></div>
+      <div class="header-right"><span class="header-note">EL MUNDO FINANCIERO, EN PANTALLA</span><span id="clock" class="clock" aria-label="Hora de Ecuador"></span></div>
+    </header>
+
+    <main id="televisor">
+      <div class="tv-case">
+        <section class="tv-screen" aria-label="Noticias del canal seleccionado">
+          <div class="screen-top">
+            <div class="screen-brand"><span class="signal-dot" aria-hidden="true"></span><span>NEWS·TV</span><span class="screen-separator">/</span><span id="screen-channel-name">ECUADOR FINANCIERO</span></div>
+            <div class="screen-right"><span id="screen-date"></span><span id="channel-number" class="channel-number">CH 01</span></div>
+          </div>
+
+          <div class="broadcast" aria-live="off">
+            <div class="broadcast-inner">
+              <span id="story-kind" class="story-kind">EN VIVO DESDE LAS FUENTES</span>
+              <h1 id="story-title">Preparando señal…</h1>
+              <p id="story-excerpt">Estamos cargando las noticias del canal.</p>
+              <div id="story-meta" class="story-meta"></div>
+              <div class="story-links"><button id="read-story" class="read-story" type="button" disabled>Ver noticia <span aria-hidden="true">↗</span></button><a id="original-link" href="#" target="_blank" rel="noopener noreferrer" hidden>Ir a la fuente ↗</a></div>
+            </div>
+            <div id="watermark" class="watermark" aria-hidden="true">01</div>
+          </div>
+
+          <div class="screen-bottom"><div class="story-queue"><span id="story-position">— / —</span><span class="queue-divider" aria-hidden="true"></span><span id="next-story">A CONTINUACIÓN · ESPERANDO NOTICIAS</span></div><div id="play-state">EN EMISIÓN</div></div>
+          <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
+        </section>
+
+        <section class="control-deck" aria-label="Controles del televisor">
+          <div class="deck-top"><div><span class="eyebrow">CAMBIA DE CANAL</span><h2>Tu radar, a tu ritmo.</h2></div><div class="deck-status"><span id="freshness-dot" aria-hidden="true"></span><span id="update-status" role="status">Consultando fuentes…</span></div></div>
+          <div id="channel-buttons" class="channels" role="group" aria-label="Canales"></div>
+          <div class="deck-bottom">
+            <div class="player-controls" role="group" aria-label="Reproducción">
+              <button id="previous" type="button" aria-label="Noticia anterior" title="Noticia anterior (←)">←</button>
+              <button id="play-pause" type="button" aria-label="Pausar reproducción" title="Pausar o reanudar (Espacio)">❚❚ <span>Pausar</span></button>
+              <button id="next" type="button" aria-label="Siguiente noticia" title="Siguiente noticia (→)">→</button>
+              <button id="speed" type="button" aria-label="Velocidad de reproducción">20 s</button>
+            </div>
+            <div class="utility-controls">
+              <label class="period-control"><span>PERÍODO</span><select id="period" aria-label="Período de noticias"><option value="7">7 días</option><option value="1">24 horas</option><option value="30">30 días</option></select></label>
+              <button id="open-sources" type="button">Fuentes</button>
+              <button id="fullscreen" type="button">Pantalla completa</button>
+            </div>
+          </div>
+        </section>
+      </div>
+      <p class="usage-hint">Usa las teclas <kbd>1</kbd>–<kbd>5</kbd> para cambiar de canal, <kbd>←</kbd><kbd>→</kbd> para recorrer noticias y <kbd>Espacio</kbd> para pausar.</p>
+    </main>
+    <footer><span>NEWS·TV · ECUADOR + LATAM</span><span>Noticias con fecha y fuente verificable.</span><a href="https://github.com/shouvik12/devtv" target="_blank" rel="noopener noreferrer">Inspirado en DEV·TV ↗</a></footer>
+  </div>
+
+  <dialog id="story-dialog" class="overlay-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><div class="dialog-top"><span id="dialog-category" class="eyebrow"></span><button id="close-story" type="button" aria-label="Cerrar noticia">×</button></div><h2 id="dialog-title"></h2><p id="dialog-meta" class="dialog-meta"></p><p id="dialog-excerpt" class="dialog-excerpt"></p><div class="dialog-actions"><a id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">Leer en la fuente <span aria-hidden="true">↗</span></a><span id="dialog-via"></span></div></div></dialog>
+
+  <dialog id="sources-dialog" class="overlay-dialog sources-dialog" aria-labelledby="sources-title"><div class="dialog-content"><div class="dialog-top"><span class="eyebrow">TRANSPARENCIA EDITORIAL</span><button id="close-sources" type="button" aria-label="Cerrar fuentes">×</button></div><h2 id="sources-title">Detrás de la señal.</h2><p class="sources-intro">Cada noticia conserva su medio, fecha de publicación y enlace. Las fuentes oficiales, medios y análisis empresariales se identifican por separado. «Sin novedades» significa que una fuente respondió, pero no publicó noticias recientes.</p><div id="sources-list" class="sources-list"></div><p class="sources-footnote">Los extractos pertenecen a sus autores. Google News se indica cuando funciona como intermediario; los enlaces abren la publicación original cuando la fuente lo permite.</p></div></dialog>
+</body>
+</html>

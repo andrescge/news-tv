@@ -1,0 +1,9 @@
+node_modules/
+.cache/
+coverage/
+devtv/
+news-tv.html
+patch.py
+patch_v2.py
+patch_v3.py
+check_rss.py

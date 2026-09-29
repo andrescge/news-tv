@@ -1,0 +1,37 @@
+# NEWS·TV
+
+Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM. Hay cinco canales; cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
+
+## Uso local
+
+Requiere Node.js 24 o posterior. Desde la raíz:
+
+```bash
+npm ci
+npm test
+npm run collect
+npx serve site
+```
+
+Abre la URL local que muestre `serve`. El sitio es HTML, CSS y JavaScript puro; solo la recopilación necesita Node.js. La página carga `site/data/news.json`, que contiene la última edición obtenida.
+
+## Fuentes y criterios
+
+El recopilador une varios feeds RSS y las páginas públicas de boletines del BCE. Google News sirve para descubrir publicaciones de medios ecuatorianos y dominios institucionales; cada entrada conserva la fuente identificada y el rótulo «Vía Google News». Noticias sin fecha verificable, con fecha futura o con más de 30 días no entran al sitio. Cada canal muestra inicialmente los últimos 7 días; el control de período permite cambiar a 24 horas o 30 días.
+
+Los boletines del BCE y SEPS se identifican como publicaciones oficiales. Chainalysis se identifica como análisis empresarial. Los artículos de Finextra se limitan a sus publicaciones editoriales (`newsarticle`) para evitar mezclar comunicados de empresas con noticias. Los extractos se muestran como texto plano y las notas completas se leen en el sitio de origen. El panel Fuentes muestra qué orígenes respondieron y cuáles no tienen novedades.
+
+Si una fuente falla, el recopilador conserva sus entradas válidas de la edición anterior, respetando el límite de 30 días. La página muestra el estado y la última consulta correcta de cada fuente. Si fallan todas, la recopilación termina con error y conserva la edición anterior.
+
+## Publicar en GitHub Pages
+
+1. Sube **este repositorio raíz** a un repositorio público propio llamado `news-tv`, con rama principal `main`. La carpeta local `devtv` es una referencia al proyecto original y está excluida de Git.
+2. En GitHub abre **Settings → Pages → Build and deployment → Source** y elige **GitHub Actions**.
+3. Abre **Actions → Actualizar noticias y publicar → Run workflow** para iniciar la primera publicación. El sitio quedará en `https://<usuario>.github.io/news-tv/`.
+4. El workflow actualizará las noticias cada hora, al minuto 17, y publicará también tras cambios en `main`. Conserva la última edición en la rama `data`. Los horarios del sitio se muestran en `America/Guayaquil`.
+
+GitHub puede retrasar ejecuciones programadas. También desactiva los workflows programados de repositorios públicos tras 60 días sin actividad: revisa la pestaña **Actions** si la actualización aparece atrasada.
+
+## Atribución
+
+La primera versión de NEWS·TV se derivó de [DEV·TV, de shouvik12](https://github.com/shouvik12/devtv), publicado con licencia MIT. Se conserva el texto de esa licencia en [LICENSE](./LICENSE). Los titulares y extractos pertenecen a sus respectivas fuentes.

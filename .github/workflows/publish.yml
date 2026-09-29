@@ -1,0 +1,74 @@
+name: Actualizar noticias y publicar
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: news-tv-publication
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npm test
+      - name: Recuperar la última edición válida
+        shell: bash
+        run: |
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch origin data
+            if git cat-file -e FETCH_HEAD:site/data/news.json 2>/dev/null; then
+              git show FETCH_HEAD:site/data/news.json > site/data/news.json
+            fi
+          fi
+      - run: npm run collect
+      - name: Verificar edición
+        run: node scripts/validate.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Guardar edición en la rama data
+        shell: bash
+        run: |
+          cp site/data/news.json "$RUNNER_TEMP/news.json"
+          git restore -- site/data/news.json
+          if git ls-remote --exit-code --heads origin data >/dev/null 2>&1; then
+            git fetch origin data
+            git switch -C data FETCH_HEAD
+          else
+            git switch -c data
+          fi
+          cp "$RUNNER_TEMP/news.json" site/data/news.json
+          git add site/data/news.json
+          if ! git diff --cached --quiet; then
+            git -c user.name='NEWS·TV Bot' -c user.email='news-tv-bot@users.noreply.github.com' commit -m 'Actualizar edición de noticias'
+            git push origin data
+          fi
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
