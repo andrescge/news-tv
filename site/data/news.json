@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T15:27:31.165Z",
+  "generatedAt": "2026-09-29T15:30:20.469Z",
   "stories": [
     {
       "id": "d5ee0a95e2d0ee7821f6",
@@ -809,8 +809,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 9
     },
     {
@@ -820,8 +820,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 0
     },
     {
@@ -831,8 +831,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 6
     },
     {
@@ -842,8 +842,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 1
     },
     {
@@ -853,8 +853,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 0
     },
     {
@@ -864,8 +864,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 1
     },
     {
@@ -875,8 +875,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 5
     },
     {
@@ -886,8 +886,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 2
     },
     {
@@ -897,8 +897,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 12
     },
     {
@@ -908,8 +908,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 12
     },
     {
@@ -919,8 +919,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T15:27:31.165Z",
-      "lastSuccessAt": "2026-09-29T15:27:31.165Z",
+      "checkedAt": "2026-09-29T15:30:20.469Z",
+      "lastSuccessAt": "2026-09-29T15:30:20.469Z",
       "recentCount": 9
     }
   ]
