@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T02:51:34.306Z",
+  "generatedAt": "2026-09-30T02:58:08.329Z",
   "stories": [
     {
       "id": "faa740be33077a55ce0e",
@@ -45,6 +45,20 @@
       "publishedAt": "2026-09-30T00:00:00.000Z"
     },
     {
+      "id": "7a16c1302255f561a27d",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintechs en Perú: industria pide avanzar hacia un ecosistema financiero más abierto",
+      "excerpt": "El avance de TAPP y la implementación del open finance abren una nueva discusión para el ecosistema fintech peruano: cómo ampliar la participación de nuevos actores y construir una infraestructura financiera más interoperable, competitiva y segura. ... Leer más... La entrada Fint",
+      "url": "https://iupana.com/2026/09/29/fintechs-peru-industria-pide-avanzar-hacia-ecosistema-financiero-mas-abierto-2/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-29T23:15:30.000Z"
+    },
+    {
       "id": "68e631505646fdb25d71",
       "sourceId": "pymnts",
       "category": "pagos",
@@ -66,7 +80,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "Ecuavisa",
+      "source": "ecuavisa.com",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -227,6 +241,20 @@
       "publishedAt": "2026-09-29T12:00:00.000Z"
     },
     {
+      "id": "eb6bca4a09c9b6aa59ef",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombia podría dar más tiempo para emitir las normas del open finance",
+      "excerpt": "El Ministerio de Finanzas propuso ampliar otros seis meses el plazo de la Superintendencia Financiera para publicar el cronograma de implementación de los temas clave del open finance. ... Leer más... La entrada Colombia podría dar más tiempo para emitir las normas del open finan",
+      "url": "https://iupana.com/2026/09/29/colombia-podria-dar-mas-tiempo-emitir-normas-open-finance/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-29T11:00:04.000Z"
+    },
+    {
       "id": "f53149db56352d6ea214",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -339,6 +367,20 @@
       "publishedAt": "2026-09-28T17:17:27.000Z"
     },
     {
+      "id": "7ed8070dc2d5ae1840a2",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Skandia Colombia explora una capa de acceso al mercado de stablecoins para fintechs",
+      "excerpt": "A través de su modelo de servicios fiduciarios para fintechs, Skandia quiere incorporarse al mercado de monedas estables. Esta iniciativa ampliará su oferta de servicios en Colombia de cara a 2027. ... Leer más... La entrada Skandia Colombia explora una capa de acceso al mercado ",
+      "url": "https://iupana.com/2026/09/28/skandia-colombia-explora-capa-acceso-mercado-stablecoins-fintechs/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-28T17:00:52.000Z"
+    },
+    {
       "id": "3a68941afb79147f4367",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -409,6 +451,20 @@
       "publishedAt": "2026-09-28T11:14:00.000Z"
     },
     {
+      "id": "b796a996a488fd1f4b05",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "México: el costo de pasar de ser una sofipo digital a neobanco",
+      "excerpt": "Dar el salto a la banca permitiría a las sofipos digitales ampliar su oferta hacia créditos automotrices, hipotecas digitales y financiamiento empresarial, así como acceder al mercado interbancario para gestionar su liquidez. ... Leer más... La entrada México: el costo de pasar d",
+      "url": "https://iupana.com/2026/09/28/mexico-costo-pasar-ser-sofipo-digital-neobanco/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-28T11:00:36.000Z"
+    },
+    {
       "id": "359a81cc2ec3154af0fa",
       "sourceId": "finextra-latam",
       "category": "latam",
@@ -437,6 +493,20 @@
       "publishedAt": "2026-09-27T10:50:00.000Z"
     },
     {
+      "id": "bc98479a46219adb7a6d",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-26T14:40:59.000Z"
+    },
+    {
       "id": "1f18ad770b2d4aac5283",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -449,6 +519,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-26T10:55:00.000Z"
+    },
+    {
+      "id": "0386055ca9a73a7b0624",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Buenas Fuentes: Revolut avanza planes de banco en Argentina",
+      "excerpt": "El resumen semanal de noticias de banca digital y fintech de América Latina.... Leer más... La entrada Buenas Fuentes: Revolut avanza planes de banco en Argentina se publicó primero en IUPANA.",
+      "url": "https://iupana.com/2026/09/25/buenas-fuentes-revolut-avanza-planes-de-banco-argentina/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-25T23:03:25.000Z"
     },
     {
       "id": "9fda31d7224ad8ad06ff",
@@ -521,6 +605,34 @@
       "publishedAt": "2026-09-25T00:01:00.000Z"
     },
     {
+      "id": "a2af740850fb62880311",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Revolut Colombia: “El mayor reto está en el impuesto 4×1000”",
+      "excerpt": "Para el banco digital británico, la adaptación a Colombia ha seguido patrones similares a los de otros mercados, pero con una peculiaridad: el gravamen a los movimientos financieros introduce una fricción en un modelo de negocio que se basa en costos cero a las transferencias inm",
+      "url": "https://iupana.com/2026/09/24/revolut-colombia-mayor-reto-impuesto-4x1000/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-24T22:09:45.000Z"
+    },
+    {
+      "id": "71043a4bfdb0dd95b9c4",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago México presenta Mago: así convive con la seguridad de la app",
+      "excerpt": "Un asistente con IA para interactuar y operar desde la aplicación ¿Cómo se integra esta nueva capa de interacción con los controles de seguridad? Aquí las respuestas de su director de usuarios.... Leer más... La entrada Mercado Pago México presenta Mago: así convive con la seguri",
+      "url": "https://iupana.com/2026/09/24/mercado-pago-mexico-presenta-mago-asi-convive-con-la-seguridad-de-la-app/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-24T20:47:40.000Z"
+    },
+    {
       "id": "b0f87f5c51cc9a3f99d4",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -535,18 +647,18 @@
       "publishedAt": "2026-09-24T17:48:42.000Z"
     },
     {
-      "id": "34546d39791fa1fc1228",
-      "sourceId": "latam-fintech-hub",
+      "id": "cd96405e0c47d8269751",
+      "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
-      "title": "Fintech Meru evoluciona en Colombia hacia una super app financiera para ofrecer múltiples servicios internacionales",
+      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUDhWdjJSTk9wWHZTeExybnFMWmVDeUZWV0tNQXlPbVhkenFGd2RCNDhUZDNsX0FhNGptV2gtZmtKSExZS1VtRTdfN3VteElBRmN4ZUlMSmVtMmF5cWx5UFozVnJ2dXgzdWR2Z29GTEJQdVBLbXZtWThwVUVWYWNUQW9YM3psVkZKNU1tQ2FEZVliM3lCTFdvS2V1bEJwbE5zWi11NDl6WVRyY2M1ZWhxYTgyT2VBZzFEV0ZxXzIzbVEzQUtJRG5wRExIb25TaDFaQlRSelIwSTRiSzdBNklsMmwtOHBrQkk?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-09-24T17:05:30.000Z"
+      "publishedAt": "2026-09-24T15:49:59.000Z"
     },
     {
       "id": "2fdc0ce42ef3a3d78602",
@@ -577,20 +689,6 @@
       "publishedAt": "2026-09-24T14:00:00.000Z"
     },
     {
-      "id": "4381d6ec040727b2e0ed",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Yol1: el neobanco de ProntoPaga que busca simplificar los pagos transfronterizos en Latam",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTVkwbTk0Y3p5U3RNM0lORzk3Vm4tRkJYejZtZTUxc0t1V0NFcDZCQy0yVVFrVUZ6WEJzUi1DVWFwLTN3MFAtaUlYRkZsLTNOd1lyX3dnVm1OandRNzR2TDNzaDlmY2NsVkJwVHlQUjFOdVQwdlJJRF9FRkV1QVBpcVpuREhMeUk4SF84ZjVSSldxZ2FmSy13cTNVLWViakhKaWw0OEdkb2xrV0I4VWZQZUJDLW8xcUFQbFhOcENoQ1FSN1E?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-24T07:00:00.000Z"
-    },
-    {
       "id": "01dcfab10b308e55dac0",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -617,6 +715,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-23T18:24:13.000Z"
+    },
+    {
+      "id": "288273913b1da6819aa3",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Perú: Banco Central subraya obligaciones de no discriminación y anticipo de innovaciones en pagos inmediatos",
+      "excerpt": "El BCRP emitió una nueva normativa para evitar que la competencia en el mercado de pagos inmediatos genere discriminación entre participantes, pero actores creen que existen otras vías que pueden generar fricciones en el proceso. Sobre el reporte de nuevos productos, esperan flex",
+      "url": "https://iupana.com/2026/09/23/peru-banco-central-subraya-obligaciones-no-discriminacion-anticipo-innovaciones-pagos-inmediatos/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-23T15:54:01.000Z"
     },
     {
       "id": "6fd0f021e5e1ed3b9fed",
@@ -647,6 +759,20 @@
       "publishedAt": "2026-09-23T13:00:36.000Z"
     },
     {
+      "id": "ebaf6c50c2c828fd51e5",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "La billetera de los bancos argentinos se integra con ChatGPT: cómo serán las compras IA con MODO",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTmlOdC00VXZ0YWZ2cUx5NkJOYmpvcFlkQUFZNHJhTGRuRTVpUTFIaTRCN2xCcEh1dFQ1aS1raTc4aXNCd3Nfamo2Z29DdTAwVDRzTnRreDRtNDJZaFBHQnFDSzQzSmpjbXIxeUlUbmhRbkFxLThZQlpNeG11ZEVnYnBWQTRHR2hmeUxlV3dKNFEzSHZEYU9UbjhWNTVCcGN5REZITjd5eHh5aFd6OE80aGtkTVI2OFU0OUVpUm92WEp4bFBUTEhjSnFqMlpjNkt0dElWTWJ3VDY0ZFk1WEZuTTR2RGVqZ9IB-gFBVV95cUxQbTJsN2ZZYWlLRTl5WWM4N3ZrREV2TFctNkduV0ZwT3hzZi1PM0tHenBqcE1NUzdlbGtKZGhKclhHVVZWWmFuel9ZU2ZLZkltWmhDbXhTeXJRTVk4LXdsN0xVLU9pb2RvaFVxLTR3ZURTcTdOSzljUXhBRGdqclR3QUk5TTRaSGtscjczMHkxaW9pMWdGNWgyaDVOdVpVVi1NWHVHTW83bzFvR2NvZnRkM1AzcllPaVJRZEZ5cmlaeWc1RnNiWXdhYjhiRzl5c0MzV2g1RWJQbGduNkpVLVFXMjRVMU9WNVdmYktOVDZGS29CdmZBVk9aVHVR?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-23T08:40:00.000Z"
+    },
+    {
       "id": "f2e02e4544de2a082650",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -659,48 +785,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-23T00:01:00.000Z"
-    },
-    {
-      "id": "98e600f91b2475ab6b31",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nace Monni, una Fintech colombiana que llega con una billetera global multidivisa",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY0R0OUgwR1VkeDRTMVRHN19VX1FxTUxueVZmY2hMLUlfQmVVNWlWVVF5T2YyeFZXWFE0V0l6NS1Ba1hacHFqcHczbEltdl9CQ0JTck5jS3NzMEVkZWJsbUxKc2RqV1JvV3VLY00yS1JGNjZDczNyN0xDOVpZRmtONzF2a2h2TVcwcDJDQ20xQjF6ZnhZTURwbk15QUV6ZzRGdF9JNWo5ZWphVkhCRlk4RFhPZnJvYmdW?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-22T16:51:42.000Z"
-    },
-    {
-      "id": "439f2ae0ac7567f23fdc",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech uruguaya Infinia lanza stablecoins vinculadas a monedas locales de Latam para facilitar pagos en la región",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTmZsV1hpTHdKeHozZHJKNERSZ1JSYTkxVEZSZEJZNFNaajBRU193WGlhVlhxaEVJU3VsM0QyVWF1eVp0U3RFemc5azZXalc0dmdZWk1Zd2tUbDlNcmxDcTd6aXhqSElZX3JnN0VLam8yUTZzcVZwWVdBTWpVTV91ZGxUbWNkSGNDanB6SVNLTjdscTA1SEd5aUlsblRSYTljc0ZYd241WWZjODU5ZmtYNUF4d1Zvd2hQRExKRE1WX29mTVlPcW5ueGZsSHZkM0Ztc3ZOMzdrMTVZLWRpdkhQWG4zUzNpZw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-22T16:51:42.000Z"
-    },
-    {
-      "id": "558ecac1afaebaa8a9c8",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Wallbit se expande a Perú para atender a profesionales que reciben ingresos del exterior",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR0RRWlBmUXZsMGRfNDRYSjZEZE80ZFl5dDhfNDhScllseGlUMmF6aGd5b1ZnZGtHUnNmTmFzN3RzQi1rWlNQb3RtN3hJa0YyVm81eVVoejduaXpvRnVPTVBNcGNjRTQxVmQxOWV0MEE5Y01reHVHblEyd0ItV3p4aHlxamp5SU5fbjI3bW5ocjM1UXhERm5WTG9VWENlNkpNYU1SOVVIcnlJSkJHTlZpME1CZHZXTFdFbmpRVEIxN19wYlViSXpMTlVrdDE2dw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-22T16:51:42.000Z"
     },
     {
       "id": "55fbb241e3c36dce27ca",
@@ -731,48 +815,6 @@
       "publishedAt": "2026-09-22T12:00:00.000Z"
     },
     {
-      "id": "26c8d3ccaef7ff9714c3",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Latam Fintech Hub y Dock hacen alianza estratégica para evolucionar el ecosistema de pagos en Latam",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMlVpSURULTl2ZUR4UFJBcDNiVlE4M21GUnVwdzQ2T1ZfVTJFZnRyR2x3d0tfZnNKSm5rSUlhWGxDXzhrR2NsTmJJaUU0N3M1X0VQQ3I0Mm9ybVFBZ2s0U09qMjAzakJFY2VvYXhhOGcwLVVVTmZUcW9NRUhhdzJjN19SeU12TEcyclhlR1FSTW5nNVZ1Q3pFaDNMYVRnWFAzTVRaMW5zV0k2UnRfYndhaDQtSGZXS3lnaXNTWUQ5MDhJb3NhTzlnaUM3WWZrMDZTV0E?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-22T07:00:00.000Z"
-    },
-    {
-      "id": "2f538226630a1156f02b",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Klar Empresarial amplía su oferta de crédito para más de 10 millones de personas físicas con actividad empresarial en México",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZHllOGF3a0U5aGhjS3FJTzNoaFNMR25DcFEzNk52eW9Ia2xDbWpScEQxX3h6a0NpSTR4cVhnaTZ5WTBNZWNXcTlrdFJaT3ozRHNQR0FHN1pnS2FNM1ZZTTdoUW0yQXlZOXZjVkhwWjJfYkpSUWZvQXVwWTVxY1lfVjFTeXcxbFp3YUlpTGRkekVtMDdTa2otN1dJX3BjaHc1SkwtV3RiM2s2ZXc1ZkZnODRBSi16YXVSbHFXdXV1ZlM5N3FubTJsYVo3S3gyVW1IeldNY19xbHNCNy1YdkcxVUlOeEktVGdtRDFidlE5VQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-22T00:49:31.000Z"
-    },
-    {
-      "id": "662974e8a56a62497701",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Inter Pag elige a ACI Worldwide para impulsar la coordinación inteligente de pagos en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbk92Mm01REpOYTNuVUVDN1hldldJcUJZanVDRzBuVE8zM3pwSnBTWEJQOXRLc3J6UVN3M1lPdU00MUxQb1hhR0VfNHZBdWQyVU9uR05Bc3pMd2xhT1hIWEMwMHRJN1lyQ01sSUR6eXRuSzBBSUJHTDZseVA1ZlhhWEJmWDF3U2UyMFVmMHhxRmRQYlV3THRvRXRGZl8xTm5oU2lWWjJidmNNRE85N2lmSERwNVgyVGU1VXpuLThnRFB5dHVTcVBqUw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-21T16:48:02.000Z"
-    },
-    {
       "id": "1843f0454d630ddb25a0",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -785,6 +827,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-21T11:42:00.000Z"
+    },
+    {
+      "id": "367a8d3d85cf4b03e0d0",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "¿Colombia será prioridad para Revolut? Así desafiará la billonaria inversión de Nu",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMkphYUtCQkQwQVJXR201MWtUUzM5YUFCSThJa1hrZjFaZ0lFaWxwRkhUQWktcVRrTnl3N25uQjk3T0JZMTQzVjNXbG1YQUVxVWgyVmtWU21TWEF5Y09QM3dLZ21HZmo5c3ZLOHpneEtSbWg3VU93SnBZWTlVUTYza2p2aW5FWVpSeGNjMENHNlpOcng0WEhTY182SzdyMmxPWjQ4RXVsQXlsR1FEYUJBQlRZZjZ2Q09rbFhTdzk0V3dCblVtWURxS09RaWkycHph0gHkAUFVX3lxTFA0RkxEcWJFZUtPcUdRN01yZ0hrYjZTT3kyaDhTLVl0b3pCTWVDUThzWUxvcVkwZm1QNm8tVW5Mcl9Pa2dDUUZzSnY4UTVhOUs1b1dOZWwzUEREQks3LVVDTHkxb0h1QnZvMFE3REdZb0FkdllYV2tGYWRha2xDY1BqVWFxUGw3RHJBNHF1ZlNpTjVJVmwzbmhUT2Zia3phR3NLbkl1MlY5MDJoWmVDZEliclhET2FIY082a2I1LUlZcTk3U01ISGducFhfS21jOEgzZkc4OWRhNno0cklFSVZEM3MySw?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-21T10:00:00.000Z"
     },
     {
       "id": "aefa5abf4aa6b3f83845",
@@ -871,20 +927,6 @@
       "publishedAt": "2026-09-16T15:40:16.000Z"
     },
     {
-      "id": "6dcda0c9b5f1fbbccb24",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bancoomeva lanza Scalo para financiar Fintechs en Colombia con una meta de $1 billón en créditos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOW9WSUMydnRyTDhia1JpbTJ0Unh6RE1fTE1LcXZTSU1OM2xkVTR0Y1B6OXZpeU42a25fVkxNangzSHNtb0RSWHAtQV80bXBJOXlxOU1BT1NjSkFIQjRfZGlmWnREV0hLMklHVTRIWXV6U21PLTFfR0Z5WU9RX3Vjdk1LRUFaUlMycEswTk5LbEhEUy1reWluOTBpck9BXzhMcU1jV0VrbVN4SE1BSm9ZTEd6S2VVM2U3enlOYURlb0h6WWdEcU5XSm9DUlc?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T13:20:22.000Z"
-    },
-    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -897,48 +939,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
-    },
-    {
-      "id": "8aed8dc330c07f017567",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Revolut obtiene licencia bancaria para operar en Colombia y alista su portafolio de productos financieros",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWE9hUjlhUmdsQy1mNjRSRU43bElNTXV5NjlMVTlmQ08zUVBkTzYzeEZ1UnNFWFhaV09TM0NkOUZjbmhzVG1UTDlYcnVnTUlMN0xuV2piR3p6U0FMQ2hLMGpiVU8yVFlvT2xZUmhEazNWWHRxZmJqbURQb1JvQXlMdmlQWjhWbHZSQndMcEdtblc2VThEWFFiLW00TUhLNmllZ2J3M0lac2IyS2VvdUNwZ3JQd1Z0VjhZV3drWjNHNFN2YzVRXzBNM2pzcHVSMXpyX1dQUkhJX3ZRUQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-15T23:58:45.000Z"
-    },
-    {
-      "id": "e5967d4cff625a8c39b4",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "A5X raises $70M Series D",
-      "excerpt": "Brazilian fintech A5X raised a $70M Series D led by Morgan Stanley, Goldman Sachs, and Kaszek. Existing investors…",
-      "url": "https://latamlist.com/a5x-raises-70m-series-d/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-15T22:54:08.000Z"
-    },
-    {
-      "id": "6a016ccfd1f0fc164a58",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nelo renews $100M credit facility with Victory Park Capital",
-      "excerpt": "Mexican buy now, pay later fintech Nelo renewed its $100M credit facility with Victory Park Capital. Founded in…",
-      "url": "https://latamlist.com/nelo-renews-100m-credit-facility-with-victory-park-capital/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-15T22:40:12.000Z"
     },
     {
       "id": "a511848bf80bf4e404f8",
@@ -1243,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 9
     },
     {
@@ -1254,8 +1254,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1265,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 9
     },
     {
@@ -1276,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1287,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 1
     },
     {
@@ -1298,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1309,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1320,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 4
     },
     {
@@ -1331,8 +1331,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 5
     },
     {
@@ -1342,9 +1342,31 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
-      "recentCount": 25
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
+      "recentCount": 8
+    },
+    {
+      "id": "iupana",
+      "name": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "url": "https://iupana.com/",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
+      "recentCount": 8
+    },
+    {
+      "id": "latam-bloomberg",
+      "name": "Bloomberg Línea · fintech",
+      "category": "latam",
+      "kind": "news",
+      "url": "https://www.bloomberglinea.com/",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-latam",
@@ -1353,8 +1375,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 2
     },
     {
@@ -1364,8 +1386,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 2
     },
     {
@@ -1375,8 +1397,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 12
     },
     {
@@ -1386,8 +1408,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 11
     },
     {
@@ -1397,8 +1419,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:51:34.306Z",
-      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "checkedAt": "2026-09-30T02:58:08.329Z",
+      "lastSuccessAt": "2026-09-30T02:58:08.329Z",
       "recentCount": 9
     }
   ]
