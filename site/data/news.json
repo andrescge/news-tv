@@ -1,20 +1,76 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-29T20:47:20.279Z",
+  "generatedAt": "2026-09-30T00:27:31.803Z",
   "stories": [
     {
-      "id": "ec0fc0b1ac600c48f0a7",
+      "id": "faa740be33077a55ce0e",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Circle and Volante partner to help banks integrate stablecoins into payment operations",
+      "excerpt": "Payments-as-a-Service specialist Volante Technologies is working with USDC-issuer Circle to help financial institutions integrate stablecoin payment and settlement capabilities into their existing operations.",
+      "url": "https://www.finextra.com/newsarticle/48496/circle-and-volante-partner-to-help-banks-integrate-stablecoins-into-payment-operations?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-30T00:01:00.000Z"
+    },
+    {
+      "id": "e886fd5c494bab73ba55",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "SMEs turn from banks to fintechs for cross-border payments",
+      "excerpt": "Most small and medium-sized businesses (SMEs) trading internationally are set to switch their current cross-border payment provider in the next two years, according to a Mastercard report.",
+      "url": "https://www.finextra.com/newsarticle/48497/smes-turn-from-banks-to-fintechs-for-cross-border-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-30T00:01:00.000Z"
+    },
+    {
+      "id": "7bb4c2113706871e5a52",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Sibos 2026: What does sovereignty look like in a multi-rail payments landscape?",
+      "excerpt": "A hot conversation topic at Sibos this year is interoperability with emerging payments rails, which begs the question of what monetary sovereignty means in a multi-rail digital financial system.",
+      "url": "https://www.finextra.com/newsarticle/48501/sibos-2026-what-does-sovereignty-look-like-in-a-multi-rail-payments-landscape?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-30T00:00:00.000Z"
+    },
+    {
+      "id": "68e631505646fdb25d71",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Fed’s Bowman Says AI Is Blessing and Threat to Bank Security",
-      "excerpt": "Federal Reserve Vice Chair for Supervision Michelle Bowman warned about the danger artificial intelligence poses to banks while also touting its benefits. “While banks continue to face a number of risks like ransomware, business email compromise and vendor data breaches, the incr",
-      "url": "https://www.pymnts.com/cybersecurity/2026/federal-reserve-michelle-bowman-says-ai-is-blessing-threat-bank-security/",
+      "title": "Citi Rewires Global Payments Through Single Swift Connection",
+      "excerpt": "Citi now enables its bank clients to access multiple cross-border instant payment markets through a single account structure, the bank said in a Tuesday (Sept. 29) press release. This solution also eliminates the need for these bank clients to have separate local banking relation",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/citi-rewires-global-payments-through-single-swift-connection/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-09-29T19:31:37.000Z"
+      "publishedAt": "2026-09-29T23:05:56.000Z"
+    },
+    {
+      "id": "7bb312b9634a384e9dea",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "5 Things to Know as Money Movement Runs on Different Clocks",
+      "excerpt": "Money can move at 2 a.m. on Sunday. The systems needed to fund, convert, settle and account for that flow of funds may have another schedule. Three developments last week illustrate the timing variances. Seven U.K. banks completed the first live customer transactions using tokeni",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/5-things-to-know-as-money-movement-runs-on-different-clocks/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-29T21:52:22.000Z"
     },
     {
       "id": "1a41f65d8b8bd3b3fd11",
@@ -43,20 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-29T18:00:00.000Z"
-    },
-    {
-      "id": "0e2350c3c2b61a4c4d06",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BankPro Taps Thredd to Power Physical and Virtual Cards",
-      "excerpt": "BankPro is teaming with Thredd to power its physical and virtual debit and credit card programs. The partnership, announced Tuesday (Sept. 29), involves BankPro tapping into Thredd’s platform to enhance BankPro’s payment infrastructure and provide payment solutions to the Bahamas",
-      "url": "https://www.pymnts.com/partnerships/2026/bankpro-taps-thredd-to-power-physical-and-virtual-cards/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T17:48:06.000Z"
     },
     {
       "id": "d5ee0a95e2d0ee7821f6",
@@ -255,20 +297,6 @@
       "publishedAt": "2026-09-25T18:55:33.000Z"
     },
     {
-      "id": "bf22d7f6974e81aef0fb",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "US prosecutors seize Tether-linked payment firm's bank accounts - FT",
-      "excerpt": "US federal prosecutors have seized bank accounts belonging Capstone, a payments business working on behalf of stablecoin issuer Tether and its sister exchange Bitfinex, according to the Financial Times.",
-      "url": "https://www.finextra.com/newsarticle/48478/us-prosecutors-seize-tether-linked-payment-firms-bank-accounts---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-25T14:41:00.000Z"
-    },
-    {
       "id": "a6cd637f43351b7357cc",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -281,34 +309,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-25T12:00:00.000Z"
-    },
-    {
-      "id": "787f686614423248582a",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Online scams agreement signed between UK and Cambodian governments",
-      "excerpt": "The UK and Cambodia will work together to tackle networks of illegal scam centres, locations where sophisticated fraud techniques are deployed and scaled to target thousands of victims.",
-      "url": "https://www.finextra.com/newsarticle/48476/online-scams-agreement-signed-between-uk-and-cambodian-governments?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-25T10:02:00.000Z"
-    },
-    {
-      "id": "d59a485022add0fd5a7f",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "FedNow to enable cross-border payments",
-      "excerpt": "The US Federal Reserve is pushing ahead with plans to enable participants in its FedNow real-time payments system to make cross-border transfers.",
-      "url": "https://www.finextra.com/newsarticle/48472/fednow-to-enable-cross-border-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-25T00:01:00.000Z"
     },
     {
       "id": "84ab68633c4377c97017",
@@ -493,20 +493,6 @@
       "publishedAt": "2026-09-17T13:04:56.000Z"
     },
     {
-      "id": "1b2a595bd315bb9883ff",
-      "sourceId": "supercias",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Superintendencia y OTA capacitaron a oficiales de cumplimiento del sector de remesas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQTmQtSDFTZm1DVDBaYldUaVVkYjZXTlkyZ1dLWEJmNDYwYWJ5SElfUVdjNVNPeVoxWWZxOFA3X0p3UlRHY1lQWG9FZzVzdHZjWnZZTkQwUUwxRDVITHFvYzVKVWk2ei1OUUlrOW5hd1EycHFQS2hTbEg3eWFUYkNvZTdPQ2N6dG5IaV9zX0laTQ?oc=5",
-      "source": "SuperCias",
-      "sourceUrl": "https://www.supercias.gob.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-17T07:00:00.000Z"
-    },
-    {
       "id": "4fdaa630a1227c82848d",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -645,20 +631,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-11T10:34:00.000Z"
-    },
-    {
-      "id": "acebe4d2d8a8dc1eefba",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Nasdaq invests $100m in Payward as part of tokenised equities partnership",
-      "excerpt": "The venture capital arm of exchange operator Nasdaq has invested $100 million in Kraken parent Payward as part of a wider partnership on tokenised market infrastructure.",
-      "url": "https://www.finextra.com/newsarticle/48382/nasdaq-invests-100m-in-payward-as-part-of-tokenised-equities-partnership?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-10T15:31:00.000Z"
     },
     {
       "id": "9aa1592afbb1cc8f17f6",
@@ -809,8 +781,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 9
     },
     {
@@ -820,8 +792,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 0
     },
     {
@@ -831,8 +803,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 6
     },
     {
@@ -842,8 +814,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 1
     },
     {
@@ -853,8 +825,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 0
     },
     {
@@ -864,9 +836,9 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
-      "recentCount": 1
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
+      "recentCount": 0
     },
     {
       "id": "latamlist",
@@ -875,8 +847,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 5
     },
     {
@@ -886,8 +858,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 2
     },
     {
@@ -897,8 +869,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 12
     },
     {
@@ -908,9 +880,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
-      "recentCount": 12
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
+      "recentCount": 11
     },
     {
       "id": "chainalysis",
@@ -919,8 +891,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-09-29T20:47:20.279Z",
-      "lastSuccessAt": "2026-09-29T20:47:20.279Z",
+      "checkedAt": "2026-09-30T00:27:31.803Z",
+      "lastSuccessAt": "2026-09-30T00:27:31.803Z",
       "recentCount": 9
     }
   ]
