@@ -1,16 +1,22 @@
 import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalize, parseFeed, parseBce, deduplicate, relevant, recent } from './content.mjs';
+import { normalize, parseFeed, parseBce, parseBcePublications, deduplicate, relevant, recent } from './content.mjs';
+
+const googleSearch = query => `https://news.google.com/rss/search?q=${encodeURIComponent(`${query} when:30d`)}&hl=es-419&gl=EC&ceid=EC%3Aes-419`;
 
 export const SOURCES = [
   { id: 'ecuador-news', name: 'Medios de Ecuador', category: 'ecuador', kind: 'news', adapter: 'google', url: 'https://news.google.com/rss/search?q=%28bancos%20OR%20seguros%20OR%20cooperativas%20OR%20fintech%20OR%20pagos%29%20Ecuador%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://news.google.com/', allowHosts: ['primicias.ec', 'bloomberglinea.com', 'eluniverso.com', 'expreso.ec'] },
   { id: 'bce-junta', name: 'BCE · Junta Financiera', category: 'regulacion', kind: 'official', adapter: 'bce', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/boletines-de-prensa/', site: 'https://www.bce.fin.ec/', language: 'es' },
+  { id: 'bce-publicaciones', name: 'BCE · Datos financieros', category: 'regulacion', kind: 'official', adapter: 'bce-publications', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', site: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', language: 'es' },
   { id: 'bce-boletines', name: 'Banco Central del Ecuador', category: 'ecuador', kind: 'official', adapter: 'bce', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/', site: 'https://www.bce.fin.ec/', language: 'es' },
   { id: 'seps', name: 'SEPS', category: 'regulacion', kind: 'official', adapter: 'rss', url: 'https://www.seps.gob.ec/feed/', site: 'https://www.seps.gob.ec/', language: 'es' },
   { id: 'superbancos', name: 'Superintendencia de Bancos', category: 'regulacion', kind: 'official', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Asuperbancos.gob.ec%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.superbancos.gob.ec/', allowHosts: ['superbancos.gob.ec'], language: 'es' },
   { id: 'supercias', name: 'Supercias', category: 'regulacion', kind: 'official', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Asupercias.gob.ec%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.supercias.gob.ec/', allowHosts: ['supercias.gob.ec'], language: 'es' },
+  { id: 'regulatory-news', name: 'Cobertura de autoridades EC', category: 'regulacion', kind: 'news', adapter: 'google', url: googleSearch('(SEPS OR "Superintendencia de Bancos" OR "Junta de Política" OR "Supercias") (Ecuador OR ecuatoriana)'), site: 'https://news.google.com/', allowHosts: ['primicias.ec', 'eluniverso.com', 'expreso.ec', 'elcomercio.com', 'ecuavisa.com', 'vistazo.com'], language: 'es' },
   { id: 'latamlist', name: 'LatamList', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://latamlist.com/feed/', site: 'https://latamlist.com/', language: 'en' },
+  { id: 'latam-fintech-hub', name: 'Latam Fintech Hub', category: 'latam', kind: 'news', adapter: 'google', url: googleSearch('site:latamfintech.co/articles/'), site: 'https://www.latamfintech.co/articles', allowHosts: ['latamfintech.co'], language: 'es' },
+  { id: 'finextra-latam', name: 'Finextra · LATAM', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=retail', site: 'https://www.finextra.com/', language: 'en' },
   { id: 'pymnts', name: 'PYMNTS', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.pymnts.com/feed/', site: 'https://www.pymnts.com/', language: 'en' },
   { id: 'finextra-payments', name: 'Finextra · Payments', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=payments', site: 'https://www.finextra.com/', language: 'en' },
   { id: 'finextra-crypto', name: 'Finextra · Blockchain', category: 'cripto', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=blockchain', site: 'https://www.finextra.com/', language: 'en' },
@@ -21,16 +27,16 @@ const outputArg = process.argv.indexOf('--output');
 const output = outputArg === -1 ? resolve(root, 'site/data/news.json') : resolve(process.argv[outputArg + 1]);
 
 async function fetchSource(source) {
-  const response = await fetch(source.url, { headers: { 'User-Agent': 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)', Accept: source.adapter === 'bce' ? 'text/html' : 'application/rss+xml, application/xml, text/xml' }, signal: AbortSignal.timeout(14000) });
+  const response = await fetch(source.url, { headers: { 'User-Agent': 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)', Accept: source.adapter.startsWith('bce') ? 'text/html' : 'application/rss+xml, application/xml, text/xml' }, signal: AbortSignal.timeout(14000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const body = await response.text();
   if (body.length > 3_000_000) throw new Error('Respuesta demasiado grande');
-  const raw = source.adapter === 'bce' ? parseBce(body) : parseFeed(body, source);
+  const raw = source.adapter === 'bce' ? parseBce(body) : source.adapter === 'bce-publications' ? parseBcePublications(body) : parseFeed(body, source);
   return raw.filter(row => {
     if (!source.allowHosts) return true;
     try { const host = new URL(row.sourceUrl).hostname.toLowerCase(); return source.allowHosts.some(allowed => host === allowed || host.endsWith(`.${allowed}`)); }
     catch { return false; }
-  }).map(row => normalize(row, source)).filter(Boolean).filter(row => relevant(row, source)).slice(0, 25);
+  }).map(row => normalize(row, source)).filter(Boolean).filter(row => relevant(row, source)).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 25);
 }
 
 async function run() {

@@ -82,17 +82,34 @@ export function parseBce(html) {
   if (!entries.length) throw new Error('No se encontraron boletines en la estructura esperada del BCE');
   return entries;
 }
+export function parseBcePublications(html) {
+  const $ = cheerio.load(html); const entries = [];
+  $('tr').each((_, node) => {
+    const cells = $(node).find('td');
+    if (cells.length < 3) return;
+    const link = cells.eq(2).find('a[href]').first();
+    const href = link.attr('href');
+    if (!href || /\.xlsx?(?:$|[?#])/i.test(href)) return;
+    entries.push({ title: link.text().trim(), url: href, publishedAt: cells.eq(0).text().trim(), language: 'es' });
+  });
+  if (!entries.length) throw new Error('No se encontraron publicaciones en la estructura esperada del BCE');
+  return entries;
+}
 export function deduplicate(stories) {
   const seen = new Set();
   return [...stories].sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).filter(story => {
-    const key = canonicalUrl(story.url);
-    const titleKey = `${story.source.toLowerCase()}:${story.title.toLowerCase().replace(/\W/g, '')}`;
+    const key = `${story.category}:${canonicalUrl(story.url)}`;
+    const titleKey = `${story.category}:${story.source.toLowerCase()}:${story.title.toLowerCase().replace(/\W/g, '')}`;
     if (seen.has(key) || seen.has(titleKey)) return false;
     seen.add(key); seen.add(titleKey); return true;
   });
 }
 export function relevant(story, source) {
   const text = `${story.title} ${story.excerpt}`.toLowerCase();
+  if (source.id === 'bce-publicaciones') return /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reserva internacional|captaciones|colocaciones|volumen de cr[eé]dito/i.test(story.title);
+  if (source.id === 'regulatory-news') return /superintendencia de bancos|supercias|\bseps\b|junta de pol[ií]tica|banco central|\bbce\b|entidades financieras? no autorizad|cr[eé]ditos? falsos|financieras? fantasma/i.test(story.title);
+  if (source.id === 'latam-fintech-hub') return /fintech|paytech|neobanc|banc|pago|stablecoin|cr[eé]dito|financ|insurtech|segur|remes|billetera|wallet/i.test(story.title) && !/\b(evento|webinar|congreso|conferencia|emms)\b|latam fintech market/i.test(story.title);
+  if (source.id === 'finextra-latam') return new URL(story.url).pathname.startsWith('/newsarticle/') && /latin america|latam|brazil|brasil|mexic|colombi|argentin|chile|peru|uruguay|jeeves|nubank|mercado pago|ual[aá]|bradesco|global66/i.test(text);
   if (source.id === 'finextra-payments' || source.id === 'finextra-crypto') {
     if (!new URL(story.url).pathname.startsWith('/newsarticle/')) return false;
     if (source.id === 'finextra-crypto') return /crypto|blockchain|tokeni[sz]|digital asset|stablecoin|bitcoin|ethereum|distributed ledger|web3|canton network|decentrali[sz]/i.test(text);

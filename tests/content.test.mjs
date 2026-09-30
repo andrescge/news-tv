@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant } from '../scripts/content.mjs';
+import { normalize, parseBce, parseBcePublications, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant } from '../scripts/content.mjs';
 
 const now = Date.parse('2026-09-29T15:00:00Z');
 const source = { id: 'prueba', name: 'Medio de prueba', category: 'pagos', kind: 'news', url: 'https://example.com/feed.xml' };
@@ -32,15 +32,31 @@ test('el BCE vincula titular, extracto y fecha del mismo boletín', () => {
   assert.equal(story.excerpt, 'Reglas para transferencias.');
 });
 
+test('las publicaciones financieras del BCE conservan fecha y enlace, sin descargas XLSX', () => {
+  const html = '<table><tr><td>29 de septiembre de 2026</td><td></td><td><a href="/boletin.pdf">Boletín Monetario Semanal</a></td></tr><tr><td>29 de septiembre de 2026</td><td></td><td><a href="/datos.xlsx">Datos monetarios</a></td></tr></table>';
+  const rows = parseBcePublications(html);
+  assert.equal(rows.length, 1);
+  const bce = { ...source, id: 'bce-publicaciones', category: 'regulacion', kind: 'official', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/' };
+  const story = normalize(rows[0], bce, now);
+  assert.equal(story.url, 'https://contenido.bce.fin.ec/boletin.pdf');
+  assert.equal(story.publishedAt, '2026-09-29T12:00:00.000Z');
+  assert.equal(relevant(story, bce), true);
+});
+
 test('las distintas coberturas sobreviven mientras los duplicados se eliminan', () => {
   const a = normalize({ title: 'Pago instantáneo', url: 'https://example.com/news?utm_source=rss', publishedAt: '2026-09-29T10:00:00Z' }, source, now);
   const b = normalize({ title: 'Pago instantáneo', url: 'https://example.com/news?utm_source=home', publishedAt: '2026-09-29T10:00:00Z' }, source, now);
   const c = normalize({ title: 'Pago instantáneo', url: 'https://other.example/news', publishedAt: '2026-09-29T10:00:00Z', source: 'Otro medio' }, source, now);
   assert.equal(deduplicate([a, b, c]).length, 2);
+  assert.equal(deduplicate([a, { ...a, category: 'regulacion' }]).length, 2);
 });
 
 test('las categorías temáticas filtran artículos ajenos al sector', () => {
   assert.equal(relevant({ title: 'Análisis de la banca digital', excerpt: '' }, { id: 'latamlist' }), true);
   assert.equal(relevant({ title: 'Software de restaurantes', excerpt: '' }, { id: 'latamlist' }), false);
   assert.equal(relevant({ title: 'Seguridad en cajeros', excerpt: '', url: 'https://www.finextra.com/blogposting/100' }, { id: 'finextra-crypto' }), false);
+  assert.equal(relevant({ title: 'Jeeves raises $110m', excerpt: '', url: 'https://www.finextra.com/newsarticle/48498/jeeves' }, { id: 'finextra-latam' }), true);
+  assert.equal(relevant({ title: 'London bank launches product', excerpt: '', url: 'https://www.finextra.com/newsarticle/123/test' }, { id: 'finextra-latam' }), false);
+  assert.equal(relevant({ title: 'Growth en Fintech: webinar', excerpt: '' }, { id: 'latam-fintech-hub' }), false);
+  assert.equal(relevant({ title: 'Superintendencia de Bancos advierte sobre entidades no autorizadas', excerpt: '' }, { id: 'regulatory-news' }), true);
 });
