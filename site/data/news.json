@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T02:37:18.138Z",
+  "generatedAt": "2026-09-30T02:51:34.306Z",
   "stories": [
     {
       "id": "faa740be33077a55ce0e",
@@ -59,6 +59,20 @@
       "publishedAt": "2026-09-29T23:05:56.000Z"
     },
     {
+      "id": "40b73da8dd3f69f2491c",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
+      "source": "Ecuavisa",
+      "sourceUrl": "https://www.ecuavisa.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T22:04:48.000Z"
+    },
+    {
       "id": "7bb312b9634a384e9dea",
       "sourceId": "pymnts",
       "category": "pagos",
@@ -87,6 +101,34 @@
       "publishedAt": "2026-09-29T19:25:43.000Z"
     },
     {
+      "id": "81e0f104e36a0f0a5ac4",
+      "sourceId": "finextra-latam",
+      "category": "latam",
+      "kind": "news",
+      "title": "Jeeves raises $110m for stablecoin banking platform",
+      "excerpt": "Corporate card and expense management platform Jeeves has raised $110 million to scale its stablecoin-native banking platform for global enterprises.",
+      "url": "https://www.finextra.com/newsarticle/48498/jeeves-raises-110m-for-stablecoin-banking-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · LATAM",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-29T18:26:00.000Z"
+    },
+    {
+      "id": "a1a62cec52c442721da8",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Haulmer lanza AndCo, una cuenta digital para pequeñas empresas en Chile",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd04zbEc5NFRKSEp5WC16T2ZZVkprcS15cEhDSVktbDVaWHhad29McldQVmNBWW9fcWdwSk84TDhTcGdYbjQyeTNwODBabVdYU3RMUWFKWGRCVXJ3LUx5aDR2TTlIaTJFV0tEV3pNQmp1OEtjUE9YSExSVV9CVUdiZjZuampYdDJDS1dFVW0tQmdSM3JoaFdqd0xfRm9feDkzSkZ6WTdXWm10NVBKN00wS0h3Z1FEQ2tqOXVTSk54a1RudjRXTExyQUkwTUIxRURRQ0JSMW5tMDNTdU9aeEMzMVN5RUFWcXRwZE5YdVllS21SYXk4WFlPU1djVQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T18:21:09.000Z"
+    },
+    {
       "id": "9ea5208e6dbf62cd34ac",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -99,6 +141,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-29T18:00:00.000Z"
+    },
+    {
+      "id": "4769a8fb34dbf82254ab",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Cobre habilita infraestructura de stablecoins en México para agilizar operaciones empresariales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNVGEwT2VFeG9HR0VBUUZMMmN5dy15aDFxRkgzb2hhakR5Nm5RYjNvWURCcVJmOGVqb2Z0bjB6REh4SUtVNEhnejkxTVh3NFlCaHZ3MDFtamNRZzlzbkE4SmhobHFROFYxaFIwQ1B4VGRCZFhxZVBHOGdIeUNYbDVRSFBMbHNHTFc2QVlBQXphOEpCRG91ektvS0tLTXBlOXZXenNEUVUtbm1xSzdSQ2pPaHFWTXYxbEJDYVR2aUsxanMzeVVXZHE4SUJMQURQNThmX2tGeldmYThPNi1kaTFlZ2hrSnZ4LUF6UjRZ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T17:21:47.000Z"
     },
     {
       "id": "d5ee0a95e2d0ee7821f6",
@@ -129,6 +185,20 @@
       "publishedAt": "2026-09-29T14:58:32.000Z"
     },
     {
+      "id": "ee3d792bdf5ddac4792b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Galgo recibe una línea de crédito de US$56M de BBVA Spark para ampliar el acceso al financiamiento de motocicletas en México",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOc29vbURPdkhyMUlMMERKbUplcGRTVXJpeWhJVG5qeW5CV1ZtZUVTaEd6Y3NNcVdlaEJXLWc0aDFhVWdsWHVzRElxclVGLUVnTE43aDNmdkJLaEl1NV9ZWGxNOEkxcFhsS0JUVEpXVkZDZHlKZFo3bjJmenExUTJhZXZhUHozUW4tMGN1VlVzcExJOHZlblc1alpSeGQ5MjZNeW1wU2VvZjl0RUYxTzZUNzVtUkJJc2MtSER2clcyQWFmSGV1SjRVZ2U5cFoyaVNza1ZteWxEdXIzdGdHeS1LM09QdExPUS1aRFZrM0lTR3pGWFdER0tPN2VKZzNnQQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T14:55:00.000Z"
+    },
+    {
       "id": "09e8d0688b7df2f65586",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -141,6 +211,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-29T14:46:59.000Z"
+    },
+    {
+      "id": "4f993a614134ae1976d4",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 25 de Septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_947_25092026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-29T12:00:00.000Z"
     },
     {
       "id": "f53149db56352d6ea214",
@@ -171,6 +255,20 @@
       "publishedAt": "2026-09-29T09:00:00.000Z"
     },
     {
+      "id": "0bf8dc8757c01050c196",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Qué no hacer para evitar las estafas de entidades financieras fantasmas en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEc5cGdRclR3eFk0TFNRM3ZvczVPdnViX0tEQlhXcWphTW93aEVMNzRVa05od2ZkblUtUEo3UE9RbVJjYVNuYTBpVUpzQTFwNnlFdlhIVjkxdlpxSzBDSUV6Wjk5ZGl2QXlkWERuUGl0TzNnNl8yLW5iU1JwdnR1MHc5MHFqSThVRnhSaUpzRzY1aHdXeDlyLUxkUG5vc1JlaTcyaGh1S1EteUVhTGZPOURtZlFhemVoWmQyeA?oc=5",
+      "source": "El Comercio",
+      "sourceUrl": "https://www.elcomercio.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T02:50:00.000Z"
+    },
+    {
       "id": "586f907e4c59c096bb1c",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -197,6 +295,48 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-29T00:00:00.000Z"
+    },
+    {
+      "id": "2790f4057be577588952",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en conversaciones para comprar el neobanco británico Monzo y avanzar en su expansión global",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNQnUxU0R5RHJ2Mjl3X1dqY1lMa21uSy1iOVRGdzR1WEUtcnIzUGZ1MDhBdHF3VWdoakV1Y2dOTzBVSnpfcDNWbHBYbjVNT1hOYW1mZHcwSGRKZkpNYzZrbDBma250cjkyZWZqWmpTcUQzWW9JTmNGNnFkNE4yNGF0OVJGRjhfNnVHTnRrandrMFcyY1dCTk16ZFBJbjkwMEoxVndHOF9nQWYtUTdpVEtRM2hCU3c1bnRoc2xDNHlfM1VKd0twT2gzZGRlX1JlYlVfV0tJTGFkUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-28T19:55:24.000Z"
+    },
+    {
+      "id": "f8d07e9cd2bc3a643097",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Addi, Fintech colombiana de BNPL, hace alianza con dLocal para expandir su servicio de pagos a comercios internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcTRUcTR4YjFQNjUwcTlkUUx1RmNueXZmUVByNzhKSWFyZG84a0tVX3gwenZuZnViUGpNVDRnOXFMc0NHY2w5MzlYNXI3OGp3U1JhWWhnam03RjhiM3l3NmJacTJISHhDNmc4NGp0dGhrbW52N3FacUNMM0ZhUVpuWFg3XzZXOGtCYms3azNlZFlldDV5UzJvaGJrSWZINy0xWTE1NkdRVjdLOEEwMmlubnpsbi00Zy1iZEotLU1PM1IyNVVBS0NHdjhYYVA0RGJid3RkYTlfQ3ZxWWtNLVNtYmhYZzhMVWI0U084?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-28T18:04:25.000Z"
+    },
+    {
+      "id": "2b2f8179670e75a09ff5",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago avanza para convertirse en banco en Argentina y ampliar su oferta para personas, comercios y pymes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOU3BWS3ZUaTBwSjJfZkxSM3ZtblhGOUgxVTZ3QlFaOHBMZFpTeDJwNFpHRFl2RXNXNmFLX2otcklUYXdmWDRZWXFtaE1GQlFFRnF0XzVFOFU5M2NYUVJDWEpReWVTa3JqTFFsZHh6RlVYQmRWMzVialo4Tk9reE5BdXMyTXhybW53dkY3QlJjcFV0bDFsX2dxQ010U0gtd1Zkd1h2enI1ekIxOWt4V28zNnRLZk5ESFJqNVVMVXRVMlJIeEZUSFFSTkMxaWpMbmVxZHFxTzh0TGc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-28T17:17:27.000Z"
     },
     {
       "id": "3a68941afb79147f4367",
@@ -241,6 +381,20 @@
       "publishedAt": "2026-09-28T14:02:00.000Z"
     },
     {
+      "id": "b8de8cf8d60c9d33bcec",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Semanal de Tasas de Interés. 17 al 23 de septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-28T12:00:00.000Z"
+    },
+    {
       "id": "e957bb58e827dabd04b8",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -253,6 +407,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-28T11:14:00.000Z"
+    },
+    {
+      "id": "359a81cc2ec3154af0fa",
+      "sourceId": "finextra-latam",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank in talks to take over Monzo",
+      "excerpt": "Brazilian neobank Nubank is reportedly eyeing a takeover of UK digital bank Monzo, in a deal that would value the British challenger at $10 billion.",
+      "url": "https://www.finextra.com/newsarticle/48484/nubank-in-talks-to-take-over-monzo?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · LATAM",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-09-28T08:51:00.000Z"
     },
     {
       "id": "dbc32cfcf2885eceb4e0",
@@ -297,6 +465,34 @@
       "publishedAt": "2026-09-25T18:55:33.000Z"
     },
     {
+      "id": "278fe2210b979f3cdc3e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Paytech Conekta recibió la autorización en México para operar como adquirente no bancario directo",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQeUp3U0d2ZzJKUjFIVV9yMkxRQXFHclp2SzFOT1RDQVdzLVU4NnJIT1FPcWtVODBEV3B4RFBhNU1OWnJCUWdQSEFkcVdrX0dwOGVfZVljSkxrUlBrQjdCc055LXMzUEZxR2p2VU9wdEk1dkkyd0ItMExWSl9vQmZPeTFKNzBCNUZoY3hGa2IyWU5sVGJDd2J4TDllRDQ4NVRUWkEtR2laQ1padWxuTTJaWW5RUVBOMVBoaXdlejB1WllpVnQtM1R3a1EtdHZnUWM?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-25T15:44:43.000Z"
+    },
+    {
+      "id": "20978e0dafe5d148c000",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Monitoreo de los Principales Indicadores Monetarios y Financieros de la Economía Ecuatoriana. Septiembre2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Presentacion_Sep26.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-25T12:00:00.000Z"
+    },
+    {
       "id": "a6cd637f43351b7357cc",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -325,6 +521,34 @@
       "publishedAt": "2026-09-25T00:01:00.000Z"
     },
     {
+      "id": "b0f87f5c51cc9a3f99d4",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech brasileña NG.CASH levanta US$15 millones para ampliar su oferta de crédito y servicios financieros para jóvenes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQdE5ZanhjcXN3TDJ2MTlQTF9CalpBS2pFV09vcmlyWGdFS2pxVUtuMUg4alJheDJFajg2RUExYy1rRGFCZjE1RGg1NV9iY1lIX3NOclZsaVlrSUZpWndTcmNIYmwzdjQ3T2ZLWk5rSGQ2aFRoSTZsd0RmU0NINWpsSWtBUlVpenc2MGtfWlNGT3pNMFVNRXB6V0JKV2FqcTBOLTlpa2ZNU3JsbE1EemtTYjAyUWpiN1o2QmVQS2tLSnBiSGpVRWt4Nk5kYzdrWnhsYVdReHpDTnk1Q1Q4X2NUWmx5TDFBb3g0amVjUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T17:48:42.000Z"
+    },
+    {
+      "id": "34546d39791fa1fc1228",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Meru evoluciona en Colombia hacia una super app financiera para ofrecer múltiples servicios internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUDhWdjJSTk9wWHZTeExybnFMWmVDeUZWV0tNQXlPbVhkenFGd2RCNDhUZDNsX0FhNGptV2gtZmtKSExZS1VtRTdfN3VteElBRmN4ZUlMSmVtMmF5cWx5UFozVnJ2dXgzdWR2Z29GTEJQdVBLbXZtWThwVUVWYWNUQW9YM3psVkZKNU1tQ2FEZVliM3lCTFdvS2V1bEJwbE5zWi11NDl6WVRyY2M1ZWhxYTgyT2VBZzFEV0ZxXzIzbVEzQUtJRG5wRExIb25TaDFaQlRSelIwSTRiSzdBNklsMmwtOHBrQkk?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T17:05:30.000Z"
+    },
+    {
       "id": "2fdc0ce42ef3a3d78602",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -351,6 +575,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-24T14:00:00.000Z"
+    },
+    {
+      "id": "4381d6ec040727b2e0ed",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Yol1: el neobanco de ProntoPaga que busca simplificar los pagos transfronterizos en Latam",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQTVkwbTk0Y3p5U3RNM0lORzk3Vm4tRkJYejZtZTUxc0t1V0NFcDZCQy0yVVFrVUZ6WEJzUi1DVWFwLTN3MFAtaUlYRkZsLTNOd1lyX3dnVm1OandRNzR2TDNzaDlmY2NsVkJwVHlQUjFOdVQwdlJJRF9FRkV1QVBpcVpuREhMeUk4SF84ZjVSSldxZ2FmSy13cTNVLWViakhKaWw0OEdkb2xrV0I4VWZQZUJDLW8xcUFQbFhOcENoQ1FSN1E?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T07:00:00.000Z"
     },
     {
       "id": "01dcfab10b308e55dac0",
@@ -423,6 +661,62 @@
       "publishedAt": "2026-09-23T00:01:00.000Z"
     },
     {
+      "id": "98e600f91b2475ab6b31",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nace Monni, una Fintech colombiana que llega con una billetera global multidivisa",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY0R0OUgwR1VkeDRTMVRHN19VX1FxTUxueVZmY2hMLUlfQmVVNWlWVVF5T2YyeFZXWFE0V0l6NS1Ba1hacHFqcHczbEltdl9CQ0JTck5jS3NzMEVkZWJsbUxKc2RqV1JvV3VLY00yS1JGNjZDczNyN0xDOVpZRmtONzF2a2h2TVcwcDJDQ20xQjF6ZnhZTURwbk15QUV6ZzRGdF9JNWo5ZWphVkhCRlk4RFhPZnJvYmdW?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-22T16:51:42.000Z"
+    },
+    {
+      "id": "439f2ae0ac7567f23fdc",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech uruguaya Infinia lanza stablecoins vinculadas a monedas locales de Latam para facilitar pagos en la región",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPTmZsV1hpTHdKeHozZHJKNERSZ1JSYTkxVEZSZEJZNFNaajBRU193WGlhVlhxaEVJU3VsM0QyVWF1eVp0U3RFemc5azZXalc0dmdZWk1Zd2tUbDlNcmxDcTd6aXhqSElZX3JnN0VLam8yUTZzcVZwWVdBTWpVTV91ZGxUbWNkSGNDanB6SVNLTjdscTA1SEd5aUlsblRSYTljc0ZYd241WWZjODU5ZmtYNUF4d1Zvd2hQRExKRE1WX29mTVlPcW5ueGZsSHZkM0Ztc3ZOMzdrMTVZLWRpdkhQWG4zUzNpZw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-22T16:51:42.000Z"
+    },
+    {
+      "id": "558ecac1afaebaa8a9c8",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Wallbit se expande a Perú para atender a profesionales que reciben ingresos del exterior",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPR0RRWlBmUXZsMGRfNDRYSjZEZE80ZFl5dDhfNDhScllseGlUMmF6aGd5b1ZnZGtHUnNmTmFzN3RzQi1rWlNQb3RtN3hJa0YyVm81eVVoejduaXpvRnVPTVBNcGNjRTQxVmQxOWV0MEE5Y01reHVHblEyd0ItV3p4aHlxamp5SU5fbjI3bW5ocjM1UXhERm5WTG9VWENlNkpNYU1SOVVIcnlJSkJHTlZpME1CZHZXTFdFbmpRVEIxN19wYlViSXpMTlVrdDE2dw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-22T16:51:42.000Z"
+    },
+    {
+      "id": "55fbb241e3c36dce27ca",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 18 de Septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_946_18092026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-22T12:00:00.000Z"
+    },
+    {
       "id": "98c95024a6977564d0e2",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -435,6 +729,48 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-22T12:00:00.000Z"
+    },
+    {
+      "id": "26c8d3ccaef7ff9714c3",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Latam Fintech Hub y Dock hacen alianza estratégica para evolucionar el ecosistema de pagos en Latam",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPMlVpSURULTl2ZUR4UFJBcDNiVlE4M21GUnVwdzQ2T1ZfVTJFZnRyR2x3d0tfZnNKSm5rSUlhWGxDXzhrR2NsTmJJaUU0N3M1X0VQQ3I0Mm9ybVFBZ2s0U09qMjAzakJFY2VvYXhhOGcwLVVVTmZUcW9NRUhhdzJjN19SeU12TEcyclhlR1FSTW5nNVZ1Q3pFaDNMYVRnWFAzTVRaMW5zV0k2UnRfYndhaDQtSGZXS3lnaXNTWUQ5MDhJb3NhTzlnaUM3WWZrMDZTV0E?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-22T07:00:00.000Z"
+    },
+    {
+      "id": "2f538226630a1156f02b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Klar Empresarial amplía su oferta de crédito para más de 10 millones de personas físicas con actividad empresarial en México",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7wFBVV95cUxNZHllOGF3a0U5aGhjS3FJTzNoaFNMR25DcFEzNk52eW9Ia2xDbWpScEQxX3h6a0NpSTR4cVhnaTZ5WTBNZWNXcTlrdFJaT3ozRHNQR0FHN1pnS2FNM1ZZTTdoUW0yQXlZOXZjVkhwWjJfYkpSUWZvQXVwWTVxY1lfVjFTeXcxbFp3YUlpTGRkekVtMDdTa2otN1dJX3BjaHc1SkwtV3RiM2s2ZXc1ZkZnODRBSi16YXVSbHFXdXV1ZlM5N3FubTJsYVo3S3gyVW1IeldNY19xbHNCNy1YdkcxVUlOeEktVGdtRDFidlE5VQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-22T00:49:31.000Z"
+    },
+    {
+      "id": "662974e8a56a62497701",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Inter Pag elige a ACI Worldwide para impulsar la coordinación inteligente de pagos en Brasil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQbk92Mm01REpOYTNuVUVDN1hldldJcUJZanVDRzBuVE8zM3pwSnBTWEJQOXRLc3J6UVN3M1lPdU00MUxQb1hhR0VfNHZBdWQyVU9uR05Bc3pMd2xhT1hIWEMwMHRJN1lyQ01sSUR6eXRuSzBBSUJHTDZseVA1ZlhhWEJmWDF3U2UyMFVmMHhxRmRQYlV3THRvRXRGZl8xTm5oU2lWWjJidmNNRE85N2lmSERwNVgyVGU1VXpuLThnRFB5dHVTcVBqUw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-21T16:48:02.000Z"
     },
     {
       "id": "1843f0454d630ddb25a0",
@@ -535,6 +871,20 @@
       "publishedAt": "2026-09-16T15:40:16.000Z"
     },
     {
+      "id": "6dcda0c9b5f1fbbccb24",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Bancoomeva lanza Scalo para financiar Fintechs en Colombia con una meta de $1 billón en créditos",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNOW9WSUMydnRyTDhia1JpbTJ0Unh6RE1fTE1LcXZTSU1OM2xkVTR0Y1B6OXZpeU42a25fVkxNangzSHNtb0RSWHAtQV80bXBJOXlxOU1BT1NjSkFIQjRfZGlmWnREV0hLMklHVTRIWXV6U21PLTFfR0Z5WU9RX3Vjdk1LRUFaUlMycEswTk5LbEhEUy1reWluOTBpck9BXzhMcU1jV0VrbVN4SE1BSm9ZTEd6S2VVM2U3enlOYURlb0h6WWdEcU5XSm9DUlc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-16T13:20:22.000Z"
+    },
+    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -547,6 +897,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
+    },
+    {
+      "id": "8aed8dc330c07f017567",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Revolut obtiene licencia bancaria para operar en Colombia y alista su portafolio de productos financieros",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNWE9hUjlhUmdsQy1mNjRSRU43bElNTXV5NjlMVTlmQ08zUVBkTzYzeEZ1UnNFWFhaV09TM0NkOUZjbmhzVG1UTDlYcnVnTUlMN0xuV2piR3p6U0FMQ2hLMGpiVU8yVFlvT2xZUmhEazNWWHRxZmJqbURQb1JvQXlMdmlQWjhWbHZSQndMcEdtblc2VThEWFFiLW00TUhLNmllZ2J3M0lac2IyS2VvdUNwZ3JQd1Z0VjhZV3drWjNHNFN2YzVRXzBNM2pzcHVSMXpyX1dQUkhJX3ZRUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-15T23:58:45.000Z"
     },
     {
       "id": "e5967d4cff625a8c39b4",
@@ -575,6 +939,34 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-15T22:40:12.000Z"
+    },
+    {
+      "id": "a511848bf80bf4e404f8",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 11 de Septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_945_11092026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-15T12:00:00.000Z"
+    },
+    {
+      "id": "08ba4174039e1055bfd3",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Mensual de Tasas de Interés. Agosto 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntMensual.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-15T12:00:00.000Z"
     },
     {
       "id": "0a384db13b1958932862",
@@ -633,6 +1025,20 @@
       "publishedAt": "2026-09-11T10:34:00.000Z"
     },
     {
+      "id": "fcc72cbb7e99dd5d9a5a",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Secretaría de Integridad, UAFE, SRI y Superintendencia de Bancos firman acuerdo con la OEA para detectar riesgos de corrupción y lavado de activos",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRdIBjwJBVV95cUxQcHh4ZjQzX0NQY1BYNW5TbklPeWhBN19mSUhkdzFsaVRaWTBzQnphU3FfaE5uWlZjamh5a1ByMk9rdFk5Q25HMGw4MEFVLUFOSDd5QUVCUFI4bU1fOVFwdW56dk9aMDNSSndHM2h4TGFKdm9LVGxvNnRZVTVvamFxa2Vjd29FUTJzcGdLMkNEbnl1SHAyamR1LWdJc2F3V0tseXkxTFdyQ2d1cktVMGw5eDJWRVZJT2NQZ3RDOTVyYmJqOXBEaElObEFic21fVjFvZW45bTVoYXBUak9KY01OUm4xMERPQTdKT1NidDBUNUhEM0g0OEU4bzBsQzlHdzh3cE1vc0M3aGJYbm96VWxv?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-11T07:00:00.000Z"
+    },
+    {
       "id": "9aa1592afbb1cc8f17f6",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -661,6 +1067,20 @@
       "publishedAt": "2026-09-09T20:22:00.000Z"
     },
     {
+      "id": "ca382ccd03add7cfa731",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Superintendencia de Bancos ha detectado más de 70 entidades sin autorización para operar en 2026",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmRTU2hneWJzMzh2Mi10SkV1N0Rtb2pQNm5ZZ2oteTJHR0ZHM2RHTURjN1VnTzdaR2wxcXBpYk5rV3pxbnp1N2Q5cFNpcHVSbnNLWFBQX0RTVVNRZzlTSll1VlhCb1E1ZGdnTlRBZDdvTG9BOTFWVU44bkNjMHVIa2lkX3N5ZF91RHVzQ1lVY3hsaXFuMlk4eWswcFBDMllzUEZ3QWFOUkRTX1ZxWnZkNnpPYnhlLUJCMmZxadIBwgFBVV95cUxQOVpGNm45WkNqRnJGZmNpdlpnUXFDMS1QQnN3dlRTR2R6bjVicWdqeEZNWF84SElWRU5BS21Pb0hiM0N3eERiYWlnWWhIempIQmkyUWRmZGFRTmREYzc2d3d1UDdiZkppU0FNVHA5S2JwbVROVER3Ui1sUDdORVFVOFVMbTEtbHhyVXVhNTktZ1dMQnRDZlFJY3BnWmxsUU40Z0E1X3JrbmRFcG9Oc283d1hiSHZYbXhSZXZvU2d6Y2ZOUQ?oc=5",
+      "source": "Vistazo",
+      "sourceUrl": "https://www.vistazo.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-09T07:00:00.000Z"
+    },
+    {
       "id": "d1f05b28bc3f568c32dc",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -673,6 +1093,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-08T17:23:45.000Z"
+    },
+    {
+      "id": "300fd567c5667e850c6f",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 04 de Septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_944_04092026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-08T12:00:00.000Z"
     },
     {
       "id": "81755a3d06326429d3f3",
@@ -759,6 +1193,34 @@
       "publishedAt": "2026-09-02T15:43:57.000Z"
     },
     {
+      "id": "dbc636547d91df6de059",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 28 de Agosto 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_943_28082026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-09-01T12:00:00.000Z"
+    },
+    {
+      "id": "a21592d62679a1086f3b",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Tasas de Interés Efectivas. Septiembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-08-31T12:00:00.000Z"
+    },
+    {
       "id": "56ce79569cb3e55b4d2c",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -781,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 9
     },
     {
@@ -792,9 +1254,20 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 0
+    },
+    {
+      "id": "bce-publicaciones",
+      "name": "BCE · Datos financieros",
+      "category": "regulacion",
+      "kind": "official",
+      "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "recentCount": 9
     },
     {
       "id": "bce-boletines",
@@ -803,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 6
     },
     {
@@ -814,8 +1287,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 1
     },
     {
@@ -825,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 0
     },
     {
@@ -836,9 +1309,20 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 0
+    },
+    {
+      "id": "regulatory-news",
+      "name": "Cobertura de autoridades EC",
+      "category": "regulacion",
+      "kind": "news",
+      "url": "https://news.google.com/",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "recentCount": 4
     },
     {
       "id": "latamlist",
@@ -847,9 +1331,31 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 5
+    },
+    {
+      "id": "latam-fintech-hub",
+      "name": "Latam Fintech Hub",
+      "category": "latam",
+      "kind": "news",
+      "url": "https://www.latamfintech.co/articles",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "recentCount": 25
+    },
+    {
+      "id": "finextra-latam",
+      "name": "Finextra · LATAM",
+      "category": "latam",
+      "kind": "news",
+      "url": "https://www.finextra.com/",
+      "status": "ok",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
+      "recentCount": 2
     },
     {
       "id": "pymnts",
@@ -858,8 +1364,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 2
     },
     {
@@ -869,8 +1375,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 12
     },
     {
@@ -880,8 +1386,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 11
     },
     {
@@ -891,8 +1397,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T02:37:18.138Z",
-      "lastSuccessAt": "2026-09-30T02:37:18.138Z",
+      "checkedAt": "2026-09-30T02:51:34.306Z",
+      "lastSuccessAt": "2026-09-30T02:51:34.306Z",
       "recentCount": 9
     }
   ]
