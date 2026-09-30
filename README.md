@@ -2,7 +2,7 @@
 
 Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM. Hay cinco canales; cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
 
-**Sitio público:** [andrescge.github.io/news-tv](https://andrescge.github.io/news-tv/). La carcasa de madera y la pantalla CRT están dibujadas con CSS; no se usa ninguna fotografía de terceros.
+**Sitio público:** [andrescge.github.io/news-tv](https://andrescge.github.io/news-tv/). La carcasa de grafito y la pantalla CRT están dibujadas con CSS; no se usa ninguna fotografía de terceros.
 
 ## Uso local
 
@@ -20,6 +20,16 @@ Abre la URL local que muestre `serve`. El sitio es HTML, CSS y JavaScript puro; 
 ## Fuentes y criterios
 
 El recopilador une varios feeds RSS y las páginas públicas de boletines del BCE. Google News sirve para descubrir publicaciones de medios ecuatorianos y dominios institucionales; cada entrada conserva la fuente identificada y el rótulo «Vía Google News». Noticias sin fecha verificable, con fecha futura o con más de 30 días no entran al sitio. Cada canal muestra inicialmente los últimos 7 días; el control de período permite cambiar a 24 horas o 30 días.
+
+| Canal | Qué entra |
+| --- | --- |
+| Ecuador financiero | Boletines del BCE y resultados de Google News atribuidos a Primicias, El Universo, Expreso o Bloomberg Línea. Los medios deben coincidir con términos financieros y contexto ecuatoriano. |
+| Autoridades EC | Boletines de la Junta del BCE; entradas de SEPS, Superintendencia de Bancos y Supercias con términos de supervisión, normativa o sector financiero. |
+| Fintech LATAM | Artículos de LatamList con términos de banca, fintech, pagos, crédito, seguros o cripto. |
+| Pagos globales | Artículos de PYMNTS con términos de pagos, banca o fintech; artículos editoriales de la sección Payments de Finextra. |
+| Cripto | Artículos editoriales de Finextra Blockchain con términos cripto y publicaciones de análisis de Chainalysis. |
+
+Se eliminan entradas duplicadas por enlace o titular/medio, se ordenan por fecha de publicación y se conservan hasta 25 noticias por canal. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno ni resumen inventado.
 
 Los boletines del BCE y SEPS se identifican como publicaciones oficiales. Chainalysis se identifica como análisis empresarial. Los artículos de Finextra se limitan a sus publicaciones editoriales (`newsarticle`) para evitar mezclar comunicados de empresas con noticias. Los extractos se muestran como texto plano y las notas completas se leen en el sitio de origen. El panel Fuentes muestra qué orígenes respondieron y cuáles no tienen novedades.
 

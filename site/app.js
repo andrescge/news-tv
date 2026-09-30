@@ -46,18 +46,23 @@ function renderScreen() {
   $('#screen-date').textContent = date(Date.now()).toUpperCase();
   $('#story-position').textContent = stories.length ? `${String(state.storyIndex + 1).padStart(2, '0')} / ${String(stories.length).padStart(2, '0')}` : '— / —';
   $('#next-story').textContent = stories.length > 1 ? `A CONTINUACIÓN · ${stories[(state.storyIndex + 1) % stories.length].title}` : stories.length ? 'UNA NOTICIA EN ESTE CANAL' : 'ESPERANDO NOVEDADES';
-  $('#previous').disabled = stories.length < 2; $('#next').disabled = stories.length < 2; $('#read-story').disabled = !story;
+  $('#previous').disabled = stories.length < 2; $('#next').disabled = stories.length < 2; $('#read-story').disabled = !story?.excerpt;
   if (story) {
     $('#story-kind').textContent = story.kind === 'official' ? 'PUBLICACIÓN OFICIAL' : story.kind === 'analysis' ? 'ANÁLISIS SECTORIAL' : 'NOTICIA DEL SECTOR';
     $('#story-title').textContent = story.title;
-    $('#story-excerpt').textContent = story.excerpt || 'Este medio no ofrece un extracto. Abre la fuente para leer la publicación.';
+    $('#story-excerpt').hidden = !story.excerpt;
+    $('#story-excerpt').textContent = story.excerpt || '';
     $('#story-meta').textContent = `${story.source} · ${date(story.publishedAt)}${story.via ? ` · ${story.via}` : ''}`;
     const url = safeUrl(story.url); $('#original-link').hidden = !url; $('#original-link').href = url || '#';
+    $('#read-story').hidden = !story.excerpt || !url;
+    $('#original-link').classList.toggle('only-link', !story.excerpt);
     $('#original-link').textContent = story.via ? 'VER EN GOOGLE NEWS ↗' : 'FUENTE ORIGINAL ↗';
   } else {
     $('#story-kind').textContent = state.data ? 'SIN NOVEDADES RECIENTES' : 'CARGANDO SEÑAL';
     $('#story-title').textContent = state.data ? `Sin noticias en ${channel.name}.` : 'Preparando señal…';
+    $('#story-excerpt').hidden = false;
     $('#story-excerpt').textContent = state.data ? `No encontramos publicaciones de este canal en los últimos ${state.days === 1 ? '24 horas' : `${state.days} días`}. Puedes ampliar el período en los controles.` : 'Estamos consultando las fuentes de este canal.';
+    $('#read-story').hidden = true;
     $('#story-meta').textContent = ''; $('#original-link').hidden = true;
   }
   $('#play-state').textContent = state.playing ? 'EN EMISIÓN' : 'PAUSADO';
@@ -91,13 +96,13 @@ function togglePlayback() { state.playing = !state.playing; state.lastFrame = pe
 function updateClock() { $('#clock').textContent = clockFormat.format(new Date()); $('#screen-date').textContent = date(Date.now()).toUpperCase(); }
 
 function showStory() {
-  const story = currentStory(); if (!story) return;
+  const story = currentStory(); if (!story?.excerpt) return;
   const url = safeUrl(story.url); if (!url) return;
   state.dialogFocus = document.activeElement;
   $('#dialog-category').textContent = currentChannel().label;
   $('#dialog-title').textContent = story.title;
   $('#dialog-meta').textContent = `${story.source} · ${date(story.publishedAt, true)} · ${story.kind === 'official' ? 'Publicación oficial' : story.kind === 'analysis' ? 'Análisis sectorial' : 'Noticia'} · ${story.language === 'en' ? 'Inglés' : 'Español'}`;
-  $('#dialog-excerpt').textContent = story.excerpt || 'No hay un extracto disponible. Puedes leer la publicación en la fuente original.';
+  $('#dialog-excerpt').textContent = story.excerpt;
   $('#dialog-link').href = url; $('#dialog-link').textContent = story.via ? 'ABRIR VÍA GOOGLE NEWS ↗' : 'LEER EN LA FUENTE ↗'; $('#dialog-via').textContent = story.via || '';
   $('#story-dialog').showModal(); $('#close-story').focus();
 }
