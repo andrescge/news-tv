@@ -16,6 +16,8 @@ export const SOURCES = [
   { id: 'regulatory-news', name: 'Cobertura de autoridades EC', category: 'regulacion', kind: 'news', adapter: 'google', url: googleSearch('(SEPS OR "Superintendencia de Bancos" OR "Junta de Política" OR "Supercias") (Ecuador OR ecuatoriana)'), site: 'https://news.google.com/', allowHosts: ['primicias.ec', 'eluniverso.com', 'expreso.ec', 'elcomercio.com', 'ecuavisa.com', 'vistazo.com'], language: 'es' },
   { id: 'latamlist', name: 'LatamList', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://latamlist.com/feed/', site: 'https://latamlist.com/', language: 'en' },
   { id: 'latam-fintech-hub', name: 'Latam Fintech Hub', category: 'latam', kind: 'news', adapter: 'google', url: googleSearch('site:latamfintech.co/articles/'), site: 'https://www.latamfintech.co/articles', allowHosts: ['latamfintech.co'], language: 'es' },
+  { id: 'iupana', name: 'iupana', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://iupana.com/feed/', site: 'https://iupana.com/', language: 'es' },
+  { id: 'latam-bloomberg', name: 'Bloomberg Línea · fintech', category: 'latam', kind: 'news', adapter: 'google', url: googleSearch('site:bloomberglinea.com (fintech OR neobanco OR billetera digital OR pagos) (Colombia OR México OR Argentina OR Brasil OR Perú)'), site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], language: 'es' },
   { id: 'finextra-latam', name: 'Finextra · LATAM', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=retail', site: 'https://www.finextra.com/', language: 'en' },
   { id: 'pymnts', name: 'PYMNTS', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.pymnts.com/feed/', site: 'https://www.pymnts.com/', language: 'en' },
   { id: 'finextra-payments', name: 'Finextra · Payments', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=payments', site: 'https://www.finextra.com/', language: 'en' },
@@ -36,7 +38,7 @@ async function fetchSource(source) {
     if (!source.allowHosts) return true;
     try { const host = new URL(row.sourceUrl).hostname.toLowerCase(); return source.allowHosts.some(allowed => host === allowed || host.endsWith(`.${allowed}`)); }
     catch { return false; }
-  }).map(row => normalize(row, source)).filter(Boolean).filter(row => relevant(row, source)).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, 25);
+  }).map(row => normalize(row, source)).filter(Boolean).filter(row => relevant(row, source)).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, source.category === 'latam' ? 8 : 25);
 }
 
 async function run() {

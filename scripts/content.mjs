@@ -109,6 +109,8 @@ export function relevant(story, source) {
   if (source.id === 'bce-publicaciones') return /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reserva internacional|captaciones|colocaciones|volumen de cr[eé]dito/i.test(story.title);
   if (source.id === 'regulatory-news') return /superintendencia de bancos|supercias|\bseps\b|junta de pol[ií]tica|banco central|\bbce\b|entidades financieras? no autorizad|cr[eé]ditos? falsos|financieras? fantasma/i.test(story.title);
   if (source.id === 'latam-fintech-hub') return /fintech|paytech|neobanc|banc|pago|stablecoin|cr[eé]dito|financ|insurtech|segur|remes|billetera|wallet/i.test(story.title) && !/\b(evento|webinar|congreso|conferencia|emms)\b|latam fintech market/i.test(story.title);
+  if (source.id === 'iupana') return /fintech|open finance|stablecoin|neobanc|banc|revolut|mercado pago|pago|fraude|sofi|financ/i.test(story.title) && !/\b(evento|forum|foro|agenda|speakers|webinar|congreso)\b/i.test(story.title);
+  if (source.id === 'latam-bloomberg') return /fintech|neobanc|billetera|pagos|mercado pago|revolut|nubank|modo|licencia bancaria|banco digital|transferencia|remesa/i.test(story.title);
   if (source.id === 'finextra-latam') return new URL(story.url).pathname.startsWith('/newsarticle/') && /latin america|latam|brazil|brasil|mexic|colombi|argentin|chile|peru|uruguay|jeeves|nubank|mercado pago|ual[aá]|bradesco|global66/i.test(text);
   if (source.id === 'finextra-payments' || source.id === 'finextra-crypto') {
     if (!new URL(story.url).pathname.startsWith('/newsarticle/')) return false;

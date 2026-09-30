@@ -58,5 +58,9 @@ test('las categorías temáticas filtran artículos ajenos al sector', () => {
   assert.equal(relevant({ title: 'Jeeves raises $110m', excerpt: '', url: 'https://www.finextra.com/newsarticle/48498/jeeves' }, { id: 'finextra-latam' }), true);
   assert.equal(relevant({ title: 'London bank launches product', excerpt: '', url: 'https://www.finextra.com/newsarticle/123/test' }, { id: 'finextra-latam' }), false);
   assert.equal(relevant({ title: 'Growth en Fintech: webinar', excerpt: '' }, { id: 'latam-fintech-hub' }), false);
+  assert.equal(relevant({ title: 'Fintechs en Perú piden un ecosistema financiero abierto', excerpt: '' }, { id: 'iupana' }), true);
+  assert.equal(relevant({ title: 'Fintech Forum 2026 revela su agenda', excerpt: '' }, { id: 'iupana' }), false);
+  assert.equal(relevant({ title: 'Mercado Pago y Revolut obtendrán licencia bancaria en Argentina', excerpt: '' }, { id: 'latam-bloomberg' }), true);
+  assert.equal(relevant({ title: 'Cotización Banco Macro SA', excerpt: '' }, { id: 'latam-bloomberg' }), false);
   assert.equal(relevant({ title: 'Superintendencia de Bancos advierte sobre entidades no autorizadas', excerpt: '' }, { id: 'regulatory-news' }), true);
 });
