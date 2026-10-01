@@ -1,62 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T13:15:17.914Z",
+  "generatedAt": "2026-10-01T18:55:11.835Z",
   "stories": [
     {
-      "id": "9c1ffd556a092475d5e8",
+      "id": "4e21e20afa3d037cf875",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "BofA’s Merrill Lynch Settling Cash Sweep Suit for $39 Million",
-      "excerpt": "Merrill Lynch has reportedly agreed to settle a lawsuit accusing it of underpaying brokerage customers. The Bank of America-owned brokerage will pay $39 million in the settlement, Reuters reported Wednesday (Sept. 30), citing court documents. The class action suit accused Merrill",
-      "url": "https://www.pymnts.com/legal/2026/bofas-merrill-lynch-settling-cash-sweep-suit-for-39-million/",
+      "title": "Amazon and Walmart Race to Become Merchants’ Operating System",
+      "excerpt": "The retail landscape used to have four primary levers: share of shoppers, share of sellers, share of advertising dollars and share of wallet. However, artificial intelligence (AI) is creating the fifth and sixth levers: share of decision-making and share of intent infrastructure.",
+      "url": "https://www.pymnts.com/news/retail/2026/amazon-and-walmart-race-to-become-merchants-operating-system/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-01T13:02:34.000Z"
+      "publishedAt": "2026-10-01T18:23:02.000Z"
     },
     {
-      "id": "9ed5b63b12e66b51adb1",
+      "id": "c8b44b1cc1ec71555ecb",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Nubank Says It Has No Plans to Acquire Monzo",
-      "excerpt": "Nubank thinks highly of fellow digital bank Monzo but doesn’t want to buy it. The Brazilian lender made that pronouncement Wednesday (Sept. 30) in a securities filing, prompted by recent news reports that it was interested in acquiring the U.K.-based Monzo. “As a matter of genera",
-      "url": "https://www.pymnts.com/news/acquiring/2026/nubank-says-it-has-no-plans-to-acquire-monzo/",
+      "title": "Fifth Third Debuts Innovation Banking for Startups and Growth Companies",
+      "excerpt": "Fifth Third Bank has introduced a new offering aimed at startups and growth companies. Fifth Third Innovation Banking, announced in a news release Thursday (Oct. 1), combines the bank’s Newline embedded banking platform with the tech and life sciences franchise from Comerica, whi",
+      "url": "https://www.pymnts.com/news/banking/2026/fifth-third-debuts-innovation-banking-for-startups-and-growth-companies/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-01T10:47:48.000Z"
+      "publishedAt": "2026-10-01T17:40:10.000Z"
     },
     {
-      "id": "cf5f472b1d46b650e4f5",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "339e8e091b7b9c184fce",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Visa Direct Panel Maps Path to Faster Government Payments",
-      "excerpt": "Watch more: Government Disbursements Need to Move at the Speed of Need For a household waiting on food assistance or disaster relief, a payment that is somewhere between the government and a bank account isn’t money that can buy groceries or pay for a hotel room. The gap between ",
-      "url": "https://www.pymnts.com/disbursements/2026/visa-direct-panel-maps-path-faster-government-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T08:02:23.000Z"
+      "title": "Fintech colombiana Platam suma inversión de B Venture Capital para ampliar el acceso a capital de trabajo para mipymes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSFR4R18tQmtUeWd6Q3lFZ1NtTUJaRFdXVlc3a01yMFFudkFxZDVSeVY3d0pka0d4TXF6NFNxbGhhQjV3eTM1SDFBMUZvXzVCcVlsNEhEVUxXbHFrZnhaSGNmRGRQZUlzajlQWHg5aWZwM0UxdW1tMFdOdXpERzBqQmg0bzdmMGs1Vi1RYVpWWmFzVURMNmRzdktLUU9vUGI3SWJfNWptMnNRdF9ZUEo1OEZfeDl3dXRHcUNqNGl6MWdDR2s2ci1Wd3JySzRKN0dkbFNHcjMxQVJlbHVyZ2JLOEYtZEw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-01T17:07:49.000Z"
     },
     {
-      "id": "815035b005c4476b4de6",
+      "id": "4d57d253e91eb6fabe08",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "FIS Sees Smarter Payments Powering AI Agents",
-      "excerpt": "Watch more: What’s Next in Payments With Mike Magennis of FIS Fall brings football, starting lineups and plenty of arguments over who deserves the first pick. Mike Magennis, senior director of Strategy, Networks at FIS, said he already knows what he would take first in a payments",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/fis-sees-smarter-payments-powering-ai-agents/",
+      "title": "FinTechs Go Global One Local Payment System at a Time",
+      "excerpt": "Digital platforms spread technology and product development across millions of customers, a model that makes adding another market attractive. However, international expansion brings more local infrastructure with it: licenses, regulated entities, bank relationships and connectio",
+      "url": "https://www.pymnts.com/digital-payments/2026/fintechs-go-global-one-local-payment-system-at-a-time/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-01T08:00:08.000Z"
+      "publishedAt": "2026-10-01T15:55:19.000Z"
+    },
+    {
+      "id": "859ab5145e404385aa29",
+      "sourceId": "finextra-latam",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank rejects Monzo takeover talk",
+      "excerpt": "Brazilian digital banking giant Nubank has denied that it is pursuing a $10 billion takeover of Britain's Monzo.",
+      "url": "https://www.finextra.com/newsarticle/48520/nubank-rejects-monzo-takeover-talk?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · LATAM",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T15:46:00.000Z"
+    },
+    {
+      "id": "761cae9375a9ec9a2d78",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "European payments groups join forces to take on US giants",
+      "excerpt": "Some of Europe's biggest payments groups - Bancomat, Bizum, Wero, Sibs-MB WAY and Vipps MobilePay - have banded together to create a cross-continent network that can take on Visa and Mastercard.",
+      "url": "https://www.finextra.com/newsarticle/48517/european-payments-groups-join-forces-to-take-on-us-giants?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T14:30:00.000Z"
+    },
+    {
+      "id": "3c12d58b324cc60fad93",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Sibos 2026: Thoughts from experts at Commerzbank, SMBC, and The Clearing House",
+      "excerpt": "At Sibos Miami 2026, Finextra spoke to banking leaders across the industry on what the greatest challenges and opportunities in the global cross-border payments landscape.",
+      "url": "https://www.finextra.com/newsarticle/48516/sibos-2026-thoughts-from-experts-at-commerzbank-smbc-and-the-clearing-house?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T12:00:00.000Z"
     },
     {
       "id": "4c66e459994bbb6a8a2e",
@@ -339,20 +381,6 @@
       "publishedAt": "2026-09-29T19:25:43.000Z"
     },
     {
-      "id": "81e0f104e36a0f0a5ac4",
-      "sourceId": "finextra-latam",
-      "category": "latam",
-      "kind": "news",
-      "title": "Jeeves raises $110m for stablecoin banking platform",
-      "excerpt": "Corporate card and expense management platform Jeeves has raised $110 million to scale its stablecoin-native banking platform for global enterprises.",
-      "url": "https://www.finextra.com/newsarticle/48498/jeeves-raises-110m-for-stablecoin-banking-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · LATAM",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T18:26:00.000Z"
-    },
-    {
       "id": "a1a62cec52c442721da8",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -493,20 +521,6 @@
       "publishedAt": "2026-09-29T09:00:00.000Z"
     },
     {
-      "id": "73ec8caaf9ceef8be21e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Brite Payments brings international Pay-by-Bank network to the UK",
-      "excerpt": "Swedish Pay-by-Bank network Brite Payments is launching in the UK after securing an Electronic Money Institution (EMI) licence from the Financial Conduct Authority (FCA)",
-      "url": "https://www.finextra.com/newsarticle/48489/brite-payments-brings-international-pay-by-bank-network-to-the-uk?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T09:00:00.000Z"
-    },
-    {
       "id": "0bf8dc8757c01050c196",
       "sourceId": "regulatory-news",
       "category": "regulacion",
@@ -521,20 +535,6 @@
       "publishedAt": "2026-09-29T02:50:00.000Z"
     },
     {
-      "id": "586f907e4c59c096bb1c",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "ECB invites expressions of interest for digital euro innovation workstreams",
-      "excerpt": "The European Central Bank is inviting private companies and organisations to join the digital euro innovation platform to collaborate on experiments with new value-added services and explore future technological developments.",
-      "url": "https://www.finextra.com/newsarticle/48490/ecb-invites-expressions-of-interest-for-digital-euro-innovation-workstreams?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T00:01:00.000Z"
-    },
-    {
       "id": "2790f4057be577588952",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -547,20 +547,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-28T19:55:24.000Z"
-    },
-    {
-      "id": "f8d07e9cd2bc3a643097",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Addi, Fintech colombiana de BNPL, hace alianza con dLocal para expandir su servicio de pagos a comercios internacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNcTRUcTR4YjFQNjUwcTlkUUx1RmNueXZmUVByNzhKSWFyZG84a0tVX3gwenZuZnViUGpNVDRnOXFMc0NHY2w5MzlYNXI3OGp3U1JhWWhnam03RjhiM3l3NmJacTJISHhDNmc4NGp0dGhrbW52N3FacUNMM0ZhUVpuWFg3XzZXOGtCYms3azNlZFlldDV5UzJvaGJrSWZINy0xWTE1NkdRVjdLOEEwMmlubnpsbi00Zy1iZEotLU1PM1IyNVVBS0NHdjhYYVA0RGJid3RkYTlfQ3ZxWWtNLVNtYmhYZzhMVWI0U084?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-28T18:04:25.000Z"
     },
     {
       "id": "7ed8070dc2d5ae1840a2",
@@ -1088,7 +1074,7 @@
       "title": "Secretaría de Integridad, UAFE, SRI y Superintendencia de Bancos firman acuerdo con la OEA para detectar riesgos de corrupción y lavado de activos",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRdIBjwJBVV95cUxQcHh4ZjQzX0NQY1BYNW5TbklPeWhBN19mSUhkdzFsaVRaWTBzQnphU3FfaE5uWlZjamh5a1ByMk9rdFk5Q25HMGw4MEFVLUFOSDd5QUVCUFI4bU1fOVFwdW56dk9aMDNSSndHM2h4TGFKdm9LVGxvNnRZVTVvamFxa2Vjd29FUTJzcGdLMkNEbnl1SHAyamR1LWdJc2F3V0tseXkxTFdyQ2d1cktVMGw5eDJWRVZJT2NQZ3RDOTVyYmJqOXBEaElObEFic21fVjFvZW45bTVoYXBUak9KY01OUm4xMERPQTdKT1NidDBUNUhEM0g0OEU4bzBsQzlHdzh3cE1vc0M3aGJYbm96VWxv?oc=5",
-      "source": "El Universo",
+      "source": "eluniverso.com",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1243,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 8
     },
     {
@@ -1254,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 8
     },
     {
@@ -1276,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 1
     },
     {
@@ -1298,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 3
     },
     {
@@ -1331,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 5
     },
     {
@@ -1342,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 8
     },
     {
@@ -1364,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 8
     },
     {
@@ -1375,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 1
     },
     {
@@ -1386,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1397,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 11
     },
     {
@@ -1419,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T13:15:17.914Z",
-      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "checkedAt": "2026-10-01T18:55:11.835Z",
+      "lastSuccessAt": "2026-10-01T18:55:11.835Z",
       "recentCount": 10
     }
   ]
