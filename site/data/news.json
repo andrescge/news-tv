@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T05:54:11.591Z",
+  "generatedAt": "2026-10-01T13:15:17.914Z",
   "stories": [
+    {
+      "id": "9c1ffd556a092475d5e8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "BofA’s Merrill Lynch Settling Cash Sweep Suit for $39 Million",
+      "excerpt": "Merrill Lynch has reportedly agreed to settle a lawsuit accusing it of underpaying brokerage customers. The Bank of America-owned brokerage will pay $39 million in the settlement, Reuters reported Wednesday (Sept. 30), citing court documents. The class action suit accused Merrill",
+      "url": "https://www.pymnts.com/legal/2026/bofas-merrill-lynch-settling-cash-sweep-suit-for-39-million/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T13:02:34.000Z"
+    },
+    {
+      "id": "9ed5b63b12e66b51adb1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Nubank Says It Has No Plans to Acquire Monzo",
+      "excerpt": "Nubank thinks highly of fellow digital bank Monzo but doesn’t want to buy it. The Brazilian lender made that pronouncement Wednesday (Sept. 30) in a securities filing, prompted by recent news reports that it was interested in acquiring the U.K.-based Monzo. “As a matter of genera",
+      "url": "https://www.pymnts.com/news/acquiring/2026/nubank-says-it-has-no-plans-to-acquire-monzo/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T10:47:48.000Z"
+    },
+    {
+      "id": "cf5f472b1d46b650e4f5",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa Direct Panel Maps Path to Faster Government Payments",
+      "excerpt": "Watch more: Government Disbursements Need to Move at the Speed of Need For a household waiting on food assistance or disaster relief, a payment that is somewhere between the government and a bank account isn’t money that can buy groceries or pay for a hotel room. The gap between ",
+      "url": "https://www.pymnts.com/disbursements/2026/visa-direct-panel-maps-path-faster-government-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T08:02:23.000Z"
+    },
+    {
+      "id": "815035b005c4476b4de6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "FIS Sees Smarter Payments Powering AI Agents",
+      "excerpt": "Watch more: What’s Next in Payments With Mike Magennis of FIS Fall brings football, starting lineups and plenty of arguments over who deserves the first pick. Mike Magennis, senior director of Strategy, Networks at FIS, said he already knows what he would take first in a payments",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/fis-sees-smarter-payments-powering-ai-agents/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T08:00:08.000Z"
+    },
     {
       "id": "4c66e459994bbb6a8a2e",
       "sourceId": "finextra-payments",
@@ -45,20 +101,6 @@
       "publishedAt": "2026-10-01T00:01:00.000Z"
     },
     {
-      "id": "14cc5a1de1290347769e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Why the Fed Thinks B2B Payments Are Already Built for Agentic",
-      "excerpt": "The biggest obstacle to agentic payments isn’t teaching artificial intelligence how to buy something. It’s giving software permission to spend money without giving it permission to make expensive mistakes. Corporate procurement may already have the answer. Federal Reserve Governo",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/why-the-fed-thinks-b2b-payments-are-already-built-for-agentic/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T22:46:05.000Z"
-    },
-    {
       "id": "789fbdb64c6ebc9b37a6",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -87,20 +129,6 @@
       "publishedAt": "2026-09-30T20:31:29.000Z"
     },
     {
-      "id": "d2f668c90ea8b31c5b77",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "How Mastercard, Stripe, Visa and Coinbase’s New Stablecoin Is Changing the Industry’s Economics",
-      "excerpt": "The first stablecoin race was straightforward. Accumulate supply. Customers exchanged dollars for tokens, the issuer invested the corresponding reserves primarily in highly liquid assets, and the interest generated on those reserves became revenue. Scale the circulating supply in",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/how-mastercard-stripe-visa-and-coinbases-new-stablecoin-is-changing-the-industrys-economics/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T20:23:54.000Z"
-    },
-    {
       "id": "f094c90c5c5c74bb668d",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -113,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-30T20:08:34.000Z"
-    },
-    {
-      "id": "e5017f387f8052879370",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Lloyds and Visa Speed Up Cross-Border Payments With Stablecoin Settlement",
-      "excerpt": "Lloyds Banking Group and Visa completed a seven-day live pilot that tested cross-border settlement using stablecoins, Lloyds said in a Wednesday (Sept. 30) press release. During the pilot, through a series of real-world transactions, Lloyds used stablecoins to settle $750,000 of ",
-      "url": "https://www.pymnts.com/blockchain/2026/lloyds-and-visa-speed-up-cross-border-payments-with-stablecoin-settlement/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T20:00:56.000Z"
     },
     {
       "id": "bc7fa4d65f220d93c11d",
@@ -309,20 +323,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-29T23:15:30.000Z"
-    },
-    {
-      "id": "40b73da8dd3f69f2491c",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "Ecuavisa",
-      "sourceUrl": "https://www.ecuavisa.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T22:04:48.000Z"
     },
     {
       "id": "1a41f65d8b8bd3b3fd11",
@@ -514,7 +514,7 @@
       "title": "Qué no hacer para evitar las estafas de entidades financieras fantasmas en Ecuador",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEc5cGdRclR3eFk0TFNRM3ZvczVPdnViX0tEQlhXcWphTW93aEVMNzRVa05od2ZkblUtUEo3UE9RbVJjYVNuYTBpVUpzQTFwNnlFdlhIVjkxdlpxSzBDSUV6Wjk5ZGl2QXlkWERuUGl0TzNnNl8yLW5iU1JwdnR1MHc5MHFqSThVRnhSaUpzRzY1aHdXeDlyLUxkUG5vc1JlaTcyaGh1S1EteUVhTGZPOURtZlFhemVoWmQyeA?oc=5",
-      "source": "elcomercio.com",
+      "source": "El Comercio",
       "sourceUrl": "https://www.elcomercio.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1233,20 +1233,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-02T15:43:57.000Z"
-    },
-    {
-      "id": "dbc636547d91df6de059",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 28 de Agosto 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_943_28082026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-01T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1257,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 8
     },
     {
@@ -1268,8 +1254,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 0
     },
     {
@@ -1279,9 +1265,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "recentCount": 8
     },
     {
       "id": "bce-boletines",
@@ -1290,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 6
     },
     {
@@ -1301,8 +1287,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 1
     },
     {
@@ -1312,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 0
     },
     {
@@ -1323,8 +1309,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 0
     },
     {
@@ -1334,9 +1320,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "recentCount": 3
     },
     {
       "id": "latamlist",
@@ -1345,8 +1331,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 5
     },
     {
@@ -1356,8 +1342,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 8
     },
     {
@@ -1367,8 +1353,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 8
     },
     {
@@ -1378,8 +1364,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 8
     },
     {
@@ -1389,8 +1375,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 1
     },
     {
@@ -1400,9 +1386,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1411,8 +1397,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 12
     },
     {
@@ -1422,8 +1408,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 11
     },
     {
@@ -1433,8 +1419,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T05:54:11.591Z",
-      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "checkedAt": "2026-10-01T13:15:17.914Z",
+      "lastSuccessAt": "2026-10-01T13:15:17.914Z",
       "recentCount": 10
     }
   ]
