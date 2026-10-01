@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-30T23:49:52.881Z",
+  "generatedAt": "2026-10-01T05:54:11.591Z",
   "stories": [
+    {
+      "id": "4c66e459994bbb6a8a2e",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Citi launches multi-market instant payments on Swift scheme",
+      "excerpt": "Citi has gone live with multiple markets on the Swift payments scheme, enabling bank clients to access multiple cross-border instant payment markets through a single account structure.",
+      "url": "https://www.finextra.com/newsarticle/48508/citi-launches-multi-market-instant-payments-on-swift-scheme?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T00:01:00.000Z"
+    },
+    {
+      "id": "31fb68104b3525037db6",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Zilch eyes 2027 London IPO",
+      "excerpt": "Zilch is in talks with banks as it prepares to go public, with the UK-based buy now, pay later provider reportedly leaning towards a London listing.",
+      "url": "https://www.finextra.com/newsarticle/48511/zilch-eyes-2027-london-ipo?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T00:01:00.000Z"
+    },
+    {
+      "id": "40d7460eef84bb013275",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Apple Pay arrives in India",
+      "excerpt": "Apple Pay is finally launching in India, entering a huge but competitive market via a partnership with Axis Bank.",
+      "url": "https://www.finextra.com/newsarticle/48512/apple-pay-arrives-in-india?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T00:01:00.000Z"
+    },
     {
       "id": "14cc5a1de1290347769e",
       "sourceId": "pymnts",
@@ -17,13 +59,13 @@
       "publishedAt": "2026-09-30T22:46:05.000Z"
     },
     {
-      "id": "10978202a7f9de8b9249",
+      "id": "789fbdb64c6ebc9b37a6",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
       "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
@@ -85,34 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-30T20:00:56.000Z"
-    },
-    {
-      "id": "8863a8749dd1b9855330",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Payment Giants Launch Open USD Stablecoin to Kill Conversion Fees",
-      "excerpt": "The Open USD (OUSD) stablecoin is live, OUSD creator Open Standard said in a Wednesday (Sept. 30) blog post. Businesses can get started with OUSD through four integration paths, including Stripe, Coinbase, Mastercardand Visa, according to the post. “Each integration path offers A",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/payment-giants-launch-open-usd-stablecoin-to-kill-conversion-fees/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T19:50:00.000Z"
-    },
-    {
-      "id": "b8471b3c37519cfc280a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Connected Cars Could Steer the Next Shopping Decision",
-      "excerpt": "A Waymo ride and a public transit fare are separate transactions. A new rewards program shows what can happen when the payment credential connects them. Waymo launched a transit rewards program Sept. 22 that lets San Francisco Bay Area riders link a Visa card to the Waymo app. Wh",
-      "url": "https://www.pymnts.com/connectedeconomy/2026/connected-cars-could-steer-next-shopping-decision/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T19:35:47.000Z"
     },
     {
       "id": "bc7fa4d65f220d93c11d",
@@ -295,6 +309,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-29T23:15:30.000Z"
+    },
+    {
+      "id": "40b73da8dd3f69f2491c",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
+      "source": "Ecuavisa",
+      "sourceUrl": "https://www.ecuavisa.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T22:04:48.000Z"
     },
     {
       "id": "1a41f65d8b8bd3b3fd11",
@@ -1060,7 +1088,7 @@
       "title": "Secretaría de Integridad, UAFE, SRI y Superintendencia de Bancos firman acuerdo con la OEA para detectar riesgos de corrupción y lavado de activos",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRdIBjwJBVV95cUxQcHh4ZjQzX0NQY1BYNW5TbklPeWhBN19mSUhkdzFsaVRaWTBzQnphU3FfaE5uWlZjamh5a1ByMk9rdFk5Q25HMGw4MEFVLUFOSDd5QUVCUFI4bU1fOVFwdW56dk9aMDNSSndHM2h4TGFKdm9LVGxvNnRZVTVvamFxa2Vjd29FUTJzcGdLMkNEbnl1SHAyamR1LWdJc2F3V0tseXkxTFdyQ2d1cktVMGw5eDJWRVZJT2NQZ3RDOTVyYmJqOXBEaElObEFic21fVjFvZW45bTVoYXBUak9KY01OUm4xMERPQTdKT1NidDBUNUhEM0g0OEU4bzBsQzlHdzh3cE1vc0M3aGJYbm96VWxv?oc=5",
-      "source": "eluniverso.com",
+      "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1229,8 +1257,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 8
     },
     {
@@ -1240,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 9
     },
     {
@@ -1262,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 6
     },
     {
@@ -1273,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 1
     },
     {
@@ -1284,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 0
     },
     {
@@ -1306,9 +1334,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "recentCount": 4
     },
     {
       "id": "latamlist",
@@ -1317,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 5
     },
     {
@@ -1328,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 1
     },
     {
@@ -1372,9 +1400,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1383,9 +1411,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
+      "recentCount": 12
     },
     {
       "id": "finextra-crypto",
@@ -1394,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 11
     },
     {
@@ -1405,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-09-30T23:49:52.881Z",
-      "lastSuccessAt": "2026-09-30T23:49:52.881Z",
+      "checkedAt": "2026-10-01T05:54:11.591Z",
+      "lastSuccessAt": "2026-10-01T05:54:11.591Z",
       "recentCount": 10
     }
   ]
