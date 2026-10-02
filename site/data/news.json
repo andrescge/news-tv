@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-01T23:12:49.742Z",
+  "generatedAt": "2026-10-02T02:16:35.067Z",
   "stories": [
+    {
+      "id": "c3bad6bae87015c2b6b2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fiserv Digital Asset Platform Goes Live With Bank of North Dakota Stablecoin",
+      "excerpt": "Fiserv’s digital asset platform is now live with financial institution clients, the global provider of payments and financial services said in a Thursday (Oct. 1) press release. The platform’s first live use case Bank of North Dakota’s Roughrider Coin, a dollar-backed stablecoin ",
+      "url": "https://www.pymnts.com/blockchain/2026/fiserv-digital-asset-platform-goes-live-with-bank-of-north-dakota-stablecoin/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T01:03:44.000Z"
+    },
+    {
+      "id": "c751d8f5a2e3d77bc942",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "BMO Becomes First Canadian Issuer to Deploy Mastercard Embedded Commercial Payments",
+      "excerpt": "BMO and Mastercard have launched a new embedded commercial payments capability that can be integrated into participating enterprise software platforms in Canada and the United States, BMO said in a Thursday (Oct. 1) press release. When this capability is enabled in a platform, BM",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/bmo-becomes-first-canadian-issuer-to-deploy-mastercard-embedded-commercial-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T00:27:27.000Z"
+    },
+    {
+      "id": "f191717eaa0c064a8843",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "The Alphabet Soup of Agentic Standards: A Vocab Playbook for Merchants and PSPs",
+      "excerpt": "The biggest mistake merchants could make in agentic commerce may be waiting for one protocol to win. There probably won’t be one. The emerging infrastructure for artificial intelligence (AI)-driven shopping is beginning to look less like the early browser wars and more like the i",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/the-alphabet-soup-of-agentic-standards-a-vocab-playbook-for-merchants-and-psps/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-01T23:23:58.000Z"
+    },
     {
       "id": "1202564625619d4f1cb5",
       "sourceId": "chainalysis",
@@ -45,20 +87,6 @@
       "publishedAt": "2026-10-01T21:02:55.000Z"
     },
     {
-      "id": "e804b5b366c09f9199d3",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "DoorDash Slides Into Your DMs With Dinner",
-      "excerpt": "DoorDash customers can now order dinner by sending a text. The company’s new artificial intelligence (AI) agent works inside Apple’s Messages, builds the cart and handles checkout without the DoorDash app ever opening. DoorDash unveiled the text-to-order agent on Wednesday (Sept.",
-      "url": "https://www.pymnts.com/news/delivery/2026/doordash-slides-into-your-dms-with-dinner/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T19:40:53.000Z"
-    },
-    {
       "id": "fa6608fa0064108a6404",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -99,20 +127,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-01T18:39:43.000Z"
-    },
-    {
-      "id": "4e21e20afa3d037cf875",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Amazon and Walmart Race to Become Merchants’ Operating System",
-      "excerpt": "The retail landscape used to have four primary levers: share of shoppers, share of sellers, share of advertising dollars and share of wallet. However, artificial intelligence (AI) is creating the fifth and sixth levers: share of decision-making and share of intent infrastructure.",
-      "url": "https://www.pymnts.com/news/retail/2026/amazon-and-walmart-race-to-become-merchants-operating-system/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T18:23:02.000Z"
     },
     {
       "id": "339e8e091b7b9c184fce",
@@ -458,7 +472,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "Ecuavisa",
+      "source": "ecuavisa.com",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -598,7 +612,7 @@
       "title": "Qué no hacer para evitar las estafas de entidades financieras fantasmas en Ecuador",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEc5cGdRclR3eFk0TFNRM3ZvczVPdnViX0tEQlhXcWphTW93aEVMNzRVa05od2ZkblUtUEo3UE9RbVJjYVNuYTBpVUpzQTFwNnlFdlhIVjkxdlpxSzBDSUV6Wjk5ZGl2QXlkWERuUGl0TzNnNl8yLW5iU1JwdnR1MHc5MHFqSThVRnhSaUpzRzY1aHdXeDlyLUxkUG5vc1JlaTcyaGh1S1EteUVhTGZPOURtZlFhemVoWmQyeA?oc=5",
-      "source": "El Comercio",
+      "source": "elcomercio.com",
       "sourceUrl": "https://www.elcomercio.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1257,8 +1271,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 8
     },
     {
@@ -1268,8 +1282,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 0
     },
     {
@@ -1279,8 +1293,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 8
     },
     {
@@ -1290,8 +1304,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 6
     },
     {
@@ -1301,8 +1315,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 1
     },
     {
@@ -1312,8 +1326,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 0
     },
     {
@@ -1323,8 +1337,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 0
     },
     {
@@ -1334,8 +1348,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 4
     },
     {
@@ -1345,8 +1359,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 5
     },
     {
@@ -1356,8 +1370,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 8
     },
     {
@@ -1367,8 +1381,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 8
     },
     {
@@ -1378,8 +1392,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 8
     },
     {
@@ -1389,8 +1403,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 1
     },
     {
@@ -1400,9 +1414,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1411,8 +1425,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 12
     },
     {
@@ -1422,8 +1436,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 11
     },
     {
@@ -1433,8 +1447,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-01T23:12:49.742Z",
-      "lastSuccessAt": "2026-10-01T23:12:49.742Z",
+      "checkedAt": "2026-10-02T02:16:35.067Z",
+      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
       "recentCount": 10
     }
   ]
