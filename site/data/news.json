@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T15:49:36.486Z",
+  "generatedAt": "2026-10-02T20:45:22.129Z",
   "stories": [
+    {
+      "id": "d0f29181818b11b3aa62",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Stablecoins Hand Manufacturers a Working Capital Windfall, if CFOs Move",
+      "excerpt": "Stablecoins are technically capable of eliminating one of global manufacturing’s oldest financial inefficiencies. The simple, persistent, and compounding friction of money that spends too much time traveling. But turning a three-day supplier payment into a three-minute one expose",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/stablecoins-hand-manufacturers-a-working-capital-windfall-if-cfos-move/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T20:25:05.000Z"
+    },
+    {
+      "id": "979e04fac58a5719e4de",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Bank AI Job Postings Jump 49% as Agents Go to Work",
+      "excerpt": "Wall Street banks are accelerating artificial intelligence hiring as they shift from chatbots to AI agents. Hiring is expanding beyond model builders to engineers who put agents to work across trading desks, compliance units and back-office operations. AI-related job postings at ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bank-ai-job-postings-jump-49percent-agents-go-work/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T19:20:24.000Z"
+    },
+    {
+      "id": "fe62f0a561a2ecbd4fdf",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC Grants Clean Bill of Health to 13 Banks in Latest Community Lending Audit",
+      "excerpt": "The Office of the Comptroller of the Currency rated three banks “outstanding” and 10 “satisfactory” in its latest list of banks examined for Community Reinvestment Act (CRA) compliance, the OCC said in a Thursday (Oct. 1) press release. Among the OCC’s performance evaluations tha",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-grants-clean-bill-health-13-banks-latest-community-lending-audit/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T17:06:21.000Z"
+    },
+    {
+      "id": "4a11ac1201e4d72e98f9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Free Instant Payments Still Need a Revenue Model",
+      "excerpt": "Instant payments may look free to the person tapping “send,” but somebody must pay to keep the money moving around the clock. News surrounding India’s instant payments framework shows some of the economics underpinning faster funds. Beginning Oct. 15, a 0.4% merchant discount rat",
+      "url": "https://www.pymnts.com/real-time-payments/2026/free-instant-payments-still-need-revenue-model/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T16:04:41.000Z"
+    },
     {
       "id": "02a1e04bafe6bcabe8b8",
       "sourceId": "finextra-latam",
@@ -43,76 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-02T11:07:00.000Z"
-    },
-    {
-      "id": "68db1d22f6da4bb15adc",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Smart Shopping Agents Still Need Someone to Vouch for Them",
-      "excerpt": "Watch more: What’s Next in Payments With Synchrony’s Mike Storiale Artificial intelligence can already recommend the running shoes. The payments industry still must figure out how to let it buy them. While much of the industry’s attention has focused on AI agents, Mike Storiale, ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/smart-shopping-agents-still-need-someone-to-vouch-for-them/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T08:03:50.000Z"
-    },
-    {
-      "id": "35229c4854adb7c6e1c6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Could End Finance’s Point-and-Click Era",
-      "excerpt": "Watch more: What’s Next in Payments With Billtrust’s Dave Ruda The finance technology playbook was once relatively straightforward. CFOs built out their department tech stacks by putting one piece of software after another between an employee and a cumbersome business process. Fo",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/ai-could-end-finances-point-and-click-era/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T08:01:30.000Z"
-    },
-    {
-      "id": "3d8f886a7f6fbc81a20c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Tighter Budgets Push Grocery Shoppers Online",
-      "excerpt": "Consumers under financial pressure are buying bigger baskets and choosing value-focused merchants, giving retailers an opportunity to help shoppers make each purchase go further. That’s a central finding of “The New Checkout: Crimped Consumers Lean Into Online Retail and Digital ",
-      "url": "https://www.pymnts.com/consumer-insights/2026/tighter-budgets-push-grocery-shoppers-online/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T08:00:44.000Z"
-    },
-    {
-      "id": "c3bad6bae87015c2b6b2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fiserv Digital Asset Platform Goes Live With Bank of North Dakota Stablecoin",
-      "excerpt": "Fiserv’s digital asset platform is now live with financial institution clients, the global provider of payments and financial services said in a Thursday (Oct. 1) press release. The platform’s first live use case Bank of North Dakota’s Roughrider Coin, a dollar-backed stablecoin ",
-      "url": "https://www.pymnts.com/blockchain/2026/fiserv-digital-asset-platform-goes-live-with-bank-of-north-dakota-stablecoin/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T01:03:44.000Z"
-    },
-    {
-      "id": "c751d8f5a2e3d77bc942",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BMO Becomes First Canadian Issuer to Deploy Mastercard Embedded Commercial Payments",
-      "excerpt": "BMO and Mastercard have launched a new embedded commercial payments capability that can be integrated into participating enterprise software platforms in Canada and the United States, BMO said in a Thursday (Oct. 1) press release. When this capability is enabled in a platform, BM",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/bmo-becomes-first-canadian-issuer-to-deploy-mastercard-embedded-commercial-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T00:27:27.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -239,6 +225,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-01T12:00:00.000Z"
+    },
+    {
+      "id": "52aa81b1ee6f613d9c28",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Tap to Pay en iPhone llega a ocho nuevos países de América Latina y amplía el alcance de Geopagos en la región",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZGtrQlBGSS1XWjlLSFp6Qzk1c3gxQng4dk9mOGtSTkxleUZSWkkwRXpRNEsyUnhnT0ZBQ1dyNUlEWW5DSVNVSGQ4VTJrLWdkQ1FITkZrUGc4cjI2dEtSeE9TcDZMSmJpRmw3ZWdIbTBzMDJ3TlhXeTRyNmhydDZ6el9jbGtNb0FNTE9jS09xRFI3eWlZSGp0ZnFWVlJaNXc4T0E4RTFMSkYyZDFucnhfLWMxdksxdklBZmVfYzh1eXozWnoyTDU1VzIzMy1jTVpwVThlN1lJYi1KanVPcWZHRQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-01T07:00:00.000Z"
     },
     {
       "id": "4c66e459994bbb6a8a2e",
@@ -535,20 +535,6 @@
       "publishedAt": "2026-09-29T19:25:43.000Z"
     },
     {
-      "id": "a1a62cec52c442721da8",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Haulmer lanza AndCo, una cuenta digital para pequeñas empresas en Chile",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd04zbEc5NFRKSEp5WC16T2ZZVkprcS15cEhDSVktbDVaWHhad29McldQVmNBWW9fcWdwSk84TDhTcGdYbjQyeTNwODBabVdYU3RMUWFKWGRCVXJ3LUx5aDR2TTlIaTJFV0tEV3pNQmp1OEtjUE9YSExSVV9CVUdiZjZuampYdDJDS1dFVW0tQmdSM3JoaFdqd0xfRm9feDkzSkZ6WTdXWm10NVBKN00wS0h3Z1FEQ2tqOXVTSk54a1RudjRXTExyQUkwTUIxRURRQ0JSMW5tMDNTdU9aeEMzMVN5RUFWcXRwZE5YdVllS21SYXk4WFlPU1djVQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T18:21:09.000Z"
-    },
-    {
       "id": "9ea5208e6dbf62cd34ac",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -682,7 +668,7 @@
       "title": "El Niño amenaza con pérdidas millonarias: ¿Qué coberturas ofrecen los seguros en Ecuador para el campo y las empresas?",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPTy1qMWNWZTZxOW5kOVg4bDh5dG5tXzd6dW8xRmpsS1NyYmpOVFZiaU15QzR1cS1hbFpWSl9uTWJqWnl2ODlHVmlCV053azJKenlTTUlzQWZNVzV6S2pSRjdja2JUdWxnZEZWeGtGWnNhOHM2TmtoeDhoLUVZWlBGbXZlQ1VzUldfcDlGaDJ1QVVKSDZ6ZkZiN2tkTWhNaVVLTVI3X0F6YndVRDlIREtsSGRFbVRBSnFJbUUtNXk5QUdwVWh2ZUFLZjlFUkw0blk?oc=5",
-      "source": "Primicias",
+      "source": "primicias.ec",
       "sourceUrl": "https://www.primicias.ec/",
       "via": "Vía Google News",
       "language": "es",
@@ -710,7 +696,7 @@
       "title": "Ecuador marca un hito en América Latina al registrar una de las tasas más altas de pagos sin contacto",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazFPTXNBeF9qbndkZXNOMmMyeVpwbFJNTFRmaGZpRzJJZEF1Qm5GT0pucnRBY09YZ3dwTk0wSkFWSWI2YlNZSHd5dlc4cloxVnU3bG15VlZ4aWhfaDhmNm5BZm1ONF9WREpOVW9IU0FSbWk4eUZ2WkN0Q1BKeWYwNVc5ZXpCY0NmLXhUODltMjh2VnhpNmpFU0x5XzRGOFQ0NnZSWkJrT1R6Y1k?oc=5",
-      "source": "Primicias",
+      "source": "primicias.ec",
       "sourceUrl": "https://www.primicias.ec/",
       "via": "Vía Google News",
       "language": "es",
@@ -1243,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 7
     },
     {
@@ -1254,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 8
     },
     {
@@ -1276,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 0
     },
     {
@@ -1298,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 4
     },
     {
@@ -1331,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 5
     },
     {
@@ -1342,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 8
     },
     {
@@ -1364,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 8
     },
     {
@@ -1375,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 2
     },
     {
@@ -1386,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1397,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 11
     },
     {
@@ -1419,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T15:49:36.486Z",
-      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "checkedAt": "2026-10-02T20:45:22.129Z",
+      "lastSuccessAt": "2026-10-02T20:45:22.129Z",
       "recentCount": 10
     }
   ]
