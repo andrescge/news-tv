@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T08:37:56.605Z",
+  "generatedAt": "2026-10-02T15:49:36.486Z",
   "stories": [
+    {
+      "id": "02a1e04bafe6bcabe8b8",
+      "sourceId": "finextra-latam",
+      "category": "latam",
+      "kind": "news",
+      "title": "YouTuber raises $15m for Brazil's 'Cash App'",
+      "excerpt": "NG.Cash, the \"Brazilian Cash App\" founded by a former YouTuber, has raised $15 million to back its efforts to bring credit and crypto services to the country's young, unbanked population.",
+      "url": "https://www.finextra.com/newsarticle/48527/youtuber-raises-15m-for-brazils-cash-app?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · LATAM",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T15:15:00.000Z"
+    },
+    {
+      "id": "ede7cbd1f536c6258c78",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "YouTuber raises $15m for Brazil's 'Cash App'",
+      "excerpt": "NG.Cash, the \"Brazilian Cash App\" founded by a former YouTuber, has raised $15 million to back its efforts to bring credit and crypto services to the country's young, unbanked population.",
+      "url": "https://www.finextra.com/newsarticle/48527/youtuber-raises-15m-for-brazils-cash-app?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T15:15:00.000Z"
+    },
+    {
+      "id": "bdc20b7b3b8079730f82",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Lloyds survey reveals 71% of UK FIs believe tokenisation will reshape financial services",
+      "excerpt": "Lloyds' 10th annual Financial Institutions Sentiment Survey, conducted between April and May 2026, showed that 71% of the 100 senior leaders surveyed across UK banks, insurers, financial sponsors and asset and wealth managers, expect tokenisation to transform how money and assets",
+      "url": "https://www.finextra.com/newsarticle/48526/lloyds-survey-reveals-71-of-uk-fis-believe-tokenisation-will-reshape-financial-services?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T11:07:00.000Z"
+    },
     {
       "id": "68db1d22f6da4bb15adc",
       "sourceId": "pymnts",
@@ -71,20 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-02T00:27:27.000Z"
-    },
-    {
-      "id": "f191717eaa0c064a8843",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "The Alphabet Soup of Agentic Standards: A Vocab Playbook for Merchants and PSPs",
-      "excerpt": "The biggest mistake merchants could make in agentic commerce may be waiting for one protocol to win. There probably won’t be one. The emerging infrastructure for artificial intelligence (AI)-driven shopping is beginning to look less like the early browser wars and more like the i",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/the-alphabet-soup-of-agentic-standards-a-vocab-playbook-for-merchants-and-psps/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T23:23:58.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -591,20 +619,6 @@
       "publishedAt": "2026-09-29T11:00:04.000Z"
     },
     {
-      "id": "f53149db56352d6ea214",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Sibos 2026: BofA expands payments capabilities with new intelligence and real-time services",
-      "excerpt": "At Sibos 2026, held in Miami, Bank of America announced numerous updates across its banking services that tap into the opportunities offered by advanced analytics, AI and real-time networks.",
-      "url": "https://www.finextra.com/newsarticle/48483/sibos-2026-bofa-expands-payments-capabilities-with-new-intelligence-and-real-time-services?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T09:00:00.000Z"
-    },
-    {
       "id": "0bf8dc8757c01050c196",
       "sourceId": "regulatory-news",
       "category": "regulacion",
@@ -857,20 +871,6 @@
       "publishedAt": "2026-09-24T00:01:00.000Z"
     },
     {
-      "id": "de74dd90ce0b9de9d137",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "NG.CASH raises $15M from Blockchain Capital",
-      "excerpt": "Brazilian fintech NG.CASH raised $15M led by Blockchain Capital. NG.CASH previously raised a $26.5M Series B in July…",
-      "url": "https://latamlist.com/ng-cash-raises-15m-from-blockchain-capital/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-23T18:24:13.000Z"
-    },
-    {
       "id": "6fd0f021e5e1ed3b9fed",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1025,20 +1025,6 @@
       "publishedAt": "2026-09-16T16:30:45.000Z"
     },
     {
-      "id": "d3e33b0ecb0218cd48a5",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Pacientes renales en Ecuador: dializadora exige un acuerdo de pagos antes del 30 de septiembre",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNanlZWGlKY2Z5a1FNWnFxNFdNSVpxeDlPa1otdFh2dmFZS3V3bUNBcDlwQ2pOdlBXbXJMUE53U3dKTGthMTZMWENlQjB4YnZvZlZYZXhVM0I0U3hKZk9lVnZWRFZ5TFhkZE9mVy1WRFBvT1dFbjBOREZkUThuYkVvX2ZValJvSnVNZjZtYUpWYmxoSkhXMVVIQkliellSRUtDVTZFWnBSYjFZQjdhNWl0V1NxeHlZSUgtdDgyQ2FB?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T15:40:16.000Z"
-    },
-    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1051,6 +1037,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
+    },
+    {
+      "id": "d3e33b0ecb0218cd48a5",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Pacientes renales en Ecuador: dializadora exige un acuerdo de pagos antes del 30 de septiembre",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNanlZWGlKY2Z5a1FNWnFxNFdNSVpxeDlPa1otdFh2dmFZS3V3bUNBcDlwQ2pOdlBXbXJMUE53U3dKTGthMTZMWENlQjB4YnZvZlZYZXhVM0I0U3hKZk9lVnZWRFZ5TFhkZE9mVy1WRFBvT1dFbjBOREZkUThuYkVvX2ZValJvSnVNZjZtYUpWYmxoSkhXMVVIQkliellSRUtDVTZFWnBSYjFZQjdhNWl0V1NxeHlZSUgtdDgyQ2FB?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-16T07:00:00.000Z"
     },
     {
       "id": "a511848bf80bf4e404f8",
@@ -1121,20 +1121,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-11T12:00:00.000Z"
-    },
-    {
-      "id": "664a72c53743c2046cbf",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Coinbase and Moov partner to boost stablecoin payments for community banks ahead of CLARITY vote",
-      "excerpt": "Cryptocurrency platform has partnered with fintech firm Moov to boost stablecoin capabilities for community banks ahead of the US Senate votes on the CLARITY Act.",
-      "url": "https://www.finextra.com/newsarticle/48384/coinbase-and-moov-partner-to-boost-stablecoin-payments-for-community-banks-ahead-of-clarity-vote?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-11T10:34:00.000Z"
     },
     {
       "id": "fcc72cbb7e99dd5d9a5a",
@@ -1247,20 +1233,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-03T07:00:00.000Z"
-    },
-    {
-      "id": "5926daa5ae86ad31f04d",
-      "sourceId": "seps",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Fortalecemos el sector, más de 700 funcionarios de cooperativas de ahorro y crédito y mutualistas fortalecieron sus capacidades en finanzas verdes, cambio climático y gestión de riesgos ambientales y sociales.",
-      "excerpt": "La Superintendencia de Economía Popular y Solidaria avanza en el fortalecimiento de un sector financiero popular y solidario preparado para responder a los nuevos desafíos económicos, ambientales y climáticos del país. En coordinación con el Ministerio del Ambiente y Energía (MAE",
-      "url": "https://www.seps.gob.ec/fortalecemos-el-sector-mas-de-700-funcionarios-de-cooperativas-de-ahorro-y-credito-y-mutualistas-fortalecieron-sus-capacidades-en-finanzas-verdes-cambio-climatico-y-gestion-de-riesgos-ambientales-y/",
-      "source": "SEPS",
-      "sourceUrl": "https://www.seps.gob.ec/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-02T15:43:57.000Z"
     }
   ],
   "sources": [
@@ -1271,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 7
     },
     {
@@ -1282,8 +1254,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 0
     },
     {
@@ -1293,8 +1265,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 8
     },
     {
@@ -1304,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 6
     },
     {
@@ -1315,9 +1287,9 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
-      "recentCount": 1
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "recentCount": 0
     },
     {
       "id": "superbancos",
@@ -1326,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 0
     },
     {
@@ -1337,8 +1309,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 0
     },
     {
@@ -1348,8 +1320,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 4
     },
     {
@@ -1359,8 +1331,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 5
     },
     {
@@ -1370,8 +1342,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 8
     },
     {
@@ -1381,8 +1353,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 8
     },
     {
@@ -1392,8 +1364,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 8
     },
     {
@@ -1403,9 +1375,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
-      "recentCount": 1
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "recentCount": 2
     },
     {
       "id": "pymnts",
@@ -1414,9 +1386,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1425,8 +1397,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 12
     },
     {
@@ -1436,8 +1408,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 11
     },
     {
@@ -1447,8 +1419,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T08:37:56.605Z",
-      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "checkedAt": "2026-10-02T15:49:36.486Z",
+      "lastSuccessAt": "2026-10-02T15:49:36.486Z",
       "recentCount": 10
     }
   ]
