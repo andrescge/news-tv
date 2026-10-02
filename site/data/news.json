@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-02T02:16:35.067Z",
+  "generatedAt": "2026-10-02T08:37:56.605Z",
   "stories": [
+    {
+      "id": "68db1d22f6da4bb15adc",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Smart Shopping Agents Still Need Someone to Vouch for Them",
+      "excerpt": "Watch more: What’s Next in Payments With Synchrony’s Mike Storiale Artificial intelligence can already recommend the running shoes. The payments industry still must figure out how to let it buy them. While much of the industry’s attention has focused on AI agents, Mike Storiale, ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/smart-shopping-agents-still-need-someone-to-vouch-for-them/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T08:03:50.000Z"
+    },
+    {
+      "id": "35229c4854adb7c6e1c6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Could End Finance’s Point-and-Click Era",
+      "excerpt": "Watch more: What’s Next in Payments With Billtrust’s Dave Ruda The finance technology playbook was once relatively straightforward. CFOs built out their department tech stacks by putting one piece of software after another between an employee and a cumbersome business process. Fo",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/ai-could-end-finances-point-and-click-era/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T08:01:30.000Z"
+    },
+    {
+      "id": "3d8f886a7f6fbc81a20c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Tighter Budgets Push Grocery Shoppers Online",
+      "excerpt": "Consumers under financial pressure are buying bigger baskets and choosing value-focused merchants, giving retailers an opportunity to help shoppers make each purchase go further. That’s a central finding of “The New Checkout: Crimped Consumers Lean Into Online Retail and Digital ",
+      "url": "https://www.pymnts.com/consumer-insights/2026/tighter-budgets-push-grocery-shoppers-online/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-02T08:00:44.000Z"
+    },
     {
       "id": "c3bad6bae87015c2b6b2",
       "sourceId": "pymnts",
@@ -57,34 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-01T22:36:41.000Z"
-    },
-    {
-      "id": "839b4b47dd3ac5031015",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Europe’s Payee Checks Set the Pace as US Plans Take Shape",
-      "excerpt": "A payment moving from one country to another passes through banks, clearing systems and payment networks that operate under different rules. The recipient information used to check the payment and bolster security can be just as fragmented. Payee verification connects some of tho",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/europe-payee-checks-set-pace-united-states-plans-take-shape/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T21:37:16.000Z"
-    },
-    {
-      "id": "02c0b3520ca76a77b2e7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks’ Blockchain Bet Comes Down to Moving the Money",
-      "excerpt": "Wall Street’s embrace of digital assets has reached the point where saying a bank is “doing blockchain” reveals almost nothing about what it can actually do on-chain. One bank may be experimenting with tokenized securities inside an innovation lab. Another may let corporate custo",
-      "url": "https://www.pymnts.com/blockchain/2026/banks-blockchain-bet-comes-down-to-moving-the-money/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T21:02:55.000Z"
     },
     {
       "id": "fa6608fa0064108a6404",
@@ -472,7 +486,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "ecuavisa.com",
+      "source": "Ecuavisa",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -549,20 +563,6 @@
       "publishedAt": "2026-09-29T14:58:32.000Z"
     },
     {
-      "id": "09e8d0688b7df2f65586",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "¿Cuánto rinde invertir en pólizas a plazo fijo en la banca ecuatoriana en octubre?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWGREN2dIVlo3RWJtV1hHTEhWalBvbDBnU2ZvSG9mTkNINFctd2xQMU8xTWE2M2RDdXFHb1Zla2k5T1RWRGF1R25Gb1Z5UUtzSU1oQUI3dmF4YTMyTTdoa3lycGNzYWc1QUdScUZ2aWI5M1otaEpKSXJhc3pQc3FvV1RMZ21VenJqVmFRNU1md2daTEpkSEtiZHNyQ0MwWFpvejhXWVdTSmt3ZlA1aVdpUFZvRExhVXBMaWFmVzZR?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T14:46:59.000Z"
-    },
-    {
       "id": "4f993a614134ae1976d4",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -612,7 +612,7 @@
       "title": "Qué no hacer para evitar las estafas de entidades financieras fantasmas en Ecuador",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEc5cGdRclR3eFk0TFNRM3ZvczVPdnViX0tEQlhXcWphTW93aEVMNzRVa05od2ZkblUtUEo3UE9RbVJjYVNuYTBpVUpzQTFwNnlFdlhIVjkxdlpxSzBDSUV6Wjk5ZGl2QXlkWERuUGl0TzNnNl8yLW5iU1JwdnR1MHc5MHFqSThVRnhSaUpzRzY1aHdXeDlyLUxkUG5vc1JlaTcyaGh1S1EteUVhTGZPOURtZlFhemVoWmQyeA?oc=5",
-      "source": "elcomercio.com",
+      "source": "El Comercio",
       "sourceUrl": "https://www.elcomercio.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1271,9 +1271,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1282,8 +1282,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 0
     },
     {
@@ -1293,8 +1293,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 8
     },
     {
@@ -1304,8 +1304,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 6
     },
     {
@@ -1315,8 +1315,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 1
     },
     {
@@ -1326,8 +1326,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 0
     },
     {
@@ -1337,8 +1337,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 0
     },
     {
@@ -1348,8 +1348,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 4
     },
     {
@@ -1359,8 +1359,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 5
     },
     {
@@ -1370,8 +1370,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 8
     },
     {
@@ -1381,8 +1381,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 8
     },
     {
@@ -1392,8 +1392,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 8
     },
     {
@@ -1403,8 +1403,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 1
     },
     {
@@ -1414,9 +1414,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1425,8 +1425,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 12
     },
     {
@@ -1436,8 +1436,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 11
     },
     {
@@ -1447,8 +1447,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-02T02:16:35.067Z",
-      "lastSuccessAt": "2026-10-02T02:16:35.067Z",
+      "checkedAt": "2026-10-02T08:37:56.605Z",
+      "lastSuccessAt": "2026-10-02T08:37:56.605Z",
       "recentCount": 10
     }
   ]
