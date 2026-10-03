@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T00:31:06.675Z",
+  "generatedAt": "2026-10-03T06:33:24.823Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -528,7 +528,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "ecuavisa.com",
+      "source": "Ecuavisa",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -997,20 +997,6 @@
       "publishedAt": "2026-09-16T17:21:44.000Z"
     },
     {
-      "id": "2628d2ed3e456c840c6b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T16:30:45.000Z"
-    },
-    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1023,6 +1009,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
+    },
+    {
+      "id": "2628d2ed3e456c840c6b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-16T07:00:00.000Z"
     },
     {
       "id": "d3e33b0ecb0218cd48a5",
@@ -1229,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 7
     },
     {
@@ -1240,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 6
     },
     {
@@ -1273,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 4
     },
     {
@@ -1317,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 5
     },
     {
@@ -1328,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 2
     },
     {
@@ -1372,8 +1372,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 4
     },
     {
@@ -1383,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 11
     },
     {
@@ -1405,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T00:31:06.675Z",
-      "lastSuccessAt": "2026-10-03T00:31:06.675Z",
+      "checkedAt": "2026-10-03T06:33:24.823Z",
+      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
       "recentCount": 10
     }
   ]
