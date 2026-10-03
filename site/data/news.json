@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T06:33:24.823Z",
+  "generatedAt": "2026-10-03T12:34:15.126Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -353,20 +353,6 @@
       "publishedAt": "2026-09-30T20:08:34.000Z"
     },
     {
-      "id": "bc7fa4d65f220d93c11d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Jeeves levanta US$110 millones y lanza su propia billetera de stablecoins para realizar pagos instantáneos en 190 países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb3JfLUxHWWVDZ05jcURJV05kbWFJTnBTSWozY29BOFlfaUpMZjBlSUo1eVJoLS1LcTBLY2JpNzE2NDEzVnRNdHNON0ZVbENGcFphSE1uZzY2bWpnSnNQV0ZlVWY2WWxYSWp0dVFnaEVDdmpwenBuU1djVFE3TnBRSU5uUVV5ZkZ3c21SazJEZ0E5MHBqUDk4cnZuQzFHNVdGT29XbWlaQ2hPSjB3eGwzOF9pOVYyRUpmSnlaZ21VSkZGNWxjVWFWSE9XQU1CQ05NS0JjT0pya0VRT0s4RzNKYmc2Rl90OW1Eb3NYQ1dR?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T16:22:11.000Z"
-    },
-    {
       "id": "955af0a3b1e7985d642a",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -381,18 +367,32 @@
       "publishedAt": "2026-09-30T16:21:19.000Z"
     },
     {
-      "id": "ce81a5f54d581d86b5c9",
+      "id": "c2609c145385f83aacf6",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Pibank, el neobanco de Banco Pichincha, llega a Perú y ofrecerá una cuenta de ahorro en soles a una tasa de 5% anual",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRVmdDemp6NTQwa0VCLXk0NXZ2b2FOOTFUTGhiLWItUGxVUDZjN2taQTNrejdzUHduWGxpMVNGZ1RBenlkWW0zbjNYSGx5VUZFZDgtQzBDMVFVUV9YWDVyR1FKVTdsNHVhSWNjZA?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T16:20:48.000Z"
+    },
+    {
+      "id": "edeca9abf8559823ff24",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
       "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo00gHfAUFVX3lxTFBMeEdraV9uN091VWxUX256Q2xoaXpSMVhON2ZlQmZCbXBKNGhSNEs3TzJQRHFVM3gtb3QxQU5RUlFjNHdUb29Fd01YWm5SbGt1RldNVkhNNUFnUmlUYXptUXhaV0JnWlBFTVpEdmFSWTNqVTlpRFFvRENpMXhmNHF4bU11NWU4T3dtMnU0UmxCdkVPRS1mU2ozSUN5N1hGUXNfbFIyMDhVLWtPS3NkejBjcUU2YnozTnhBdVhBUEhBb21XSXdxWUJybzZiV2d2N2ZMaGZhcTNvTDE5WFhRajQ?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-09-30T14:34:31.000Z"
+      "publishedAt": "2026-09-30T14:45:28.000Z"
     },
     {
       "id": "a724a29433e2a0829bec",
@@ -1109,13 +1109,13 @@
       "publishedAt": "2026-09-11T12:00:00.000Z"
     },
     {
-      "id": "fcc72cbb7e99dd5d9a5a",
+      "id": "ba41b22ba18358f4772d",
       "sourceId": "regulatory-news",
       "category": "regulacion",
       "kind": "news",
       "title": "Secretaría de Integridad, UAFE, SRI y Superintendencia de Bancos firman acuerdo con la OEA para detectar riesgos de corrupción y lavado de activos",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRdIBjwJBVV95cUxQcHh4ZjQzX0NQY1BYNW5TbklPeWhBN19mSUhkdzFsaVRaWTBzQnphU3FfaE5uWlZjamh5a1ByMk9rdFk5Q25HMGw4MEFVLUFOSDd5QUVCUFI4bU1fOVFwdW56dk9aMDNSSndHM2h4TGFKdm9LVGxvNnRZVTVvamFxa2Vjd29FUTJzcGdLMkNEbnl1SHAyamR1LWdJc2F3V0tseXkxTFdyQ2d1cktVMGw5eDJWRVZJT2NQZ3RDOTVyYmJqOXBEaElObEFic21fVjFvZW45bTVoYXBUak9KY01OUm4xMERPQTdKT1NidDBUNUhEM0g0OEU4bzBsQzlHdzh3cE1vc0M3aGJYbm96VWxv?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRQ?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1158,7 +1158,7 @@
       "title": "Superintendencia de Bancos ha detectado más de 70 entidades sin autorización para operar en 2026",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmRTU2hneWJzMzh2Mi10SkV1N0Rtb2pQNm5ZZ2oteTJHR0ZHM2RHTURjN1VnTzdaR2wxcXBpYk5rV3pxbnp1N2Q5cFNpcHVSbnNLWFBQX0RTVVNRZzlTSll1VlhCb1E1ZGdnTlRBZDdvTG9BOTFWVU44bkNjMHVIa2lkX3N5ZF91RHVzQ1lVY3hsaXFuMlk4eWswcFBDMllzUEZ3QWFOUkRTX1ZxWnZkNnpPYnhlLUJCMmZxadIBwgFBVV95cUxQOVpGNm45WkNqRnJGZmNpdlpnUXFDMS1QQnN3dlRTR2R6bjVicWdqeEZNWF84SElWRU5BS21Pb0hiM0N3eERiYWlnWWhIempIQmkyUWRmZGFRTmREYzc2d3d1UDdiZkppU0FNVHA5S2JwbVROVER3Ui1sUDdORVFVOFVMbTEtbHhyVXVhNTktZ1dMQnRDZlFJY3BnWmxsUU40Z0E1X3JrbmRFcG9Oc283d1hiSHZYbXhSZXZvU2d6Y2ZOUQ?oc=5",
-      "source": "Vistazo",
+      "source": "vistazo.com",
       "sourceUrl": "https://www.vistazo.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1205,20 +1205,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-04T12:00:00.000Z"
-    },
-    {
-      "id": "d8698bb324e6cdf403d0",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Devolución del IVA en Ecuador: ¿cómo consultar si el SRI realizó el pago?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPaHAzVWh5UjBEWVBqdUFXUFVzaTVlZl9valluaGJiSml3TlMwVGx5S0lQbDYyWEtaR0o4YnBnOXNQSEszWGc0STUwSG9NbEdQY0NDaWNGeHVVdlpESU9NUGpDT2s5SGpiRkRvWERzaFgwZzdNT1JfMkNuZGtkWW91eV9keHg3aFlGVV9IV2FrM2tsNkpNN2FFYXF4LXZvR0lNS2FSRU0zOA?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-03T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1229,9 +1215,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1240,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 6
     },
     {
@@ -1273,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 4
     },
     {
@@ -1317,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 5
     },
     {
@@ -1328,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 2
     },
     {
@@ -1372,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 4
     },
     {
@@ -1383,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 11
     },
     {
@@ -1405,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T06:33:24.823Z",
-      "lastSuccessAt": "2026-10-03T06:33:24.823Z",
+      "checkedAt": "2026-10-03T12:34:15.126Z",
+      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
       "recentCount": 10
     }
   ]
