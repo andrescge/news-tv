@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T17:17:38.532Z",
+  "generatedAt": "2026-10-03T21:14:25.567Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -353,6 +353,20 @@
       "publishedAt": "2026-09-30T20:08:34.000Z"
     },
     {
+      "id": "bc7fa4d65f220d93c11d",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Jeeves levanta US$110 millones y lanza su propia billetera de stablecoins para realizar pagos instantáneos en 190 países",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb3JfLUxHWWVDZ05jcURJV05kbWFJTnBTSWozY29BOFlfaUpMZjBlSUo1eVJoLS1LcTBLY2JpNzE2NDEzVnRNdHNON0ZVbENGcFphSE1uZzY2bWpnSnNQV0ZlVWY2WWxYSWp0dVFnaEVDdmpwenBuU1djVFE3TnBRSU5uUVV5ZkZ3c21SazJEZ0E5MHBqUDk4cnZuQzFHNVdGT29XbWlaQ2hPSjB3eGwzOF9pOVYyRUpmSnlaZ21VSkZGNWxjVWFWSE9XQU1CQ05NS0JjT0pya0VRT0s4RzNKYmc2Rl90OW1Eb3NYQ1dR?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T16:22:11.000Z"
+    },
+    {
       "id": "955af0a3b1e7985d642a",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -367,32 +381,18 @@
       "publishedAt": "2026-09-30T16:21:19.000Z"
     },
     {
-      "id": "c2609c145385f83aacf6",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pibank, el neobanco de Banco Pichincha, llega a Perú y ofrecerá una cuenta de ahorro en soles a una tasa de 5% anual",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRVmdDemp6NTQwa0VCLXk0NXZ2b2FOOTFUTGhiLWItUGxVUDZjN2taQTNrejdzUHduWGxpMVNGZ1RBenlkWW0zbjNYSGx5VUZFZDgtQzBDMVFVUV9YWDVyR1FKVTdsNHVhSWNjZA?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T16:20:48.000Z"
-    },
-    {
-      "id": "edeca9abf8559823ff24",
+      "id": "ce81a5f54d581d86b5c9",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
       "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo00gHfAUFVX3lxTFBMeEdraV9uN091VWxUX256Q2xoaXpSMVhON2ZlQmZCbXBKNGhSNEs3TzJQRHFVM3gtb3QxQU5RUlFjNHdUb29Fd01YWm5SbGt1RldNVkhNNUFnUmlUYXptUXhaV0JnWlBFTVpEdmFSWTNqVTlpRFFvRENpMXhmNHF4bU11NWU4T3dtMnU0UmxCdkVPRS1mU2ozSUN5N1hGUXNfbFIyMDhVLWtPS3NkejBjcUU2YnozTnhBdVhBUEhBb21XSXdxWUJybzZiV2d2N2ZMaGZhcTNvTDE5WFhRajQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-09-30T14:45:28.000Z"
+      "publishedAt": "2026-09-30T14:34:31.000Z"
     },
     {
       "id": "a724a29433e2a0829bec",
@@ -528,7 +528,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "ecuavisa.com",
+      "source": "Ecuavisa",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -731,20 +731,6 @@
       "publishedAt": "2026-09-25T23:03:25.000Z"
     },
     {
-      "id": "9fda31d7224ad8ad06ff",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Bancos de segundo piso de Colombia, Ecuador, Paraguay y El Salvador se reúnen para evaluar políticas laborales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNa2NuZ2dBXzYxcWxMMlllbXFNTEpLWnp2Wk5nRmNOa19JNkZ2cEF3TWp1TXlfeDc0cW1MektyOXRqZFpxZkppMl9yTlFKd203WFc5Z2Y5NjNrQ29saDB5dTV6QVlIUk5hc2lyZnZHLWNMVkRzNUdkOGpQQmI3N29ieElpWnRFZUZqcXkzS2YwQkd2S0FiSHFxekpOVFd5enhYVEhaU29sQ3N3ZnctX0JFS0NyeENzQ0lUOHRVQUpNU2wtVFdfMG9MMDl3MzJQejRwM2Q1cWdVejEyVktLWVU1N0xITDBRUkFsbTV0eVlLZTF4Y2hjR3fSAYoCQVVfeXFMT2ZEazVmbmhyYzVTeFplbVZzUXZCZTNSdThSNVZ0ZHo1THpWcmZZcnJKYktBYkN6RktjUkdqVDVwZ0hiNUpKYUVEWl9UTjJRYXVUeGpTN0E0YVhvcHNnZWtaVmpwY2x5NU4yNE9FaE1TenVhZlN0cG40WmtzUGRFVlB1VUlOM3JVSzE1Y1YtQm14UXNfQUwtQksyRTdYV0QxcGFoOGszSUtucXdhWFZpc1ZURnVEQXJLekxEVk1tZDI2MGNVNjRkNHlYbzgxNjBFb1NBQnBJZkNpLUFkZDBnMEpQREpiOTU4ZWJDOGc0enFWLV9ZcUt2bzNEVlJyWnNYemdSSUlqMndKdlE?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-25T18:55:33.000Z"
-    },
-    {
       "id": "20978e0dafe5d148c000",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -771,6 +757,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-25T12:00:00.000Z"
+    },
+    {
+      "id": "9fda31d7224ad8ad06ff",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Bancos de segundo piso de Colombia, Ecuador, Paraguay y El Salvador se reúnen para evaluar políticas laborales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNa2NuZ2dBXzYxcWxMMlllbXFNTEpLWnp2Wk5nRmNOa19JNkZ2cEF3TWp1TXlfeDc0cW1MektyOXRqZFpxZkppMl9yTlFKd203WFc5Z2Y5NjNrQ29saDB5dTV6QVlIUk5hc2lyZnZHLWNMVkRzNUdkOGpQQmI3N29ieElpWnRFZUZqcXkzS2YwQkd2S0FiSHFxekpOVFd5enhYVEhaU29sQ3N3ZnctX0JFS0NyeENzQ0lUOHRVQUpNU2wtVFdfMG9MMDl3MzJQejRwM2Q1cWdVejEyVktLWVU1N0xITDBRUkFsbTV0eVlLZTF4Y2hjR3fSAYoCQVVfeXFMT2ZEazVmbmhyYzVTeFplbVZzUXZCZTNSdThSNVZ0ZHo1THpWcmZZcnJKYktBYkN6RktjUkdqVDVwZ0hiNUpKYUVEWl9UTjJRYXVUeGpTN0E0YVhvcHNnZWtaVmpwY2x5NU4yNE9FaE1TenVhZlN0cG40WmtzUGRFVlB1VUlOM3JVSzE1Y1YtQm14UXNfQUwtQksyRTdYV0QxcGFoOGszSUtucXdhWFZpc1ZURnVEQXJLekxEVk1tZDI2MGNVNjRkNHlYbzgxNjBFb1NBQnBJZkNpLUFkZDBnMEpQREpiOTU4ZWJDOGc0enFWLV9ZcUt2bzNEVlJyWnNYemdSSUlqMndKdlE?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-25T07:00:00.000Z"
     },
     {
       "id": "84ab68633c4377c97017",
@@ -997,20 +997,6 @@
       "publishedAt": "2026-09-16T17:21:44.000Z"
     },
     {
-      "id": "2628d2ed3e456c840c6b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T16:30:45.000Z"
-    },
-    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1023,6 +1009,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
+    },
+    {
+      "id": "2628d2ed3e456c840c6b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-16T07:00:00.000Z"
     },
     {
       "id": "d3e33b0ecb0218cd48a5",
@@ -1215,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 6
     },
     {
@@ -1226,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 6
     },
     {
@@ -1259,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 4
     },
     {
@@ -1303,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 5
     },
     {
@@ -1314,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 2
     },
     {
@@ -1358,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 4
     },
     {
@@ -1369,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 11
     },
     {
@@ -1391,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T17:17:38.532Z",
-      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
+      "checkedAt": "2026-10-03T21:14:25.567Z",
+      "lastSuccessAt": "2026-10-03T21:14:25.567Z",
       "recentCount": 10
     }
   ]
