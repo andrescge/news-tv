@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-03T12:34:15.126Z",
+  "generatedAt": "2026-10-03T17:17:38.532Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -528,7 +528,7 @@
       "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "Ecuavisa",
+      "source": "ecuavisa.com",
       "sourceUrl": "https://www.ecuavisa.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -801,20 +801,6 @@
       "publishedAt": "2026-09-24T22:09:45.000Z"
     },
     {
-      "id": "cd96405e0c47d8269751",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-24T15:49:59.000Z"
-    },
-    {
       "id": "2fdc0ce42ef3a3d78602",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -841,6 +827,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-24T14:00:00.000Z"
+    },
+    {
+      "id": "cd96405e0c47d8269751",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T07:00:00.000Z"
     },
     {
       "id": "01dcfab10b308e55dac0",
@@ -997,6 +997,20 @@
       "publishedAt": "2026-09-16T17:21:44.000Z"
     },
     {
+      "id": "2628d2ed3e456c840c6b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-16T16:30:45.000Z"
+    },
+    {
       "id": "02640e71f820773f5ac9",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1009,20 +1023,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T13:17:00.000Z"
-    },
-    {
-      "id": "2628d2ed3e456c840c6b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T07:00:00.000Z"
     },
     {
       "id": "d3e33b0ecb0218cd48a5",
@@ -1158,7 +1158,7 @@
       "title": "Superintendencia de Bancos ha detectado más de 70 entidades sin autorización para operar en 2026",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmRTU2hneWJzMzh2Mi10SkV1N0Rtb2pQNm5ZZ2oteTJHR0ZHM2RHTURjN1VnTzdaR2wxcXBpYk5rV3pxbnp1N2Q5cFNpcHVSbnNLWFBQX0RTVVNRZzlTSll1VlhCb1E1ZGdnTlRBZDdvTG9BOTFWVU44bkNjMHVIa2lkX3N5ZF91RHVzQ1lVY3hsaXFuMlk4eWswcFBDMllzUEZ3QWFOUkRTX1ZxWnZkNnpPYnhlLUJCMmZxadIBwgFBVV95cUxQOVpGNm45WkNqRnJGZmNpdlpnUXFDMS1QQnN3dlRTR2R6bjVicWdqeEZNWF84SElWRU5BS21Pb0hiM0N3eERiYWlnWWhIempIQmkyUWRmZGFRTmREYzc2d3d1UDdiZkppU0FNVHA5S2JwbVROVER3Ui1sUDdORVFVOFVMbTEtbHhyVXVhNTktZ1dMQnRDZlFJY3BnWmxsUU40Z0E1X3JrbmRFcG9Oc283d1hiSHZYbXhSZXZvU2d6Y2ZOUQ?oc=5",
-      "source": "vistazo.com",
+      "source": "Vistazo",
       "sourceUrl": "https://www.vistazo.com/",
       "via": "Vía Google News",
       "language": "es",
@@ -1215,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 6
     },
     {
@@ -1226,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 6
     },
     {
@@ -1259,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 4
     },
     {
@@ -1303,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 5
     },
     {
@@ -1314,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 2
     },
     {
@@ -1358,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 4
     },
     {
@@ -1369,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 11
     },
     {
@@ -1391,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-03T12:34:15.126Z",
-      "lastSuccessAt": "2026-10-03T12:34:15.126Z",
+      "checkedAt": "2026-10-03T17:17:38.532Z",
+      "lastSuccessAt": "2026-10-03T17:17:38.532Z",
       "recentCount": 10
     }
   ]
