@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T05:53:32.183Z",
+  "generatedAt": "2026-10-04T12:21:51.194Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -353,20 +353,6 @@
       "publishedAt": "2026-09-30T20:08:34.000Z"
     },
     {
-      "id": "bc7fa4d65f220d93c11d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Jeeves levanta US$110 millones y lanza su propia billetera de stablecoins para realizar pagos instantáneos en 190 países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOb3JfLUxHWWVDZ05jcURJV05kbWFJTnBTSWozY29BOFlfaUpMZjBlSUo1eVJoLS1LcTBLY2JpNzE2NDEzVnRNdHNON0ZVbENGcFphSE1uZzY2bWpnSnNQV0ZlVWY2WWxYSWp0dVFnaEVDdmpwenBuU1djVFE3TnBRSU5uUVV5ZkZ3c21SazJEZ0E5MHBqUDk4cnZuQzFHNVdGT29XbWlaQ2hPSjB3eGwzOF9pOVYyRUpmSnlaZ21VSkZGNWxjVWFWSE9XQU1CQ05NS0JjT0pya0VRT0s4RzNKYmc2Rl90OW1Eb3NYQ1dR?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T16:22:11.000Z"
-    },
-    {
       "id": "955af0a3b1e7985d642a",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -379,6 +365,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-30T16:21:19.000Z"
+    },
+    {
+      "id": "c2609c145385f83aacf6",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Pibank, el neobanco de Banco Pichincha, llega a Perú y ofrecerá una cuenta de ahorro en soles a una tasa de 5% anual",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRVmdDemp6NTQwa0VCLXk0NXZ2b2FOOTFUTGhiLWItUGxVUDZjN2taQTNrejdzUHduWGxpMVNGZ1RBenlkWW0zbjNYSGx5VUZFZDgtQzBDMVFVUV9YWDVyR1FKVTdsNHVhSWNjZA?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T16:20:48.000Z"
     },
     {
       "id": "ce81a5f54d581d86b5c9",
@@ -1177,20 +1177,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-08T12:00:00.000Z"
-    },
-    {
-      "id": "81755a3d06326429d3f3",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "Exportaciones ecuatorianas alcanzaron un récord de USD 10.177 millones en el segundo trimestre de 2026",
-      "excerpt": "Las importaciones también marcaron un máximo histórico, con USD 9.407 millones. El país registró un superávit comercial de USD 769,8 millones. Las exportaciones ecuatorianas alcanzaron",
-      "url": "https://www.bce.fin.ec/exportaciones-ecuatorianas-alcanzaron-un-record-de-usd-10-177-millones-en-el-segundo-trimestre-de-2026/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-04T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1201,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 6
     },
     {
@@ -1212,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 8
     },
     {
@@ -1234,9 +1220,9 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "recentCount": 5
     },
     {
       "id": "seps",
@@ -1245,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 3
     },
     {
@@ -1289,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 5
     },
     {
@@ -1300,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 2
     },
     {
@@ -1344,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 4
     },
     {
@@ -1355,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 11
     },
     {
@@ -1377,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T05:53:32.183Z",
-      "lastSuccessAt": "2026-10-04T05:53:32.183Z",
+      "checkedAt": "2026-10-04T12:21:51.194Z",
+      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
       "recentCount": 10
     }
   ]
