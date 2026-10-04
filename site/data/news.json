@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-04T12:21:51.194Z",
+  "generatedAt": "2026-10-04T17:34:47.033Z",
   "stories": [
     {
       "id": "40e4e1c3211e2bd10d15",
@@ -1095,13 +1095,13 @@
       "publishedAt": "2026-09-11T12:00:00.000Z"
     },
     {
-      "id": "ba41b22ba18358f4772d",
+      "id": "fcc72cbb7e99dd5d9a5a",
       "sourceId": "regulatory-news",
       "category": "regulacion",
       "kind": "news",
       "title": "Secretaría de Integridad, UAFE, SRI y Superintendencia de Bancos firman acuerdo con la OEA para detectar riesgos de corrupción y lavado de activos",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQX1ptTHh0VDJEWENjcl8yTUhEd2ZMTVRKSVUzZXM5LW9fNGdYc2tLdHcwSzJ0YVNNMWZYamFVNWZaaEFZQnVOcVBCZVFWU2h2RHNsVzBMcjVmVmZUcGE5VUh4c1hFaTRJTHl6M054WktwZkZfNzhwN21BdWZPSTVJVXZpUXlfZ2hKNDdSb09fbUoxVkJUNl9ONnFLX2pUa3NLeDB4d2JLQm93TnVwaXBsMkFmeVVOblpqUl9reDF3bldkQ2ZzWEVDS2JBbEhEb2tUQlV5djB2ZEQxZG95R0I1UmpGeElJaHBqSGF0YURTX05XNlk5VUR2SEVqRdIBjwJBVV95cUxQcHh4ZjQzX0NQY1BYNW5TbklPeWhBN19mSUhkdzFsaVRaWTBzQnphU3FfaE5uWlZjamh5a1ByMk9rdFk5Q25HMGw4MEFVLUFOSDd5QUVCUFI4bU1fOVFwdW56dk9aMDNSSndHM2h4TGFKdm9LVGxvNnRZVTVvamFxa2Vjd29FUTJzcGdLMkNEbnl1SHAyamR1LWdJc2F3V0tseXkxTFdyQ2d1cktVMGw5eDJWRVZJT2NQZ3RDOTVyYmJqOXBEaElObEFic21fVjFvZW45bTVoYXBUak9KY01OUm4xMERPQTdKT1NidDBUNUhEM0g0OEU4bzBsQzlHdzh3cE1vc0M3aGJYbm96VWxv?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 6
     },
     {
@@ -1198,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 3
     },
     {
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 5
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 2
     },
     {
@@ -1330,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 4
     },
     {
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 11
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-04T12:21:51.194Z",
-      "lastSuccessAt": "2026-10-04T12:21:51.194Z",
+      "checkedAt": "2026-10-04T17:34:47.033Z",
+      "lastSuccessAt": "2026-10-04T17:34:47.033Z",
       "recentCount": 10
     }
   ]
