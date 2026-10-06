@@ -1,48 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T10:18:01.324Z",
+  "generatedAt": "2026-10-06T17:11:16.806Z",
   "stories": [
     {
-      "id": "fdeb791305a1c874ad64",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "02847710f929afc618b5",
+      "sourceId": "latamlist",
+      "category": "latam",
       "kind": "news",
-      "title": "AI Agents Bring Shoppers, but Merchants Must Close the Sale",
-      "excerpt": "Watch more: The Digital Shift With Visa’s Pavan HS Artificial intelligence shopping agents are creating a new kind of customer at the merchant’s front door: software that may know what a consumer wants, yet arrives without many of the signals merchants have learned to trust. Pava",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-bring-shoppers-but-merchants-must-close-the-sale/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Asaas raises $55.6M FIDC to finance SMB receivables in Brazil",
+      "excerpt": "Brazilian fintech Asaas raised $55.6M through a new FIDC. Institutional investors provided $51.9M through senior shares, while Asaas…",
+      "url": "https://latamlist.com/asaas-raises-55-6m-fidc-to-finance-smb-receivables-in-brazil/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-06T08:03:54.000Z"
+      "publishedAt": "2026-10-06T16:00:59.000Z"
     },
     {
-      "id": "ac3f0dca2c44706160ac",
+      "id": "649bc25c8e6cb0f27e75",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Will Holiday Shopping Go Agentic? 40 Senior Execs Weigh In",
-      "excerpt": "AI may be ready to shop. Consumers are still deciding how much freedom they want to give it. “Holiday Retail’s AI Test Starts With Who Gets to Hit Buy” was produced by PYMNTS following a closed-door roundtable at Mastercard’s New York technology hub. The discussion brought togeth",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/will-holiday-shopping-go-agentic-40-senior-execs-weigh-in/",
+      "title": "How CFOs Are Building Approval Controls Finance Agents Can’t Break",
+      "excerpt": "The biggest financial risk from an artificial intelligence agent won’t come from it making numbers up. It will likely come from an agent that does exactly what it has permission to do. As enterprises connect AI agents to email, procurement software, ERP systems, bank accounts and",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/how-chief-financial-officers-are-building-approval-controls-finance-agents-cannot-break/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-06T08:02:21.000Z"
+      "publishedAt": "2026-10-06T15:27:55.000Z"
     },
     {
-      "id": "f6069659da31ab8bd290",
+      "id": "5d7e0c4bcc215954e651",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Karen Webster Says the Agentic Enterprise Is Already Here",
-      "excerpt": "October. Some readers mark it on the calendar for the return of autumn and chilly temperatures. Others get ready for the full dose of sports that comes with the NFL season and the World Series. Here at PYMNTS, it’s B2B Payments time. This year marks the seventh annual PYMNTS B2B ",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/karen-webster-says-the-agentic-enterprise-is-already-here/",
+      "title": "Global AI Hardware Demand Powers East Asia Growth Beyond World Bank Forecasts",
+      "excerpt": "Several economies in the East Asia and Pacific (EAP) region are growing faster than expected due to their involvement in manufacturing and exporting high-tech goods that support artificial intelligence-related activity, the World Bank Group said in a Tuesday (Oct. 6) press releas",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/global-ai-hardware-demand-powers-east-asia-growth-beyond-world-bank-forecasts/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-06T08:00:57.000Z"
+      "publishedAt": "2026-10-06T14:51:14.000Z"
+    },
+    {
+      "id": "9f0ccedb54564e868999",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "South Korea Says AI Helped Hackers Break Into Banks",
+      "excerpt": "South Korea has reportedly seen evidence of artificial intelligence involvement in recent cyberattacks on banks. As the Financial Times (FT) reported, President Lee Jae Myung said on Tuesday (Oct. 6) that hacks had revealed user data at seven financial firms, with indications of ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/south-korea-says-ai-helped-hackers-break-into-banks/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T14:48:57.000Z"
+    },
+    {
+      "id": "18664c25345fb6575b64",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Plaid Launches Credit and Fraud Models Fueled by Cash Flow Data",
+      "excerpt": "Plaid is adding new capabilities and artificial intelligence (AI) models to its network that powers digital finance, aiming to help financial firms with their decisions across credit, fraud and payments, the company said in a Tuesday (Oct. 6) press release emailed to PYMNTS. A ne",
+      "url": "https://www.pymnts.com/consumer-finance/2026/plaid-launches-credit-and-fraud-models-fueled-by-cash-flow-data/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T13:00:35.000Z"
+    },
+    {
+      "id": "58ed5ba581df3a27c9de",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Revolut eyes Philippines bank licence",
+      "excerpt": "Digital bank Revolut is considering the Philippines as the next market in its global expansion plans",
+      "url": "https://www.finextra.com/newsarticle/48540/revolut-eyes-philippines-bank-licence?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T12:38:00.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T12:00:00.000Z"
     },
     {
       "id": "de13d72149ff56dd6457",
@@ -99,20 +155,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
-      "id": "7314fbdd2f0dccbb7943",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "TikTok Kicks Off Agentic Commerce Push With AI Shopping Assistant",
-      "excerpt": "TikTok has introduced an in-app checkout solution and an artificial intelligence (AI) shopping assistant, saying in a Monday (Oct. 5) press release that these are the first of several agentic commerce experiences the company is adding to its platform. The in-app checkout solution",
-      "url": "https://www.pymnts.com/commerce/social-commerce/2026/tiktok-kicks-off-agentic-commerce-push-with-ai-shopping-assistant/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T23:55:24.000Z"
     },
     {
       "id": "7a2cc64652c0195c9d5a",
@@ -535,20 +577,6 @@
       "publishedAt": "2026-10-01T00:01:00.000Z"
     },
     {
-      "id": "40d7460eef84bb013275",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Apple Pay arrives in India",
-      "excerpt": "Apple Pay is finally launching in India, entering a huge but competitive market via a partnership with Axis Bank.",
-      "url": "https://www.finextra.com/newsarticle/48512/apple-pay-arrives-in-india?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T00:01:00.000Z"
-    },
-    {
       "id": "789fbdb64c6ebc9b37a6",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -787,20 +815,6 @@
       "publishedAt": "2026-09-29T02:50:00.000Z"
     },
     {
-      "id": "7ed8070dc2d5ae1840a2",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Skandia Colombia explora una capa de acceso al mercado de stablecoins para fintechs",
-      "excerpt": "A través de su modelo de servicios fiduciarios para fintechs, Skandia quiere incorporarse al mercado de monedas estables. Esta iniciativa ampliará su oferta de servicios en Colombia de cara a 2027. ... Leer más... La entrada Skandia Colombia explora una capa de acceso al mercado ",
-      "url": "https://iupana.com/2026/09/28/skandia-colombia-explora-capa-acceso-mercado-stablecoins-fintechs/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-28T17:00:52.000Z"
-    },
-    {
       "id": "dbc32cfcf2885eceb4e0",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1011,20 +1025,6 @@
       "publishedAt": "2026-09-21T11:42:00.000Z"
     },
     {
-      "id": "aefa5abf4aa6b3f83845",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "SEC clears way for tokenised stock trading",
-      "excerpt": "The Securities and Exchange Commission has issued an order that enables the trading of tokenised stocks.",
-      "url": "https://www.finextra.com/newsarticle/48432/sec-clears-way-for-tokenised-stock-trading?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-18T14:57:00.000Z"
-    },
-    {
       "id": "5f14faa9899f5a8abd49",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1215,9 +1215,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
+      "recentCount": 9
     },
     {
       "id": "bce-junta",
@@ -1226,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 5
     },
     {
@@ -1259,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 3
     },
     {
@@ -1303,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 7
     },
     {
@@ -1314,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 2
     },
     {
@@ -1358,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 4
     },
     {
@@ -1369,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 12
     },
     {
@@ -1380,9 +1380,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
+      "recentCount": 10
     },
     {
       "id": "chainalysis",
@@ -1391,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T10:18:01.324Z",
-      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "checkedAt": "2026-10-06T17:11:16.806Z",
+      "lastSuccessAt": "2026-10-06T17:11:16.806Z",
       "recentCount": 10
     }
   ]
