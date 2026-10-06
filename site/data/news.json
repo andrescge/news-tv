@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-06T02:58:29.069Z",
+  "generatedAt": "2026-10-06T10:18:01.324Z",
   "stories": [
+    {
+      "id": "fdeb791305a1c874ad64",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Agents Bring Shoppers, but Merchants Must Close the Sale",
+      "excerpt": "Watch more: The Digital Shift With Visa’s Pavan HS Artificial intelligence shopping agents are creating a new kind of customer at the merchant’s front door: software that may know what a consumer wants, yet arrives without many of the signals merchants have learned to trust. Pava",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-bring-shoppers-but-merchants-must-close-the-sale/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T08:03:54.000Z"
+    },
+    {
+      "id": "ac3f0dca2c44706160ac",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Will Holiday Shopping Go Agentic? 40 Senior Execs Weigh In",
+      "excerpt": "AI may be ready to shop. Consumers are still deciding how much freedom they want to give it. “Holiday Retail’s AI Test Starts With Who Gets to Hit Buy” was produced by PYMNTS following a closed-door roundtable at Mastercard’s New York technology hub. The discussion brought togeth",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/will-holiday-shopping-go-agentic-40-senior-execs-weigh-in/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T08:02:21.000Z"
+    },
+    {
+      "id": "f6069659da31ab8bd290",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Karen Webster Says the Agentic Enterprise Is Already Here",
+      "excerpt": "October. Some readers mark it on the calendar for the return of autumn and chilly temperatures. Others get ready for the full dose of sports that comes with the NFL season and the World Series. Here at PYMNTS, it’s B2B Payments time. This year marks the seventh annual PYMNTS B2B ",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/karen-webster-says-the-agentic-enterprise-is-already-here/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T08:00:57.000Z"
+    },
     {
       "id": "de13d72149ff56dd6457",
       "sourceId": "finextra-payments",
@@ -71,20 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T23:55:24.000Z"
-    },
-    {
-      "id": "c1bdfe9f19332696d759",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bank of America Says Investors Are Overplaying AI and Underestimating Consumers",
-      "excerpt": "It may be time for investors to pivot from artificial intelligence-linked capital expenditures to consumer-driven spending, Bank of America strategists wrote in a Monday (Oct. 5) note, according to a Bloomberg report. The abundance of AI spending and the shrinking of discretionar",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bank-of-america-says-investors-are-overplaying-ai-underestimating-consumers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T21:00:27.000Z"
     },
     {
       "id": "7a2cc64652c0195c9d5a",
@@ -1187,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 8
     },
     {
@@ -1198,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 3
     },
     {
@@ -1275,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 7
     },
     {
@@ -1286,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 2
     },
     {
@@ -1330,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 11
     },
     {
@@ -1363,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-06T02:58:29.069Z",
-      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "checkedAt": "2026-10-06T10:18:01.324Z",
+      "lastSuccessAt": "2026-10-06T10:18:01.324Z",
       "recentCount": 10
     }
   ]
