@@ -1,7 +1,77 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-05T22:37:27.063Z",
+  "generatedAt": "2026-10-06T02:58:29.069Z",
   "stories": [
+    {
+      "id": "de13d72149ff56dd6457",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "ANZ completes cross-border tokenised deposit payment with Swift ledger",
+      "excerpt": "Australia's ANZ has carried out a live corporate treasury transactions using tokenised deposits and Swift’s blockchain ledger.",
+      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T00:01:00.000Z"
+    },
+    {
+      "id": "e99bb12fad1b6e73e055",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anchorage Digital expands global services with Standard Chartered",
+      "excerpt": "Digital asset custody services provider Anchorage Digital has formed a partnership with Standard Chartered through which it will offer USD accounts and access to Swift wires, including transfers to and from third parties, to eligible non-US institutional clients.",
+      "url": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T00:01:00.000Z"
+    },
+    {
+      "id": "415c1907b8f4e38f8415",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "ANZ completes cross-border tokenised deposit payment with Swift ledger",
+      "excerpt": "Australia's ANZ has carried out a live corporate treasury transactions using tokenised deposits and Swift’s blockchain ledger.",
+      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T00:01:00.000Z"
+    },
+    {
+      "id": "9ef64a675fa5a0646139",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Anchorage Digital expands global services with Standard Chartered",
+      "excerpt": "Digital asset custody services provider Anchorage Digital has formed a partnership with Standard Chartered through which it will offer USD accounts and access to Swift wires, including transfers to and from third parties, to eligible non-US institutional clients.",
+      "url": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-06T00:01:00.000Z"
+    },
+    {
+      "id": "7314fbdd2f0dccbb7943",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "TikTok Kicks Off Agentic Commerce Push With AI Shopping Assistant",
+      "excerpt": "TikTok has introduced an in-app checkout solution and an artificial intelligence (AI) shopping assistant, saying in a Monday (Oct. 5) press release that these are the first of several agentic commerce experiences the company is adding to its platform. The in-app checkout solution",
+      "url": "https://www.pymnts.com/commerce/social-commerce/2026/tiktok-kicks-off-agentic-commerce-push-with-ai-shopping-assistant/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-05T23:55:24.000Z"
+    },
     {
       "id": "c1bdfe9f19332696d759",
       "sourceId": "pymnts",
@@ -15,20 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T21:00:27.000Z"
-    },
-    {
-      "id": "1aa7f9d640e1bd682998",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "The Public Blockchain Debate is Already Obsolete for Banks",
-      "excerpt": "The crypto industry bet the farm on traditional finance ultimately migrating onto public blockchains rather than retreating behind permissioned networks. The cows are now coming home to roost for the sector, after its failure to get comprehensive crypto regulation passed in Washi",
-      "url": "https://www.pymnts.com/blockchain/2026/the-public-blockchain-debate-is-already-obsolete-for-banks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T19:39:12.000Z"
     },
     {
       "id": "7a2cc64652c0195c9d5a",
@@ -353,20 +409,6 @@
       "publishedAt": "2026-10-01T17:19:07.000Z"
     },
     {
-      "id": "339e8e091b7b9c184fce",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana Platam suma inversión de B Venture Capital para ampliar el acceso a capital de trabajo para mipymes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNSFR4R18tQmtUeWd6Q3lFZ1NtTUJaRFdXVlc3a01yMFFudkFxZDVSeVY3d0pka0d4TXF6NFNxbGhhQjV3eTM1SDFBMUZvXzVCcVlsNEhEVUxXbHFrZnhaSGNmRGRQZUlzajlQWHg5aWZwM0UxdW1tMFdOdXpERzBqQmg0bzdmMGs1Vi1RYVpWWmFzVURMNmRzdktLUU9vUGI3SWJfNWptMnNRdF9ZUEo1OEZfeDl3dXRHcUNqNGl6MWdDR2s2ci1Wd3JySzRKN0dkbFNHcjMxQVJlbHVyZ2JLOEYtZEw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-01T17:07:49.000Z"
-    },
-    {
       "id": "859ab5145e404385aa29",
       "sourceId": "finextra-latam",
       "category": "latam",
@@ -521,18 +563,18 @@
       "publishedAt": "2026-09-30T20:08:34.000Z"
     },
     {
-      "id": "955af0a3b1e7985d642a",
+      "id": "c2609c145385f83aacf6",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
       "kind": "news",
-      "title": "Fintech Stay recauda US$5,7 millones para expandir la previsión corporativa en Brasil",
+      "title": "Pibank, el neobanco de Banco Pichincha, llega a Perú y ofrecerá una cuenta de ahorro en soles a una tasa de 5% anual",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxObUhGMFpkemI4Q1h5ZkcwWTUyS1F6TFFpdHVvZHBaNkxQZzV6bUlLYXk2ek94YUlXcmhuU2VFMm1ISkxsWmhTbFlOU1h2WjNUbUlhWGRaMy1VSWpYel96U01ucWNZRVJXRGUtU2dlQ2ZDaFE2d0RJb0syRmpMaFVQNzcySEc5dU1kLW5qaW9TVFRUcm5nLXVla00wd21DQk5CSkRWSUlhTGRWN0JscV9QZVB1c2dQVkNxMTBsNXk1RGFpRkhEYzJqVXJBQlM0Y3M?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRVmdDemp6NTQwa0VCLXk0NXZ2b2FOOTFUTGhiLWItUGxVUDZjN2taQTNrejdzUHduWGxpMVNGZ1RBenlkWW0zbjNYSGx5VUZFZDgtQzBDMVFVUV9YWDVyR1FKVTdsNHVhSWNjZA?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-09-30T16:21:19.000Z"
+      "publishedAt": "2026-09-30T16:20:48.000Z"
     },
     {
       "id": "ce81a5f54d581d86b5c9",
@@ -577,34 +619,6 @@
       "publishedAt": "2026-09-30T12:00:00.000Z"
     },
     {
-      "id": "cafb9ef9888174a646eb",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "HSBC prepares for the launch of HK$-backed stablecoin, RedCoin",
-      "excerpt": "HSBC's forthcoming stablecoin launch in Hong Kong will bear the brand RedCoin.",
-      "url": "https://www.finextra.com/newsarticle/48504/hsbc-prepares-for-the-launch-of-hk-backed-stablecoin-redcoin?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T11:05:00.000Z"
-    },
-    {
-      "id": "4b0560f684b2400b3d89",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa and Lloyds complete live trials of stablecoin settlement",
-      "excerpt": "Visa and Lloyds Banking Group have completed a live pilot exploring how stablecoin-based settlement could support faster, more transparent and flexible cross-border transactions.",
-      "url": "https://www.finextra.com/newsarticle/48503/visa-and-lloyds-complete-live-trials-of-stablecoin-settlement?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T09:44:00.000Z"
-    },
-    {
       "id": "117605d1f89bd1857234",
       "sourceId": "iupana",
       "category": "latam",
@@ -647,6 +661,20 @@
       "publishedAt": "2026-09-29T19:25:43.000Z"
     },
     {
+      "id": "a1a62cec52c442721da8",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Haulmer lanza AndCo, una cuenta digital para pequeñas empresas en Chile",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd04zbEc5NFRKSEp5WC16T2ZZVkprcS15cEhDSVktbDVaWHhad29McldQVmNBWW9fcWdwSk84TDhTcGdYbjQyeTNwODBabVdYU3RMUWFKWGRCVXJ3LUx5aDR2TTlIaTJFV0tEV3pNQmp1OEtjUE9YSExSVV9CVUdiZjZuampYdDJDS1dFVW0tQmdSM3JoaFdqd0xfRm9feDkzSkZ6WTdXWm10NVBKN00wS0h3Z1FEQ2tqOXVTSk54a1RudjRXTExyQUkwTUIxRURRQ0JSMW5tMDNTdU9aeEMzMVN5RUFWcXRwZE5YdVllS21SYXk4WFlPU1djVQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T18:21:09.000Z"
+    },
+    {
       "id": "d5ee0a95e2d0ee7821f6",
       "sourceId": "latamlist",
       "category": "latam",
@@ -673,6 +701,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-29T14:58:32.000Z"
+    },
+    {
+      "id": "09e8d0688b7df2f65586",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "¿Cuánto rinde invertir en pólizas a plazo fijo en la banca ecuatoriana en octubre?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWGREN2dIVlo3RWJtV1hHTEhWalBvbDBnU2ZvSG9mTkNINFctd2xQMU8xTWE2M2RDdXFHb1Zla2k5T1RWRGF1R25Gb1Z5UUtzSU1oQUI3dmF4YTMyTTdoa3lycGNzYWc1QUdScUZ2aWI5M1otaEpKSXJhc3pQc3FvV1RMZ21VenJqVmFRNU1md2daTEpkSEtiZHNyQ0MwWFpvejhXWVdTSmt3ZlA1aVdpUFZvRExhVXBMaWFmVzZR?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T14:46:59.000Z"
     },
     {
       "id": "4f993a614134ae1976d4",
@@ -955,20 +997,6 @@
       "publishedAt": "2026-09-18T14:57:00.000Z"
     },
     {
-      "id": "11e11a46a7582b362c49",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "FCA cracks down on illegal crypto trading in London",
-      "excerpt": "The Financial Conduct Authority (FCA) has taken action to shut down an illegal peer-to-peer crypto trading operation in three suspected premises across London.",
-      "url": "https://www.finextra.com/newsarticle/48431/fca-cracks-down-on-illegal-crypto-trading-in-london?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-18T12:39:00.000Z"
-    },
-    {
       "id": "5f14faa9899f5a8abd49",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -995,20 +1023,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-16T17:21:44.000Z"
-    },
-    {
-      "id": "02640e71f820773f5ac9",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Circle launches Arc mainnet",
-      "excerpt": "Circle has launched its Arc Mainnet open Layer-1 blockchain network purpose-built for financial markets, real-time money movement and agentic economic activity,",
-      "url": "https://www.finextra.com/newsarticle/48419/circle-launches-arc-mainnet?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-16T13:17:00.000Z"
     },
     {
       "id": "2628d2ed3e456c840c6b",
@@ -1173,9 +1187,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
+      "recentCount": 8
     },
     {
       "id": "bce-junta",
@@ -1184,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 5
     },
     {
@@ -1217,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 3
     },
     {
@@ -1261,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 7
     },
     {
@@ -1272,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 2
     },
     {
@@ -1316,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 2
     },
     {
@@ -1327,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 11
     },
     {
@@ -1349,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-05T22:37:27.063Z",
-      "lastSuccessAt": "2026-10-05T22:37:27.063Z",
+      "checkedAt": "2026-10-06T02:58:29.069Z",
+      "lastSuccessAt": "2026-10-06T02:58:29.069Z",
       "recentCount": 10
     }
   ]
