@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-07T01:32:23.189Z",
+  "generatedAt": "2026-10-07T08:39:13.302Z",
   "stories": [
+    {
+      "id": "2e85487873a84f83d2c8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Why Multi-Rail Strategy Is Banking’s Next Competitive Edge",
+      "excerpt": "A Road for Each Reason Every payment rail offers unique strengths, making multi-rail capability essential rather than optional. Every payment rail solves a different problem. Cards, ACH, instant rails, wires and digital assets are not competing to replace one another. Each suppor",
+      "url": "https://www.pymnts.com/tracker_posts/why-multi-rail-strategy-is-bankings-next-competitive-edge/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-07T08:02:58.000Z"
+    },
+    {
+      "id": "b33bac3275ad4b009592",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Agents Turn Permission Into Payments’ New Control Point",
+      "excerpt": "Agentic commerce is creating a new transaction type before the payments industry has fully created the rules for accepting it. While payment stacks have become fine-tuned for transaction authorization, agentic commerce inserts a new question. Not, “should this transaction be auth",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-turn-permission-into-payments-new-control-point/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-07T08:01:15.000Z"
+    },
+    {
+      "id": "9f0d1c620001f2729d64",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Careful Consumers Want Control. SoFi Says Banks Should Hand It Over.",
+      "excerpt": "Watch more: Need to Know With Max Spivakovsky of SoFi A consumer does not have to stop spending to become more careful about money. Debit spending offers a closer look at how consumers are balancing everyday expenses with travel and entertainment, according to Max Spivakovsky, se",
+      "url": "https://www.pymnts.com/consumer-payments/2026/careful-consumers-want-control-sofi-says-banks-should-hand-it-over/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-07T08:01:09.000Z"
+    },
+    {
+      "id": "5fe6b5d526126c938fc6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "5 Ways Missing Payment Options Send Shoppers Elsewhere",
+      "excerpt": "A shopper who reaches checkout has already selected what to buy. For tens of millions of consumers, however, the available ways to pay can still determine whether the purchase happens. PYMNTS Intelligence’s “The Hidden Cost of Checkout Gaps: What 56 Million Abandoned Carts Mean f",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/5-ways-missing-payment-options-send-shoppers-elsewhere/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-07T08:00:22.000Z"
+    },
     {
       "id": "0040fa0ff35d44db20b5",
       "sourceId": "pymnts",
@@ -31,18 +87,18 @@
       "publishedAt": "2026-10-06T23:30:35.000Z"
     },
     {
-      "id": "db041010f12e3d508f52",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "bf68e66fd9c685237735",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
       "kind": "news",
-      "title": "Auto Dealers Pull Banking Into Their Operating Software",
-      "excerpt": "Dealer management systems house the information tied to the operation’s financial activity. Customer balances, repair orders, vendor invoices and accounting records can originate there even when the payment itself moves through a bank or another provider. More of the payment proc",
-      "url": "https://www.pymnts.com/transportation/2026/auto-dealers-pull-banking-into-their-operating-software/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T23:02:12.000Z"
+      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T22:28:21.000Z"
     },
     {
       "id": "44ec543bdb2ccb16d9a1",
@@ -85,34 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T20:40:00.000Z"
-    },
-    {
-      "id": "82b1e421849e5cc1e05d",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Wells Fargo Mobile App Can Personalize Debit Card With Photo",
-      "excerpt": "Wells Fargo says customers can now personalize debit cards within its mobile banking app. The Mobile Card Design Studio lets customers upload personal photos from their phone to create personalized cards, the bank said in a Tuesday (Oct. 6) news release. “For many customers, a de",
-      "url": "https://www.pymnts.com/mobile/2026/wells-fargo-mobile-app-can-personalize-debit-card-with-photo/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T20:17:31.000Z"
-    },
-    {
-      "id": "c199b8c32e01073cfef3",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Power Users Spend Like Small Businesses",
-      "excerpt": "Artificial intelligence (AI) has become a mainstream consumer technology. But paying for it remains a much narrower habit. The consumers who do spend heavily on AI, however, are opening their wallets at levels that look less like entertainment subscriptions and more like business",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-power-users-spend-like-small-businesses/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T19:53:25.000Z"
     },
     {
       "id": "2ebe34520bcfc89fc644",
@@ -169,20 +197,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T16:00:59.000Z"
-    },
-    {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T14:25:00.000Z"
     },
     {
       "id": "58ed5ba581df3a27c9de",
@@ -759,6 +773,20 @@
       "publishedAt": "2026-09-29T23:15:30.000Z"
     },
     {
+      "id": "29f1c7b94c92e4647f5f",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB?oc=5",
+      "source": "Ecuavisa",
+      "sourceUrl": "https://www.ecuavisa.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T22:04:48.000Z"
+    },
+    {
       "id": "1a41f65d8b8bd3b3fd11",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1243,8 +1271,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 9
     },
     {
@@ -1254,8 +1282,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1293,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 9
     },
     {
@@ -1276,8 +1304,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 5
     },
     {
@@ -1287,8 +1315,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 0
     },
     {
@@ -1298,8 +1326,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1337,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 0
     },
     {
@@ -1320,9 +1348,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "recentCount": 4
     },
     {
       "id": "latamlist",
@@ -1331,8 +1359,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 7
     },
     {
@@ -1342,8 +1370,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1381,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 8
     },
     {
@@ -1364,8 +1392,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 8
     },
     {
@@ -1375,8 +1403,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 1
     },
     {
@@ -1386,9 +1414,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1397,8 +1425,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1436,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 10
     },
     {
@@ -1419,8 +1447,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T01:32:23.189Z",
-      "lastSuccessAt": "2026-10-07T01:32:23.189Z",
+      "checkedAt": "2026-10-07T08:39:13.302Z",
+      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
       "recentCount": 10
     }
   ]
