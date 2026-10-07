@@ -1,62 +1,48 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-07T16:28:35.971Z",
+  "generatedAt": "2026-10-07T21:58:38.682Z",
   "stories": [
     {
-      "id": "8fa49a0c247a306290dd",
+      "id": "096a7d352e562df87604",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Fraud Becomes a Bigger Cost of Running a Neobank",
-      "excerpt": "Neobanks are spending far more on fraud prevention even as their fraud losses continue to rise. Fraud prevention spending among neobanks, digital-only banks and FinTechs jumped 357% in a year, from $1.8 million to $8 million per institution, according to the PYMNTS Intelligence r",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/fraud-becomes-a-bigger-cost-of-running-a-neobank/",
+      "title": "OFAC Warning Shows CFOs Sanctions Risk Can Hide in the Payment Route",
+      "excerpt": "The next sanctions shock for a multinational may not arrive as the name of a supplier appearing on a government blacklist. It could arrive as a payment that suddenly stops working. In a Monday (Oct. 5) alert, the Treasury Department’s Office of Foreign Assets Control (OFAC) warne",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/ofac-warning-shows-cfos-sanctions-risk-can-hide-in-the-payment-route/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T16:06:18.000Z"
+      "publishedAt": "2026-10-07T21:03:59.000Z"
     },
     {
-      "id": "1c900cb94e4535aad023",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "12e820ba75e1417f71d4",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "ERP Platforms Embrace Payment Execution, Putting Bank Portals on Notice",
-      "excerpt": "The corporate finance provider landscape has traditionally been defined by a simple truth. However sophisticated enterprise resource planning (ERP) became, eventually someone still had to go to the bank to move the money. But the news Tuesday (Oct. 6) that SAP has launched new em",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/erp-platforms-embrace-payment-execution-putting-bank-portals-on-notice/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-07T15:01:50.000Z"
+      "title": "Nace en Brasil Auro, una wealthtech que busca acercar la gestión patrimonial a quienes están construyendo su futuro financiero",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLXpHLWxKR21uX2FZZk1Qc1l0NDA1T3pxanMtNl9ONmtCVE03Ylcwc3p4RzNLVlNOU0FFclR2eEpnd0VrRW9COFJ5OVhOSEU5dVN2OVdPTWN2U05BZUNVTFd0NzlFYTk5dFlpczFuT2tGZnlkcGtSUV9tWlBjTVcyZ21BSENyMW5kc25fRjl1Zl9GRFNoM0VCZVZVYzFPbjZBUmMtNmhuZXRkWXVZMHRTRlFNLWNMel96amRYcFJXNXVFcjdoXzRPS3BaOWtBNGllTXI4TENaRl9BYWVoSG1DcTVxOTRVWEh1ckVkVFZpWkppbThi?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
-      "id": "eae1387ae9ade7385d37",
+      "id": "a9af4c0a31f2ed8309ff",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Stablecoin Rails Provider Noah Closes $38 Million Seed Funding Following 538% Revenue Surge",
-      "excerpt": "Noah, a stablecoin payments infrastructure provider focused on cross-border transactions, closed its seed funding round at $38 million, the company said in a Wednesday (Oct. 7) press release. Noah closed the round after raising an additional $16 million from new and existing inve",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-rails-provider-noah-closes-38-million-dollar-seed-funding-following-538percent-revenue-surge/",
+      "title": "Chase Adds Payroll to Larger Business Banking Offering",
+      "excerpt": "Chase is expanding its payroll service to help business clients dealing with cash flow pressures. The new offering, announced Wednesday (Oct. 7), brings Chase Payroll alongside the banking and payment activities business customers already manage through the lender. “Small busines",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/chase-adds-payroll-to-larger-business-banking-offering/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T14:38:54.000Z"
-    },
-    {
-      "id": "4b3473f679aac7c87f23",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "First Digital Eyes Agentic Commerce Expansion With SPAC Listing",
-      "excerpt": "Hong Kong-based stablecoin issuer First Digital says it is ready for its stock market debut. The Nasdaq listing is designed to help First Digital fund the expansion of Finance District, “ecosystem for the agentic economy,” the company said in a Wednesday (Oct. 7) news release. Vi",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/first-digital-eyes-agentic-commerce-expansion-with-spac-listing/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-07T13:07:30.000Z"
+      "publishedAt": "2026-10-07T17:27:57.000Z"
     },
     {
       "id": "f027f9c376d688dd2bee",
@@ -773,20 +759,6 @@
       "publishedAt": "2026-09-29T22:04:48.000Z"
     },
     {
-      "id": "a1a62cec52c442721da8",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Haulmer lanza AndCo, una cuenta digital para pequeñas empresas en Chile",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxOd04zbEc5NFRKSEp5WC16T2ZZVkprcS15cEhDSVktbDVaWHhad29McldQVmNBWW9fcWdwSk84TDhTcGdYbjQyeTNwODBabVdYU3RMUWFKWGRCVXJ3LUx5aDR2TTlIaTJFV0tEV3pNQmp1OEtjUE9YSExSVV9CVUdiZjZuampYdDJDS1dFVW0tQmdSM3JoaFdqd0xfRm9feDkzSkZ6WTdXWm10NVBKN00wS0h3Z1FEQ2tqOXVTSk54a1RudjRXTExyQUkwTUIxRURRQ0JSMW5tMDNTdU9aeEMzMVN5RUFWcXRwZE5YdVllS21SYXk4WFlPU1djVQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T18:21:09.000Z"
-    },
-    {
       "id": "d5ee0a95e2d0ee7821f6",
       "sourceId": "latamlist",
       "category": "latam",
@@ -1257,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 10
     },
     {
@@ -1268,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 0
     },
     {
@@ -1279,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 9
     },
     {
@@ -1290,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 5
     },
     {
@@ -1301,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 0
     },
     {
@@ -1312,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 0
     },
     {
@@ -1323,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 0
     },
     {
@@ -1334,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 4
     },
     {
@@ -1345,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 7
     },
     {
@@ -1356,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 8
     },
     {
@@ -1367,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 8
     },
     {
@@ -1378,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 8
     },
     {
@@ -1389,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 1
     },
     {
@@ -1400,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1411,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 12
     },
     {
@@ -1422,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 10
     },
     {
@@ -1433,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T16:28:35.971Z",
-      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "checkedAt": "2026-10-07T21:58:38.682Z",
+      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
       "recentCount": 10
     }
   ]
