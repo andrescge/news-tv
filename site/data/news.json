@@ -1,90 +1,76 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-07T08:39:13.302Z",
+  "generatedAt": "2026-10-07T16:28:35.971Z",
   "stories": [
     {
-      "id": "2e85487873a84f83d2c8",
+      "id": "8fa49a0c247a306290dd",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Why Multi-Rail Strategy Is Banking’s Next Competitive Edge",
-      "excerpt": "A Road for Each Reason Every payment rail offers unique strengths, making multi-rail capability essential rather than optional. Every payment rail solves a different problem. Cards, ACH, instant rails, wires and digital assets are not competing to replace one another. Each suppor",
-      "url": "https://www.pymnts.com/tracker_posts/why-multi-rail-strategy-is-bankings-next-competitive-edge/",
+      "title": "Fraud Becomes a Bigger Cost of Running a Neobank",
+      "excerpt": "Neobanks are spending far more on fraud prevention even as their fraud losses continue to rise. Fraud prevention spending among neobanks, digital-only banks and FinTechs jumped 357% in a year, from $1.8 million to $8 million per institution, according to the PYMNTS Intelligence r",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/fraud-becomes-a-bigger-cost-of-running-a-neobank/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T08:02:58.000Z"
+      "publishedAt": "2026-10-07T16:06:18.000Z"
     },
     {
-      "id": "b33bac3275ad4b009592",
+      "id": "1c900cb94e4535aad023",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "AI Agents Turn Permission Into Payments’ New Control Point",
-      "excerpt": "Agentic commerce is creating a new transaction type before the payments industry has fully created the rules for accepting it. While payment stacks have become fine-tuned for transaction authorization, agentic commerce inserts a new question. Not, “should this transaction be auth",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-turn-permission-into-payments-new-control-point/",
+      "title": "ERP Platforms Embrace Payment Execution, Putting Bank Portals on Notice",
+      "excerpt": "The corporate finance provider landscape has traditionally been defined by a simple truth. However sophisticated enterprise resource planning (ERP) became, eventually someone still had to go to the bank to move the money. But the news Tuesday (Oct. 6) that SAP has launched new em",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/erp-platforms-embrace-payment-execution-putting-bank-portals-on-notice/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T08:01:15.000Z"
+      "publishedAt": "2026-10-07T15:01:50.000Z"
     },
     {
-      "id": "9f0d1c620001f2729d64",
+      "id": "eae1387ae9ade7385d37",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Careful Consumers Want Control. SoFi Says Banks Should Hand It Over.",
-      "excerpt": "Watch more: Need to Know With Max Spivakovsky of SoFi A consumer does not have to stop spending to become more careful about money. Debit spending offers a closer look at how consumers are balancing everyday expenses with travel and entertainment, according to Max Spivakovsky, se",
-      "url": "https://www.pymnts.com/consumer-payments/2026/careful-consumers-want-control-sofi-says-banks-should-hand-it-over/",
+      "title": "Stablecoin Rails Provider Noah Closes $38 Million Seed Funding Following 538% Revenue Surge",
+      "excerpt": "Noah, a stablecoin payments infrastructure provider focused on cross-border transactions, closed its seed funding round at $38 million, the company said in a Wednesday (Oct. 7) press release. Noah closed the round after raising an additional $16 million from new and existing inve",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoin-rails-provider-noah-closes-38-million-dollar-seed-funding-following-538percent-revenue-surge/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T08:01:09.000Z"
+      "publishedAt": "2026-10-07T14:38:54.000Z"
     },
     {
-      "id": "5fe6b5d526126c938fc6",
+      "id": "4b3473f679aac7c87f23",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "5 Ways Missing Payment Options Send Shoppers Elsewhere",
-      "excerpt": "A shopper who reaches checkout has already selected what to buy. For tens of millions of consumers, however, the available ways to pay can still determine whether the purchase happens. PYMNTS Intelligence’s “The Hidden Cost of Checkout Gaps: What 56 Million Abandoned Carts Mean f",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/5-ways-missing-payment-options-send-shoppers-elsewhere/",
+      "title": "First Digital Eyes Agentic Commerce Expansion With SPAC Listing",
+      "excerpt": "Hong Kong-based stablecoin issuer First Digital says it is ready for its stock market debut. The Nasdaq listing is designed to help First Digital fund the expansion of Finance District, “ecosystem for the agentic economy,” the company said in a Wednesday (Oct. 7) news release. Vi",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/first-digital-eyes-agentic-commerce-expansion-with-spac-listing/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T08:00:22.000Z"
+      "publishedAt": "2026-10-07T13:07:30.000Z"
     },
     {
-      "id": "0040fa0ff35d44db20b5",
-      "sourceId": "pymnts",
+      "id": "f027f9c376d688dd2bee",
+      "sourceId": "finextra-payments",
       "category": "pagos",
       "kind": "news",
-      "title": "Treasury Program Blocks $175 Million in Federal Payments Bound for Dead People",
-      "excerpt": "The Treasury Department’s new payment verification process stopped $175 million in payments that would have gone to deceased individuals during the past fiscal year, the department said in a Tuesday (Oct. 6) press release. That process is one of several improvements Treasury made",
-      "url": "https://www.pymnts.com/disbursements/2026/treasury-program-blocks-175-million-in-federal-payments-bound-for-dead-people/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Noah raises $38m for stablecoin payments platform",
+      "excerpt": "Stablecoin payments infrastructure provider Noah has closed its seeding round after pulling in $38 in funding.",
+      "url": "https://www.finextra.com/newsarticle/48548/noah-raises-38m-for-stablecoin-payments-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-07T00:50:54.000Z"
-    },
-    {
-      "id": "79c9732fc6e622429770",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fed’s Bowman Decries ‘Antiquated’ Analysis Blocking Rural Bank Mergers",
-      "excerpt": "There is more work to be done in modernizing the bank regulatory and supervision framework, Federal Reserve Vice Chair for Supervision Michelle W. Bowman said Tuesday (Oct. 6). In a speech delivered at the Community Banking Research Conference in St. Louis, Missouri, Bowman said ",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/feds-bowman-decries-antiquated-analysis-blocking-rural-bank-mergers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T23:30:35.000Z"
+      "publishedAt": "2026-10-07T12:07:00.000Z"
     },
     {
       "id": "bf68e66fd9c685237735",
@@ -197,6 +183,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T16:00:59.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T14:25:00.000Z"
     },
     {
       "id": "58ed5ba581df3a27c9de",
@@ -633,20 +633,6 @@
       "publishedAt": "2026-10-01T07:00:00.000Z"
     },
     {
-      "id": "4c66e459994bbb6a8a2e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Citi launches multi-market instant payments on Swift scheme",
-      "excerpt": "Citi has gone live with multiple markets on the Swift payments scheme, enabling bank clients to access multiple cross-border instant payment markets through a single account structure.",
-      "url": "https://www.finextra.com/newsarticle/48508/citi-launches-multi-market-instant-payments-on-swift-scheme?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T00:01:00.000Z"
-    },
-    {
       "id": "789fbdb64c6ebc9b37a6",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -787,20 +773,6 @@
       "publishedAt": "2026-09-29T22:04:48.000Z"
     },
     {
-      "id": "1a41f65d8b8bd3b3fd11",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "¿Vas a pedir un crédito? Estas son las 92 entidades financieras no están autorizadas en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWHNmSENzSzI3c2JKODlhNEl1Z0NIbGJSdXI1OUZlMy1OU01HRkpCbE1ZNUg5Ukk3elR3bWZjMlhFZG9QdnpSZ0g0NnhLaUZNNmpxMllHeTkyV05ncDExS1hGS2x1OEZFVEtidlo3b21nMlc1c0pnMmkxNmdnQjI1MFh2RmFzbnU1UVBsWTROYm8xN2dSTThRckFkeUtDMWY3SFJVU2R6b0ZuMUFPY2ttWDNPVXZtYkgzSl9RWF9Jak9mdElPRFNfUnZR?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T19:25:43.000Z"
-    },
-    {
       "id": "a1a62cec52c442721da8",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -869,6 +841,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-29T11:00:04.000Z"
+    },
+    {
+      "id": "1a41f65d8b8bd3b3fd11",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "¿Vas a pedir un crédito? Estas son las 92 entidades financieras no están autorizadas en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWHNmSENzSzI3c2JKODlhNEl1Z0NIbGJSdXI1OUZlMy1OU01HRkpCbE1ZNUg5Ukk3elR3bWZjMlhFZG9QdnpSZ0g0NnhLaUZNNmpxMllHeTkyV05ncDExS1hGS2x1OEZFVEtidlo3b21nMlc1c0pnMmkxNmdnQjI1MFh2RmFzbnU1UVBsWTROYm8xN2dSTThRckFkeUtDMWY3SFJVU2R6b0ZuMUFPY2ttWDNPVXZtYkgzSl9RWF9Jak9mdElPRFNfUnZR?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T07:00:00.000Z"
     },
     {
       "id": "0bf8dc8757c01050c196",
@@ -1271,9 +1257,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "recentCount": 10
     },
     {
       "id": "bce-junta",
@@ -1282,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 0
     },
     {
@@ -1293,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 9
     },
     {
@@ -1304,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 5
     },
     {
@@ -1315,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 0
     },
     {
@@ -1326,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 0
     },
     {
@@ -1337,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 0
     },
     {
@@ -1348,8 +1334,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 4
     },
     {
@@ -1359,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 7
     },
     {
@@ -1370,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 8
     },
     {
@@ -1381,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 8
     },
     {
@@ -1392,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 8
     },
     {
@@ -1403,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 1
     },
     {
@@ -1414,9 +1400,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1425,8 +1411,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 12
     },
     {
@@ -1436,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 10
     },
     {
@@ -1447,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T08:39:13.302Z",
-      "lastSuccessAt": "2026-10-07T08:39:13.302Z",
+      "checkedAt": "2026-10-07T16:28:35.971Z",
+      "lastSuccessAt": "2026-10-07T16:28:35.971Z",
       "recentCount": 10
     }
   ]
