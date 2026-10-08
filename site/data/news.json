@@ -1,34 +1,90 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-08T16:28:56.181Z",
+  "generatedAt": "2026-10-08T22:04:33.404Z",
   "stories": [
     {
-      "id": "90c901b2214d88f1528d",
+      "id": "ecc235dd50d98736a431",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Mastercard and SoFi Help Orbi Launch Crypto Card in Mexico",
-      "excerpt": "Mastercard and SoFi teamed to help Mexican FinTech Orbi introduce a cryptocurrency-linked card program, according to a Thursday (Oct. 8) news release. The program will allow Orbi customers to use either traditional fiat currency or funds from their crypto balances at the time of ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/mastercard-sofi-help-orbi-launch-crypto-card-mexico/",
+      "title": "SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution",
+      "excerpt": "The stablecoin industry has traditionally measured progress through issuance, transaction volume and blockchain activity. The headlines this week, however, point to another metric that may matter just as much: access to existing customers. SAP is bringing stablecoin settlement in",
+      "url": "https://www.pymnts.com/blockchain/2026/sap-and-samsung-shift-stablecoin-competition-from-issuance-to-distribution/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-08T16:21:50.000Z"
+      "publishedAt": "2026-10-08T21:07:37.000Z"
     },
     {
-      "id": "b7dd61a7c82d78d58225",
+      "id": "620506420f284b506456",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Consumers Expect to Spend More as Inflation Anxiety Rises",
-      "excerpt": "Consumers are entering the final months of the year less worried about losing their jobs, more worried about prices and less confident about where their household finances are headed. The Federal Reserve Bank of New York’s September Survey of Consumer Expectations, released Wedne",
-      "url": "https://www.pymnts.com/economy/2026/consumers-expect-to-spend-more-as-inflation-anxiety-rises/",
+      "title": "AI Answers Get Cheaper as Model Choices Multiply",
+      "excerpt": "A bank’s customer-service team fields thousands of routine questions a day. Where is my card? Why was I charged twice? Each answer artificial intelligence writes carries a small cost, and at that volume, the costs add up fast. This week, that math changed. The price of a basic AI",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-answers-get-cheaper-as-model-choices-multiply/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-08T15:37:06.000Z"
+      "publishedAt": "2026-10-08T19:50:40.000Z"
+    },
+    {
+      "id": "9b0b9ea65343a1176cf1",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech argentina Cocos lanza Cocos Crypto, una app independiente para operar y pagar con activos digitales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOb2pRWW5zdlQyVkVRMm43ZlFSTkZWUG9MMUszZk9BVVplZkYzbzgxYkRiZHhFMUVSZVZWcFdvd050OHdubDhhcUtiZjFWcWJyOTVDU0VPejhrWUVlazJhc25qeGotS3JZZUJncHlJcUxEMU04N3FvYS1tOTBhcEtkcUx1eVhsMFhFNWptaVlNakhUWmlTT0RtYjZzcll3bVR0UHJBbURUZmpROW92UVM1VXFQWVJMNzZwUUQ0OTBqRE5NMUxQakRSRWZrWmJ6eHNPOHJ0enh5WEp2eEE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-08T19:47:08.000Z"
+    },
+    {
+      "id": "55d8097a77794993708c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "CleverTap y Ubii Pagos se alían para impulsar experiencias financieras más inteligentes en Venezuela",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNajloWUtVMk5HNWdtQ1JqOU5WYzlxQWNETW1uR1FsTm1GcEZQcmpYMmNLSjlJMzhjeUh4YVlWM1FoT0ZvSTNza0FDeUtJV0YwLUVxQ2hfSW50OTlNZnFVUDl2WG84M052Z2VzMEEzMmtDb3FrdXg5MzdsVjQzRDFVaklGM2FZX3I3aGhQMVd2Y2Z4NHhrVTJ5Y0c5bXBheThvb2ZZanFWYVdKc2t4MzlkWG16ODBGZmZvVjZSWUNEbUdPY01IRTFoRGZUa1ZWVWxXaldV?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-08T19:47:08.000Z"
+    },
+    {
+      "id": "75be586f95999007758c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Protección embebida: ¿el siguiente salto de la inclusión financiera en México?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcEtiZXhlRWY5TFd0QlVHTFE4R05LNzFhMS1fakZlM2o4OTRONWs5Q2NlZXJxRWl1ckQzZzU4TDZlSXBLMTY5VWRZdk9rSWhuSHJDNllrTDRObS1EQkF3blMyMHRpLUdhTEJXWDFSQnktNVZrRHBFaWdCdjNuQnJUQ2FfNTdwdHJ6ZG14T1RWc2VNNVZTanNEWm9nZ1ZfTzlodXhJemxaTlNIS18tRlh0TnpR?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-08T19:47:08.000Z"
+    },
+    {
+      "id": "e8c9f9a44eb5df3b2d2c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fed Data Shows Tariffs Drove Inflation in 2025",
+      "excerpt": "New research shows that the cost of many consumer goods would have declined last year if not for U.S. tariffs. The paper from the Federal Reserve Bank of New York says the cost of 67 categories of goods was 2.9 percentage points higher as of February because of the tariffs. The p",
+      "url": "https://www.pymnts.com/economy/2026/fed-data-shows-tariffs-drove-inflation-in-2025/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T19:15:13.000Z"
     },
     {
       "id": "ef1124d76612c554dca5",
@@ -73,20 +129,6 @@
       "publishedAt": "2026-10-08T11:50:00.000Z"
     },
     {
-      "id": "0fa75f8bb7144d1b951c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Wise Third-Party Software Glitch Leads to 4,000 Incorrect Tax Statements",
-      "excerpt": "Wise is reportedly negotiating a settlement after a software glitch affected thousands of customers’ tax statements. The money transfer app this week contacted roughly 4,000 U.K. users of its Wise Asset service to inform them it had given them incorrect tax statements between 202",
-      "url": "https://www.pymnts.com/taxes/2026/wise-software-glitch-leads-to-4000-incorrect-tax-statements/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T10:53:34.000Z"
-    },
-    {
       "id": "47ba1e580a2cf28d6e35",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -101,20 +143,6 @@
       "publishedAt": "2026-10-08T10:50:00.000Z"
     },
     {
-      "id": "8c10755803714bdc6db5",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Coinbase Looks to Cash in as Banks Embrace Crypto",
-      "excerpt": "Coinbase is reportedly expanding its services for traditional financial firms amid growing institutional cryptocurrency adoption. Banks are increasingly launching their own digital asset services, and Coinbase is serving as their infrastructure provider while also bolstering its ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/coinbase-looks-to-cash-in-as-banks-embrace-crypto/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T10:47:21.000Z"
-    },
-    {
       "id": "e2ab9dce2058d6ab0cca",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -127,20 +155,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T10:01:00.000Z"
-    },
-    {
-      "id": "24f4ae98a5bd02c447fb",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard Bets Shoppers Will Trust AI Agents One Purchase at a Time",
-      "excerpt": "Watch more: The Agentic Experience With Mastercard’s Pablo Fourez Consumers won’t hand artificial intelligence agents unrestricted purchasing authority on day one, but repeated successful transactions could expand what they’re willing to delegate. It’s a topic that now dominates ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-bets-shoppers-will-trust-ai-agents-one-purchase-at-a-time/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T08:03:47.000Z"
     },
     {
       "id": "61f3225e83ee0399ac1b",
@@ -311,20 +325,6 @@
       "publishedAt": "2026-10-06T18:02:00.000Z"
     },
     {
-      "id": "1beb20ead600c40c8903",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kontempo levanta US$10,5M en Serie A para impulsar su plataforma de IA para el crédito industrial en México",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNbEp6bzM2Si1ERFdacjRxeU1XWTI3aUZkTFBkLVV3d1dtMDZNZ25xeVUzYjBsS2xnbXhTOW5wVy1xQWhUOGpsa1o1QkY0THJYOHlveTBtaTQwNTBXVUVlX1JTZTdtQ2JoaG8xeDB3cTMzbjg5V0U0eWVWVnVFOTA2U0xJaFpIaUhOb3MxczU5Sk1FT2haN1BPcWVuZ1FLcDB4dkNielJpX2tWVDV4a3gzU21ZZ1NyaU5lS3htQTBoNTFOZ2txZ3hDNHFJQ1JNa2JHQUtkUW1HeW9yVk11VHJQUkszek9LQXM?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T17:27:02.000Z"
-    },
-    {
       "id": "02847710f929afc618b5",
       "sourceId": "latamlist",
       "category": "latam",
@@ -421,20 +421,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
-      "id": "7a2cc64652c0195c9d5a",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Asaas levanta US$55,6M en su mayor FIDC para adelantar cobros a pymes en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPcThqQmZnbXVnSzVDMkpJWjgzNElfSTV5dHRBY3JXQnVKOVVlX1FsQVh2UDBDUFpZaHNuMDc2WHFZclg0VkdzMDlXNFlxVjYxc25na1BrM3NaNVh0ZzZhelJLS2N6Y1FYVjhUYkp0REUxdE1YMVFIQXAtNlA5UndWT0x5TzZJcXFYOG9Jbmk4UzhFNHdvcnQ3a0RTTjl4ME5vaUE4VnJ4NGRtZ2hTbHlUYlFKSG9Bay04aGNBM2xzWHRtQQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-05T19:33:42.000Z"
     },
     {
       "id": "24072e1fa00939790dd1",
@@ -633,20 +619,6 @@
       "publishedAt": "2026-10-01T22:36:41.000Z"
     },
     {
-      "id": "1e039541ab607fc2bc4e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech argentina Depay llega a Venezuela y habilita pagos QR y transferencias transfronterizas en tiempo real",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPYWpKZ212YWdfeC14X21vN0toM0xUVl9DdUZoYktEU0lDUDRsTkpwTVpydW9QVURER0R0V09zdlBiNnpnVkFySDNvTVBLaW16dDg4dU5BaWdDTE9qSFpDS2R6eF9TTUlYV2sybDhPMlU5LUI3U1JrTWd5TFVBd2xtMFdkdHUydkQ1eGkzVWlRZGVyXzVFMFBzRUZadm1FUVliRzBhelBDSWFRaFVoNmZUY3JTenJaaUM1dFVBeFBDLUIzR2hCTUJkSEJ0RlJqTjZSSEFldkNOUlFWVHE4c2lJM0s0ZS0tQQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-01T18:39:43.000Z"
-    },
-    {
       "id": "ae8fcdc7c244b1a926b1",
       "sourceId": "latamlist",
       "category": "latam",
@@ -675,20 +647,6 @@
       "publishedAt": "2026-10-01T12:00:00.000Z"
     },
     {
-      "id": "789fbdb64c6ebc9b37a6",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T21:16:38.000Z"
-    },
-    {
       "id": "9049b43c1e74648b489e",
       "sourceId": "latamlist",
       "category": "latam",
@@ -715,20 +673,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-30T20:08:34.000Z"
-    },
-    {
-      "id": "ce81a5f54d581d86b5c9",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T14:34:31.000Z"
     },
     {
       "id": "a724a29433e2a0829bec",
@@ -771,6 +715,34 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-30T09:00:06.000Z"
+    },
+    {
+      "id": "ce81a5f54d581d86b5c9",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T07:00:00.000Z"
+    },
+    {
+      "id": "789fbdb64c6ebc9b37a6",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T07:00:00.000Z"
     },
     {
       "id": "7a16c1302255f561a27d",
@@ -1229,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 10
     },
     {
@@ -1240,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 5
     },
     {
@@ -1273,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 3
     },
     {
@@ -1317,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 7
     },
     {
@@ -1328,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 0
     },
     {
@@ -1372,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1383,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 9
     },
     {
@@ -1405,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T16:28:56.181Z",
-      "lastSuccessAt": "2026-10-08T16:28:56.181Z",
+      "checkedAt": "2026-10-08T22:04:33.404Z",
+      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
       "recentCount": 10
     }
   ]
