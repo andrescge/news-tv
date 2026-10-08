@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-08T01:55:41.573Z",
+  "generatedAt": "2026-10-08T08:58:07.093Z",
   "stories": [
+    {
+      "id": "24f4ae98a5bd02c447fb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard Bets Shoppers Will Trust AI Agents One Purchase at a Time",
+      "excerpt": "Watch more: The Agentic Experience With Mastercard’s Pablo Fourez Consumers won’t hand artificial intelligence agents unrestricted purchasing authority on day one, but repeated successful transactions could expand what they’re willing to delegate. It’s a topic that now dominates ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-bets-shoppers-will-trust-ai-agents-one-purchase-at-a-time/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T08:03:47.000Z"
+    },
+    {
+      "id": "796e201c0b86aa8587ea",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "B2B Payments Already Have the Controls AI Agents Need",
+      "excerpt": "Watch more: How Payments Turn AI Into Action Every swipe, ACH transfer or virtual card transaction carries clues about who is spending, where money is moving, what is being bought and whether something looks wrong. Those clues have remained relatively untapped, and not for lack o",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/b2b-payments-already-have-the-controls-ai-agents-need/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T08:02:45.000Z"
+    },
+    {
+      "id": "fcaf1ef75ddf45bcf63f",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Insurers Lead on Billing but Still Miss What Policyholders Want",
+      "excerpt": "Property and home insurers have the best billing and payment scores of any industry PYMNTS Intelligence studied this year. They also have one in four policyholders ready to switch, and seven in 10 Gen Z policyholders ready to switch. Both things are true, and the second one is th",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/insurers-lead-on-billing-but-still-miss-what-policyholders-want/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T08:00:40.000Z"
+    },
+    {
+      "id": "e779137a9ecb9d2b7808",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Scams Move From the Inbox to the Text Screen",
+      "excerpt": "A bank can monitor a login, score a transaction and flag unusual account activity. It can’t see the text message that convinced its customer to send the money, which is giving scammers a lucrative way to switch up how they reach victims. The PYMNTS Intelligence report “Fraud’s Lo",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scams-move-from-the-inbox-to-the-text-screen/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T08:00:05.000Z"
+    },
     {
       "id": "b1005c50e714a6b05be7",
       "sourceId": "pymnts",
@@ -15,20 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T00:39:45.000Z"
-    },
-    {
-      "id": "096a7d352e562df87604",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OFAC Warns Sanctions Risk Can Hide Deep in the Payment Chain",
-      "excerpt": "The next sanctions shock for a multinational may not arrive as the name of a supplier appearing on a government blacklist. It could arrive as a payment that suddenly stops working. In a Monday (Oct. 5) alert, the Treasury Department’s Office of Foreign Assets Control (OFAC) warne",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/ofac-warning-shows-cfos-sanctions-risk-can-hide-in-the-payment-route/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-07T21:03:59.000Z"
     },
     {
       "id": "96f9b049e9b1705f8192",
@@ -1215,8 +1257,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 10
     },
     {
@@ -1226,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 9
     },
     {
@@ -1248,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 5
     },
     {
@@ -1259,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1334,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 3
     },
     {
@@ -1303,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 7
     },
     {
@@ -1314,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 1
     },
     {
@@ -1358,9 +1400,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1411,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 10
     },
     {
@@ -1391,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T01:55:41.573Z",
-      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "checkedAt": "2026-10-08T08:58:07.093Z",
+      "lastSuccessAt": "2026-10-08T08:58:07.093Z",
       "recentCount": 10
     }
   ]
