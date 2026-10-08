@@ -1,13 +1,27 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-07T21:58:38.682Z",
+  "generatedAt": "2026-10-08T01:55:41.573Z",
   "stories": [
+    {
+      "id": "b1005c50e714a6b05be7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "North Dakota Lenders Report Faster Settlement With State Bank’s Stablecoin",
+      "excerpt": "Financial institutions that are using the Bank of North Dakota’s (BND) new stablecoin, Roughrider Coin, are finding that it delivers practical benefits, BND said in a Monday (Oct. 5) press release. The stablecoin went live Oct. 1, according to a press release issued at the time b",
+      "url": "https://www.pymnts.com/blockchain/2026/north-dakota-lenders-report-faster-settlement-with-state-banks-stablecoin/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T00:39:45.000Z"
+    },
     {
       "id": "096a7d352e562df87604",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "OFAC Warning Shows CFOs Sanctions Risk Can Hide in the Payment Route",
+      "title": "OFAC Warns Sanctions Risk Can Hide Deep in the Payment Chain",
       "excerpt": "The next sanctions shock for a multinational may not arrive as the name of a supplier appearing on a government blacklist. It could arrive as a payment that suddenly stops working. In a Monday (Oct. 5) alert, the Treasury Department’s Office of Foreign Assets Control (OFAC) warne",
       "url": "https://www.pymnts.com/news/cross-border-payments/2026/ofac-warning-shows-cfos-sanctions-risk-can-hide-in-the-payment-route/",
       "source": "PYMNTS",
@@ -15,6 +29,34 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-07T21:03:59.000Z"
+    },
+    {
+      "id": "96f9b049e9b1705f8192",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Bankingly obtiene la certificación ISO/IEC 27001 en seguridad de la información",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYW02bGhEZ0t2bDRZbFY1enlyTWFKRGpJR2x5YzVSeDJBZTZGWmR1LXFzOHpOMzBxVVFEY1g2ajNuU2VpamE4WW5fU2o5MER6a3c4Q0JJcm1qcEdJLTNLYVZIWk54TVZINWxsUk5ZRmVFcXpPQlVVbEFHak1fSFVUc0tZbG1tU2ZzRF94MUh2c1BTcDI3dVhTT3BNLUtJVzZjNWlnWXpvMTlwZlVsc0k1bTdzLS15ZXM?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T19:38:48.000Z"
+    },
+    {
+      "id": "3fe578131eaa57bed27f",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech colombiana Blinka entra a Y Combinator con una solución de cuentas en dólares para empresas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUjdMdXlOZUE4bmtkb0NGaHNUR3N5em1NUkplakZJNUtRZnBSVDQ1aG1NQjZrck45QWI2RzdpNGVzaFFsTTFNWGRqT3NpQjVYdkczSmNGbElhTVNpWEt1eEdSTzdkb2RncXhfeDMzMy1nMlJZM3gzNjJod2VYNFZ4aDRiUkRPZjhEY3l0TzlYdHFKdC1WMmxBblFQSUY3eV85cGZZN245TUNZSzR2dkdta3VIRDlYV3F6N2FiNUkwWFotaTBKOGMwS0JOSWpFcDlaWXc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
       "id": "12e820ba75e1417f71d4",
@@ -31,18 +73,18 @@
       "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
-      "id": "a9af4c0a31f2ed8309ff",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "035f8189b3137c544a3e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Chase Adds Payroll to Larger Business Banking Offering",
-      "excerpt": "Chase is expanding its payroll service to help business clients dealing with cash flow pressures. The new offering, announced Wednesday (Oct. 7), brings Chase Payroll alongside the banking and payment activities business customers already manage through the lender. “Small busines",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/chase-adds-payroll-to-larger-business-banking-offering/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-07T17:27:57.000Z"
+      "title": "Fintech colombiana Fronte levanta ronda presemilla para construir un sistema financiero para familias transnacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZVdJSmlBT3FuZlIzdEJjQTFuc3VZMDdESW1aLTZJMnpWTnlfVWhucjRoam1EZDY0a2RuWDFJdXFSeXBxcGtMX3p4RzhRemVGVlAxenlfRjdWc2Z0dFNlbGNWN3ZVT0dncG9menBXUUZ2UzBDLTlHbGgwOF9rR2VMRzJ1bGIzYmZ0aWNUUHZDNjVWbFg1SlQ2emtDTmd2NTQtQ2ZLd0pieS1jM0sxTHhpYTdlT2ZFQURiWDdjNm4xNERmcjdCQ09LaS1FRTRiNHdibmdYX1dxOFhyd3NxNmRQMTE1NUIyOGtZTEE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
       "id": "f027f9c376d688dd2bee",
@@ -535,20 +577,6 @@
       "publishedAt": "2026-10-01T18:39:43.000Z"
     },
     {
-      "id": "c980862eadf91e479880",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Paytech colombiana Yuno lanza In-Person Payments para llevar el enrutamiento multiadquirente a los pagos en tienda",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPaFhEcVpTUS1feFdQTlh0WjV3WUZlRzBSUjZBb3BPQ1FDV1M5WXBkX1ZHVjFsTFdWN1pjbVpqc0FTMF9feldPc2Y0SkRDTWc4a0VmN000QnRUbzNERWY4SjRDNWlJS1VQbGNPWDhWT1pJYjlhOGczTTVEYW5aWnZsZWp4UWI1QVhQeWwzaGx5elAwbXJqb1RJb1B2UmNFb0tYNE14SExpbU8yOEpjdjBKR2YzdkRoUnk2VnctTWE0YlI2NmZYX3ZXbDRQTGJyZ18wTWIzYVFRZHBfdTNna2cyOVI2alAzUQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-01T18:39:43.000Z"
-    },
-    {
       "id": "ae8fcdc7c244b1a926b1",
       "sourceId": "latamlist",
       "category": "latam",
@@ -605,20 +633,6 @@
       "publishedAt": "2026-10-01T12:00:00.000Z"
     },
     {
-      "id": "52aa81b1ee6f613d9c28",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Tap to Pay en iPhone llega a ocho nuevos países de América Latina y amplía el alcance de Geopagos en la región",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNZGtrQlBGSS1XWjlLSFp6Qzk1c3gxQng4dk9mOGtSTkxleUZSWkkwRXpRNEsyUnhnT0ZBQ1dyNUlEWW5DSVNVSGQ4VTJrLWdkQ1FITkZrUGc4cjI2dEtSeE9TcDZMSmJpRmw3ZWdIbTBzMDJ3TlhXeTRyNmhydDZ6el9jbGtNb0FNTE9jS09xRFI3eWlZSGp0ZnFWVlJaNXc4T0E4RTFMSkYyZDFucnhfLWMxdksxdklBZmVfYzh1eXozWnoyTDU1VzIzMy1jTVpwVThlN1lJYi1KanVPcWZHRQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-01T07:00:00.000Z"
-    },
-    {
       "id": "789fbdb64c6ebc9b37a6",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -659,20 +673,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-30T20:08:34.000Z"
-    },
-    {
-      "id": "c2609c145385f83aacf6",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pibank, el neobanco de Banco Pichincha, llega a Perú y ofrecerá una cuenta de ahorro en soles a una tasa de 5% anual",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBRVmdDemp6NTQwa0VCLXk0NXZ2b2FOOTFUTGhiLWItUGxVUDZjN2taQTNrejdzUHduWGxpMVNGZ1RBenlkWW0zbjNYSGx5VUZFZDgtQzBDMVFVUV9YWDVyR1FKVTdsNHVhSWNjZA?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T16:20:48.000Z"
     },
     {
       "id": "ce81a5f54d581d86b5c9",
@@ -743,20 +743,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-29T23:15:30.000Z"
-    },
-    {
-      "id": "29f1c7b94c92e4647f5f",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB?oc=5",
-      "source": "Ecuavisa",
-      "sourceUrl": "https://www.ecuavisa.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T22:04:48.000Z"
     },
     {
       "id": "d5ee0a95e2d0ee7821f6",
@@ -1229,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 10
     },
     {
@@ -1240,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 9
     },
     {
@@ -1262,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 5
     },
     {
@@ -1273,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 0
     },
     {
@@ -1306,9 +1292,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
+      "recentCount": 3
     },
     {
       "id": "latamlist",
@@ -1317,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 7
     },
     {
@@ -1328,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 1
     },
     {
@@ -1372,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 2
     },
     {
@@ -1383,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 10
     },
     {
@@ -1405,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-07T21:58:38.682Z",
-      "lastSuccessAt": "2026-10-07T21:58:38.682Z",
+      "checkedAt": "2026-10-08T01:55:41.573Z",
+      "lastSuccessAt": "2026-10-08T01:55:41.573Z",
       "recentCount": 10
     }
   ]
