@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T02:10:15.914Z",
+  "generatedAt": "2026-10-09T09:04:40.907Z",
   "stories": [
+    {
+      "id": "dcb2ff32b5253e03a5c9",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Del fraude puntual al riesgo sistémico en la banca",
+      "excerpt": "La IA está cambiando la escala del fraude y dejando en evidencia que la banca aún opera entre áreas, herramientas y señales separadas. El desafío ahora es conectar señales para anticipar ataques.... Leer más... La entrada Del fraude puntual al riesgo sistémico en la banca se publ",
+      "url": "https://iupana.com/2026/10/09/del-fraude-puntual-al-riesgo-sistemico-en-la-banca/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-09T09:00:43.000Z"
+    },
+    {
+      "id": "e300f0fa9e92c2cb00a6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Splitit CEO Says AI Agents Need the Full Financial Picture to Pick Pay Later",
+      "excerpt": "Watch more: Need to Know With Splitit’s Nandan Sheth Artificial intelligence could turn pay later from an offer at checkout into advice about whether financing the purchase makes sense in the first place. Doing that requires more than finding the lowest monthly payment. An agent ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/splitit-ceo-says-ai-agents-need-the-full-financial-picture-to-pick-pay-later/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T08:03:54.000Z"
+    },
+    {
+      "id": "302df2cbdb1043d5a6ff",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "59% of Firms With AI Fraud Defenses Stop Losses Before They Start",
+      "excerpt": "Businesses that combine several artificial intelligence tools to fight payments fraud are nearly twice as likely to stop at least 90% of attempted attacks before losing money, according to new PYMNTS Intelligence research. “Prevention First: Building a Smarter Defense Against Pay",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/59percent-firms-with-ai-fraud-defenses-stop-losses-before-they-start/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T08:00:44.000Z"
+    },
+    {
+      "id": "6e0ee37293cbebcf4f69",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC and Fed Fine American Express $350 Million Over AML Deficiencies",
+      "excerpt": "American Express takes its responsibility to fight financial crime seriously and is committed to addressing concerns outlined by banking regulators, Chairman and CEO Stephen J. Squeri said in a statement released Thursday (Oct. 8). Squeri issued the statement on the same day the ",
+      "url": "https://www.pymnts.com/legal/aml/2026/occ-and-fed-fine-american-express-350-million-over-aml-deficiencies/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T02:52:02.000Z"
+    },
     {
       "id": "db4b943c746d4719fad3",
       "sourceId": "chainalysis",
@@ -57,20 +113,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-08T22:23:20.000Z"
-    },
-    {
-      "id": "ecc235dd50d98736a431",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "SAP and Samsung Shift Stablecoin Competition From Issuance to Distribution",
-      "excerpt": "The stablecoin industry has traditionally measured progress through issuance, transaction volume and blockchain activity. The headlines this week, however, point to another metric that may matter just as much: access to existing customers. SAP is bringing stablecoin settlement in",
-      "url": "https://www.pymnts.com/blockchain/2026/sap-and-samsung-shift-stablecoin-competition-from-issuance-to-distribution/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T21:07:37.000Z"
     },
     {
       "id": "9b0b9ea65343a1176cf1",
@@ -479,20 +521,6 @@
       "publishedAt": "2026-10-05T14:39:00.000Z"
     },
     {
-      "id": "63452cc5f6662fc14a5e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "EBAday 2027 moves to Rome: Early bird registration now open",
-      "excerpt": "The annual two-day summit for payments and transaction banking professionals hosted by the Euro Banking Association (EBA) and Finextra, returns for its 22nd edition in Rome, Italy on 15-16 June 2027.",
-      "url": "https://www.finextra.com/newsarticle/48522/ebaday-2027-moves-to-rome-early-bird-registration-now-open?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T14:00:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -843,20 +871,6 @@
       "publishedAt": "2026-09-29T07:00:00.000Z"
     },
     {
-      "id": "7ed8070dc2d5ae1840a2",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Skandia Colombia explora una capa de acceso al mercado de stablecoins para fintechs",
-      "excerpt": "A través de su modelo de servicios fiduciarios para fintechs, Skandia quiere incorporarse al mercado de monedas estables. Esta iniciativa ampliará su oferta de servicios en Colombia de cara a 2027. ... Leer más... La entrada Skandia Colombia explora una capa de acceso al mercado ",
-      "url": "https://iupana.com/2026/09/28/skandia-colombia-explora-capa-acceso-mercado-stablecoins-fintechs/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-28T17:00:52.000Z"
-    },
-    {
       "id": "dbc32cfcf2885eceb4e0",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1149,20 +1163,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-09T20:40:14.000Z"
-    },
-    {
-      "id": "ca382ccd03add7cfa731",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "Superintendencia de Bancos ha detectado más de 70 entidades sin autorización para operar en 2026",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPYmRTU2hneWJzMzh2Mi10SkV1N0Rtb2pQNm5ZZ2oteTJHR0ZHM2RHTURjN1VnTzdaR2wxcXBpYk5rV3pxbnp1N2Q5cFNpcHVSbnNLWFBQX0RTVVNRZzlTSll1VlhCb1E1ZGdnTlRBZDdvTG9BOTFWVU44bkNjMHVIa2lkX3N5ZF91RHVzQ1lVY3hsaXFuMlk4eWswcFBDMllzUEZ3QWFOUkRTX1ZxWnZkNnpPYnhlLUJCMmZxadIBwgFBVV95cUxQOVpGNm45WkNqRnJGZmNpdlpnUXFDMS1QQnN3dlRTR2R6bjVicWdqeEZNWF84SElWRU5BS21Pb0hiM0N3eERiYWlnWWhIempIQmkyUWRmZGFRTmREYzc2d3d1UDdiZkppU0FNVHA5S2JwbVROVER3Ui1sUDdORVFVOFVMbTEtbHhyVXVhNTktZ1dMQnRDZlFJY3BnWmxsUU40Z0E1X3JrbmRFcG9Oc283d1hiSHZYbXhSZXZvU2d6Y2ZOUQ?oc=5",
-      "source": "Vistazo",
-      "sourceUrl": "https://www.vistazo.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-09T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1173,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 10
     },
     {
@@ -1184,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 5
     },
     {
@@ -1217,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 0
     },
     {
@@ -1250,9 +1250,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "recentCount": 2
     },
     {
       "id": "latamlist",
@@ -1261,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 7
     },
     {
@@ -1272,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
-      "recentCount": 1
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1327,9 +1327,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
-      "recentCount": 12
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "recentCount": 11
     },
     {
       "id": "finextra-crypto",
@@ -1338,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 9
     },
     {
@@ -1349,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T02:10:15.914Z",
-      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "checkedAt": "2026-10-09T09:04:40.907Z",
+      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
       "recentCount": 10
     }
   ]
