@@ -1,7 +1,77 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T09:04:40.907Z",
+  "generatedAt": "2026-10-09T16:13:03.109Z",
   "stories": [
+    {
+      "id": "4b36cead424fb0c9be33",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Automation and AI Move Deeper Into Payment Exceptions",
+      "excerpt": "Much of payment processing already happens without an employee touching the transaction. The “hands-on” interactions come when payments fail to clear, or transactions trigger fraud reviews. In other cases requiring manual oversight, payments don’t match the invoices, ledgers or b",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/automation-and-ai-move-deeper-into-payment-exceptions/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T16:06:54.000Z"
+    },
+    {
+      "id": "ee7f44b992fa7cc3262a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Agents Can Make Cross-Border Payments Faster, But Not Fix Why They Fail",
+      "excerpt": "Moving money across borders may be one of the last steps in an international payment. Getting the money ready to move can take considerably longer. Before a multinational company pays an overseas supplier, its finance team often needs to verify the counterparty, reconcile an invo",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/ai-agents-can-make-cross-border-payments-faster-but-not-fix-why-they-fail/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T15:52:05.000Z"
+    },
+    {
+      "id": "16d166944b90d5afbe6b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "OpenCard y Financiera Juriscoop lanzan JurisOne para impulsar la transformación digital de las cooperativas en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxORzgtaC1qX0YwaENWYklPa0FTT1g4dHFxTHM3NzdlOVJQVFRoWl9NMTZfV19WNWR5aU44T1pjc2s3alVXRHBtaEdmTk9GdkxKemhUWjJOTzZCVzNFV19UZGtWOHRRUWlFWEhIZEJsUTdMc3NkTEwwUWJmUnZ6S0xSQkE4cklrdzE5Y3BrakVkREFhaWJEVVZKQkpsYlRzX3BzZS1jNWY4akJyNHlsZGNaZVo3dzdpQUtqeklSVkF6VDZwS0dvLURKZGpmS0JDZjM5Ulp5T3VMNUFlZnN2VXczUGl0UGNXOW1GbmlyOA?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-09T14:24:55.000Z"
+    },
+    {
+      "id": "9a0530f95b322596902b",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "EU and UK banks face 1 year deadline for T+1",
+      "excerpt": "Banks in the EU and UK are under pressure to demonstrate their operational readiness for the upcoming move to next day settlement, with just one year to go before the deadline for T+1.",
+      "url": "https://www.finextra.com/newsarticle/48564/eu-and-uk-banks-face-1-year-deadline-for-t1?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T11:38:00.000Z"
+    },
+    {
+      "id": "a54794aa8df95318bf31",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Amex hit with $350m penalty for AML deficiencies",
+      "excerpt": "The Office of the Comptroller of the Currency (OCC), the main banking regulator in the US, has issued a $350m civil money penalty against American Express National Bank for deficiencies in its anti-money laundering (AML) and bank secrecy act (BSA) processes.",
+      "url": "https://www.finextra.com/newsarticle/48562/amex-hit-with-350m-penalty-for-aml-deficiencies?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T09:36:00.000Z"
+    },
     {
       "id": "dcb2ff32b5253e03a5c9",
       "sourceId": "iupana",
@@ -269,20 +339,6 @@
       "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
-      "id": "035f8189b3137c544a3e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana Fronte levanta ronda presemilla para construir un sistema financiero para familias transnacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZVdJSmlBT3FuZlIzdEJjQTFuc3VZMDdESW1aLTZJMnpWTnlfVWhucjRoam1EZDY0a2RuWDFJdXFSeXBxcGtMX3p4RzhRemVGVlAxenlfRjdWc2Z0dFNlbGNWN3ZVT0dncG9menBXUUZ2UzBDLTlHbGgwOF9rR2VMRzJ1bGIzYmZ0aWNUUHZDNjVWbFg1SlQ2emtDTmd2NTQtQ2ZLd0pieS1jM0sxTHhpYTdlT2ZFQURiWDdjNm4xNERmcjdCQ09LaS1FRTRiNHdibmdYX1dxOFhyd3NxNmRQMTE1NUIyOGtZTEE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-07T19:38:48.000Z"
-    },
-    {
       "id": "61f3225e83ee0399ac1b",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -505,20 +561,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T18:24:00.000Z"
-    },
-    {
-      "id": "494d9e2e2b74d14ab49c",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Basware buys payment fraud prevention platform Trustpair",
-      "excerpt": "Invoice lifecycle management firm Basware has acquired payment fraud prevention platform Trustpair. Financial terms were not disclosed.",
-      "url": "https://www.finextra.com/newsarticle/48532/basware-buys-payment-fraud-prevention-platform-trustpair?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T14:39:00.000Z"
     },
     {
       "id": "f5fc81d6ce5f2b1d8421",
@@ -1173,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 10
     },
     {
@@ -1184,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 5
     },
     {
@@ -1217,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 7
     },
     {
@@ -1272,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1327,9 +1369,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "recentCount": 12
     },
     {
       "id": "finextra-crypto",
@@ -1338,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 9
     },
     {
@@ -1349,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T09:04:40.907Z",
-      "lastSuccessAt": "2026-10-09T09:04:40.907Z",
+      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 10
     }
   ]
