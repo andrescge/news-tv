@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-08T22:04:33.404Z",
+  "generatedAt": "2026-10-09T02:10:15.914Z",
   "stories": [
+    {
+      "id": "db4b943c746d4719fad3",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "UK Targets Cryptomus, Heleket, TokenSpot in New Russian Sanctions",
+      "excerpt": "Summary The UK’s latest sanctions target the broader infrastructure supporting Russia’s wartime economy. The UK designated crypto payment processors Cryptomus…",
+      "url": "https://www.chainalysis.com/blog/uk-sanctions-cryptomus-heleket-tokenspot/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T01:14:08.000Z"
+    },
+    {
+      "id": "838f40dcbaaa37ea3a58",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anyflo emerges from stealth to simplify stablecoin payments for enterprises",
+      "excerpt": "Stablecoin payments orchestration service Anyflo has emerged from stealth with news that it has acquired bitcoin lending platform Native.",
+      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T00:01:00.000Z"
+    },
+    {
+      "id": "8073c93b0a65069cbcec",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Anyflo emerges from stealth to simplify stablecoin payments for enterprises",
+      "excerpt": "Stablecoin payments orchestration service Anyflo has emerged from stealth with news that it has acquired bitcoin lending platform Native.",
+      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T00:01:00.000Z"
+    },
+    {
+      "id": "54ab3a319d42b3a7d4bc",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "El ecosistema Insurtech en Latam: crecimiento, tendencias y regulación en 2026",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNSzF5UDEtV0k5VTJEQ01iczFBRWxZWHZXTWYzZ2JVbVh0R0ZldlBsSVF3d1VIX0pJS1kxM3N5R3NmWE9OUkc0SkxjNmRVMWRLVmlPeUFZZU5oUVpIWm9lMzZ2cWxmU2tMSnZZdy04d3kwNXJxZlk3RFVKcGVBdkctaTc2dmJWWEIyMFlHSUFkNDBwNVRaNGNDMXdpZVpOT1ViM016X3B4cDY1TnJIcWFodDc3NA?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-08T22:23:20.000Z"
+    },
     {
       "id": "ecc235dd50d98736a431",
       "sourceId": "pymnts",
@@ -15,20 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T21:07:37.000Z"
-    },
-    {
-      "id": "620506420f284b506456",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Answers Get Cheaper as Model Choices Multiply",
-      "excerpt": "A bank’s customer-service team fields thousands of routine questions a day. Where is my card? Why was I charged twice? Each answer artificial intelligence writes carries a small cost, and at that volume, the costs add up fast. This week, that math changed. The price of a basic AI",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-answers-get-cheaper-as-model-choices-multiply/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T19:50:40.000Z"
     },
     {
       "id": "9b0b9ea65343a1176cf1",
@@ -71,20 +113,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-08T19:47:08.000Z"
-    },
-    {
-      "id": "e8c9f9a44eb5df3b2d2c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fed Data Shows Tariffs Drove Inflation in 2025",
-      "excerpt": "New research shows that the cost of many consumer goods would have declined last year if not for U.S. tariffs. The paper from the Federal Reserve Bank of New York says the cost of 67 categories of goods was 2.9 percentage points higher as of February because of the tariffs. The p",
-      "url": "https://www.pymnts.com/economy/2026/fed-data-shows-tariffs-drove-inflation-in-2025/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T19:15:13.000Z"
     },
     {
       "id": "ef1124d76612c554dca5",
@@ -157,20 +185,6 @@
       "publishedAt": "2026-10-08T10:01:00.000Z"
     },
     {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-08T08:03:00.000Z"
-    },
-    {
       "id": "96f9b049e9b1705f8192",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -225,6 +239,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-07T19:38:48.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T17:44:00.000Z"
     },
     {
       "id": "f027f9c376d688dd2bee",
@@ -295,20 +323,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T20:40:00.000Z"
-    },
-    {
-      "id": "2ebe34520bcfc89fc644",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "KOA cierra titularización por $85.000 millones en la Bolsa de Valores de Colombia para ampliar el acceso a soluciones financieras",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQR2N3WmEtcFBxLVMtS2dEcjRyZlM0aFZPNVp0NjRpNEVpTXhrOGkwcTJFaTROYkpoQ2dLVXdybnMyeDFJUVFtMGp2NWdSZzNmVTNZVXozSFJDTk5PbGdPMFhqOEt1UTZOVUpINS1wYnNleW8yNXFBYlU3Ynlia0w1T3pyT0VJQ0FmUzVPX3lQMzBXejNnYlBuUzdfT3RzTkQtS0ZDRXhPeHNsMXNsVnMzeFZRWUkzRXlWOVNjd1J1aXVmZXdpWVR1eTVOeDF4ZEdEd1lMX09nNVAyeFZKdlRXY2FfaV9kM1pUdWMwNDdUQVRVbmRQZGxKNg?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T19:35:23.000Z"
     },
     {
       "id": "c53a5f8b1aa8526df1d7",
@@ -491,20 +505,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
-    },
-    {
-      "id": "6b7c489eef7c495df883",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mynt valued at $7bn for upcoming IPO",
-      "excerpt": "Philippines unicorn Mynt could achieve a valuation of more than $7bn following an IPO that is set to be the country's biggest ever listing",
-      "url": "https://www.finextra.com/newsarticle/48531/mynt-valued-at-7bn-for-upcoming-ipo?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T12:37:00.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -955,20 +955,6 @@
       "publishedAt": "2026-09-24T14:28:00.000Z"
     },
     {
-      "id": "5d6eb7b6ce9c4cb9f7ba",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "The Clearing House taps Quant for tokenised deposit network",
-      "excerpt": "The Clearing House has picked UK-based programmable money infrastructure provider Quant to power a new interoperable payments network that will enable US financial institutions of all sizes to clear and settle tokenised deposit transactions.",
-      "url": "https://www.finextra.com/newsarticle/48465/the-clearing-house-taps-quant-for-tokenised-deposit-network?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-24T14:00:00.000Z"
-    },
-    {
       "id": "6fd0f021e5e1ed3b9fed",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1165,20 +1151,6 @@
       "publishedAt": "2026-09-09T20:40:14.000Z"
     },
     {
-      "id": "80a40f73212a02d9836a",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "How The $320M Exploit of Liquid Network Went Down",
-      "excerpt": "Summary Purported white-hat hackers exploited the Liquid Network to withdraw $320 million in BTC from the network’s reserve. A vulnerability…",
-      "url": "https://www.chainalysis.com/blog/320m-exploit-liquid-network/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-09T20:22:00.000Z"
-    },
-    {
       "id": "ca382ccd03add7cfa731",
       "sourceId": "regulatory-news",
       "category": "regulacion",
@@ -1201,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 10
     },
     {
@@ -1212,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 5
     },
     {
@@ -1245,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 3
     },
     {
@@ -1289,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 7
     },
     {
@@ -1300,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
+      "recentCount": 1
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-08T22:04:33.404Z",
-      "lastSuccessAt": "2026-10-08T22:04:33.404Z",
+      "checkedAt": "2026-10-09T02:10:15.914Z",
+      "lastSuccessAt": "2026-10-09T02:10:15.914Z",
       "recentCount": 10
     }
   ]
