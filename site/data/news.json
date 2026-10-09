@@ -1,34 +1,76 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T16:13:03.109Z",
+  "generatedAt": "2026-10-09T20:55:28.154Z",
   "stories": [
     {
-      "id": "4b36cead424fb0c9be33",
+      "id": "dfa29a4d6f0aed33781a",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Automation and AI Move Deeper Into Payment Exceptions",
-      "excerpt": "Much of payment processing already happens without an employee touching the transaction. The “hands-on” interactions come when payments fail to clear, or transactions trigger fraud reviews. In other cases requiring manual oversight, payments don’t match the invoices, ledgers or b",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/automation-and-ai-move-deeper-into-payment-exceptions/",
+      "title": "Overdrafts Expose a Divide in Credit Access",
+      "excerpt": "Running short of money before the next paycheck can force a consumer into making choices: let the checking account go negative, delay a bill, carry a card balance or seek additional credit. Consumers making those choices are also more likely to encounter future difficulty accessi",
+      "url": "https://www.pymnts.com/consumer-finance/2026/overdrafts-expose-a-divide-in-credit-access/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-09T16:06:54.000Z"
+      "publishedAt": "2026-10-09T20:22:32.000Z"
     },
     {
-      "id": "ee7f44b992fa7cc3262a",
+      "id": "d8acda6bc325fbe06233",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Buenas Fuentes: Bancolombia lanza sistema de suscripciones",
+      "excerpt": "El resumen semanal de noticias de banca digital y fintech en América Latina... Leer más... La entrada Buenas Fuentes: Bancolombia lanza sistema de suscripciones se publicó primero en IUPANA.",
+      "url": "https://iupana.com/2026/10/09/buenas-fuentes-bancolombia-lanza-sistema-de-suscripciones/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-09T19:01:03.000Z"
+    },
+    {
+      "id": "6da787f0108e3dc2e106",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "AI Agents Can Make Cross-Border Payments Faster, But Not Fix Why They Fail",
-      "excerpt": "Moving money across borders may be one of the last steps in an international payment. Getting the money ready to move can take considerably longer. Before a multinational company pays an overseas supplier, its finance team often needs to verify the counterparty, reconcile an invo",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/ai-agents-can-make-cross-border-payments-faster-but-not-fix-why-they-fail/",
+      "title": "Banks Put AI Agents Through Performance Reviews",
+      "excerpt": "A fund manager in Hong Kong emails BNY at 2 a.m. New York time about a transfer that hasn’t settled. A software agent can read it, pull the records and draft a reply. A human manager reviews the draft before it goes out, Microsoft reported in a case study published in May. That a",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-put-ai-agents-through-performance-reviews/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-09T15:52:05.000Z"
+      "publishedAt": "2026-10-09T17:35:28.000Z"
+    },
+    {
+      "id": "d406b899d88924317cf2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard CEO Says Stablecoins Solve Cross-Border Payment Delays",
+      "excerpt": "Cross-border payments are proving to be the strongest use case for stablecoins, Mastercard CEO Michael Miebach said Friday (Oct. 9), Bloomberg reported. During an interview with Bloomberg TV, Miebach said stablecoins provide an alternative to traditional methods of cross-border p",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/mastercard-ceo-says-stablecoins-solve-cross-border-payment-delays/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T16:47:10.000Z"
+    },
+    {
+      "id": "0fb17df6e7cbba595518",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "CFPB Adopts ‘Lighter Touch’ Bank Supervision Amid Funding Battle",
+      "excerpt": "Banks and other consumer lending institutions are finding it easier these days to score a passing grade from Consumer Financial Protection Bureau (CFPB) examiners amid an ongoing battle over the agency’s funding and structure. According to Reuters, more than half the institutions",
+      "url": "https://www.pymnts.com/legal/2026/cfpb-adopts-lighter-touch-bank-supervision-amid-funding-battle/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T16:25:19.000Z"
     },
     {
       "id": "16d166944b90d5afbe6b",
@@ -85,48 +127,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-09T09:00:43.000Z"
-    },
-    {
-      "id": "e300f0fa9e92c2cb00a6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Splitit CEO Says AI Agents Need the Full Financial Picture to Pick Pay Later",
-      "excerpt": "Watch more: Need to Know With Splitit’s Nandan Sheth Artificial intelligence could turn pay later from an offer at checkout into advice about whether financing the purchase makes sense in the first place. Doing that requires more than finding the lowest monthly payment. An agent ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/splitit-ceo-says-ai-agents-need-the-full-financial-picture-to-pick-pay-later/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T08:03:54.000Z"
-    },
-    {
-      "id": "302df2cbdb1043d5a6ff",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "59% of Firms With AI Fraud Defenses Stop Losses Before They Start",
-      "excerpt": "Businesses that combine several artificial intelligence tools to fight payments fraud are nearly twice as likely to stop at least 90% of attempted attacks before losing money, according to new PYMNTS Intelligence research. “Prevention First: Building a Smarter Defense Against Pay",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/59percent-firms-with-ai-fraud-defenses-stop-losses-before-they-start/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T08:00:44.000Z"
-    },
-    {
-      "id": "6e0ee37293cbebcf4f69",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OCC and Fed Fine American Express $350 Million Over AML Deficiencies",
-      "excerpt": "American Express takes its responsibility to fight financial crime seriously and is committed to addressing concerns outlined by banking regulators, Chairman and CEO Stephen J. Squeri said in a statement released Thursday (Oct. 8). Squeri issued the statement on the same day the ",
-      "url": "https://www.pymnts.com/legal/aml/2026/occ-and-fed-fine-american-express-350-million-over-aml-deficiencies/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T02:52:02.000Z"
     },
     {
       "id": "db4b943c746d4719fad3",
@@ -871,20 +871,6 @@
       "publishedAt": "2026-09-29T12:00:00.000Z"
     },
     {
-      "id": "eb6bca4a09c9b6aa59ef",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Colombia podría dar más tiempo para emitir las normas del open finance",
-      "excerpt": "El Ministerio de Finanzas propuso ampliar otros seis meses el plazo de la Superintendencia Financiera para publicar el cronograma de implementación de los temas clave del open finance. ... Leer más... La entrada Colombia podría dar más tiempo para emitir las normas del open finan",
-      "url": "https://iupana.com/2026/09/29/colombia-podria-dar-mas-tiempo-emitir-normas-open-finance/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-29T11:00:04.000Z"
-    },
-    {
       "id": "1a41f65d8b8bd3b3fd11",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1191,20 +1177,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-11T07:00:00.000Z"
-    },
-    {
-      "id": "9aa1592afbb1cc8f17f6",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "OFAC and DOJ Strike Xinbi, a Multibillion-Dollar Marketplace for Cybercriminals",
-      "excerpt": "Summary U.S. authorities have sanctioned Xinbi Guarantee, a major Chinese-language illicit marketplace that connects criminal networks with money laundering, scam…",
-      "url": "https://www.chainalysis.com/blog/ofac-sanctions-xinbi-cybercriminal-crypto-marketplace/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-09T20:40:14.000Z"
     }
   ],
   "sources": [
@@ -1215,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 10
     },
     {
@@ -1225,8 +1197,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "status": "error",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
       "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
@@ -1237,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 8
     },
     {
@@ -1247,8 +1219,8 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
+      "status": "error",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
       "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 5
     },
@@ -1259,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 7
     },
     {
@@ -1314,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
       "recentCount": 9
     },
     {
@@ -1391,9 +1363,9 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T16:13:03.109Z",
-      "lastSuccessAt": "2026-10-09T16:13:03.109Z",
-      "recentCount": 10
+      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "recentCount": 9
     }
   ]
 }
