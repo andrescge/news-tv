@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-09T20:55:28.154Z",
+  "generatedAt": "2026-10-10T00:51:30.981Z",
   "stories": [
+    {
+      "id": "08fa4fa7b8bdca08267d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OPay Files for US IPO with 50 Million Active Users and Expansion Plan",
+      "excerpt": "OPay, a digital financial platform built for emerging markets, has 50.1 million monthly active users and sees an addressable opportunity across billions of users and millions of merchants, the company said in a registration statement filed with the Securities and Exchange Commiss",
+      "url": "https://www.pymnts.com/news/investment-tracker/ipo/2026/opay-files-for-us-ipo-with-50-million-active-users-and-expansion-plan/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-10T00:01:44.000Z"
+    },
+    {
+      "id": "1dbfe77dd294191ee8f8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Trump Urges Congress to Pass Credit Card Competition Act",
+      "excerpt": "President Donald Trump continues to urge Congress to pass the Credit Card Competition Act, a bill that would require any card issued by major banks to support at least two card networks, the Wall Street Journal reported Thursday (Oct. 8). Merchant lobbyists who support the bill h",
+      "url": "https://www.pymnts.com/legal/2026/trump-urges-congress-to-pass-credit-card-competition-act/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-09T22:31:11.000Z"
+    },
     {
       "id": "dfa29a4d6f0aed33781a",
       "sourceId": "pymnts",
@@ -29,48 +57,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-09T19:01:03.000Z"
-    },
-    {
-      "id": "6da787f0108e3dc2e106",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks Put AI Agents Through Performance Reviews",
-      "excerpt": "A fund manager in Hong Kong emails BNY at 2 a.m. New York time about a transfer that hasn’t settled. A software agent can read it, pull the records and draft a reply. A human manager reviews the draft before it goes out, Microsoft reported in a case study published in May. That a",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-put-ai-agents-through-performance-reviews/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T17:35:28.000Z"
-    },
-    {
-      "id": "d406b899d88924317cf2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard CEO Says Stablecoins Solve Cross-Border Payment Delays",
-      "excerpt": "Cross-border payments are proving to be the strongest use case for stablecoins, Mastercard CEO Michael Miebach said Friday (Oct. 9), Bloomberg reported. During an interview with Bloomberg TV, Miebach said stablecoins provide an alternative to traditional methods of cross-border p",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/mastercard-ceo-says-stablecoins-solve-cross-border-payment-delays/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T16:47:10.000Z"
-    },
-    {
-      "id": "0fb17df6e7cbba595518",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "CFPB Adopts ‘Lighter Touch’ Bank Supervision Amid Funding Battle",
-      "excerpt": "Banks and other consumer lending institutions are finding it easier these days to score a passing grade from Consumer Financial Protection Bureau (CFPB) examiners amid an ongoing battle over the agency’s funding and structure. According to Reuters, more than half the institutions",
-      "url": "https://www.pymnts.com/legal/2026/cfpb-adopts-lighter-touch-bank-supervision-amid-funding-battle/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T16:25:19.000Z"
     },
     {
       "id": "16d166944b90d5afbe6b",
@@ -829,6 +815,20 @@
       "publishedAt": "2026-09-29T23:15:30.000Z"
     },
     {
+      "id": "29f1c7b94c92e4647f5f",
+      "sourceId": "regulatory-news",
+      "category": "regulacion",
+      "kind": "news",
+      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB?oc=5",
+      "source": "Ecuavisa",
+      "sourceUrl": "https://www.ecuavisa.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T22:04:48.000Z"
+    },
+    {
       "id": "d5ee0a95e2d0ee7821f6",
       "sourceId": "latamlist",
       "category": "latam",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 10
     },
     {
@@ -1198,7 +1198,7 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "error",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
       "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 0
     },
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 8
     },
     {
@@ -1220,7 +1220,7 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "error",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
       "lastSuccessAt": "2026-10-09T16:13:03.109Z",
       "recentCount": 5
     },
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 0
     },
     {
@@ -1264,9 +1264,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
+      "recentCount": 3
     },
     {
       "id": "latamlist",
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 7
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-09T20:55:28.154Z",
-      "lastSuccessAt": "2026-10-09T20:55:28.154Z",
+      "checkedAt": "2026-10-10T00:51:30.981Z",
+      "lastSuccessAt": "2026-10-10T00:51:30.981Z",
       "recentCount": 9
     }
   ]
