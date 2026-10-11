@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-10T22:31:54.847Z",
+  "generatedAt": "2026-10-11T01:54:00.488Z",
   "stories": [
     {
       "id": "08fa4fa7b8bdca08267d",
@@ -269,20 +269,6 @@
       "publishedAt": "2026-10-08T10:01:00.000Z"
     },
     {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-08T08:03:00.000Z"
-    },
-    {
       "id": "96f9b049e9b1705f8192",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -449,6 +435,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T12:38:00.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T12:00:00.000Z"
     },
     {
       "id": "0bc83eb1e84fdc5845d6",
@@ -1173,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 10
     },
     {
@@ -1184,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 5
     },
     {
@@ -1217,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 7
     },
     {
@@ -1272,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 0
     },
     {
@@ -1316,8 +1316,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 3
     },
     {
@@ -1327,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 9
     },
     {
@@ -1349,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-10T22:31:54.847Z",
-      "lastSuccessAt": "2026-10-10T22:31:54.847Z",
+      "checkedAt": "2026-10-11T01:54:00.488Z",
+      "lastSuccessAt": "2026-10-11T01:54:00.488Z",
       "recentCount": 9
     }
   ]
