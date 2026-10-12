@@ -1,21 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-12T00:32:35.140Z",
+  "generatedAt": "2026-10-12T07:21:15.744Z",
   "stories": [
-    {
-      "id": "08fa4fa7b8bdca08267d",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OPay Files for US IPO with 50 Million Active Users and Expansion Plan",
-      "excerpt": "OPay, a digital financial platform built for emerging markets, has 50.1 million monthly active users and sees an addressable opportunity across billions of users and millions of merchants, the company said in a registration statement filed with the Securities and Exchange Commiss",
-      "url": "https://www.pymnts.com/news/investment-tracker/ipo/2026/opay-files-for-us-ipo-with-50-million-active-users-and-expansion-plan/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-10T00:01:44.000Z"
-    },
     {
       "id": "d8acda6bc325fbe06233",
       "sourceId": "iupana",
@@ -1131,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 10
     },
     {
@@ -1142,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 4
     },
     {
@@ -1175,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 0
     },
     {
@@ -1186,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 2
     },
     {
@@ -1219,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 7
     },
     {
@@ -1230,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 8
     },
     {
@@ -1252,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 8
     },
     {
@@ -1263,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 0
     },
     {
@@ -1274,9 +1260,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
-      "recentCount": 1
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "recentCount": 0
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 9
     },
     {
@@ -1307,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T00:32:35.140Z",
-      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "checkedAt": "2026-10-12T07:21:15.744Z",
+      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
       "recentCount": 9
     }
   ]
