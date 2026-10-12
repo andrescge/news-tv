@@ -1,7 +1,133 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-12T07:21:15.744Z",
+  "generatedAt": "2026-10-12T17:54:32.234Z",
   "stories": [
+    {
+      "id": "e3d0d03cc8e63292db32",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "FedEx Adds Duty and Tax Payments to APAC Import Tool",
+      "excerpt": "FedEx customers in nine Asia-Pacific (APAC) markets can now use the FedEx Import Tool to handle document submission, clearance processing, shipment status tracking, and duty and tax payment, the company said in a Monday (Oct. 12) press release. These capabilities follow FedEx’s a",
+      "url": "https://www.pymnts.com/shipping/2026/fedex-adds-duty-and-tax-payments-to-apac-import-tool/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T17:25:15.000Z"
+    },
+    {
+      "id": "f152380f623645f412e4",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard and WEX Launch APAC-Focused Fleet Management Partnership",
+      "excerpt": "Mastercard and WEX launched a fleet management partnership focused on the Asia-Pacific region, according to a Monday (Oct. 12) press release. The collaboration is designed to combine universal fuel, vehicle fleet maintenance, tolling, parking and more into one payment experience,",
+      "url": "https://www.pymnts.com/partnerships/2026/mastercard-wex-launch-apac-focused-fleet-management-partnership/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T16:39:15.000Z"
+    },
+    {
+      "id": "a3f122e9a0d12e7b0285",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Convenience Stores Put Vertical SaaS to a Multi-Business Test",
+      "excerpt": "Vertical software as a service has generally benefited from specialization. A restaurant platform can be designed around menus, kitchens, ordering and tips. Retail software tracks merchandise, inventory and checkout. Fuel systems have their own pumps, pricing, authorization and p",
+      "url": "https://www.pymnts.com/news/retail/2026/convenience-stores-put-vertical-software-as-a-service-multi-business-test/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T15:34:01.000Z"
+    },
+    {
+      "id": "a6111d279f1c5965e43b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "How B2B Invoices Became Payment Infrastructure",
+      "excerpt": "Two years ago, a B2B invoice was largely a record of a transaction already agreed upon, passed between finance departments to trigger payment, reconciliation and collections. Today, as embedded finance, automated procurement and agentic payments converge, the invoice is evolving ",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/how-b2b-invoices-became-payment-infrastructure/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T15:30:53.000Z"
+    },
+    {
+      "id": "6e4da2bcae97aa5eff71",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Citi Readies Audit to Seek End of Federal Oversight and Speed Growth",
+      "excerpt": "Citi aims to submit an internal audit to banking regulators by the first quarter of 2027, if not earlier, in hopes that the regulators will lift the consent orders the bank has been operating under since 2020, Reuters reported Monday (Oct. 12), citing unnamed sources. Citi is wor",
+      "url": "https://www.pymnts.com/news/banking/2026/citi-readies-audit-to-seek-end-of-federal-oversight-and-speed-growth/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T15:08:56.000Z"
+    },
+    {
+      "id": "07c8d1394c4e58f6e31a",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Bahrain central bank to treble tech budget",
+      "excerpt": "The Central Bank of Bahrain (CBB) plans to increase its investment in technology by threefold over the next three years as part of a plan to develop Bahrain to the region's primary banking hub.",
+      "url": "https://www.finextra.com/newsarticle/48570/bahrain-central-bank-to-treble-tech-budget?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T12:03:00.000Z"
+    },
+    {
+      "id": "b8de8cf8d60c9d33bcec",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Semanal de Tasas de Interés. 01 al 07 de Octubre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-12T12:00:00.000Z"
+    },
+    {
+      "id": "6a5c3093b1a6ecf843e1",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Pepkor's $1.3bn fintech deal comes under shareholder scrutiny",
+      "excerpt": "South African retailer Pepkor is facing complaints from directors and investors over a deal to merge its fintech arm with a rival company.",
+      "url": "https://www.finextra.com/newsarticle/48569/pepkors-13bn-fintech-deal-comes-under-shareholder-scrutiny?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T10:09:00.000Z"
+    },
+    {
+      "id": "82efa012cbc06a3248ca",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Open finance en microfinancieras, ¿qué barreras hay que superar para sacar ventaja?",
+      "excerpt": "MiBanco, Banco W y Bancamía fueron consultados por iupana sobre las ventajas de las finanzas abiertas en Colombia. Aseguran que les favorecerán si se activa realmente el open data y se trabaja contra la resistencia de los clientes a compartir información.... Leer más... La entrad",
+      "url": "https://iupana.com/2026/10/12/open-finance-en-microfinancieras-que-barreras-hay-que-superar-para-sacar-ventaja/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-12T09:00:30.000Z"
+    },
     {
       "id": "d8acda6bc325fbe06233",
       "sourceId": "iupana",
@@ -423,34 +549,6 @@
       "publishedAt": "2026-10-06T12:00:00.000Z"
     },
     {
-      "id": "de13d72149ff56dd6457",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "ANZ completes cross-border tokenised deposit payment with Swift ledger",
-      "excerpt": "Australia's ANZ has carried out a live corporate treasury transactions using tokenised deposits and Swift’s blockchain ledger.",
-      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
-      "id": "e99bb12fad1b6e73e055",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anchorage Digital expands global services with Standard Chartered",
-      "excerpt": "Digital asset custody services provider Anchorage Digital has formed a partnership with Standard Chartered through which it will offer USD accounts and access to Swift wires, including transfers to and from third parties, to eligible non-US institutional clients.",
-      "url": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
       "id": "415c1907b8f4e38f8415",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -519,20 +617,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
-    },
-    {
-      "id": "b8de8cf8d60c9d33bcec",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Semanal de Tasas de Interés. 24 al 30 de septiembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-05T12:00:00.000Z"
     },
     {
       "id": "f38294a7ebc257cfb17d",
@@ -757,20 +841,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-30T07:00:00.000Z"
-    },
-    {
-      "id": "7a16c1302255f561a27d",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintechs en Perú: industria pide avanzar hacia un ecosistema financiero más abierto",
-      "excerpt": "El avance de TAPP y la implementación del open finance abren una nueva discusión para el ecosistema fintech peruano: cómo ampliar la participación de nuevos actores y construir una infraestructura financiera más interoperable, competitiva y segura. ... Leer más... La entrada Fint",
-      "url": "https://iupana.com/2026/09/29/fintechs-peru-industria-pide-avanzar-hacia-ecosistema-financiero-mas-abierto-2/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-29T23:15:30.000Z"
     },
     {
       "id": "d5ee0a95e2d0ee7821f6",
@@ -1117,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 10
     },
     {
@@ -1128,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 0
     },
     {
@@ -1139,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 8
     },
     {
@@ -1150,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 4
     },
     {
@@ -1161,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 0
     },
     {
@@ -1172,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 0
     },
     {
@@ -1183,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 0
     },
     {
@@ -1194,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 2
     },
     {
@@ -1205,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 7
     },
     {
@@ -1216,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 8
     },
     {
@@ -1227,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 8
     },
     {
@@ -1238,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 8
     },
     {
@@ -1249,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 0
     },
     {
@@ -1260,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
-      "recentCount": 0
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1271,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 12
     },
     {
@@ -1282,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 9
     },
     {
@@ -1293,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T07:21:15.744Z",
-      "lastSuccessAt": "2026-10-12T07:21:15.744Z",
+      "checkedAt": "2026-10-12T17:54:32.234Z",
+      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
       "recentCount": 9
     }
   ]
