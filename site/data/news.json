@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T20:17:15.739Z",
+  "generatedAt": "2026-10-12T00:32:35.140Z",
   "stories": [
     {
       "id": "08fa4fa7b8bdca08267d",
@@ -15,34 +15,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-10T00:01:44.000Z"
-    },
-    {
-      "id": "1dbfe77dd294191ee8f8",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Trump Urges Congress to Pass Credit Card Competition Act",
-      "excerpt": "President Donald Trump continues to urge Congress to pass the Credit Card Competition Act, a bill that would require any card issued by major banks to support at least two card networks, the Wall Street Journal reported Thursday (Oct. 8). Merchant lobbyists who support the bill h",
-      "url": "https://www.pymnts.com/legal/2026/trump-urges-congress-to-pass-credit-card-competition-act/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T22:31:11.000Z"
-    },
-    {
-      "id": "dfa29a4d6f0aed33781a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Overdrafts Expose a Divide in Credit Access",
-      "excerpt": "Running short of money before the next paycheck can force a consumer into making choices: let the checking account go negative, delay a bill, carry a card balance or seek additional credit. Consumers making those choices are also more likely to encounter future difficulty accessi",
-      "url": "https://www.pymnts.com/consumer-finance/2026/overdrafts-expose-a-divide-in-credit-access/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T20:22:32.000Z"
     },
     {
       "id": "d8acda6bc325fbe06233",
@@ -1159,8 +1131,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 10
     },
     {
@@ -1170,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 4
     },
     {
@@ -1203,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 0
     },
     {
@@ -1214,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 2
     },
     {
@@ -1247,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 7
     },
     {
@@ -1258,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 8
     },
     {
@@ -1280,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 8
     },
     {
@@ -1291,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
+      "recentCount": 1
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 9
     },
     {
@@ -1335,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-11T20:17:15.739Z",
-      "lastSuccessAt": "2026-10-11T20:17:15.739Z",
+      "checkedAt": "2026-10-12T00:32:35.140Z",
+      "lastSuccessAt": "2026-10-12T00:32:35.140Z",
       "recentCount": 9
     }
   ]
