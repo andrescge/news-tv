@@ -1,76 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-12T17:54:32.234Z",
+  "generatedAt": "2026-10-13T00:39:48.894Z",
   "stories": [
     {
-      "id": "e3d0d03cc8e63292db32",
+      "id": "7a17dba741b8fb023c78",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "FedEx Adds Duty and Tax Payments to APAC Import Tool",
-      "excerpt": "FedEx customers in nine Asia-Pacific (APAC) markets can now use the FedEx Import Tool to handle document submission, clearance processing, shipment status tracking, and duty and tax payment, the company said in a Monday (Oct. 12) press release. These capabilities follow FedEx’s a",
-      "url": "https://www.pymnts.com/shipping/2026/fedex-adds-duty-and-tax-payments-to-apac-import-tool/",
+      "title": "Ransomware Gang Claims MoneyGram Data Theft",
+      "excerpt": "A ransomware gang claimed Monday (Oct. 12) that it stole data from payment network MoneyGram and will publish the data if the company does not start negotiating, Cybernews reported Monday (Oct. 12), citing the gang’s claim posted on the dark net. MoneyGram has not confirmed an in",
+      "url": "https://www.pymnts.com/cybersecurity/2026/ransomware-gang-claims-moneygram-data-theft/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-12T17:25:15.000Z"
+      "publishedAt": "2026-10-12T23:51:49.000Z"
     },
     {
-      "id": "f152380f623645f412e4",
+      "id": "b4941fa278e8b6f90fea",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Mastercard and WEX Launch APAC-Focused Fleet Management Partnership",
-      "excerpt": "Mastercard and WEX launched a fleet management partnership focused on the Asia-Pacific region, according to a Monday (Oct. 12) press release. The collaboration is designed to combine universal fuel, vehicle fleet maintenance, tolling, parking and more into one payment experience,",
-      "url": "https://www.pymnts.com/partnerships/2026/mastercard-wex-launch-apac-focused-fleet-management-partnership/",
+      "title": "Mashreq’s AI Agents Cut Integration Time Up to 70%",
+      "excerpt": "Every new payment rail, app feature or partner a bank adds has to be wired into the systems already running it. Most of that wiring is still done by hand, and so is the cleanup when a connection breaks. Mashreq is handing more of that work to artificial intelligence (AI) agents. ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mashreqs-ai-agents-cut-integration-time-up-to-70/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-12T16:39:15.000Z"
+      "publishedAt": "2026-10-12T23:27:49.000Z"
     },
     {
-      "id": "a3f122e9a0d12e7b0285",
+      "id": "5c05e6ca4fd8100f0ddc",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Convenience Stores Put Vertical SaaS to a Multi-Business Test",
-      "excerpt": "Vertical software as a service has generally benefited from specialization. A restaurant platform can be designed around menus, kitchens, ordering and tips. Retail software tracks merchandise, inventory and checkout. Fuel systems have their own pumps, pricing, authorization and p",
-      "url": "https://www.pymnts.com/news/retail/2026/convenience-stores-put-vertical-software-as-a-service-multi-business-test/",
+      "title": "Treasury Screens 1.1 Billion Payments to Catch Errors Early",
+      "excerpt": "A federal payment can go wrong in two directions. Money can reach someone who shouldn’t be receiving it, or funds owed to a legitimate recipient can arrive late or require additional work to obtain. The Treasury Department is putting more controls ahead of the first scenario. Dur",
+      "url": "https://www.pymnts.com/disbursements/2026/treasury-screens-1-1-billion-payments-to-catch-errors-early/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-12T15:34:01.000Z"
+      "publishedAt": "2026-10-12T22:57:11.000Z"
     },
     {
-      "id": "a6111d279f1c5965e43b",
+      "id": "95ec2d995b1af96dea92",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "How B2B Invoices Became Payment Infrastructure",
-      "excerpt": "Two years ago, a B2B invoice was largely a record of a transaction already agreed upon, passed between finance departments to trigger payment, reconciliation and collections. Today, as embedded finance, automated procurement and agentic payments converge, the invoice is evolving ",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/how-b2b-invoices-became-payment-infrastructure/",
+      "title": "Stablecoins Have a $10 Million Problem: All That Money Is Going Back to the Bank",
+      "excerpt": "A business receives $10 million in stablecoins on Monday, and by Friday, much of it could be back in a bank account. The payment worked. The problem, however, is what needed to happen next. Stablecoin payments may have eliminated hours of settlement friction, but they haven’t eli",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-have-10-million-dollar-problem-going-back-bank/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-12T15:30:53.000Z"
+      "publishedAt": "2026-10-12T21:19:02.000Z"
     },
     {
-      "id": "6e4da2bcae97aa5eff71",
+      "id": "78ceee99b2505c0513d7",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Citi Readies Audit to Seek End of Federal Oversight and Speed Growth",
-      "excerpt": "Citi aims to submit an internal audit to banking regulators by the first quarter of 2027, if not earlier, in hopes that the regulators will lift the consent orders the bank has been operating under since 2020, Reuters reported Monday (Oct. 12), citing unnamed sources. Citi is wor",
-      "url": "https://www.pymnts.com/news/banking/2026/citi-readies-audit-to-seek-end-of-federal-oversight-and-speed-growth/",
+      "title": "Banks Stop Counting AI Hours and Start Counting Returns",
+      "excerpt": "For years, banks have sold investors on artificial intelligence (AI) with usage counts and hours saved. Few have said how much money it makes; at least, not on an earnings call. That is starting to change. Bank of America has 130 to 140 AI projects running “at a cost of $400 mill",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-stop-counting-ai-hours-and-start-counting-returns/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-12T15:08:56.000Z"
+      "publishedAt": "2026-10-12T20:23:27.000Z"
+    },
+    {
+      "id": "0a4239700282bcacf3d1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "PayJoy Acquires Mexico’s Finia to Gain Deeper Credit Insights",
+      "excerpt": "PayJoy, a financial service provider for underserved consumers in emerging markets, has acquired Mexican FinTech Finia. The deal is designed to let PayJoy apply Finia’s technology and expertise to its platform, enhancing its underwriting capabilities and expanding its services fo",
+      "url": "https://www.pymnts.com/financial-inclusion-3/2026/payjoy-acquires-mexicos-finia-to-gain-deeper-credit-insights/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T19:54:53.000Z"
+    },
+    {
+      "id": "d905b36bf60e7e19e02b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Why 42% of Companies Rely on Layered Defense Stacks to Combat Payments Fraud",
+      "excerpt": "Forty-two percent of corporate finance departments deploy a stack of three or more artificial intelligence (AI) tools to secure their outgoing payments, according to the PYMNTS Intelligence and Bottomline collaboration “Prevention First: Building a Smarter Defense Against Payment",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/why-42percent-companies-layered-defense-stacks-combat-payments-fraud/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-12T19:35:43.000Z"
     },
     {
       "id": "07c8d1394c4e58f6e31a",
@@ -801,20 +829,6 @@
       "publishedAt": "2026-09-30T12:00:00.000Z"
     },
     {
-      "id": "117605d1f89bd1857234",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "IA impulsa cambios en estándares de seguridad en pagos",
-      "excerpt": "PCI SSC prepara una nueva versión de su estándar de seguridad ante un ecosistema donde la IA ya interviene en la gestión del riesgo y las transacciones. ... Leer más... La entrada IA impulsa cambios en estándares de seguridad en pagos se publicó primero en IUPANA.",
-      "url": "https://iupana.com/2026/09/30/ia-impulsa-cambios-en-estandares-de-seguridad-en-pagos/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-30T09:00:06.000Z"
-    },
-    {
       "id": "ce81a5f54d581d86b5c9",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -855,20 +869,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-29T15:12:13.000Z"
-    },
-    {
-      "id": "2df5dbd7db8e25296c5b",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Prometeo launches Risk Intelligence",
-      "excerpt": "Uruguayan fintech Prometeo expanded its account verification service to more than 110 countries across five continents and launched…",
-      "url": "https://latamlist.com/prometeo-launches-risk-intelligence/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T14:58:32.000Z"
     },
     {
       "id": "4f993a614134ae1976d4",
@@ -955,6 +955,20 @@
       "publishedAt": "2026-09-26T07:00:00.000Z"
     },
     {
+      "id": "bc98479a46219adb7a6d",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-26T07:00:00.000Z"
+    },
+    {
       "id": "20978e0dafe5d148c000",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1023,6 +1037,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-24T14:28:00.000Z"
+    },
+    {
+      "id": "cd96405e0c47d8269751",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T07:00:00.000Z"
     },
     {
       "id": "6fd0f021e5e1ed3b9fed",
@@ -1187,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 10
     },
     {
@@ -1198,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 4
     },
     {
@@ -1231,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 2
     },
     {
@@ -1275,9 +1303,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "recentCount": 6
     },
     {
       "id": "latam-fintech-hub",
@@ -1286,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 8
     },
     {
@@ -1297,9 +1325,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "recentCount": 7
     },
     {
       "id": "latam-bloomberg",
@@ -1308,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-12T17:54:32.234Z",
-      "lastSuccessAt": "2026-10-12T17:54:32.234Z",
+      "checkedAt": "2026-10-13T00:39:48.894Z",
+      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
       "recentCount": 9
     }
   ]
