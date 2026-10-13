@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T00:39:48.894Z",
+  "generatedAt": "2026-10-13T07:42:36.286Z",
   "stories": [
     {
       "id": "7a17dba741b8fb023c78",
@@ -87,13 +87,13 @@
       "publishedAt": "2026-10-12T19:54:53.000Z"
     },
     {
-      "id": "d905b36bf60e7e19e02b",
+      "id": "837ff6435eb734f76096",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Why 42% of Companies Rely on Layered Defense Stacks to Combat Payments Fraud",
+      "title": "PYMNTS Finds 42% of Companies Rely on Layered Defense to Combat Fraud",
       "excerpt": "Forty-two percent of corporate finance departments deploy a stack of three or more artificial intelligence (AI) tools to secure their outgoing payments, according to the PYMNTS Intelligence and Bottomline collaboration “Prevention First: Building a Smarter Defense Against Payment",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/why-42percent-companies-layered-defense-stacks-combat-payments-fraud/",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/pymnts-finds-42percent-companies-layered-defense-combat-fraud/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
@@ -1215,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 10
     },
     {
@@ -1226,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 4
     },
     {
@@ -1259,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 6
     },
     {
@@ -1314,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 7
     },
     {
@@ -1336,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 0
     },
     {
@@ -1358,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 7
     },
     {
@@ -1369,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 9
     },
     {
@@ -1391,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T00:39:48.894Z",
-      "lastSuccessAt": "2026-10-13T00:39:48.894Z",
+      "checkedAt": "2026-10-13T07:42:36.286Z",
+      "lastSuccessAt": "2026-10-13T07:42:36.286Z",
       "recentCount": 9
     }
   ]
