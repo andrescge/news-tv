@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T15:58:57.005Z",
+  "generatedAt": "2026-10-13T21:14:56.551Z",
   "stories": [
+    {
+      "id": "cb2cee6c4d72b0cb27c9",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "A un año de Bre-B, el sistema se prepara para recibir pagos empresariales",
+      "excerpt": "La plataforma colombiana de pagos inmediatos cumplió su primer aniversario y, ante los buenos resultados, se alista para iniciar la fase 2.0 con nuevos casos de uso concentrados en el sector corporativo, como remesas, nóminas y pagos a proveedores. Ya arrancó la etapa regulatoria",
+      "url": "https://iupana.com/2026/10/13/un-ano-bre-b-sistema-prepara-recibir-pagos-empresariales/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-13T20:57:38.000Z"
+    },
+    {
+      "id": "1fe3c4a9689b48fbb623",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Banks Widen Credit Access to Low-Score Borrowers",
+      "excerpt": "Large banks are putting more credit cards into the hands of consumers with low credit scores, but they are not pairing that expansion with large amounts of new borrowing capacity. The combination indicates how card issuers are pursuing growth after several years of tight underwri",
+      "url": "https://www.pymnts.com/credit-cards/2026/banks-widen-credit-access-low-score-borrowers/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T20:42:02.000Z"
+    },
+    {
+      "id": "6ae025ab0c3586bf4bdb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Your Bank Wants to Plan and Pay for the Trip",
+      "excerpt": "Banks have always paid for the trip. Now, they want to help plan it. Most travel decisions get made on travel sites and, more and more, in artificial intelligence (AI) chatbots, before a user takes their card out to pay. Banks and card networks now want a place earlier in that jo",
+      "url": "https://www.pymnts.com/transportation/travel-payments/2026/your-bank-wants-to-plan-and-pay-for-the-trip/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T20:06:16.000Z"
+    },
+    {
+      "id": "90ef88a3260e390446d2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Billing Friction Puts $12.3 Billion in Auto Loan Payments at Risk",
+      "excerpt": "Auto lenders are entering a period in which collections performance will depend on more than identifying borrowers who are falling behind. They also must account for what happens between the monthly statement and the receipt of payment. The Federal Reserve Bank of New York’s “Qua",
+      "url": "https://www.pymnts.com/loans/2026/billing-friction-puts-12-billion-dollars-auto-loan-payments-risk/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T19:45:46.000Z"
+    },
+    {
+      "id": "65b8b376f83d3a3a199a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Wells Fargo Enhances Banking Capabilities Using AI and Digital Assets",
+      "excerpt": "Wells Fargo is devoting “significant management time and resources” to building artificial intelligence (AI) capabilities and driving value across its operations, Chairman and CEO Charlie Scharf said Tuesday (Oct. 13) during a third quarter earnings call. The bank is using AI and",
+      "url": "https://www.pymnts.com/earnings/2026/wells-fargo-enhances-banking-capabilities-using-ai-and-digital-assets/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T19:24:22.000Z"
+    },
+    {
+      "id": "065cc944b92addf2329e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Cross River Picks Ex-Lazard CEO Evan Russo as President",
+      "excerpt": "Cross River Bank has selected former Lazard Asset Management CEO Evan Russo as its new president. The appointment will see Russo work with Cross River CEO Gilles Gade to help establish the bank as a “trusted infrastructure layer” for payments, banking, digital assets and AI-enabl",
+      "url": "https://www.pymnts.com/personnel/2026/cross-river-picks-ex-lazard-ceo-evan-russo-as-president/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T18:56:11.000Z"
+    },
     {
       "id": "887dcfd5e33859ac713e",
       "sourceId": "chainalysis",
@@ -17,18 +101,18 @@
       "publishedAt": "2026-10-13T15:57:50.000Z"
     },
     {
-      "id": "4c7637c4bf55f9f5600c",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "963fe28ddadb70b13a45",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "FinCEN Clears Path for Digital IDs in Bank Customer Verification, With Caveats",
-      "excerpt": "Federal financial regulators have clarified that banks and credit unions can use government-issued digital credentials to verify customers’ identities, potentially streamlining account onboarding. But according to an analysis by Anderson Insights, reliance on digital credentials ",
-      "url": "https://www.pymnts.com/legal/2026/fincen-clears-path-for-digital-ids-in-bank-customer-verification-with-caveats/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T15:30:59.000Z"
+      "title": "Fintech Monetae obtiene aprobación para adquirir una proveedora de dinero electrónico y amplía sus licencias en El Salvador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOVnRwOUlXeGNnVjVTS3lqSnlQNkRzdTNNSzQzbHFMbEtTOEtUVFVKV0tDalNSalNGVF9GSnJ2UjZFZHF3Yy1mcGVXUDVDVVAydUNEcmNTVVBDdjU3WXVUV0FqajVSQ2Q2TG16ZzE5OUduMXZFdElhMllZV0JtbGdVNnBPLU9QZ3BfNHNNRnRzNm1SV0xXX2lwV3lOcmZaTG9wVU1YUGNnMTFIZmdZWUJrSldBZVNxNDYwM002REQwUVpxWmMwNjJIV3pCd2d6NDl5SldJRFdaZWx2MXRQMFVBNGtuQXZ5eGprY2N0ZFByV1hFLU0?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T15:32:41.000Z"
     },
     {
       "id": "21ff01526a170b3c51ff",
@@ -43,76 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-13T14:48:00.000Z"
-    },
-    {
-      "id": "f9733c85a5029e990ce4",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "PYMNTS Finds Enterprises Outpace Middle-Market Firms in Payment Guarantee Adoption",
-      "excerpt": "Large corporations are racing ahead in payment guarantee adoption while middle-market organizations hesitate over technical hurdles and upfront expenses across the evolving digital economy. The PYMNTS Intelligence report “The Payment Guarantee Gap: Why Adoption Lags Despite Perce",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/pymnts-finds-enterprises-outpace-middle-market-firms-payment-guarantee-adoption/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T14:43:35.000Z"
-    },
-    {
-      "id": "6c608b93f2dcdb4b36fd",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Huntington Expands Into International Corporate Banking Sphere",
-      "excerpt": "Huntington Bank has added an international corporate banking group to its corporate, specialty and government banking division. The expansion, announced Tuesday (Oct. 13), is designed to help foreign multinational companies and their U.S. subsidiaries entering or expanding in the",
-      "url": "https://www.pymnts.com/news/banking/2026/huntington-expands-into-international-corporate-banking-sphere/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T14:31:16.000Z"
-    },
-    {
-      "id": "11dee7f084036098345f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Character AI Files for Bankruptcy and Signs $20 Million Disney Deal",
-      "excerpt": "Character AI has declared bankruptcy and agreed to sell some of its assets to Disney. The chatbot maker announced Tuesday (Oct. 13) that it had entered into a voluntary Chapter 11 bankruptcy process to set the stage for a court-supervised sale of its business. “Over the past year",
-      "url": "https://www.pymnts.com/business/2026/character-ai-files-for-bankruptcy-and-signs-20-million-disney-deal/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T13:11:55.000Z"
-    },
-    {
-      "id": "34e74aef32b75737be7b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Priority to Orchestrate NIL Payments for Notre Dame Athletes",
-      "excerpt": "Priority Commerce is teaming with Rally, a marketing and media group for Notre Dame student-athletes, according to a Tuesday (Oct. 13) news release. Priority will be the official name, image and likeness (NIL) orchestration partner of Rally, which serves Notre Dame’s student-athl",
-      "url": "https://www.pymnts.com/partnerships/2026/priority-orchestrate-name-image-likeness-payments-notre-dame-athletes/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T13:00:51.000Z"
-    },
-    {
-      "id": "287c748861916e0244c9",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Splitit Bets a White-Label Charge Card Can Make Mid-Sized Banks BNPL Contenders",
-      "excerpt": "Watch more: Need to Know with Splitit’s Nandan Sheth In 1949, a businessman named Frank McNamara finished dinner at a New York restaurant and realized he’d left his wallet at home. The story may be part legend, but the product it inspired was real. Diners Club gave members a card",
-      "url": "https://www.pymnts.com/bnpl/2026/splitit-bets-a-white-label-charge-card-can-make-mid-sized-banks-bnpl-contenders/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T13:00:15.000Z"
     },
     {
       "id": "30067d342d0a2e295bdd",
@@ -141,34 +155,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T12:00:00.000Z"
-    },
-    {
-      "id": "b934bf73d222c5d2c6e1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa Receives Clearance to Bring Card Business to China",
-      "excerpt": "Visa has been granted permission from China to bring its card business to that country. The American payments giant announced Tuesday (Oct. 13) that the People’s Bank of China (PBOC) had approved its “Application to Prepare,” which lets Visa begin work on setting up a domestic ba",
-      "url": "https://www.pymnts.com/credit-cards/2026/visa-receives-clearance-to-bring-card-business-to-china/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T10:50:30.000Z"
-    },
-    {
-      "id": "d9351217f525a2f49b3e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banking Regulators Tighten Oversight of Possible AI Risks",
-      "excerpt": "Banking watchdogs are reportedly ramping up efforts to control increasing risks from artificial intelligence (AI). This heightened oversight is being driven in part by the threat of cyberattacks on banks or rogue AI agents hindering financial stability, Reuters reported Tuesday (",
-      "url": "https://www.pymnts.com/news/banking/2026/banking-regulators-tighten-oversight-of-possible-ai-risks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T10:44:14.000Z"
     },
     {
       "id": "ffcf6bb7aa11dbd69bf6",
@@ -423,6 +409,20 @@
       "publishedAt": "2026-10-08T19:47:08.000Z"
     },
     {
+      "id": "1aab8971edc01904547c",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombian fintech Fronte raises pre-seed round led by Rally Cap VC and Bankless Ventures",
+      "excerpt": "Colombian fintech Fronte raised an undisclosed pre-seed round led by Rally Cap VC and Bankless Ventures. Base Ecosystem…",
+      "url": "https://latamlist.com/colombian-fintech-fronte-raises-pre-seed-round-led-by-rally-cap-vc-and-bankless-ventures/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-08T17:23:14.000Z"
+    },
+    {
       "id": "ef1124d76612c554dca5",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -493,6 +493,20 @@
       "publishedAt": "2026-10-08T10:01:00.000Z"
     },
     {
+      "id": "035f8189b3137c544a3e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech colombiana Fronte levanta ronda presemilla para construir un sistema financiero para familias transnacionales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZVdJSmlBT3FuZlIzdEJjQTFuc3VZMDdESW1aLTZJMnpWTnlfVWhucjRoam1EZDY0a2RuWDFJdXFSeXBxcGtMX3p4RzhRemVGVlAxenlfRjdWc2Z0dFNlbGNWN3ZVT0dncG9menBXUUZ2UzBDLTlHbGgwOF9rR2VMRzJ1bGIzYmZ0aWNUUHZDNjVWbFg1SlQ2emtDTmd2NTQtQ2ZLd0pieS1jM0sxTHhpYTdlT2ZFQURiWDdjNm4xNERmcjdCQ09LaS1FRTRiNHdibmdYX1dxOFhyd3NxNmRQMTE1NUIyOGtZTEE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-07T19:38:48.000Z"
+    },
+    {
       "id": "96f9b049e9b1705f8192",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -500,34 +514,6 @@
       "title": "Bankingly obtiene la certificación ISO/IEC 27001 en seguridad de la información",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYW02bGhEZ0t2bDRZbFY1enlyTWFKRGpJR2x5YzVSeDJBZTZGWmR1LXFzOHpOMzBxVVFEY1g2ajNuU2VpamE4WW5fU2o5MER6a3c4Q0JJcm1qcEdJLTNLYVZIWk54TVZINWxsUk5ZRmVFcXpPQlVVbEFHak1fSFVUc0tZbG1tU2ZzRF94MUh2c1BTcDI3dVhTT3BNLUtJVzZjNWlnWXpvMTlwZlVsc0k1bTdzLS15ZXM?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-07T19:38:48.000Z"
-    },
-    {
-      "id": "3fe578131eaa57bed27f",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana Blinka entra a Y Combinator con una solución de cuentas en dólares para empresas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQUjdMdXlOZUE4bmtkb0NGaHNUR3N5em1NUkplakZJNUtRZnBSVDQ1aG1NQjZrck45QWI2RzdpNGVzaFFsTTFNWGRqT3NpQjVYdkczSmNGbElhTVNpWEt1eEdSTzdkb2RncXhfeDMzMy1nMlJZM3gzNjJod2VYNFZ4aDRiUkRPZjhEY3l0TzlYdHFKdC1WMmxBblFQSUY3eV85cGZZN245TUNZSzR2dkdta3VIRDlYV3F6N2FiNUkwWFotaTBKOGMwS0JOSWpFcDlaWXc?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-07T19:38:48.000Z"
-    },
-    {
-      "id": "12e820ba75e1417f71d4",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nace en Brasil Auro, una wealthtech que busca acercar la gestión patrimonial a quienes están construyendo su futuro financiero",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNLXpHLWxKR21uX2FZZk1Qc1l0NDA1T3pxanMtNl9ONmtCVE03Ylcwc3p4RzNLVlNOU0FFclR2eEpnd0VrRW9COFJ5OVhOSEU5dVN2OVdPTWN2U05BZUNVTFd0NzlFYTk5dFlpczFuT2tGZnlkcGtSUV9tWlBjTVcyZ21BSENyMW5kc25fRjl1Zl9GRFNoM0VCZVZVYzFPbjZBUmMtNmhuZXRkWXVZMHRTRlFNLWNMel96amRYcFJXNXVFcjdoXzRPS3BaOWtBNGllTXI4TENaRl9BYWVoSG1DcTVxOTRVWEh1ckVkVFZpWkppbThi?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -913,20 +899,6 @@
       "publishedAt": "2026-09-30T07:00:00.000Z"
     },
     {
-      "id": "d5ee0a95e2d0ee7821f6",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Galgo secures $55M credit facility from BBVA Spark",
-      "excerpt": "Chilean motorcycle financing platform Galgo secured a $55M credit facility from BBVA Spark to expand its operations in…",
-      "url": "https://latamlist.com/galgo-secures-55m-credit-facility-from-bbva-spark/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-29T15:12:13.000Z"
-    },
-    {
       "id": "4f993a614134ae1976d4",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1006,20 +978,6 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazFPTXNBeF9qbndkZXNOMmMyeVpwbFJNTFRmaGZpRzJJZEF1Qm5GT0pucnRBY09YZ3dwTk0wSkFWSWI2YlNZSHd5dlc4cloxVnU3bG15VlZ4aWhfaDhmNm5BZm1ONF9WREpOVW9IU0FSbWk4eUZ2WkN0Q1BKeWYwNVc5ZXpCY0NmLXhUODltMjh2VnhpNmpFU0x5XzRGOFQ0NnZSWkJrT1R6Y1k?oc=5",
       "source": "Primicias",
       "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-26T07:00:00.000Z"
-    },
-    {
-      "id": "bc98479a46219adb7a6d",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-26T07:00:00.000Z"
@@ -1221,20 +1179,6 @@
       "publishedAt": "2026-09-15T12:00:00.000Z"
     },
     {
-      "id": "08ba4174039e1055bfd3",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Mensual de Tasas de Interés. Agosto 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntMensual.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-15T12:00:00.000Z"
-    },
-    {
       "id": "0a384db13b1958932862",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -1257,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 10
     },
     {
@@ -1268,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 0
     },
     {
@@ -1279,9 +1223,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "recentCount": 8
     },
     {
       "id": "bce-boletines",
@@ -1290,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 4
     },
     {
@@ -1301,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 0
     },
     {
@@ -1312,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 0
     },
     {
@@ -1323,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 0
     },
     {
@@ -1334,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 2
     },
     {
@@ -1345,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 6
     },
     {
@@ -1356,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 8
     },
     {
@@ -1367,9 +1311,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "recentCount": 8
     },
     {
       "id": "latam-bloomberg",
@@ -1378,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 8
     },
     {
@@ -1389,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 0
     },
     {
@@ -1400,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1411,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 12
     },
     {
@@ -1422,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 9
     },
     {
@@ -1433,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T15:58:57.005Z",
-      "lastSuccessAt": "2026-10-13T15:58:57.005Z",
+      "checkedAt": "2026-10-13T21:14:56.551Z",
+      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
       "recentCount": 10
     }
   ]
