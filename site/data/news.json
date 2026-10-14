@@ -1,34 +1,62 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T17:10:30.162Z",
+  "generatedAt": "2026-10-14T20:41:25.797Z",
   "stories": [
     {
-      "id": "3e80bcda910421c15283",
+      "id": "1e192f106ca933b0f543",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Stripe’s Privy and Ripple Bring Crypto Wallet Infrastructure to XRPL Blockchain",
-      "excerpt": "Privy, a Stripe-owned company that helps businesses build cryptocurrency wallets, partnered with Ripple to bring its wallets to the XRPL blockchain, Privy said in a Tuesday (Oct. 13) blog post. The collaboration will make it easier for developers to build payments and agentic exp",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stripe-privy-ripple-bring-crypto-wallet-infrastructure-xrpl-blockchain/",
+      "title": "Jamie Dimon Slams the Door on Rogue AI Agents",
+      "excerpt": "Artificial intelligence (AI) agents are knocking at JPMorgan Chase’s door, and CEO Jamie Dimon is not letting them in. The bank will not allow unvetted outside AI agents into its systems, Dimon said Tuesday (Oct. 13) on JPMorgan’s third-quarter earnings call, PYMNTS reported. “Yo",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/jamie-dimon-slams-the-door-on-rogue-ai-agents/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-14T16:55:55.000Z"
+      "publishedAt": "2026-10-14T20:09:34.000Z"
     },
     {
-      "id": "d2fd5cc1a606f0aa3640",
+      "id": "714f76b902c1ca621eed",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Bank of America Profits Fall 17% Following $1.2 Billion Money Laundering Fine",
-      "excerpt": "Bank of America’s profits dropped 17% during the third quarter, according to a Wednesday (Oct. 14) quarterly earnings press release, following a $1.2 billion regulatory fine over money laundering violations. The second-largest bank in the United States reported third-quarter earn",
-      "url": "https://www.pymnts.com/news/banking/2026/bank-of-america-profits-fall-17percent-following-1-billion-dollar-money-laundering-fine/",
+      "title": "Stablecoin Firm Qivalis Moves Closer to Issuing Electronic Money Tokens",
+      "excerpt": "Euro-pegged stablecoin project Qivalis has received permission from the Dutch central bank to operate as an electronic money institution. The authorization from the De Nederlandsche Bank (DNB), announced Wednesday (Oct. 14), places the company under direct, ongoing supervision by",
+      "url": "https://www.pymnts.com/blockchain/2026/stablecoin-firm-qivalis-moves-closer-to-issuing-electronic-money-tokens/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-14T16:27:56.000Z"
+      "publishedAt": "2026-10-14T19:22:00.000Z"
+    },
+    {
+      "id": "a9784e813b500c9f1a1f",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC Report Accuses Banking Giants of Political ‘Debanking’",
+      "excerpt": "Federal regulators said some of the largest banks in the United States allowed political concerns to shape who received services. The Office of the Comptroller of the Currency released a 45-page report called “Guaranteeing Fair Banking for All Americans” Wednesday (Oct. 14) on th",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-report-accuses-banking-giants-political-debanking/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T19:07:07.000Z"
+    },
+    {
+      "id": "3b05c6e1de7ffd832e33",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Nuvei Secures South African License to Expand Global Payments Platform",
+      "excerpt": "Nuvei has secured a license to offer local merchant payments services in South Africa, the global FinTech company said in a Wednesday (Oct. 14) press release. The authorization came from the Payments Association of South Africa, according to the release. With this authorization, ",
+      "url": "https://www.pymnts.com/digital-payments/2026/nuvei-secures-south-african-license-to-expand-global-payments-platform/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T18:33:08.000Z"
     },
     {
       "id": "645dc4fb7e4288c58eb6",
@@ -45,60 +73,18 @@
       "publishedAt": "2026-10-14T16:04:00.000Z"
     },
     {
-      "id": "96936237da1209a82123",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "b05b3a29af7805d5cb10",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "The $100 Million CFO’s Playbook for Onboarding AI Agents",
-      "excerpt": "The 21st century finance team is growing. But instead of hiring more employees, chief financial officers are onboarding artificial intelligence solutions. After all, AI agents can today already reconcile accounts, investigate payment exceptions, manage invoices and initiate finan",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/the-100-million-cfos-playbook-for-onboarding-ai-agents/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T15:45:41.000Z"
-    },
-    {
-      "id": "402eeee8ebad96d573ad",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bank of America Consumers Boost Spending 8% as Digital Banking Deepens",
-      "excerpt": "Bank of America’s consumers spent more in the third quarter while moving a larger share of their banking activity onto the company’s digital channels, giving the bank growth in transactions and engagement at the same time that its checking account franchise continued to expand. C",
-      "url": "https://www.pymnts.com/news/banking/2026/bank-of-america-consumers-boost-spending-8percent-digital-banking-deepens/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T15:43:25.000Z"
-    },
-    {
-      "id": "0f0b03003a1b67473e0f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ledger Suspends Southeast Asian Resellers During $90 Million Crypto Wallet Hack Investigation",
-      "excerpt": "Ledger is asking resellers and distributors in Southeast Asia and Hong Kong to suspend sales of its cryptocurrency hardware wallets while it investigates an incident in which someone in the distribution chain tampered with the devices and later drained crypto from them, the compa",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ledger-suspends-southeast-asian-resellers-during-90-million-crypto-wallet-hack-investigation/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T15:09:59.000Z"
-    },
-    {
-      "id": "6c38288b571823205195",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "DOJ Opens Inquiry Into Payments Firm Euro Exchange",
-      "excerpt": "The U.S. Department of Justice (DOJ) is reportedly investigating the chain of companies surrounding payments firm Euro Exchange Securities. This probe comes after British authorities seized Euro Exchange in June for possible anti-money laundering (AML) violations, Bloomberg News ",
-      "url": "https://www.pymnts.com/legal/aml/2026/doj-opens-inquiry-into-payments-firm-euro-exchange/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T14:30:54.000Z"
+      "title": "Pago ASAP habilita solución de pagos entre Colombia y Venezuela a través de Bre-B para facilitar las transferencias transfronterizas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSWFsQjFsQ3gzRl9Ec0dCVHVCN1RhSHFCa3hzc05JS0loU1Rha2c0Yk5zT3BVZzZYc0gzWEVxNUJGbHFUYmVFSi1ZbUY1LWNTTUhHWmlaaWxXYlRqbVR4ams4Tm03bS12Nm5Pdy1LbkUwQWhqNHdzT29NdzQ0TC12WUhFQ2VmMVpPVXdmamhxTEZWdXl0TGRtRGpNWWJuS3RfX0dTT0FSZE90cjA0dVJvNzc1cFU0LTRFRmtRSkhyVlV2MjRPcFdzNHJqZS1nUnZzUFpvcXZOUzdseEJ3TllDTDR2V183aTgzYXJrQUlBd0ZjWjJRaFB0d3IyWDkzUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-14T15:44:12.000Z"
     },
     {
       "id": "c3b898db331c6623a187",
@@ -528,20 +514,6 @@
       "title": "CleverTap y Ubii Pagos se alían para impulsar experiencias financieras más inteligentes en Venezuela",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNajloWUtVMk5HNWdtQ1JqOU5WYzlxQWNETW1uR1FsTm1GcEZQcmpYMmNLSjlJMzhjeUh4YVlWM1FoT0ZvSTNza0FDeUtJV0YwLUVxQ2hfSW50OTlNZnFVUDl2WG84M052Z2VzMEEzMmtDb3FrdXg5MzdsVjQzRDFVaklGM2FZX3I3aGhQMVd2Y2Z4NHhrVTJ5Y0c5bXBheThvb2ZZanFWYVdKc2t4MzlkWG16ODBGZmZvVjZSWUNEbUdPY01IRTFoRGZUa1ZWVWxXaldV?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-08T19:47:08.000Z"
-    },
-    {
-      "id": "75be586f95999007758c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Protección embebida: ¿el siguiente salto de la inclusión financiera en México?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNcEtiZXhlRWY5TFd0QlVHTFE4R05LNzFhMS1fakZlM2o4OTRONWs5Q2NlZXJxRWl1ckQzZzU4TDZlSXBLMTY5VWRZdk9rSWhuSHJDNllrTDRObS1EQkF3blMyMHRpLUdhTEJXWDFSQnktNVZrRHBFaWdCdjNuQnJUQ2FfNTdwdHJ6ZG14T1RWc2VNNVZTanNEWm9nZ1ZfTzlodXhJemxaTlNIS18tRlh0TnpR?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -1229,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 10
     },
     {
@@ -1240,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 5
     },
     {
@@ -1273,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 2
     },
     {
@@ -1317,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 6
     },
     {
@@ -1328,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 0
     },
     {
@@ -1372,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1383,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 9
     },
     {
@@ -1405,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T17:10:30.162Z",
-      "lastSuccessAt": "2026-10-14T17:10:30.162Z",
+      "checkedAt": "2026-10-14T20:41:25.797Z",
+      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
       "recentCount": 10
     }
   ]
