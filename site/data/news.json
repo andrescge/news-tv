@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T06:09:01.545Z",
+  "generatedAt": "2026-10-14T11:52:38.520Z",
   "stories": [
+    {
+      "id": "b9ec9cefd2845b0e3135",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payward Expands Banking Reach by Acquiring Finland’s Saldo",
+      "excerpt": "Kraken parent company Payward is expanding its banking efforts by acquiring Finland-based Saldo Bank. Payward says the deal, announced Wednesday (Oct. 14), marks the next step in the development of Payward Banking, which it calls the “money layer” of the company’s financial infra",
+      "url": "https://www.pymnts.com/news/acquiring/2026/payward-expands-banking-reach-by-acquiring-finlands-saldo/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T10:49:21.000Z"
+    },
+    {
+      "id": "c7c62eceb8f236f689c2",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Spanish banks report 150% spike in fraud",
+      "excerpt": "Fraud from stolen devices has surged in Spain according to recently published research.",
+      "url": "https://www.finextra.com/newsarticle/48578/spanish-banks-report-150-spike-in-fraud?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T09:50:00.000Z"
+    },
+    {
+      "id": "14f34d08915187470039",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payments’ Next Scaling Problem Is Complexity, Not Transaction Volume",
+      "excerpt": "Watch more: Beyond the Rails: The Infrastructure Powering Payment Partner Ecosystems Payments companies have spent years bragging about how much volume their technology can handle. That could be the wrong measure. The harder problem is what happens when every new dollar of paymen",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/payments-next-scaling-problem-is-complexity-not-transaction-volume/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T08:03:18.000Z"
+    },
+    {
+      "id": "1e054eeb0ed1f9381cc7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "SoFi Tech Solutions Says FinTech’s Next Edge Is Showing Up at the Right Moment",
+      "excerpt": "Watch more: Need to Know | Sofi Tech Solutions | Prashant Shah Speed and simplicity helped FinTechs establish themselves as alternatives to traditional financial institutions. Those qualities carry less weight as competitive advantages when customers can find fast payments, digit",
+      "url": "https://www.pymnts.com/innovation/2026/sofi-fintech-next-edge-showing-up-at-the-right-moment/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T08:01:59.000Z"
+    },
+    {
+      "id": "2bf900640f926d9fffc5",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Credit Unions Could Land More FinTech Partners by Simplifying Onboarding",
+      "excerpt": "A FinTech that wants to sell to 10 credit unions can face 10 separate onboarding processes. For a market made up of thousands of individual institutions, that repetition can affect whether a provider decides the opportunity is worth pursuing. Among FinTechs hesitant to sell to cr",
+      "url": "https://www.pymnts.com/credit-unions/2026/fintech-demand-gives-credit-unions-onboarding-opportunity/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T08:00:43.000Z"
+    },
+    {
+      "id": "2c205a502c5f1feb6c58",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "33% of US Shoppers Use Digital Wallets Online",
+      "excerpt": "Merchants could keep more ready buyers at checkout by accepting the digital wallets those shoppers already use, with wallet gaps putting roughly 36 million U.S. consumers at risk of walking away. That finding comes from “The Hidden Cost of Checkout Gaps: What 56 Million Abandoned",
+      "url": "https://www.pymnts.com/consumer-insights/2026/33percent-of-us-shoppers-use-digital-wallets-online/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-14T08:00:05.000Z"
+    },
     {
       "id": "39494d9d19c4acae3885",
       "sourceId": "latam-bloomberg",
@@ -29,34 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-13T23:40:22.000Z"
-    },
-    {
-      "id": "5128d5a257994ab81895",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "US Fines Bank of America $1.2 Billion, Alleging AML and Sanctions Violations",
-      "excerpt": "Three federal agencies have imposed penalties totaling more than $1.21 billion on Bank of America, alleging that the bank violated anti-money laundering and sanctions laws, according to a Tuesday (Oct. 13) press release issued by the Treasury Department. The penalties imposed on ",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/us-fines-bank-of-america-1-2-billion-alleging-aml-and-sanctions-violations/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T22:51:28.000Z"
-    },
-    {
-      "id": "c5f0feb0063e39ffb0ce",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Goldman Sachs CEO Flags Financing Risk in AI Buildout",
-      "excerpt": "Goldman Sachs CEO David Solomon’s comments on artificial intelligence flagged a financing risk with implications beyond Wall Street. How will companies fund an infrastructure expansion that could require trillions of dollars, and which projects will justify the expense? The bank’",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/goldman-sachs-ceo-david-solomon-flags-financing-risk-ai-buildout/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T21:25:10.000Z"
     },
     {
       "id": "cb2cee6c4d72b0cb27c9",
@@ -99,34 +155,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-13T20:47:36.000Z"
-    },
-    {
-      "id": "1fe3c4a9689b48fbb623",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks Widen Credit Access to Low-Score Borrowers",
-      "excerpt": "Large banks are putting more credit cards into the hands of consumers with low credit scores, but they are not pairing that expansion with large amounts of new borrowing capacity. The combination indicates how card issuers are pursuing growth after several years of tight underwri",
-      "url": "https://www.pymnts.com/credit-cards/2026/banks-widen-credit-access-low-score-borrowers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T20:42:02.000Z"
-    },
-    {
-      "id": "6ae025ab0c3586bf4bdb",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Your Bank Wants to Plan and Pay for the Trip",
-      "excerpt": "Banks have always paid for the trip. Now, they want to help plan it. Most travel decisions get made on travel sites and, more and more, in artificial intelligence (AI) chatbots, before a user takes their card out to pay. Banks and card networks now want a place earlier in that jo",
-      "url": "https://www.pymnts.com/transportation/travel-payments/2026/your-bank-wants-to-plan-and-pay-for-the-trip/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T20:06:16.000Z"
     },
     {
       "id": "887dcfd5e33859ac713e",
@@ -519,20 +547,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T10:50:00.000Z"
-    },
-    {
-      "id": "e2ab9dce2058d6ab0cca",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Wise to pay clients' tax bills after third-party software error",
-      "excerpt": "Money transfer app Wise has contacted the UK's tax authorities over technical errors that led thousands of clients to pay the wrong amount of tax on their investments.",
-      "url": "https://www.finextra.com/newsarticle/48554/wise-to-pay-clients-tax-bills-after-third-party-software-error?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T10:01:00.000Z"
     },
     {
       "id": "bf68e66fd9c685237735",
@@ -1201,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 10
     },
     {
@@ -1212,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 4
     },
     {
@@ -1245,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 6
     },
     {
@@ -1300,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T06:09:01.545Z",
-      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "checkedAt": "2026-10-14T11:52:38.520Z",
+      "lastSuccessAt": "2026-10-14T11:52:38.520Z",
       "recentCount": 10
     }
   ]
