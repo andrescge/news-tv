@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-13T21:14:56.551Z",
+  "generatedAt": "2026-10-14T00:19:58.438Z",
   "stories": [
+    {
+      "id": "b608c18ab7e7dcbcbbc8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "ServiceNow Denies Reports of Takeover Interest in AI Agent Startup Decagon",
+      "excerpt": "ServiceNow denied Tuesday (Oct. 13) media reports suggesting it has shown interest in purchasing Decagon, a developer of artificial intelligence (AI) agents. Seeking Alpha reported Tuesday (Oct. 13), citing a paywalled article by Business Insider, that Decagon has hired a bank to",
+      "url": "https://www.pymnts.com/news/acquiring/2026/servicenow-denies-reports-of-takeover-interest-in-ai-agent-startup-decagon/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T23:40:22.000Z"
+    },
+    {
+      "id": "5128d5a257994ab81895",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "US Fines Bank of America $1.2 Billion, Alleging AML and Sanctions Violations",
+      "excerpt": "Three federal agencies have imposed penalties totaling more than $1.21 billion on Bank of America, alleging that the bank violated anti-money laundering and sanctions laws, according to a Tuesday (Oct. 13) press release issued by the Treasury Department. The penalties imposed on ",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/us-fines-bank-of-america-1-2-billion-alleging-aml-and-sanctions-violations/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T22:51:28.000Z"
+    },
+    {
+      "id": "c5f0feb0063e39ffb0ce",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Goldman Sachs CEO Flags Financing Risk in AI Buildout",
+      "excerpt": "Goldman Sachs CEO David Solomon’s comments on artificial intelligence flagged a financing risk with implications beyond Wall Street. How will companies fund an infrastructure expansion that could require trillions of dollars, and which projects will justify the expense? The bank’",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/goldman-sachs-ceo-david-solomon-flags-financing-risk-ai-buildout/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-13T21:25:10.000Z"
+    },
     {
       "id": "cb2cee6c4d72b0cb27c9",
       "sourceId": "iupana",
@@ -15,6 +57,34 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T20:57:38.000Z"
+    },
+    {
+      "id": "36b9d9058bc6aa41f3c2",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Billetera digital Chivo será relanzada en El Salvador tras la entrada de Linguard Labs como accionista mayoritario",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUFYcE9FVjNMTlhfU1dqRTN1d2Z3UEhLTzFrTHhRVHhZSkJWLXFXdFNFYnpsZHVFZHF5b0E0ck1mQXI1Q1VhTUpWVHdjMlQzcko2V3JBX3pYT0NSMDNnMF9oeTh5TnRyNGVoN196Q1lHOXFWV2R5SVJaMTlQZGFCZkQtV0NFOS02OWltcmVMM28yaUU1ajUxaVRNY05UTXgtVE9SYklIRE5kR1NtTmt3UC0zYUljT0ZweTFuRFRsZmJVaDE1RkxOQ18tQklrak5LY01QNm5KSUNxcnBBSkZIRVJEYlNnZw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T20:47:36.000Z"
+    },
+    {
+      "id": "48f8f16c08dfc19df867",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech peruana Monnet Payments se suma a TAPP, la plataforma de pagos minoristas del Banco Central del Perú",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbUFMSkdCbUoxY0xwYXRDUGNaMk90dFpyM3NhTDN2Zm0yaXhHTEIxaGNvd012MGp2RnpBMi1pMS0xdVlpZGt4QnVGTUg4all3RkZyTFRuaU0yaEp5YjRFTC1hMG1GUUxmN251N0V4ZHZET040OW5Sa2lzVWp5VFJEbjlPWl9ocHNBOVN5ZVNVY0RiUmc4MllSV0ZzZFI4dS1LclBPQ0l2ektxT09TNmUxSWt3YlZUT0V0NkZHa1kzNWtlcjNHMTdLWHJJdzVYQW1NU1dudzFJbER2SEZZ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T20:47:36.000Z"
     },
     {
       "id": "1fe3c4a9689b48fbb623",
@@ -57,34 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-13T19:45:46.000Z"
-    },
-    {
-      "id": "65b8b376f83d3a3a199a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Wells Fargo Enhances Banking Capabilities Using AI and Digital Assets",
-      "excerpt": "Wells Fargo is devoting “significant management time and resources” to building artificial intelligence (AI) capabilities and driving value across its operations, Chairman and CEO Charlie Scharf said Tuesday (Oct. 13) during a third quarter earnings call. The bank is using AI and",
-      "url": "https://www.pymnts.com/earnings/2026/wells-fargo-enhances-banking-capabilities-using-ai-and-digital-assets/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T19:24:22.000Z"
-    },
-    {
-      "id": "065cc944b92addf2329e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Cross River Picks Ex-Lazard CEO Evan Russo as President",
-      "excerpt": "Cross River Bank has selected former Lazard Asset Management CEO Evan Russo as its new president. The appointment will see Russo work with Cross River CEO Gilles Gade to help establish the bank as a “trusted infrastructure layer” for payments, banking, digital assets and AI-enabl",
-      "url": "https://www.pymnts.com/personnel/2026/cross-river-picks-ex-lazard-ceo-evan-russo-as-president/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T18:56:11.000Z"
     },
     {
       "id": "887dcfd5e33859ac713e",
@@ -491,34 +533,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T10:01:00.000Z"
-    },
-    {
-      "id": "035f8189b3137c544a3e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana Fronte levanta ronda presemilla para construir un sistema financiero para familias transnacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNZVdJSmlBT3FuZlIzdEJjQTFuc3VZMDdESW1aLTZJMnpWTnlfVWhucjRoam1EZDY0a2RuWDFJdXFSeXBxcGtMX3p4RzhRemVGVlAxenlfRjdWc2Z0dFNlbGNWN3ZVT0dncG9menBXUUZ2UzBDLTlHbGgwOF9rR2VMRzJ1bGIzYmZ0aWNUUHZDNjVWbFg1SlQ2emtDTmd2NTQtQ2ZLd0pieS1jM0sxTHhpYTdlT2ZFQURiWDdjNm4xNERmcjdCQ09LaS1FRTRiNHdibmdYX1dxOFhyd3NxNmRQMTE1NUIyOGtZTEE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-07T19:38:48.000Z"
-    },
-    {
-      "id": "96f9b049e9b1705f8192",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bankingly obtiene la certificación ISO/IEC 27001 en seguridad de la información",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPYW02bGhEZ0t2bDRZbFY1enlyTWFKRGpJR2x5YzVSeDJBZTZGWmR1LXFzOHpOMzBxVVFEY1g2ajNuU2VpamE4WW5fU2o5MER6a3c4Q0JJcm1qcEdJLTNLYVZIWk54TVZINWxsUk5ZRmVFcXpPQlVVbEFHak1fSFVUc0tZbG1tU2ZzRF94MUh2c1BTcDI3dVhTT3BNLUtJVzZjNWlnWXpvMTlwZlVsc0k1bTdzLS15ZXM?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-07T19:38:48.000Z"
     },
     {
       "id": "bf68e66fd9c685237735",
@@ -1201,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 10
     },
     {
@@ -1212,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 4
     },
     {
@@ -1245,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 6
     },
     {
@@ -1300,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-13T21:14:56.551Z",
-      "lastSuccessAt": "2026-10-13T21:14:56.551Z",
+      "checkedAt": "2026-10-14T00:19:58.438Z",
+      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
       "recentCount": 10
     }
   ]
