@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T00:19:58.438Z",
+  "generatedAt": "2026-10-14T06:09:01.545Z",
   "stories": [
+    {
+      "id": "39494d9d19c4acae3885",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPSGpyX1JxVmFkUmRtMzc2SnVlV2RvcHJmYnpQajE2Zlk1ZExEeUthZmNTUU12enJZNWlGbzFrMVFVZjVIME53TmxERDZ1RlpYTEo4VTJ5OThLYkltUGsweHI5LWtpWXVjSFZQYk5uMEc3RzZfZzNJSjFUQXVnLWVyeUVQU3VrVkRfcXVEN0NWOXNBWS1HWmxXVm9BMUtQQ25DQVZhSVRBS3hCZy0zb2lQUThJSzY1bjlka1BTTURwNEJBaUphTFU0SnFOR2ZybndJeEJENGlRZ3dVRjNqNUQtb2l2SEN6Sm1TNkttQ1ZOdEVrUdIB8gFBVV95cUxPSGpyX1JxVmFkUmRtMzc2SnVlV2RvcHJmYnpQajE2Zlk1ZExEeUthZmNTUU12enJZNWlGbzFrMVFVZjVIME53TmxERDZ1RlpYTEo4VTJ5OThLYkltUGsweHI5LWtpWXVjSFZQYk5uMEc3RzZfZzNJSjFUQXVnLWVyeUVQU3VrVkRfcXVEN0NWOXNBWS1HWmxXVm9BMUtQQ25DQVZhSVRBS3hCZy0zb2lQUThJSzY1bjlka1BTTURwNEJBaUphTFU0SnFOR2ZybndJeEJENGlRZ3dVRjNqNUQtb2l2SEN6Sm1TNkttQ1ZOdEVrUQ?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-14T01:23:49.000Z"
+    },
     {
       "id": "b608c18ab7e7dcbcbbc8",
       "sourceId": "pymnts",
@@ -59,20 +73,6 @@
       "publishedAt": "2026-10-13T20:57:38.000Z"
     },
     {
-      "id": "36b9d9058bc6aa41f3c2",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Billetera digital Chivo será relanzada en El Salvador tras la entrada de Linguard Labs como accionista mayoritario",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUFYcE9FVjNMTlhfU1dqRTN1d2Z3UEhLTzFrTHhRVHhZSkJWLXFXdFNFYnpsZHVFZHF5b0E0ck1mQXI1Q1VhTUpWVHdjMlQzcko2V3JBX3pYT0NSMDNnMF9oeTh5TnRyNGVoN196Q1lHOXFWV2R5SVJaMTlQZGFCZkQtV0NFOS02OWltcmVMM28yaUU1ajUxaVRNY05UTXgtVE9SYklIRE5kR1NtTmt3UC0zYUljT0ZweTFuRFRsZmJVaDE1RkxOQ18tQklrak5LY01QNm5KSUNxcnBBSkZIRVJEYlNnZw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T20:47:36.000Z"
-    },
-    {
       "id": "48f8f16c08dfc19df867",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -80,6 +80,20 @@
       "title": "Fintech peruana Monnet Payments se suma a TAPP, la plataforma de pagos minoristas del Banco Central del Perú",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQbUFMSkdCbUoxY0xwYXRDUGNaMk90dFpyM3NhTDN2Zm0yaXhHTEIxaGNvd012MGp2RnpBMi1pMS0xdVlpZGt4QnVGTUg4all3RkZyTFRuaU0yaEp5YjRFTC1hMG1GUUxmN251N0V4ZHZET040OW5Sa2lzVWp5VFJEbjlPWl9ocHNBOVN5ZVNVY0RiUmc4MllSV0ZzZFI4dS1LclBPQ0l2ektxT09TNmUxSWt3YlZUT0V0NkZHa1kzNWtlcjNHMTdLWHJJdzVYQW1NU1dudzFJbER2SEZZ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T20:47:36.000Z"
+    },
+    {
+      "id": "36b9d9058bc6aa41f3c2",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Billetera digital Chivo será relanzada en El Salvador tras la entrada de Linguard Labs como accionista mayoritario",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUFYcE9FVjNMTlhfU1dqRTN1d2Z3UEhLTzFrTHhRVHhZSkJWLXFXdFNFYnpsZHVFZHF5b0E0ck1mQXI1Q1VhTUpWVHdjMlQzcko2V3JBX3pYT0NSMDNnMF9oeTh5TnRyNGVoN196Q1lHOXFWV2R5SVJaMTlQZGFCZkQtV0NFOS02OWltcmVMM28yaUU1ajUxaVRNY05UTXgtVE9SYklIRE5kR1NtTmt3UC0zYUljT0ZweTFuRFRsZmJVaDE1RkxOQ18tQklrak5LY01QNm5KSUNxcnBBSkZIRVJEYlNnZw?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -113,20 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-13T20:06:16.000Z"
-    },
-    {
-      "id": "90ef88a3260e390446d2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Billing Friction Puts $12.3 Billion in Auto Loan Payments at Risk",
-      "excerpt": "Auto lenders are entering a period in which collections performance will depend on more than identifying borrowers who are falling behind. They also must account for what happens between the monthly statement and the receipt of payment. The Federal Reserve Bank of New York’s “Qua",
-      "url": "https://www.pymnts.com/loans/2026/billing-friction-puts-12-billion-dollars-auto-loan-payments-risk/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T19:45:46.000Z"
     },
     {
       "id": "887dcfd5e33859ac713e",
@@ -899,20 +899,6 @@
       "publishedAt": "2026-09-30T07:00:00.000Z"
     },
     {
-      "id": "789fbdb64c6ebc9b37a6",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T07:00:00.000Z"
-    },
-    {
       "id": "4f993a614134ae1976d4",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1215,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 10
     },
     {
@@ -1226,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 4
     },
     {
@@ -1259,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 6
     },
     {
@@ -1314,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 9
     },
     {
@@ -1391,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T00:19:58.438Z",
-      "lastSuccessAt": "2026-10-14T00:19:58.438Z",
+      "checkedAt": "2026-10-14T06:09:01.545Z",
+      "lastSuccessAt": "2026-10-14T06:09:01.545Z",
       "recentCount": 10
     }
   ]
