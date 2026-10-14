@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-14T20:41:25.797Z",
+  "generatedAt": "2026-10-14T23:55:03.480Z",
   "stories": [
+    {
+      "id": "aa3a7c3c262e086790f7",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Banca agéntica en 2026: de pilotos a operación gobernada | Bankingly",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQckJRQkRqTlpuejNDU0w5YkxvVFZOTVViQ3lhcjhUTnpOMEt6U1dybUFNLTFIR2pEQU5zbUFvUGZrdVJWc0Q1b1FDdVl5eXprd2JRUThRZjVuNGFfaE9GZXA4dnplbUlNLV8waG1VUnFJeTExZXFteThXdzR2RmVEYVdFQThHNVhYZ0JxS045VHlEMUxnM2pzQ0FjenNyOHNUeVpnZg?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-14T20:35:24.000Z"
+    },
     {
       "id": "1e192f106ca933b0f543",
       "sourceId": "pymnts",
@@ -43,20 +57,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-14T19:07:07.000Z"
-    },
-    {
-      "id": "3b05c6e1de7ffd832e33",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Nuvei Secures South African License to Expand Global Payments Platform",
-      "excerpt": "Nuvei has secured a license to offer local merchant payments services in South Africa, the global FinTech company said in a Wednesday (Oct. 14) press release. The authorization came from the Payments Association of South Africa, according to the release. With this authorization, ",
-      "url": "https://www.pymnts.com/digital-payments/2026/nuvei-secures-south-african-license-to-expand-global-payments-platform/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T18:33:08.000Z"
     },
     {
       "id": "645dc4fb7e4288c58eb6",
@@ -507,20 +507,6 @@
       "publishedAt": "2026-10-08T19:47:08.000Z"
     },
     {
-      "id": "55d8097a77794993708c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "CleverTap y Ubii Pagos se alían para impulsar experiencias financieras más inteligentes en Venezuela",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNajloWUtVMk5HNWdtQ1JqOU5WYzlxQWNETW1uR1FsTm1GcEZQcmpYMmNLSjlJMzhjeUh4YVlWM1FoT0ZvSTNza0FDeUtJV0YwLUVxQ2hfSW50OTlNZnFVUDl2WG84M052Z2VzMEEzMmtDb3FrdXg5MzdsVjQzRDFVaklGM2FZX3I3aGhQMVd2Y2Z4NHhrVTJ5Y0c5bXBheThvb2ZZanFWYVdKc2t4MzlkWG16ODBGZmZvVjZSWUNEbUdPY01IRTFoRGZUa1ZWVWxXaldV?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-08T19:47:08.000Z"
-    },
-    {
       "id": "1aab8971edc01904547c",
       "sourceId": "latamlist",
       "category": "latam",
@@ -561,20 +547,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T10:50:00.000Z"
-    },
-    {
-      "id": "bf68e66fd9c685237735",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T22:28:21.000Z"
     },
     {
       "id": "44ec543bdb2ccb16d9a1",
@@ -659,6 +631,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-06T12:00:00.000Z"
+    },
+    {
+      "id": "bf68e66fd9c685237735",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
       "id": "415c1907b8f4e38f8415",
@@ -1201,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 10
     },
     {
@@ -1212,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 5
     },
     {
@@ -1245,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 6
     },
     {
@@ -1300,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-14T20:41:25.797Z",
-      "lastSuccessAt": "2026-10-14T20:41:25.797Z",
+      "checkedAt": "2026-10-14T23:55:03.480Z",
+      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
       "recentCount": 10
     }
   ]
