@@ -1,7 +1,77 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-15T09:55:02.300Z",
+  "generatedAt": "2026-10-15T15:01:33.982Z",
   "stories": [
+    {
+      "id": "8976373000af64cb8735",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Bank of America Deploys 4,000 Workers to Patch Vulnerabilities Found by Frontier AI",
+      "excerpt": "Bank of America deployed 1,000 contractors and 3,000 employees to fix software flaws discovered by Anthropic’s Mythos and other frontier artificial intelligence models, CEO Brian Moynihan told CNBC in a report published Wednesday (Oct. 14). The bank added the contractors in the s",
+      "url": "https://www.pymnts.com/cybersecurity/2026/bank-of-america-deploys-4000-workers-to-patch-vulnerabilities-found-by-frontier-ai/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T14:39:02.000Z"
+    },
+    {
+      "id": "abc0b450ae57a9258052",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "FSB Says Banks Need to Have Company-Wide AI Regulation",
+      "excerpt": "A global financial watchdog is calling on banks to increase their oversight of agentic AI. The Financial Stability Board (FSB) made that call in a report published Thursday (Oct. 15) outlining proper practices for adopting artificial intelligence (AI). “As adoption expands in sca",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/fsb-says-banks-need-to-have-company-wide-ai-regulation/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T13:05:13.000Z"
+    },
+    {
+      "id": "26af7021b55dc0b8c8b7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Tungsten Debuts Pay+ Payment Orchestration Solution",
+      "excerpt": "Tungsten Automation has added a new intelligent payment orchestration solution to its invoice-to-pay (I2P) platform. The Pay+ solution, announced by the document/workflow automation company Thursday (Oct. 15), is part of Tungsten’s InvoiceAgility+ offering and is designed to comb",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/tungsten-debuts-pay-payment-orchestration-solution/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T12:00:49.000Z"
+    },
+    {
+      "id": "1703b1590d473104da3d",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Spanish banks arrange syndicated finance on blockchain",
+      "excerpt": "Two Spanish banks, Santander and BBVA, and utility company Iberdrola, are claiming a blockchain first after arranging a syndicated financing facility executed through a blockchain platform",
+      "url": "https://www.finextra.com/newsarticle/48587/spanish-banks-arrange-syndicated-finance-on-blockchain?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T10:04:00.000Z"
+    },
+    {
+      "id": "fc37a90a734e54916021",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard and BVNK Unite Fiat and Stablecoins in Global Money Platform",
+      "excerpt": "Mastercard and stablecoin-powered financial stack BVNK have launched a platform that brings together fiat and stablecoin capabilities to make it easier to move and manage any form of money, Mastercard said in a Thursday (Oct. 15) press release emailed to PYMNTS. The new Mastercar",
+      "url": "https://www.pymnts.com/partnerships/2026/mastercard-and-bvnk-unite-fiat-and-stablecoins-in-global-money-platform/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T10:00:39.000Z"
+    },
     {
       "id": "eb7a62d65f181848bec9",
       "sourceId": "pymnts",
@@ -57,20 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-15T08:00:37.000Z"
-    },
-    {
-      "id": "ebd7bc8f6160c8be8165",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "87% Satisfaction Gives Credit Unions a Foundation to Grow Card Usage",
-      "excerpt": "Credit unions have already earned their members’ trust. Giving those members more reasons to use their cards could start with something tangible: rewards on everyday purchases. That opportunity anchors the third key finding in “The Top-of-Wallet Challenge: Why Trust Alone Is Not ",
-      "url": "https://www.pymnts.com/credit-unions/2026/87percent-satisfaction-gives-credit-unions-a-foundation-to-grow-card-usage/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T08:00:34.000Z"
     },
     {
       "id": "aa3a7c3c262e086790f7",
@@ -479,20 +535,6 @@
       "publishedAt": "2026-10-09T01:14:08.000Z"
     },
     {
-      "id": "838f40dcbaaa37ea3a58",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anyflo emerges from stealth to simplify stablecoin payments for enterprises",
-      "excerpt": "Stablecoin payments orchestration service Anyflo has emerged from stealth with news that it has acquired bitcoin lending platform Native.",
-      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T00:01:00.000Z"
-    },
-    {
       "id": "8073c93b0a65069cbcec",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -547,20 +589,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-08T17:23:14.000Z"
-    },
-    {
-      "id": "ef1124d76612c554dca5",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard to enable offline payments across Europe",
-      "excerpt": "Mastercard is introducing offline payment requirements that mean that from 2027 Europeans will be able to pay during power and network outages.",
-      "url": "https://www.finextra.com/newsarticle/48560/mastercard-to-enable-offline-payments-across-europe?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T15:17:00.000Z"
     },
     {
       "id": "47ba1e580a2cf28d6e35",
@@ -1163,34 +1191,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-16T07:00:00.000Z"
-    },
-    {
-      "id": "a511848bf80bf4e404f8",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 11 de Septiembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_945_11092026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-15T12:00:00.000Z"
-    },
-    {
-      "id": "0a384db13b1958932862",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "El BCE eleva a 2,7% la previsión de crecimiento económico de Ecuador para 2026",
-      "excerpt": "La actualización de la Programación Macroeconómica prevé un mayor dinamismo del consumo, la inversión y las exportaciones. El Banco Central del Ecuador también incorporó escenarios",
-      "url": "https://www.bce.fin.ec/el-bce-eleva-a-27-la-prevision-de-crecimiento-economico-de-ecuador-para-2026/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-15T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1201,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 10
     },
     {
@@ -1212,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 0
     },
     {
@@ -1223,9 +1223,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
+      "recentCount": 7
     },
     {
       "id": "bce-boletines",
@@ -1234,9 +1234,9 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
+      "recentCount": 4
     },
     {
       "id": "seps",
@@ -1245,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 6
     },
     {
@@ -1300,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-payments",
@@ -1355,9 +1355,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
-      "recentCount": 12
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
+      "recentCount": 10
     },
     {
       "id": "finextra-crypto",
@@ -1366,9 +1366,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
+      "recentCount": 9
     },
     {
       "id": "chainalysis",
@@ -1377,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T09:55:02.300Z",
-      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "checkedAt": "2026-10-15T15:01:33.982Z",
+      "lastSuccessAt": "2026-10-15T15:01:33.982Z",
       "recentCount": 10
     }
   ]
