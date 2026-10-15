@@ -1,7 +1,77 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-15T04:39:10.328Z",
+  "generatedAt": "2026-10-15T09:55:02.300Z",
   "stories": [
+    {
+      "id": "eb7a62d65f181848bec9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Accounts Payable Holds the Key to Smarter Working Capital Decisions",
+      "excerpt": "Watch more: Trusted Data Comes Before AI Payment Decisions Moving money used to be the product. Today, it’s becoming a commodity. “Execution itself is becoming commoditized. The durable value sits in the quality of the decision and the intelligence behind it,” Tungsten Automation",
+      "url": "https://www.pymnts.com/back-office/accounts-payable/2026/accounts-payable-holds-the-key-to-smarter-working-capital-decisions/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T08:03:43.000Z"
+    },
+    {
+      "id": "b651fd1011e7fbd9047c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payroc Says AI Makes Building Payments Software Easier, but Running It Is Another Story",
+      "excerpt": "Watch more: Digital Shift with Payroc’s Paul Vienneau The most important question for software companies building payments used to be whether they had the engineers, budget and time to do it themselves. Agentic artificial intelligence has already made that question obsolete. “The",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/payroc-ai-makes-building-payments-software-easier-running-it-is-another-story/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T08:02:37.000Z"
+    },
+    {
+      "id": "c7abf350b7b2807446b1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "BNPL Providers Look Beyond Grocery for More Wallet Share",
+      "excerpt": "The buy now, pay later (BNPL) wallet is crowded, and grocery purchases show just how much the leading providers already overlap. Between 87% and 96% of users associated with Affirm, Afterpay, Klarna and PayPal Pay Later report using BNPL for groceries, according to PYMNTS Intelli",
+      "url": "https://www.pymnts.com/bnpl/2026/bnpl-providers-look-beyond-grocery-for-more-wallet-share/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T08:01:22.000Z"
+    },
+    {
+      "id": "9180799f7269c0451cdf",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Nearly 9 in 10 Card Issuers Turn to AI to Stop Fraud Without Blocking Sales",
+      "excerpt": "For card issuers, artificial intelligence is moving closer to the transaction itself. Eighty-nine percent of issuers plan to adopt or expand at least one AI fraud capability, according to the PYMNTS Intelligence report “Investing Forward, Building the Edge,” done with Visa DPS. H",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/nearly-9-in-10-card-issuers-turn-to-ai-to-stop-fraud-without-blocking-sales/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T08:00:37.000Z"
+    },
+    {
+      "id": "ebd7bc8f6160c8be8165",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "87% Satisfaction Gives Credit Unions a Foundation to Grow Card Usage",
+      "excerpt": "Credit unions have already earned their members’ trust. Giving those members more reasons to use their cards could start with something tangible: rewards on everyday purchases. That opportunity anchors the third key finding in “The Top-of-Wallet Challenge: Why Trust Alone Is Not ",
+      "url": "https://www.pymnts.com/credit-unions/2026/87percent-satisfaction-gives-credit-unions-a-foundation-to-grow-card-usage/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-15T08:00:34.000Z"
+    },
     {
       "id": "aa3a7c3c262e086790f7",
       "sourceId": "latam-fintech-hub",
@@ -15,48 +85,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-14T20:35:24.000Z"
-    },
-    {
-      "id": "1e192f106ca933b0f543",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Jamie Dimon Slams the Door on Rogue AI Agents",
-      "excerpt": "Artificial intelligence (AI) agents are knocking at JPMorgan Chase’s door, and CEO Jamie Dimon is not letting them in. The bank will not allow unvetted outside AI agents into its systems, Dimon said Tuesday (Oct. 13) on JPMorgan’s third-quarter earnings call, PYMNTS reported. “Yo",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/jamie-dimon-slams-the-door-on-rogue-ai-agents/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T20:09:34.000Z"
-    },
-    {
-      "id": "714f76b902c1ca621eed",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Stablecoin Firm Qivalis Moves Closer to Issuing Electronic Money Tokens",
-      "excerpt": "Euro-pegged stablecoin project Qivalis has received permission from the Dutch central bank to operate as an electronic money institution. The authorization from the De Nederlandsche Bank (DNB), announced Wednesday (Oct. 14), places the company under direct, ongoing supervision by",
-      "url": "https://www.pymnts.com/blockchain/2026/stablecoin-firm-qivalis-moves-closer-to-issuing-electronic-money-tokens/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T19:22:00.000Z"
-    },
-    {
-      "id": "a9784e813b500c9f1a1f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OCC Report Accuses Banking Giants of Political ‘Debanking’",
-      "excerpt": "Federal regulators said some of the largest banks in the United States allowed political concerns to shape who received services. The Office of the Comptroller of the Currency released a 45-page report called “Guaranteeing Fair Banking for All Americans” Wednesday (Oct. 14) on th",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-report-accuses-banking-giants-political-debanking/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T19:07:07.000Z"
     },
     {
       "id": "645dc4fb7e4288c58eb6",
@@ -1039,20 +1067,6 @@
       "publishedAt": "2026-09-25T00:01:00.000Z"
     },
     {
-      "id": "2fdc0ce42ef3a3d78602",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "IBM integrates digital asset platform with Swift shared ledger",
-      "excerpt": "IBM is now letting its digital asset platform clients connect to permissioned blockchain networks, including Swift’s shared ledger.",
-      "url": "https://www.finextra.com/newsarticle/48469/ibm-integrates-digital-asset-platform-with-swift-shared-ledger?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-24T14:28:00.000Z"
-    },
-    {
       "id": "6fd0f021e5e1ed3b9fed",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1187,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 10
     },
     {
@@ -1198,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 2
     },
     {
@@ -1274,9 +1288,9 @@
       "category": "latam",
       "kind": "news",
       "url": "https://latamlist.com/",
-      "status": "error",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-14T23:55:03.480Z",
+      "status": "ok",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 6
     },
     {
@@ -1286,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 12
     },
     {
@@ -1352,9 +1366,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
+      "recentCount": 8
     },
     {
       "id": "chainalysis",
@@ -1363,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T04:39:10.328Z",
-      "lastSuccessAt": "2026-10-15T04:39:10.328Z",
+      "checkedAt": "2026-10-15T09:55:02.300Z",
+      "lastSuccessAt": "2026-10-15T09:55:02.300Z",
       "recentCount": 10
     }
   ]
