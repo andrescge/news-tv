@@ -1,7 +1,105 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T12:25:20.360Z",
+  "generatedAt": "2026-10-16T17:24:28.664Z",
   "stories": [
+    {
+      "id": "eb32cff5efc0fedc06de",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Apple, Meta Team Up to Put Big AI on Desktops",
+      "excerpt": "A Meta and Apple partnership wasn’t on anyone’s 2026 bingo card. On Thursday (Oct. 15), the two companies, who spent most of a decade fighting over user data, announced they had worked together to run Meta’s newest AI model on Apple’s desktops. Meta released Muse Spark Open, an 8",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-meta-team-up-to-put-big-ai-on-desktops/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T17:13:27.000Z"
+    },
+    {
+      "id": "e07f861dc1ad1f14234d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Equifax Equips Lenders With Mastercard Open Finance Insights",
+      "excerpt": "Equifax now offers consumer-permissioned financial insights enabled via Mastercard Open Finance alongside the Equifax consumer credit file, the company said in a Friday (Oct. 16) press release. Equifax customers can now access Mastercard Open Finance’s Cash Flow Analytics, which ",
+      "url": "https://www.pymnts.com/consumer-finance/2026/equifax-equips-lenders-with-mastercard-open-finance-insights/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T16:37:54.000Z"
+    },
+    {
+      "id": "57947ff4d50611fb7705",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Circle Targets 40 New Markets to Capture Surging Stablecoin Demand",
+      "excerpt": "Stablecoin issuer Circle plans to enter 40 new markets around the world, Circle CEO and Chairman Jeremy Allaire told Reuters in a report posted Friday (Oct. 16). Circle has seen growing demand for stablecoins from individuals and businesses in Southeast Asia, Latin America and th",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/circle-targets-40-new-markets-capture-surging-stablecoin-demand/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T16:24:48.000Z"
+    },
+    {
+      "id": "6247a4bb74b6febe6d7a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Truist Shifts Investment Toward Deposits and Digital Banking",
+      "excerpt": "Truist exited its third quarter with higher deposits, continued growth in consumer spending and stable underlying credit quality. An earnings call Friday (Oct. 16) indicated that the new Truist CEO, Mike Lyons, wants a larger share of customers’ primary banking relationships. Ave",
+      "url": "https://www.pymnts.com/news/banking/2026/truist-shifts-investment-toward-deposits-digital-banking/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T15:43:50.000Z"
+    },
+    {
+      "id": "b78b2a89b134ff26b150",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Shopping Agents Force Retailers to Rethink Customer Access and Payment Controls",
+      "excerpt": "Artificial intelligence (AI) shopping agents are forcing online retailers to reconsider how they attract customers, authorize payments and protect their relationships with shoppers, as technology companies increasingly insert themselves between merchants and buyers. Retailers are",
+      "url": "https://www.pymnts.com/news/retail/2026/ai-shopping-agents-force-retailers-to-rethink-customer-access-and-payment-controls/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T15:36:14.000Z"
+    },
+    {
+      "id": "9a7cd851566266440d72",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Buenas Fuentes: Transbank atrae nueva ronda de compra, BBVA va por la oferta de banca patrimonial",
+      "excerpt": "El resumen semanal de noticias de banca digital y fintech en América Latina.... Leer más... La entrada Buenas Fuentes: Transbank atrae nueva ronda de compra, BBVA va por la oferta de banca patrimonial se publicó primero en IUPANA.",
+      "url": "https://iupana.com/2026/10/16/buenas-fuentes-transbank-atrae-nueva-ronda-compra-bbva-va-oferta-banca-patrimonial/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-16T14:44:21.000Z"
+    },
+    {
+      "id": "3c2af400b85650421f06",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Finextra & ACI Worldwide launch global survey report: ‘Payments 2030: The Payoff Year’",
+      "excerpt": "The latest Finextra survey report, designed to help financial institutions prepare for the road to 2030, is now available to download.",
+      "url": "https://www.finextra.com/newsarticle/48597/finextra--aci-worldwide-launch-global-survey-report-payments-2030-the-payoff-year?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T13:00:00.000Z"
+    },
     {
       "id": "3a5adc146ad335e98527",
       "sourceId": "finextra-payments",
@@ -35,7 +133,7 @@
       "sourceId": "iupana",
       "category": "latam",
       "kind": "news",
-      "title": "Ligo prepara su expansión a seis mercados de LatAm y evalúa incorporar stablecoins",
+      "title": "LigoPay prepara su expansión a seis mercados de LatAm y evalúa incorporar stablecoins",
       "excerpt": "La fintech busca ingresar a Argentina y Bolivia en el corto plazo y proyecta llegar a Colombia, Brasil, México y Ecuador en 2027. En Perú, su participación en Tapp forma parte de una estrategia para ampliar su operación de infraestructura de pagos y fortalecer capacidades que pue",
       "url": "https://iupana.com/2026/10/16/ligo-prepara-expansion-seis-mercados-latam-evalua-incorporar-stablecoins/",
       "source": "iupana",
@@ -87,34 +185,6 @@
       "publishedAt": "2026-10-16T01:59:49.000Z"
     },
     {
-      "id": "0f33e0cf104f8d2c4bcf",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Personal Shopping Platform Glance Adds PayPal Native Checkout",
-      "excerpt": "Glance has added real-time product data and native checkout to its personal shopping platform through a new agentic commerce integration with PayPal, Glance said in a Thursday (Oct. 15) press release. Glance, which is backed by global technology company InMobi, is embedded on 60 ",
-      "url": "https://www.pymnts.com/commerce/ecommerce/2026/personal-shopping-platform-glance-adds-paypal-native-checkout/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T01:35:53.000Z"
-    },
-    {
-      "id": "4729702268d97f94b57c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "The ‘C’ in CFO Now Stands for Cybersecurity, Thanks to AI",
-      "excerpt": "Cybersecurity has always been an arms race. Artificial intelligence (AI) is turning it into a war of attrition, where the winner may be whoever can afford to keep fighting the longest. On Thursday (Oct. 15), for example, Sarah Breeden, deputy governor of the Bank of England (BoE)",
-      "url": "https://www.pymnts.com/cybersecurity/2026/the-c-in-cfo-now-stands-for-cybersecurity-thanks-to-ai/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T00:36:36.000Z"
-    },
-    {
       "id": "4b567b3f45cc5f549fd5",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -155,20 +225,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-15T20:51:22.000Z"
-    },
-    {
-      "id": "fae091f2a07183bbf4cc",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Getting Money Back Could Be Stablecoins’ Next Big Selling Point",
-      "excerpt": "A company sends half a million dollars to an overseas supplier using stablecoins. The transaction settles in seconds, the blockchain confirms delivery, and the payment provider reports success. Then the supplier says the money never arrived. The transaction may be technically com",
-      "url": "https://www.pymnts.com/blockchain/2026/getting-money-back-could-be-stablecoins-next-big-selling-point/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T20:49:51.000Z"
     },
     {
       "id": "065752616f8381ec04de",
@@ -689,6 +745,20 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
       "id": "8dec40f4bd0b7c6b852d",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -729,20 +799,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
-      "id": "24072e1fa00939790dd1",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "México alista nuevas reglas para pagos digitales: industria las apoya, pero pide preservar incentivos",
-      "excerpt": "Los cambios regulatorios buscan reducir las barreras de aceptación, impulsar pagos electrónicos en trámites y servicios públicos y fortalecer la interoperabilidad entre bancos, fintechs y comercios. ... Leer más... La entrada México alista nuevas reglas para pagos digitales: indu",
-      "url": "https://iupana.com/2026/10/05/mexico-alista-nuevas-reglas-pagos-digitales-industria-apoya-pide-preservar-incentivos/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-05T19:00:44.000Z"
     },
     {
       "id": "8ba42c918d5295a5710c",
@@ -841,20 +897,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-01T22:36:41.000Z"
-    },
-    {
-      "id": "ae8fcdc7c244b1a926b1",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Brazilian fintech Stay raises $5.7M to expand private pension platform",
-      "excerpt": "Brazilian fintech Stay raised $5.7M in a round led by Citrino, with participation from Norte, 17Sigma, and BTV.…",
-      "url": "https://latamlist.com/brazilian-fintech-stay-raises-5-7m-to-expand-private-pension-platform/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T17:19:07.000Z"
     },
     {
       "id": "e0191f0dcefbed86eac0",
@@ -1025,6 +1067,20 @@
       "publishedAt": "2026-09-26T07:00:00.000Z"
     },
     {
+      "id": "bc98479a46219adb7a6d",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-26T07:00:00.000Z"
+    },
+    {
       "id": "20978e0dafe5d148c000",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1159,9 +1215,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "recentCount": 8
     },
     {
       "id": "bce-junta",
@@ -1170,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 4
     },
     {
@@ -1203,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 0
     },
     {
@@ -1214,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 2
     },
     {
@@ -1247,9 +1303,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "recentCount": 4
     },
     {
       "id": "latam-fintech-hub",
@@ -1258,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 8
     },
     {
@@ -1280,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 8
     },
     {
@@ -1291,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-payments",
@@ -1313,9 +1369,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "recentCount": 12
     },
     {
       "id": "finextra-crypto",
@@ -1324,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 9
     },
     {
@@ -1335,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T12:25:20.360Z",
-      "lastSuccessAt": "2026-10-16T12:25:20.360Z",
+      "checkedAt": "2026-10-16T17:24:28.664Z",
+      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
       "recentCount": 10
     }
   ]
