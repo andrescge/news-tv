@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-15T22:18:14.483Z",
+  "generatedAt": "2026-10-16T01:20:52.907Z",
   "stories": [
+    {
+      "id": "4729702268d97f94b57c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "The ‘C’ in CFO Now Stands for Cybersecurity, Thanks to AI",
+      "excerpt": "Cybersecurity has always been an arms race. Artificial intelligence (AI) is turning it into a war of attrition, where the winner may be whoever can afford to keep fighting the longest. On Thursday (Oct. 15), for example, Sarah Breeden, deputy governor of the Bank of England (BoE)",
+      "url": "https://www.pymnts.com/cybersecurity/2026/the-c-in-cfo-now-stands-for-cybersecurity-thanks-to-ai/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T00:36:36.000Z"
+    },
+    {
+      "id": "4b567b3f45cc5f549fd5",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI-native payments platform Movere launches",
+      "excerpt": "A collection of banking and fintech veterans has unveiled Movere, an AI-native payments platform for businesses.",
+      "url": "https://www.finextra.com/newsarticle/48593/ai-native-payments-platform-movere-launches?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T00:01:00.000Z"
+    },
+    {
+      "id": "88a538b60266bac4d163",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mambu y Mastercard unen fuerzas para simplificar los pagos transfronterizos a los bancos",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzZkMmNJV1dOVDdxdU9JdmJxWTB6UEhySEhWSm9oZUZDazJNTlRWTldnMGJZankzcmgwTlJoUFRCeGVrQ21QRDNZcEV5SEpKM0xkeU5rV2ZOR2pCTWIwb1hMNmI1dllPQkU5VXdndS05cS1nZkdkUUd4WEJZX1QxOExVekprODNKa3prUGxRdl9MWTlJQ0pMMlZtSzVRWWNiZHlZZ2draDI5UjF1ZjVrZVJwMFN5QXA1WjBoOHpTT0NJcUE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-15T21:16:20.000Z"
+    },
     {
       "id": "32d8229385c7fe6abc0c",
       "sourceId": "latam-fintech-hub",
@@ -71,48 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-15T19:21:37.000Z"
-    },
-    {
-      "id": "f4593a254f7892b41d96",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "FIS and Anthropic Debut Money Laundering Investigation Agent",
-      "excerpt": "An artificial intelligence agent developed by FIS and Anthropic is now commercially available to any bank based in the United States, according to a Thursday (Oct. 15) press release. The FIS AML Investigations Agent was first announced in May, PYMNTS reported, although at that ti",
-      "url": "https://www.pymnts.com/legal/aml/2026/fis-anthropic-debut-money-laundering-investigation-agent/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T19:16:28.000Z"
-    },
-    {
-      "id": "d99d9caff73c336023e2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BoE Warns Banks Against AI Cybersecurity Risks",
-      "excerpt": "England’s central bank is warning lenders they shouldn’t assume they are invulnerable to artificial intelligence (AI)-powered cyberattacks. Sarah Breeden, deputy governor of the Bank of England (BoE) said Thursday (Oct. 15) that advances in artificial intelligence (AI) meant the ",
-      "url": "https://www.pymnts.com/cybersecurity/2026/boe-warns-banks-against-ai-cybersecurity-risks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T18:58:01.000Z"
-    },
-    {
-      "id": "42836a02738b7cd9540c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "PNC Combats AI-Enabled Deposit Flight With Better Tech and Service",
-      "excerpt": "As technology makes it easier for clients to move deposits in search of higher interest rates, banks must compete by providing better solutions, PNC Financial Services Group Chairman and CEO William Demchak said Thursday (Oct. 15). Demchak said this during the bank’s third-quarte",
-      "url": "https://www.pymnts.com/news/banking/2026/pnc-combats-ai-enabled-deposit-flight-with-better-tech-service/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T18:49:33.000Z"
     },
     {
       "id": "065752616f8381ec04de",
@@ -381,20 +381,6 @@
       "publishedAt": "2026-10-13T15:57:50.000Z"
     },
     {
-      "id": "963fe28ddadb70b13a45",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Monetae obtiene aprobación para adquirir una proveedora de dinero electrónico y amplía sus licencias en El Salvador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxOVnRwOUlXeGNnVjVTS3lqSnlQNkRzdTNNSzQzbHFMbEtTOEtUVFVKV0tDalNSalNGVF9GSnJ2UjZFZHF3Yy1mcGVXUDVDVVAydUNEcmNTVVBDdjU3WXVUV0FqajVSQ2Q2TG16ZzE5OUduMXZFdElhMllZV0JtbGdVNnBPLU9QZ3BfNHNNRnRzNm1SV0xXX2lwV3lOcmZaTG9wVU1YUGNnMTFIZmdZWUJrSldBZVNxNDYwM002REQwUVpxWmMwNjJIV3pCd2d6NDl5SldJRFdaZWx2MXRQMFVBNGtuQXZ5eGprY2N0ZFByV1hFLU0?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T15:32:41.000Z"
-    },
-    {
       "id": "21ff01526a170b3c51ff",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -547,20 +533,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-09T11:38:00.000Z"
-    },
-    {
-      "id": "a54794aa8df95318bf31",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Amex hit with $350m penalty for AML deficiencies",
-      "excerpt": "The Office of the Comptroller of the Currency (OCC), the main banking regulator in the US, has issued a $350m civil money penalty against American Express National Bank for deficiencies in its anti-money laundering (AML) and bank secrecy act (BSA) processes.",
-      "url": "https://www.finextra.com/newsarticle/48562/amex-hit-with-350m-penalty-for-aml-deficiencies?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T09:36:00.000Z"
     },
     {
       "id": "dcb2ff32b5253e03a5c9",
@@ -1215,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 9
     },
     {
@@ -1226,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 4
     },
     {
@@ -1259,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 5
     },
     {
@@ -1314,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 9
     },
     {
@@ -1391,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-15T22:18:14.483Z",
-      "lastSuccessAt": "2026-10-15T22:18:14.483Z",
+      "checkedAt": "2026-10-16T01:20:52.907Z",
+      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
       "recentCount": 10
     }
   ]
