@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T17:24:28.664Z",
+  "generatedAt": "2026-10-16T21:08:37.884Z",
   "stories": [
+    {
+      "id": "d02f0a3839fcbadcddd9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Stablecoins Take Aim at Cash Locked in Prefunding",
+      "excerpt": "Cross-border payments carry a working capital cost before money reaches the recipient. Payment providers frequently need funds available in advance to make payouts in other markets. For a company operating across currencies and time zones, that can mean maintaining cash in multip",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-take-aim-cash-locked-prefunding/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T19:16:08.000Z"
+    },
+    {
+      "id": "c7fa04d8d1efb207e267",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Regions Bank Says AI Cybersecurity Drives Up Costs 1.5% to 3.5%",
+      "excerpt": "Regions Financial Corp., parent company of Regions Bank, expects the cost of cybersecurity to increase its adjusted noninterest expense by between 1.5% and 3.5% for full-year 2026, Chief Financial Officer Anil Chadha said Friday (Oct. 16) during an earnings call. The company’s in",
+      "url": "https://www.pymnts.com/earnings/2026/regions-bank-says-ai-cybersecurity-drives-up-costs-1-5percent-to-3-5percent/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T18:48:15.000Z"
+    },
     {
       "id": "eb32cff5efc0fedc06de",
       "sourceId": "pymnts",
@@ -59,20 +87,6 @@
       "publishedAt": "2026-10-16T15:43:50.000Z"
     },
     {
-      "id": "b78b2a89b134ff26b150",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Shopping Agents Force Retailers to Rethink Customer Access and Payment Controls",
-      "excerpt": "Artificial intelligence (AI) shopping agents are forcing online retailers to reconsider how they attract customers, authorize payments and protect their relationships with shoppers, as technology companies increasingly insert themselves between merchants and buyers. Retailers are",
-      "url": "https://www.pymnts.com/news/retail/2026/ai-shopping-agents-force-retailers-to-rethink-customer-access-and-payment-controls/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T15:36:14.000Z"
-    },
-    {
       "id": "9a7cd851566266440d72",
       "sourceId": "iupana",
       "category": "latam",
@@ -115,6 +129,20 @@
       "publishedAt": "2026-10-16T12:01:00.000Z"
     },
     {
+      "id": "4fa21e47e6800c6a9c7a",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "Ecuador cerró los primeros ocho meses de 2026 con un saldo comercial favorable de USD 3.054 millones",
+      "excerpt": "La balanza comercial de bienes de Ecuador cerró los primeros ocho meses de 2026 con un saldo favorable de USD 3.054 millones, una cifra 32%",
+      "url": "https://www.bce.fin.ec/ecuador-cerro-los-primeros-ocho-meses-de-2026-con-un-saldo-comercial-favorable-de-usd-3-054-millones/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-16T12:00:00.000Z"
+    },
+    {
       "id": "03c191e5ade244a3fe8b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -141,48 +169,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-16T11:00:23.000Z"
-    },
-    {
-      "id": "8cac0cfcfb1376870ed6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Agentic Payments Are About to Break the Meaning of an Authorized Transaction",
-      "excerpt": "Watch more: Before AI Moves Money, It Must Earn Authority Agentic commerce has a payments problem hiding in plain sight. The financial system does not yet have a universal way to authenticate a machine’s authority to make a decision. And time is running out. Artificial intelligen",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/agentic-payments-redefine-authorized-transaction/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T08:03:17.000Z"
-    },
-    {
-      "id": "0844f152d84c9ac02365",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Scams Capture 22.4% of Fraud Dollars as Banks Adjust Defenses",
-      "excerpt": "Banks have an opportunity to strengthen fraud prevention by looking more closely at payments that arrive with a valid login or a customer’s approval. That’s the central implication of the third key finding in “Scams Get Personal: Why Banks Pay More to Fight Fraud,” a PYMNTS Intel",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scams-capture-22-4percent-of-fraud-dollars-as-banks-adjust-defenses/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T08:00:52.000Z"
-    },
-    {
-      "id": "0bb49447d17cb2e1c81c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BNY Extends Reach Into Tokenized Funds and Pay-to-Wallet Service",
-      "excerpt": "Having shifted to a platform operating model over the past few years, BNY is now realizing the benefits of new model by having its teams come together to develop more integrated and innovative solutions for clients, BNY CEO Robin Vince said Thursday (Oct. 15) during the bank’s th",
-      "url": "https://www.pymnts.com/earnings/2026/bny-extends-reach-into-tokenized-funds-and-pay-to-wallet-service/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T01:59:49.000Z"
     },
     {
       "id": "4b567b3f45cc5f549fd5",
@@ -1215,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 8
     },
     {
@@ -1226,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 8
     },
     {
@@ -1248,9 +1234,9 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "recentCount": 5
     },
     {
       "id": "seps",
@@ -1259,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 4
     },
     {
@@ -1314,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 9
     },
     {
@@ -1391,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T17:24:28.664Z",
-      "lastSuccessAt": "2026-10-16T17:24:28.664Z",
+      "checkedAt": "2026-10-16T21:08:37.884Z",
+      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
       "recentCount": 10
     }
   ]
