@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T01:20:52.907Z",
+  "generatedAt": "2026-10-16T07:09:58.355Z",
   "stories": [
+    {
+      "id": "0bb49447d17cb2e1c81c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "BNY Extends Reach Into Tokenized Funds and Pay-to-Wallet Service",
+      "excerpt": "Having shifted to a platform operating model over the past few years, BNY is now realizing the benefits of new model by having its teams come together to develop more integrated and innovative solutions for clients, BNY CEO Robin Vince said Thursday (Oct. 15) during the bank’s th",
+      "url": "https://www.pymnts.com/earnings/2026/bny-extends-reach-into-tokenized-funds-and-pay-to-wallet-service/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T01:59:49.000Z"
+    },
+    {
+      "id": "0f33e0cf104f8d2c4bcf",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Personal Shopping Platform Glance Adds PayPal Native Checkout",
+      "excerpt": "Glance has added real-time product data and native checkout to its personal shopping platform through a new agentic commerce integration with PayPal, Glance said in a Thursday (Oct. 15) press release. Glance, which is backed by global technology company InMobi, is embedded on 60 ",
+      "url": "https://www.pymnts.com/commerce/ecommerce/2026/personal-shopping-platform-glance-adds-paypal-native-checkout/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T01:35:53.000Z"
+    },
     {
       "id": "4729702268d97f94b57c",
       "sourceId": "pymnts",
@@ -85,34 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-15T20:03:39.000Z"
-    },
-    {
-      "id": "e0bca097ac365a8f5e5b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "U.S. Bancorp Says AI Agents Aren’t Moving Consumer Deposits Yet",
-      "excerpt": "U.S. Bancorp’s consumers continued to spend during the third quarter, even as the bank carried more card balances and saw an increase in early-stage card delinquencies. “Spend levels are high, employment is strong,” Chief Financial Officer John Stern told analysts during a Thursd",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/us-bancorp-says-ai-agents-are-not-moving-consumer-deposits-yet/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T19:39:00.000Z"
-    },
-    {
-      "id": "300ea05bb232734e835f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "UK’s Neobanks Eye Expansion As Small Business Lending Grows",
-      "excerpt": "Some of the U.K.’s digital lenders to small businesses have reportedly reached profitability more quickly than consumer-focused FinTechs. That’s according to a report Thursday (Oct. 15) by the Financial Times (FT), which said this trend comes as small- to medium-sized businesses ",
-      "url": "https://www.pymnts.com/smbs/2026/uks-neobanks-eye-expansion-as-small-business-lending-grows/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T19:21:37.000Z"
     },
     {
       "id": "065752616f8381ec04de",
@@ -619,20 +619,6 @@
       "publishedAt": "2026-10-06T21:35:45.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T21:00:00.000Z"
-    },
-    {
       "id": "c53a5f8b1aa8526df1d7",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -684,6 +670,20 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
       "source": "Primicias",
       "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "8dec40f4bd0b7c6b852d",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
@@ -1149,34 +1149,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-17T13:04:56.000Z"
-    },
-    {
-      "id": "2628d2ed3e456c840c6b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Créditos para pequeños negocios en Ecuador: qué opciones ofrecen los bancos este mes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNMWp0MklnZGlmcnV1VEd0X3NwZ2pXRnBWdUtONDZjcjBfdVp3YkhfZjAtS1g2Mktma1pIYkEtckV0cmN3RzExSURzUEpvMk1BdE1hSW02X0NmYzJKWGFiWmI2TGdnY1F6bGJMUGFDVlZYakR3MnRsUml3ejJZNmE5YXFVVXBnX2FuU0lpQUN4MEk1eHJhNmdDWU45OGozeVFDb1NIQWZhMFY2ZzJnWGU2YlphWDMzMGc0?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T07:00:00.000Z"
-    },
-    {
-      "id": "d3e33b0ecb0218cd48a5",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Pacientes renales en Ecuador: dializadora exige un acuerdo de pagos antes del 30 de septiembre",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNanlZWGlKY2Z5a1FNWnFxNFdNSVpxeDlPa1otdFh2dmFZS3V3bUNBcDlwQ2pOdlBXbXJMUE53U3dKTGthMTZMWENlQjB4YnZvZlZYZXhVM0I0U3hKZk9lVnZWRFZ5TFhkZE9mVy1WRFBvT1dFbjBOREZkUThuYkVvX2ZValJvSnVNZjZtYUpWYmxoSkhXMVVIQkliellSRUtDVTZFWnBSYjFZQjdhNWl0V1NxeHlZSUgtdDgyQ2FB?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-16T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1187,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1198,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 4
     },
     {
@@ -1231,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 5
     },
     {
@@ -1286,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 0
     },
     {
@@ -1330,8 +1302,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 5
     },
     {
@@ -1341,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T01:20:52.907Z",
-      "lastSuccessAt": "2026-10-16T01:20:52.907Z",
+      "checkedAt": "2026-10-16T07:09:58.355Z",
+      "lastSuccessAt": "2026-10-16T07:09:58.355Z",
       "recentCount": 10
     }
   ]
