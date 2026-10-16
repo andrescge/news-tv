@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T21:08:37.884Z",
+  "generatedAt": "2026-10-16T23:35:44.454Z",
   "stories": [
+    {
+      "id": "b7114aae2cbfff59cd9b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Marqeta and Coinbase Take Stablecoin Spending Mainstream",
+      "excerpt": "Marqeta’s enterprise customers can now offer stablecoin-backed cards powered by Coinbase, the companies said in a Friday (Oct. 16) press release. This offering is enabled by a new collaboration that integrates Marqeta’s card issuing platform with Coinbase’s infrastructure, accord",
+      "url": "https://www.pymnts.com/blockchain/2026/marqeta-and-coinbase-take-stablecoin-spending-mainstream/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T22:35:50.000Z"
+    },
+    {
+      "id": "8c77c64c05a5d9855ca2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Upgrade’s Bank Ambitions Show How FinTech Growth Expands Choices",
+      "excerpt": "As FinTechs scale, they bring banks more deposits, loans, transactions and fees while gaining more choice over which institutions provide the funding and infrastructure behind them. Upgrade facilitated more than $53 billion in credit through a model built with banks and loan buye",
+      "url": "https://www.pymnts.com/news/banking/2026/upgrade-bank-ambitions-show-how-fintech-growth-expands-choices/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T21:39:04.000Z"
+    },
     {
       "id": "d02f0a3839fcbadcddd9",
       "sourceId": "pymnts",
@@ -43,48 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-16T17:13:27.000Z"
-    },
-    {
-      "id": "e07f861dc1ad1f14234d",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Equifax Equips Lenders With Mastercard Open Finance Insights",
-      "excerpt": "Equifax now offers consumer-permissioned financial insights enabled via Mastercard Open Finance alongside the Equifax consumer credit file, the company said in a Friday (Oct. 16) press release. Equifax customers can now access Mastercard Open Finance’s Cash Flow Analytics, which ",
-      "url": "https://www.pymnts.com/consumer-finance/2026/equifax-equips-lenders-with-mastercard-open-finance-insights/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T16:37:54.000Z"
-    },
-    {
-      "id": "57947ff4d50611fb7705",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Circle Targets 40 New Markets to Capture Surging Stablecoin Demand",
-      "excerpt": "Stablecoin issuer Circle plans to enter 40 new markets around the world, Circle CEO and Chairman Jeremy Allaire told Reuters in a report posted Friday (Oct. 16). Circle has seen growing demand for stablecoins from individuals and businesses in Southeast Asia, Latin America and th",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/circle-targets-40-new-markets-capture-surging-stablecoin-demand/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T16:24:48.000Z"
-    },
-    {
-      "id": "6247a4bb74b6febe6d7a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Truist Shifts Investment Toward Deposits and Digital Banking",
-      "excerpt": "Truist exited its third quarter with higher deposits, continued growth in consumer spending and stable underlying credit quality. An earnings call Friday (Oct. 16) indicated that the new Truist CEO, Mike Lyons, wants a larger share of customers’ primary banking relationships. Ave",
-      "url": "https://www.pymnts.com/news/banking/2026/truist-shifts-investment-toward-deposits-digital-banking/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T15:43:50.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -1201,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 8
     },
     {
@@ -1212,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 5
     },
     {
@@ -1245,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T21:08:37.884Z",
-      "lastSuccessAt": "2026-10-16T21:08:37.884Z",
+      "checkedAt": "2026-10-16T23:35:44.454Z",
+      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
       "recentCount": 10
     }
   ]
