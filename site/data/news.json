@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-17T04:26:17.440Z",
+  "generatedAt": "2026-10-17T09:21:33.068Z",
   "stories": [
     {
       "id": "e625a9477dda2b14d8fc",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 8
     },
     {
@@ -1198,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 0
     },
     {
@@ -1330,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 5
     },
     {
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-17T04:26:17.440Z",
-      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
+      "checkedAt": "2026-10-17T09:21:33.068Z",
+      "lastSuccessAt": "2026-10-17T09:21:33.068Z",
       "recentCount": 10
     }
   ]
