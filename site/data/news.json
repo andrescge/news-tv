@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T23:35:44.454Z",
+  "generatedAt": "2026-10-17T04:26:17.440Z",
   "stories": [
+    {
+      "id": "e625a9477dda2b14d8fc",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "New York Fed Finds Surging Costs Turn Executive Outlook Negative",
+      "excerpt": "Service sector firms in New York State and nearby areas became pessimistic about the business outlook in early October, for the first time since December 2025, the Federal Reserve Bank of New York said in its October “Business Leaders Survey.” The survey’s index for future busine",
+      "url": "https://www.pymnts.com/economy/2026/new-york-fed-finds-surging-costs-turn-executive-outlook-negative/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-16T23:39:58.000Z"
+    },
     {
       "id": "b7114aae2cbfff59cd9b",
       "sourceId": "pymnts",
@@ -57,20 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-16T18:48:15.000Z"
-    },
-    {
-      "id": "eb32cff5efc0fedc06de",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Apple, Meta Team Up to Put Big AI on Desktops",
-      "excerpt": "A Meta and Apple partnership wasn’t on anyone’s 2026 bingo card. On Thursday (Oct. 15), the two companies, who spent most of a decade fighting over user data, announced they had worked together to run Meta’s newest AI model on Apple’s desktops. Meta released Muse Spark Open, an 8",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apple-meta-team-up-to-put-big-ai-on-desktops/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T17:13:27.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -519,20 +519,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-13T10:18:00.000Z"
-    },
-    {
-      "id": "1c4bf61f5ddc2e8c20ff",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bancos tradicionales VS. Neobancos: la rentabilidad que ofrecen en sus cuentas de ahorros",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxNSXNvSVRfNFd5SzVrZWtySTg1SnYydDUxU3RHRjlfTE40ZXNCUDJZakdlRkxUcFVoNnIza2Q4ajVoa25iQWUtVjc0ejhFdWlCUXExOW5PZlUwZlhvX0hMcURPa3NOUk9KMUJaZVQ2VnFSVDN6SEJnVV85M2NBbC1Vc0ZFRWRQZXMzWDNJalBNdU9xaVFJb0VUbWRMWEFVVEp6RDFaVjVWY3FIdTYybzhUMlpzTUNWVFpZc1NkcnpoN1Z0dmU4YzNWbENwVjhaOVF2cng5SFhsTnJqRGJIenZncEtIY2dLdWNiTnJSeWt30gHuAUFVX3lxTE1Jc29JVF80V3lLNWtla3JJODVKdjJ0NTFTdEdGOV9MTjRlc0JQMllqR2VGTFRwVWg2cjNrZDhqNWhrbmJBZS1WNzR6OEV1aUJRcTE5bk9mVTBmWG9fSExxRE9rc05ST0oxQlplVDZWcVJUM3pIQmdVXzkzY0FsLVVzRkVFZFBlczNYM0lqUE11T3FpUUlvRVRtZExYQVVUSnpEMVpWNVZjcUh1NjJvOFQyWnNNQ1ZUWllzU2Ryemg3VnR2ZThjM1ZsQ3BWOFo5UXZyeDlIWGxOcmpEYkh6dmdwS0hjZ0t1Y2JOclJ5a3c?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T10:09:59.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -1109,6 +1095,20 @@
       "publishedAt": "2026-09-25T00:01:00.000Z"
     },
     {
+      "id": "cd96405e0c47d8269751",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T07:00:00.000Z"
+    },
+    {
       "id": "6fd0f021e5e1ed3b9fed",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 8
     },
     {
@@ -1198,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 0
     },
     {
@@ -1330,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 5
     },
     {
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-16T23:35:44.454Z",
-      "lastSuccessAt": "2026-10-16T23:35:44.454Z",
+      "checkedAt": "2026-10-17T04:26:17.440Z",
+      "lastSuccessAt": "2026-10-17T04:26:17.440Z",
       "recentCount": 10
     }
   ]
