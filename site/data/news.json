@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T20:43:38.483Z",
+  "generatedAt": "2026-10-18T23:12:51.985Z",
   "stories": [
+    {
+      "id": "9547a5d11b5ed67d2dcc",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Indian Consumers Embrace Cash Ahead of New Instant Payment Fees",
+      "excerpt": "Indian consumers are reportedly increasing their cash usage ahead of new fees on the country’s popular digital payment system. Beginning next month, the United Payments Interface (UPI) system will apply a small fee on all transactions greater than 2,000 rupees, or around $21. But",
+      "url": "https://www.pymnts.com/real-time-payments/2026/indian-consumers-embrace-cash-ahead-of-new-instant-payment-fees/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-18T22:55:43.000Z"
+    },
+    {
+      "id": "36e1f72e13e8badd1a24",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anthropic Co-Founder Predicts AI Will Bring US GDP to $44 Trillion",
+      "excerpt": "Anthropic’s co-founder predicts that artificial intelligence could boost America’s economic output by nearly 50% by 2030. That forecast comes from one of the AI startup’s internal models, Jack Clark said Saturday (Oct. 17) at the IMF and World Bank annual meetings in Bangkok. Glo",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-co-founder-predicts-ai-will-bring-us-gdp-to-44-trillion/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-18T22:22:29.000Z"
+    },
     {
       "id": "e625a9477dda2b14d8fc",
       "sourceId": "pymnts",
@@ -43,34 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-16T21:39:04.000Z"
-    },
-    {
-      "id": "d02f0a3839fcbadcddd9",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Stablecoins Take Aim at Cash Locked in Prefunding",
-      "excerpt": "Cross-border payments carry a working capital cost before money reaches the recipient. Payment providers frequently need funds available in advance to make payouts in other markets. For a company operating across currencies and time zones, that can mean maintaining cash in multip",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-take-aim-cash-locked-prefunding/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T19:16:08.000Z"
-    },
-    {
-      "id": "c7fa04d8d1efb207e267",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Regions Bank Says AI Cybersecurity Drives Up Costs 1.5% to 3.5%",
-      "excerpt": "Regions Financial Corp., parent company of Regions Bank, expects the cost of cybersecurity to increase its adjusted noninterest expense by between 1.5% and 3.5% for full-year 2026, Chief Financial Officer Anil Chadha said Friday (Oct. 16) during an earnings call. The company’s in",
-      "url": "https://www.pymnts.com/earnings/2026/regions-bank-says-ai-cybersecurity-drives-up-costs-1-5percent-to-3-5percent/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T18:48:15.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -1173,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 8
     },
     {
@@ -1184,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 8
     },
     {
@@ -1205,8 +1205,8 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
+      "status": "error",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
       "lastSuccessAt": "2026-10-18T20:43:38.483Z",
       "recentCount": 5
     },
@@ -1217,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 0
     },
     {
@@ -1316,8 +1316,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 5
     },
     {
@@ -1327,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 9
     },
     {
@@ -1349,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T20:43:38.483Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "checkedAt": "2026-10-18T23:12:51.985Z",
+      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
       "recentCount": 9
     }
   ]
