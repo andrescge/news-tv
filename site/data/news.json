@@ -1,7 +1,119 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-19T15:36:03.177Z",
+  "generatedAt": "2026-10-19T21:02:59.914Z",
   "stories": [
+    {
+      "id": "766bd275cc60a69e82b6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Relay and Nium Handle $500 Million in Cross-Border Payments in Partnership’s First Year",
+      "excerpt": "Users of Relay’s small business banking and money management platform have sent over $500 million in cross-border payments through Nium’s global money movement platform since the companies launched their partnership about a year ago, according to a Monday (Oct. 19) press release.",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/relay-and-nium-handle-500-million-in-cross-border-payments-in-partnerships-first-year/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T20:57:04.000Z"
+    },
+    {
+      "id": "5fb801cd77b626e9978e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Character.ai Bankruptcy Exposes the High Cost of AI Companionship",
+      "excerpt": "Character.ai, an artificial intelligence (AI) companion platform that lets users chat with AI versions of their favorite characters, filed for Chapter 11 on Oct. 12. About 12 million monthly users could not make it profitable. The company was losing $8 million to $9 million a mon",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/character-ai-bankruptcy-exposes-the-high-cost-of-ai-companionship/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T20:17:26.000Z"
+    },
+    {
+      "id": "c8e3acb2d3daf6b8b207",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Circle and Proof Help Businesses Trust AI Agent Transactions",
+      "excerpt": "Proof and Circle Internet Group said Monday (Oct. 19) that they will demonstrate at Money20/20 how open identity and payment protocols can work together to enable businesses to trust transactions made by agents. The companies’ demo will include an artificial intelligence agent pr",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/circle-and-proof-help-businesses-trust-ai-agent-transactions/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T20:10:08.000Z"
+    },
+    {
+      "id": "da2e4a7857b41f91af56",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fiserv Aims to Simplify Cross-Border Commerce With Commerce Hub",
+      "excerpt": "Payments and financial services technology solutions provider Fiserv has launched its Commerce Hub platform. The new offering is designed to let merchants “orchestrate and simplify commerce through a single connection to Fiserv’s commerce capabilities,” the company said in a Mond",
+      "url": "https://www.pymnts.com/commerce/2026/fiserv-aims-to-simplify-cross-border-commerce-with-commerce-hub/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T19:05:21.000Z"
+    },
+    {
+      "id": "1aaa5c2d84d23f67ffa9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Square Shifts Business Credit Cards to Marqeta Platform to Speed Credit Innovation",
+      "excerpt": "Square has consolidated its credit and debit programs on Marqeta’s card issuing platform, saying this will enable the company to bring new credit features to market more quickly. With this move, Square migrated its Square Credit Card to Marqeta, which already enables Square’s deb",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/square-shifts-business-credit-cards-to-marqeta-platform-to-speed-credit-innovation/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T18:54:08.000Z"
+    },
+    {
+      "id": "3e38cea9d764d430e449",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "U.S. Bank Debuts Tool to Streamline Consumers’ Recurring Bills",
+      "excerpt": "U.S. Bank says it is giving customers a quicker way to shift recurring payments to a debit or credit card. Payment Switch, announced Monday (Oct. 19), lets consumers transfer payments for things like utility bills or streaming services to a U.S. bank debit or credit card via the ",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/u-s-bank-debuts-tool-to-streamline-consumers-recurring-bills/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T18:33:44.000Z"
+    },
+    {
+      "id": "496f001e5aadd924631a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard and Extend Team to Improve Bank and Business Software",
+      "excerpt": "Mastercard has chosen spend management/virtual card FinTech Extend as one of its financial operations platform partners. The collaboration, announced Monday (Oct. 19), is designed to bring new spend and expense management tools directly to commercial card issuing banks in the U.S",
+      "url": "https://www.pymnts.com/news/banking/2026/mastercard-and-extend-team-to-improve-bank-and-business-software/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T18:01:38.000Z"
+    },
+    {
+      "id": "b865b147bfca0efe163f",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Big Banks Won’t Let Outside AI Agents Move Money",
+      "excerpt": "A customer who hands a login to an artificial intelligence agent now gets turned away at four of the biggest names in banking in the United States. Charles Schwab sees the attempts firsthand. Across all its clients, the brokerage blocks the big, unauthorized AI agents, including ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/big-banks-will-not-let-outside-ai-agents-move-money/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T17:30:37.000Z"
+    },
     {
       "id": "e897b2fbf143e0d1e545",
       "sourceId": "finextra-crypto",
@@ -29,62 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T14:55:00.000Z"
-    },
-    {
-      "id": "979761a1c4fd9f669a81",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T14:25:43.000Z"
-    },
-    {
-      "id": "cad53e780cd7d837f109",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "TikTok Turns to Shoplazza to Power Agentic Commerce Offering",
-      "excerpt": "Commerce operating system Shoplazza says it is teaming with TikTok to “support new agentic commerce shopping experiences.” The collaboration is designed to shorten the journey between product discovery and purchase and help merchants capitalize on the demand generated by their co",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/tiktok-turns-to-shoplazza-to-power-agentic-commerce-offering/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T13:59:14.000Z"
-    },
-    {
-      "id": "cb0f443e5328b699df3c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Why B2B Checks Still Move $15 Trillion a Year",
-      "excerpt": "The check was supposed to be dead by now. Instead, it has become a $15 trillion reminder that moving money and settling a business obligation are not always the same thing. According to research briefs from the Federal Reserve Bank of Cleveland published in September, ACH account",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/why-b2b-checks-still-move-15-trillion-a-year/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T13:00:33.000Z"
-    },
-    {
-      "id": "883040193ee7a9594228",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "JPMorgan Brings Its Deposit Token to the Ethereum Blockchain",
-      "excerpt": "JPMorganChase is reportedly expanding its blockchain payments footprint by bringing its deposit token to Ethereum. JPM Coin will now be available to the bank’s institutional clients on the Ethereum network, JPMorgan representatives told Bloomberg News Monday (Oct. 19). Emma Landr",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/jpmorgan-brings-its-deposit-token-to-the-ethereum-blockchain/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T12:46:57.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -141,34 +197,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-19T09:00:03.000Z"
-    },
-    {
-      "id": "78e630d0b1bb14e6aa16",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Agents Could Fill Treasury’s Looming Talent Gap",
-      "excerpt": "Watch more: Monday Conversation With Fifth Third Bank’s Katherine Weislogel There’s a workforce problem brewing in corporate treasury departments, and it has little to do with finding the next generation of finance executives. It’s about the people who have spent 20 or 30 years m",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-could-fill-treasurys-looming-talent-gap/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T08:03:34.000Z"
-    },
-    {
-      "id": "25851bc971637ae14a01",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Brazilian Retailers Can Lose the Sale Even After Shoppers Enter the Store",
-      "excerpt": "The shopper standing in a Brazilian store may be looking at merchandise on the shelf, but the merchant no longer has that shopper to itself. PYMNTS Intelligence’s August 2026 “Global Digital Shopping Index: Brazil Playbook,” produced in collaboration with Visa Acceptance Solution",
-      "url": "https://www.pymnts.com/news/retail/2026/brazilian-retailers-can-lose-the-sale-even-after-shoppers-enter-the-store/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T08:01:24.000Z"
     },
     {
       "id": "78e80966558f9df82583",
@@ -1081,6 +1109,20 @@
       "publishedAt": "2026-09-26T07:00:00.000Z"
     },
     {
+      "id": "bc98479a46219adb7a6d",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-26T07:00:00.000Z"
+    },
+    {
       "id": "20978e0dafe5d148c000",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1187,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 8
     },
     {
@@ -1198,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T15:36:03.177Z",
-      "lastSuccessAt": "2026-10-19T15:36:03.177Z",
+      "checkedAt": "2026-10-19T21:02:59.914Z",
+      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
       "recentCount": 9
     }
   ]
