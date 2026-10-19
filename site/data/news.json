@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-19T01:17:22.291Z",
+  "generatedAt": "2026-10-19T07:46:15.616Z",
   "stories": [
+    {
+      "id": "9d226243460e2e9c988b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Santander Turns to Nvidia to Build New AI Banking Capabilities",
+      "excerpt": "Santander has teamed with Nvidia to come up with capabilities for evaluating artificial intelligence models and agents for banking. This work by the Santander AI lab is designed to help determine which AI model is best suited for a task and deploy it in the most efficient fashion",
+      "url": "https://www.pymnts.com/news/banking/2026/santander-turns-to-nvidia-to-build-new-ai-banking-capabilities/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T05:00:47.000Z"
+    },
     {
       "id": "f4fb184e4a9dbecf345f",
       "sourceId": "pymnts",
@@ -57,34 +71,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-18T22:55:43.000Z"
-    },
-    {
-      "id": "36e1f72e13e8badd1a24",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anthropic Co-Founder Predicts AI Will Bring US GDP to $44 Trillion",
-      "excerpt": "Anthropic’s co-founder predicts that artificial intelligence could boost America’s economic output by nearly 50% by 2030. That forecast comes from one of the AI startup’s internal models, Jack Clark said Saturday (Oct. 17) at the IMF and World Bank annual meetings in Bangkok. Glo",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-co-founder-predicts-ai-will-bring-us-gdp-to-44-trillion/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-18T22:22:29.000Z"
-    },
-    {
-      "id": "e625a9477dda2b14d8fc",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "New York Fed Finds Surging Costs Turn Executive Outlook Negative",
-      "excerpt": "Service sector firms in New York State and nearby areas became pessimistic about the business outlook in early October, for the first time since December 2025, the Federal Reserve Bank of New York said in its October “Business Leaders Survey.” The survey’s index for future busine",
-      "url": "https://www.pymnts.com/economy/2026/new-york-fed-finds-surging-costs-turn-executive-outlook-negative/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T23:39:58.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -1187,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 8
     },
     {
@@ -1198,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 5
     },
     {
@@ -1231,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 8
     },
     {
@@ -1308,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 8
     },
     {
@@ -1319,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 9
     },
     {
@@ -1363,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T01:17:22.291Z",
-      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "checkedAt": "2026-10-19T07:46:15.616Z",
+      "lastSuccessAt": "2026-10-19T07:46:15.616Z",
       "recentCount": 9
     }
   ]
