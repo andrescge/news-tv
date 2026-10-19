@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-18T23:12:51.985Z",
+  "generatedAt": "2026-10-19T01:17:22.291Z",
   "stories": [
+    {
+      "id": "f4fb184e4a9dbecf345f",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Sam Altman’s World Debuts ID Verification for AI Agents",
+      "excerpt": "Sam Altman’s iris-scanning project World is making what it calls its “first industry-specific push.” The company on Sunday (Oct. 18) announced World ID for banking and finance, designed to help businesses determine whether artificial intelligence agents are moving money and shopp",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/sam-altmans-world-debuts-id-verification-for-ai-agents/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T01:10:58.000Z"
+    },
+    {
+      "id": "6bd8cf81180c2859c6d6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Regional Banks See Growth in Spite of Economic Gloom",
+      "excerpt": "Several of America’s regional banks posted robust third-quarter earnings last week amid strong commercial loan demand. And as Reuters reported Friday (Oct. 16), these earnings add to indications that the U.S. economy is still resilient even in the face of increasing borrowing cos",
+      "url": "https://www.pymnts.com/news/banking/2026/regional-banks-see-growth-in-spite-of-economic-gloom/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-18T23:42:50.000Z"
+    },
+    {
+      "id": "da09c5bc2c0d4a404bd2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Crypto Hardware Wallets Become New Entry Point for Hackers",
+      "excerpt": "Last week, cryptocurrency hardware wallet company Ledger said it was investigating a hack that drained $90 million from its devices. As Bloomberg News reported Sunday (Oct. 18), this reprsents the latest example of a vulnerability in what was once believed to be the safest tool f",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-hardware-wallets-become-new-entry-point-for-hackers/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-18T23:15:29.000Z"
+    },
     {
       "id": "9547a5d11b5ed67d2dcc",
       "sourceId": "pymnts",
@@ -43,34 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-16T23:39:58.000Z"
-    },
-    {
-      "id": "b7114aae2cbfff59cd9b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Marqeta and Coinbase Take Stablecoin Spending Mainstream",
-      "excerpt": "Marqeta’s enterprise customers can now offer stablecoin-backed cards powered by Coinbase, the companies said in a Friday (Oct. 16) press release. This offering is enabled by a new collaboration that integrates Marqeta’s card issuing platform with Coinbase’s infrastructure, accord",
-      "url": "https://www.pymnts.com/blockchain/2026/marqeta-and-coinbase-take-stablecoin-spending-mainstream/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T22:35:50.000Z"
-    },
-    {
-      "id": "8c77c64c05a5d9855ca2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Upgrade’s Bank Ambitions Show How FinTech Growth Expands Choices",
-      "excerpt": "As FinTechs scale, they bring banks more deposits, loans, transactions and fees while gaining more choice over which institutions provide the funding and infrastructure behind them. Upgrade facilitated more than $53 billion in credit through a model built with banks and loan buye",
-      "url": "https://www.pymnts.com/news/banking/2026/upgrade-bank-ambitions-show-how-fintech-growth-expands-choices/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T21:39:04.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -1173,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 8
     },
     {
@@ -1184,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 8
     },
     {
@@ -1205,9 +1219,9 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "error",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T20:43:38.483Z",
+      "status": "ok",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 5
     },
     {
@@ -1217,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1327,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 9
     },
     {
@@ -1349,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-18T23:12:51.985Z",
-      "lastSuccessAt": "2026-10-18T23:12:51.985Z",
+      "checkedAt": "2026-10-19T01:17:22.291Z",
+      "lastSuccessAt": "2026-10-19T01:17:22.291Z",
       "recentCount": 9
     }
   ]
