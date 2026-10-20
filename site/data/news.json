@@ -1,7 +1,175 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T11:36:58.462Z",
+  "generatedAt": "2026-10-20T17:04:33.261Z",
   "stories": [
+    {
+      "id": "24fb310b807932a6165b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard Debuts Tool to Help AI Agents Purchase Digital Services",
+      "excerpt": "Mastercard has launched early access to Agent Pay for Machines, a tool designed to let autonomous artificial intelligence agents purchase digital services. The new offering builds on x402, an open protocol that allows digital services to request payment online, and “connects it w",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-debuts-tool-to-help-ai-agents-purchase-digital-services/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T16:00:46.000Z"
+    },
+    {
+      "id": "f7f05b1446b450656127",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Synchrony: Broad-Based Consumer Spending Drives Q3 Purchase Volume to Record High",
+      "excerpt": "Consumer financing company Synchrony saw record third-quarter purchase volume, with both discretionary and non-discretionary out-of-partner spend on its consumer co-branded cards growing by double digits, Synchrony President and CEO Brian Doubles said Tuesday (Oct. 20) during an ",
+      "url": "https://www.pymnts.com/consumer-finance/2026/synchrony-broad-based-consumer-spending-drives-q3-purchase-volume-record-high/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T16:00:26.000Z"
+    },
+    {
+      "id": "dcdc8aa361e6a36259ac",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Máximo alista su relanzamiento con una propuesta de gestión financiera",
+      "excerpt": "La fintech peruana está por lanzar una nueva versión que contempla créditos, puntos de lealtad, alianzas retail e inversiones. La estrategia busca optimizar su proceso de adquisición y competir en el próximo nivel financiero que alista el mercado: la experiencia de uso. ... Leer ",
+      "url": "https://iupana.com/2026/10/20/maximo-alista-relanzamiento-propuesta-gestion-financiera/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-20T15:55:31.000Z"
+    },
+    {
+      "id": "0cd0f1400b0b535984a7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Treasury Stablecoin Proposal Draws Questions Over Foreign Access",
+      "excerpt": "Treasury’s effort to regulate payment stablecoins hinges on questions on when a coin has actually been issued, who issued it and how a stablecoin created outside the country can legally reach a customer in the United States. The department’s proposed rule, published Aug. 18, woul",
+      "url": "https://www.pymnts.com/legal/2026/treasury-stablecoin-proposal-draws-questions-over-foreign-access/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T15:51:15.000Z"
+    },
+    {
+      "id": "80bbb7953e10ae806770",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Ramp applies for national bank trust charter",
+      "excerpt": "Ramp has become the latest fintech to apply for a US national bank charter, enabling the expense management platform to offer fiduciary investment management and custody of digital assets.",
+      "url": "https://www.finextra.com/newsarticle/48619/ramp-applies-for-national-bank-trust-charter?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T15:20:00.000Z"
+    },
+    {
+      "id": "afa2e1fa4b0f05b2c195",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Finsei Picks Thredd to Help Launch New Debit Offering",
+      "excerpt": "London-based payments firm Finsei has picked issuer processing platform Thredd to power its new Mastercard debit offering. “The partnership reflects a shared focus on simplifying an increasingly complex payments environment,” Thredd said in a Tuesday (Oct. 20) news release. “Busi",
+      "url": "https://www.pymnts.com/partnerships/2026/finsei-picks-thredd-to-help-launch-new-debit-offering/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T15:16:55.000Z"
+    },
+    {
+      "id": "586123c81163b3c99c4b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Finastra Makes Trade Finance Technology More Accessible for Regional Banks",
+      "excerpt": "Finastra has launched a cloud-enabled solution designed to help U.S. banks digitize and automate their standby letter of credit (SBLC) flows, without having to deploy a full trade finance platform, the company said in a Monday (Oct. 19) press release. The new Finastra StandbyX of",
+      "url": "https://www.pymnts.com/news/banking/2026/finastra-makes-trade-finance-technology-more-accessible-for-regional-banks/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T14:39:39.000Z"
+    },
+    {
+      "id": "e218b8cc2e08882c213b",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "UK sets out proposal to open up access to iPhone contactless payments",
+      "excerpt": "The UK's competition watchdog is consulting on proposals to unlock contactless technology on iPhones, making it easier for Apple Pay rivals to flourish by lowering fees and removing technical ​barriers.",
+      "url": "https://www.finextra.com/newsarticle/48618/uk-sets-out-proposal-to-open-up-access-to-iphone-contactless-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T14:03:00.000Z"
+    },
+    {
+      "id": "99a520fae827c3e39b25",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Boost Turns to Airwallex to Enhance B2B Payments Capabilities",
+      "excerpt": "B2B payments company Boost Payments Solutions has launched a partnership with financial operating system Airwallex. The collaboration is designed to enhance Boost’s international commercial card processing capabilities and help it streamline supplier onboarding and simplify cross",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/boost-turns-to-airwallex-to-enhance-b2b-payments-capabilities/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T13:00:56.000Z"
+    },
+    {
+      "id": "8332a8f2a7a98517fbbc",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa pilots AI agent payments between buyer and supplier platforms",
+      "excerpt": "Visa has joined forces with Bill and Billtrust to launch the first live pilot to enable trusted AI agents to initiate and complete approved buyer invoice payments end-to-end through supplier portals.",
+      "url": "https://www.finextra.com/newsarticle/48610/visa-pilots-ai-agent-payments-between-buyer-and-supplier-platforms?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T13:00:00.000Z"
+    },
+    {
+      "id": "756c8c7e41c9eb358ce9",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Google Cloud outage disrupts multiple bank sites",
+      "excerpt": "HSBC, Revolut, Lloyds and Bank of Scotland are among some of the banks reported to have been affected by a major outage at Google Cloud",
+      "url": "https://www.finextra.com/newsarticle/48615/google-cloud-outage-disrupts-multiple-bank-sites?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T12:37:00.000Z"
+    },
+    {
+      "id": "d367bdb5837978d7dc57",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa Launches Agentic Payments Pilot With BILL and Billtrust",
+      "excerpt": "Visa has launched an agentic payments partnership with accounts payable and receivable solutions providers BILL and Billtrust. The collaboration is the first live pilot to allow artificial intelligence (AI) agents “to initiate and complete approved buyer invoice payments end-to-e",
+      "url": "https://www.pymnts.com/partnerships/2026/visa-launches-agentic-payments-pilot-with-bill-and-billtrust/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T12:25:22.000Z"
+    },
     {
       "id": "934af68afa51f4329938",
       "sourceId": "finextra-payments",
@@ -17,20 +185,6 @@
       "publishedAt": "2026-10-20T11:27:00.000Z"
     },
     {
-      "id": "ce97bd1bdd1bff48f743",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Nacha Says Faster Payment Demand Drives 37% Surge in Same Day ACH Volume",
-      "excerpt": "Same Day ACH saw year-over-year increases of about 37% in volume and 32% in value in the third quarter as it met user demand for faster payments, Nacha said in a Tuesday (Oct. 20) press release emailed to PYMNTS. With those increases, the total number of Same Day ACH payments rea",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/nacha-says-faster-payment-demand-drives-37-surge-in-same-day-ach-volume/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T11:00:11.000Z"
-    },
-    {
       "id": "037092e53394a17f9fde",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -43,104 +197,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T10:22:00.000Z"
-    },
-    {
-      "id": "76b23a1f8a5eef8a0d5a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Cross River Plans to Buy Accrue to Merge Payments With Loyalty",
-      "excerpt": "Cross River Bank plans to add branded wallet, stored value and loyalty rewards technology to its regulated financial infrastructure by acquiring FinTech company Accrue, Cross River said in a Tuesday (Oct. 20) press release emailed to PYMNTS. Cross River’s parent company, CRB Grou",
-      "url": "https://www.pymnts.com/news/acquiring/2026/cross-river-plans-to-buy-accrue-to-merge-payments-with-loyalty/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T10:00:41.000Z"
-    },
-    {
-      "id": "147338d34e6df4d55474",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks’ Growing Fraud Tech Stacks Create an Integration Challenge",
-      "excerpt": "Banks have plenty of fraud technology, but getting all of it to work as a cohesive line of defense is becoming a problem. The PYMNTS Intelligence report “Scams Get Personal: Why Banks Pay More to Fight Fraud” found in September that 78% of financial institutions said the complexi",
-      "url": "https://www.pymnts.com/cybersecurity/2026/banks-growing-fraud-tech-stacks-create-integration-challenge/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T08:01:56.000Z"
-    },
-    {
-      "id": "d2bbdd9b11b65ebf39b3",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "At 12, Apple Pay Has Yet to Break the Card Habit In-Store",
-      "excerpt": "Your phone can handle the checkout. Your hand may still reach for the same old card. Twelve years after Apple Pay arrived, mobile wallets are gaining users, but familiar payment habits still have a firm grip on the register. “Apple Pay @12: Mobile Wallets Gain Ground, but Most Sh",
-      "url": "https://www.pymnts.com/digital-payments/2026/at-12-apple-pay-has-yet-to-break-the-card-habit-in-store/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T08:00:34.000Z"
-    },
-    {
-      "id": "115f0c1b165b98e19866",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "21% of Financially Stressed Grocery Shoppers Use Digital Wallets",
-      "excerpt": "Grocery shoppers under financial pressure are spending more per purchase, giving retailers an opportunity to help households manage bigger bills with more flexible ways to shop and pay. That’s a central finding of “The New Checkout: Crimped Consumers Lean Into Online Retail and D",
-      "url": "https://www.pymnts.com/consumer-insights/2026/21-percent-of-financially-stressed-grocery-shoppers-use-digital-wallets/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T08:00:02.000Z"
-    },
-    {
-      "id": "ab02764f0320a575af31",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Kala: la Fintech colombiana que usa IA para ampliar el acceso al crédito",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOTFpc2JDdzlQU3Nfc1NYYXk0WUhnWmRzVnZrd1ZlU2JCTFFvTTRMVVJUcEFxSmtvclN0MVRCSnNrcEx5alRRYzBmaTY4N0VIbVhsZDZRdzVvdnIzbDhOUmxsaURrWURkem54QjNQbElEYzdwM2ZKbGFIcUtLRWhHc2ZtV3JDOVBLZGYwMlRMTWNrY2FhRHVLbzdVUlFlMEpZd2g4X1RYbjBvdlhG?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T23:08:39.000Z"
-    },
-    {
-      "id": "dcc44ff2222e992d49d1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ramp Seeks National Trust Bank Charter for Digital Asset Custody",
-      "excerpt": "Finance platform Ramp aims to form a national trust bank that would offer fiduciary investment management and custody of digital assets, the company said in a Monday (Oct. 19) post on X. Ramp submitted an application to establish the proposed Ramp National Trust Bank to the Offic",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/ramp-seeks-national-trust-bank-charter-for-digital-asset-custody/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T23:07:25.000Z"
-    },
-    {
-      "id": "f966368752d075ff2d40",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Agent Cuts Centalion’s Trade Finance Amendment Time 80%",
-      "excerpt": "Issuing a bank guarantee at a large commodity trader is still a desk job. A treasury employee checks how much room is left on a credit facility, pulls the banking details from one system, confirms the limits in another and keys the transaction into a third. At a trader that booke",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agent-cuts-centalions-trade-finance-amendment-time-80/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T23:00:49.000Z"
     },
     {
       "id": "27142680b887707b2724",
@@ -437,34 +493,6 @@
       "publishedAt": "2026-10-15T15:53:12.000Z"
     },
     {
-      "id": "bf8ae1558eac65bb0f55",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ramp hits $60bn valuation",
-      "excerpt": "Expense management firm Ramp has closed its second major raise in a matter of months, securing $1.85 billion in a primary financing round led by Dragoneer Investment Group that values the company at $60 billion.",
-      "url": "https://www.finextra.com/newsarticle/48591/ramp-hits-60bn-valuation?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T15:35:00.000Z"
-    },
-    {
-      "id": "4ba2fdd9389ea043dc64",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard and BVNK bring fiat and stablecoin payments together in global money platform",
-      "excerpt": "Mastercard has launched a platform that brings together its global payments capabilities with the stablecoin infrastructure of its recently acquired BVNK unit through a single API.",
-      "url": "https://www.finextra.com/newsarticle/48590/mastercard-and-bvnk-bring-fiat-and-stablecoin-payments-together-in-global-money-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T15:17:00.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -507,18 +535,18 @@
       "publishedAt": "2026-10-14T20:35:24.000Z"
     },
     {
-      "id": "645dc4fb7e4288c58eb6",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
+      "id": "b05b3a29af7805d5cb10",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Visa secures China card business green light",
-      "excerpt": "US behemoth Visa has secured approval from the People’s Bank of China to set up a domestic bank card clearing business in the country.",
-      "url": "https://www.finextra.com/newsarticle/48584/visa-secures-china-card-business-green-light?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T16:04:00.000Z"
+      "title": "Pago ASAP habilita solución de pagos entre Colombia y Venezuela a través de Bre-B para facilitar las transferencias transfronterizas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSWFsQjFsQ3gzRl9Ec0dCVHVCN1RhSHFCa3hzc05JS0loU1Rha2c0Yk5zT3BVZzZYc0gzWEVxNUJGbHFUYmVFSi1ZbUY1LWNTTUhHWmlaaWxXYlRqbVR4ams4Tm03bS12Nm5Pdy1LbkUwQWhqNHdzT29NdzQ0TC12WUhFQ2VmMVpPVXdmamhxTEZWdXl0TGRtRGpNWWJuS3RfX0dTT0FSZE90cjA0dVJvNzc1cFU0LTRFRmtRSkhyVlV2MjRPcFdzNHJqZS1nUnZzUFpvcXZOUzdseEJ3TllDTDR2V183aTgzYXJrQUlBd0ZjWjJRaFB0d3IyWDkzUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-14T15:44:12.000Z"
     },
     {
       "id": "c3b898db331c6623a187",
@@ -547,20 +575,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-14T12:48:32.000Z"
-    },
-    {
-      "id": "389d6bbce3c67565053e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BoE and IMF warn of cyber threat to banking system",
-      "excerpt": "Such is the concern about cyber risks, that consumers could revert to keeping their money in a shoebox under the bed rather than depositing it with a bank.",
-      "url": "https://www.finextra.com/newsarticle/48580/boe-and-imf-warn-of-cyber-threat-to-banking-system?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T12:39:00.000Z"
     },
     {
       "id": "78999f85ab3348c21e93",
@@ -659,20 +673,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-09T19:01:03.000Z"
-    },
-    {
-      "id": "dcb2ff32b5253e03a5c9",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Del fraude puntual al riesgo sistémico en la banca",
-      "excerpt": "La IA está cambiando la escala del fraude y dejando en evidencia que la banca aún opera entre áreas, herramientas y señales separadas. El desafío ahora es conectar señales para anticipar ataques.... Leer más... La entrada Del fraude puntual al riesgo sistémico en la banca se publ",
-      "url": "https://iupana.com/2026/10/09/del-fraude-puntual-al-riesgo-sistemico-en-la-banca/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-09T09:00:43.000Z"
     },
     {
       "id": "db4b943c746d4719fad3",
@@ -911,20 +911,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-02T17:09:17.000Z"
-    },
-    {
-      "id": "bdc20b7b3b8079730f82",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Lloyds survey reveals 71% of UK FIs believe tokenisation will reshape financial services",
-      "excerpt": "Lloyds' 10th annual Financial Institutions Sentiment Survey, conducted between April and May 2026, showed that 71% of the 100 senior leaders surveyed across UK banks, insurers, financial sponsors and asset and wealth managers, expect tokenisation to transform how money and assets",
-      "url": "https://www.finextra.com/newsarticle/48526/lloyds-survey-reveals-71-of-uk-fis-believe-tokenisation-will-reshape-financial-services?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T11:07:00.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -1229,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 9
     },
     {
@@ -1240,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 6
     },
     {
@@ -1273,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 2
     },
     {
@@ -1317,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 4
     },
     {
@@ -1328,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 0
     },
     {
@@ -1372,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 7
     },
     {
@@ -1383,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 12
     },
     {
@@ -1394,9 +1380,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "recentCount": 8
     },
     {
       "id": "chainalysis",
@@ -1405,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T11:36:58.462Z",
-      "lastSuccessAt": "2026-10-20T11:36:58.462Z",
+      "checkedAt": "2026-10-20T17:04:33.261Z",
+      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
       "recentCount": 9
     }
   ]
