@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T00:20:24.703Z",
+  "generatedAt": "2026-10-20T06:00:30.003Z",
   "stories": [
     {
       "id": "dcc44ff2222e992d49d1",
@@ -29,6 +29,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T23:00:49.000Z"
+    },
+    {
+      "id": "27142680b887707b2724",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech mexicana Kapital recibe autorización para constituirse como compañía de financiamiento en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPN0xzZ0hiTWtFd3R1YUlabVlaSGsxaFpjcTdSOFZMY3Naek8xekxieTJIWjR2Z2xpTFNKemlFVGVEYzEza0g3WXRGTUZaTkVDNGE4Q0lLVlgtcWVIWm9lZnJiN1BnSlR6NVN6c3FFZm9WVnJLbUo2R3RrSEVUcjVSX1hZN1lueXVDQkN3S1BJRlBETHdXTklEZjgxYy1qX2tESGFiYV96Qk54NUI5TU1tWlNNc3hlMUQ2RFNNTlJaZmxOUkhxVk5VMFhtTU1XQUhabU1qUWRpUC1Db2M?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T22:19:17.000Z"
     },
     {
       "id": "4fdc4439922f9bd9474c",
@@ -605,20 +619,6 @@
       "publishedAt": "2026-10-13T20:47:36.000Z"
     },
     {
-      "id": "36b9d9058bc6aa41f3c2",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Billetera digital Chivo será relanzada en El Salvador tras la entrada de Linguard Labs como accionista mayoritario",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxORUFYcE9FVjNMTlhfU1dqRTN1d2Z3UEhLTzFrTHhRVHhZSkJWLXFXdFNFYnpsZHVFZHF5b0E0ck1mQXI1Q1VhTUpWVHdjMlQzcko2V3JBX3pYT0NSMDNnMF9oeTh5TnRyNGVoN196Q1lHOXFWV2R5SVJaMTlQZGFCZkQtV0NFOS02OWltcmVMM28yaUU1ajUxaVRNY05UTXgtVE9SYklIRE5kR1NtTmt3UC0zYUljT0ZweTFuRFRsZmJVaDE1RkxOQ18tQklrak5LY01QNm5KSUNxcnBBSkZIRVJEYlNnZw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T20:47:36.000Z"
-    },
-    {
       "id": "887dcfd5e33859ac713e",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -815,20 +815,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "8dec40f4bd0b7c6b852d",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -836,6 +822,20 @@
       "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1257,8 +1257,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 9
     },
     {
@@ -1268,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 0
     },
     {
@@ -1279,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 8
     },
     {
@@ -1290,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 6
     },
     {
@@ -1301,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 0
     },
     {
@@ -1312,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 0
     },
     {
@@ -1323,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 0
     },
     {
@@ -1334,8 +1334,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 2
     },
     {
@@ -1345,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 4
     },
     {
@@ -1356,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 8
     },
     {
@@ -1367,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 8
     },
     {
@@ -1378,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 8
     },
     {
@@ -1389,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 0
     },
     {
@@ -1400,8 +1400,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 9
     },
     {
@@ -1411,8 +1411,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 12
     },
     {
@@ -1422,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 9
     },
     {
@@ -1433,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T00:20:24.703Z",
-      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "checkedAt": "2026-10-20T06:00:30.003Z",
+      "lastSuccessAt": "2026-10-20T06:00:30.003Z",
       "recentCount": 9
     }
   ]
