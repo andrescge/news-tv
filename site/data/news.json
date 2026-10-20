@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T20:35:07.846Z",
+  "generatedAt": "2026-10-20T23:53:04.079Z",
   "stories": [
+    {
+      "id": "15b606c2ef3afbfac515",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Capital One Pushes Deeper Into AI as Card Spending Grows",
+      "excerpt": "Capital One’s cardholders continued spending in the third quarter while credit losses declined, giving the bank room to pursue two expensive strategic priorities: building more volume on the Discover network and investing further in generative and agentic artificial intelligence.",
+      "url": "https://www.pymnts.com/credit-cards/2026/capital-one-pushes-deeper-into-ai-as-card-spending-grows/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T23:48:19.000Z"
+    },
+    {
+      "id": "ffa7dbcd0526fe41ae47",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Argentine fintech Rebill raises $5.4M Pre Series A round",
+      "excerpt": "Argentine fintech Rebill raised $5.4M in a pre Series A round, bringing its total funding to more than…",
+      "url": "https://latamlist.com/argentine-fintech-rebill-raises-5-4m-pre-series-a-round/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T23:24:46.000Z"
+    },
+    {
+      "id": "a8b9536072c467e3fee0",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "EFY Finance secures investment from Tether to expand across Latin America",
+      "excerpt": "Panama based fintech EFY Finance secured an investment from Tether as part of its seed funding round. The…",
+      "url": "https://latamlist.com/efy-finance-secures-investment-from-tether-to-expand-across-latin-america/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T22:07:06.000Z"
+    },
+    {
+      "id": "1ea4e56fe0f3300583fd",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Alice raises $40M Series D led by IFC",
+      "excerpt": "Brazilian healthtech Alice raised $40M in a Series D round led by the International Finance Corporation. DEG, Finnfund,…",
+      "url": "https://latamlist.com/alice-raises-40m-series-d-led-by-ifc/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T21:20:04.000Z"
+    },
     {
       "id": "43bed052d4ac8bf6361f",
       "sourceId": "pymnts",
@@ -43,48 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T19:23:00.000Z"
-    },
-    {
-      "id": "875da35a8ff598ec23e5",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Payment Data Can Keep Merchants Tied to Their Processors",
-      "excerpt": "A merchant can negotiate a better payment processing rate and still face an expensive move if its saved customer credentials are tied to its existing provider. That tension sits at the center of payment orchestration’s promise. The technology connects businesses to multiple payme",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/payment-data-can-keep-merchants-tied-processors/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T18:57:12.000Z"
-    },
-    {
-      "id": "d8be6929d8c95dd3de4c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Amazon Uses Healthcare and Banking to Woo More Holiday Workers",
-      "excerpt": "Amazon will begin offering seasonal workers health coverage to attract more workers for the holiday shopping season. The eCommerce giant made that announcement Tuesday (Oct. 20) as it began its annual holiday recruitment effort, aiming to hire 300,000 workers for the season, 50,0",
-      "url": "https://www.pymnts.com/personnel/2026/amazon-uses-healthcare-and-banking-to-woo-more-holiday-workers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T18:57:10.000Z"
-    },
-    {
-      "id": "e49ff571eac4ffc95623",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Apple Wallet Car Keys Now Work With GM Vehicles",
-      "excerpt": "Automaker General Motors has begun offering Apple Wallet car key support in some vehicles. The integration went into effect last month, and was flagged Monday (Oct. 9) in a report on the website MacRumors. It applies to select Cadillac, Chevrolet, and GMC vehicle models, with oth",
-      "url": "https://www.pymnts.com/mobile/2026/apple-wallet-car-keys-now-work-with-gm-vehicles/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T18:29:54.000Z"
     },
     {
       "id": "09aefeaa8d15a964a11c",
@@ -213,6 +227,20 @@
       "publishedAt": "2026-10-20T10:22:00.000Z"
     },
     {
+      "id": "ab02764f0320a575af31",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Kala: la Fintech colombiana que usa IA para ampliar el acceso al crédito",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOOTFpc2JDdzlQU3Nfc1NYYXk0WUhnWmRzVnZrd1ZlU2JCTFFvTTRMVVJUcEFxSmtvclN0MVRCSnNrcEx5alRRYzBmaTY4N0VIbVhsZDZRdzVvdnIzbDhOUmxsaURrWURkem54QjNQbElEYzdwM2ZKbGFIcUtLRWhHc2ZtV3JDOVBLZGYwMlRMTWNrY2FhRHVLbzdVUlFlMEpZd2g4X1RYbjBvdlhG?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T23:08:39.000Z"
+    },
+    {
       "id": "27142680b887707b2724",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -253,20 +281,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T14:55:00.000Z"
-    },
-    {
-      "id": "4a31b9ff38b881693a0a",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Clara inicia operaciones en Argentina con solución de IA nativa para automatizar la gestión de gastos corporativos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZDZ1dWNicnU3YW0zVm5YbTVlNWdhYnFUZWJ5Q015VUFuZG9vcVl4X1V2d2FlcGxHYUljVHhEZTZHNTJZUC0yZ3BncmpSdXRaVmtOajlaY3gxaGlWNnVXUFJacVFqNmluS3Z6NW1ESGJQMVEyUUFleG5WZ2lIc0FsenJtdm9mQ1pzbXdqQkpUYjEtcXVHb1dYcGxvaTFkXzI5QUZxVHdidzVPVjhYVE1vaXlOTTVYbE5FNGU4MllWc2dfb1RiV3F5WWZ6Ri1aeVVxWTlkTDJwWnB5ZUF5UGRKMnZRbFJkbXRwbEwtaGdjLXY?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T14:45:07.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -745,20 +759,6 @@
       "publishedAt": "2026-10-06T18:02:00.000Z"
     },
     {
-      "id": "02847710f929afc618b5",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Asaas raises $55.6M FIDC to finance SMB receivables in Brazil",
-      "excerpt": "Brazilian fintech Asaas raised $55.6M through a new FIDC. Institutional investors provided $51.9M through senior shares, while Asaas…",
-      "url": "https://latamlist.com/asaas-raises-55-6m-fidc-to-finance-smb-receivables-in-brazil/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T16:00:59.000Z"
-    },
-    {
       "id": "0bc83eb1e84fdc5845d6",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -883,34 +883,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-04T07:00:00.000Z"
-    },
-    {
-      "id": "6691c43b168a90e21e85",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Wellhub adds $18.8M to credit fund for Brazilian gyms",
-      "excerpt": "Wellhub added $18.8M to its credit fund for partner gyms and studios. Galapagos Capital manages the fund, and…",
-      "url": "https://latamlist.com/wellhub-adds-18-8m-to-credit-fund-for-brazilian-gyms/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T17:35:26.000Z"
-    },
-    {
-      "id": "d1dc712a4e4aa1b6a550",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Argentine startup UIN raises $2M seed round",
-      "excerpt": "Argentine fintech startup UIN raised a $2M seed round led by EWA Capital, with participation from Driven VC,…",
-      "url": "https://latamlist.com/argentine-startup-uin-raises-2m-seed-round/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-02T17:09:17.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -1201,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 9
     },
     {
@@ -1212,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 6
     },
     {
@@ -1245,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 0
     },
     {
@@ -1256,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 8
     },
     {
@@ -1322,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T20:35:07.846Z",
-      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "checkedAt": "2026-10-20T23:53:04.079Z",
+      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
       "recentCount": 9
     }
   ]
