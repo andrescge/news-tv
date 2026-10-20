@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-19T21:02:59.914Z",
+  "generatedAt": "2026-10-20T00:20:24.703Z",
   "stories": [
+    {
+      "id": "dcc44ff2222e992d49d1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Ramp Seeks National Trust Bank Charter for Digital Asset Custody",
+      "excerpt": "Finance platform Ramp aims to form a national trust bank that would offer fiduciary investment management and custody of digital assets, the company said in a Monday (Oct. 19) post on X. Ramp submitted an application to establish the proposed Ramp National Trust Bank to the Offic",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/ramp-seeks-national-trust-bank-charter-for-digital-asset-custody/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T23:07:25.000Z"
+    },
+    {
+      "id": "f966368752d075ff2d40",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Agent Cuts Centalion’s Trade Finance Amendment Time 80%",
+      "excerpt": "Issuing a bank guarantee at a large commodity trader is still a desk job. A treasury employee checks how much room is left on a credit facility, pulls the banking details from one system, confirms the limits in another and keys the transaction into a third. At a trader that booke",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agent-cuts-centalions-trade-finance-amendment-time-80/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T23:00:49.000Z"
+    },
+    {
+      "id": "4fdc4439922f9bd9474c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Kansas City Fed Flags Funding Challenges From Tokenized Deposits",
+      "excerpt": "Banks are developing tokenized deposits to give corporate customers faster access to their money. In doing so, they are making the deposits they use for funding easier to move. A research briefing from the Federal Reserve Bank of Kansas City published Friday (Oct. 16) examined th",
+      "url": "https://www.pymnts.com/news/banking/2026/kansas-city-fed-flags-funding-challenges-from-tokenized-deposits/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-19T21:55:27.000Z"
+    },
     {
       "id": "766bd275cc60a69e82b6",
       "sourceId": "pymnts",
@@ -85,34 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T18:33:44.000Z"
-    },
-    {
-      "id": "496f001e5aadd924631a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard and Extend Team to Improve Bank and Business Software",
-      "excerpt": "Mastercard has chosen spend management/virtual card FinTech Extend as one of its financial operations platform partners. The collaboration, announced Monday (Oct. 19), is designed to bring new spend and expense management tools directly to commercial card issuing banks in the U.S",
-      "url": "https://www.pymnts.com/news/banking/2026/mastercard-and-extend-team-to-improve-bank-and-business-software/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T18:01:38.000Z"
-    },
-    {
-      "id": "b865b147bfca0efe163f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Big Banks Won’t Let Outside AI Agents Move Money",
-      "excerpt": "A customer who hands a login to an artificial intelligence agent now gets turned away at four of the biggest names in banking in the United States. Charles Schwab sees the attempts firsthand. Across all its clients, the brokerage blocks the big, unauthorized AI agents, including ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/big-banks-will-not-let-outside-ai-agents-move-money/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T17:30:37.000Z"
     },
     {
       "id": "e897b2fbf143e0d1e545",
@@ -211,6 +225,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-19T07:37:40.000Z"
+    },
+    {
+      "id": "b7c18c0c9d6cae95d07b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Operativos contra secuestros y extorsiones evitaron pagos por $ 2,3 millones en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcTdsOU1EVjFfQUlzVDhEVDZmUlQ3b2dRbEhwSkRrRjU4aFdBQ1BtYWl0dE5lU1F3MDZaZXpJSUNBcVBna2RLSC1JZGUzZjNEVjgtYUstV1lvWHJsVWtocDlPSEJEeEdkSHNYTnFJNjh3czhKdm1nTGVPRkcwNmg5V29YUlA0TTNRUUVLUXFLeDc2MFZBTDVBTVU1UGpuSnFmdG9IdzJEOXpFWC1zSnVKcks2dzFZdXVNTkgwRlVSTmRHQnNra0FQUDVVVmRRY0syeFHSAeYBQVVfeXFMT1dWbnE2a2lPc2owdE9RSXN2R2tjVXZ4ZEk0ZmZ5VVNGUEJ6SmZGZk5xNFItTm03U19tYWxQN2lIOWtZRS1hZWxrMGNJdWhYN2JyeU56WXBKa2RPaURlQTBheWx1ZXFJREtRYW92Y0NQWVRGdm43cDVkNWxVMDFfLWhDSUc0eFhIT0o1V0lUUmJXd3M4MTcwOVZmVnZhdk1vMFI0a3IwTzk3WTZCSjhIczgxajZTcTRUUmltNXMtd2lUM1JJSzRDd0JGeEtDaGpkM0JfdTZDMXJnZnRLVWRiRzItQmVsUVE?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-18T07:00:00.000Z"
     },
     {
       "id": "9a7cd851566266440d72",
@@ -1229,9 +1257,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "recentCount": 9
     },
     {
       "id": "bce-junta",
@@ -1240,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 8
     },
     {
@@ -1262,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 6
     },
     {
@@ -1273,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1334,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 2
     },
     {
@@ -1317,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 4
     },
     {
@@ -1328,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 8
     },
     {
@@ -1350,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 8
     },
     {
@@ -1361,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 0
     },
     {
@@ -1372,9 +1400,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
+      "recentCount": 9
     },
     {
       "id": "finextra-payments",
@@ -1383,8 +1411,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 12
     },
     {
@@ -1394,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 9
     },
     {
@@ -1405,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-19T21:02:59.914Z",
-      "lastSuccessAt": "2026-10-19T21:02:59.914Z",
+      "checkedAt": "2026-10-20T00:20:24.703Z",
+      "lastSuccessAt": "2026-10-20T00:20:24.703Z",
       "recentCount": 9
     }
   ]
