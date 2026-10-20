@@ -1,34 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T17:04:33.261Z",
+  "generatedAt": "2026-10-20T20:35:07.846Z",
   "stories": [
     {
-      "id": "24fb310b807932a6165b",
+      "id": "43bed052d4ac8bf6361f",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Mastercard Debuts Tool to Help AI Agents Purchase Digital Services",
-      "excerpt": "Mastercard has launched early access to Agent Pay for Machines, a tool designed to let autonomous artificial intelligence agents purchase digital services. The new offering builds on x402, an open protocol that allows digital services to request payment online, and “connects it w",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/mastercard-debuts-tool-to-help-ai-agents-purchase-digital-services/",
+      "title": "Mercury Integrates AI-Powered Payroll Capabilities Into Entrepreneur Accounts",
+      "excerpt": "FinTech company Mercury added an artificial intelligence-native payroll solution to its offerings so that founders can pay employees and contractors from the account they already use to manage their money, the company said in a Tuesday (Oct. 20) press release. With AI-powered cap",
+      "url": "https://www.pymnts.com/back-office/payroll/2026/mercury-integrates-ai-powered-payroll-capabilities-into-entrepreneur-accounts/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-20T16:00:46.000Z"
+      "publishedAt": "2026-10-20T20:24:04.000Z"
     },
     {
-      "id": "f7f05b1446b450656127",
+      "id": "861d49696b0180f3fc3c",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Synchrony: Broad-Based Consumer Spending Drives Q3 Purchase Volume to Record High",
-      "excerpt": "Consumer financing company Synchrony saw record third-quarter purchase volume, with both discretionary and non-discretionary out-of-partner spend on its consumer co-branded cards growing by double digits, Synchrony President and CEO Brian Doubles said Tuesday (Oct. 20) during an ",
-      "url": "https://www.pymnts.com/consumer-finance/2026/synchrony-broad-based-consumer-spending-drives-q3-purchase-volume-record-high/",
+      "title": "Regional Banks Put AI Into Core Operations as Business Lending Grows",
+      "excerpt": "Third-quarter results from PNC, U.S. Bancorp, Truist, Fifth Third, Regions and KeyCorp show that regional banks are putting artificial intelligence into everyday banking operations, while several report more commercial lending and greater use of business credit. PNC CEO Bill Demc",
+      "url": "https://www.pymnts.com/news/banking/2026/regional-banks-put-ai-into-core-operations-as-business-lending-grows/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-20T16:00:26.000Z"
+      "publishedAt": "2026-10-20T20:07:53.000Z"
+    },
+    {
+      "id": "1c0273f5d41c6d11ae79",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Commerce Bancshares Net Income Rises as Acquisitions Expand Investment Banking and Wealth Services",
+      "excerpt": "Commerce Bank parent company Commerce Bancshares increased its net income year over year to $155 million in the third quarter, up from $141.5 million in the same quarter in 2025, thanks in part to its diversified business model, the company said in a Tuesday (Oct. 20) press relea",
+      "url": "https://www.pymnts.com/earnings/2026/commerce-bancshares-net-income-rises-as-acquisitions-expand-investment-banking-and-wealth-services/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T19:23:00.000Z"
+    },
+    {
+      "id": "875da35a8ff598ec23e5",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payment Data Can Keep Merchants Tied to Their Processors",
+      "excerpt": "A merchant can negotiate a better payment processing rate and still face an expensive move if its saved customer credentials are tied to its existing provider. That tension sits at the center of payment orchestration’s promise. The technology connects businesses to multiple payme",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/payment-data-can-keep-merchants-tied-processors/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T18:57:12.000Z"
+    },
+    {
+      "id": "d8be6929d8c95dd3de4c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Amazon Uses Healthcare and Banking to Woo More Holiday Workers",
+      "excerpt": "Amazon will begin offering seasonal workers health coverage to attract more workers for the holiday shopping season. The eCommerce giant made that announcement Tuesday (Oct. 20) as it began its annual holiday recruitment effort, aiming to hire 300,000 workers for the season, 50,0",
+      "url": "https://www.pymnts.com/personnel/2026/amazon-uses-healthcare-and-banking-to-woo-more-holiday-workers/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T18:57:10.000Z"
+    },
+    {
+      "id": "e49ff571eac4ffc95623",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Apple Wallet Car Keys Now Work With GM Vehicles",
+      "excerpt": "Automaker General Motors has begun offering Apple Wallet car key support in some vehicles. The integration went into effect last month, and was flagged Monday (Oct. 9) in a report on the website MacRumors. It applies to select Cadillac, Chevrolet, and GMC vehicle models, with oth",
+      "url": "https://www.pymnts.com/mobile/2026/apple-wallet-car-keys-now-work-with-gm-vehicles/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-20T18:29:54.000Z"
+    },
+    {
+      "id": "09aefeaa8d15a964a11c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "EFY Finance, Fintech colombiana de activos digitales, recibe inversión de Tether para acelerar el uso de stablecoins en Latam",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxOWktLU3g5SmpmaTZKVi1pblpYVWJWbkpvSHE3RmFXQ2lkSHVLNUdJQ3FlN2lTMl94ZWp2UXhwRnlScWotSjdRUlE5Y0F3VUIzWHFXT3dpNk9NVzBJZUhwcDJxUnpQMG5qaXYzbTg5V0l2MERzX28zdWZYNU9WNEJJVzRCQTA5M3NxOFpHaFNnWHRpOFZkSjh3RU9XYkptWkhjTTJrUlFGMi1VdXAyT1NYRXJMMktqTHRTLUc3ckd5WVUtQ1NBOUc1cmZscFhhVHZIeVAxcVBsMktKb2thLWV2SVJzdEhyVXFpRkRLa2tnTjd1S3BJLWltcTAzakRfdFcyTmJHWg?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-20T16:48:22.000Z"
     },
     {
       "id": "dcdc8aa361e6a36259ac",
@@ -45,20 +115,6 @@
       "publishedAt": "2026-10-20T15:55:31.000Z"
     },
     {
-      "id": "0cd0f1400b0b535984a7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Treasury Stablecoin Proposal Draws Questions Over Foreign Access",
-      "excerpt": "Treasury’s effort to regulate payment stablecoins hinges on questions on when a coin has actually been issued, who issued it and how a stablecoin created outside the country can legally reach a customer in the United States. The department’s proposed rule, published Aug. 18, woul",
-      "url": "https://www.pymnts.com/legal/2026/treasury-stablecoin-proposal-draws-questions-over-foreign-access/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T15:51:15.000Z"
-    },
-    {
       "id": "80bbb7953e10ae806770",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -73,34 +129,6 @@
       "publishedAt": "2026-10-20T15:20:00.000Z"
     },
     {
-      "id": "afa2e1fa4b0f05b2c195",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Finsei Picks Thredd to Help Launch New Debit Offering",
-      "excerpt": "London-based payments firm Finsei has picked issuer processing platform Thredd to power its new Mastercard debit offering. “The partnership reflects a shared focus on simplifying an increasingly complex payments environment,” Thredd said in a Tuesday (Oct. 20) news release. “Busi",
-      "url": "https://www.pymnts.com/partnerships/2026/finsei-picks-thredd-to-help-launch-new-debit-offering/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T15:16:55.000Z"
-    },
-    {
-      "id": "586123c81163b3c99c4b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Finastra Makes Trade Finance Technology More Accessible for Regional Banks",
-      "excerpt": "Finastra has launched a cloud-enabled solution designed to help U.S. banks digitize and automate their standby letter of credit (SBLC) flows, without having to deploy a full trade finance platform, the company said in a Monday (Oct. 19) press release. The new Finastra StandbyX of",
-      "url": "https://www.pymnts.com/news/banking/2026/finastra-makes-trade-finance-technology-more-accessible-for-regional-banks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T14:39:39.000Z"
-    },
-    {
       "id": "e218b8cc2e08882c213b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -113,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T14:03:00.000Z"
-    },
-    {
-      "id": "99a520fae827c3e39b25",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Boost Turns to Airwallex to Enhance B2B Payments Capabilities",
-      "excerpt": "B2B payments company Boost Payments Solutions has launched a partnership with financial operating system Airwallex. The collaboration is designed to enhance Boost’s international commercial card processing capabilities and help it streamline supplier onboarding and simplify cross",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/boost-turns-to-airwallex-to-enhance-b2b-payments-capabilities/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T13:00:56.000Z"
     },
     {
       "id": "8332a8f2a7a98517fbbc",
@@ -157,18 +171,18 @@
       "publishedAt": "2026-10-20T12:37:00.000Z"
     },
     {
-      "id": "d367bdb5837978d7dc57",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa Launches Agentic Payments Pilot With BILL and Billtrust",
-      "excerpt": "Visa has launched an agentic payments partnership with accounts payable and receivable solutions providers BILL and Billtrust. The collaboration is the first live pilot to allow artificial intelligence (AI) agents “to initiate and complete approved buyer invoice payments end-to-e",
-      "url": "https://www.pymnts.com/partnerships/2026/visa-launches-agentic-payments-pilot-with-bill-and-billtrust/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "id": "d138356cf27287a16330",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 16 de Octubre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_950_16102026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T12:25:22.000Z"
+      "language": "es",
+      "publishedAt": "2026-10-20T12:00:00.000Z"
     },
     {
       "id": "934af68afa51f4329938",
@@ -533,20 +547,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-14T20:35:24.000Z"
-    },
-    {
-      "id": "b05b3a29af7805d5cb10",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pago ASAP habilita solución de pagos entre Colombia y Venezuela a través de Bre-B para facilitar las transferencias transfronterizas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOSWFsQjFsQ3gzRl9Ec0dCVHVCN1RhSHFCa3hzc05JS0loU1Rha2c0Yk5zT3BVZzZYc0gzWEVxNUJGbHFUYmVFSi1ZbUY1LWNTTUhHWmlaaWxXYlRqbVR4ams4Tm03bS12Nm5Pdy1LbkUwQWhqNHdzT29NdzQ0TC12WUhFQ2VmMVpPVXdmamhxTEZWdXl0TGRtRGpNWWJuS3RfX0dTT0FSZE90cjA0dVJvNzc1cFU0LTRFRmtRSkhyVlV2MjRPcFdzNHJqZS1nUnZzUFpvcXZOUzdseEJ3TllDTDR2V183aTgzYXJrQUlBd0ZjWjJRaFB0d3IyWDkzUQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-14T15:44:12.000Z"
     },
     {
       "id": "c3b898db331c6623a187",
@@ -1179,20 +1179,6 @@
       "publishedAt": "2026-09-23T13:00:36.000Z"
     },
     {
-      "id": "55fbb241e3c36dce27ca",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 18 de Septiembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_946_18092026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-22T12:00:00.000Z"
-    },
-    {
       "id": "98c95024a6977564d0e2",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -1215,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 9
     },
     {
@@ -1226,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 6
     },
     {
@@ -1259,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 0
     },
     {
@@ -1270,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 4
     },
     {
@@ -1314,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 8
     },
     {
@@ -1336,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 8
     },
     {
@@ -1347,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1344,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 8
     },
     {
@@ -1391,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T17:04:33.261Z",
-      "lastSuccessAt": "2026-10-20T17:04:33.261Z",
+      "checkedAt": "2026-10-20T20:35:07.846Z",
+      "lastSuccessAt": "2026-10-20T20:35:07.846Z",
       "recentCount": 9
     }
   ]
