@@ -1,48 +1,76 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T15:14:35.280Z",
+  "generatedAt": "2026-10-21T19:19:24.289Z",
   "stories": [
     {
-      "id": "55f85eab66db6ed66103",
+      "id": "0b91080c0621fdf242ed",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Smart Contracts Connect B2B Workflows to Real-Time Payments",
-      "excerpt": "In the commercial payments realm, invoices need validation, discrepancies warrant resolution and someone (or an authorized system) ultimately approve the release of funds. Smart contracts are being used to carry approved payment instructions from business workflows into bank paym",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/smart-contracts-connect-b2b-workflows-to-real-time-payments/",
+      "title": "Hackers Employ Grok and Claude to Attack LatAm Banks",
+      "excerpt": "A hacking group known as CyberCartel reportedly used artificial intelligence (AI) agents from several high profile tech companies to automate cyberattacks on Latin American businesses. That’s according to a report Wednesday (Oct. 21) from The Information, citing research by the c",
+      "url": "https://www.pymnts.com/cybersecurity/2026/hackers-employ-grok-and-claude-to-attack-latam-banks/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-21T15:01:24.000Z"
+      "publishedAt": "2026-10-21T17:50:08.000Z"
     },
     {
-      "id": "0d2e09dddcde34a28032",
+      "id": "a9b99074a5c2d7fad83e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC Finalizes Stablecoin Framework as January Compliance Date Approaches",
+      "excerpt": "The Office of the Comptroller of the Currency (OCC) has finalized rules governing stablecoin issuers under its jurisdiction, establishing standards for reserves, redemption, custody and risk management ahead of a January deadline. The rule, issued Wednesday (Oct. 21), translates ",
+      "url": "https://www.pymnts.com/legal/2026/occ-finalizes-stablecoin-framework-as-january-compliance-date-approaches/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-21T17:03:33.000Z"
+    },
+    {
+      "id": "e1cbf16f3238914eb376",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
       "kind": "news",
-      "title": "Bre-B y su primer año: el reto de construir una infraestructura de pagos conectada",
+      "title": "Fintech Kira lanza Agentic POBO, una solución para realizar pagos en el exterior a nombre de terceros mediante agentes de IA",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT3ZWUEt6TzJMZ3pTdnItVHlrZnlRSWJESy14WDNxemhYMkxGUXo5SUpaRk5fejBKM0NXaDczWWNJelREd3JWQzRxV1lKZmR3Z3ZBTG14TGRaYjZNaUw0eXp0eUNKZEh2TW5jT1YwT0owZGI2WFlpV2NseXNDMnRpZ055b1Zmb3VjdF9GT3gtVHZtY0FLYi1GbzVCUHlYQjhPd1Y1UUpDdGVyZjM4SjlCNUZOMGdYTDcyTlE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRm9ROC0xUi1fbVZxYnBwRUhESHFDSGdJYmdiZ28tN2MteE85bDkxQ19KN2ZBRVBadFFTUjlhckc4TUtZd2kxLWlBdGxaS3NDZnlYeFBUbDhQazJrbXFjb2wzazlndHNTZ080c3E3UlZUQXlveUNOc2RPanFKY3p5Z0l3X3JGUlM3N0NYd25hQVdtTmlmN0d6NldiZGswNXVRM1FuVE1mTmhSeXBYREhuakdkZW4tb2VZQ1U4T3RGbFhFdFJtd1JPMklvdGcxa0VmVUw3aEw3NFhXZ0M5RVQ5NGc3ME5jZmpGZDlfYVlQcGtoZw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-21T16:54:36.000Z"
+    },
+    {
+      "id": "95d7056e3987e111bdd1",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa targets trust in business payments",
+      "excerpt": "Visa has introduced tools designed to bring trust and control to business payments.",
+      "url": "https://www.finextra.com/newsarticle/48629/visa-targets-trust-in-business-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-21T16:05:00.000Z"
+    },
+    {
+      "id": "e2168aba748ca06df84c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Paytech argentina Rebill cierra una ronda de inversión de US$5,4M para simplificar los pagos internacionales en la región",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPakZKWC1OR0xnWXN3bG5rVFhBSkpjQ3ppc3RGaHdoMi1iWGFZNmZXRXIwejBrX3VHc0plR3hIVW8xeFp6RDVTc0ZQS0tyU3NzUFJZRG1lRXFVUTRqSnFaaXRCOXFBb1VVYlBfR0J4T3M3djFiR2hOU1JSTDV3d3pDb0IwaWZMZjI3alpHbkVmLWxHNzQwcTdjN0puSHAyYlQ0ODNab1JMMmFWM2g4d3Z0S09ubElUSTBoYUZrSEpIRl9xVXJDVzNjY2pXSnQzU1puMWNXVHZRc3JXaHByWjItZElqcHM?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-21T14:26:26.000Z"
-    },
-    {
-      "id": "f278250ed262960bbc15",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa Debuts Tools to Keep Fraud Out of Virtual Commercial Card Payments",
-      "excerpt": "Visa has introduced new capabilities designed to keep commercial virtual card payments safer. Visa Commercial Fraud Solutions are part of a series of new capabilities designed to bring “trust and control” to business payments, Visa said in a Wednesday (Oct. 21) news release. “Bus",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/visa-debuts-tools-to-keep-fraud-out-of-virtual-commercial-card-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T13:16:38.000Z"
     },
     {
       "id": "bf5715dec45892a35ba6",
@@ -57,20 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-21T12:55:00.000Z"
-    },
-    {
-      "id": "ff32e33fa7afc2b50f46",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "JPMorgan Gets Closer to Clinching Nigerian Banking License",
-      "excerpt": "J.P. Morgan Chase is reportedly getting closer to obtaining a banking license in Nigeria. The largest U.S. bank has deposited 50 billion naira ($37.5 million) with the Central Bank of Nigeria, Bloomberg News reported Tuesday (Oct. 20), citing sources familiar with the matter. The",
-      "url": "https://www.pymnts.com/news/banking/2026/jpmorgan-gets-closer-to-securing-nigerian-banking-license/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T10:41:55.000Z"
     },
     {
       "id": "06675b4a1b6e192a5409",
@@ -99,20 +113,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-21T09:00:06.000Z"
-    },
-    {
-      "id": "6334032298193cd9a60c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Stablecoins Need to Get Behind Cards, Not Replace Them",
-      "excerpt": "Watch more: Paymentology Says AI Agents Must Earn the Right to Move Money The stablecoin industry has spent possibly too much time trying to reinvent checkout. Consumers already have a nearly universal interface for turning balances into purchases. Their cards. Merchants already ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-must-get-behind-cards-not-replace-them/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T08:03:49.000Z"
     },
     {
       "id": "ffa7dbcd0526fe41ae47",
@@ -521,20 +521,6 @@
       "publishedAt": "2026-10-16T12:00:00.000Z"
     },
     {
-      "id": "03c191e5ade244a3fe8b",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "EBAday 2027: Fintech Zone applications now open",
-      "excerpt": "Are you an early-stage fintech ready to put your innovation in front of Europe's leading banking and payments executives?",
-      "url": "https://www.finextra.com/newsarticle/48595/ebaday-2027-fintech-zone-applications-now-open?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T12:00:00.000Z"
-    },
-    {
       "id": "7f1ccbb7227ac3d0a773",
       "sourceId": "iupana",
       "category": "latam",
@@ -547,20 +533,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-16T11:00:23.000Z"
-    },
-    {
-      "id": "88a538b60266bac4d163",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mambu y Mastercard unen fuerzas para simplificar los pagos transfronterizos a los bancos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOdzZkMmNJV1dOVDdxdU9JdmJxWTB6UEhySEhWSm9oZUZDazJNTlRWTldnMGJZankzcmgwTlJoUFRCeGVrQ21QRDNZcEV5SEpKM0xkeU5rV2ZOR2pCTWIwb1hMNmI1dllPQkU5VXdndS05cS1nZkdkUUd4WEJZX1QxOExVekprODNKa3prUGxRdl9MWTlJQ0pMMlZtSzVRWWNiZHlZZ2draDI5UjF1ZjVrZVJwMFN5QXA1WjBoOHpTT0NJcUE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-15T21:16:20.000Z"
     },
     {
       "id": "08ba4174039e1055bfd3",
@@ -1025,6 +997,20 @@
       "publishedAt": "2026-09-29T07:00:00.000Z"
     },
     {
+      "id": "09e8d0688b7df2f65586",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "¿Cuánto rinde invertir en pólizas a plazo fijo en la banca ecuatoriana en octubre?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWGREN2dIVlo3RWJtV1hHTEhWalBvbDBnU2ZvSG9mTkNINFctd2xQMU8xTWE2M2RDdXFHb1Zla2k5T1RWRGF1R25Gb1Z5UUtzSU1oQUI3dmF4YTMyTTdoa3lycGNzYWc1QUdScUZ2aWI5M1otaEpKSXJhc3pQc3FvV1RMZ21VenJqVmFRNU1md2daTEpkSEtiZHNyQ0MwWFpvejhXWVdTSmt3ZlA1aVdpUFZvRExhVXBMaWFmVzZR?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T07:00:00.000Z"
+    },
+    {
       "id": "0bf8dc8757c01050c196",
       "sourceId": "regulatory-news",
       "category": "regulacion",
@@ -1173,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
+      "recentCount": 10
     },
     {
       "id": "bce-junta",
@@ -1184,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 6
     },
     {
@@ -1217,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1327,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 8
     },
     {
@@ -1349,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T15:14:35.280Z",
-      "lastSuccessAt": "2026-10-21T15:14:35.280Z",
+      "checkedAt": "2026-10-21T19:19:24.289Z",
+      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
       "recentCount": 9
     }
   ]
