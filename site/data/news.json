@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-20T23:53:04.079Z",
+  "generatedAt": "2026-10-21T04:47:16.857Z",
   "stories": [
     {
       "id": "15b606c2ef3afbfac515",
@@ -29,6 +29,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T23:24:46.000Z"
+    },
+    {
+      "id": "9a7550df96710f80c632",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintechs Klap y PagBrasil se alían para que turistas brasileños paguen con PIX en comercios de Chile",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOa3hGM05yWDhZeUJpeExNREJIUEdXT2ZaNzJhOUdUYUhkTDRZUjFtYVhmVE00Z2p1Tk5KUmp5U1ZYQXl3blJKV21TdGNRcWZYVHZVbW5wOGFUMTg3UXVjRm5KamdfSXFrbDhERzQ2MDBfU1hBbUJWV1g5SzE0Ry05MGN4dkY0dHJWRjN5VlluTllreVp4dnFWa3ZuX2UtTFoxMEFZVVZpTHF5bEhSNUxwNm9qUlV5aC1wVlF6RE1DRFcwSERUMVBFeXR1N3dnaTB0NzlV?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-20T22:22:18.000Z"
     },
     {
       "id": "a8b9536072c467e3fee0",
@@ -87,18 +101,18 @@
       "publishedAt": "2026-10-20T20:07:53.000Z"
     },
     {
-      "id": "1c0273f5d41c6d11ae79",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "dece304f0e107b22c363",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Commerce Bancshares Net Income Rises as Acquisitions Expand Investment Banking and Wealth Services",
-      "excerpt": "Commerce Bank parent company Commerce Bancshares increased its net income year over year to $155 million in the third quarter, up from $141.5 million in the same quarter in 2025, thanks in part to its diversified business model, the company said in a Tuesday (Oct. 20) press relea",
-      "url": "https://www.pymnts.com/earnings/2026/commerce-bancshares-net-income-rises-as-acquisitions-expand-investment-banking-and-wealth-services/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T19:23:00.000Z"
+      "title": "Open Finance en LATAM: quién lidera y hacia dónde vamos",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxORlJwRjBvZXl0M3VzVmVaV195Q19ZelFCcHZnbEhwNzhhSHV1bU4tbk1BOEwxUlFLYnFuMTNOSDFLRUcwRkpQN1RzR0tCWTAtTzJwbFhRTDZzWGpMTjZMS3RjQVJuZ3JwdWNLOS0xLWRmY3BYdHRaYmtBNThzMUR3NFJDY2xuTThTcEpVTkc5TWxoY3A0RHhkc1I2aGI2ZDhhdWw0?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-20T17:59:03.000Z"
     },
     {
       "id": "09aefeaa8d15a964a11c",
@@ -281,6 +295,34 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T14:55:00.000Z"
+    },
+    {
+      "id": "4a31b9ff38b881693a0a",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Clara inicia operaciones en Argentina con solución de IA nativa para automatizar la gestión de gastos corporativos",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOZDZ1dWNicnU3YW0zVm5YbTVlNWdhYnFUZWJ5Q015VUFuZG9vcVl4X1V2d2FlcGxHYUljVHhEZTZHNTJZUC0yZ3BncmpSdXRaVmtOajlaY3gxaGlWNnVXUFJacVFqNmluS3Z6NW1ESGJQMVEyUUFleG5WZ2lIc0FsenJtdm9mQ1pzbXdqQkpUYjEtcXVHb1dYcGxvaTFkXzI5QUZxVHdidzVPVjhYVE1vaXlOTTVYbE5FNGU4MllWc2dfb1RiV3F5WWZ6Ri1aeVVxWTlkTDJwWnB5ZUF5UGRKMnZRbFJkbXRwbEwtaGdjLXY?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T14:45:07.000Z"
+    },
+    {
+      "id": "979761a1c4fd9f669a81",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T14:25:43.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -493,34 +535,6 @@
       "publishedAt": "2026-10-15T20:51:22.000Z"
     },
     {
-      "id": "065752616f8381ec04de",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "El acceso al seguro en América Latina no es un problema de demanda | MetLife Xcelerator",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTXFFeW51b3lSbE9UU2NNeVBGUHVGWVhPWjQwV19LQnljRDNuRjFZYndqbjJJZ2dMcmpTYkxfdWRGRDBibzNXUGUzclNkdmdFTXc3RERYTnNYZEdLZkE1R0c0eWNoSFNROEVPcHNjWGJQYzFCcFo2TVdBUXNPREp0dVFZbmZLeWZlSVJ0VFNRUDdmM1ExUW03V0RMZUdvc1RBT3B4QVBhamp0dFZRWmpyMUhLMzFuWTB2X1A1R1lVUQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-15T15:53:12.000Z"
-    },
-    {
-      "id": "ef57c3ffc9914c5a2639",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech brasileña Asaas lanza Asaas Smart, su nueva terminal de pagos para pymes junto a Adyen",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxONW94Z2Q4Wngxb21HNmtCR0dWLUNTRVY4Wk4tM0tIWU9MaTBXZURWMVF0Vk9FOGNMdnhhZUd2d19zaWJUNm1NNkJFaWpZZmxZMTUtXzFLOXk3VWpfakhPYXBUR01zV2dXV3V3NGNlQjhxeXN2M1pCd2t5czVTNU9HczhVbDZQUW1wajVzTkJDNi1VY0htRzRpczk2YnJ4aDFfLVd3RUtHUDNnTEsxVTE0bHNvazJBWEVKT0REcW01VGJ0TjREZTA3UUFR?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-15T15:53:12.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -547,20 +561,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-15T10:04:00.000Z"
-    },
-    {
-      "id": "aa3a7c3c262e086790f7",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Banca agéntica en 2026: de pilotos a operación gobernada | Bankingly",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQckJRQkRqTlpuejNDU0w5YkxvVFZOTVViQ3lhcjhUTnpOMEt6U1dybUFNLTFIR2pEQU5zbUFvUGZrdVJWc0Q1b1FDdVl5eXprd2JRUThRZjVuNGFfaE9GZXA4dnplbUlNLV8waG1VUnFJeTExZXFteThXdzR2RmVEYVdFQThHNVhYZ0JxS045VHlEMUxnM2pzQ0FjenNyOHNUeVpnZg?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-14T20:35:24.000Z"
     },
     {
       "id": "c3b898db331c6623a187",
@@ -1067,20 +1067,6 @@
       "publishedAt": "2026-09-26T07:00:00.000Z"
     },
     {
-      "id": "bc98479a46219adb7a6d",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-26T07:00:00.000Z"
-    },
-    {
       "id": "20978e0dafe5d148c000",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1173,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 9
     },
     {
@@ -1184,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 6
     },
     {
@@ -1217,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 8
     },
     {
@@ -1294,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 8
     },
     {
@@ -1305,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1327,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 8
     },
     {
@@ -1349,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-20T23:53:04.079Z",
-      "lastSuccessAt": "2026-10-20T23:53:04.079Z",
+      "checkedAt": "2026-10-21T04:47:16.857Z",
+      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
       "recentCount": 9
     }
   ]
