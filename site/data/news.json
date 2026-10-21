@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T04:47:16.857Z",
+  "generatedAt": "2026-10-21T10:08:47.407Z",
   "stories": [
+    {
+      "id": "e357886826a35dd87e77",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Bancolombia reconoce que las alertas antifraude tradicionales no bastan",
+      "excerpt": "El banco lanza un documental con testimonios de víctimas con el que buscan que las personas aprendan a reconocer la manipulación. Pero su efectividad todavía está por demostrarse. ... Leer más... La entrada Bancolombia reconoce que las alertas antifraude tradicionales no bastan s",
+      "url": "https://iupana.com/2026/10/21/bancolombia-alertas-antifraude-no-bastan/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-21T09:00:06.000Z"
+    },
+    {
+      "id": "6334032298193cd9a60c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Stablecoins Need to Get Behind Cards, Not Replace Them",
+      "excerpt": "Watch more: Paymentology Says AI Agents Must Earn the Right to Move Money The stablecoin industry has spent possibly too much time trying to reinvent checkout. Consumers already have a nearly universal interface for turning balances into purchases. Their cards. Merchants already ",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-must-get-behind-cards-not-replace-them/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-21T08:03:49.000Z"
+    },
+    {
+      "id": "07879594f368eb94f205",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "44% of Policyholders Say How They Pay Helps Decide Who Insures Them",
+      "excerpt": "The payment experience plays a role in how consumers choose a property or home insurer, not just how they pay once a policy is in place. The PYMNTS Intelligence playbook “The Service Commerce Performance Gap: Insurance Providers Playbook” found in October that 44% of policyholder",
+      "url": "https://www.pymnts.com/insurance/2026/44-percent-of-policyholders-say-how-they-pay-helps-decide-who-insures-them/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-21T08:00:13.000Z"
+    },
+    {
+      "id": "91beeccb9d5704fcee04",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "25% of Card Replacement Calls Point to an AI Opportunity",
+      "excerpt": "A replacement card could give issuers a practical way to turn artificial intelligence (AI) investment into faster service and fewer customer calls. That opportunity anchors the third key finding in “Why Modern Issuing Platforms Will Determine Which AI Strategies Succeed,” a PYMNT",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/25-percent-of-card-replacement-calls-point-to-an-ai-opportunity/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-21T08:00:13.000Z"
+    },
     {
       "id": "15b606c2ef3afbfac515",
       "sourceId": "pymnts",
@@ -71,34 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T21:20:04.000Z"
-    },
-    {
-      "id": "43bed052d4ac8bf6361f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mercury Integrates AI-Powered Payroll Capabilities Into Entrepreneur Accounts",
-      "excerpt": "FinTech company Mercury added an artificial intelligence-native payroll solution to its offerings so that founders can pay employees and contractors from the account they already use to manage their money, the company said in a Tuesday (Oct. 20) press release. With AI-powered cap",
-      "url": "https://www.pymnts.com/back-office/payroll/2026/mercury-integrates-ai-powered-payroll-capabilities-into-entrepreneur-accounts/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T20:24:04.000Z"
-    },
-    {
-      "id": "861d49696b0180f3fc3c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Regional Banks Put AI Into Core Operations as Business Lending Grows",
-      "excerpt": "Third-quarter results from PNC, U.S. Bancorp, Truist, Fifth Third, Regions and KeyCorp show that regional banks are putting artificial intelligence into everyday banking operations, while several report more commercial lending and greater use of business credit. PNC CEO Bill Demc",
-      "url": "https://www.pymnts.com/news/banking/2026/regional-banks-put-ai-into-core-operations-as-business-lending-grows/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T20:07:53.000Z"
     },
     {
       "id": "dece304f0e107b22c363",
@@ -311,20 +339,6 @@
       "publishedAt": "2026-10-19T14:45:07.000Z"
     },
     {
-      "id": "979761a1c4fd9f669a81",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T14:25:43.000Z"
-    },
-    {
       "id": "b8de8cf8d60c9d33bcec",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -493,20 +507,6 @@
       "publishedAt": "2026-10-16T11:00:23.000Z"
     },
     {
-      "id": "4b567b3f45cc5f549fd5",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI-native payments platform Movere launches",
-      "excerpt": "A collection of banking and fintech veterans has unveiled Movere, an AI-native payments platform for businesses.",
-      "url": "https://www.finextra.com/newsarticle/48593/ai-native-payments-platform-movere-launches?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T00:01:00.000Z"
-    },
-    {
       "id": "88a538b60266bac4d163",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -661,6 +661,20 @@
       "publishedAt": "2026-10-13T12:00:00.000Z"
     },
     {
+      "id": "dfd466b934cee9223658",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Bancos tradicionales VS. Neobancos: la rentabilidad que ofrecen en sus cuentas de ahorros",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdmpVcjZPSzJIdVRJUjVoTktCM2NvVmE3b3VjQUlMa24teGdyc1lMS0ZoLUVxTTZaZ3pGYkJsNzVWU19IMFU1V0R6ZzhXNkFvVUNMUHd4cENTSDR2aVRCVVpDZ3paU0s5NlBhYm04cGxkcDFESm5BR3h5WWF2NFI1SDZ0MHlwOExFRzBEWW1qeU9tektmbWZEZEItYmVPSVdkZGxxd2k1U09ZQ1RWb0p6REZ6MVBGd284SHhla0NybFg5MThhWmRCVHJXUGY1YmlsUEJaYzc1QXlLQdIB7gFBVV95cUxNSXNvSVRfNFd5SzVrZWtySTg1SnYydDUxU3RHRjlfTE40ZXNCUDJZakdlRkxUcFVoNnIza2Q4ajVoa25iQWUtVjc0ejhFdWlCUXExOW5PZlUwZlhvX0hMcURPa3NOUk9KMUJaZVQ2VnFSVDN6SEJnVV85M2NBbC1Vc0ZFRWRQZXMzWDNJalBNdU9xaVFJb0VUbWRMWEFVVEp6RDFaVjVWY3FIdTYybzhUMlpzTUNWVFpZc1NkcnpoN1Z0dmU4YzNWbENwVjhaOVF2cng5SFhsTnJqRGJIenZncEtIY2dLdWNiTnJSeWt3?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T07:00:00.000Z"
+    },
+    {
       "id": "82efa012cbc06a3248ca",
       "sourceId": "iupana",
       "category": "latam",
@@ -673,20 +687,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-12T09:00:30.000Z"
-    },
-    {
-      "id": "d8acda6bc325fbe06233",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Buenas Fuentes: Bancolombia lanza sistema de suscripciones",
-      "excerpt": "El resumen semanal de noticias de banca digital y fintech en América Latina... Leer más... La entrada Buenas Fuentes: Bancolombia lanza sistema de suscripciones se publicó primero en IUPANA.",
-      "url": "https://iupana.com/2026/10/09/buenas-fuentes-bancolombia-lanza-sistema-de-suscripciones/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-09T19:01:03.000Z"
     },
     {
       "id": "db4b943c746d4719fad3",
@@ -787,20 +787,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "61f3225e83ee0399ac1b",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -808,6 +794,20 @@
       "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "8dec40f4bd0b7c6b852d",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1159,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 9
     },
     {
@@ -1170,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 0
     },
     {
@@ -1214,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 2
     },
     {
@@ -1247,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 4
     },
     {
@@ -1258,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 8
     },
     {
@@ -1280,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 8
     },
     {
@@ -1291,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1313,9 +1313,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
-      "recentCount": 12
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
+      "recentCount": 11
     },
     {
       "id": "finextra-crypto",
@@ -1324,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T04:47:16.857Z",
-      "lastSuccessAt": "2026-10-21T04:47:16.857Z",
+      "checkedAt": "2026-10-21T10:08:47.407Z",
+      "lastSuccessAt": "2026-10-21T10:08:47.407Z",
       "recentCount": 9
     }
   ]
