@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-21T23:19:34.857Z",
+  "generatedAt": "2026-10-22T04:45:43.496Z",
   "stories": [
+    {
+      "id": "9afdb799a226e8ee0aae",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fintechs top banks and stablecoins for cheap cross-border payment - BIS research",
+      "excerpt": "Cross-border payments remain slow and expensive but fintech outfits such as Wise and Remitly have substantially cut costs relative to traditional retail bank wires while stabelcoins still suffer from issues with friction, according to BIS research.",
+      "url": "https://www.finextra.com/newsarticle/48630/fintechs-top-banks-and-stablecoins-for-cheap-cross-border-payment---bis-research?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T00:01:00.000Z"
+    },
     {
       "id": "d458a2bd256de7b01053",
       "sourceId": "pymnts",
@@ -57,20 +71,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-21T20:07:36.000Z"
-    },
-    {
-      "id": "89176e628306a5d33ed7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Klarna and FreshBooks Team to Bring BNPL to Small Businesses",
-      "excerpt": "Pay-later provider Klarna launched a new partnership with small business management software company FreshBooks, according to a Wednesday (Oct. 21) news release. The collaboration is designed to bring Klarna’s buy now, pay later (BNPL) payment methods into FreshBooks’ invoicing a",
-      "url": "https://www.pymnts.com/bnpl/2026/klarna-freshbooks-team-bring-bnpl-small-businesses/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T19:32:22.000Z"
     },
     {
       "id": "e1cbf16f3238914eb376",
@@ -521,20 +521,6 @@
       "publishedAt": "2026-10-16T13:00:00.000Z"
     },
     {
-      "id": "3a5adc146ad335e98527",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "ECB approves Unicredit's bid for control of Commerzbank",
-      "excerpt": "Italian bank Unicredit has secured approval from the European Central Bank (ECB) to take a controlling stake in Germany's Commerzbank.",
-      "url": "https://www.finextra.com/newsarticle/48598/ecb-approves-unicredits-bid-for-control-of-commerzbank?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T12:01:00.000Z"
-    },
-    {
       "id": "4fa21e47e6800c6a9c7a",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -631,20 +617,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-14T12:00:00.000Z"
-    },
-    {
-      "id": "071229b253be86c19dba",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOFBaWU5sWGFHT0lTaTZYdG56dUdOWTc4RGlPWS14dFo1Z0IzMlZOazlxOXFyNld4dHp1QkU3eXRqdTRmT0EtcFJlSF9QQlRKbWh4ZjdKSlcyRHhUWEprNjRPN29IeEdGY0oxdHhrbWdCQVctTHk5VW1BdnJiNXNySTk5NVVSQ09KZWt0SFI5Q1c2NnhpRjJCWVNhSVVwTjFGckZEQ2ExWUZOZVEyb3hHZndNU2htSHFrUlR4bDNIeUVoQkYtQXlkTFNUTTFKeGFib0FyYlg3dVJWOEFDVmfSAfIBQVVfeXFMT0hqcl9ScVZhZFJkbTM3Nkp1ZVdkb3ByZmJ6UGoxNmZZNWRMRHlLYWZjU1FNdnpyWTVpRm8xazFRVWY1SDBOd05sREQ2dUZaWExKOFUyeTk4S2JJbVBrMHhyOS1raVl1Y0hWUGJObjBHN0c2X2czSUoxVEF1Zy1lcnlFUFN1a1ZEX3F1RDdDVjlzQVktR1psV1ZvQTFLUENuQ0FWYUlUQUt4QmctM29pUFE4SUs2NW45ZGtQU01EcDRCQWlKYUxVNEpxTkdmcm53SXhCRDRpUWd3VUYzajVELW9pdkhDekptUzZLbUNWTnRFa1E?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-14T01:22:26.000Z"
     },
     {
       "id": "cb2cee6c4d72b0cb27c9",
@@ -801,20 +773,6 @@
       "publishedAt": "2026-10-06T12:00:00.000Z"
     },
     {
-      "id": "bf68e66fd9c685237735",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "61f3225e83ee0399ac1b",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -824,6 +782,20 @@
       "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "bf68e66fd9c685237735",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
@@ -969,34 +941,6 @@
       "publishedAt": "2026-09-30T12:00:00.000Z"
     },
     {
-      "id": "ce81a5f54d581d86b5c9",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T07:00:00.000Z"
-    },
-    {
-      "id": "789fbdb64c6ebc9b37a6",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T07:00:00.000Z"
-    },
-    {
       "id": "4f993a614134ae1976d4",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1081,6 +1025,20 @@
       "publishedAt": "2026-09-28T07:00:00.000Z"
     },
     {
+      "id": "5ba9c8f7e675e53a72e9",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank negocia comprar Monzo por hasta US$10.000 millones: sería su mayor acuerdo hasta ahora",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOOWk0RGNSMU1VTENPM05HYjVBa2I3dFFKVEpyVE8wbWFYMURDa3lCczF5a2ZVeEx2aDJyZG1CYTlhbjgwZDNGd3JuQ3ZWVkxtMDFUOUhaUF9jbW9BQmJMQ3F0R2JSeWh4c2hGTW12N1ZDNnNjMEhZaUEzTTNTanZ5bWE5TmZiUTJWdEJEMWdCQUY0MHNHZUNPTUcwM1owU1ZxN0Ffd1lJc184cTdqR1JTVE9ZMkI4al96NWFReUc3SDZ3aTBCcEZodFBFc9IB3wFBVV95cUxPYVN3aTBGR2hQZk5meHJyM2JFcGJmZEtuM1M1WXdFY2V1dDRuVXlJVWt5TWFOWDJwMkN6QWtXdnI1Uk5zckhFREgxc0Z3MXNxLTM0V2kwVUUyQjZHM2JJY0J1cWF2Y0wtb3N0VWdJOWlPbnpNM3l1TkFDY2doWWN6aEROdV9kZ0ZDbEhfMVFkbkpVNnZXY3hSTmx3Q0w0U09hNTZJYmlIVkc4QWtSMHh2aXc1M3JCSHlUVDlhNmdzampTR2p1SU9ISDJyaUViSWhYTmlUWjlVUWlBQ1VIWTl3?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-28T07:00:00.000Z"
+    },
+    {
       "id": "1f18ad770b2d4aac5283",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1090,6 +1048,20 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazFPTXNBeF9qbndkZXNOMmMyeVpwbFJNTFRmaGZpRzJJZEF1Qm5GT0pucnRBY09YZ3dwTk0wSkFWSWI2YlNZSHd5dlc4cloxVnU3bG15VlZ4aWhfaDhmNm5BZm1ONF9WREpOVW9IU0FSbWk4eUZ2WkN0Q1BKeWYwNVc5ZXpCY0NmLXhUODltMjh2VnhpNmpFU0x5XzRGOFQ0NnZSWkJrT1R6Y1k?oc=5",
       "source": "Primicias",
       "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-26T07:00:00.000Z"
+    },
+    {
+      "id": "bc98479a46219adb7a6d",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-26T07:00:00.000Z"
@@ -1135,6 +1107,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-25T07:00:00.000Z"
+    },
+    {
+      "id": "d74d5cf16427d36841b2",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Revolut recibe luz verde del BCRA para comprar el Banco Cetelem de BNP Paribas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTkIzSnRqS1lac1pLc3c4Zzc5S1YyXzRSd09EUEszb1ZEZGFHdVpJdFBFUDRhNlBWMTBTblFmbXY4UG5BOHdQQVlENElQMzllbFBLTnBveDlqSUxfMmRBdzg5cGFaOXpPbmpNX2Z4aEtvU1RqMVVHcmxYa3Y5OVZ3WGNIUnFQVnNWOVpwNHBMQzNRN0R5M014NW9FcVZqeUNVTGgxdjlESndRM3VzX0RPbS1TcGJ4MHhwNkd4SFhR0gHSAUFVX3lxTE16SDY4Yng4YldEcXZUWGJUZUZMeDZLRzdMV1FuS25ib2tYX2dma3hrQlNyRnJnRzU2VDdvZnpoZXpFRmJlOU9PRE9qSlI0aVVSd092dDJJMmtxNklfcTE4VTE4M2hlMEhaSGpzSnhEaW52QldKX013Mm03eG93emdLVnRwNDR3LWpRU2tHVEd3UkdMR3FweFJPYWRiVWpUSTJSWEowbTlkc1dxa1ZiTG8ycjNOZm5oeHNDUEVITFdDc0pUblVnOHdIWkUxbHA2NXp4QQ?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-24T07:00:00.000Z"
     },
     {
       "id": "6fd0f021e5e1ed3b9fed",
@@ -1187,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 11
     },
     {
@@ -1198,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 0
     },
     {
@@ -1242,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 2
     },
     {
@@ -1275,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 8
     },
     {
@@ -1296,9 +1282,9 @@
       "category": "latam",
       "kind": "news",
       "url": "https://iupana.com/",
-      "status": "error",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T19:19:24.289Z",
+      "status": "ok",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 8
     },
     {
@@ -1308,9 +1294,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-latam",
@@ -1319,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-21T23:19:34.857Z",
-      "lastSuccessAt": "2026-10-21T23:19:34.857Z",
+      "checkedAt": "2026-10-22T04:45:43.496Z",
+      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
       "recentCount": 9
     }
   ]
