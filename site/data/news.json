@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T04:45:43.496Z",
+  "generatedAt": "2026-10-22T10:11:22.035Z",
   "stories": [
+    {
+      "id": "98d01c0a7bf618f12e27",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "The Investment Journey Is Only as Fast as Its Money Movement",
+      "excerpt": "Watch more: Visa Direct’s Justin Zhao An investor funds their investment account in real-time. A trade executes in seconds. But transferring funds from that account to a bank account can still take five business days. It is a paradox that Karen Webster, CEO of PYMNTS, put directl",
+      "url": "https://www.pymnts.com/disbursements/2026/investment-journey-is-only-as-fast-its-money-movement/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:03:12.000Z"
+    },
+    {
+      "id": "3e3901bb0b9eacf32abb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "FIS Says Digital Money Puts Bank Infrastructure to the Test",
+      "excerpt": "Digital money is pushing banks toward making decisions about infrastructure well beyond whether to issue a token. Among the decisions that need to be made: Which forms of digital money belong inside their own relationships, which need broader distribution, how different networks ",
+      "url": "https://www.pymnts.com/blockchain/2026/fis-says-digital-money-puts-bank-infrastructure-to-the-test/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:02:29.000Z"
+    },
+    {
+      "id": "ca7a6a1b77b29e346911",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "What Fraud Data Says About Where Payment Security Is Headed",
+      "excerpt": "Artificial intelligence is changing both sides of payments fraud. Fraudsters can use it to make impersonation attempts more convincing, while finance teams can use it to score transactions, verify documents and identify anomalies. PYMNTS Intelligence’s “Prevention First: Building",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/what-fraud-data-says-about-where-payment-security-is-headed/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:00:54.000Z"
+    },
+    {
+      "id": "051fa94ec213e5ffaed7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Recommendations Need a Checkout Shoppers Trust",
+      "excerpt": "Artificial intelligence is making it easier for retailers to get discovered. It is doing considerably less to help them get paid. Data in the October 2026 edition of the Consumer AI Benchmark Report from PYMNTS Intelligence reveals that nearly 45% of consumers who use AI for shop",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-recommendations-need-a-checkout-shoppers-trust/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:00:21.000Z"
+    },
+    {
+      "id": "b585c716466f3f78a1b4",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Instant Payments May Give Credit Unions a Deposit Growth Advantage",
+      "excerpt": "Banks have generally measured instant payments by transactions: how many customers use them, how much money moves and how quickly payments arrive. An example from Amplify Credit Union adds another measure: deposit growth. Business accounts that received at least one instant payme",
+      "url": "https://www.pymnts.com/real-time-payments/2026/instant-payments-may-give-credit-unions-a-deposit-growth-advantage/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:00:08.000Z"
+    },
+    {
+      "id": "3175ecbb5332ac6ed055",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Built to Scale: How to Grow Embedded Payments Without Starting Over",
+      "excerpt": "Embedded payments can be relatively straightforward to launch, but successful growth changes what businesses need from their payments infrastructure. As volume rises, so can fraud exposure, compliance demands and operational complexity. Companies that design for those demands fro",
+      "url": "https://www.pymnts.com/report/tracker/built-to-scale-how-to-grow-embedded-payments-without-starting-over/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T08:00:00.000Z"
+    },
     {
       "id": "9afdb799a226e8ee0aae",
       "sourceId": "finextra-payments",
@@ -15,34 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-22T00:01:00.000Z"
-    },
-    {
-      "id": "d458a2bd256de7b01053",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard AI Assistant Helps Consumers Discover Unused Card Perks",
-      "excerpt": "Mastercard introduced an artificial intelligence assistant designed to help cardholders discover, understand and use the benefits offered by the cards they carry, the company said in a Wednesday (Oct. 21) press release. Dubbed “Mastercard Max,” the AI assistant can be delivered t",
-      "url": "https://www.pymnts.com/news/loyalty-and-rewards-news/2026/mastercard-ai-assistant-helps-consumers-discover-unused-card-perks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T22:00:47.000Z"
-    },
-    {
-      "id": "7320e86e368201291c5a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Booking.com Probe Exposes Travel Fraud Beyond Checkout",
-      "excerpt": "A traveler who has booked a real hotel can receive a fraudulent request containing the correct arrival date and reservation number. Criminals can use those details to demand payment information, warning that the room will otherwise be canceled. The European Commission’s Booking.c",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/booking-com-probe-exposes-travel-fraud-beyond-checkout/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T21:37:07.000Z"
     },
     {
       "id": "c0b6dd6adb830d6eb465",
@@ -619,6 +675,20 @@
       "publishedAt": "2026-10-14T12:00:00.000Z"
     },
     {
+      "id": "071229b253be86c19dba",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOFBaWU5sWGFHT0lTaTZYdG56dUdOWTc4RGlPWS14dFo1Z0IzMlZOazlxOXFyNld4dHp1QkU3eXRqdTRmT0EtcFJlSF9QQlRKbWh4ZjdKSlcyRHhUWEprNjRPN29IeEdGY0oxdHhrbWdCQVctTHk5VW1BdnJiNXNySTk5NVVSQ09KZWt0SFI5Q1c2NnhpRjJCWVNhSVVwTjFGckZEQ2ExWUZOZVEyb3hHZndNU2htSHFrUlR4bDNIeUVoQkYtQXlkTFNUTTFKeGFib0FyYlg3dVJWOEFDVmfSAfIBQVVfeXFMT0hqcl9ScVZhZFJkbTM3Nkp1ZVdkb3ByZmJ6UGoxNmZZNWRMRHlLYWZjU1FNdnpyWTVpRm8xazFRVWY1SDBOd05sREQ2dUZaWExKOFUyeTk4S2JJbVBrMHhyOS1raVl1Y0hWUGJObjBHN0c2X2czSUoxVEF1Zy1lcnlFUFN1a1ZEX3F1RDdDVjlzQVktR1psV1ZvQTFLUENuQ0FWYUlUQUt4QmctM29pUFE4SUs2NW45ZGtQU01EcDRCQWlKYUxVNEpxTkdmcm53SXhCRDRpUWd3VUYzajVELW9pdkhDekptUzZLbUNWTnRFa1E?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-14T01:22:26.000Z"
+    },
+    {
       "id": "cb2cee6c4d72b0cb27c9",
       "sourceId": "iupana",
       "category": "latam",
@@ -659,20 +729,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T12:00:00.000Z"
-    },
-    {
-      "id": "dfd466b934cee9223658",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bancos tradicionales VS. Neobancos: la rentabilidad que ofrecen en sus cuentas de ahorros",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdmpVcjZPSzJIdVRJUjVoTktCM2NvVmE3b3VjQUlMa24teGdyc1lMS0ZoLUVxTTZaZ3pGYkJsNzVWU19IMFU1V0R6ZzhXNkFvVUNMUHd4cENTSDR2aVRCVVpDZ3paU0s5NlBhYm04cGxkcDFESm5BR3h5WWF2NFI1SDZ0MHlwOExFRzBEWW1qeU9tektmbWZEZEItYmVPSVdkZGxxd2k1U09ZQ1RWb0p6REZ6MVBGd284SHhla0NybFg5MThhWmRCVHJXUGY1YmlsUEJaYzc1QXlLQdIB7gFBVV95cUxNSXNvSVRfNFd5SzVrZWtySTg1SnYydDUxU3RHRjlfTE40ZXNCUDJZakdlRkxUcFVoNnIza2Q4ajVoa25iQWUtVjc0ejhFdWlCUXExOW5PZlUwZlhvX0hMcURPa3NOUk9KMUJaZVQ2VnFSVDN6SEJnVV85M2NBbC1Vc0ZFRWRQZXMzWDNJalBNdU9xaVFJb0VUbWRMWEFVVEp6RDFaVjVWY3FIdTYybzhUMlpzTUNWVFpZc1NkcnpoN1Z0dmU4YzNWbENwVjhaOVF2cng5SFhsTnJqRGJIenZncEtIY2dLdWNiTnJSeWt3?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T07:00:00.000Z"
     },
     {
       "id": "82efa012cbc06a3248ca",
@@ -1109,13 +1165,13 @@
       "publishedAt": "2026-09-25T07:00:00.000Z"
     },
     {
-      "id": "d74d5cf16427d36841b2",
+      "id": "cd96405e0c47d8269751",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
-      "title": "Revolut recibe luz verde del BCRA para comprar el Banco Cetelem de BNP Paribas",
+      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNTkIzSnRqS1lac1pLc3c4Zzc5S1YyXzRSd09EUEszb1ZEZGFHdVpJdFBFUDRhNlBWMTBTblFmbXY4UG5BOHdQQVlENElQMzllbFBLTnBveDlqSUxfMmRBdzg5cGFaOXpPbmpNX2Z4aEtvU1RqMVVHcmxYa3Y5OVZ3WGNIUnFQVnNWOVpwNHBMQzNRN0R5M014NW9FcVZqeUNVTGgxdjlESndRM3VzX0RPbS1TcGJ4MHhwNkd4SFhR0gHSAUFVX3lxTE16SDY4Yng4YldEcXZUWGJUZUZMeDZLRzdMV1FuS25ib2tYX2dma3hrQlNyRnJnRzU2VDdvZnpoZXpFRmJlOU9PRE9qSlI0aVVSd092dDJJMmtxNklfcTE4VTE4M2hlMEhaSGpzSnhEaW52QldKX013Mm03eG93emdLVnRwNDR3LWpRU2tHVEd3UkdMR3FweFJPYWRiVWpUSTJSWEowbTlkc1dxa1ZiTG8ycjNOZm5oeHNDUEVITFdDc0pUblVnOHdIWkUxbHA2NXp4QQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
@@ -1173,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 11
     },
     {
@@ -1184,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 6
     },
     {
@@ -1217,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 0
     },
     {
@@ -1228,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 2
     },
     {
@@ -1261,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 8
     },
     {
@@ -1294,9 +1350,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-latam",
@@ -1305,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1327,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 12
     },
     {
@@ -1338,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 8
     },
     {
@@ -1349,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T04:45:43.496Z",
-      "lastSuccessAt": "2026-10-22T04:45:43.496Z",
+      "checkedAt": "2026-10-22T10:11:22.035Z",
+      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
       "recentCount": 9
     }
   ]
