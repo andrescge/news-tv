@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T19:16:12.163Z",
+  "generatedAt": "2026-10-22T22:24:17.404Z",
   "stories": [
+    {
+      "id": "a5f6fb496fef9731bec3",
+      "sourceId": "seps",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Corte Provincial respalda la actuación de la SEPS y descarta vulneración de derechos",
+      "excerpt": "La sentencia de segunda instancia confirma la facultad del organismo de control para exigir el cumplimiento estricto de requisitos legales en el registro de directivas de cooperativas de ahorro y crédito. Quito, octubre de 2026.— La Sala Especializada de lo Civil y Mercantil de..",
+      "url": "https://www.seps.gob.ec/corte-provincial-respalda-la-actuacion-de-la-seps-y-descarta-vulneracion-de-derechos/",
+      "source": "SEPS",
+      "sourceUrl": "https://www.seps.gob.ec/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-22T20:36:33.000Z"
+    },
     {
       "id": "1f30dcb3e7760807f2c7",
       "sourceId": "pymnts",
@@ -99,20 +113,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-22T17:07:53.000Z"
-    },
-    {
-      "id": "640614641c886c289d37",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Currency Costs Test the Promise of Cross-Border Payment Bundles",
-      "excerpt": "Small businesses in the United States purchasing overseas want faster payments, lower fees and better exchange rates. Financial providers are combining accounts, currency management and spending services around that activity. The PYMNTS Intelligence report “The Cross-Border Oppor",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/currency-costs-test-promise-cross-border-payment-bundles/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T16:42:59.000Z"
     },
     {
       "id": "1ac32a7c9cdd89e0e34d",
@@ -502,6 +502,20 @@
       "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
       "source": "BCE · Datos financieros",
       "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-19T12:00:00.000Z"
+    },
+    {
+      "id": "7e868d21883008ab2337",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "La economía ecuatoriana creció 3,5% en agosto de 2026, impulsada por los servicios, la manufactura y el comercio",
+      "excerpt": "En agosto de 2026, el Indicador Mensual de Actividad Económica del Ecuador (IMAEc) registró un crecimiento interanual de 3,5%, impulsado por el desempeño de cinco",
+      "url": "https://www.bce.fin.ec/la-economia-ecuatoriana-crecio-35-en-agosto-de-2026-impulsada-por-los-servicios-la-manufactura-y-el-comercio/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-19T12:00:00.000Z"
@@ -1201,8 +1215,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 11
     },
     {
@@ -1212,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 8
     },
     {
@@ -1234,9 +1248,9 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "recentCount": 6
     },
     {
       "id": "seps",
@@ -1245,9 +1259,9 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
-      "recentCount": 0
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "recentCount": 1
     },
     {
       "id": "superbancos",
@@ -1256,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 7
     },
     {
@@ -1322,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 6
     },
     {
@@ -1333,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T19:16:12.163Z",
-      "lastSuccessAt": "2026-10-22T19:16:12.163Z",
+      "checkedAt": "2026-10-22T22:24:17.404Z",
+      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
       "recentCount": 9
     }
   ]
