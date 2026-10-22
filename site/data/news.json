@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T10:11:22.035Z",
+  "generatedAt": "2026-10-22T15:16:54.448Z",
   "stories": [
+    {
+      "id": "47b42c234821c1f3e232",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC Leaves Stablecoin Rewards Door Open as Banks Defend Deposits",
+      "excerpt": "The week in digital assets was dominated by regulation. The net-net of a wild week? Banks face renewed competition for customers’ cash after federal regulators left room for cryptocurrency platforms to offer stablecoin rewards, setting up a contest over returns that could affect ",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/occ-leaves-stablecoin-rewards-door-open-as-banks-defend-deposits/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T14:19:54.000Z"
+    },
+    {
+      "id": "6dd92a275f36047dce31",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Ebanx Adds Recurring Wallet Payments in Nigeria Through OPay",
+      "excerpt": "Cross-border payments provider Ebanx launched recurring payments through Nigerian digital wallet OPay, according to a Thursday (Oct. 22) press release. The solution gives international subscription businesses another way to collect payments in a market where credit card ownership",
+      "url": "https://www.pymnts.com/subscriptions/2026/ebanx-adds-recurring-wallet-payments-nigeria-through-opay/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T14:09:35.000Z"
+    },
+    {
+      "id": "ba5f8e54dc7db71dd6f4",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Coinbase fined €3.25m by Irish central bank",
+      "excerpt": "Crypto exchange Coinbase Ireland has been penalised by the Central Bank of Ireland (CBI) for a series of operational and governance failings over a five-year period.",
+      "url": "https://www.finextra.com/newsarticle/48633/coinbase-fined-325m-by-irish-central-bank?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T12:24:00.000Z"
+    },
+    {
+      "id": "8b1e4869d5392d339786",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Coinbase fined €3.25m by Irish central bank",
+      "excerpt": "Crypto exchange Coinbase Ireland has been penalised by the Central Bank of Ireland (CBI) for a series of operational and governance failings over a five-year period.",
+      "url": "https://www.finextra.com/newsarticle/48633/coinbase-fined-325m-by-irish-central-bank?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T12:24:00.000Z"
+    },
     {
       "id": "98d01c0a7bf618f12e27",
       "sourceId": "pymnts",
@@ -57,34 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-22T08:00:21.000Z"
-    },
-    {
-      "id": "b585c716466f3f78a1b4",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Instant Payments May Give Credit Unions a Deposit Growth Advantage",
-      "excerpt": "Banks have generally measured instant payments by transactions: how many customers use them, how much money moves and how quickly payments arrive. An example from Amplify Credit Union adds another measure: deposit growth. Business accounts that received at least one instant payme",
-      "url": "https://www.pymnts.com/real-time-payments/2026/instant-payments-may-give-credit-unions-a-deposit-growth-advantage/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T08:00:08.000Z"
-    },
-    {
-      "id": "3175ecbb5332ac6ed055",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Built to Scale: How to Grow Embedded Payments Without Starting Over",
-      "excerpt": "Embedded payments can be relatively straightforward to launch, but successful growth changes what businesses need from their payments infrastructure. As volume rises, so can fraud exposure, compliance demands and operational complexity. Companies that design for those demands fro",
-      "url": "https://www.pymnts.com/report/tracker/built-to-scale-how-to-grow-embedded-payments-without-starting-over/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T08:00:00.000Z"
     },
     {
       "id": "9afdb799a226e8ee0aae",
@@ -493,20 +521,6 @@
       "publishedAt": "2026-10-19T12:00:00.000Z"
     },
     {
-      "id": "dbccf137214ca10c747b",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Zilch to move to new London HQ",
-      "excerpt": "UK payments fintech unicorn Zilch has announced details of its new base in London which will more than double the capacity of current HQ as the company looks to expand in Europe.",
-      "url": "https://www.finextra.com/newsarticle/48603/zilch-to-move-to-new-london-hq?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T10:04:00.000Z"
-    },
-    {
       "id": "b6e457a57fc3a80f162f",
       "sourceId": "iupana",
       "category": "latam",
@@ -561,20 +575,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-16T14:44:21.000Z"
-    },
-    {
-      "id": "3c2af400b85650421f06",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Finextra & ACI Worldwide launch global survey report: ‘Payments 2030: The Payoff Year’",
-      "excerpt": "The latest Finextra survey report, designed to help financial institutions prepare for the road to 2030, is now available to download.",
-      "url": "https://www.finextra.com/newsarticle/48597/finextra--aci-worldwide-launch-global-survey-report-payments-2030-the-payoff-year?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-16T13:00:00.000Z"
     },
     {
       "id": "4fa21e47e6800c6a9c7a",
@@ -885,20 +885,6 @@
       "publishedAt": "2026-10-06T00:01:00.000Z"
     },
     {
-      "id": "9ef64a675fa5a0646139",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Anchorage Digital expands global services with Standard Chartered",
-      "excerpt": "Digital asset custody services provider Anchorage Digital has formed a partnership with Standard Chartered through which it will offer USD accounts and access to Swift wires, including transfers to and from third parties, to eligible non-US institutional clients.",
-      "url": "https://www.finextra.com/newsarticle/48535/anchorage-digital-expands-global-services-with-standard-chartered?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T00:01:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -995,6 +981,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-30T12:00:00.000Z"
+    },
+    {
+      "id": "789fbdb64c6ebc9b37a6",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T07:00:00.000Z"
     },
     {
       "id": "4f993a614134ae1976d4",
@@ -1165,20 +1165,6 @@
       "publishedAt": "2026-09-25T07:00:00.000Z"
     },
     {
-      "id": "cd96405e0c47d8269751",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-24T07:00:00.000Z"
-    },
-    {
       "id": "6fd0f021e5e1ed3b9fed",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1205,20 +1191,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-23T13:00:36.000Z"
-    },
-    {
-      "id": "98c95024a6977564d0e2",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "EL BCE informa que J.P. Morgan actualizó la metodología de cálculo del indicador conocido como “riesgo país”",
-      "excerpt": "J.P. Morgan, con sede en los Estados Unidos, es uno de los bancos de inversión y servicios financieros más grandes del mundo. Es parte de",
-      "url": "https://www.bce.fin.ec/el-bce-informa-que-j-p-morgan-actualizo-la-metodologia-de-calculo-del-indicador-conocido-como-riesgo-pais/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-22T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1229,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 11
     },
     {
@@ -1240,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 0
     },
     {
@@ -1251,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 8
     },
     {
@@ -1262,9 +1234,9 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
+      "recentCount": 5
     },
     {
       "id": "seps",
@@ -1273,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 0
     },
     {
@@ -1284,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 0
     },
     {
@@ -1295,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 0
     },
     {
@@ -1306,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 2
     },
     {
@@ -1317,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 4
     },
     {
@@ -1328,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 8
     },
     {
@@ -1339,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 8
     },
     {
@@ -1350,9 +1322,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-latam",
@@ -1361,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 0
     },
     {
@@ -1372,8 +1344,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 6
     },
     {
@@ -1383,9 +1355,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
-      "recentCount": 12
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
+      "recentCount": 11
     },
     {
       "id": "finextra-crypto",
@@ -1394,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 8
     },
     {
@@ -1405,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T10:11:22.035Z",
-      "lastSuccessAt": "2026-10-22T10:11:22.035Z",
+      "checkedAt": "2026-10-22T15:16:54.448Z",
+      "lastSuccessAt": "2026-10-22T15:16:54.448Z",
       "recentCount": 9
     }
   ]
