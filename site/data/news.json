@@ -1,7 +1,105 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T18:22:00.245Z",
+  "generatedAt": "2026-10-23T22:11:10.213Z",
   "stories": [
+    {
+      "id": "722719b99263210315bc",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "LianLian Taps PayPal and Venmo to Speed Up Cross-Border Payouts",
+      "excerpt": "Cross-border payments firm LianLian Global’s social commerce, marketplace and eCommerce clients can now send payouts to PayPal accounts globally and Venmo accounts in the United States, the company said in a Thursday (Oct. 22) press release. The capabilities are enabled by LianLi",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/lianlian-taps-paypal-venmo-speed-up-cross-border-payouts/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T21:44:07.000Z"
+    },
+    {
+      "id": "90f997e965c4b2e857f8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Same Day ACH Volume Jumps 37% as Businesses Fill the Gap Between Batch and Instant",
+      "excerpt": "Businesses use payments timing as a factor in their cash forecasts. A buyer sends money before an invoice deadline, while the supplier waits for money already committed to payroll, inventory or another bill. Shortening that interval gives both parties greater certainty about when",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/same-day-ach-volume-jumps-37percent-businesses-fill-gap-between-batch-instant/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T19:51:13.000Z"
+    },
+    {
+      "id": "589c558b3aed001d4f45",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "HSBC Launches Hong Kong Dollar Stablecoin for Everyday Payments",
+      "excerpt": "HSBC has launched its first stablecoin, HSBC RedCoin (RCHKD), in Hong Kong, saying in a Friday (Oct. 23) press release that it is built for everyday payments and transactions. HSBC RedCoin is licensed and regulated by the Hong Kong Monetary Authority (HKMA), is Hong Kong dollar (",
+      "url": "https://www.pymnts.com/blockchain/2026/hsbc-launches-hong-kong-dollar-stablecoin-for-everyday-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T19:46:21.000Z"
+    },
+    {
+      "id": "3a4795b4316ffa8d9384",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Shoppers Would Send AI Agents to Marketplaces Over Brand Sites",
+      "excerpt": "Artificial intelligence (AI) shopping agents could make it easier for consumers to compare products and complete purchases, but they may not change where shoppers spend their money. Even when an autonomous AI assistant can purchase the same product from competing merchants at ide",
+      "url": "https://www.pymnts.com/commerce/ecommerce/2026/shoppers-would-send-ai-agents-to-marketplaces-over-brand-sites/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T19:15:49.000Z"
+    },
+    {
+      "id": "e9e680a89c6ea6830988",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "TD Bank Taps Akoya to Power Secure Open Banking API Access",
+      "excerpt": "TD Bank U.S. and data network Akoya are collaborating to help financial apps and data providers connect to TD through secure APIs, the companies said in a Tuesday (Oct. 20) press release. The companies will accomplish this by deploying Akoya’s Open Finance Solution (OFS), which i",
+      "url": "https://www.pymnts.com/partnerships/2026/td-bank-taps-akoya-power-secure-open-banking-api-access/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T18:56:32.000Z"
+    },
+    {
+      "id": "7a51469160ae6731b564",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Belvo y dLocal se alían en México para llevar la domiciliación bancaria a más empresas y facilitar los pagos recurrentes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPcUJtSDFxU1hJTGtSQmpiZ0hVeFozejhDbmoyQlpZYS1wb3l0OVYxbjEycFVGMWdNTnZLOV80b3ZTQk10NDB0QjhENlhNTE5Nd0J1bkFyckozb2tUdkE3REdXc2pWcUJCUWlERGU3SVZuODFTZm9SdFJzUUpPbzZOTlZrNUZfckVraDh4MnBIazZ4eV9BMTRHNENTRVVaNndxV3g5YTRBRElzSll3V2xFd1dqcDZTVnZvMmZTc21iajVaT0RYNmNFajZQUU9aY1ZuYnVLU2hKNGNLRXdlb2NpLUNPeGQ3Q0t2aV9Vb25n?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T17:21:01.000Z"
+    },
+    {
+      "id": "57dadca25988f9adfceb",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Neobanco Brubank está a la venta y Nubank, Inter y BTG Pactual evaluarían comprarlo para obtener una licencia bancaria en Argentina",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNd2VUOGcxWlVxdnBHX2ptUkE0NGtHOTBWV1J0NWJKRF93ZVNVc09QcUtjNGE0QmJDUEtvMW9HRmt3Umx2dWNEckl6OFAtenVVSlFRc3RpVDRqTWZGWlJsLUpHUlZzeXJRMklNQVlnVkRKZjloVzRqUTh4Z3kzMllkTVozZVdKUVVfVzlYWTlyMVB4Yy1ER01sNV81c01mRmhVbm1tOEpJZ0tubWw2WFlGM3JvTXYtQ0lldlFhTVJSWWo0ZS10WEtSSk9JLWNyUmpraDZpcGNDdzlkQXBvSmJsNzFVY2k2ckI0Z0YySi1McTQ2aU12YXB6RzhHYw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T17:20:59.000Z"
+    },
     {
       "id": "f645695d7de1221d9dfb",
       "sourceId": "pymnts",
@@ -71,20 +169,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-23T11:09:00.000Z"
-    },
-    {
-      "id": "3158954c547cc6939762",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "92% See AP Automation as a Way to Move Beyond Routine Tasks",
-      "excerpt": "Businesses looking to automate supplier payments are giving technology teams a bigger say in purchasing decisions, and the reason starts with a practical priority: making new software work with what they already have. The July 2026 “Business Payments Tracker®” from PYMNTS Intelli",
-      "url": "https://www.pymnts.com/back-office/next-gen-ap-automation/2026/92-percent-see-ap-automation-as-a-way-to-move-beyond-routine-tasks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T08:00:49.000Z"
     },
     {
       "id": "30d581a61d1112258b6e",
@@ -267,34 +351,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-21T20:44:37.000Z"
-    },
-    {
-      "id": "f32eedf7a50c415610b8",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Bold obtiene financiación de US$ 11,3 millones con BBVA Spark en Colombia para ampliar el crédito a comercios",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSGtCQ2p2SDRVRU1QRHp5WGllc3dOSmptdWtRVWYwRE1vWFhzT2ZIT204dFF2T25leE5yUzNPZlRYNnZQQVN3ekNVbnNkOF9MQmFMWGpiMGJ1ZVk3a0FtSzQzRHBTUDc2NkNjcVRPd0xQR0pPWVJjR1UwRW5razZYRW9USmVqdk0yYzNSckNFTHVMMURVNmNNS1pubGJuUmszNWNGYV9mUGNIdWVlN1BzbVFXbG5STWJ1RnFpT2xMalpfaG1MZDhVMFVtR01zVy0weFpManBjNmZPY2NXQmtqVkRfOG9Tb19r?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-21T20:07:36.000Z"
-    },
-    {
-      "id": "e1cbf16f3238914eb376",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kira lanza Agentic POBO, una solución para realizar pagos en el exterior a nombre de terceros mediante agentes de IA",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRm9ROC0xUi1fbVZxYnBwRUhESHFDSGdJYmdiZ28tN2MteE85bDkxQ19KN2ZBRVBadFFTUjlhckc4TUtZd2kxLWlBdGxaS3NDZnlYeFBUbDhQazJrbXFjb2wzazlndHNTZ080c3E3UlZUQXlveUNOc2RPanFKY3p5Z0l3X3JGUlM3N0NYd25hQVdtTmlmN0d6NldiZGswNXVRM1FuVE1mTmhSeXBYREhuakdkZW4tb2VZQ1U4T3RGbFhFdFJtd1JPMklvdGcxa0VmVUw3aEw3NFhXZ0M5RVQ5NGc3ME5jZmpGZDlfYVlQcGtoZw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-21T16:54:36.000Z"
     },
     {
       "id": "95d7056e3987e111bdd1",
@@ -759,20 +815,6 @@
       "publishedAt": "2026-10-09T00:01:00.000Z"
     },
     {
-      "id": "1aab8971edc01904547c",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Colombian fintech Fronte raises pre-seed round led by Rally Cap VC and Bankless Ventures",
-      "excerpt": "Colombian fintech Fronte raised an undisclosed pre-seed round led by Rally Cap VC and Bankless Ventures. Base Ecosystem…",
-      "url": "https://latamlist.com/colombian-fintech-fronte-raises-pre-seed-round-led-by-rally-cap-vc-and-bankless-ventures/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-08T17:23:14.000Z"
-    },
-    {
       "id": "47ba1e580a2cf28d6e35",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1145,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 11
     },
     {
@@ -1156,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 6
     },
     {
@@ -1188,9 +1230,9 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
-      "status": "error",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "status": "ok",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 1
     },
     {
@@ -1233,9 +1275,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "recentCount": 3
     },
     {
       "id": "latam-fintech-hub",
@@ -1244,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 6
     },
     {
@@ -1266,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 7
     },
     {
@@ -1277,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T18:22:00.245Z",
-      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "checkedAt": "2026-10-23T22:11:10.213Z",
+      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
       "recentCount": 7
     }
   ]
