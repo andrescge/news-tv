@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-22T22:24:17.404Z",
+  "generatedAt": "2026-10-23T01:31:42.790Z",
   "stories": [
+    {
+      "id": "5f747119fce15349c896",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Credit Card Delinquencies Creep Up to 2.6% Among Major Issuers",
+      "excerpt": "Credit card delinquencies crept up in September, while net charge-offs declined, according to the latest edition of Seeking Alpha’s Credit Pulse, released Thursday (Oct. 22). This report tracks monthly delinquency and charge-off rates at seven major credit card issuers, including",
+      "url": "https://www.pymnts.com/credit-cards/2026/credit-card-delinquencies-creep-up-to-2-6percent-among-major-issuers/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T23:37:57.000Z"
+    },
+    {
+      "id": "27c71b39a5062c425da9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Banks Add AI Agents, Keep Their 40-Year-Old Cores",
+      "excerpt": "Banks keep their core systems because replacing them is costly and disruptive. Keeping them carries its own price. Employees work across fragmented applications, repeat manual steps and rely on expensive integrations. Fifty-two percent of financial institutions name legacy techno",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-add-ai-agents-keep-their-40-year-old-cores/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T23:10:44.000Z"
+    },
+    {
+      "id": "4dcff2026bcae5b73d63",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "TOPPAN Security impulsa la innovación en tarjetas de pago con diseños, materiales y tecnologías diferenciadas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb3pLdEEtaVR0cUxnVndYUmFUaEFLYjdxcklZMlVZSGdJVVB1cDRaRlZfcjNtTVo2dFZrcEJjYWZoajZDMFBnXzJIMndKb2JESWkzT3VZbm45YUdtd0N3cVBFc0hiaW40NG9NbjFiTXdpWmlBZlhJX3h0bm9aMFduUnkyM3BLazFVSmRycjNUSVZ0LVgtQzFZdHMzUWJuNk9OZDNFcUxoMGZEZ3B2OWl3UWNodG52M1NFc05MT2xQU0hzbmYwWk93Nnd6dzVIdlp3Y2F5Y2xmczhsbzVLdmc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-22T22:31:49.000Z"
+    },
     {
       "id": "a5f6fb496fef9731bec3",
       "sourceId": "seps",
@@ -15,62 +57,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-22T20:36:33.000Z"
-    },
-    {
-      "id": "1f30dcb3e7760807f2c7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "FinTechs Face Tough Licensing Choices as They Outgrow Early Setups",
-      "excerpt": "Launching a FinTech often starts with a simple plan. Get the right state licenses, team up with a bank and start moving money. But success brings a new problem. Once a company adds overseas customers, large business clients or cryptocurrency services, that early setup can start t",
-      "url": "https://www.pymnts.com/legal/2026/fintechs-face-tough-licensing-choices-outgrow-early-setups/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T18:55:10.000Z"
-    },
-    {
-      "id": "01e99a2ea9a70e747a9e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Coast Secures $35 Million to Expand Financial Platform for Physical Economy",
-      "excerpt": "Financial technology firm Coast announced in a Thursday (Oct. 22) press release that it has raised $35 million in a new growth equity funding round to expand its payment and expense management platform built for physical economy businesses. Thomvest Ventures led the growth round.",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/coast-secures-35-million-to-expand-financial-platform-for-physical-economy/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T18:15:13.000Z"
-    },
-    {
-      "id": "382b536086cdf0c1fe64",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Finds Flaws Hiding in the Code Behind 70% of Websites",
-      "excerpt": "Security flaws discovered with the help of artificial intelligence have triggered an urgent, OpenAI-led effort to protect websites worldwide, PYMNTS reported. The scramble exposes how quickly AI can uncover weaknesses in the software that supports online banking, payments and com",
-      "url": "https://www.pymnts.com/cybersecurity/2026/ai-finds-flaws-hiding-in-the-code-behind-70percent-of-websites/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T17:56:15.000Z"
-    },
-    {
-      "id": "987e74a71d2e076c391a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Barclays Plans 5,000 Job Cuts as AI Push Reshapes Operations",
-      "excerpt": "Barclays plans to eliminate about 5,000 jobs this year as the British bank expands its use of artificial intelligence (AI) and technology to improve productivity and reduce costs, even as third-quarter profits rose. The reductions represent about 5% of the bank’s workforce, Barcl",
-      "url": "https://www.pymnts.com/personnel/2026/barclays-plans-5000-job-cuts-as-ai-push-reshapes-operations/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T17:36:21.000Z"
     },
     {
       "id": "690acade8e6b7ca7bf8d",
@@ -248,20 +234,6 @@
       "title": "Paytech argentina Rebill cierra una ronda de inversión de US$5,4M para simplificar los pagos internacionales en la región",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPakZKWC1OR0xnWXN3bG5rVFhBSkpjQ3ppc3RGaHdoMi1iWGFZNmZXRXIwejBrX3VHc0plR3hIVW8xeFp6RDVTc0ZQS0tyU3NzUFJZRG1lRXFVUTRqSnFaaXRCOXFBb1VVYlBfR0J4T3M3djFiR2hOU1JSTDV3d3pDb0IwaWZMZjI3alpHbkVmLWxHNzQwcTdjN0puSHAyYlQ0ODNab1JMMmFWM2g4d3Z0S09ubElUSTBoYUZrSEpIRl9xVXJDVzNjY2pXSnQzU1puMWNXVHZRc3JXaHByWjItZElqcHM?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-21T14:26:26.000Z"
-    },
-    {
-      "id": "0d2e09dddcde34a28032",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bre-B y su primer año: el reto de construir una infraestructura de pagos conectada",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQT3ZWUEt6TzJMZ3pTdnItVHlrZnlRSWJESy14WDNxemhYMkxGUXo5SUpaRk5fejBKM0NXaDczWWNJelREd3JWQzRxV1lKZmR3Z3ZBTG14TGRaYjZNaUw0eXp0eUNKZEh2TW5jT1YwT0owZGI2WFlpV2NseXNDMnRpZ055b1Zmb3VjdF9GT3gtVHZtY0FLYi1GbzVCUHlYQjhPd1Y1UUpDdGVyZjM4SjlCNUZOMGdYTDcyTlE?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -1215,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 11
     },
     {
@@ -1226,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 8
     },
     {
@@ -1248,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 6
     },
     {
@@ -1259,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 1
     },
     {
@@ -1270,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 4
     },
     {
@@ -1314,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 7
     },
     {
@@ -1336,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 6
     },
     {
@@ -1347,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 0
     },
     {
@@ -1358,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1369,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 8
     },
     {
@@ -1391,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-22T22:24:17.404Z",
-      "lastSuccessAt": "2026-10-22T22:24:17.404Z",
+      "checkedAt": "2026-10-23T01:31:42.790Z",
+      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
       "recentCount": 9
     }
   ]
