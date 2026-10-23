@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T13:26:59.958Z",
+  "generatedAt": "2026-10-23T18:22:00.245Z",
   "stories": [
+    {
+      "id": "f645695d7de1221d9dfb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "States Move to Centralize Digital IDs as More Services Go Online",
+      "excerpt": "Your phone can already hold your credit cards, your boarding pass and your insurance card. In a growing number of states, it can hold your driver’s license, too. Now, state leaders are asking a bigger question. Should residents have one digital identity that works across every go",
+      "url": "https://www.pymnts.com/authentication/digital-identity/2026/states-move-to-centralize-digital-ids-as-more-services-go-online/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T17:11:36.000Z"
+    },
+    {
+      "id": "e0538bf070bc4f5422d7",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Thailand and Malaysia back Singapore's BLOOM cross-border digital money initiative",
+      "excerpt": "The central banks Thailand and Malaysia are backing a Monetary Authority of Singapore-led public-private sector initiative to advance cross-border settlement in digital money.",
+      "url": "https://www.finextra.com/newsarticle/48641/thailand-and-malaysia-back-singapores-bloom-cross-border-digital-money-initiative?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T13:52:00.000Z"
+    },
     {
       "id": "292acf0e998638ee7d10",
       "sourceId": "finextra-payments",
@@ -85,34 +113,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-23T01:18:28.000Z"
-    },
-    {
-      "id": "5f747119fce15349c896",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Credit Card Delinquencies Creep Up to 2.6% Among Major Issuers",
-      "excerpt": "Credit card delinquencies crept up in September, while net charge-offs declined, according to the latest edition of Seeking Alpha’s Credit Pulse, released Thursday (Oct. 22). This report tracks monthly delinquency and charge-off rates at seven major credit card issuers, including",
-      "url": "https://www.pymnts.com/credit-cards/2026/credit-card-delinquencies-creep-up-to-2-6percent-among-major-issuers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T23:37:57.000Z"
-    },
-    {
-      "id": "27c71b39a5062c425da9",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks Add AI Agents, Keep Their 40-Year-Old Cores",
-      "excerpt": "Banks keep their core systems because replacing them is costly and disruptive. Keeping them carries its own price. Employees work across fragmented applications, repeat manual steps and rely on expensive integrations. Fifty-two percent of financial institutions name legacy techno",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/banks-add-ai-agents-keep-their-40-year-old-cores/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T23:10:44.000Z"
     },
     {
       "id": "4dcff2026bcae5b73d63",
@@ -689,20 +689,6 @@
       "publishedAt": "2026-10-14T12:00:00.000Z"
     },
     {
-      "id": "cb2cee6c4d72b0cb27c9",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "A un año de Bre-B, el sistema se prepara para recibir pagos empresariales",
-      "excerpt": "La plataforma colombiana de pagos inmediatos cumplió su primer aniversario y, ante los buenos resultados, se alista para iniciar la fase 2.0 con nuevos casos de uso concentrados en el sector corporativo, como remesas, nóminas y pagos a proveedores. Ya arrancó la etapa regulatoria",
-      "url": "https://iupana.com/2026/10/13/un-ano-bre-b-sistema-prepara-recibir-pagos-empresariales/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-13T20:57:38.000Z"
-    },
-    {
       "id": "887dcfd5e33859ac713e",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -829,20 +815,6 @@
       "publishedAt": "2026-10-06T12:00:00.000Z"
     },
     {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "bf68e66fd9c685237735",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -852,6 +824,20 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
       "source": "Primicias",
       "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "61f3225e83ee0399ac1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
@@ -967,6 +953,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-30T12:00:00.000Z"
+    },
+    {
+      "id": "ce81a5f54d581d86b5c9",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "La argentina Depay y su red de pagos conectará a Venezuela con cinco países",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNWEZLMTNJeUVEM0Vjb21jb3gwckY2ZmdtZTlWcVZ2V3NfRGpSdEZRZV80YXVXX2hodFVmR211dmdJNk96eENvUk5YN3Y2WGZSUXNkZmVmcEZKaVJ1MkpyMnpRX0VvR0VKa0RWaERHTzAwd1U2VHRDamRyWlphWElnaFg2WHVIQk45RkZpZzVOZllCYm9hbUZUamdSd2gxNmZUSTRDR1NGRDY5WVFIeklReTZ2RGVOZUd4RC13Q1c2WnZKR2pZQV9CR2xTMNIB3wFBVV95cUxQTHhHa2lfbjdPdVVsVF9uekNsaGl6UjFYTjdmZUJmQm1wSjRoUjRLN08yUERxVTN4LW90MUFOUVJRYzR3VG9vRXdNWFpuUmxrdUZXTVZITTVBZ1JpVGF6bVF4WldCZ1pQRU1aRHZhUlkzalU5aURRb0RDaTF4ZjRxeG1NdTVlOE93bTJ1NFJsQnZFT0UtZlNqM0lDeTdYRlFzX2xSMjA4VS1rT0tzZHowY3FFNmJ6M054QXVYQVBIQW9tV0l3cVlCcm82YldndjdmTGhmYXEzb0wxOVhYUWo0?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-30T07:00:00.000Z"
     },
     {
       "id": "789fbdb64c6ebc9b37a6",
@@ -1145,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 11
     },
     {
@@ -1156,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 6
     },
     {
@@ -1188,8 +1188,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "status": "error",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
       "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 1
     },
@@ -1200,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 4
     },
     {
@@ -1244,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 8
     },
     {
@@ -1255,9 +1255,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "recentCount": 6
     },
     {
       "id": "latam-bloomberg",
@@ -1266,9 +1266,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-latam",
@@ -1277,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1299,9 +1299,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
+      "recentCount": 12
     },
     {
       "id": "finextra-crypto",
@@ -1310,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T13:26:59.958Z",
-      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "checkedAt": "2026-10-23T18:22:00.245Z",
+      "lastSuccessAt": "2026-10-23T18:22:00.245Z",
       "recentCount": 7
     }
   ]
