@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T07:32:53.151Z",
+  "generatedAt": "2026-10-23T13:26:59.958Z",
   "stories": [
+    {
+      "id": "292acf0e998638ee7d10",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "US fintech Coast secures $35m for physical economy payments platform",
+      "excerpt": "New York-based startup Coast has raised $35m for the launch of a payment platform designed to support companies working in the physical economy.",
+      "url": "https://www.finextra.com/newsarticle/48639/us-fintech-coast-secures-35m-for-physical-economy-payments-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T12:13:00.000Z"
+    },
+    {
+      "id": "8b883b04771997172686",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "HSBC launches first stablecoin",
+      "excerpt": "Global bank HSBC has launched RedCoin, its first stablecoin, for public use.",
+      "url": "https://www.finextra.com/newsarticle/48638/hsbc-launches-first-stablecoin?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T11:09:00.000Z"
+    },
+    {
+      "id": "0030dba0d18f1d039a83",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "HSBC launches first stablecoin",
+      "excerpt": "Global bank HSBC has launched RedCoin, its first stablecoin, for public use.",
+      "url": "https://www.finextra.com/newsarticle/48638/hsbc-launches-first-stablecoin?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T11:09:00.000Z"
+    },
+    {
+      "id": "3158954c547cc6939762",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "92% See AP Automation as a Way to Move Beyond Routine Tasks",
+      "excerpt": "Businesses looking to automate supplier payments are giving technology teams a bigger say in purchasing decisions, and the reason starts with a practical priority: making new software work with what they already have. The July 2026 “Business Payments Tracker®” from PYMNTS Intelli",
+      "url": "https://www.pymnts.com/back-office/next-gen-ap-automation/2026/92-percent-see-ap-automation-as-a-way-to-move-beyond-routine-tasks/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T08:00:49.000Z"
+    },
     {
       "id": "30d581a61d1112258b6e",
       "sourceId": "latam-bloomberg",
@@ -423,34 +479,6 @@
       "publishedAt": "2026-10-20T12:00:00.000Z"
     },
     {
-      "id": "934af68afa51f4329938",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mynt IPO breaks records in Philippines",
-      "excerpt": "Philippines-based fintech Mynt has raised $967m from what is the country's biggest ever IPO.",
-      "url": "https://www.finextra.com/newsarticle/48613/mynt-ipo-breaks-records-in-philippines?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T11:27:00.000Z"
-    },
-    {
-      "id": "037092e53394a17f9fde",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Pay by Bank sector poised for growth says survey",
-      "excerpt": "Pay by Bank, the digital payment method that allows consumers to pay directly from their bank account without the use of a credit or debit card or typing a PIN, is gaining traction in Europe and the UK suggests recently published research.",
-      "url": "https://www.finextra.com/newsarticle/48612/pay-by-bank-sector-poised-for-growth-says-survey?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T10:22:00.000Z"
-    },
-    {
       "id": "e897b2fbf143e0d1e545",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -463,20 +491,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T15:37:00.000Z"
-    },
-    {
-      "id": "b663d291efa5a3db6608",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "EPC to create EU Digital Identity Wallet framework for PSPs",
-      "excerpt": "The European Payments Council (EPC) has greenlit work on a standardisation framework designed to support the consistent acceptance of EU Digital Identity Wallets by payment service providers.",
-      "url": "https://www.finextra.com/newsarticle/48606/epc-to-create-eu-digital-identity-wallet-framework-for-psps?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T14:55:00.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -675,20 +689,6 @@
       "publishedAt": "2026-10-14T12:00:00.000Z"
     },
     {
-      "id": "071229b253be86c19dba",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOFBaWU5sWGFHT0lTaTZYdG56dUdOWTc4RGlPWS14dFo1Z0IzMlZOazlxOXFyNld4dHp1QkU3eXRqdTRmT0EtcFJlSF9QQlRKbWh4ZjdKSlcyRHhUWEprNjRPN29IeEdGY0oxdHhrbWdCQVctTHk5VW1BdnJiNXNySTk5NVVSQ09KZWt0SFI5Q1c2NnhpRjJCWVNhSVVwTjFGckZEQ2ExWUZOZVEyb3hHZndNU2htSHFrUlR4bDNIeUVoQkYtQXlkTFNUTTFKeGFib0FyYlg3dVJWOEFDVmfSAfIBQVVfeXFMT0hqcl9ScVZhZFJkbTM3Nkp1ZVdkb3ByZmJ6UGoxNmZZNWRMRHlLYWZjU1FNdnpyWTVpRm8xazFRVWY1SDBOd05sREQ2dUZaWExKOFUyeTk4S2JJbVBrMHhyOS1raVl1Y0hWUGJObjBHN0c2X2czSUoxVEF1Zy1lcnlFUFN1a1ZEX3F1RDdDVjlzQVktR1psV1ZvQTFLUENuQ0FWYUlUQUt4QmctM29pUFE4SUs2NW45ZGtQU01EcDRCQWlKYUxVNEpxTkdmcm53SXhCRDRpUWd3VUYzajVELW9pdkhDekptUzZLbUNWTnRFa1E?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-14T01:22:26.000Z"
-    },
-    {
       "id": "cb2cee6c4d72b0cb27c9",
       "sourceId": "iupana",
       "category": "latam",
@@ -729,6 +729,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T12:00:00.000Z"
+    },
+    {
+      "id": "071229b253be86c19dba",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOFBaWU5sWGFHT0lTaTZYdG56dUdOWTc4RGlPWS14dFo1Z0IzMlZOazlxOXFyNld4dHp1QkU3eXRqdTRmT0EtcFJlSF9QQlRKbWh4ZjdKSlcyRHhUWEprNjRPN29IeEdGY0oxdHhrbWdCQVctTHk5VW1BdnJiNXNySTk5NVVSQ09KZWt0SFI5Q1c2NnhpRjJCWVNhSVVwTjFGckZEQ2ExWUZOZVEyb3hHZndNU2htSHFrUlR4bDNIeUVoQkYtQXlkTFNUTTFKeGFib0FyYlg3dVJWOEFDVmfSAfIBQVVfeXFMT0hqcl9ScVZhZFJkbTM3Nkp1ZVdkb3ByZmJ6UGoxNmZZNWRMRHlLYWZjU1FNdnpyWTVpRm8xazFRVWY1SDBOd05sREQ2dUZaWExKOFUyeTk4S2JJbVBrMHhyOS1raVl1Y0hWUGJObjBHN0c2X2czSUoxVEF1Zy1lcnlFUFN1a1ZEX3F1RDdDVjlzQVktR1psV1ZvQTFLUENuQ0FWYUlUQUt4QmctM29pUFE4SUs2NW45ZGtQU01EcDRCQWlKYUxVNEpxTkdmcm53SXhCRDRpUWd3VUYzajVELW9pdkhDekptUzZLbUNWTnRFa1E?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T07:00:00.000Z"
     },
     {
       "id": "db4b943c746d4719fad3",
@@ -855,20 +869,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
-      "id": "415c1907b8f4e38f8415",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "ANZ completes cross-border tokenised deposit payment with Swift ledger",
-      "excerpt": "Australia's ANZ has carried out a live corporate treasury transactions using tokenised deposits and Swift’s blockchain ledger.",
-      "url": "https://www.finextra.com/newsarticle/48534/anz-completes-cross-border-tokenised-deposit-payment-with-swift-ledger?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T00:01:00.000Z"
     },
     {
       "id": "f5fc81d6ce5f2b1d8421",
@@ -1135,34 +1135,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-24T07:00:00.000Z"
-    },
-    {
-      "id": "6fd0f021e5e1ed3b9fed",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "2026 Global Crypto Adoption Index: World’s Crypto Economy Held Firm Through the Bear Market",
-      "excerpt": "Summary Crypto economy overcame worst market since 2022: Even as crypto’s total market cap fell about 50% (a $2.1 trillion…",
-      "url": "https://www.chainalysis.com/blog/2026-global-crypto-adoption-index/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-23T13:00:45.000Z"
-    },
-    {
-      "id": "9a2c0069433870c2a0df",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "Latin America: Brazil Leads World in Adoption as Region’s Crypto Economy Grows",
-      "excerpt": "Summary Latin America bucked the bear market. The region’s crypto economy saw $593.8 billion in activity, with an overall growth…",
-      "url": "https://www.chainalysis.com/blog/latin-america-crypto-adoption-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-23T13:00:36.000Z"
     }
   ],
   "sources": [
@@ -1173,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 11
     },
     {
@@ -1184,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 0
     },
     {
@@ -1195,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 8
     },
     {
@@ -1206,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 6
     },
     {
@@ -1217,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 1
     },
     {
@@ -1228,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 0
     },
     {
@@ -1239,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 0
     },
     {
@@ -1250,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 1
     },
     {
@@ -1261,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 4
     },
     {
@@ -1272,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 8
     },
     {
@@ -1283,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 7
     },
     {
@@ -1294,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 6
     },
     {
@@ -1305,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 0
     },
     {
@@ -1316,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1327,9 +1299,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
-      "recentCount": 12
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "recentCount": 11
     },
     {
       "id": "finextra-crypto",
@@ -1338,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
       "recentCount": 8
     },
     {
@@ -1349,9 +1321,9 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T07:32:53.151Z",
-      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-23T13:26:59.958Z",
+      "lastSuccessAt": "2026-10-23T13:26:59.958Z",
+      "recentCount": 7
     }
   ]
 }
