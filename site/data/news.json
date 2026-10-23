@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T01:31:42.790Z",
+  "generatedAt": "2026-10-23T07:32:53.151Z",
   "stories": [
+    {
+      "id": "30d581a61d1112258b6e",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Las fintech ganan espacio en Venezuela ante las limitaciones del sistema financiero",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQRGFZZWNTOXY4YVhPanVia1FFcE5FVjF6ajF6bFRQYjRSb3NkZUw4aGRlYlUzQUQyLTNscFdsUG05X3JCeDliVFNuUk9KelZnVHJmalN0ay1OWUNkbVdIMFJBRWpCZnlXVnNmTkQ3T0YzbmVkUW5sX0pJMFR3WVN2ZXVscXBIenZuaVVLNWZ4YjZMX0tpMS0wN01jQkVUVHB6QWtmWXNzMHpIRmN6cl82bTJ4a1BsNGJlTUVHRkdmQXFkamxDZWRieEdiTE4zajdjbFIwTGRR0gHqAUFVX3lxTFBnZG5CUmliWVpCcGxJSC1POVhYYU94TjlacWFwcDRZRUczWF9VV3BiWGtucl8zUjhBc2wwdFFGOUt0NTV3cGdoQm5lTURhY1hLYlZDWVJhOWVtUGZIR3MwTWFLeUZpelpzOUhFcjBLYXBuTGlJTjVYQTJBcVZEU0tvdWFLNklqTXVyNHZSWk5rQnJLTkhFZUY0Y0ktQU1DMjNVMTM0aWlocGtKbDZBX2p2UVN6cHZscGJCV1RCa2pPZ0ZhQUMtbWZEN0lvYnJsSHdZRmxKeVEyQmtTRldtQTNPN2hiVDVKaEgwUQ?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T05:01:22.000Z"
+    },
+    {
+      "id": "42e1dc5b4ac3b1ebe7ee",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Geopagos analiza el futuro de los pagos en Latinoamérica: interoperabilidad y nuevos jugadores en CLAB 2026",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWFJOLS1uWXFRZjVuVGhGeXpMekJWMUZoS0NMekZIVmFvcVEySE1ael93VktNbjFYb2ljalV4eVNCTERRVExmN1FUSVcwU0JHOV83a21BdklVX1pRU01JeFVXOXhRR3llZTR0ZnJDbGpMaXVxdUROdUV2Q016N3MzRG1hdDk4cTdUa0ZnMkh4UUhQTVVtVmVBM1Z4MXNscllJODFtU0pULXlGelBqRFlOU1lXRG1hRHh3VzA1VWlLemFEX0EtVHM3UC1reEdHVlcwNWlOTzVuTjdwVFE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T01:18:28.000Z"
+    },
     {
       "id": "5f747119fce15349c896",
       "sourceId": "pymnts",
@@ -225,20 +253,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-21T16:05:00.000Z"
-    },
-    {
-      "id": "e2168aba748ca06df84c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Paytech argentina Rebill cierra una ronda de inversión de US$5,4M para simplificar los pagos internacionales en la región",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPakZKWC1OR0xnWXN3bG5rVFhBSkpjQ3ppc3RGaHdoMi1iWGFZNmZXRXIwejBrX3VHc0plR3hIVW8xeFp6RDVTc0ZQS0tyU3NzUFJZRG1lRXFVUTRqSnFaaXRCOXFBb1VVYlBfR0J4T3M3djFiR2hOU1JSTDV3d3pDb0IwaWZMZjI3alpHbkVmLWxHNzQwcTdjN0puSHAyYlQ0ODNab1JMMmFWM2g4d3Z0S09ubElUSTBoYUZrSEpIRl9xVXJDVzNjY2pXSnQzU1puMWNXVHZRc3JXaHByWjItZElqcHM?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-21T14:26:26.000Z"
     },
     {
       "id": "bf5715dec45892a35ba6",
@@ -1025,20 +1039,6 @@
       "publishedAt": "2026-09-29T07:00:00.000Z"
     },
     {
-      "id": "40b73da8dd3f69f2491c",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "Banco Central y el BID renuevan convenio para gestión de las reservas internacionales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxONzA3U3dzdl9uTUtxQ0F5bGthemxWaVgzc3dkYUdqc1c4eGVQdVV5Vmpib3NnVWxYdk9idXgzVWdMU0xBNzk3ek0zYkRmeFA5MUtyR19jWWVHdXU4VEp2cW1QcE1DVjhGbU4yY0JsTmtjNlpILXpPRV9DaVdGRGZpTXdnZldpSHpMWjlxQlVRMEUwd1FYT1cwZ0stSkl6LUxyMDUxdzBiNTFIWG0tRWJvTVJvTXktdlY2aUdVaFNB0gHDAUFVX3lxTE9aX18tb3hiYkwxWVkyNHhnTDVWcDQ1SS15ejR6SWt1ZmtlcHpuQkhGSFdXaXI3RFhyYlA1ODlQOUNFcURUQ2kxSDNxVEl2YWVMUmZyUWtuQU9QNXR3U3BpazhpSExrelRzY2NtcDQtblBIejh3T3lINGFUakVKZnVRWUhZZzNWVVVBQ3F3T1k3NDdTN2FxUzdoblJGUHFBZDlVMTN2OEVyaEhYeWQwOG11cjg4ajFhN2RMd1BLbnRBVXdEUQ?oc=5",
-      "source": "Ecuavisa",
-      "sourceUrl": "https://www.ecuavisa.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T07:00:00.000Z"
-    },
-    {
       "id": "dbc32cfcf2885eceb4e0",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1163,20 +1163,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-23T13:00:36.000Z"
-    },
-    {
-      "id": "ebaf6c50c2c828fd51e5",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "La billetera de los bancos argentinos se integra con ChatGPT: cómo serán las compras IA con MODO",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTmlOdC00VXZ0YWZ2cUx5NkJOYmpvcFlkQUFZNHJhTGRuRTVpUTFIaTRCN2xCcEh1dFQ1aS1raTc4aXNCd3Nfamo2Z29DdTAwVDRzTnRreDRtNDJZaFBHQnFDSzQzSmpjbXIxeUlUbmhRbkFxLThZQlpNeG11ZEVnYnBWQTRHR2hmeUxlV3dKNFEzSHZEYU9UbjhWNTVCcGN5REZITjd5eHh5aFd6OE80aGtkTVI2OFU0OUVpUm92WEp4bFBUTEhjSnFqMlpjNkt0dElWTWJ3VDY0ZFk1WEZuTTR2RGVqZ9IB-gFBVV95cUxQbTJsN2ZZYWlLRTl5WWM4N3ZrREV2TFctNkduV0ZwT3hzZi1PM0tHenBqcE1NUzdlbGtKZGhKclhHVVZWWmFuel9ZU2ZLZkltWmhDbXhTeXJRTVk4LXdsN0xVLU9pb2RvaFVxLTR3ZURTcTdOSzljUXhBRGdqclR3QUk5TTRaSGtscjczMHkxaW9pMWdGNWgyaDVOdVpVVi1NWHVHTW83bzFvR2NvZnRkM1AzcllPaVJRZEZ5cmlaeWc1RnNiWXdhYjhiRzl5c0MzV2g1RWJQbGduNkpVLVFXMjRVMU9WNVdmYktOVDZGS29CdmZBVk9aVHVR?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-23T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1187,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 11
     },
     {
@@ -1198,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 0
     },
     {
@@ -1264,9 +1250,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
+      "recentCount": 1
     },
     {
       "id": "latamlist",
@@ -1275,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 4
     },
     {
@@ -1286,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 7
     },
     {
@@ -1308,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 6
     },
     {
@@ -1319,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 0
     },
     {
@@ -1330,8 +1316,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 2
     },
     {
@@ -1341,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T01:31:42.790Z",
-      "lastSuccessAt": "2026-10-23T01:31:42.790Z",
+      "checkedAt": "2026-10-23T07:32:53.151Z",
+      "lastSuccessAt": "2026-10-23T07:32:53.151Z",
       "recentCount": 9
     }
   ]
