@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T00:42:14.306Z",
+  "generatedAt": "2026-10-24T05:54:17.296Z",
   "stories": [
+    {
+      "id": "ac56833bcb1f9f4cc4d5",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "American Express Expands Travel Platform With Airbnb Integration",
+      "excerpt": "American Express and Airbnb have announced a partnership that will offer eligible American Express U.S. Card Members more choices of places to stay when traveling and additional ways to earn points. With this partnership, eligible U.S. Card Members can book stays with Airbnb thro",
+      "url": "https://www.pymnts.com/transportation/travel-payments/2026/american-express-expands-travel-platform-with-airbnb-integration/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-24T00:59:11.000Z"
+    },
     {
       "id": "af656910af04d14bf1be",
       "sourceId": "pymnts",
@@ -127,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-23T19:46:21.000Z"
-    },
-    {
-      "id": "3a4795b4316ffa8d9384",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Shoppers Would Send AI Agents to Marketplaces Over Brand Sites",
-      "excerpt": "Artificial intelligence (AI) shopping agents could make it easier for consumers to compare products and complete purchases, but they may not change where shoppers spend their money. Even when an autonomous AI assistant can purchase the same product from competing merchants at ide",
-      "url": "https://www.pymnts.com/commerce/ecommerce/2026/shoppers-would-send-ai-agents-to-marketplaces-over-brand-sites/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T19:15:49.000Z"
     },
     {
       "id": "7a51469160ae6731b564",
@@ -1243,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 11
     },
     {
@@ -1254,8 +1254,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1265,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 8
     },
     {
@@ -1276,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1287,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 1
     },
     {
@@ -1298,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1309,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1320,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 1
     },
     {
@@ -1331,8 +1331,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 4
     },
     {
@@ -1342,8 +1342,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1353,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 6
     },
     {
@@ -1364,8 +1364,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 7
     },
     {
@@ -1375,8 +1375,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 0
     },
     {
@@ -1386,8 +1386,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 9
     },
     {
@@ -1397,8 +1397,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1408,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 8
     },
     {
@@ -1419,8 +1419,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T00:42:14.306Z",
-      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "checkedAt": "2026-10-24T05:54:17.296Z",
+      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
       "recentCount": 7
     }
   ]
