@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T05:54:17.296Z",
+  "generatedAt": "2026-10-24T11:00:06.478Z",
   "stories": [
     {
       "id": "ac56833bcb1f9f4cc4d5",
@@ -127,20 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-23T19:51:13.000Z"
-    },
-    {
-      "id": "589c558b3aed001d4f45",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "HSBC Launches Hong Kong Dollar Stablecoin for Everyday Payments",
-      "excerpt": "HSBC has launched its first stablecoin, HSBC RedCoin (RCHKD), in Hong Kong, saying in a Friday (Oct. 23) press release that it is built for everyday payments and transactions. HSBC RedCoin is licensed and regulated by the Hong Kong Monetary Authority (HKMA), is Hong Kong dollar (",
-      "url": "https://www.pymnts.com/blockchain/2026/hsbc-launches-hong-kong-dollar-stablecoin-for-everyday-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T19:46:21.000Z"
     },
     {
       "id": "7a51469160ae6731b564",
@@ -829,6 +815,20 @@
       "publishedAt": "2026-10-13T12:00:00.000Z"
     },
     {
+      "id": "dfd466b934cee9223658",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Bancos tradicionales VS. Neobancos: la rentabilidad que ofrecen en sus cuentas de ahorros",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdmpVcjZPSzJIdVRJUjVoTktCM2NvVmE3b3VjQUlMa24teGdyc1lMS0ZoLUVxTTZaZ3pGYkJsNzVWU19IMFU1V0R6ZzhXNkFvVUNMUHd4cENTSDR2aVRCVVpDZ3paU0s5NlBhYm04cGxkcDFESm5BR3h5WWF2NFI1SDZ0MHlwOExFRzBEWW1qeU9tektmbWZEZEItYmVPSVdkZGxxd2k1U09ZQ1RWb0p6REZ6MVBGd284SHhla0NybFg5MThhWmRCVHJXUGY1YmlsUEJaYzc1QXlLQdIB7gFBVV95cUxNSXNvSVRfNFd5SzVrZWtySTg1SnYydDUxU3RHRjlfTE40ZXNCUDJZakdlRkxUcFVoNnIza2Q4ajVoa25iQWUtVjc0ejhFdWlCUXExOW5PZlUwZlhvX0hMcURPa3NOUk9KMUJaZVQ2VnFSVDN6SEJnVV85M2NBbC1Vc0ZFRWRQZXMzWDNJalBNdU9xaVFJb0VUbWRMWEFVVEp6RDFaVjVWY3FIdTYybzhUMlpzTUNWVFpZc1NkcnpoN1Z0dmU4YzNWbENwVjhaOVF2cng5SFhsTnJqRGJIenZncEtIY2dLdWNiTnJSeWt3?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-13T07:00:00.000Z"
+    },
+    {
       "id": "071229b253be86c19dba",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -1219,20 +1219,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-25T07:00:00.000Z"
-    },
-    {
-      "id": "cd96405e0c47d8269751",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago y Revolut obtendrán licencia bancaria antes de 2027, dice director del BCRA",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxOTTB1V1RpbWNsU3VKcDI4WkFnYk9JQnRxWnhpVGg0LVZYU3ZoU0wyWHZPalo3cm9RdUhybmVYb1pyWDc0QjNQdW0yek1CY0F4dDZidjBjOUV5dkFudGtyTUx2Sld6Z1RmckJ4Y0twbFFkamZnOWZ1V3F2ODdva1RLR0VhZG00UDhJZWJUU3dabTNRRVR3VkVqZnJNV1BTLXItdXN1WFJ1bHZqZFZkUXNMbkhJMVVBN25Ma3dyRU1fZl9HM2JuQlVvbmFaajRadVd0SzZwRGFPVFd6dUXSAe8BQVVfeXFMUFdiYm84Znk0V3R1TDhqbDBoUGJqZHk0X0t0REFXUEcxcmMyYXpyZFB6a3gxRVpydTRuN3ZXdDZZa3JDeDNUb0VraDd6bkpNVkdUdzlyeU9KSmctdlppTnd0YUw4UG9iMTljVXJTd2Y4OFlLdW45SkNoSlpJVjRhbE45SG4xYkpqcFVqLVV2bkxzQktXUVh1LWh0WmZsVElvZHNUdnd5NE5JNDlaNEJ4c0NKRDk4akpKZ1hUYmlucm1GSVdoZ1U5M1RnbkNHWms3TUswVkE1bEF4a3FfTG5vYXZfZFIxSGNWSVJsN19reEE?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-24T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1243,8 +1229,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 11
     },
     {
@@ -1254,8 +1240,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1251,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 8
     },
     {
@@ -1276,8 +1262,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1273,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 1
     },
     {
@@ -1298,8 +1284,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1295,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1306,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 1
     },
     {
@@ -1331,8 +1317,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 4
     },
     {
@@ -1342,8 +1328,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1339,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 6
     },
     {
@@ -1364,8 +1350,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 7
     },
     {
@@ -1375,8 +1361,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 0
     },
     {
@@ -1386,9 +1372,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
-      "recentCount": 9
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-payments",
@@ -1397,8 +1383,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1394,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 8
     },
     {
@@ -1419,8 +1405,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T05:54:17.296Z",
-      "lastSuccessAt": "2026-10-24T05:54:17.296Z",
+      "checkedAt": "2026-10-24T11:00:06.478Z",
+      "lastSuccessAt": "2026-10-24T11:00:06.478Z",
       "recentCount": 7
     }
   ]
