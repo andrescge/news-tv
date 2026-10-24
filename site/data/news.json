@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-23T22:11:10.213Z",
+  "generatedAt": "2026-10-24T00:42:14.306Z",
   "stories": [
+    {
+      "id": "af656910af04d14bf1be",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fiserv Appoints Mastercard Senior Strategic Advisor Raj Seshadri to Board",
+      "excerpt": "Fiserv has announced that Raj Seshadri, senior strategic advisor to the CEO of Mastercard, will join Fiserv’s board of directors and enhance its collective expertise around uniting commerce and finance. She will join the board Nov. 30. Seshadri has been with Mastercard for more t",
+      "url": "https://www.pymnts.com/personnel/2026/fiserv-appoints-mastercard-senior-strategic-advisor-raj-seshadri-to-board/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-24T00:36:14.000Z"
+    },
+    {
+      "id": "1e0b2c8efe8fef707cb4",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Customers Bank Uses AI to Close Commercial Loans in 7 Days",
+      "excerpt": "Commercial loans can take weeks to close, and Pennsylvania-based Customers Bank put its typical wait at 30 to 60 days. A pilot of its artificial intelligence (AI)-powered process closed select commercial loans in seven days, the bank said in July in its Q2 earnings release. Custo",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/customers-bank-uses-ai-to-close-commercial-loans-in-7-days/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-24T00:17:59.000Z"
+    },
+    {
+      "id": "747d27f1f69b8c05dc97",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Polygon Secures US Money Transmitter Licenses",
+      "excerpt": "Polygon has completed its acquisition of Coinme, making Polygon Open Money Stack a U.S.-regulated payments platform, the company said in an Oct. 14 blog post. “This is a huge step for Polygon,” the company said in the post. “We’ve spent years building infrastructure that moves mo",
+      "url": "https://www.pymnts.com/blockchain/2026/polygon-secures-us-money-transmitter-licenses/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T23:41:22.000Z"
+    },
+    {
+      "id": "67cf9979cf5791834b7e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Sezzle Pursues National Bank Charter to Add FDIC-Insured Deposit Accounts",
+      "excerpt": "FinTech company Sezzle has begun the formal charter application process to establish a national bank that would offer a broad range of banking products and services, the company said in a Thursday (Oct. 22) press release. Sezzle filed applications with the Office of the Comptroll",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/sezzle-pursues-national-bank-charter-to-add-fdic-insured-deposit-accounts/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T23:18:02.000Z"
+    },
+    {
+      "id": "bc5de5a7d80cefd3c98a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "eInvoicing Mandates Turn Bills Into B2B Payment Data",
+      "excerpt": "European eInvoicing mandates seek to standardize how businesses deliver the information used to approve and collect payments. Invoice amounts, tax details and transaction references enter defined fields that accounting software reads and processes, establishing a common basis for",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/einvoicing-mandates-turn-bills-into-b2b-payment-data/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T23:03:54.000Z"
+    },
+    {
+      "id": "333f04e2b81c725182b7",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombian fintech Bold secures $11.3M credit facility from BBVA Spark",
+      "excerpt": "Colombian fintech Bold secured an $11.3M credit facility from BBVA Spark. Founded in 2020, Bold provides financial services…",
+      "url": "https://latamlist.com/colombian-fintech-bold-secures-11-3m-credit-facility-from-bbva-spark/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-23T22:47:35.000Z"
+    },
     {
       "id": "722719b99263210315bc",
       "sourceId": "pymnts",
@@ -59,20 +143,6 @@
       "publishedAt": "2026-10-23T19:15:49.000Z"
     },
     {
-      "id": "e9e680a89c6ea6830988",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "TD Bank Taps Akoya to Power Secure Open Banking API Access",
-      "excerpt": "TD Bank U.S. and data network Akoya are collaborating to help financial apps and data providers connect to TD through secure APIs, the companies said in a Tuesday (Oct. 20) press release. The companies will accomplish this by deploying Akoya’s Open Finance Solution (OFS), which i",
-      "url": "https://www.pymnts.com/partnerships/2026/td-bank-taps-akoya-power-secure-open-banking-api-access/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T18:56:32.000Z"
-    },
-    {
       "id": "7a51469160ae6731b564",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -99,20 +169,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-23T17:20:59.000Z"
-    },
-    {
-      "id": "f645695d7de1221d9dfb",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "States Move to Centralize Digital IDs as More Services Go Online",
-      "excerpt": "Your phone can already hold your credit cards, your boarding pass and your insurance card. In a growing number of states, it can hold your driver’s license, too. Now, state leaders are asking a bigger question. Should residents have one digital identity that works across every go",
-      "url": "https://www.pymnts.com/authentication/digital-identity/2026/states-move-to-centralize-digital-ids-as-more-services-go-online/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T17:11:36.000Z"
     },
     {
       "id": "e0538bf070bc4f5422d7",
@@ -1187,8 +1243,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 11
     },
     {
@@ -1198,8 +1254,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1265,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1276,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1287,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1298,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1309,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1320,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 1
     },
     {
@@ -1275,9 +1331,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "recentCount": 4
     },
     {
       "id": "latam-fintech-hub",
@@ -1286,8 +1342,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1353,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 6
     },
     {
@@ -1308,8 +1364,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 7
     },
     {
@@ -1319,8 +1375,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 0
     },
     {
@@ -1330,9 +1386,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
+      "recentCount": 9
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1397,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1408,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1419,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-23T22:11:10.213Z",
-      "lastSuccessAt": "2026-10-23T22:11:10.213Z",
+      "checkedAt": "2026-10-24T00:42:14.306Z",
+      "lastSuccessAt": "2026-10-24T00:42:14.306Z",
       "recentCount": 7
     }
   ]
