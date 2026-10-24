@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-24T18:09:43.158Z",
+  "generatedAt": "2026-10-24T20:49:47.871Z",
   "stories": [
+    {
+      "id": "f05c731c55ef004758a6",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "¿Cuáles son las cooperativas autorizadas en Ecuador?: Cómo consultar el listado oficial de la SEPS",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQclBkSzJhazBnN0VRYVQxcERYbVlfNHV0NVk0LVFPcW5PVFRKUnZ0SmZTSlpmXzRqZU1GdENUcE5iVkdjQkRrMFBsVDhZdVJyVFRsOHY3S19VbVY0SVNjQ050UHluaWJBQ2oxaHEzOWREWkV4Nk5wbS1BRXJjcTlINzNzamw5c3dLOHR4d3FwVFVPMnNVVHRoNVo2T01Ub2p1ZTdWT2ZXTmZfT1hYV1ZIYTBXY09lODF4dzE4SllocDE2TjgxZ2J2N2ZJVGk3OGFRZjdvVGRrRy00YnRIM3RZLUdaOFdEZTFBdF9yRFNn0gGCAkFVX3lxTFBSTmoza1JnOGdTNGRyaWk1NVhCS2tqcV82bXFibVFWUl8tYzU3a0ZJWW5mbzZWWVNQMmNnVkVXR3lVc3hzWjJRM1M4a3hCTFc3bzRJMlpZUDh3SEpaS3RpMzd2bFM0TnZXRUxOWlZkVDhIX0RxcnpIYkFGaTNTeTZsUlBNTmhuNUZBUnl2SXhrWEpBNDFIaVFoazZQWXlRdmNEWGpmWWwxNl9zdzI1SjB1UkhDRlBpSHRBNHo3S1ZpdnVIbXA2WmhvMm42QllBZk9Fdkgyc2pQSGY4cmdSeUp3WjFFNXJDaWFuTW1xS19VbkprdkJDZlB0YzMzbzFUaldoZw?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-24T16:29:00.000Z"
+    },
     {
       "id": "3c472524638291260bbe",
       "sourceId": "regulatory-news",
@@ -143,20 +157,6 @@
       "publishedAt": "2026-10-23T19:51:13.000Z"
     },
     {
-      "id": "7a51469160ae6731b564",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Belvo y dLocal se alían en México para llevar la domiciliación bancaria a más empresas y facilitar los pagos recurrentes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPcUJtSDFxU1hJTGtSQmpiZ0hVeFozejhDbmoyQlpZYS1wb3l0OVYxbjEycFVGMWdNTnZLOV80b3ZTQk10NDB0QjhENlhNTE5Nd0J1bkFyckozb2tUdkE3REdXc2pWcUJCUWlERGU3SVZuODFTZm9SdFJzUUpPbzZOTlZrNUZfckVraDh4MnBIazZ4eV9BMTRHNENTRVVaNndxV3g5YTRBRElzSll3V2xFd1dqcDZTVnZvMmZTc21iajVaT0RYNmNFajZQUU9aY1ZuYnVLU2hKNGNLRXdlb2NpLUNPeGQ3Q0t2aV9Vb25n?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-23T17:21:01.000Z"
-    },
-    {
       "id": "57dadca25988f9adfceb",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -241,20 +241,6 @@
       "publishedAt": "2026-10-23T05:01:22.000Z"
     },
     {
-      "id": "42e1dc5b4ac3b1ebe7ee",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Geopagos analiza el futuro de los pagos en Latinoamérica: interoperabilidad y nuevos jugadores en CLAB 2026",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWFJOLS1uWXFRZjVuVGhGeXpMekJWMUZoS0NMekZIVmFvcVEySE1ael93VktNbjFYb2ljalV4eVNCTERRVExmN1FUSVcwU0JHOV83a21BdklVX1pRU01JeFVXOXhRR3llZTR0ZnJDbGpMaXVxdUROdUV2Q016N3MzRG1hdDk4cTdUa0ZnMkh4UUhQTVVtVmVBM1Z4MXNscllJODFtU0pULXlGelBqRFlOU1lXRG1hRHh3VzA1VWlLemFEX0EtVHM3UC1reEdHVlcwNWlOTzVuTjdwVFE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-23T01:18:28.000Z"
-    },
-    {
       "id": "4dcff2026bcae5b73d63",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -304,20 +290,6 @@
       "title": "Belvo y Dock se alían para integrar datos de empleo al análisis de crédito en Brasil",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzc0TkRyWXQ4X1hCX3BjWlZ4MUVHU3R0ZV9DOGhvTzJLTzhacGYtZ0RmZEpPN3VrWEJIY1JHS2xpZm93UTJpQldqdmtpbTFQRGRuYWNpOU95Rng0QW9FTnR4Z01tYUJhSVFiZTRfSG94a2hoaWRVdDJNR1RkV2NrRURVcXNLeGZYVG1hRm1JS3JjVEJDX0dvS1h1NE02eGxHRUlVWFlxa1N6ckV5YV9JZnJtLUVmV0daOGkySGRn?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T17:07:53.000Z"
-    },
-    {
-      "id": "23b3f267540417a0ab10",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago permitirá comprar y vender acciones en Argentina desde su plataforma en los próximos meses",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUlBIZjJvUEdvSEJVQXRwbG1rNFFMSEY0bWxUdTRNSlFFeGZKM1NxTkQwYmZKc20tblE0b25hTzRJZ1ZzSlVSWnVEbjVxaWhBZWt5Q2VPVGU5ZWxTR3ZBUlV1QTY3TmpQNnlPb085X2xlYWdvdkxOWkw1RjJiWEktbkhxajlZdnVrTUFVcVo4N3h0S2lQZHdXdkJab1pibHViQ0NpWThnVFlYSVNRbU9rWnpWZDE4M1lYR3NleTdCWm56aUVjaUtyZS1VdENhbEtpVEViM0pZMA?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -409,6 +381,34 @@
       "publishedAt": "2026-10-21T20:44:37.000Z"
     },
     {
+      "id": "f32eedf7a50c415610b8",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Bold obtiene financiación de US$ 11,3 millones con BBVA Spark en Colombia para ampliar el crédito a comercios",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOSGtCQ2p2SDRVRU1QRHp5WGllc3dOSmptdWtRVWYwRE1vWFhzT2ZIT204dFF2T25leE5yUzNPZlRYNnZQQVN3ekNVbnNkOF9MQmFMWGpiMGJ1ZVk3a0FtSzQzRHBTUDc2NkNjcVRPd0xQR0pPWVJjR1UwRW5razZYRW9USmVqdk0yYzNSckNFTHVMMURVNmNNS1pubGJuUmszNWNGYV9mUGNIdWVlN1BzbVFXbG5STWJ1RnFpT2xMalpfaG1MZDhVMFVtR01zVy0weFpManBjNmZPY2NXQmtqVkRfOG9Tb19r?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-21T20:07:36.000Z"
+    },
+    {
+      "id": "e1cbf16f3238914eb376",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Kira lanza Agentic POBO, una solución para realizar pagos en el exterior a nombre de terceros mediante agentes de IA",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNRm9ROC0xUi1fbVZxYnBwRUhESHFDSGdJYmdiZ28tN2MteE85bDkxQ19KN2ZBRVBadFFTUjlhckc4TUtZd2kxLWlBdGxaS3NDZnlYeFBUbDhQazJrbXFjb2wzazlndHNTZ080c3E3UlZUQXlveUNOc2RPanFKY3p5Z0l3X3JGUlM3N0NYd25hQVdtTmlmN0d6NldiZGswNXVRM1FuVE1mTmhSeXBYREhuakdkZW4tb2VZQ1U4T3RGbFhFdFJtd1JPMklvdGcxa0VmVUw3aEw3NFhXZ0M5RVQ5NGc3ME5jZmpGZDlfYVlQcGtoZw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-21T16:54:36.000Z"
+    },
+    {
       "id": "95d7056e3987e111bdd1",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -421,6 +421,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-21T16:05:00.000Z"
+    },
+    {
+      "id": "e2168aba748ca06df84c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Paytech argentina Rebill cierra una ronda de inversión de US$5,4M para simplificar los pagos internacionales en la región",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPakZKWC1OR0xnWXN3bG5rVFhBSkpjQ3ppc3RGaHdoMi1iWGFZNmZXRXIwejBrX3VHc0plR3hIVW8xeFp6RDVTc0ZQS0tyU3NzUFJZRG1lRXFVUTRqSnFaaXRCOXFBb1VVYlBfR0J4T3M3djFiR2hOU1JSTDV3d3pDb0IwaWZMZjI3alpHbkVmLWxHNzQwcTdjN0puSHAyYlQ0ODNab1JMMmFWM2g4d3Z0S09ubElUSTBoYUZrSEpIRl9xVXJDVzNjY2pXSnQzU1puMWNXVHZRc3JXaHByWjItZElqcHM?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-21T14:26:26.000Z"
     },
     {
       "id": "bf5715dec45892a35ba6",
@@ -1243,9 +1257,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
+      "recentCount": 12
     },
     {
       "id": "bce-junta",
@@ -1254,8 +1268,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 0
     },
     {
@@ -1265,8 +1279,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 8
     },
     {
@@ -1276,8 +1290,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 6
     },
     {
@@ -1287,8 +1301,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 1
     },
     {
@@ -1298,8 +1312,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 0
     },
     {
@@ -1309,8 +1323,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 0
     },
     {
@@ -1320,8 +1334,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 2
     },
     {
@@ -1331,8 +1345,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 4
     },
     {
@@ -1342,8 +1356,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 8
     },
     {
@@ -1353,8 +1367,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 6
     },
     {
@@ -1364,8 +1378,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 7
     },
     {
@@ -1375,8 +1389,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 0
     },
     {
@@ -1386,8 +1400,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 8
     },
     {
@@ -1397,8 +1411,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 12
     },
     {
@@ -1408,8 +1422,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 8
     },
     {
@@ -1419,8 +1433,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-24T18:09:43.158Z",
-      "lastSuccessAt": "2026-10-24T18:09:43.158Z",
+      "checkedAt": "2026-10-24T20:49:47.871Z",
+      "lastSuccessAt": "2026-10-24T20:49:47.871Z",
       "recentCount": 7
     }
   ]
