@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-25T19:37:19.265Z",
+  "generatedAt": "2026-10-25T22:33:22.996Z",
   "stories": [
+    {
+      "id": "0da617f7864cb8e93aac",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Kalshi Pitches Banks on Inflation-Related Futures Market",
+      "excerpt": "Kalshi is reportedly readying the launch of a futures market tracking inflation metrics. The company, known primarily for its prediction markets, is aiming to launch the new exchange-traded futures offering in December, Bloomberg News reported Friday (Oct. 23), citing sources fam",
+      "url": "https://www.pymnts.com/economy/markets/2026/kalshi-pitches-banks-on-inflation-related-futures-market/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-25T21:53:49.000Z"
+    },
     {
       "id": "f05c731c55ef004758a6",
       "sourceId": "ecuador-news",
@@ -127,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-23T22:47:35.000Z"
-    },
-    {
-      "id": "722719b99263210315bc",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "LianLian Taps PayPal and Venmo to Speed Up Cross-Border Payouts",
-      "excerpt": "Cross-border payments firm LianLian Global’s social commerce, marketplace and eCommerce clients can now send payouts to PayPal accounts globally and Venmo accounts in the United States, the company said in a Thursday (Oct. 22) press release. The capabilities are enabled by LianLi",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/lianlian-taps-paypal-venmo-speed-up-cross-border-payouts/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T21:44:07.000Z"
     },
     {
       "id": "7a51469160ae6731b564",
@@ -1201,8 +1201,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 11
     },
     {
@@ -1212,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 7
     },
     {
@@ -1234,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 5
     },
     {
@@ -1245,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 7
     },
     {
@@ -1333,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 0
     },
     {
@@ -1344,8 +1344,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 7
     },
     {
@@ -1355,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T19:37:19.265Z",
-      "lastSuccessAt": "2026-10-25T19:37:19.265Z",
+      "checkedAt": "2026-10-25T22:33:22.996Z",
+      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
       "recentCount": 7
     }
   ]
