@@ -1,7 +1,119 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-26T06:13:36.549Z",
+  "generatedAt": "2026-10-26T13:07:12.747Z",
   "stories": [
+    {
+      "id": "d01df8353c7e2b2c61c2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Electrum Wallet Bug Tricks Users Into Signing Over Payments",
+      "excerpt": "A flaw in bitcoin software wallet Electrum reportedly allowed cybercriminals to dupe users into signing over payments. As CoinDesk reported Monday (Oct. 26), Electrum revealed this vulnerability over the weekend, saying some servers had begun exploiting it. Developers had gotten ",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/electrum-wallet-bug-tricks-users-into-signing-over-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T12:58:49.000Z"
+    },
+    {
+      "id": "0cbc2c6bc3da7510a3c4",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "War, Shutdowns, and Licensing Reshape MENA’s $443 Billion Crypto Economy",
+      "excerpt": "Summary MENA’s crypto economy was essentially flat at $443.3 billion in the 2026 reporting period, a 1.4% decline that tracks…",
+      "url": "https://www.chainalysis.com/blog/middle-east-north-africa-crypto-adoption-2026/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T12:55:36.000Z"
+    },
+    {
+      "id": "df6f47dbd358976353b8",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "NextGen Nordics 2027: Who controls the future of payments?",
+      "excerpt": "Registration is officially open for NextGen Nordics 2027, as the leading banking and payments event returns to Stockholm for its 10th anniversary.",
+      "url": "https://www.finextra.com/newsarticle/48643/nextgen-nordics-2027-who-controls-the-future-of-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T11:00:00.000Z"
+    },
+    {
+      "id": "5a53d32c92b266c51d55",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "Seguros Azteca: cuando las exclusiones ponen límites a la cobertura antifraude",
+      "excerpt": "El seguro contempla coberturas para el fraude en línea, el robo de identidad y la extorsión cibernética. Su director explica por qué entregar las claves podría estar cubierto en caso de extorsión, aunque la póliza excluye pérdidas por revelarlas ante engaños.... Leer más... La en",
+      "url": "https://iupana.com/2026/10/26/seguros-azteca-exclusiones-ponen-limites-a-cobertura-antifraude/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-26T09:00:04.000Z"
+    },
+    {
+      "id": "b9ab084fd0212964524f",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Shoppers Emerge as Distinct UAE Customer Segment",
+      "excerpt": "A merchant can add another digital shopping channel without necessarily changing the customer it serves. Artificial intelligence (AI) shopping presents a different reality, as the consumers using it behave differently from the average shopper. UAE consumers who used AI in their m",
+      "url": "https://www.pymnts.com/commerce/ecommerce/2026/ai-shoppers-emerge-as-distinct-uae-customer-segment/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T08:01:18.000Z"
+    },
+    {
+      "id": "60a1327ca11e90dc12e2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Retailers See Declined Payments but Miss the Second Chance to Save the Sale",
+      "excerpt": "Commerce firms can often see a payment fail. The opportunity lies in what they can do next. The PYMNTS Intelligence report “How These Industries Are Turning Payments Failures Into Recovers,” the October edition of The Orchestration Advantage Series, found that commerce companies ",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/retailers-see-declined-payments-but-miss-the-second-chance-to-save-the-sale/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T08:00:58.000Z"
+    },
+    {
+      "id": "de7c016990735cfbd787",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Parents Split on What Makes Buy Now, Pay Later Options Attractive",
+      "excerpt": "Pay later providers competing on monthly payment size, total cost and interest-free terms face different definitions of an attractive offer — even among households with children. Monthly payment amount is the leading consideration for 34% of married parents, according to PYMNTS I",
+      "url": "https://www.pymnts.com/bnpl/2026/parents-split-on-what-makes-buy-now-pay-later-options-attractive/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T08:00:01.000Z"
+    },
+    {
+      "id": "792561ed4a253e439fb1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Agents Take on Healthcare’s Paperwork So Doctors Can Focus on Patients",
+      "excerpt": "This week The Prompt Economy focuses on healthcare. It’s here that agentic AI is affecting payments, research, care protocols and the patient experience. It’s early days, but as you will see, progress is accelerating. So is identifying the pain points in healthcare and their solu",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-agents-take-on-healthcares-paperwork-so-doctors-can-focus-on-patients/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T08:00:00.000Z"
+    },
     {
       "id": "310a5765a1cad1dac733",
       "sourceId": "finextra-payments",
@@ -29,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-25T23:54:44.000Z"
-    },
-    {
-      "id": "0da617f7864cb8e93aac",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Kalshi Pitches Banks on Inflation-Related Futures Market",
-      "excerpt": "Kalshi is reportedly readying the launch of a futures market tracking inflation metrics. The company, known primarily for its prediction markets, is aiming to launch the new exchange-traded futures offering in December, Bloomberg News reported Friday (Oct. 23), citing sources fam",
-      "url": "https://www.pymnts.com/economy/markets/2026/kalshi-pitches-banks-on-inflation-related-futures-market/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-25T21:53:49.000Z"
     },
     {
       "id": "f05c731c55ef004758a6",
@@ -493,20 +591,6 @@
       "publishedAt": "2026-10-20T14:03:00.000Z"
     },
     {
-      "id": "8332a8f2a7a98517fbbc",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa pilots AI agent payments between buyer and supplier platforms",
-      "excerpt": "Visa has joined forces with Bill and Billtrust to launch the first live pilot to enable trusted AI agents to initiate and complete approved buyer invoice payments end-to-end through supplier portals.",
-      "url": "https://www.finextra.com/newsarticle/48610/visa-pilots-ai-agent-payments-between-buyer-and-supplier-platforms?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T13:00:00.000Z"
-    },
-    {
       "id": "d138356cf27287a16330",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -701,20 +785,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-15T10:04:00.000Z"
-    },
-    {
-      "id": "c3b898db331c6623a187",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pibank Perú, la apuesta cross-sell interna del Banco Pichincha",
-      "excerpt": "La entidad ingresa al mercado peruano con una cuenta de depósito para captar fondos y mejorar la colocación de otros activos del grupo, un modelo ya probado en Colombia, España y Estados Unidos. ... Leer más... La entrada Pibank Perú, la apuesta cross-sell interna del Banco Pichi",
-      "url": "https://iupana.com/2026/10/14/pibank-peru-apuesta-cross-sell-interna-banco-pichincha/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-14T13:00:04.000Z"
     },
     {
       "id": "8da3318488d836ce1c4b",
@@ -1093,34 +1163,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-28T07:00:00.000Z"
-    },
-    {
-      "id": "1f18ad770b2d4aac5283",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador marca un hito en América Latina al registrar una de las tasas más altas de pagos sin contacto",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQazFPTXNBeF9qbndkZXNOMmMyeVpwbFJNTFRmaGZpRzJJZEF1Qm5GT0pucnRBY09YZ3dwTk0wSkFWSWI2YlNZSHd5dlc4cloxVnU3bG15VlZ4aWhfaDhmNm5BZm1ONF9WREpOVW9IU0FSbWk4eUZ2WkN0Q1BKeWYwNVc5ZXpCY0NmLXhUODltMjh2VnhpNmpFU0x5XzRGOFQ0NnZSWkJrT1R6Y1k?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-26T07:00:00.000Z"
-    },
-    {
-      "id": "bc98479a46219adb7a6d",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nubank estaría en negociaciones para comprar Monzo por hasta 10 mil millones de libras esterlinas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNcThaS3ZLQlpwcVNtbkJSQmthSDlZX2NlSHJKQ3R0ZTI0eWFmTnVuMVdBOG1FYVVxbmRtdHF2S0hhNlQzYldhbFNvdjVvSS1LNE1GczJDZWJvV05ZSVhBUEhYTWNIamRtbVNCU0JabkZaQzBWa09yU3lzZWlVZ1ljNVVDR2xuX2s3b3lKekNKWVFQNjVTZThjMFZnOWlaVmRtZFppVW5BYzktVkdPMzE2ZUdfQ2Rfb016bmg2bFY0UGF1MVAyVl9iZGhpQmFvUW9NMHRjRtIB6AFBVV95cUxNdGd3VXU4WWJxdFNZQUNUb25rSk1RY1JBWENyUHZxQ3BSMzhaT1hBN1FrRmRMQXhQYi1KSWhEemdyZURLMV93dVJySWRNZXhMeTB4WllUaGdSZjAweVM2VmR0QjJ4OFloMVhWMG5TUTI4alp2bVZxUUc3YkE1T2ZwUGZ1TWozdzVyeXFBRGhzRFd2NGVCTUhMelBTOUFwUzU5aVgwS1Z1SUlDR1NOOEdQT1BNcjh2WTJaelk3cURVMkhfZWVTMXlEd2NrakdsV2NZMGJaS2hOWE1zTjR2WC0yZ3Z2TE1HVmhz?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-26T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1130,10 +1172,10 @@
       "category": "ecuador",
       "kind": "news",
       "url": "https://news.google.com/",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
-      "recentCount": 11
+      "recentCount": 10
     },
     {
       "id": "bce-junta",
@@ -1142,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1195,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 7
     },
     {
@@ -1164,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 5
     },
     {
@@ -1175,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 1
     },
     {
@@ -1185,8 +1227,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
       "recentCount": 0
     },
@@ -1196,8 +1238,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
       "recentCount": 0
     },
@@ -1207,8 +1249,8 @@
       "category": "regulacion",
       "kind": "news",
       "url": "https://news.google.com/",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
       "recentCount": 2
     },
@@ -1219,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 4
     },
     {
@@ -1229,8 +1271,8 @@
       "category": "latam",
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
       "recentCount": 8
     },
@@ -1241,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 6
     },
     {
@@ -1251,10 +1293,10 @@
       "category": "latam",
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
-      "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
+      "status": "error",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
       "lastSuccessAt": "2026-10-26T06:13:36.549Z",
-      "recentCount": 7
+      "recentCount": 6
     },
     {
       "id": "finextra-latam",
@@ -1263,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 0
     },
     {
@@ -1274,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
       "recentCount": 8
     },
     {
@@ -1307,9 +1349,9 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-26T06:13:36.549Z",
-      "lastSuccessAt": "2026-10-26T06:13:36.549Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-26T13:07:12.747Z",
+      "lastSuccessAt": "2026-10-26T13:07:12.747Z",
+      "recentCount": 8
     }
   ]
 }
