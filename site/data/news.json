@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-25T22:33:22.996Z",
+  "generatedAt": "2026-10-26T01:10:35.312Z",
   "stories": [
+    {
+      "id": "310a5765a1cad1dac733",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Riksbank reignites e-krona debate",
+      "excerpt": "With cash usage down, a digital euro on the horizon and stablecoins gathering momentum, Sweden's central bank has reignited a debate on whether the country should roll out its own e-krona.",
+      "url": "https://www.finextra.com/newsarticle/48642/riksbank-reignites-e-krona-debate?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-26T00:01:00.000Z"
+    },
+    {
+      "id": "0785362c69eb4d84f3ac",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Block’s Voice AI Wins Praise and Triggers Scam Concerns",
+      "excerpt": "Payments company Block has introduced an artificial intelligence model trained solely using human conversation. Dessa, as the model is known, learned to hold real-time conversations just by listening, Block said in its announcement Friday (Oct. 23). “As far as we know, Dessa is t",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/blocks-voice-ai-wins-praise-and-triggers-scam-concerns/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-25T23:54:44.000Z"
+    },
     {
       "id": "0da617f7864cb8e93aac",
       "sourceId": "pymnts",
@@ -45,88 +73,18 @@
       "publishedAt": "2026-10-24T16:29:00.000Z"
     },
     {
-      "id": "ac56833bcb1f9f4cc4d5",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "bf6080ab230ff49f4ead",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
       "kind": "news",
-      "title": "American Express Expands Travel Platform With Airbnb Integration",
-      "excerpt": "American Express and Airbnb have announced a partnership that will offer eligible American Express U.S. Card Members more choices of places to stay when traveling and additional ways to earn points. With this partnership, eligible U.S. Card Members can book stays with Airbnb thro",
-      "url": "https://www.pymnts.com/transportation/travel-payments/2026/american-express-expands-travel-platform-with-airbnb-integration/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-24T00:59:11.000Z"
-    },
-    {
-      "id": "af656910af04d14bf1be",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fiserv Appoints Mastercard Senior Strategic Advisor Raj Seshadri to Board",
-      "excerpt": "Fiserv has announced that Raj Seshadri, senior strategic advisor to the CEO of Mastercard, will join Fiserv’s board of directors and enhance its collective expertise around uniting commerce and finance. She will join the board Nov. 30. Seshadri has been with Mastercard for more t",
-      "url": "https://www.pymnts.com/personnel/2026/fiserv-appoints-mastercard-senior-strategic-advisor-raj-seshadri-to-board/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-24T00:36:14.000Z"
-    },
-    {
-      "id": "1e0b2c8efe8fef707cb4",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Customers Bank Uses AI to Close Commercial Loans in 7 Days",
-      "excerpt": "Commercial loans can take weeks to close, and Pennsylvania-based Customers Bank put its typical wait at 30 to 60 days. A pilot of its artificial intelligence (AI)-powered process closed select commercial loans in seven days, the bank said in July in its Q2 earnings release. Custo",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/customers-bank-uses-ai-to-close-commercial-loans-in-7-days/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-24T00:17:59.000Z"
-    },
-    {
-      "id": "747d27f1f69b8c05dc97",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Polygon Secures US Money Transmitter Licenses",
-      "excerpt": "Polygon has completed its acquisition of Coinme, making Polygon Open Money Stack a U.S.-regulated payments platform, the company said in an Oct. 14 blog post. “This is a huge step for Polygon,” the company said in the post. “We’ve spent years building infrastructure that moves mo",
-      "url": "https://www.pymnts.com/blockchain/2026/polygon-secures-us-money-transmitter-licenses/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T23:41:22.000Z"
-    },
-    {
-      "id": "67cf9979cf5791834b7e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Sezzle Pursues National Bank Charter to Add FDIC-Insured Deposit Accounts",
-      "excerpt": "FinTech company Sezzle has begun the formal charter application process to establish a national bank that would offer a broad range of banking products and services, the company said in a Thursday (Oct. 22) press release. Sezzle filed applications with the Office of the Comptroll",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/sezzle-pursues-national-bank-charter-to-add-fdic-insured-deposit-accounts/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T23:18:02.000Z"
-    },
-    {
-      "id": "bc5de5a7d80cefd3c98a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "eInvoicing Mandates Turn Bills Into B2B Payment Data",
-      "excerpt": "European eInvoicing mandates seek to standardize how businesses deliver the information used to approve and collect payments. Invoice amounts, tax details and transaction references enter defined fields that accounting software reads and processes, establishing a common basis for",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/einvoicing-mandates-turn-bills-into-b2b-payment-data/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T23:03:54.000Z"
+      "title": "Diez bancos privados de Ecuador concentran el 98% de las utilidades obtenidas en este 2023: esta es la lista",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNQm5ybm1nYXdkUkU3TF9lOTJJMEZVcTc0dGNLZVc5bnN1TGtPaFMyWGU0ZVF5a2I1a1RBSElFWFVGZHhFbldtNE1NWk9jNzBydFFQMVdJczZiRnF0dWhWbUlZemJLdmNzdGQ3eTJVTjVEa1dNbkQ1OVptQ002QWtVS3E3ZENqVlVnOHJPNExOejZjQ3RYNjBnWVRLSzNxWmZzdlNDT1FCN3dHY0pHRGRnVjJSdmItdG1iX2VKblZKLTF0QU83N0RxazF1ZHVzN2fSAeMBQVVfeXFMTjNfOGZFdXpFOXFIUjhQMlExM1FlcS1HSUhISXFBQTd2TEJXWnRDNmYyZnBfRFBIR0lLUVNiOUJwaWJLU21rczlweDNYZjNUZnd5Q2wzTWhJTHJoSWxQdS0tZzhIck81elI3THA0VDNCbUlOc1hXM0x3UUUyS1FzYXJzS2JHUEpLUGRoZEhuZER0TDhmR1hiUE5ZYl83RTZ5WG16amE2YlA5dERlX01Sd0didUltZXBDSk1QWUN2eVluQlJ3S2VTSURUNmpiVGxOU2J6UlRQcGRnUERjUmE3TkdZZXM?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T23:05:00.000Z"
     },
     {
       "id": "333f04e2b81c725182b7",
@@ -563,20 +521,6 @@
       "publishedAt": "2026-10-20T13:00:00.000Z"
     },
     {
-      "id": "756c8c7e41c9eb358ce9",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Google Cloud outage disrupts multiple bank sites",
-      "excerpt": "HSBC, Revolut, Lloyds and Bank of Scotland are among some of the banks reported to have been affected by a major outage at Google Cloud",
-      "url": "https://www.finextra.com/newsarticle/48615/google-cloud-outage-disrupts-multiple-bank-sites?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T12:37:00.000Z"
-    },
-    {
       "id": "d138356cf27287a16330",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -603,6 +547,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-19T15:37:00.000Z"
+    },
+    {
+      "id": "979761a1c4fd9f669a81",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T14:25:43.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -827,20 +785,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T12:00:00.000Z"
-    },
-    {
-      "id": "dfd466b934cee9223658",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bancos tradicionales VS. Neobancos: la rentabilidad que ofrecen en sus cuentas de ahorros",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQdmpVcjZPSzJIdVRJUjVoTktCM2NvVmE3b3VjQUlMa24teGdyc1lMS0ZoLUVxTTZaZ3pGYkJsNzVWU19IMFU1V0R6ZzhXNkFvVUNMUHd4cENTSDR2aVRCVVpDZ3paU0s5NlBhYm04cGxkcDFESm5BR3h5WWF2NFI1SDZ0MHlwOExFRzBEWW1qeU9tektmbWZEZEItYmVPSVdkZGxxd2k1U09ZQ1RWb0p6REZ6MVBGd284SHhla0NybFg5MThhWmRCVHJXUGY1YmlsUEJaYzc1QXlLQdIB7gFBVV95cUxNSXNvSVRfNFd5SzVrZWtySTg1SnYydDUxU3RHRjlfTE40ZXNCUDJZakdlRkxUcFVoNnIza2Q4ajVoa25iQWUtVjc0ejhFdWlCUXExOW5PZlUwZlhvX0hMcURPa3NOUk9KMUJaZVQ2VnFSVDN6SEJnVV85M2NBbC1Vc0ZFRWRQZXMzWDNJalBNdU9xaVFJb0VUbWRMWEFVVEp6RDFaVjVWY3FIdTYybzhUMlpzTUNWVFpZc1NkcnpoN1Z0dmU4YzNWbENwVjhaOVF2cng5SFhsTnJqRGJIenZncEtIY2dLdWNiTnJSeWt3?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T07:00:00.000Z"
     },
     {
       "id": "071229b253be86c19dba",
@@ -1201,9 +1145,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
-      "recentCount": 11
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
+      "recentCount": 12
     },
     {
       "id": "bce-junta",
@@ -1212,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 7
     },
     {
@@ -1234,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 5
     },
     {
@@ -1245,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 7
     },
     {
@@ -1333,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-25T22:33:22.996Z",
-      "lastSuccessAt": "2026-10-25T22:33:22.996Z",
+      "checkedAt": "2026-10-26T01:10:35.312Z",
+      "lastSuccessAt": "2026-10-26T01:10:35.312Z",
       "recentCount": 7
     }
   ]
