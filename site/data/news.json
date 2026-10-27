@@ -1,90 +1,90 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-27T10:34:34.440Z",
+  "generatedAt": "2026-10-27T16:39:04.897Z",
   "stories": [
     {
-      "id": "d4f7084418381d6423e8",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "6d05c9ebbb66cae360c4",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Fraudsters Leave Patterns, and AWS Wants AI to Follow Them",
-      "excerpt": "Fraud attacks can now be assembled with commercially packaged software, distributed across accounts and devices, and altered faster than banks can rewrite a conventional fraud rule. “We’re seeing fraudsters leverage commoditized SaaS toolkits sold on dark web marketplaces to orch",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/fraudsters-leave-patterns-and-aws-wants-ai-to-follow-them/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T08:02:38.000Z"
+      "title": "Fintech colombiana FinMaq levanta US$ 6,5 millones en su Serie A para financiar maquinaria y equipos de pymes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVEc0YlJkQ3pvYnJzaHZLMnk5dG85clAzaGdBYmIxM3FHVjlvWFRnSlRURmw4UEtTc2xsRmVKSmNJaEt1NkdUUzNzYmVLald1Tl9jZUt3MHYxNGs1ajZ4MHdOcExjNFl4V21OWFJEMzA1OUtCSEZwbmUxQVVTQXVVTG10S1VjeGluN0VUeDQxWUh3bG96alFHN1FDU3k0SXpHUlA2cHRqRk5MUm5VR3pEU3hBc1lVODNqOWZJdXhOamJ0TWdqS1pIODQtVEZOZnFiY1lWcVJWa1ZUbU9EWHc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T15:24:38.000Z"
     },
     {
-      "id": "5e44a7ba2a53b04610ab",
+      "id": "f0aae7bcca40bedadc27",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Tungsten Automation Says Scale Will Keep Humans in the Payment Loop",
-      "excerpt": "Watch more: What’s Next in Payments With Tungsten Automation’s Emily Nash-Walker A company can automate routine supplier payments while requiring human approval for unusually large payments or transactions outside its normal markets. For Emily Nash-Walker, senior director of prod",
-      "url": "https://www.pymnts.com/back-office/next-gen-ap-automation/2026/tungsten-automation-says-scale-will-keep-humans-in-the-payment-loop/",
+      "title": "PayPal Advances AI Plans as BNPL Payment Volume Rises 25%",
+      "excerpt": "PayPal is preparing for artificial intelligence-driven purchases while working to accelerate checkout growth. “If you think about consumer agents buying from merchant agents, both will have to validate that this is a real consumer who can pay and a real merchant that has the prod",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/paypal-advances-ai-plans-bnpl-payment-volume-rises-25percent/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-27T08:01:55.000Z"
+      "publishedAt": "2026-10-27T15:18:04.000Z"
     },
     {
-      "id": "973ecd7e870c838ba06e",
-      "sourceId": "pymnts",
+      "id": "aacaf86097f2585775de",
+      "sourceId": "finextra-payments",
       "category": "pagos",
       "kind": "news",
-      "title": "Scams Gain 10 Percentage Points in Share of Fraud Dollars",
-      "excerpt": "Banks have an opportunity to strengthen fraud protection by helping customers recognize when someone is persuading them to send money to a criminal. That’s a central finding of “Scams Get Personal: Why Banks Pay More to Fight Fraud,” the September 2026 edition of PYMNTS Intellige",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scams-gain-10-percentage-points-in-share-of-fraud-dollars/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Ripple secures national bank charter; inks deals with BNY and Robinhood",
+      "excerpt": "Digital asset infrastructure firm Ripple has been granted approval to establish a national trust bank and struck separate partnerships agreements with BNY and Robinhood.",
+      "url": "https://www.finextra.com/newsarticle/48655/ripple-secures-national-bank-charter-inks-deals-with-bny-and-robinhood?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-27T08:00:53.000Z"
+      "publishedAt": "2026-10-27T15:16:00.000Z"
     },
     {
-      "id": "d1d80a512eaf5a4e82cf",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "7b8b9e1a52ed71516e25",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
       "kind": "news",
-      "title": "Backbase Helps Banks Deploy Agentic AI With Delivery Factory",
-      "excerpt": "Backbase has introduced a tool that pairs banking teams with specialized artificial intelligence (AI) agents. The banking operating system provider’s Delivery Factory lets a bank’s delivery team work with AI agents “from the first agreed requirement to working code,” Backbase sai",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/backbase-helps-banks-deploy-agentic-ai-with-delivery-factory/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Ripple secures national bank charter; inks deals with BNY and Robinhood",
+      "excerpt": "Digital asset infrastructure firm Ripple has been granted approval to establish a national trust bank and struck separate partnerships agreements with BNY and Robinhood.",
+      "url": "https://www.finextra.com/newsarticle/48655/ripple-secures-national-bank-charter-inks-deals-with-bny-and-robinhood?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-27T08:00:24.000Z"
+      "publishedAt": "2026-10-27T15:16:00.000Z"
     },
     {
-      "id": "0147ca061bab4aa380e0",
+      "id": "fa25c694520031bd6dc3",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Gen X Wants More From Familiar Payment Tools",
-      "excerpt": "Generation X is giving payments providers a clear signal to make payments more flexible, but keep them familiar. This cohort is not particularly interested in the rapid adoption of new methods, but instead largely desires to keep using the same payment tools even as their financi",
-      "url": "https://www.pymnts.com/news/payment-methods/2026/gen-x-wants-more-from-familiar-payment-tools/",
+      "title": "Ripple Gets OCC’s OK to Launch National Trust Bank",
+      "excerpt": "It has been a busy week so far for blockchain company Ripple. The company received regulatory permission to begin operating its own bank, Ripple National Trust Bank, according to a Monday (Oct. 26) press release, and on Tuesday (Oct. 27) announced new partnerships with BNY and Ro",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-gets-occ-ok-launch-national-trust-bank/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-27T08:00:06.000Z"
+      "publishedAt": "2026-10-27T14:11:39.000Z"
     },
     {
-      "id": "1ea4b780ae4ce337c630",
+      "id": "7f4ab5ff2bcf6e7a5162",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Truist Weighs Sale of Insurance Lender Afco Credit",
-      "excerpt": "Truist is seeking a buyer for specialty lender Afco Credit as the bank sharpens its focus on banking operations, Bloomberg reported Monday (Oct. 26), citing unnamed sources. Afco handles insurance premium financing, and Truist is unloading noncore lending businesses, according to",
-      "url": "https://www.pymnts.com/news/banking/2026/truist-eyes-sale-of-specialty-lender-afco-to-sharpen-core-banking-focus/",
+      "title": "Revolut’s Product Approvals Face UK Regulatory Scrutiny",
+      "excerpt": "British regulators are reportedly reviewing Revolut’s process for approving new products. The Bank of England’s Prudential Regulation Authority (PRA) issued what is known as a section 166 earlier this year to investigate risks surrounding the speed of Revolut’s product launches, ",
+      "url": "https://www.pymnts.com/news/banking/2026/revoluts-product-approvals-face-uk-regulatory-scrutiny/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-10-27T00:36:58.000Z"
+      "publishedAt": "2026-10-27T10:42:36.000Z"
     },
     {
       "id": "27134153053045ebe2f6",
@@ -451,20 +451,6 @@
       "publishedAt": "2026-10-22T17:07:53.000Z"
     },
     {
-      "id": "23b3f267540417a0ab10",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago permitirá comprar y vender acciones en Argentina desde su plataforma en los próximos meses",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQUlBIZjJvUEdvSEJVQXRwbG1rNFFMSEY0bWxUdTRNSlFFeGZKM1NxTkQwYmZKc20tblE0b25hTzRJZ1ZzSlVSWnVEbjVxaWhBZWt5Q2VPVGU5ZWxTR3ZBUlV1QTY3TmpQNnlPb085X2xlYWdvdkxOWkw1RjJiWEktbkhxajlZdnVrTUFVcVo4N3h0S2lQZHdXdkJab1pibHViQ0NpWThnVFlYSVNRbU9rWnpWZDE4M1lYR3NleTdCWm56aUVjaUtyZS1VdENhbEtpVEViM0pZMA?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T17:07:53.000Z"
-    },
-    {
       "id": "1ac32a7c9cdd89e0e34d",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -533,20 +519,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-21T20:44:37.000Z"
-    },
-    {
-      "id": "95d7056e3987e111bdd1",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa targets trust in business payments",
-      "excerpt": "Visa has introduced tools designed to bring trust and control to business payments.",
-      "url": "https://www.finextra.com/newsarticle/48629/visa-targets-trust-in-business-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T16:05:00.000Z"
     },
     {
       "id": "bf5715dec45892a35ba6",
@@ -728,7 +700,7 @@
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-10-19T07:37:40.000Z"
+      "publishedAt": "2026-10-19T07:00:00.000Z"
     },
     {
       "id": "b7c18c0c9d6cae95d07b",
@@ -927,20 +899,6 @@
       "publishedAt": "2026-10-08T10:50:00.000Z"
     },
     {
-      "id": "c53a5f8b1aa8526df1d7",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Circle, Ripple and Standard Chartered invest in OKX",
-      "excerpt": "Crypto exchange OKX has secured strategic investment from Circle, QRT, Ripple and SC Ventures at a $25 billion valuation.",
-      "url": "https://www.finextra.com/newsarticle/48543/circle-ripple-and-standard-chartered-invest-in-okx?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-06T18:02:00.000Z"
-    },
-    {
       "id": "0bc83eb1e84fdc5845d6",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -978,6 +936,20 @@
       "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
       "source": "Primicias",
       "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "8dec40f4bd0b7c6b852d",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
@@ -1159,9 +1131,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
+      "recentCount": 9
     },
     {
       "id": "bce-junta",
@@ -1170,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 5
     },
     {
@@ -1203,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 2
     },
     {
@@ -1247,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 4
     },
     {
@@ -1258,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 6
     },
     {
@@ -1280,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 6
     },
     {
@@ -1291,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T10:34:34.440Z",
-      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
+      "checkedAt": "2026-10-27T16:39:04.897Z",
+      "lastSuccessAt": "2026-10-27T16:39:04.897Z",
       "recentCount": 8
     }
   ]
