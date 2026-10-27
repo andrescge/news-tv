@@ -1,7 +1,77 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-27T05:05:04.841Z",
+  "generatedAt": "2026-10-27T10:34:34.440Z",
   "stories": [
+    {
+      "id": "d4f7084418381d6423e8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fraudsters Leave Patterns, and AWS Wants AI to Follow Them",
+      "excerpt": "Fraud attacks can now be assembled with commercially packaged software, distributed across accounts and devices, and altered faster than banks can rewrite a conventional fraud rule. “We’re seeing fraudsters leverage commoditized SaaS toolkits sold on dark web marketplaces to orch",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/fraudsters-leave-patterns-and-aws-wants-ai-to-follow-them/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-27T08:02:38.000Z"
+    },
+    {
+      "id": "5e44a7ba2a53b04610ab",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Tungsten Automation Says Scale Will Keep Humans in the Payment Loop",
+      "excerpt": "Watch more: What’s Next in Payments With Tungsten Automation’s Emily Nash-Walker A company can automate routine supplier payments while requiring human approval for unusually large payments or transactions outside its normal markets. For Emily Nash-Walker, senior director of prod",
+      "url": "https://www.pymnts.com/back-office/next-gen-ap-automation/2026/tungsten-automation-says-scale-will-keep-humans-in-the-payment-loop/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-27T08:01:55.000Z"
+    },
+    {
+      "id": "973ecd7e870c838ba06e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Scams Gain 10 Percentage Points in Share of Fraud Dollars",
+      "excerpt": "Banks have an opportunity to strengthen fraud protection by helping customers recognize when someone is persuading them to send money to a criminal. That’s a central finding of “Scams Get Personal: Why Banks Pay More to Fight Fraud,” the September 2026 edition of PYMNTS Intellige",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scams-gain-10-percentage-points-in-share-of-fraud-dollars/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-27T08:00:53.000Z"
+    },
+    {
+      "id": "d1d80a512eaf5a4e82cf",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Backbase Helps Banks Deploy Agentic AI With Delivery Factory",
+      "excerpt": "Backbase has introduced a tool that pairs banking teams with specialized artificial intelligence (AI) agents. The banking operating system provider’s Delivery Factory lets a bank’s delivery team work with AI agents “from the first agreed requirement to working code,” Backbase sai",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/backbase-helps-banks-deploy-agentic-ai-with-delivery-factory/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-27T08:00:24.000Z"
+    },
+    {
+      "id": "0147ca061bab4aa380e0",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Gen X Wants More From Familiar Payment Tools",
+      "excerpt": "Generation X is giving payments providers a clear signal to make payments more flexible, but keep them familiar. This cohort is not particularly interested in the rapid adoption of new methods, but instead largely desires to keep using the same payment tools even as their financi",
+      "url": "https://www.pymnts.com/news/payment-methods/2026/gen-x-wants-more-from-familiar-payment-tools/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-27T08:00:06.000Z"
+    },
     {
       "id": "1ea4b780ae4ce337c630",
       "sourceId": "pymnts",
@@ -43,76 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-27T00:01:00.000Z"
-    },
-    {
-      "id": "b946c5b77562c5f250d6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "First Internet Bank Bets AI Means More Loans, Not Fewer People",
-      "excerpt": "First Internet Bank of Indiana has cut compliance review times for Small Business Administration (SBA) loan applicants by 87% using AI agents, according to a case study from artificial intelligence compliance company Bretton AI. Reviews that took eight to 10 hours now take less t",
-      "url": "https://www.pymnts.com/news/banking/2026/first-internet-bank-bets-ai-means-more-loans-not-fewer-people/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T22:38:56.000Z"
-    },
-    {
-      "id": "b14c8bc6ae5cc2cd3186",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks Narrow Fraud Technology Divide but Deliver Uneven Results",
-      "excerpt": "Regional and community banks and credit unions surveyed by PYMNTS Intelligence now report behavioral analytics and artificial intelligence adoption approaching the levels seen with large banks, although their financial results remain uneven. The research underlying September’s “S",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/banks-narrow-fraud-technology-divide-but-deliver-uneven-results/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T21:59:35.000Z"
-    },
-    {
-      "id": "e4f67d86751de6336ca6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OpenAI and Anthropic Want the Junior Banker’s 2 a.m. Shift",
-      "excerpt": "Wall Street’s next generation of artificial intelligence companies is taking shape around three businesses, including those that own financial data, those that turn it into research and analysis, and those that control the proprietary content investors rely on to make decisions. ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-anthropic-want-junior-bankers-shift/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T21:06:39.000Z"
-    },
-    {
-      "id": "0c2d8e9b294aa4e553a5",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Citi Raises Savings Rates for Relationship Banking Clients",
-      "excerpt": "Citi’s new program that offers higher savings rates to reward clients who deepen their relationship with the bank went live Monday (Oct. 26). When announcing the program, Premium Boost, in a Sept. 24 press release, Citi said it adds enhanced savings rates to the other benefits it",
-      "url": "https://www.pymnts.com/news/banking/2026/citi-raises-savings-rates-for-relationship-banking-clients/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T20:33:44.000Z"
-    },
-    {
-      "id": "01d82ed5809dd640e96b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Court Orders Fed to Rewrite Debit Card Swipe Fee Rule",
-      "excerpt": "A federal appeals court has upheld a lower court ruling striking down the Federal Reserve’s 21-cent cap on debit card interchange fees. This latest decision was handed down Monday (Oct. 26) by a three-judge panel of the 8th U.S. Circuit Court of Appeals, affirming a ruling last y",
-      "url": "https://www.pymnts.com/legal/2026/feds-debit-card-swipe-fee-rule-quashed-by-appeals-court/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T19:56:49.000Z"
     },
     {
       "id": "23d60c0117e00929658f",
@@ -1159,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 8
     },
     {
@@ -1170,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 5
     },
     {
@@ -1203,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 2
     },
     {
@@ -1247,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 4
     },
     {
@@ -1258,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 6
     },
     {
@@ -1280,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 6
     },
     {
@@ -1291,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 0
     },
     {
@@ -1302,8 +1302,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 6
     },
     {
@@ -1313,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-27T05:05:04.841Z",
-      "lastSuccessAt": "2026-10-27T05:05:04.841Z",
+      "checkedAt": "2026-10-27T10:34:34.440Z",
+      "lastSuccessAt": "2026-10-27T10:34:34.440Z",
       "recentCount": 8
     }
   ]
