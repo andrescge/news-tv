@@ -1,7 +1,105 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T08:32:16.852Z",
+  "generatedAt": "2026-10-28T16:03:16.715Z",
   "stories": [
+    {
+      "id": "4232bc4c412f8e827fc2",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Adyen Adds 1,100 Tech and Sales Hires to Capture Growth Opportunities",
+      "excerpt": "FinTech platform Adyen expects to add as many as 1,100 specialized engineering and go-to-market roles this year to meet the needs of its existing commercial momentum and to capture growth opportunities, Interim Chief Financial Officer Hwa Tsao said Wednesday (Oct. 28) in prepared",
+      "url": "https://www.pymnts.com/earnings/2026/adyen-adds-1100-tech-and-sales-hires-to-capture-growth-opportunities/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T15:58:56.000Z"
+    },
+    {
+      "id": "1f6544f04c68ddde2ee5",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Google Reportedly Developing New International Payment Option",
+      "excerpt": "Google is reportedly developing a new travel payments capability for its digital wallet. According to a report Tuesday (Oct. 27) from the website Android Authority, the new Google Wallet capability would let travelers make QR-code-based payments overseas using the Alipay Plus net",
+      "url": "https://www.pymnts.com/news/cross-border-payments/2026/google-reportedly-developing-new-international-payment-option/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T15:34:47.000Z"
+    },
+    {
+      "id": "e09d8e71e7a5aafb3b51",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Businesses Stack Working Capital as Bank Credit Tightens",
+      "excerpt": "Businesses are using several forms of working capital to pay bills that previously could have been covered by customer receipts arriving earlier. Bank credit lines, corporate cards and supplier payment terms give firms different ways to finance the interval between purchasing goo",
+      "url": "https://www.pymnts.com/loans/working-capital/2026/businesses-stack-working-capital-bank-credit-tightens/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T15:33:03.000Z"
+    },
+    {
+      "id": "736c40421d5cfe61ac1b",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Firms object to share being part of OKX-ICE tokenised stock trading venture",
+      "excerpt": "A host of companies, including JPMorgan Chase, Goldman Sachs and Microsoft, have registered their objection to their shares trading on a planned tokenised platform developed by Nyse parent Intercontinental Exchange and crypto exchange OKX.",
+      "url": "https://www.finextra.com/newsarticle/48663/firms-object-to-share-being-part-of-okx-ice-tokenised-stock-trading-venture?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T14:51:00.000Z"
+    },
+    {
+      "id": "cdde3e4a9f85b2b7f86a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Is Changing How Banks Decide Who Gets a Business Loan",
+      "excerpt": "Before a company’s loan request reaches a room full of bankers, a computer may have already sized it up. Artificial intelligence tools now score borrowers, sort through financial statements and write first drafts of loan approval memos. In many cases, nobody at the bank formally ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-is-changing-how-banks-decide-who-gets-business-loan/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T14:40:42.000Z"
+    },
+    {
+      "id": "e891b1aef2b23eeeed43",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Zen.com and Mastercard expand Pay By Bank for merchants and consumers across Europe",
+      "excerpt": "European fintech Zen.com has enabled Pay by Bank experiences through Mastercard Open Finance, now supporting merchant payment acceptance and digital wallet top ups across nine target markets, Germany, Austria, Spain, Belgium, the Netherlands, Italy, Portugal, Ireland and Lithuani",
+      "url": "https://www.finextra.com/newsarticle/48659/zencom-and-mastercard-expand-pay-by-bank-for-merchants-and-consumers-across-europe?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T11:09:00.000Z"
+    },
+    {
+      "id": "bbb67c302a729b276622",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "El Banco Central de Perú aclara los límites contractuales de los adquirentes, pero expertos prevén retos en cláusulas de permanencia",
+      "excerpt": "El nuevo enfoque de supervisión para los aceptadores de pago define criterios contractuales para promover la multiadquirencia, pero fuentes consultadas creen que existen otras vías para mantener la dependencia entre adquirentes y comercios. ... Leer más... La entrada El Banco Cen",
+      "url": "https://iupana.com/2026/10/28/banco-central-peru-aclara-limites-contractuales-adquirentes-expertos-preven-retos-clausulas-permanencia/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-28T11:00:30.000Z"
+    },
     {
       "id": "da05291a5981c6a0bad3",
       "sourceId": "finextra-crypto",
@@ -31,34 +129,6 @@
       "publishedAt": "2026-10-28T08:02:01.000Z"
     },
     {
-      "id": "9b8483e8376886087ce0",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Businesses Believe in Payment Guarantees but Few Actually Use Them",
-      "excerpt": "Businesses have spent years investing in systems designed to determine whether a payment is legitimate. Fewer have invested in ensuring that a legitimate payment actually arrives. Just 13% of firms use payment guarantees, despite the PYMNTS Intelligence report “The Payment Guaran",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/businesses-believe-in-payment-guarantees-but-few-actually-use-them/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T08:01:07.000Z"
-    },
-    {
-      "id": "bcd2dd275ff8dfccd677",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Subprime Card Denial Rate Is More Than Two Times the Super-Prime Rate",
-      "excerpt": "Consumers seeking to build credit can face a difficult cash decision: How much money they can afford to set aside before using a secured card. That funding requirement is central to “Secured Credit’s Next Turn: Unlocking Growth With Dynamic Funding,” the March 2026 edition of PYM",
-      "url": "https://www.pymnts.com/consumer-finance/2026/subprime-card-denial-rate-is-more-than-two-times-the-super-prime-rate/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T08:00:14.000Z"
-    },
-    {
       "id": "fe3f346806db8022f4ae",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -73,54 +143,12 @@
       "publishedAt": "2026-10-28T08:00:00.000Z"
     },
     {
-      "id": "727522cc241852245f22",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Stripe Pay Targets Instant B2B Payments",
-      "excerpt": "Stripe now enables instant B2B transfers through a “stripe pay” plug-in, the company said in a Tuesday (Oct. 27) post on LinkedIn. “Find companies using their Stripe profile handle and send funds for free,” Stripe said in the post. “Available in the Dashboard and CLI.” Using the ",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/stripe-pay-targets-instant-b2b-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T01:34:37.000Z"
-    },
-    {
-      "id": "ecce77bd00a89470e573",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Robinhood Looks Beyond Crypto to Banking and Agentic Trading",
-      "excerpt": "Robinhood’s cryptocurrency revenue fell 55% in the third quarter, but much of the discussion on its earnings call Tuesday (Oct. 27) focused on where customers’ money might go next. CEO Vlad Tenev outlined a future built around everyday banking, payments sent as easily as a text m",
-      "url": "https://www.pymnts.com/earnings/2026/robinhood-looks-beyond-crypto-to-banking-and-agentic-trading/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T23:34:43.000Z"
-    },
-    {
-      "id": "91400855eada085b04c2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Priority Commerce Expands Sports Footprint With Bengals Ticketing Payment Deal",
-      "excerpt": "Priority Commerce will provide ticketing payment processing for the National Football League’s Cincinnati Bengals, the company said in a Tuesday (Oct. 27) press release. Priority Commerce has also become an official partner of the Cincinnati Bengals, meaning the company will rece",
-      "url": "https://www.pymnts.com/partnerships/2026/priority-commerce-expands-sports-footprint-with-bengals-ticketing-payment-deal/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T23:06:46.000Z"
-    },
-    {
       "id": "928b62733bba566a5d48",
       "sourceId": "chainalysis",
       "category": "cripto",
       "kind": "analysis",
       "title": "International Law Enforcement Seizes Domain of Virtualine Bulletproof Hosting Service",
-      "excerpt": "Summary The FBI Washington Field Office, working with international law enforcement partners and private sector contributors, including Chainalysis and OverRIPE,…",
+      "excerpt": "Summary The FBI Washington Field Office, working with international law enforcement partners, seized the domain virtualine.net, which, according to the…",
       "url": "https://www.chainalysis.com/blog/virtualine-bulletproof-hosting-seizure-october-2026/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -136,6 +164,20 @@
       "title": "Del KYC al KYA: la nueva pregunta de la banca",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQUFRNkR2QWNlOENfLU5aOWZBYkpzaDYxMkdyeWhORDE2V3VxMXNhR05JSGV1dUtpam82cHdKbDhac0Y4eDV3YjU0Y09MOExuVkNfbjhuSXRJcE1tYjhSTzA1YlVOdzk3UnNXYURGRlM2SHM1TTVZbjhRSTRwNTYzTUZoZGgzMW1a?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T19:28:20.000Z"
+    },
+    {
+      "id": "515cd764d4b96c39be6e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintoc lanza solución de cobros recurrentes en México para empresas de crédito, seguros y suscripciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQm9wdHJzTFBEX3dWS3hVMXV1WHNyRlBNQjFjOW1UOFZzdjkyRHhSTkdNak5hZmdfMlJteFlHX0czdVBMY29SdzBhSXBndzhZUkY3aTNmTlJuU1hIWE01Q09QWVlEWDEyVGVnT2thXzNKN2hwcmxpQlAwTnNPOU0ycDNGcGNTNjJGRzJhRUc4Y3I2M0xHWkl4SDFma0JGV0ZkeHhuWEx1NllvZzdKb2dpUkpQc0pHZW1MNWgyTnUzOW5jeXdUWXE5WFVZLVFKMm15Q2tTZE5B?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -437,6 +479,20 @@
       "publishedAt": "2026-10-23T22:47:35.000Z"
     },
     {
+      "id": "7a51469160ae6731b564",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Belvo y dLocal se alían en México para llevar la domiciliación bancaria a más empresas y facilitar los pagos recurrentes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPcUJtSDFxU1hJTGtSQmpiZ0hVeFozejhDbmoyQlpZYS1wb3l0OVYxbjEycFVGMWdNTnZLOV80b3ZTQk10NDB0QjhENlhNTE5Nd0J1bkFyckozb2tUdkE3REdXc2pWcUJCUWlERGU3SVZuODFTZm9SdFJzUUpPbzZOTlZrNUZfckVraDh4MnBIazZ4eV9BMTRHNENTRVVaNndxV3g5YTRBRElzSll3V2xFd1dqcDZTVnZvMmZTc21iajVaT0RYNmNFajZQUU9aY1ZuYnVLU2hKNGNLRXdlb2NpLUNPeGQ3Q0t2aV9Vb25n?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-23T17:21:01.000Z"
+    },
+    {
       "id": "57dadca25988f9adfceb",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -521,18 +577,18 @@
       "publishedAt": "2026-10-23T05:01:22.000Z"
     },
     {
-      "id": "4dcff2026bcae5b73d63",
+      "id": "42e1dc5b4ac3b1ebe7ee",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
       "kind": "news",
-      "title": "TOPPAN Security impulsa la innovación en tarjetas de pago con diseños, materiales y tecnologías diferenciadas",
+      "title": "Geopagos analiza el futuro de los pagos en Latinoamérica: interoperabilidad y nuevos jugadores en CLAB 2026",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb3pLdEEtaVR0cUxnVndYUmFUaEFLYjdxcklZMlVZSGdJVVB1cDRaRlZfcjNtTVo2dFZrcEJjYWZoajZDMFBnXzJIMndKb2JESWkzT3VZbm45YUdtd0N3cVBFc0hiaW40NG9NbjFiTXdpWmlBZlhJX3h0bm9aMFduUnkyM3BLazFVSmRycjNUSVZ0LVgtQzFZdHMzUWJuNk9OZDNFcUxoMGZEZ3B2OWl3UWNodG52M1NFc05MT2xQU0hzbmYwWk93Nnd6dzVIdlp3Y2F5Y2xmczhsbzVLdmc?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQWFJOLS1uWXFRZjVuVGhGeXpMekJWMUZoS0NMekZIVmFvcVEySE1ael93VktNbjFYb2ljalV4eVNCTERRVExmN1FUSVcwU0JHOV83a21BdklVX1pRU01JeFVXOXhRR3llZTR0ZnJDbGpMaXVxdUROdUV2Q016N3MzRG1hdDk4cTdUa0ZnMkh4UUhQTVVtVmVBM1Z4MXNscllJODFtU0pULXlGelBqRFlOU1lXRG1hRHh3VzA1VWlLemFEX0EtVHM3UC1reEdHVlcwNWlOTzVuTjdwVFE?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-10-22T22:31:49.000Z"
+      "publishedAt": "2026-10-23T01:18:28.000Z"
     },
     {
       "id": "a5f6fb496fef9731bec3",
@@ -549,34 +605,6 @@
       "publishedAt": "2026-10-22T20:36:33.000Z"
     },
     {
-      "id": "690acade8e6b7ca7bf8d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Core bancario desde cero: cómo construir un banco desde la base | Mambu",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHJvN2o3c3RJWC1INjJDckFmc1g3amNFYXNQVU52X0dLbW9FcmVoTTZ2bXpOZTFCSDUtdWZ0dzFrZnV4Y1dHdDlZVXNnZWJoRkdaUmJoRWlnQVhSSkY5amYzYnBISWdfX1VRbURjeGpjV1YyUkY1MWF4UWNiWUo4bXVYNlU4dlR4ay00aVh5ejVBRXpFYWkycHp3bk5sLWRrb1d3c1ptdi0?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T17:07:53.000Z"
-    },
-    {
-      "id": "0c926fe9f4b48cf78dde",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Belvo y Dock se alían para integrar datos de empleo al análisis de crédito en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPQzc0TkRyWXQ4X1hCX3BjWlZ4MUVHU3R0ZV9DOGhvTzJLTzhacGYtZ0RmZEpPN3VrWEJIY1JHS2xpZm93UTJpQldqdmtpbTFQRGRuYWNpOU95Rng0QW9FTnR4Z01tYUJhSVFiZTRfSG94a2hoaWRVdDJNR1RkV2NrRURVcXNLeGZYVG1hRm1JS3JjVEJDX0dvS1h1NE02eGxHRUlVWFlxa1N6ckV5YV9JZnJtLUVmV0daOGkySGRn?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T17:07:53.000Z"
-    },
-    {
       "id": "1ac32a7c9cdd89e0e34d",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -589,20 +617,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-22T15:46:00.000Z"
-    },
-    {
-      "id": "ba5f8e54dc7db71dd6f4",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Coinbase fined €3.25m by Irish central bank",
-      "excerpt": "Crypto exchange Coinbase Ireland has been penalised by the Central Bank of Ireland (CBI) for a series of operational and governance failings over a five-year period.",
-      "url": "https://www.finextra.com/newsarticle/48633/coinbase-fined-325m-by-irish-central-bank?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T12:24:00.000Z"
     },
     {
       "id": "8b1e4869d5392d339786",
@@ -843,20 +857,6 @@
       "publishedAt": "2026-10-16T12:00:00.000Z"
     },
     {
-      "id": "7f1ccbb7227ac3d0a773",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "LigoPay prepara su expansión a seis mercados de LatAm y evalúa incorporar stablecoins",
-      "excerpt": "La fintech busca ingresar a Argentina y Bolivia en el corto plazo y proyecta llegar a Colombia, Brasil, México y Ecuador en 2027. En Perú, su participación en Tapp forma parte de una estrategia para ampliar su operación de infraestructura de pagos y fortalecer capacidades que pue",
-      "url": "https://iupana.com/2026/10/16/ligo-prepara-expansion-seis-mercados-latam-evalua-incorporar-stablecoins/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-16T11:00:23.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -969,20 +969,6 @@
       "publishedAt": "2026-10-09T01:14:08.000Z"
     },
     {
-      "id": "8073c93b0a65069cbcec",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Anyflo emerges from stealth to simplify stablecoin payments for enterprises",
-      "excerpt": "Stablecoin payments orchestration service Anyflo has emerged from stealth with news that it has acquired bitcoin lending platform Native.",
-      "url": "https://www.finextra.com/newsarticle/48561/anyflo-emerges-from-stealth-to-simplify-stablecoin-payments-for-enterprises?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-09T00:01:00.000Z"
-    },
-    {
       "id": "0bc83eb1e84fdc5845d6",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1051,6 +1037,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
+    },
+    {
+      "id": "d1a79fd390a6afd8c8e8",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-04T07:00:00.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -1179,6 +1179,20 @@
       "publishedAt": "2026-09-29T07:00:00.000Z"
     },
     {
+      "id": "09e8d0688b7df2f65586",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "¿Cuánto rinde invertir en pólizas a plazo fijo en la banca ecuatoriana en octubre?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWGREN2dIVlo3RWJtV1hHTEhWalBvbDBnU2ZvSG9mTkNINFctd2xQMU8xTWE2M2RDdXFHb1Zla2k5T1RWRGF1R25Gb1Z5UUtzSU1oQUI3dmF4YTMyTTdoa3lycGNzYWc1QUdScUZ2aWI5M1otaEpKSXJhc3pQc3FvV1RMZ21VenJqVmFRNU1md2daTEpkSEtiZHNyQ0MwWFpvejhXWVdTSmt3ZlA1aVdpUFZvRExhVXBMaWFmVzZR?oc=5",
+      "source": "expreso.ec",
+      "sourceUrl": "https://www.expreso.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-09-29T07:00:00.000Z"
+    },
+    {
       "id": "0bf8dc8757c01050c196",
       "sourceId": "regulatory-news",
       "category": "regulacion",
@@ -1201,9 +1215,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
+      "recentCount": 10
     },
     {
       "id": "bce-junta",
@@ -1212,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1237,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 9
     },
     {
@@ -1234,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 6
     },
     {
@@ -1245,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 2
     },
     {
@@ -1289,8 +1303,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 5
     },
     {
@@ -1333,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1358,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T08:32:16.852Z",
-      "lastSuccessAt": "2026-10-28T08:32:16.852Z",
+      "checkedAt": "2026-10-28T16:03:16.715Z",
+      "lastSuccessAt": "2026-10-28T16:03:16.715Z",
       "recentCount": 9
     }
   ]
