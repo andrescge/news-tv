@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T00:57:00.398Z",
+  "generatedAt": "2026-10-29T07:05:44.970Z",
   "stories": [
+    {
+      "id": "e45a50705c424ef777f4",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",
+      "excerpt": "Summary Everyday financial needs are driving Sub-Saharan Africa’s crypto growth. The region’s crypto economy grew 13.4% to $101 billion, making…",
+      "url": "https://www.chainalysis.com/blog/sub-saharan-africa-crypto-adoption-2026/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T06:55:01.000Z"
+    },
     {
       "id": "fb1f3aa0a82f71b43675",
       "sourceId": "pymnts",
@@ -45,6 +59,34 @@
       "publishedAt": "2026-10-28T21:28:33.000Z"
     },
     {
+      "id": "1b38fef4b0d85ef1f169",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Unblock solicita al Banco Central de Brasil autorización para operar como corredora de activos virtuales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUUlPem11bW93T0NXRnpJMXZ4RHBLT0w3a1EtTTVSUTJoNkV3cGJOa2tsMFAzRFBpTC1MeUwwSzRkQ3kxRVFUSkNYWXNRQ01PV1FwSmJ6ODhjalBDMFdGTnM2Rlk0UEZVSlZyWV9TWkhwcEYwMUFqeF9zbUx5bGhfR3ZoMUpyZ1pQUGNLMDNPYllfRWVxXzI3Tk9hY0hpb2c4T3N4dlRYSnFDSTNSU19IVUZYN1lwYTB0ZjZQTzVYOTRtMEtYR3BETkZrak9zb2RHLXNldlJ2MmhPWndUZkVwa1A3UXBmNEpTbkE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T19:39:38.000Z"
+    },
+    {
+      "id": "650c6078e1d8b6761a6a",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintechs Numbi y Sempli se alían para impulsar la financiación de pymes en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEk2aU1pcTlvNVNtUERZUENhYy1hOHFwSjNUOGZwUktOREw0S3UzYjFUX2xUN0sxZC10MDEwOXh2Q3B2U2IyMS1PbE81LUxXS2ZxbHc4Nl9fQVJkUGNUbXg5QVZMeTgtRVJnVFozRmFoQVRKMFJzcmljeXo2V25rTGVRYWpfdzVwd2lYSnM1UHBSalZkUUFxREE4OEN4a1lrSURQbkJjRE1sSm84NC1PUi02Vkx1UExGTkRGcw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T19:39:38.000Z"
+    },
+    {
       "id": "104b18d380385b4e0648",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -57,34 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T19:16:14.000Z"
-    },
-    {
-      "id": "2d6936b501c9a2283a58",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "RBC Blocks Third-Party Personal AI Agents Over Fraud Risks",
-      "excerpt": "Royal Bank of Canada (RBC) has decided to block third-party personal AI agents from direct access to online banking and other RBC digital properties due to concerns about fraud and consumer harm, the bank told its customers in an article posted Tuesday (Oct. 27). The connections ",
-      "url": "https://www.pymnts.com/news/banking/2026/rbc-blocks-third-party-personal-ai-agents-over-fraud-risks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T19:08:38.000Z"
-    },
-    {
-      "id": "0f35f150466bcec014a7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OppFi Revenue Dips 3.8% Amid Muted Borrower Sentiment",
-      "excerpt": "OppFi is focusing on flexible credit, tech upgrades and its banking ambitions amid persistent inflation and cooling consumer sentiment. The digital lending platform touted these new offerings Wednesday (Oct. 28) as it released third-quarter earnings results showing a 3.8% drop in",
-      "url": "https://www.pymnts.com/personal-loans/2026/oppfi-revenue-dips-4percent-amid-muted-borrower-sentiment/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T18:54:50.000Z"
     },
     {
       "id": "348c49515c3d5106e8c1",
@@ -113,6 +127,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T17:41:00.000Z"
+    },
+    {
+      "id": "39a77226e2afcd3bc65e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "CleverTap y RapiCredit se alían para impulsar soluciones de crédito más personalizadas en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxONVQtcnlmM0g5LWFGdkFnLTFuWWV2dGJFQThyT2dyZXN2QnZybjJUT3JSNG1BMHZsQ1JWV1FDWEJzaDJ5V3lBTVFZVG9Dd1FrdS0wYkFxSUh3MWZaZGdiV3RFTGxja0hSQnlxa0t3MDkwUnpwYmlKZ0pXbzZNYlFMOGJ4c3BIV1BxWS1GN3Q3VXYwaXlGazU1dDB5WFdnakRNZzJkaTYxQmp2VkFPV0dySVFhY1VpVG1WMjRYT0Nrd3ZBeTRPcXE2STB5bGc4a1dV?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T15:41:33.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -535,20 +563,6 @@
       "publishedAt": "2026-10-23T22:47:35.000Z"
     },
     {
-      "id": "57dadca25988f9adfceb",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Neobanco Brubank está a la venta y Nubank, Inter y BTG Pactual evaluarían comprarlo para obtener una licencia bancaria en Argentina",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNd2VUOGcxWlVxdnBHX2ptUkE0NGtHOTBWV1J0NWJKRF93ZVNVc09QcUtjNGE0QmJDUEtvMW9HRmt3Umx2dWNEckl6OFAtenVVSlFRc3RpVDRqTWZGWlJsLUpHUlZzeXJRMklNQVlnVkRKZjloVzRqUTh4Z3kzMllkTVozZVdKUVVfVzlYWTlyMVB4Yy1ER01sNV81c01mRmhVbm1tOEpJZ0tubWw2WFlGM3JvTXYtQ0lldlFhTVJSWWo0ZS10WEtSSk9JLWNyUmpraDZpcGNDdzlkQXBvSmJsNzFVY2k2ckI0Z0YySi1McTQ2aU12YXB6RzhHYw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-23T17:20:59.000Z"
-    },
-    {
       "id": "e0538bf070bc4f5422d7",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -619,20 +633,6 @@
       "publishedAt": "2026-10-23T05:01:22.000Z"
     },
     {
-      "id": "4dcff2026bcae5b73d63",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "TOPPAN Security impulsa la innovación en tarjetas de pago con diseños, materiales y tecnologías diferenciadas",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb3pLdEEtaVR0cUxnVndYUmFUaEFLYjdxcklZMlVZSGdJVVB1cDRaRlZfcjNtTVo2dFZrcEJjYWZoajZDMFBnXzJIMndKb2JESWkzT3VZbm45YUdtd0N3cVBFc0hiaW40NG9NbjFiTXdpWmlBZlhJX3h0bm9aMFduUnkyM3BLazFVSmRycjNUSVZ0LVgtQzFZdHMzUWJuNk9OZDNFcUxoMGZEZ3B2OWl3UWNodG52M1NFc05MT2xQU0hzbmYwWk93Nnd6dzVIdlp3Y2F5Y2xmczhsbzVLdmc?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T22:31:49.000Z"
-    },
-    {
       "id": "a5f6fb496fef9731bec3",
       "sourceId": "seps",
       "category": "regulacion",
@@ -645,20 +645,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-22T20:36:33.000Z"
-    },
-    {
-      "id": "690acade8e6b7ca7bf8d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Core bancario desde cero: cómo construir un banco desde la base | Mambu",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOWHJvN2o3c3RJWC1INjJDckFmc1g3amNFYXNQVU52X0dLbW9FcmVoTTZ2bXpOZTFCSDUtdWZ0dzFrZnV4Y1dHdDlZVXNnZWJoRkdaUmJoRWlnQVhSSkY5amYzYnBISWdfX1VRbURjeGpjV1YyUkY1MWF4UWNiWUo4bXVYNlU4dlR4ay00aVh5ejVBRXpFYWkycHp3bk5sLWRrb1d3c1ptdi0?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T17:07:53.000Z"
     },
     {
       "id": "8b1e4869d5392d339786",
@@ -1053,6 +1039,20 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
+      "id": "8dec40f4bd0b7c6b852d",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1065,6 +1065,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
+    },
+    {
+      "id": "d1a79fd390a6afd8c8e8",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-04T07:00:00.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -1093,20 +1107,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-09-30T20:08:34.000Z"
-    },
-    {
-      "id": "a724a29433e2a0829bec",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "Singapore Leads Central & Southeast Asia and Oceania’s Crypto Industry",
-      "excerpt": "Summary Beneath regional decline, key growth stories emerged: Central & Southeast Asia and Oceania’s crypto economy contracted 6.8%, but this…",
-      "url": "https://www.chainalysis.com/blog/central-southeast-asia-oceania-crypto-adoption-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T12:55:33.000Z"
     },
     {
       "id": "a21592d62679a1086f3b",
@@ -1163,34 +1163,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-09-29T12:00:00.000Z"
-    },
-    {
-      "id": "1a41f65d8b8bd3b3fd11",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "¿Vas a pedir un crédito? Estas son las 92 entidades financieras no están autorizadas en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPWHNmSENzSzI3c2JKODlhNEl1Z0NIbGJSdXI1OUZlMy1OU01HRkpCbE1ZNUg5Ukk3elR3bWZjMlhFZG9QdnpSZ0g0NnhLaUZNNmpxMllHeTkyV05ncDExS1hGS2x1OEZFVEtidlo3b21nMlc1c0pnMmkxNmdnQjI1MFh2RmFzbnU1UVBsWTROYm8xN2dSTThRckFkeUtDMWY3SFJVU2R6b0ZuMUFPY2ttWDNPVXZtYkgzSl9RWF9Jak9mdElPRFNfUnZR?oc=5",
-      "source": "expreso.ec",
-      "sourceUrl": "https://www.expreso.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T07:00:00.000Z"
-    },
-    {
-      "id": "0bf8dc8757c01050c196",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "Qué no hacer para evitar las estafas de entidades financieras fantasmas en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOEc5cGdRclR3eFk0TFNRM3ZvczVPdnViX0tEQlhXcWphTW93aEVMNzRVa05od2ZkblUtUEo3UE9RbVJjYVNuYTBpVUpzQTFwNnlFdlhIVjkxdlpxSzBDSUV6Wjk5ZGl2QXlkWERuUGl0TzNnNl8yLW5iU1JwdnR1MHc5MHFqSThVRnhSaUpzRzY1aHdXeDlyLUxkUG5vc1JlaTcyaGh1S1EteUVhTGZPOURtZlFhemVoWmQyeA?oc=5",
-      "source": "El Comercio",
-      "sourceUrl": "https://www.elcomercio.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-29T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1201,9 +1173,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
+      "recentCount": 8
     },
     {
       "id": "bce-junta",
@@ -1211,8 +1183,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "status": "error",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 0
     },
@@ -1222,8 +1194,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "status": "error",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 9
     },
@@ -1233,8 +1205,8 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "status": "error",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 6
     },
@@ -1245,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 0
     },
     {
@@ -1278,9 +1250,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
+      "recentCount": 1
     },
     {
       "id": "latamlist",
@@ -1289,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 4
     },
     {
@@ -1300,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 6
     },
     {
@@ -1333,8 +1305,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1327,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1338,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T00:57:00.398Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "checkedAt": "2026-10-29T07:05:44.970Z",
+      "lastSuccessAt": "2026-10-29T07:05:44.970Z",
       "recentCount": 10
     }
   ]
