@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-28T21:04:55.590Z",
+  "generatedAt": "2026-10-29T00:57:00.398Z",
   "stories": [
+    {
+      "id": "fb1f3aa0a82f71b43675",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Happen Doubles Loan Issuance Through App as Deposits Grow 22%",
+      "excerpt": "Borrowers who came to Happen to pay off credit cards are giving the bank additional sources of business through their savings. Happen, formerly known as LendingClub, reported that deposits grew 22% from a year earlier to $11.5 billion in the third quarter, according to earnings r",
+      "url": "https://www.pymnts.com/earnings/2026/happen-doubles-loan-issuance-through-app-as-deposits-grow-22percent/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T23:59:49.000Z"
+    },
+    {
+      "id": "1e27b2c874a90396b37b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Paysafe Expands Digital Wallet Across Entire Euro Zone",
+      "excerpt": "PaysafeWallet is now available in all euro area markets, after being expanded in Eastern Europe, Paysafe said in a Wednesday (Oct. 28) press release. PaysafeWallet is a digital wallet that can be accessed through the PaysafeCard app. It brings together cash and digital money mana",
+      "url": "https://www.pymnts.com/digital-payments/2026/paysafe-expands-digital-wallet-across-entire-euro-zone/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T22:38:16.000Z"
+    },
+    {
+      "id": "853ed8a9bb1ccdf847a9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "PNC Bank to Expand Small Business Offerings With Embedded ADP Payroll",
+      "excerpt": "PNC Bank and ADP have partnered to embed ADP’s payroll and human resources capabilities in PNC’s digital banking platform, ADP said in a Wednesday (Oct. 28) press release. This integration will enable PNC’s small business clients to manage payroll, HR, banking and payments throug",
+      "url": "https://www.pymnts.com/back-office/payroll/2026/pnc-bank-to-expand-small-business-offerings-with-embedded-adp-payroll/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T21:28:33.000Z"
+    },
     {
       "id": "104b18d380385b4e0648",
       "sourceId": "chainalysis",
@@ -59,34 +101,6 @@
       "publishedAt": "2026-10-28T18:13:26.000Z"
     },
     {
-      "id": "bd6a760f3069c184d202",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Goldman Exec Says Investors Growing More Judicious on AI",
-      "excerpt": "A senior Goldman Sachs executive says weaknesses are developing in the AI market as the cost of capital climbs. Speaking at The Information’s WTF Summit on Tuesday (Oct. 28) Goldman co-head of investment banking Kim Posnett argued that while she is “hugely bullish” on artificial ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/goldman-exec-says-investors-growing-more-judicious-on-ai/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T18:01:59.000Z"
-    },
-    {
-      "id": "41d9d4ce2e0572dae0f1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ripple Brings Its Stablecoin to Coinbase’s Trading Platforms",
-      "excerpt": "Ripple has begun listing its RLUSD stablecoin on Coinbase’s institutional and retail platforms. Clients can now trade and manage RLUSD through Coinbase Prime, Coinbase Exchange, and the Coinbase Retail application, Ripple announced Wednesday (Oct. 28), with availability on Coinba",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-brings-its-stablecoin-to-coinbases-trading-platforms/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T17:47:26.000Z"
-    },
-    {
       "id": "8316b9787c80a67d5297",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -101,20 +115,6 @@
       "publishedAt": "2026-10-28T17:41:00.000Z"
     },
     {
-      "id": "3885a365ad4d026b40f2",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "European Banking Giants Calm Investor Concerns With Higher-Than-Expected Profits",
-      "excerpt": "Four European banks beat third-quarter profit forecasts, while a fifth bank reported earnings in line with expectations, Reuters reported Wednesday (Oct. 28). The banks reporting stronger-than-expected results Wednesday included Deutsche Bank, BNP Paribas, Standard Chartered and ",
-      "url": "https://www.pymnts.com/news/banking/2026/european-banking-giants-calm-investor-concerns-with-higher-than-expected-profits/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T17:31:55.000Z"
-    },
-    {
       "id": "3e3bafe34c9015ece399",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -127,6 +127,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T14:51:00.000Z"
+    },
+    {
+      "id": "0a33e1daada6f45e9091",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "El Banco Central del Ecuador amplía proyección internacional de su revista Cuestiones Económicas con la incorporación a la plataforma SciELO",
+      "excerpt": "La revista Cuestiones Económicas, publicación académica del Banco Central del Ecuador (BCE), recibió la aprobación para su incorporación a la Scientific Electronic Library Online (SciELO),",
+      "url": "https://www.bce.fin.ec/el-banco-central-del-ecuador-amplia-proyeccion-internacional-de-su-revista-cuestiones-economicas-con-la-incorporacion-a-la-plataforma-scielo/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-28T12:00:00.000Z"
     },
     {
       "id": "e891b1aef2b23eeeed43",
@@ -206,6 +220,20 @@
       "title": "Del KYC al KYA: la nueva pregunta de la banca",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQUFRNkR2QWNlOENfLU5aOWZBYkpzaDYxMkdyeWhORDE2V3VxMXNhR05JSGV1dUtpam82cHdKbDhac0Y4eDV3YjU0Y09MOExuVkNfbjhuSXRJcE1tYjhSTzA1YlVOdzk3UnNXYURGRlM2SHM1TTVZbjhRSTRwNTYzTUZoZGgzMW1a?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T19:28:20.000Z"
+    },
+    {
+      "id": "515cd764d4b96c39be6e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintoc lanza solución de cobros recurrentes en México para empresas de crédito, seguros y suscripciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQm9wdHJzTFBEX3dWS3hVMXV1WHNyRlBNQjFjOW1UOFZzdjkyRHhSTkdNak5hZmdfMlJteFlHX0czdVBMY29SdzBhSXBndzhZUkY3aTNmTlJuU1hIWE01Q09QWVlEWDEyVGVnT2thXzNKN2hwcmxpQlAwTnNPOU0ycDNGcGNTNjJGRzJhRUc4Y3I2M0xHWkl4SDFma0JGV0ZkeHhuWEx1NllvZzdKb2dpUkpQc0pHZW1MNWgyTnUzOW5jeXdUWXE5WFVZLVFKMm15Q2tTZE5B?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -633,20 +661,6 @@
       "publishedAt": "2026-10-22T17:07:53.000Z"
     },
     {
-      "id": "3b099aa369cf9bec52dc",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech boliviana Peso levanta una ronda pre-semilla liderada por Tether para expandir los pagos con USDT en Latam",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQNWVkbzZSdklVQjRlOUl2SHEwOWdBOUJ1X1h6dDBUNlo2cHhTVmxJeVY3X2QzZkQ5N3JqbWYyS0NOQzBpRnVEWWJsZ2FsWmJQNWZuM1NQaHU1SkU0VUFrd0MtSkYtZHlmWWotaUowREM4VjVPQUhqVThXZmJDZmxPcHA5b1p1LVJFeWo1YlZNVUFmNGRUY1VEekYxLUhrOGhlTGpfT1FJTU5oZGxqVzhqc1Jld1lsS1VsMWNUaWd1TkZpX0Vja1BxSk5IcTdzSEk2M2I3Ymt0ODNaSUx6TmRmLV8zV2xyUQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-22T14:32:25.000Z"
-    },
-    {
       "id": "8b1e4869d5392d339786",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1039,20 +1053,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1079,20 +1079,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-01T22:36:41.000Z"
-    },
-    {
-      "id": "e0191f0dcefbed86eac0",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "Ecuador registró un superávit de USD 1.425 millones en la cuenta corriente en el segundo trimestre de 2026",
-      "excerpt": "Las exportaciones y las importaciones alcanzaron máximos históricos, mientras la inversión extranjera directa creció 107,5% interanual. Conforme a cifras del Banco Central del Ecuador (BCE),",
-      "url": "https://www.bce.fin.ec/ecuador-registro-un-superavit-de-usd-1-425-millones-en-la-cuenta-corriente-en-el-segundo-trimestre-de-2026/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-01T12:00:00.000Z"
     },
     {
       "id": "f094c90c5c5c74bb668d",
@@ -1215,9 +1201,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1226,8 +1212,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 0
     },
     {
@@ -1237,8 +1223,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 9
     },
     {
@@ -1248,8 +1234,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 6
     },
     {
@@ -1259,8 +1245,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 1
     },
     {
@@ -1270,8 +1256,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 0
     },
     {
@@ -1281,8 +1267,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 0
     },
     {
@@ -1292,8 +1278,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 2
     },
     {
@@ -1303,8 +1289,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 4
     },
     {
@@ -1314,8 +1300,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 8
     },
     {
@@ -1325,8 +1311,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 6
     },
     {
@@ -1336,8 +1322,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 6
     },
     {
@@ -1347,8 +1333,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 0
     },
     {
@@ -1358,8 +1344,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 5
     },
     {
@@ -1369,8 +1355,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 12
     },
     {
@@ -1380,8 +1366,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 9
     },
     {
@@ -1391,8 +1377,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-28T21:04:55.590Z",
-      "lastSuccessAt": "2026-10-28T21:04:55.590Z",
+      "checkedAt": "2026-10-29T00:57:00.398Z",
+      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 10
     }
   ]
