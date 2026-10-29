@@ -1,7 +1,161 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-29T14:19:51.658Z",
+  "generatedAt": "2026-10-29T20:17:54.486Z",
   "stories": [
+    {
+      "id": "b5614f0fe94f9dbe1ec7",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Kohl’s Embeds Klarna Payment Options Ahead of Holiday Shopping Season",
+      "excerpt": "Kohl’s shoppers in the United States can now access Klarna’s flexible payment options when paying online or in the Kohl’s app, Klarna said in a Thursday (Oct. 29) press release. The Klarna payment options available to Kohl’s shoppers include paying all at once with Pay in full, m",
+      "url": "https://www.pymnts.com/bnpl/2026/kohls-embeds-klarna-payment-options-before-holiday-shopping-season/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T19:39:08.000Z"
+    },
+    {
+      "id": "9319aa27cdaa75bf9454",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa and Tencent ink agentic commerce and cross-border payments MoU",
+      "excerpt": "Weeks after securing the regulatory green light to step up its operations in China, Visa has inked a deal with the country's tech behemoth Tencent spanning cross-border payments and AI-powered commerce.",
+      "url": "https://www.finextra.com/newsarticle/48672/visa-and-tencent-ink-agentic-commerce-and-cross-border-payments-mou?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T18:57:00.000Z"
+    },
+    {
+      "id": "4c2deef12ef07f35bb65",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "WEX Earns Record Quarterly Revenue While Deploying AI Across Products",
+      "excerpt": "Intelligent payment solutions provider WEX saw growth across its business in the third quarter as it secured new business wins and drove innovation across its segments, CEO and President Melissa Smith said in a Wednesday (Oct. 2)8 press release. WEX’s revenue increased 12.8% year",
+      "url": "https://www.pymnts.com/earnings/2026/wex-earns-record-quarterly-revenue-while-deploying-ai-across-products/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T18:29:41.000Z"
+    },
+    {
+      "id": "a6c052e9ec5d210f34c0",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "El fraude más allá de las aplicaciones: fintechs y el reto de proteger al usuario",
+      "excerpt": "Las fintechs deben complementar sus controles tecnológicos con educación al usuario y mecanismos de cooperación para detectar y prevenir fraudes. Llamadas y SMS continúan teniendo éxito.... Leer más... La entrada El fraude más allá de las aplicaciones: fintechs y el reto de prote",
+      "url": "https://iupana.com/2026/10/29/el-fraude-mas-alla-de-las-aplicaciones/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-29T17:52:37.000Z"
+    },
+    {
+      "id": "14994a1587d05fea6d41",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Former Swift CEO Lazaro Campos Joins Stablecoin Yield Platform OpenTrade",
+      "excerpt": "Former Swift CEO Lazaro Campos joined stablecoin yield infrastructure provider OpenTrade as chair of the board, OpenTrade CEO and Co-Founder David Sutter said in a Thursday (Oct. 29) post on LinkedIn. During his 25 years at Swift, Campos led a full strategic and financial transfo",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/former-swift-ceo-lazaro-campos-joins-stablecoin-yield-platform-opentrade/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T17:25:58.000Z"
+    },
+    {
+      "id": "cc075963c930ac66f9ef",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "BofE consults on tokenised collateral in central clearing",
+      "excerpt": "The Bank of England has launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
+      "url": "https://www.finextra.com/newsarticle/48670/bofe-consults-on-tokenised-collateral-in-central-clearing?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T17:23:00.000Z"
+    },
+    {
+      "id": "dcb5ed5aa540b8545508",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa Launches Agentic Commerce Partnership With Tencent",
+      "excerpt": "Visa has signed an agentic commerce/cross-border payments partnership with Chinese tech giant Tencent. The agreement between the two companies is designed to meld Tencent’s payment solutions, digital platforms and technology capabilities with Visa’s network and cross-border money",
+      "url": "https://www.pymnts.com/partnerships/2026/visa-launches-agentic-commerce-partnership-with-tencent/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T17:22:37.000Z"
+    },
+    {
+      "id": "7d6b2a2c8c91857151d6",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombian fintech FinMaq raises $6.5M Series A",
+      "excerpt": "Colombian fintech FinMaq raised $6.5M in a Series A round led by Accion, with participation from Mundi Ventures…",
+      "url": "https://latamlist.com/colombian-fintech-finmaq-raises-6-5m-series-a/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T16:23:10.000Z"
+    },
+    {
+      "id": "6b446f8d46054b2329a7",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Lulo Bank lanza su oferta de seguros en Colombia con cuatro productos: vida, desempleo, SOAT y protección de crédito",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa29BYjVseDlZdEV1dVFOU19sU1FrdGVULW9qQ0hSVjNzZUhLTHdZOGZCa2xmZFVhdFhTR2JUQVBWZEc3cnZsZC02czlvNGhjYzJZWnJoVzVYckxqUVpKY250b2ZaWGtaZUpYV0NGZG1sSG9iXzRjSFRVc1Rud3VwM2VORWZ0dk5lQkdVUTFhNmd3c2U5RkhlUzl5Si16OEdrX0VsbWJRQnFJTU5hU04tRnpIakE0NkJyR2hwV0YxMGRpSVExdFRUZVNTekNuVzhqNWJJTHpvbUlvOU9XQy1xSQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-29T15:54:15.000Z"
+    },
+    {
+      "id": "8659f4b984f9d8ca60f0",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "ACI Worldwide y Circle colaboran para impulsar los pagos multirriel y la liquidación con stablecoins en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT0lxNW9tQUNDRnJKanV1SXFLbUVwV2xldVJpaDRaX3E2SWo2cDk2Z2dQdDRLeEdBN2JPbUpoWFN1REd5eVh1VzJsVEstSEUxS3ZQWTFlY1E5SVVSZDk3ZVluc2JyY040a3M1WHU2MWNQUnloOFZyOGVDV0VKOFdEbnZQU1NtV0RIMkhBZW9oUE5nTDVpSW9STk9TMzdLb2JTdTRlaUJSeWJGZWVxOUVVZG5wcWFHQWUwVFo3eE11TWJ2NjFpTDNJUGVVYl9hZFU1M185dkdzeXlzcHU0U3BOMVFhWQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-29T15:54:15.000Z"
+    },
+    {
+      "id": "e2b0789269c8f136d98b",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Former Swift CEO Lázaro Campos joins stablecoin firm OpenTrade as chair",
+      "excerpt": "Stablecoin yield infrastructure platform OpenTrade has appointed former Swift CEO Lázaro Campos as chair of its board of directors.",
+      "url": "https://www.finextra.com/newsarticle/48669/former-swift-ceo-lzaro-campos-joins-stablecoin-firm-opentrade-as-chair?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T14:31:00.000Z"
+    },
     {
       "id": "a9d9cfd61b4cab2ae765",
       "sourceId": "finextra-payments",
@@ -29,76 +183,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-29T12:52:41.000Z"
-    },
-    {
-      "id": "1bf5798d6b1f37d76622",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Kipp Targets US Expansion After LTVCo Acquisition",
-      "excerpt": "FinTech platform Kipp plans to accelerate its expansion in the United States after being acquired by an investor group led by The Lifetime Value Company (LTVCo) and its founders, the company said in a Thursday (Oct. 29) press release emailed to PYMNTS. Kipp will continue to opera",
-      "url": "https://www.pymnts.com/news/acquiring/2026/kipp-targets-us-expansion-after-ltvco-acquisition/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T12:00:42.000Z"
-    },
-    {
-      "id": "ee9164c2f6e52b88c621",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Better Technology Alone Won’t Give Software the Final Say",
-      "excerpt": "Watch more: What’s Next in Payments With Maverick Payments’ Bill Christensen The human who approves a merchant account may eventually review fewer files, but the cases left on that person’s desk will demand more judgment. For Bill Christensen, senior vice president of risk and un",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/better-technology-alone-wont-give-software-the-final-say/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T08:03:21.000Z"
-    },
-    {
-      "id": "aa9ccfd7916c11f034cf",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "i2c: Banks Can Delegate Decisions but Can’t Outsource Accountability",
-      "excerpt": "Watch more: What’s Next in Payments With Matt Pearce of i2c The last decision a bank hands to a machine will likely be one that its employees will still have to explain to a customer or regulator. Releasing an account flagged for complex fraud activity or granting credit beyond e",
-      "url": "https://www.pymnts.com/news/banking/2026/i2c-banks-can-delegate-decisions-cannot-outsource-accountability/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T08:01:21.000Z"
-    },
-    {
-      "id": "bc0006d47d11e286089a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI and Embedded Finance Raise the Bar for Payment Controls",
-      "excerpt": "Watch more: Your Payments Got Smarter. Did Your Infrastructure? Faster payments compress the time available to catch a bad transaction, reconcile an exception or determine whether the party moving money is who it claims to be. Speedier payments put more pressure on infrastructure",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/ai-and-embedded-finance-raise-the-bar-for-payment-controls/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T08:00:58.000Z"
-    },
-    {
-      "id": "48e39e209d9733b5188c",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Age Gives Financial Providers Clues to Customers’ Financial Pressures",
-      "excerpt": "A smaller savings balance can send the same warning to a bank while concealing very different problems for the customer. For some consumers, everyday bills are absorbing more money. For others, the income that supported their budget has fallen. The May 2026 Generational Pulse Rep",
-      "url": "https://www.pymnts.com/consumer-finance/2026/age-gives-financial-providers-clues-to-customers-financial-pressures/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T08:00:10.000Z"
     },
     {
       "id": "e45a50705c424ef777f4",
@@ -339,20 +423,6 @@
       "publishedAt": "2026-10-27T19:28:20.000Z"
     },
     {
-      "id": "515cd764d4b96c39be6e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintoc lanza solución de cobros recurrentes en México para empresas de crédito, seguros y suscripciones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQm9wdHJzTFBEX3dWS3hVMXV1WHNyRlBNQjFjOW1UOFZzdjkyRHhSTkdNak5hZmdfMlJteFlHX0czdVBMY29SdzBhSXBndzhZUkY3aTNmTlJuU1hIWE01Q09QWVlEWDEyVGVnT2thXzNKN2hwcmxpQlAwTnNPOU0ycDNGcGNTNjJGRzJhRUc4Y3I2M0xHWkl4SDFma0JGV0ZkeHhuWEx1NllvZzdKb2dpUkpQc0pHZW1MNWgyTnUzOW5jeXdUWXE5WFVZLVFKMm15Q2tTZE5B?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-27T19:28:20.000Z"
-    },
-    {
       "id": "5bdfc0265c3febb2c500",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -379,20 +449,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-27T18:50:00.000Z"
-    },
-    {
-      "id": "6d05c9ebbb66cae360c4",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana FinMaq levanta US$ 6,5 millones en su Serie A para financiar maquinaria y equipos de pymes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVEc0YlJkQ3pvYnJzaHZLMnk5dG85clAzaGdBYmIxM3FHVjlvWFRnSlRURmw4UEtTc2xsRmVKSmNJaEt1NkdUUzNzYmVLald1Tl9jZUt3MHYxNGs1ajZ4MHdOcExjNFl4V21OWFJEMzA1OUtCSEZwbmUxQVVTQXVVTG10S1VjeGluN0VUeDQxWUh3bG96alFHN1FDU3k0SXpHUlA2cHRqRk5MUm5VR3pEU3hBc1lVODNqOWZJdXhOamJ0TWdqS1pIODQtVEZOZnFiY1lWcVJWa1ZUbU9EWHc?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-27T15:24:38.000Z"
     },
     {
       "id": "aacaf86097f2585775de",
@@ -619,34 +675,6 @@
       "publishedAt": "2026-10-23T22:47:35.000Z"
     },
     {
-      "id": "e0538bf070bc4f5422d7",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Thailand and Malaysia back Singapore's BLOOM cross-border digital money initiative",
-      "excerpt": "The central banks Thailand and Malaysia are backing a Monetary Authority of Singapore-led public-private sector initiative to advance cross-border settlement in digital money.",
-      "url": "https://www.finextra.com/newsarticle/48641/thailand-and-malaysia-back-singapores-bloom-cross-border-digital-money-initiative?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T13:52:00.000Z"
-    },
-    {
-      "id": "292acf0e998638ee7d10",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "US fintech Coast secures $35m for physical economy payments platform",
-      "excerpt": "New York-based startup Coast has raised $35m for the launch of a payment platform designed to support companies working in the physical economy.",
-      "url": "https://www.finextra.com/newsarticle/48639/us-fintech-coast-secures-35m-for-physical-economy-payments-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T12:13:00.000Z"
-    },
-    {
       "id": "0030dba0d18f1d039a83",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -871,20 +899,6 @@
       "publishedAt": "2026-10-19T12:00:00.000Z"
     },
     {
-      "id": "b6e457a57fc3a80f162f",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Iniciativa antismishing en Colombia: regulador telco espera retomar diálogo con la Superfinanciera",
-      "excerpt": "Colombia regula los SMS y las llamadas para frenar el fraude, pero la coordinación con el supervisor financiero quedó pendiente. Se crea un validador centralizado, mientras una fintech advierte que la prevención exige más capas de seguridad.... Leer más... La entrada Iniciativa a",
-      "url": "https://iupana.com/2026/10/19/iniciativa-antismishing-en-colombia-regulador-telco-superfinanciera/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-19T09:00:03.000Z"
-    },
-    {
       "id": "78e80966558f9df82583",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -939,20 +953,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-15T12:00:00.000Z"
-    },
-    {
-      "id": "1703b1590d473104da3d",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Spanish banks arrange syndicated finance on blockchain",
-      "excerpt": "Two Spanish banks, Santander and BBVA, and utility company Iberdrola, are claiming a blockchain first after arranging a syndicated financing facility executed through a blockchain platform",
-      "url": "https://www.finextra.com/newsarticle/48587/spanish-banks-arrange-syndicated-finance-on-blockchain?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-15T10:04:00.000Z"
     },
     {
       "id": "8da3318488d836ce1c4b",
@@ -1081,20 +1081,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1107,20 +1093,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
-    },
-    {
-      "id": "d1a79fd390a6afd8c8e8",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-04T07:00:00.000Z"
     },
     {
       "id": "1202564625619d4f1cb5",
@@ -1177,20 +1149,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-09-30T07:00:00.000Z"
-    },
-    {
-      "id": "789fbdb64c6ebc9b37a6",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nu Holdings negó estar en busca de una alianza con Monzo, el principal competidor de Revolut",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPYTRIMFVUTU1jQm1nblpzYzMyeE5VVy1NYzZTNUtOUGt5eFRTSUg4S21GeDcwSVBLNDIydDQyQ292VklkaVU3U1N4RWtVNEd4bkpKM2NFVTZFSXhfT1g1YTByZTg0cDlkZVVKYlZIdEU4VzRLSE56eGZ6X0x6MGtiZzVPWmxEYlo4UnBpd2drVjJiRmxRWGdiXy0tZzRncTFWNjlKR1VBSVhfSnk0a3J3VlBiQ1RxWEZYby01MVkzT21sdlM2X3AwUzAyUndEME9OSnJMSHVTMk4xUkx4X19z0gHzAUFVX3lxTE1kMkRWSmhYZ0swX3JTd1duMVY0N3Y3eDNHUWIxN3VwcFZPRWlmejBBQ3JIUV9mZ255YWFydGlkTVFvb2FhV3g0S3RvTHFuVlBVakpiUGUzOUtkeUpRdGU4Y2FsTlI1T3VNUVIxOGVpWkxZSUptel92Z1AtZ1VVN0ExR20wZWs0N1lHLURuUmFsNkhKSS1wMTJtSk1Nem1KTmZQRVN4OVM1ZGxnSXlaOVhadFdRN2U2VmdlVWk3bWIzX182WklnYWstVi14UWZFbXR3aDdQVU9DLU1rdnFWSWVpTU82ZjM1ZF9MU0xBYnQ3dXpZWQ?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-09-30T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1201,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1212,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 0
     },
     {
@@ -1223,7 +1181,7 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "error",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 8
     },
@@ -1234,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 6
     },
     {
@@ -1245,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 1
     },
     {
@@ -1289,9 +1247,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
+      "recentCount": 5
     },
     {
       "id": "latam-fintech-hub",
@@ -1300,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 7
     },
     {
@@ -1333,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
-      "recentCount": 5
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 9
     },
     {
@@ -1377,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-29T14:19:51.658Z",
-      "lastSuccessAt": "2026-10-29T14:19:51.658Z",
+      "checkedAt": "2026-10-29T20:17:54.486Z",
+      "lastSuccessAt": "2026-10-29T20:17:54.486Z",
       "recentCount": 10
     }
   ]
