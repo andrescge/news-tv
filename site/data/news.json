@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T19:22:52.611Z",
+  "generatedAt": "2026-10-30T23:46:59.380Z",
   "stories": [
+    {
+      "id": "7fab457fe74e3194b5e1",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "Chainalysis Security Incident Information",
+      "excerpt": "Chainalysis was recently the target of a cybersecurity incident, similar to many other tech platforms in recent weeks. Based on…",
+      "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T21:14:00.000Z"
+    },
+    {
+      "id": "a4e4fd5da48a3b15d098",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Scotiabank Wins Fed Approval to Buy Oklahoma-Based MapleMark Bank",
+      "excerpt": "The Federal Reserve Board approved the application by the Bank of Nova Scotia to become a bank holding company by acquiring Dallas, Texas-based Maple Financial Holdings and thereby indirectly acquiring Tulsa, Oklahoma-based MapleMark Bank, the Fed said in a Thursday (Oct. 29) pre",
+      "url": "https://www.pymnts.com/news/banking/2026/scotiabank-wins-fed-approval-to-buy-oklahoma-based-maplemark-bank/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T20:41:51.000Z"
+    },
     {
       "id": "5e32635a3ef5497febeb",
       "sourceId": "pymnts",
@@ -59,34 +87,6 @@
       "publishedAt": "2026-10-30T18:09:13.000Z"
     },
     {
-      "id": "de8ae2631cb444745764",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Deutsche Bank Warns AI Stock Selloff Threatens Dollar Safe-Haven Status",
-      "excerpt": "The current artificial intelligence (AI)-driven market correction could impact the dollar’s status as a haven asset, Deutsche Bank’s global head of FX strategy, George Saravelos, said in a Friday (Oct. 30) note to clients, Bloomberg reported. This view is supported by recent time",
-      "url": "https://www.pymnts.com/economy/2026/deutsche-bank-warns-ai-stock-selloff-threatens-dollar-safe-haven-status/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T16:43:00.000Z"
-    },
-    {
-      "id": "e7434387e74f1b1e1eec",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Unilever and Nestlé Put AI to Work Between Orders and Payments",
-      "excerpt": "Artificial intelligence agents are processing purchase orders and preparing collections work as businesses automate more of the steps between a B2B sale and payment. PYMNTS Intelligence research with JPMorgan finds surveyed companies automate an average 73% of accounts receivable",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/unilever-and-nestle-put-ai-to-work-between-orders-and-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T15:32:41.000Z"
-    },
-    {
       "id": "be907b0955c1b6033365",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -113,6 +113,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-30T13:25:00.000Z"
+    },
+    {
+      "id": "a21592d62679a1086f3b",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Tasas de Interés Efectivas. Noviembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-30T12:00:00.000Z"
     },
     {
       "id": "f5ed498f8b925d876656",
@@ -185,20 +199,6 @@
       "publishedAt": "2026-10-30T00:01:00.000Z"
     },
     {
-      "id": "8dca806d72d0602ea25e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana BordexPay se expande a México con soluciones de pagos transfronterizos basadas en stablecoins",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNU1JGUHM3Y0dPVVBodnl2enpaMDFUeFdrYzh4cEpHNUdyWkxxT0lMZEprNFNiXy1xeHJWcVBjODRIel9iRHdwNWMwUzdhc2ZtYW91Q3dabVJEclRrbXFoUlJhc0lMN01udVJkbS1aLW44eEFBTnQ0R1d0WVh2RjE3YVJlQXZTSVBtdi13R2dVdUlYU0RqZEwtRjBQT05kTS1fb3JsaERPZENNYW1KcGNsZ25rYmNxVEdOY2N0SnJ5bjFmNzR2TVoxRy03LWh6NWw0Wmd3a0k4SWMyX3BaSXBhUHppWQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T19:55:40.000Z"
-    },
-    {
       "id": "4728b1717a518f5f8df1",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -267,34 +267,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T16:23:10.000Z"
-    },
-    {
-      "id": "6b446f8d46054b2329a7",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Lulo Bank lanza su oferta de seguros en Colombia con cuatro productos: vida, desempleo, SOAT y protección de crédito",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa29BYjVseDlZdEV1dVFOU19sU1FrdGVULW9qQ0hSVjNzZUhLTHdZOGZCa2xmZFVhdFhTR2JUQVBWZEc3cnZsZC02czlvNGhjYzJZWnJoVzVYckxqUVpKY250b2ZaWGtaZUpYV0NGZG1sSG9iXzRjSFRVc1Rud3VwM2VORWZ0dk5lQkdVUTFhNmd3c2U5RkhlUzl5Si16OEdrX0VsbWJRQnFJTU5hU04tRnpIakE0NkJyR2hwV0YxMGRpSVExdFRUZVNTekNuVzhqNWJJTHpvbUlvOU9XQy1xSQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T15:54:15.000Z"
-    },
-    {
-      "id": "8659f4b984f9d8ca60f0",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "ACI Worldwide y Circle colaboran para impulsar los pagos multirriel y la liquidación con stablecoins en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT0lxNW9tQUNDRnJKanV1SXFLbUVwV2xldVJpaDRaX3E2SWo2cDk2Z2dQdDRLeEdBN2JPbUpoWFN1REd5eVh1VzJsVEstSEUxS3ZQWTFlY1E5SVVSZDk3ZVluc2JyY040a3M1WHU2MWNQUnloOFZyOGVDV0VKOFdEbnZQU1NtV0RIMkhBZW9oUE5nTDVpSW9STk9TMzdLb2JTdTRlaUJSeWJGZWVxOUVVZG5wcWFHQWUwVFo3eE11TWJ2NjFpTDNJUGVVYl9hZFU1M185dkdzeXlzcHU0U3BOMVFhWQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T15:54:15.000Z"
     },
     {
       "id": "e2b0789269c8f136d98b",
@@ -367,34 +339,6 @@
       "publishedAt": "2026-10-28T21:50:48.000Z"
     },
     {
-      "id": "1b38fef4b0d85ef1f169",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Unblock solicita al Banco Central de Brasil autorización para operar como corredora de activos virtuales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUUlPem11bW93T0NXRnpJMXZ4RHBLT0w3a1EtTTVSUTJoNkV3cGJOa2tsMFAzRFBpTC1MeUwwSzRkQ3kxRVFUSkNYWXNRQ01PV1FwSmJ6ODhjalBDMFdGTnM2Rlk0UEZVSlZyWV9TWkhwcEYwMUFqeF9zbUx5bGhfR3ZoMUpyZ1pQUGNLMDNPYllfRWVxXzI3Tk9hY0hpb2c4T3N4dlRYSnFDSTNSU19IVUZYN1lwYTB0ZjZQTzVYOTRtMEtYR3BETkZrak9zb2RHLXNldlJ2MmhPWndUZkVwa1A3UXBmNEpTbkE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T19:39:38.000Z"
-    },
-    {
-      "id": "650c6078e1d8b6761a6a",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintechs Numbi y Sempli se alían para impulsar la financiación de pymes en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEk2aU1pcTlvNVNtUERZUENhYy1hOHFwSjNUOGZwUktOREw0S3UzYjFUX2xUN0sxZC10MDEwOXh2Q3B2U2IyMS1PbE81LUxXS2ZxbHc4Nl9fQVJkUGNUbXg5QVZMeTgtRVJnVFozRmFoQVRKMFJzcmljeXo2V25rTGVRYWpfdzVwd2lYSnM1UHBSalZkUUFxREE4OEN4a1lrSURQbkJjRE1sSm84NC1PUi02Vkx1UExGTkRGcw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T19:39:38.000Z"
-    },
-    {
       "id": "104b18d380385b4e0648",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -435,6 +379,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T17:41:00.000Z"
+    },
+    {
+      "id": "ca6d26c5725df497082d",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Pagos invisibles: cómo la tecnología permite experiencias de compra sin fricciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFo4YXM0Z0dpX2pwX1h6V2tSRWMtMmxCcWd0cVlsakVfSDl0WlJMNDBwbWFhWlZXSEJtSlBraTY4dGoxcEdmbjc2U3VFaTZrZ19nTElzS0Q3ajdqVG9abWdpcy00eHI3ckl1ODZKUmtTdXh3M0wwTmlONllZcEUybVMydnR4bVU2OGFyY0xEZmtPLVVUQWdHTGxqbUo2eGFNbjAyTE5zOGRDRmJMWjZzRzdIT0M?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T16:59:09.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -535,6 +493,34 @@
       "publishedAt": "2026-10-27T21:49:13.000Z"
     },
     {
+      "id": "3e0ad6beaccd09c2772b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Del KYC al KYA: la nueva pregunta de la banca",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQUFRNkR2QWNlOENfLU5aOWZBYkpzaDYxMkdyeWhORDE2V3VxMXNhR05JSGV1dUtpam82cHdKbDhac0Y4eDV3YjU0Y09MOExuVkNfbjhuSXRJcE1tYjhSTzA1YlVOdzk3UnNXYURGRlM2SHM1TTVZbjhRSTRwNTYzTUZoZGgzMW1a?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T19:28:20.000Z"
+    },
+    {
+      "id": "515cd764d4b96c39be6e",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintoc lanza solución de cobros recurrentes en México para empresas de crédito, seguros y suscripciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQm9wdHJzTFBEX3dWS3hVMXV1WHNyRlBNQjFjOW1UOFZzdjkyRHhSTkdNak5hZmdfMlJteFlHX0czdVBMY29SdzBhSXBndzhZUkY3aTNmTlJuU1hIWE01Q09QWVlEWDEyVGVnT2thXzNKN2hwcmxpQlAwTnNPOU0ycDNGcGNTNjJGRzJhRUc4Y3I2M0xHWkl4SDFma0JGV0ZkeHhuWEx1NllvZzdKb2dpUkpQc0pHZW1MNWgyTnUzOW5jeXdUWXE5WFVZLVFKMm15Q2tTZE5B?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T19:28:20.000Z"
+    },
+    {
       "id": "5bdfc0265c3febb2c500",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -561,6 +547,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-27T18:50:00.000Z"
+    },
+    {
+      "id": "6d05c9ebbb66cae360c4",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech colombiana FinMaq levanta US$ 6,5 millones en su Serie A para financiar maquinaria y equipos de pymes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVEc0YlJkQ3pvYnJzaHZLMnk5dG85clAzaGdBYmIxM3FHVjlvWFRnSlRURmw4UEtTc2xsRmVKSmNJaEt1NkdUUzNzYmVLald1Tl9jZUt3MHYxNGs1ajZ4MHdOcExjNFl4V21OWFJEMzA1OUtCSEZwbmUxQVVTQXVVTG10S1VjeGluN0VUeDQxWUh3bG96alFHN1FDU3k0SXpHUlA2cHRqRk5MUm5VR3pEU3hBc1lVODNqOWZJdXhOamJ0TWdqS1pIODQtVEZOZnFiY1lWcVJWa1ZUbU9EWHc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-27T15:24:38.000Z"
     },
     {
       "id": "aacaf86097f2585775de",
@@ -617,6 +617,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-27T12:00:00.000Z"
+    },
+    {
+      "id": "3eec103554b2dd965087",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago y Bice superan los 3 millones de inversores en su plataforma “Haz crecer tu dinero” en Chile",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNb21Ua2RUc2dicDU0RWE1eXVDQ25kT3lReElYWV9EYm0wYm9BeDdVd3NuNUlLVm1hb1VmYUtobEtSZXBFa0tzbHFrR191SWg3SDktdEVFa1AxRzZ2NkJVQW5TYnZ5azMtdGJ2RDRWaG0yM21LdnJOY0tuUjhPdUhVa1YyOW9FSjN1VWZVLTFKSEc1R2x2NWJKYUQzM1FxYVp0azZjOEpqNndYc0hsWGZYMGIwcm1vcEp4LUNMTFAyd2hvR0poYndBbmE2bWpBTi14Uk9yNG5KSQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-26T19:07:42.000Z"
     },
     {
       "id": "0cbc2c6bc3da7510a3c4",
@@ -1081,20 +1095,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1107,20 +1107,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
-    },
-    {
-      "id": "1202564625619d4f1cb5",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "How AI Helped Chainalysis Investigators Trace the $387 Million North Korea Stole from Bitget",
-      "excerpt": "Summary Since $387 million was stolen from Bitget on September 24, Chainalysis investigators have been working with the exchange and…",
-      "url": "https://www.chainalysis.com/blog/387m-bitget-theft-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-01T22:36:41.000Z"
     }
   ],
   "sources": [
@@ -1131,9 +1117,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
-      "recentCount": 7
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1142,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 0
     },
     {
@@ -1152,10 +1138,10 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "status": "error",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-29T00:57:00.398Z",
-      "recentCount": 7
+      "status": "ok",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
+      "recentCount": 8
     },
     {
       "id": "bce-boletines",
@@ -1164,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 5
     },
     {
@@ -1230,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 5
     },
     {
@@ -1252,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 5
     },
     {
@@ -1263,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 0
     },
     {
@@ -1274,9 +1260,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
-      "recentCount": 4
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 9
     },
     {
@@ -1307,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T19:22:52.611Z",
-      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "checkedAt": "2026-10-30T23:46:59.380Z",
+      "lastSuccessAt": "2026-10-30T23:46:59.380Z",
       "recentCount": 10
     }
   ]
