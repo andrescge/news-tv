@@ -1,7 +1,105 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T14:08:25.793Z",
+  "generatedAt": "2026-10-30T19:22:52.611Z",
   "stories": [
+    {
+      "id": "5e32635a3ef5497febeb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Galaxy Digital Seeks Bank Charter to Expand Financial Services Reach",
+      "excerpt": "Digital assets and data infrastructure company Galaxy Digital aims to create a national trust bank that would provide fiduciary investment advisory services along with Galaxy’s custody, trading and staking services, the company said in a Thursday (Oct. 29) press release. To furth",
+      "url": "https://www.pymnts.com/news/banking/2026/galaxy-digital-seeks-bank-charter-to-expand-financial-services-reach/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T18:42:13.000Z"
+    },
+    {
+      "id": "9c727c2077c9d4d3c9b5",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Credicuotas capta más de US$30 millones en una nueva emisión de bonos en Argentina para impulsar su operación crediticia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQbGFsOWI3NXlLenBCMWZiWlBLX1dfUUo1VEI1WHBFb2kxVjJRS1ZGRm5TMVZ1eUVyVWlveDAwNGh2N0l0N183enQ0eldXWE1jVk11VkFFQXRWT0p6SWVSN3VXei1IdUNYQlZwdkxLT3QzTnhQdzlIV2t4Zzg3ZkV2UjhrSmlkcUllV2Vtb1ZnSk1iZDczX3lqR1BaMkVpQ2Q0LVJ0LWh0VGE2cl9McDlnQVRLQWNyWkZlSXBKUk9ZZUlaR1dxSFZncHk4cEhmY0Y4X0wzZUFFTFBtdHQ2cHhTbXJQLUdzMTFWNG00ckh3?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-30T18:28:57.000Z"
+    },
+    {
+      "id": "1e092fdac402dd84191e",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "PE firm CD&R targets buyout of $40bn Global Payments - FT",
+      "excerpt": "Global Payments, the payments processor with an enterprise value of around $40 billion, is an acquisition target for private equity firm CD&R, according to the Financial Times.",
+      "url": "https://www.finextra.com/newsarticle/48681/pe-firm-cdr-targets-buyout-of-40bn-global-payments---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T18:15:00.000Z"
+    },
+    {
+      "id": "f00ccdd126abcb9730a9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "CD&R and GTCR Launch $40 Billion Buyout Bid for Global Payments",
+      "excerpt": "Private investment firm CD&R and private equity group GTCR have teamed up on a joint bid to buy out card processor Global Payments, the Financial Times reported Friday (Oct. 30), citing unnamed sources. GTCR is Global Payments’ largest shareholder, according to the report. The co",
+      "url": "https://www.pymnts.com/news/acquiring/2026/cdr-and-gtcr-launch-40-billion-buyout-bid-for-global-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T18:09:13.000Z"
+    },
+    {
+      "id": "de8ae2631cb444745764",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Deutsche Bank Warns AI Stock Selloff Threatens Dollar Safe-Haven Status",
+      "excerpt": "The current artificial intelligence (AI)-driven market correction could impact the dollar’s status as a haven asset, Deutsche Bank’s global head of FX strategy, George Saravelos, said in a Friday (Oct. 30) note to clients, Bloomberg reported. This view is supported by recent time",
+      "url": "https://www.pymnts.com/economy/2026/deutsche-bank-warns-ai-stock-selloff-threatens-dollar-safe-haven-status/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T16:43:00.000Z"
+    },
+    {
+      "id": "e7434387e74f1b1e1eec",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Unilever and Nestlé Put AI to Work Between Orders and Payments",
+      "excerpt": "Artificial intelligence agents are processing purchase orders and preparing collections work as businesses automate more of the steps between a B2B sale and payment. PYMNTS Intelligence research with JPMorgan finds surveyed companies automate an average 73% of accounts receivable",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/unilever-and-nestle-put-ai-to-work-between-orders-and-payments/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T15:32:41.000Z"
+    },
+    {
+      "id": "be907b0955c1b6033365",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Kipp acquired by LTVCo-led investor group for US push",
+      "excerpt": "Kipp, a Tel Aviv-headquartered fintech platform connecting card issuers and merchants to approve more transactions, has been acquired by an investor group ahead of a push into the US market.",
+      "url": "https://www.finextra.com/newsarticle/48679/kipp-acquired-by-ltvco-led-investor-group-for-us-push?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T14:10:00.000Z"
+    },
     {
       "id": "71268a3e838e1832d15e",
       "sourceId": "finextra-payments",
@@ -15,20 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-30T13:25:00.000Z"
-    },
-    {
-      "id": "3e08d3b046da4cc96994",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Amazon Wins 59% of AI-Assisted Purchases as Checkout Becomes the Prize",
-      "excerpt": "Generative artificial intelligence (AI) is doing something that years of retail competition struggled to accomplish. It is teaching consumers to start shopping somewhere other than Amazon. The catch? AI just isn’t teaching them to stop buying there. And that disconnect may be one",
-      "url": "https://www.pymnts.com/commerce/ecommerce/2026/amazon-wins-59percent-ai-assisted-purchases-as-checkout-becomes-the-prize/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T13:00:46.000Z"
     },
     {
       "id": "f5ed498f8b925d876656",
@@ -63,8 +147,8 @@
       "sourceId": "chainalysis",
       "category": "cripto",
       "kind": "analysis",
-      "title": "The $6.4 Billion Binance Exploit: Tracing the North Korea Link",
-      "excerpt": "Chainalysis investigators assess the $6.4 billion hack of Binance — the largest in the history of crypto, and one of…",
+      "title": "The $6.4 Billion Binance Hack: Tracing the North Korea Link",
+      "excerpt": "Key takeaways Around 4:20 p.m. ET on October 29, 2026, funds began leaving Binance hot wallets across multiple blockchains. Unauthorized…",
       "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -85,34 +169,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-30T09:11:00.000Z"
-    },
-    {
-      "id": "ea2981d15f81bf80c960",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ripple Moves Deeper Into Banking With Stablecoin Deals",
-      "excerpt": "Stablecoins continue to seek mainstream usage and acceptance, and this week, Ripple was at the forefront. The company spent the week securing more places for its dollar stablecoin to be held, traded and used. Agreements with Coinbase, Robinhood and BNY, alongside federal approval",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-moves-deeper-into-banking-with-stablecoin-deals/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T08:00:35.000Z"
-    },
-    {
-      "id": "a89fe682db823f8e5cab",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "54% of Wallet Users Keep Just One Payment Method Saved",
-      "excerpt": "A mobile wallet can hold several ways to pay. For most users, it holds just one. That leaves card issuers competing for a place in the wallet before the customer ever reaches a store’s payment terminal. The October 2026 PYMNTS Intelligence report, “Apple Pay @12: Mobile Wallets G",
-      "url": "https://www.pymnts.com/news/payment-methods/mobile-payments/2026/54percent-of-wallet-users-keep-just-one-payment-method-saved/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T08:00:14.000Z"
     },
     {
       "id": "438e1cb2b1e5f9d1268e",
@@ -381,20 +437,6 @@
       "publishedAt": "2026-10-28T17:41:00.000Z"
     },
     {
-      "id": "ca6d26c5725df497082d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pagos invisibles: cómo la tecnología permite experiencias de compra sin fricciones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFo4YXM0Z0dpX2pwX1h6V2tSRWMtMmxCcWd0cVlsakVfSDl0WlJMNDBwbWFhWlZXSEJtSlBraTY4dGoxcEdmbjc2U3VFaTZrZ19nTElzS0Q3ajdqVG9abWdpcy00eHI3ckl1ODZKUmtTdXh3M0wwTmlONllZcEUybVMydnR4bVU2OGFyY0xEZmtPLVVUQWdHTGxqbUo2eGFNbjAyTE5zOGRDRmJMWjZzRzdIT0M?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T16:59:09.000Z"
-    },
-    {
       "id": "3e3bafe34c9015ece399",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -577,34 +619,6 @@
       "publishedAt": "2026-10-27T12:00:00.000Z"
     },
     {
-      "id": "27134153053045ebe2f6",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard targets creators via MrBeast partnership",
-      "excerpt": "Mastercard is targeting the creator community through a partnership with Beast Industries, the company founded by YouTube superstar MrBeast.",
-      "url": "https://www.finextra.com/newsarticle/48650/mastercard-targets-creators-via-mrbeast-partnership?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T00:01:00.000Z"
-    },
-    {
-      "id": "8ffcf84636afc7b530f6",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "CapitalOS raises $21.9m for money orchestration layer for B2B platforms",
-      "excerpt": "CapitalOS, a money orchestration layer for B2B platforms, has raised $21.9 million in Series A funding.",
-      "url": "https://www.finextra.com/newsarticle/48652/capitalos-raises-219m-for-money-orchestration-layer-for-b2b-platforms?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T00:01:00.000Z"
-    },
-    {
       "id": "0cbc2c6bc3da7510a3c4",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -771,20 +785,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-21T12:55:00.000Z"
-    },
-    {
-      "id": "e357886826a35dd87e77",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bancolombia reconoce que las alertas antifraude tradicionales no bastan",
-      "excerpt": "El banco lanza un documental con testimonios de víctimas con el que buscan que las personas aprendan a reconocer la manipulación. Pero su efectividad todavía está por demostrarse. ... Leer más... La entrada Bancolombia reconoce que las alertas antifraude tradicionales no bastan s",
-      "url": "https://iupana.com/2026/10/21/bancolombia-alertas-antifraude-no-bastan/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-21T09:00:06.000Z"
     },
     {
       "id": "c0b6dd6adb830d6eb465",
@@ -1131,8 +1131,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 7
     },
     {
@@ -1142,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 0
     },
     {
@@ -1153,7 +1153,7 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "error",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
       "recentCount": 7
     },
@@ -1164,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 5
     },
     {
@@ -1230,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 8
     },
     {
@@ -1241,9 +1241,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
-      "recentCount": 6
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "recentCount": 5
     },
     {
       "id": "latam-bloomberg",
@@ -1252,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 5
     },
     {
@@ -1263,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 0
     },
     {
@@ -1274,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
-      "recentCount": 3
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 9
     },
     {
@@ -1307,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T14:08:25.793Z",
-      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "checkedAt": "2026-10-30T19:22:52.611Z",
+      "lastSuccessAt": "2026-10-30T19:22:52.611Z",
       "recentCount": 10
     }
   ]
