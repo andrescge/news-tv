@@ -1,7 +1,119 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-30T07:06:34.249Z",
+  "generatedAt": "2026-10-30T14:08:25.793Z",
   "stories": [
+    {
+      "id": "71268a3e838e1832d15e",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "ECB picks digital euro network service providers",
+      "excerpt": "The European Central Bank has selected two network service providers to connect PSPs and national central banks to the digital euro service platform.",
+      "url": "https://www.finextra.com/newsarticle/48678/ecb-picks-digital-euro-network-service-providers?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T13:25:00.000Z"
+    },
+    {
+      "id": "3e08d3b046da4cc96994",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Amazon Wins 59% of AI-Assisted Purchases as Checkout Becomes the Prize",
+      "excerpt": "Generative artificial intelligence (AI) is doing something that years of retail competition struggled to accomplish. It is teaching consumers to start shopping somewhere other than Amazon. The catch? AI just isn’t teaching them to stop buying there. And that disconnect may be one",
+      "url": "https://www.pymnts.com/commerce/ecommerce/2026/amazon-wins-59percent-ai-assisted-purchases-as-checkout-becomes-the-prize/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T13:00:46.000Z"
+    },
+    {
+      "id": "f5ed498f8b925d876656",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Apple Pay and Google Pay launch in Uzbekistan",
+      "excerpt": "Uzbekistan has announced the arrival of Apple Pay and Google Pay into its banking system as the central Asian nation looks to open up its financial services.",
+      "url": "https://www.finextra.com/newsarticle/48676/apple-pay-and-google-pay-launch-in-uzbekistan?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T11:35:00.000Z"
+    },
+    {
+      "id": "102b089b1dd2cfca6cbe",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "¿Adiós código Swift? BCP de Perú prueba pagos internacionales con alias",
+      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú prueba pagos internacionales con alias",
+      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-30T11:00:19.000Z"
+    },
+    {
+      "id": "38b0708e38f04f54ed3b",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "The $6.4 Billion Binance Exploit: Tracing the North Korea Link",
+      "excerpt": "Chainalysis investigators assess the $6.4 billion hack of Binance — the largest in the history of crypto, and one of…",
+      "url": "https://www.chainalysis.com/blog/binance-exploit-latest-findings-and-response/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T09:34:29.000Z"
+    },
+    {
+      "id": "b190c5ccc4e5975bce64",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Hackers steal $6.3bn in crypto assets from Binance",
+      "excerpt": "The world's largest crypto exchange has fallen victim to the world's largest crypto heist after North Korean hackers stole $6.3bn from Binance, an audacious attack that could undermine confidence in the digital assets market.",
+      "url": "https://www.finextra.com/newsarticle/48674/hackers-steal-63bn-in-crypto-assets-from-binance?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T09:11:00.000Z"
+    },
+    {
+      "id": "ea2981d15f81bf80c960",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Ripple Moves Deeper Into Banking With Stablecoin Deals",
+      "excerpt": "Stablecoins continue to seek mainstream usage and acceptance, and this week, Ripple was at the forefront. The company spent the week securing more places for its dollar stablecoin to be held, traded and used. Agreements with Coinbase, Robinhood and BNY, alongside federal approval",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/ripple-moves-deeper-into-banking-with-stablecoin-deals/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T08:00:35.000Z"
+    },
+    {
+      "id": "a89fe682db823f8e5cab",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "54% of Wallet Users Keep Just One Payment Method Saved",
+      "excerpt": "A mobile wallet can hold several ways to pay. For most users, it holds just one. That leaves card issuers competing for a place in the wallet before the customer ever reaches a store’s payment terminal. The October 2026 PYMNTS Intelligence report, “Apple Pay @12: Mobile Wallets G",
+      "url": "https://www.pymnts.com/news/payment-methods/mobile-payments/2026/54percent-of-wallet-users-keep-just-one-payment-method-saved/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-30T08:00:14.000Z"
+    },
     {
       "id": "438e1cb2b1e5f9d1268e",
       "sourceId": "finextra-payments",
@@ -15,34 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-30T00:01:00.000Z"
-    },
-    {
-      "id": "9d9cf1214c682c54f767",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Google Tops AI Smarts Ranking as OpenAI Slashes Prices",
-      "excerpt": "Google may have finally caught up with its archrivals. Its new Gemini 4 Carbon model ranks first on the Artificial Analysis Intelligence Index, an independent scorecard that had OpenAI and Anthropic ahead for most of the year. OpenAI answered on price, halving the cost of its wor",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/google-tops-ai-smarts-ranking-as-openai-slashes-prices/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T22:25:20.000Z"
-    },
-    {
-      "id": "b803424a3d8b56fcf449",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "American Express Turns Card Rewards Into Bank Deposits",
-      "excerpt": "American Express has introduced new ways for consumer and business cardholders in the United States to redeem rewards for a deposit into eligible American Express bank accounts, the company said in a Thursday (Oct. 29) press release. For consumers, U.S. Consumer Cash Back Card me",
-      "url": "https://www.pymnts.com/news/loyalty-and-rewards-news/2026/american-express-converts-card-rewards-into-bank-deposits/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T20:41:23.000Z"
     },
     {
       "id": "8dca806d72d0602ea25e",
@@ -521,20 +605,6 @@
       "publishedAt": "2026-10-27T00:01:00.000Z"
     },
     {
-      "id": "23d60c0117e00929658f",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Canada opens stablecoin consultation",
-      "excerpt": "The Canadian government has kicked off a 60-day public consultation on draft stablecoin regulations that would maintain a ban on yield payments.",
-      "url": "https://www.finextra.com/newsarticle/48651/canada-opens-stablecoin-consultation?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T19:38:00.000Z"
-    },
-    {
       "id": "0cbc2c6bc3da7510a3c4",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -575,20 +645,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-26T12:00:00.000Z"
-    },
-    {
-      "id": "df6f47dbd358976353b8",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "NextGen Nordics 2027: Who controls the future of payments?",
-      "excerpt": "Registration is officially open for NextGen Nordics 2027, as the leading banking and payments event returns to Stockholm for its 10th anniversary.",
-      "url": "https://www.finextra.com/newsarticle/48643/nextgen-nordics-2027-who-controls-the-future-of-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-26T11:00:00.000Z"
     },
     {
       "id": "5a53d32c92b266c51d55",
@@ -787,20 +843,6 @@
       "publishedAt": "2026-10-20T21:20:04.000Z"
     },
     {
-      "id": "dcdc8aa361e6a36259ac",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Máximo alista su relanzamiento con una propuesta de gestión financiera",
-      "excerpt": "La fintech peruana está por lanzar una nueva versión que contempla créditos, puntos de lealtad, alianzas retail e inversiones. La estrategia busca optimizar su proceso de adquisición y competir en el próximo nivel financiero que alista el mercado: la experiencia de uso. ... Leer ",
-      "url": "https://iupana.com/2026/10/20/maximo-alista-relanzamiento-propuesta-gestion-financiera/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-20T15:55:31.000Z"
-    },
-    {
       "id": "d138356cf27287a16330",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -813,34 +855,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-20T12:00:00.000Z"
-    },
-    {
-      "id": "e897b2fbf143e0d1e545",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "JP Morgan brings JPM Coin to Ethereum",
-      "excerpt": "JP Morgan has brought its deposit token product, JPM Coin, to the Ethereum layer 1 blockchain network.",
-      "url": "https://www.finextra.com/newsarticle/48607/jp-morgan-brings-jpm-coin-to-ethereum?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-19T15:37:00.000Z"
-    },
-    {
-      "id": "979761a1c4fd9f669a81",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T14:25:43.000Z"
     },
     {
       "id": "7e868d21883008ab2337",
@@ -869,6 +883,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-19T12:00:00.000Z"
+    },
+    {
+      "id": "979761a1c4fd9f669a81",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T07:00:00.000Z"
     },
     {
       "id": "78e80966558f9df82583",
@@ -1081,20 +1109,6 @@
       "publishedAt": "2026-10-05T13:49:09.000Z"
     },
     {
-      "id": "d1a79fd390a6afd8c8e8",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-04T07:00:00.000Z"
-    },
-    {
       "id": "1202564625619d4f1cb5",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1107,34 +1121,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-01T22:36:41.000Z"
-    },
-    {
-      "id": "f094c90c5c5c74bb668d",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "OFAC Sanctions Tren de Aragua Fugitive Who Laundered ATM Heists With Crypto",
-      "excerpt": "Summary OFAC designated 10 targets in a Tren de Aragua ATM jackpotting scheme that stole at least $40.73 million from…",
-      "url": "https://www.chainalysis.com/blog/ofac-sanctions-tren-de-aragua-crypto-laundering-september-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-09-30T20:08:34.000Z"
-    },
-    {
-      "id": "a21592d62679a1086f3b",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Tasas de Interés Efectivas. Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-09-30T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1145,9 +1131,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
-      "recentCount": 8
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1156,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 0
     },
     {
@@ -1167,9 +1153,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "error",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
       "lastSuccessAt": "2026-10-29T00:57:00.398Z",
-      "recentCount": 8
+      "recentCount": 7
     },
     {
       "id": "bce-boletines",
@@ -1178,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 5
     },
     {
@@ -1244,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 6
     },
     {
@@ -1266,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
-      "recentCount": 2
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 9
     },
     {
@@ -1321,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-10-30T07:06:34.249Z",
-      "lastSuccessAt": "2026-10-30T07:06:34.249Z",
+      "checkedAt": "2026-10-30T14:08:25.793Z",
+      "lastSuccessAt": "2026-10-30T14:08:25.793Z",
       "recentCount": 10
     }
   ]
