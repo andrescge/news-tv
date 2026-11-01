@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-01T01:09:53.961Z",
+  "generatedAt": "2026-11-01T07:32:11.383Z",
   "stories": [
     {
       "id": "7fab457fe74e3194b5e1",
@@ -283,6 +283,34 @@
       "publishedAt": "2026-10-29T16:23:10.000Z"
     },
     {
+      "id": "6b446f8d46054b2329a7",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Lulo Bank lanza su oferta de seguros en Colombia con cuatro productos: vida, desempleo, SOAT y protección de crédito",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa29BYjVseDlZdEV1dVFOU19sU1FrdGVULW9qQ0hSVjNzZUhLTHdZOGZCa2xmZFVhdFhTR2JUQVBWZEc3cnZsZC02czlvNGhjYzJZWnJoVzVYckxqUVpKY250b2ZaWGtaZUpYV0NGZG1sSG9iXzRjSFRVc1Rud3VwM2VORWZ0dk5lQkdVUTFhNmd3c2U5RkhlUzl5Si16OEdrX0VsbWJRQnFJTU5hU04tRnpIakE0NkJyR2hwV0YxMGRpSVExdFRUZVNTekNuVzhqNWJJTHpvbUlvOU9XQy1xSQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-29T15:54:15.000Z"
+    },
+    {
+      "id": "8659f4b984f9d8ca60f0",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "ACI Worldwide y Circle colaboran para impulsar los pagos multirriel y la liquidación con stablecoins en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT0lxNW9tQUNDRnJKanV1SXFLbUVwV2xldVJpaDRaX3E2SWo2cDk2Z2dQdDRLeEdBN2JPbUpoWFN1REd5eVh1VzJsVEstSEUxS3ZQWTFlY1E5SVVSZDk3ZVluc2JyY040a3M1WHU2MWNQUnloOFZyOGVDV0VKOFdEbnZQU1NtV0RIMkhBZW9oUE5nTDVpSW9STk9TMzdLb2JTdTRlaUJSeWJGZWVxOUVVZG5wcWFHQWUwVFo3eE11TWJ2NjFpTDNJUGVVYl9hZFU1M185dkdzeXlzcHU0U3BOMVFhWQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-29T15:54:15.000Z"
+    },
+    {
       "id": "e2b0789269c8f136d98b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -353,6 +381,34 @@
       "publishedAt": "2026-10-28T21:50:48.000Z"
     },
     {
+      "id": "1b38fef4b0d85ef1f169",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Unblock solicita al Banco Central de Brasil autorización para operar como corredora de activos virtuales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUUlPem11bW93T0NXRnpJMXZ4RHBLT0w3a1EtTTVSUTJoNkV3cGJOa2tsMFAzRFBpTC1MeUwwSzRkQ3kxRVFUSkNYWXNRQ01PV1FwSmJ6ODhjalBDMFdGTnM2Rlk0UEZVSlZyWV9TWkhwcEYwMUFqeF9zbUx5bGhfR3ZoMUpyZ1pQUGNLMDNPYllfRWVxXzI3Tk9hY0hpb2c4T3N4dlRYSnFDSTNSU19IVUZYN1lwYTB0ZjZQTzVYOTRtMEtYR3BETkZrak9zb2RHLXNldlJ2MmhPWndUZkVwa1A3UXBmNEpTbkE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T19:39:38.000Z"
+    },
+    {
+      "id": "650c6078e1d8b6761a6a",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintechs Numbi y Sempli se alían para impulsar la financiación de pymes en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEk2aU1pcTlvNVNtUERZUENhYy1hOHFwSjNUOGZwUktOREw0S3UzYjFUX2xUN0sxZC10MDEwOXh2Q3B2U2IyMS1PbE81LUxXS2ZxbHc4Nl9fQVJkUGNUbXg5QVZMeTgtRVJnVFozRmFoQVRKMFJzcmljeXo2V25rTGVRYWpfdzVwd2lYSnM1UHBSalZkUUFxREE4OEN4a1lrSURQbkJjRE1sSm84NC1PUi02Vkx1UExGTkRGcw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T19:39:38.000Z"
+    },
+    {
       "id": "104b18d380385b4e0648",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -393,20 +449,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T17:41:00.000Z"
-    },
-    {
-      "id": "ca6d26c5725df497082d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pagos invisibles: cómo la tecnología permite experiencias de compra sin fricciones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFo4YXM0Z0dpX2pwX1h6V2tSRWMtMmxCcWd0cVlsakVfSDl0WlJMNDBwbWFhWlZXSEJtSlBraTY4dGoxcEdmbjc2U3VFaTZrZ19nTElzS0Q3ajdqVG9abWdpcy00eHI3ckl1ODZKUmtTdXh3M0wwTmlONllZcEUybVMydnR4bVU2OGFyY0xEZmtPLVVUQWdHTGxqbUo2eGFNbjAyTE5zOGRDRmJMWjZzRzdIT0M?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T16:59:09.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -507,34 +549,6 @@
       "publishedAt": "2026-10-27T21:49:13.000Z"
     },
     {
-      "id": "3e0ad6beaccd09c2772b",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Del KYC al KYA: la nueva pregunta de la banca",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQUFRNkR2QWNlOENfLU5aOWZBYkpzaDYxMkdyeWhORDE2V3VxMXNhR05JSGV1dUtpam82cHdKbDhac0Y4eDV3YjU0Y09MOExuVkNfbjhuSXRJcE1tYjhSTzA1YlVOdzk3UnNXYURGRlM2SHM1TTVZbjhRSTRwNTYzTUZoZGgzMW1a?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-27T19:28:20.000Z"
-    },
-    {
-      "id": "515cd764d4b96c39be6e",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintoc lanza solución de cobros recurrentes en México para empresas de crédito, seguros y suscripciones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQm9wdHJzTFBEX3dWS3hVMXV1WHNyRlBNQjFjOW1UOFZzdjkyRHhSTkdNak5hZmdfMlJteFlHX0czdVBMY29SdzBhSXBndzhZUkY3aTNmTlJuU1hIWE01Q09QWVlEWDEyVGVnT2thXzNKN2hwcmxpQlAwTnNPOU0ycDNGcGNTNjJGRzJhRUc4Y3I2M0xHWkl4SDFma0JGV0ZkeHhuWEx1NllvZzdKb2dpUkpQc0pHZW1MNWgyTnUzOW5jeXdUWXE5WFVZLVFKMm15Q2tTZE5B?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-27T19:28:20.000Z"
-    },
-    {
       "id": "5bdfc0265c3febb2c500",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -561,20 +575,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-27T18:50:00.000Z"
-    },
-    {
-      "id": "6d05c9ebbb66cae360c4",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech colombiana FinMaq levanta US$ 6,5 millones en su Serie A para financiar maquinaria y equipos de pymes",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNVEc0YlJkQ3pvYnJzaHZLMnk5dG85clAzaGdBYmIxM3FHVjlvWFRnSlRURmw4UEtTc2xsRmVKSmNJaEt1NkdUUzNzYmVLald1Tl9jZUt3MHYxNGs1ajZ4MHdOcExjNFl4V21OWFJEMzA1OUtCSEZwbmUxQVVTQXVVTG10S1VjeGluN0VUeDQxWUh3bG96alFHN1FDU3k0SXpHUlA2cHRqRk5MUm5VR3pEU3hBc1lVODNqOWZJdXhOamJ0TWdqS1pIODQtVEZOZnFiY1lWcVJWa1ZUbU9EWHc?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-27T15:24:38.000Z"
     },
     {
       "id": "aacaf86097f2585775de",
@@ -1145,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 8
     },
     {
@@ -1155,8 +1155,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
+      "status": "error",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
       "lastSuccessAt": "2026-11-01T01:09:53.961Z",
       "recentCount": 0
     },
@@ -1167,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 8
     },
     {
@@ -1177,8 +1177,8 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
+      "status": "error",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
       "lastSuccessAt": "2026-11-01T01:09:53.961Z",
       "recentCount": 6
     },
@@ -1189,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 5
     },
     {
@@ -1244,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 5
     },
     {
@@ -1266,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 0
     },
     {
@@ -1288,8 +1288,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 3
     },
     {
@@ -1299,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 9
     },
     {
@@ -1321,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-01T01:09:53.961Z",
-      "lastSuccessAt": "2026-11-01T01:09:53.961Z",
+      "checkedAt": "2026-11-01T07:32:11.383Z",
+      "lastSuccessAt": "2026-11-01T07:32:11.383Z",
       "recentCount": 10
     }
   ]
