@@ -1,20 +1,90 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T15:52:41.676Z",
+  "generatedAt": "2026-11-02T23:30:12.074Z",
   "stories": [
     {
-      "id": "3dd5c718ea35dab9babf",
+      "id": "dcb165641b954a3d0905",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Clip acquires Pulpos to expand business management services",
+      "excerpt": "Mexican fintech unicorn Clip acquired Pulpos, a cloud based business management platform, for an undisclosed amount. Founded in…",
+      "url": "https://latamlist.com/clip-acquires-pulpos-to-expand-business-management-services/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T23:30:07.000Z"
+    },
+    {
+      "id": "06c80af9de4f00f057a4",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",
+      "excerpt": "Early this morning Mercado Bitcoin, Brazil’s largest crypto exchange, suffered a security incident that resulted in approximately $49 million in…",
+      "url": "https://www.chainalysis.com/blog/chainalysis-response-mercado-bitcoin/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T22:59:13.000Z"
+    },
+    {
+      "id": "1a6c8713a5702370a0e7",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "BTCPay Warns of Attacks on Crypto Payment Servers",
-      "excerpt": "Bitcoin payments tool BTCPay Server reportedly urged users Sunday (Nov. 1) to shut off their servers following word of an attack. That’s according to a report Monday (Nov. 2) from CoinDesk, which says the attackers in question were draining so-called “hot wallets” on some of thos",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/btcpay-warns-of-attacks-on-crypto-payment-servers/",
+      "title": "Google Wallet Tests Letting Users Confirm Identity Before Every Contactless Payment",
+      "excerpt": "The latest Google Wallet update includes a new Tap to pay option in the verification settings that may control how often the app asks users to verify their identity before making contactless payments, Android Authority reported Sunday (Nov. 1). The report is based on work-in-prog",
+      "url": "https://www.pymnts.com/authentication/2026/google-wallet-tests-letting-users-confirm-identity-before-every-contactless-payment/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-02T15:24:22.000Z"
+      "publishedAt": "2026-11-02T22:54:01.000Z"
+    },
+    {
+      "id": "4273e13a3ab8373967ce",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OKX and Mastercard Bring Stablecoin Card to Most US States",
+      "excerpt": "OKX’s Mastercard-powered virtual card that unlocks stablecoin spending, OKX Card, is now available to eligible customers in most U.S. states and select territories, the company said in a Monday (Nov. 2) press release. The OKX Card lets customers make purchases backed by USDC, USD",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/okx-and-mastercard-bring-stablecoin-card-to-most-us-states/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T21:19:42.000Z"
+    },
+    {
+      "id": "1fcf860ff25652a797a6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Global Payments Buyout Talks Signal Pressure on Legacy Processors",
+      "excerpt": "Global Payments’ reported take-private talks suggest that changes in ownership and strategy could have ripple effects across payment processing as established providers confront competition over technology, service and merchant relationships. CD&R and GTCR are reportedly pursuing",
+      "url": "https://www.pymnts.com/business/2026/global-payments-buyout-talks-signal-pressure-on-legacy-processors/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T21:04:35.000Z"
+    },
+    {
+      "id": "27bf8c4f07c359cda528",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mercado Bitcoin Takes $40 Million Loss in Latest Crypto Hack",
+      "excerpt": "Mercado Bitcoin is the latest digital asset company to suffer a hack, Bloomberg reported Monday (Nov. 2). The Brazilian cryptocurrency broker will absorb a $40 million loss from the incident, the report said. No customer losses are expected. The attack targeted “hot wallets” but ",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/mercado-bitcoin-takes-40-million-dollar-loss-latest-crypto-hack/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T20:36:41.000Z"
     },
     {
       "id": "f27b82ab629451daaf59",
@@ -29,62 +99,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-02T15:07:00.000Z"
-    },
-    {
-      "id": "af6d04f363c50ca06706",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "RSA Warns Banks of the Risk of the Shadow Agent Explosion",
-      "excerpt": "Watch more: Monday Conversation With RSA Security’s Greg Nelson For anyone who remembers carrying an RSA SecurID key fob to log in to work, the company’s role is familiar. For more than 40 years, RSA has helped organizations establish who belongs inside their systems. In fact, th",
-      "url": "https://www.pymnts.com/cybersecurity/2026/rsa-warns-banks-of-the-risk-of-the-shadow-agent-explosion/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T09:03:28.000Z"
-    },
-    {
-      "id": "479a32b3bef64efc0460",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "AI Travel Agents Give Hotels a New Guest to Impress",
-      "excerpt": "A traveler asks an AI assistant for a quiet hotel near the water with a spa and a late checkout. The assistant compares dozens of properties in seconds and never opens a hotel website. The hotel it recommends is the one whose information it can read. Welcome to the new agentic ru",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-travel-agents-give-hotels-a-new-guest-to-impress/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T09:00:50.000Z"
-    },
-    {
-      "id": "1cff852b08f8943f269e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Most Firms Using Three or More AI Tools Stop 90% of Fraud Attempts",
-      "excerpt": "Companies using several artificial intelligence fraud tools are more likely to stop attempted theft before money leaves their accounts, offering an encouraging direction for businesses strengthening payment defenses. That’s a central finding of “Prevention First: Building a Smart",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/most-firms-using-three-or-more-ai-tools-stop-90-of-fraud-attempts/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T09:00:35.000Z"
-    },
-    {
-      "id": "eaf4293f3005b4ad5ac1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Billtrust CFO Says More Automation Doesn’t Always Mean More Cash",
-      "excerpt": "Automation and cash generation aren’t the same, Billtrust Chief Financial Officer David Zwick writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” In January, I believed automation was the finish line. As a CFO, I’d spent years pushing my own team toward i",
-      "url": "https://www.pymnts.com/opinion/2026/billtrust-cfo-says-more-automation-doesnt-always-mean-more-cash/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T09:00:17.000Z"
     },
     {
       "id": "7fab457fe74e3194b5e1",
@@ -339,6 +353,20 @@
       "publishedAt": "2026-10-29T15:54:15.000Z"
     },
     {
+      "id": "8659f4b984f9d8ca60f0",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "ACI Worldwide y Circle colaboran para impulsar los pagos multirriel y la liquidación con stablecoins en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT0lxNW9tQUNDRnJKanV1SXFLbUVwV2xldVJpaDRaX3E2SWo2cDk2Z2dQdDRLeEdBN2JPbUpoWFN1REd5eVh1VzJsVEstSEUxS3ZQWTFlY1E5SVVSZDk3ZVluc2JyY040a3M1WHU2MWNQUnloOFZyOGVDV0VKOFdEbnZQU1NtV0RIMkhBZW9oUE5nTDVpSW9STk9TMzdLb2JTdTRlaUJSeWJGZWVxOUVVZG5wcWFHQWUwVFo3eE11TWJ2NjFpTDNJUGVVYl9hZFU1M185dkdzeXlzcHU0U3BOMVFhWQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-29T15:54:15.000Z"
+    },
+    {
       "id": "e2b0789269c8f136d98b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -393,6 +421,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T06:55:01.000Z"
+    },
+    {
+      "id": "09d5827d86b55ad291c0",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Itaú to acquire NeoSpace AI for $589M",
+      "excerpt": "Brazilian bank Itaú announced an agreement to acquire 100% of NeoSpace AI for approximately $589M. The bank will…",
+      "url": "https://latamlist.com/itau-to-acquire-neospace-ai-for-589m/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-28T23:10:59.000Z"
     },
     {
       "id": "0385417a1605d55d488b",
@@ -477,20 +519,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T17:41:00.000Z"
-    },
-    {
-      "id": "ca6d26c5725df497082d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Pagos invisibles: cómo la tecnología permite experiencias de compra sin fricciones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFo4YXM0Z0dpX2pwX1h6V2tSRWMtMmxCcWd0cVlsakVfSDl0WlJMNDBwbWFhWlZXSEJtSlBraTY4dGoxcEdmbjc2U3VFaTZrZ19nTElzS0Q3ajdqVG9abWdpcy00eHI3ckl1ODZKUmtTdXh3M0wwTmlONllZcEUybVMydnR4bVU2OGFyY0xEZmtPLVVUQWdHTGxqbUo2eGFNbjAyTE5zOGRDRmJMWjZzRzdIT0M?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T16:59:09.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -773,20 +801,6 @@
       "publishedAt": "2026-10-23T22:47:35.000Z"
     },
     {
-      "id": "0030dba0d18f1d039a83",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "HSBC launches first stablecoin",
-      "excerpt": "Global bank HSBC has launched RedCoin, its first stablecoin, for public use.",
-      "url": "https://www.finextra.com/newsarticle/48638/hsbc-launches-first-stablecoin?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T11:09:00.000Z"
-    },
-    {
       "id": "30d581a61d1112258b6e",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -815,20 +829,6 @@
       "publishedAt": "2026-10-22T20:36:33.000Z"
     },
     {
-      "id": "8b1e4869d5392d339786",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Coinbase fined €3.25m by Irish central bank",
-      "excerpt": "Crypto exchange Coinbase Ireland has been penalised by the Central Bank of Ireland (CBI) for a series of operational and governance failings over a five-year period.",
-      "url": "https://www.finextra.com/newsarticle/48633/coinbase-fined-325m-by-irish-central-bank?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-22T12:24:00.000Z"
-    },
-    {
       "id": "c0b6dd6adb830d6eb465",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -855,34 +855,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-20T23:24:46.000Z"
-    },
-    {
-      "id": "a8b9536072c467e3fee0",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "EFY Finance secures investment from Tether to expand across Latin America",
-      "excerpt": "Panama based fintech EFY Finance secured an investment from Tether as part of its seed funding round. The…",
-      "url": "https://latamlist.com/efy-finance-secures-investment-from-tether-to-expand-across-latin-america/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T22:07:06.000Z"
-    },
-    {
-      "id": "1ea4e56fe0f3300583fd",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Alice raises $40M Series D led by IFC",
-      "excerpt": "Brazilian healthtech Alice raised $40M in a Series D round led by the International Finance Corporation. DEG, Finnfund,…",
-      "url": "https://latamlist.com/alice-raises-40m-series-d-led-by-ifc/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T21:20:04.000Z"
     },
     {
       "id": "d138356cf27287a16330",
@@ -1123,18 +1095,32 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "f5fc81d6ce5f2b1d8421",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "East Asia Crypto Adoption Report: South Korea’s AI Trade Comes to Crypto",
-      "excerpt": "Summary South Korea leads the region with a $449.1 billion crypto economy, followed by Japan ($228.3 billion), Hong Kong ($192.2…",
-      "url": "https://www.chainalysis.com/blog/eastern-asia-crypto-adoption-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-05T13:49:09.000Z"
+      "id": "8dec40f4bd0b7c6b852d",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "d1a79fd390a6afd8c8e8",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-04T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1145,9 +1131,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "recentCount": 8
     },
     {
       "id": "bce-junta",
@@ -1155,8 +1141,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "status": "error",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
       "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 0
     },
@@ -1167,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 8
     },
     {
@@ -1177,8 +1163,8 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "status": "error",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
       "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 6
     },
@@ -1189,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 5
     },
     {
@@ -1244,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 5
     },
     {
@@ -1266,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 12
     },
     {
@@ -1310,9 +1296,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
-      "recentCount": 9
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "recentCount": 7
     },
     {
       "id": "chainalysis",
@@ -1321,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T15:52:41.676Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "checkedAt": "2026-11-02T23:30:12.074Z",
+      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
       "recentCount": 10
     }
   ]
