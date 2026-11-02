@@ -1,20 +1,90 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T06:02:22.965Z",
+  "generatedAt": "2026-11-02T15:52:41.676Z",
   "stories": [
     {
-      "id": "e7728585a0ebbb8d9f75",
+      "id": "3dd5c718ea35dab9babf",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Candidates of Both Parties Pitch Credit Card Interest Rate Caps",
-      "excerpt": "Candidates of both parties are advocating caps on credit card interest rates as they campaign for next week’s midterm elections, Bloomberg reported Saturday (Oct. 31). These candidates aim to capitalize on voter frustration with credit card interest rates that are nearly double w",
-      "url": "https://www.pymnts.com/credit-cards/2026/candidates-of-both-parties-pitch-credit-card-interest-rate-caps/",
+      "title": "BTCPay Warns of Attacks on Crypto Payment Servers",
+      "excerpt": "Bitcoin payments tool BTCPay Server reportedly urged users Sunday (Nov. 1) to shut off their servers following word of an attack. That’s according to a report Monday (Nov. 2) from CoinDesk, which says the attackers in question were draining so-called “hot wallets” on some of thos",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/btcpay-warns-of-attacks-on-crypto-payment-servers/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-02T00:03:41.000Z"
+      "publishedAt": "2026-11-02T15:24:22.000Z"
+    },
+    {
+      "id": "f27b82ab629451daaf59",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "TZero to go public in Spac deal",
+      "excerpt": "TZero, a provider of blockchain-based infrastructure for financial markets, is planning to go public via a merger with blank-check company FG Imperii Acquisition Corp.",
+      "url": "https://www.finextra.com/newsarticle/48684/tzero-to-go-public-in-spac-deal?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T15:07:00.000Z"
+    },
+    {
+      "id": "af6d04f363c50ca06706",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "RSA Warns Banks of the Risk of the Shadow Agent Explosion",
+      "excerpt": "Watch more: Monday Conversation With RSA Security’s Greg Nelson For anyone who remembers carrying an RSA SecurID key fob to log in to work, the company’s role is familiar. For more than 40 years, RSA has helped organizations establish who belongs inside their systems. In fact, th",
+      "url": "https://www.pymnts.com/cybersecurity/2026/rsa-warns-banks-of-the-risk-of-the-shadow-agent-explosion/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T09:03:28.000Z"
+    },
+    {
+      "id": "479a32b3bef64efc0460",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Travel Agents Give Hotels a New Guest to Impress",
+      "excerpt": "A traveler asks an AI assistant for a quiet hotel near the water with a spa and a late checkout. The assistant compares dozens of properties in seconds and never opens a hotel website. The hotel it recommends is the one whose information it can read. Welcome to the new agentic ru",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ai-travel-agents-give-hotels-a-new-guest-to-impress/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T09:00:50.000Z"
+    },
+    {
+      "id": "1cff852b08f8943f269e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Most Firms Using Three or More AI Tools Stop 90% of Fraud Attempts",
+      "excerpt": "Companies using several artificial intelligence fraud tools are more likely to stop attempted theft before money leaves their accounts, offering an encouraging direction for businesses strengthening payment defenses. That’s a central finding of “Prevention First: Building a Smart",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/most-firms-using-three-or-more-ai-tools-stop-90-of-fraud-attempts/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T09:00:35.000Z"
+    },
+    {
+      "id": "eaf4293f3005b4ad5ac1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Billtrust CFO Says More Automation Doesn’t Always Mean More Cash",
+      "excerpt": "Automation and cash generation aren’t the same, Billtrust Chief Financial Officer David Zwick writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” In January, I believed automation was the finish line. As a CFO, I’d spent years pushing my own team toward i",
+      "url": "https://www.pymnts.com/opinion/2026/billtrust-cfo-says-more-automation-doesnt-always-mean-more-cash/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T09:00:17.000Z"
     },
     {
       "id": "7fab457fe74e3194b5e1",
@@ -269,20 +339,6 @@
       "publishedAt": "2026-10-29T15:54:15.000Z"
     },
     {
-      "id": "8659f4b984f9d8ca60f0",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "ACI Worldwide y Circle colaboran para impulsar los pagos multirriel y la liquidación con stablecoins en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPT0lxNW9tQUNDRnJKanV1SXFLbUVwV2xldVJpaDRaX3E2SWo2cDk2Z2dQdDRLeEdBN2JPbUpoWFN1REd5eVh1VzJsVEstSEUxS3ZQWTFlY1E5SVVSZDk3ZVluc2JyY040a3M1WHU2MWNQUnloOFZyOGVDV0VKOFdEbnZQU1NtV0RIMkhBZW9oUE5nTDVpSW9STk9TMzdLb2JTdTRlaUJSeWJGZWVxOUVVZG5wcWFHQWUwVFo3eE11TWJ2NjFpTDNJUGVVYl9hZFU1M185dkdzeXlzcHU0U3BOMVFhWQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T15:54:15.000Z"
-    },
-    {
       "id": "e2b0789269c8f136d98b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -421,6 +477,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-28T17:41:00.000Z"
+    },
+    {
+      "id": "ca6d26c5725df497082d",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Pagos invisibles: cómo la tecnología permite experiencias de compra sin fricciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOFo4YXM0Z0dpX2pwX1h6V2tSRWMtMmxCcWd0cVlsakVfSDl0WlJMNDBwbWFhWlZXSEJtSlBraTY4dGoxcEdmbjc2U3VFaTZrZ19nTElzS0Q3ajdqVG9abWdpcy00eHI3ckl1ODZKUmtTdXh3M0wwTmlONllZcEUybVMydnR4bVU2OGFyY0xEZmtPLVVUQWdHTGxqbUo2eGFNbjAyTE5zOGRDRmJMWjZzRzdIT0M?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T16:59:09.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -759,20 +829,6 @@
       "publishedAt": "2026-10-22T12:24:00.000Z"
     },
     {
-      "id": "bf5715dec45892a35ba6",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Standard Chartered to acquire Zodia Custody",
-      "excerpt": "UK bank and global custodian Standard Chartered is set to acquire digital assets service provider Zodia Custody.",
-      "url": "https://www.finextra.com/newsarticle/48627/standard-chartered-to-acquire-zodia-custody?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-21T12:55:00.000Z"
-    },
-    {
       "id": "c0b6dd6adb830d6eb465",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1067,20 +1123,6 @@
       "publishedAt": "2026-10-06T07:00:00.000Z"
     },
     {
-      "id": "8dec40f4bd0b7c6b852d",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnY9IB9wFBVV95cUxPeWduNTBGRm5WeV9lck9xdlBRU2ZPbDZoMFBiR0VOd1c0NHFtVWtuZmlzYTNhWUxxSFhoYmNncE91ZGVuRURkUmV3QWtlRlJkQXZ0andZaVZuakh4MW1lc3E5Uk50OTNIaXFQWVRBWVRrYWJncE44alA1S0NmSWMwWEt3UEYyRWNPVl9XbnI2Z0s5N1lSdVR5TnZLSWZpb2F6VFJ2NTJ2WGUwZ3dBcTZvQ2FnaS0xZHZINjRhVUhvem1KVmlUUTQ3M20ydTVKblZRcW9KcE56My03U0J1OWM2Uk1rWUstdFlETmRNZDMtbnZITno4OHg0?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
       "id": "f5fc81d6ce5f2b1d8421",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1093,20 +1135,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-05T13:49:09.000Z"
-    },
-    {
-      "id": "d1a79fd390a6afd8c8e8",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-04T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1117,9 +1145,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1128,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 0
     },
     {
@@ -1139,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 8
     },
     {
@@ -1150,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 6
     },
     {
@@ -1161,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 1
     },
     {
@@ -1172,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 0
     },
     {
@@ -1183,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 0
     },
     {
@@ -1194,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 1
     },
     {
@@ -1205,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 5
     },
     {
@@ -1216,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 8
     },
     {
@@ -1227,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 5
     },
     {
@@ -1238,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 5
     },
     {
@@ -1249,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 0
     },
     {
@@ -1260,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
-      "recentCount": 1
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1271,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 12
     },
     {
@@ -1282,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 9
     },
     {
@@ -1293,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T06:02:22.965Z",
-      "lastSuccessAt": "2026-11-02T06:02:22.965Z",
+      "checkedAt": "2026-11-02T15:52:41.676Z",
+      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
       "recentCount": 10
     }
   ]
