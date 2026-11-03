@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-02T23:30:12.074Z",
+  "generatedAt": "2026-11-03T06:47:04.644Z",
   "stories": [
+    {
+      "id": "885a3a1f3574f89357ef",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Mastercard Forms OpenAI and Tencent Partnerships to Drive Agentic Commerce",
+      "excerpt": "Lost in the recent earnings announcement from Mastercard was a broad strategic partnership with OpenAI that Mastercard CEO Michael Miebach said includes the use of his company’s Agent Pay and “goes well beyond.” “Our agreement establishes collaboration across payments, joint serv",
+      "url": "https://www.pymnts.com/partnerships/2026/mastercard-forms-openai-and-tencent-partnerships-to-drive-agentic-commerce/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T00:01:19.000Z"
+    },
+    {
+      "id": "ca3686824b15a5e469e2",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Nyse tokenised securities platform gets on-chain shareholder services through Broadridge",
+      "excerpt": "Broadridge is planning to bring on-chain shareholder governance and digital transfer agency services to the New York Stock Exchange’s new tokenised securities platform.",
+      "url": "https://www.finextra.com/newsarticle/48688/nyse-tokenised-securities-platform-gets-on-chain-shareholder-services-through-broadridge?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T00:01:00.000Z"
+    },
     {
       "id": "dcb165641b954a3d0905",
       "sourceId": "latamlist",
@@ -35,7 +63,7 @@
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Google Wallet Tests Letting Users Confirm Identity Before Every Contactless Payment",
+      "title": "Google Wallet Tests Asking Users to Confirm Identity Before Every Payment",
       "excerpt": "The latest Google Wallet update includes a new Tap to pay option in the verification settings that may control how often the app asks users to verify their identity before making contactless payments, Android Authority reported Sunday (Nov. 1). The report is based on work-in-prog",
       "url": "https://www.pymnts.com/authentication/2026/google-wallet-tests-letting-users-confirm-identity-before-every-contactless-payment/",
       "source": "PYMNTS",
@@ -73,20 +101,6 @@
       "publishedAt": "2026-11-02T21:04:35.000Z"
     },
     {
-      "id": "27bf8c4f07c359cda528",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mercado Bitcoin Takes $40 Million Loss in Latest Crypto Hack",
-      "excerpt": "Mercado Bitcoin is the latest digital asset company to suffer a hack, Bloomberg reported Monday (Nov. 2). The Brazilian cryptocurrency broker will absorb a $40 million loss from the incident, the report said. No customer losses are expected. The attack targeted “hot wallets” but ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/mercado-bitcoin-takes-40-million-dollar-loss-latest-crypto-hack/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T20:36:41.000Z"
-    },
-    {
       "id": "f27b82ab629451daaf59",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -105,8 +119,8 @@
       "sourceId": "chainalysis",
       "category": "cripto",
       "kind": "analysis",
-      "title": "Chainalysis Security Incident Information",
-      "excerpt": "Chainalysis was recently the target of a cybersecurity incident, similar to many other tech platforms in recent weeks. Based on…",
+      "title": "Updated Nov 2: Chainalysis Security Incident Information",
+      "excerpt": "Monday Nov 2, 2026 Update: Chainalysis continues to respond to ongoing cyber threats associated with the security incident described below.…",
       "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -1107,20 +1121,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
-      "id": "d1a79fd390a6afd8c8e8",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Buy Now, Pay Later’ en Ecuador: ¿inclusión financiera o nueva forma de endeudamiento digital?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPSjVQUkNlanJMYTFnbkE1MjRsU3dHMENfcFZ5NmJTWnhlZVZvNEQyMzMzLVhGQWUwcllldFpnRnJYZ245VW5xU1gtTE1vUlhYWl9iZkRMTkYya2ZFSnd6R1Z5SzN1Y0tSYVpPaUQ3UmMxVExDQ3Vjd2pmOEFrdUFmT2VKcXJ6eGd6SllYdmcyRHRMZl9ONjd3Mk1WVS1rRlhDeGFFWS1hS3daUFE?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-04T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1131,9 +1131,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1141,9 +1141,9 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "error",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "status": "ok",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 8
     },
     {
@@ -1163,9 +1163,9 @@
       "category": "ecuador",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "error",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T15:52:41.676Z",
+      "status": "ok",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 5
     },
     {
@@ -1230,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 5
     },
     {
@@ -1252,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 5
     },
     {
@@ -1263,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 0
     },
     {
@@ -1274,8 +1274,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 4
     },
     {
@@ -1285,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 12
     },
     {
@@ -1296,9 +1296,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
+      "recentCount": 8
     },
     {
       "id": "chainalysis",
@@ -1307,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-02T23:30:12.074Z",
-      "lastSuccessAt": "2026-11-02T23:30:12.074Z",
+      "checkedAt": "2026-11-03T06:47:04.644Z",
+      "lastSuccessAt": "2026-11-03T06:47:04.644Z",
       "recentCount": 10
     }
   ]
