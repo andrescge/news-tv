@@ -1,76 +1,90 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-04T17:15:17.274Z",
+  "generatedAt": "2026-11-04T22:39:20.672Z",
   "stories": [
     {
-      "id": "3d675942ea8b3b382345",
+      "id": "40737f6188c65f3a162f",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Revolut’s Valuation Hits $115 Billion With New Funding",
-      "excerpt": "Revolut’s valuation has climbed to $115 billion with its latest round of funding. The U.K. FinTech announced the figure Wednesday (Nov. 4), noting that it follows its recent conditional banking charter approval in the U.S. and the launches of banks in Great Britain, Mexico, Austr",
-      "url": "https://www.pymnts.com/news/banking/2026/revoluts-valuation-hits-115-billion-with-new-funding/",
+      "title": "Microsoft Clarity Helps Merchants Welcome AI Shopping Agents",
+      "excerpt": "Microsoft has introduced three features for its website and app analytics tool, Clarity, that are designed to help website owners understand how people and artificial intelligence agents are using their site, the company said in a Wednesday (Nov. 4) blog post. The new Agentic Ana",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/microsoft-clarity-helps-merchants-welcome-ai-shopping-agents/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-04T17:09:38.000Z"
+      "publishedAt": "2026-11-04T20:41:35.000Z"
     },
     {
-      "id": "f85c9845aab5be3807e8",
+      "id": "d34f75aa75c36630f054",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Pliant Raises $80 Million to Open B2B Payments to AI Agents",
-      "excerpt": "Pliant raised $80 million in a Series C funding round to deepen its B2B payment infrastructure’s capabilities around agentic payments and workflows, the company said in a Wednesday (Nov. 4) press release. The Berlin-headquartered company will also use the new funding to support i",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/pliant-raises-80-million-to-open-b2b-payments-to-ai-agents/",
+      "title": "Verifone Turns to Visa’s Featurespace to Combat Fraud",
+      "excerpt": "Payments and commerce technology company Verifone has added Visa’s Featurespace to its anti-fraud framework. The Featurespace platform and its adaptive machine learning models are now deployed throughout Verifone gateways, the company announced Wednesday (Nov. 4). The tool provid",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/verifone-turns-to-visas-featurespace-to-combat-fraud/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-04T16:57:07.000Z"
+      "publishedAt": "2026-11-04T19:58:00.000Z"
     },
     {
-      "id": "aed3226c3b03696c64bf",
+      "id": "37550548efc1da57b53d",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "FIS Cuts Banking Growth Outlook Amid Project Delays",
-      "excerpt": "Banks are still buying technology from Fidelity National Information Services (FIS), but some of its largest customers are making the company wait longer to put it to work. FIS cut its 2026 pro forma Banking Solutions revenue growth forecast to 3.5-4% from 5-5.5%. Large clients m",
-      "url": "https://www.pymnts.com/earnings/2026/fis-cuts-banking-growth-outlook-amid-project-delays/",
+      "title": "What the 2026 Midterms Mean for Crypto, Banks and Stablecoin Regulation",
+      "excerpt": "The cryptocurrency industry spent heavily to shape the next Congress. Now it may have to spend the next two years defending the regulatory ground it already won. Democrats captured control of both chambers in Tuesday’s (Nov. 3) midterm elections, reversing the Republican majoriti",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/what-the-2026-midterms-mean-for-crypto-banks-and-stablecoin-regulation/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-04T16:53:57.000Z"
+      "publishedAt": "2026-11-04T19:55:58.000Z"
     },
     {
-      "id": "32126e0a2e86b1066396",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "da091334d210f5a9808b",
+      "sourceId": "latamlist",
+      "category": "latam",
       "kind": "news",
-      "title": "Circle’s $13.9 Trillion Stablecoin Paradox: More Payments, Less Profit Per Dollar",
-      "excerpt": "Circle’s stablecoin business has a problem most payments companies would envy. Its money is moving faster than its earnings can keep up. Per the company’s third quarter 2026 results, announced Wednesday (Nov. 4), Circle’s USDC stablecoin processed $13.9 trillion in on-chain trans",
-      "url": "https://www.pymnts.com/earnings/2026/circles-13-9-trillion-stablecoin-paradox-more-payments-less-profit-per-dollar/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Takenos raises $7M seed extension to expand across Latin America",
+      "excerpt": "Argentine fintech Takenos raised $7M in a seed extension led by North Island Ventures and Road Capital Management,…",
+      "url": "https://latamlist.com/takenos-raises-7m-seed-extension-to-expand-across-latin-america/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-04T16:25:59.000Z"
+      "publishedAt": "2026-11-04T18:59:24.000Z"
     },
     {
-      "id": "6bbc2e7a948f89b6fa5c",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "f1613bf02d482febd589",
+      "sourceId": "iupana",
+      "category": "latam",
       "kind": "news",
-      "title": "OCC Releases Supervisory Framework for Bank AI Use",
-      "excerpt": "The Office of the Comptroller of the Currency (OCC) has issued a supervisory framework designed to support the regulator’s examiners when they evaluate banks’ use of artificial intelligence and agentic AI in normal course business activities. The framework does not establish supe",
-      "url": "https://www.pymnts.com/news/banking/2026/occ-releases-supervisory-framework-for-bank-ai-use/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Sofipos amplían sus plataformas para profundizar la adopción digital",
+      "excerpt": "La digitalización permite a las sofipos ampliar su oferta, aunque persisten barreras de usabilidad, confianza y educación financiera. ... Leer más... La entrada Sofipos amplían sus plataformas para profundizar la adopción digital se publicó primero en IUPANA.",
+      "url": "https://iupana.com/2026/11/04/sofipos-amplian-plataformas-profundizar-adopcion-digital/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T15:51:17.000Z"
+      "language": "es",
+      "publishedAt": "2026-11-04T18:44:26.000Z"
+    },
+    {
+      "id": "bf2395a6f4027a62c0d5",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mejores prácticas Fintech para aumentar los usuarios activos diarios y mensuales (DAU/MAU) | CleverTap",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPSFM0c1R6VFIzRVdMZTVWSlQzaVRSckp0Ukh1MTRxVmNxZzFhVG5oakNyRWFjcTB5bW5oQzRTV3BjUDZEdkhUN19jY1hPSkdsNmhUTzVoSUVUSTc0dTdNUXNLRUdlTE9jdTVOOWd6RG9zREYtdGxaNDhfc3dwLUxPQVJLenNlZm5mZ2dqWFFNaDdXWjU0X1h6LVh3R2RhMmRZR1hNRXBVa0FtR3FYSEJPVllBT0tmbi1lMHZidm9vbWx2ZXB4T2RYOXR0ODlYRU91?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-04T17:52:32.000Z"
     },
     {
       "id": "3d96f6b56976ec1d90fc",
@@ -85,20 +99,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-04T15:45:09.000Z"
-    },
-    {
-      "id": "0dc59a18ad6b64531f62",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Starling CEO Departing After 2 Years With Digital Bank",
-      "excerpt": "The chief executive of England’s Starling Bank is reportedly departing after just two years. That’s according to a report Wednesday (Nov. 4) from the Financial Times (FT), which notes that Raman Bhatia’s exit comes as the FinTech is dealing with flagging growth. Bhatia has privat",
-      "url": "https://www.pymnts.com/personnel/2026/starling-ceo-departing-after-2-years-with-digital-bank/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T14:54:17.000Z"
     },
     {
       "id": "e8f8f29ab6cfe8c98976",
@@ -143,20 +143,6 @@
       "publishedAt": "2026-11-04T12:00:00.000Z"
     },
     {
-      "id": "d5b6648859a9695ab2e4",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Embat Turns to J.P. Morgan for Better Bank-Treasury Connectivity",
-      "excerpt": "Treasury/cash management FinTech Embat has launched a new partnership with J.P. Morgan Payments. Embat announced Wednesday (Nov. 4) that it has integrated J.P. Morgan’s new banking authorization service (BAS) API for treasury services and payments, letting joint clients connect t",
-      "url": "https://www.pymnts.com/partnerships/2026/embat-turns-to-j-p-morgan-for-better-bank-treasury-connectivity/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T10:00:05.000Z"
-    },
-    {
       "id": "253e58eae9979a3bc477",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -169,20 +155,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-04T09:30:00.000Z"
-    },
-    {
-      "id": "ad0d01f1e26e238847c5",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks Move Payment Modernization From Separate Rails to Shared Hubs",
-      "excerpt": "Watch more: PYMNTS On Air A commercial customer asked its bank for a direct connection to instant payments and encountered an 18-month wait. The bank needed to rebuild its architecture before onboarding the client, Robert Mancini, partner at SRA Consulting, recalled during a PYMN",
-      "url": "https://www.pymnts.com/news/banking/2026/banks-move-payment-modernization-separate-rails-shared-hubs/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T09:03:24.000Z"
     },
     {
       "id": "06a9eb28978a9fc3d0ac",
@@ -225,6 +197,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-03T19:23:32.000Z"
+    },
+    {
+      "id": "eb141f2ad742433cc7f6",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech brasileña Bloquo levanta US$3,67M en una ronda semilla para desarrollar infraestructura de pagos con stablecoins",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOeTBaT2d6aE05dVVrSHBaXzFEUDNZRS1yaEo3ekdELWp4RmJEYlJPS19JYkFZeHJ0ZWl3aVN2dFFialhlSWk3emR3b0RYT0J6THpEYVZEaDB4ZXVFbVV0LTlzaGpVUzBBd3JrdUNReXV4UWhRRHZybVNDMjZUcnJuZUdGay0xdUU1T0pFWFN6X2JieDVsbllsWEJlMXg0bWFJbV9iRkFOdUVJOHIzcnl0Q2hoNVFKbWkxVjdhYzV2QzExeW9Sd2RtWHZmamtFVXlPdUZLclAxOTdrYTRGWjJvdUVhT1d1azJJREpHUkFn?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-03T16:19:14.000Z"
     },
     {
       "id": "1c14b804f0d4c95f29bc",
@@ -521,20 +507,6 @@
       "publishedAt": "2026-10-29T16:23:10.000Z"
     },
     {
-      "id": "6b446f8d46054b2329a7",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Lulo Bank lanza su oferta de seguros en Colombia con cuatro productos: vida, desempleo, SOAT y protección de crédito",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOa29BYjVseDlZdEV1dVFOU19sU1FrdGVULW9qQ0hSVjNzZUhLTHdZOGZCa2xmZFVhdFhTR2JUQVBWZEc3cnZsZC02czlvNGhjYzJZWnJoVzVYckxqUVpKY250b2ZaWGtaZUpYV0NGZG1sSG9iXzRjSFRVc1Rud3VwM2VORWZ0dk5lQkdVUTFhNmd3c2U5RkhlUzl5Si16OEdrX0VsbWJRQnFJTU5hU04tRnpIakE0NkJyR2hwV0YxMGRpSVExdFRUZVNTekNuVzhqNWJJTHpvbUlvOU9XQy1xSQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T15:54:15.000Z"
-    },
-    {
       "id": "e2b0789269c8f136d98b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -626,20 +598,6 @@
       "title": "Fintech Unblock solicita al Banco Central de Brasil autorización para operar como corredora de activos virtuales",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUUlPem11bW93T0NXRnpJMXZ4RHBLT0w3a1EtTTVSUTJoNkV3cGJOa2tsMFAzRFBpTC1MeUwwSzRkQ3kxRVFUSkNYWXNRQ01PV1FwSmJ6ODhjalBDMFdGTnM2Rlk0UEZVSlZyWV9TWkhwcEYwMUFqeF9zbUx5bGhfR3ZoMUpyZ1pQUGNLMDNPYllfRWVxXzI3Tk9hY0hpb2c4T3N4dlRYSnFDSTNSU19IVUZYN1lwYTB0ZjZQTzVYOTRtMEtYR3BETkZrak9zb2RHLXNldlJ2MmhPWndUZkVwa1A3UXBmNEpTbkE?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T19:39:38.000Z"
-    },
-    {
-      "id": "650c6078e1d8b6761a6a",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintechs Numbi y Sempli se alían para impulsar la financiación de pymes en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPTEk2aU1pcTlvNVNtUERZUENhYy1hOHFwSjNUOGZwUktOREw0S3UzYjFUX2xUN0sxZC10MDEwOXh2Q3B2U2IyMS1PbE81LUxXS2ZxbHc4Nl9fQVJkUGNUbXg5QVZMeTgtRVJnVFozRmFoQVRKMFJzcmljeXo2V25rTGVRYWpfdzVwd2lYSnM1UHBSalZkUUFxREE4OEN4a1lrSURQbkJjRE1sSm84NC1PUi02Vkx1UExGTkRGcw?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -1123,20 +1081,6 @@
       "publishedAt": "2026-10-13T12:00:00.000Z"
     },
     {
-      "id": "071229b253be86c19dba",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Chivo cambia de manos: la segunda vida de la billetera que iba a “bitcoinizar” El Salvador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNOFBaWU5sWGFHT0lTaTZYdG56dUdOWTc4RGlPWS14dFo1Z0IzMlZOazlxOXFyNld4dHp1QkU3eXRqdTRmT0EtcFJlSF9QQlRKbWh4ZjdKSlcyRHhUWEprNjRPN29IeEdGY0oxdHhrbWdCQVctTHk5VW1BdnJiNXNySTk5NVVSQ09KZWt0SFI5Q1c2NnhpRjJCWVNhSVVwTjFGckZEQ2ExWUZOZVEyb3hHZndNU2htSHFrUlR4bDNIeUVoQkYtQXlkTFNUTTFKeGFib0FyYlg3dVJWOEFDVmfSAfIBQVVfeXFMT0hqcl9ScVZhZFJkbTM3Nkp1ZVdkb3ByZmJ6UGoxNmZZNWRMRHlLYWZjU1FNdnpyWTVpRm8xazFRVWY1SDBOd05sREQ2dUZaWExKOFUyeTk4S2JJbVBrMHhyOS1raVl1Y0hWUGJObjBHN0c2X2czSUoxVEF1Zy1lcnlFUFN1a1ZEX3F1RDdDVjlzQVktR1psV1ZvQTFLUENuQ0FWYUlUQUt4QmctM29pUFE4SUs2NW45ZGtQU01EcDRCQWlKYUxVNEpxTkdmcm53SXhCRDRpUWd3VUYzajVELW9pdkhDekptUzZLbUNWTnRFa1E?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-13T07:00:00.000Z"
-    },
-    {
       "id": "0bc83eb1e84fdc5845d6",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1177,6 +1121,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-06T07:00:00.000Z"
+    },
+    {
+      "id": "125007db19c69c76a1dd",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador promueve la protección al inversionista y la prevención de estafas en el mercado bursátil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOUGhfekM4a3VFcVhLY2dxVmktNDdnN2dkMU5kWGU4QURQYUd6dmxkeHVPV0RrRTdHN2ZfdUJpSDhieVVQVW1wdTVvcld3LVg4eVlFcENMQkRFZ1FDSDZ3aUxvazlCNU12QkxqVkJQRXJ3aTNHTnJ5ajNyYm1Obll0Z25od3liZy1vWm9HZ0t4RnQ0Yy0tYlQ3bnJBQmQ1NUdWYzJ5bUh6VTFzZDZScWlOOWQwZmd0Zlo4d3pYVDl5a1pVMmYwQzdabFBJQ2ZhWW9oYklUakc2S2ZGNHY1Rnc1aUVnYw?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-06T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1187,9 +1145,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1198,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 1
     },
     {
@@ -1275,9 +1233,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
+      "recentCount": 6
     },
     {
       "id": "latam-fintech-hub",
@@ -1286,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 8
     },
     {
@@ -1297,9 +1255,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
+      "recentCount": 6
     },
     {
       "id": "latam-bloomberg",
@@ -1308,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 5
     },
     {
@@ -1319,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 1
     },
     {
@@ -1330,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-04T17:15:17.274Z",
-      "lastSuccessAt": "2026-11-04T17:15:17.274Z",
+      "checkedAt": "2026-11-04T22:39:20.672Z",
+      "lastSuccessAt": "2026-11-04T22:39:20.672Z",
       "recentCount": 10
     }
   ]
