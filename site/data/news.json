@@ -1,62 +1,34 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-03T20:59:05.113Z",
+  "generatedAt": "2026-11-04T01:21:17.737Z",
   "stories": [
     {
-      "id": "f9121f3a2fd944da5919",
+      "id": "56ab10474114a51a5082",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Truist Debuts Enhancements For Merchant Services Solutions",
-      "excerpt": "Truist has announced several new enhancements to its merchant services offerings. These enhancements cover how “businesses select solutions, onboard, access insights, manage payments and serve customers across multiple channels,” the bank said in a news release Tuesday (Nov. 3). ",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/truist-debuts-enhancements-for-merchant-services-solutions/",
+      "title": "OCC Opens Stablecoin Issuance Path for Community Banks",
+      "excerpt": "The Office of the Comptroller of the Currency set out how community banks can issue stablecoins through subsidiaries. Small lenders already have a way to test the technology on payments they make today by using coins issued and redeemed by another institution. In its final GENIUS",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/occ-opens-stablecoin-issuance-path-community-banks/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-03T20:40:36.000Z"
+      "publishedAt": "2026-11-03T22:58:10.000Z"
     },
     {
-      "id": "a190e262859eccde1d37",
+      "id": "f1eb133637eba1e5e003",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Revolve Reports Breach of Fashion Retail Platform",
-      "excerpt": "Online fashion retailer Revolve is the latest company to suffer a data breach, Security Week reported Monday (Nov. 2). Revolve notified at least 200,000 people that their personal and payment card information was stolen in the September breach, the report said. Immediately after ",
-      "url": "https://www.pymnts.com/cybersecurity/2026/revolve-reports-breach-fashion-retail-platform/",
+      "title": "Apollo’s Record AI Lending Begins to Rival Banking Giants",
+      "excerpt": "Apollo Global’s lending reportedly hit a record $114 billion during the quarter thanks to its AI funding efforts. That figure marked a 50% increase over the private capital group’s second quarter lending, the Financial Times (FT) reported Tuesday (Nov. 3), as Apollo lent to artif",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/apollos-record-ai-lending-begins-to-rival-banking-giants/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-03T20:25:45.000Z"
-    },
-    {
-      "id": "022bc0b48a2ad9169161",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "J.P. Morgan Payments Debuts Tool to Streamline Cash Application",
-      "excerpt": "J.P. Morgan Payments launched Receivables Matching, a tool designed to help clients streamline cash applications, according to a Monday (Nov. 2) press release. “Cash application has historically been a necessary but often labor-intensive part of the receivables process,” the rele",
-      "url": "https://www.pymnts.com/back-office/accounts-receivable/2026/jpmorgan-payments-debuts-tool-streamline-cash-application/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T19:54:32.000Z"
-    },
-    {
-      "id": "b5cd757560f014addf88",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard Debuts Free EU Cybersecurity Lessons",
-      "excerpt": "Mastercard has launched a free cybersecurity platform for European small businesses. The Mastercard SME Academy: Cybersecurity platform is designed to provide “practical” cybersecurity education tailored to small business and medium sized enterprises (SMEs), the company said in a",
-      "url": "https://www.pymnts.com/cybersecurity/2026/mastercard-debuts-free-eu-cybersecurity-lessons/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T19:44:23.000Z"
+      "publishedAt": "2026-11-03T21:29:49.000Z"
     },
     {
       "id": "23545be048f1caa6156f",
@@ -71,20 +43,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-03T19:43:21.000Z"
-    },
-    {
-      "id": "36b5a57ff03000819ef7",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Coupa Card Reaches $50 Million Spend Since November 2025 Launch",
-      "excerpt": "Coupa’s Invoice-to-Pay solutions saw strong growth in the first half of the company’s fiscal year 2027, the company said in a Tuesday (Nov. 3) press release. The company’s Coupa Pay solution concluded the first half with a 58% year-over-year increase in transaction growth. This s",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/coupa-card-reaches-50-million-spend-since-november-2025-launch/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T19:18:24.000Z"
     },
     {
       "id": "1c14b804f0d4c95f29bc",
@@ -1145,8 +1103,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 7
     },
     {
@@ -1156,8 +1114,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1125,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1136,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1147,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1158,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1169,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1180,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1191,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 5
     },
     {
@@ -1244,8 +1202,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1213,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 5
     },
     {
@@ -1266,8 +1224,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1235,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1246,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1257,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1268,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1279,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-03T20:59:05.113Z",
-      "lastSuccessAt": "2026-11-03T20:59:05.113Z",
+      "checkedAt": "2026-11-04T01:21:17.737Z",
+      "lastSuccessAt": "2026-11-04T01:21:17.737Z",
       "recentCount": 10
     }
   ]
