@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-05T03:29:44.909Z",
+  "generatedAt": "2026-11-05T12:20:55.118Z",
   "stories": [
+    {
+      "id": "c912be5036e15258d8a9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Why College Sports Payments Need More Than Signed Contracts",
+      "excerpt": "Watch more: Need to Know With Priority Commerce’s Brendan Kirsch College sports programs can have enough revenue committed to pay their athletes and still lack the cash when payments come due. The timing mismatch runs through the financial administration of athlete compensation. ",
+      "url": "https://www.pymnts.com/commercial-payments/2026/why-college-sports-payments-need-more-than-signed-contracts/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T09:02:48.000Z"
+    },
+    {
+      "id": "e2c010e4937ecaa1cf4e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payment Hubs Gain Ground as 35% of Financial Institutions Plan Adoption",
+      "excerpt": "Banks can give customers more payment choices without giving them more decisions to make. That’s the opportunity outlined in “Why Multi-Rail Strategy Is Banking’s Next Competitive Edge,” an October PYMNTS Intelligence report produced in collaboration with The Clearing House. The ",
+      "url": "https://www.pymnts.com/news/banking/2026/payment-hubs-gain-ground-as-35percent-of-financial-institutions-plan-adoption/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T09:00:35.000Z"
+    },
+    {
+      "id": "37fa1703e5e43e466ebd",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Flagright Wants to Move Humans to Where Compliance Decisions Count",
+      "excerpt": "AI agents can handle lower-risk work, while people must own decisions that impact a customer’s financial life, Flagright Co-Founder and Co-CEO Madhu Nadig writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” At the start of the year, I believed every alert",
+      "url": "https://www.pymnts.com/opinion/2026/flagright-wants-to-move-humans-to-where-compliance-decisions-count/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T09:00:13.000Z"
+    },
+    {
+      "id": "52a2d4b0abe28b74a7fa",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI accounting platform Kabilio raises €10m",
+      "excerpt": "Kabilio, a Barcelona-based AI platform for accounting firms and the small businesses they serve, has raised €10 million in a funding round led by Picus Capital and Visionaries.",
+      "url": "https://www.finextra.com/newsarticle/48704/ai-accounting-platform-kabilio-raises-10m?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T09:00:00.000Z"
+    },
     {
       "id": "4893a29f8fbb3ecd7d6b",
       "sourceId": "pymnts",
@@ -29,20 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-05T02:08:16.000Z"
-    },
-    {
-      "id": "a09a06cd79240e56d912",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Warren Poised to Lead Senate Banking as FinTechs Weigh Launch Risks",
-      "excerpt": "Sen. Elizabeth Warren, D-Mass., is expected to chair Senate Banking Committee after Democrats won both chambers in the midterms. In recent months, Warren has urged regulators to withdraw three bank capital proposals, opposed a House-passed bill that would ease some merger and sup",
-      "url": "https://www.pymnts.com/legal/2026/warren-poised-to-lead-senate-banking-as-fintechs-weigh-launch-risks/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T00:46:33.000Z"
     },
     {
       "id": "a050d9899d331164cc9b",
@@ -302,7 +344,7 @@
       "category": "cripto",
       "kind": "analysis",
       "title": "Updated Nov 4: Chainalysis Security Incident Information",
-      "excerpt": "Wednesday Nov 4, 2026 10:30 A.M. EST Update: We have been actively monitoring our transaction screening products for suspicious activity.…",
+      "excerpt": "Wednesday Nov 4, 2026 11:00 P.M. EST Update: On Monday, we discovered certain customer information including names, usernames, password hashes…",
       "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -451,20 +493,6 @@
       "publishedAt": "2026-10-29T19:55:40.000Z"
     },
     {
-      "id": "4728b1717a518f5f8df1",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "¿Cómo están evolucionando los seguros embebidos y la distribución de seguros en América Latina?",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOZk1xZHdhSXh6YlVrX205X3E2MnVhZWotUng0VzlLTGM3ZThrNlhwaWsyR2hBNTJTa3J2VjJabWlXTzRFT2NJZ09yWlRycnVwSHpBOE9GcVRScl9CcUVCRE9TZUVwMFRETFR6dlMzMVB4aDJCc3FQWlVBTGt0b290czh0NUJkbmkxYmptXzZFQ1J1SVF0R3FrOGl2UkROVFdwcDBEbEptTU52S3pzUGdSN0FJNzZidjlWMEZEeExDb3NHMUFKem1BaXZn?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-29T19:55:38.000Z"
-    },
-    {
       "id": "9319aa27cdaa75bf9454",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -535,20 +563,6 @@
       "publishedAt": "2026-10-29T15:54:15.000Z"
     },
     {
-      "id": "e2b0789269c8f136d98b",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Former Swift CEO Lázaro Campos joins stablecoin firm OpenTrade as chair",
-      "excerpt": "Stablecoin yield infrastructure platform OpenTrade has appointed former Swift CEO Lázaro Campos as chair of its board of directors.",
-      "url": "https://www.finextra.com/newsarticle/48669/former-swift-ceo-lzaro-campos-joins-stablecoin-firm-opentrade-as-chair?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T14:31:00.000Z"
-    },
-    {
       "id": "f33701fc7e7b3fe7bbc0",
       "sourceId": "iupana",
       "category": "latam",
@@ -603,6 +617,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-28T21:50:48.000Z"
+    },
+    {
+      "id": "1b38fef4b0d85ef1f169",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Unblock solicita al Banco Central de Brasil autorización para operar como corredora de activos virtuales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQUUlPem11bW93T0NXRnpJMXZ4RHBLT0w3a1EtTTVSUTJoNkV3cGJOa2tsMFAzRFBpTC1MeUwwSzRkQ3kxRVFUSkNYWXNRQ01PV1FwSmJ6ODhjalBDMFdGTnM2Rlk0UEZVSlZyWV9TWkhwcEYwMUFqeF9zbUx5bGhfR3ZoMUpyZ1pQUGNLMDNPYllfRWVxXzI3Tk9hY0hpb2c4T3N4dlRYSnFDSTNSU19IVUZYN1lwYTB0ZjZQTzVYOTRtMEtYR3BETkZrak9zb2RHLXNldlJ2MmhPWndUZkVwa1A3UXBmNEpTbkE?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T19:39:38.000Z"
     },
     {
       "id": "104b18d380385b4e0648",
@@ -1079,48 +1107,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-13T12:00:00.000Z"
-    },
-    {
-      "id": "0bc83eb1e84fdc5845d6",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 2 de Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_948_02102026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-06T12:00:00.000Z"
-    },
-    {
-      "id": "61f3225e83ee0399ac1b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Seguros de vida y vehículos lideran el crecimiento del mercado asegurador en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQUU9MZmJvZi0wc2lDSmhITkJQaGhDSVNzZHRBNEJJZXlBRmw2S0dwZnBiMXdhX3NqM2p6YnhBbERoaGhydEtNWUE2SEw4c3pHV3hRejAxaXV2MVRXLXJObzVGbjZOMXM0ZXBkMWUzcjVwMkNVX3dZX1k4UzBoSnEtNDFzRTZ4ZndWdjd0Nkp1NEphMXN4VFVCNDdMYjUtOHFMbENYb29iUlhsVHZmZlpUTHljNk8xbTQwOVdNX1k5Rmk2RkNMRXJ5UTZXZEYwNXFkTGZGWFB4b2dFblNoblFKNDJKaFo3QUnSAfsBQVVfeXFMT012aUd0Z0F5UEtzeF9WM3FFYjhsVlQ1eUF2dnk4a2ItaGg5b1FFZkhwRUo2ZU90N3d4eTFvUWZNZHdlZTNNN0swcmNoSHhua2UyTWd6cFF1QWstN3BqM2JIYVJjQ3F1bExtZzgtYUpTX1dkNmxpYTlqUXlmZm5xTXJUNU00SjM0S2M4TC1rVHB4RnhYN1VhWW1qczVlNWk2YmpjbWNCT2dZck1FVkY4SkdIQ01YV0hBZUVnTHlyQWl1Q3ZibTVkcjNLWS01LXFrbHlYby1SNUxPcmVHQzh3c3RiSmZKTmtjVlRkM1AyUXAyeEJrTWJlMTRNRjA?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
-    },
-    {
-      "id": "bf68e66fd9c685237735",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Feriado del 9 de octubre | Estos servicios bancarios estarán disponibles en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQU29Ncnk0azFjMUxLV1RLYkJGT2EtRjZvNUtLMnZ1OGRrWEdLT3labEJocm94T3NuUzNFdGRlZWlSWUlMUVFwcVZuckhLeXdsd1VIZDYtLUNHMlVXSTlmQ2h6MFNsNmhpN3pDVmRwcEZycTBIUXNUVlp2NG9xaG1JeEV1UEd3NG5OXzFVeFFOMm9uejZMVm5tVnNyd1BETnNzNlBDRDdlYzQtcTQ?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-06T07:00:00.000Z"
     }
   ],
   "sources": [
@@ -1131,9 +1117,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
+      "recentCount": 4
     },
     {
       "id": "bce-junta",
@@ -1142,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 0
     },
     {
@@ -1153,9 +1139,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
+      "recentCount": 7
     },
     {
       "id": "bce-boletines",
@@ -1164,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 6
     },
     {
@@ -1230,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 6
     },
     {
@@ -1252,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 5
     },
     {
@@ -1263,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 1
     },
     {
@@ -1274,9 +1260,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
-      "recentCount": 3
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 8
     },
     {
@@ -1307,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T03:29:44.909Z",
-      "lastSuccessAt": "2026-11-05T03:29:44.909Z",
+      "checkedAt": "2026-11-05T12:20:55.118Z",
+      "lastSuccessAt": "2026-11-05T12:20:55.118Z",
       "recentCount": 10
     }
   ]
