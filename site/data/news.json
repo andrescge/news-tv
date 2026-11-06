@@ -1,7 +1,133 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-05T20:40:06.773Z",
+  "generatedAt": "2026-11-06T01:33:04.933Z",
   "stories": [
+    {
+      "id": "2a177c6325ea953aabc4",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OpenAI Forms JPMorgan Partnership Ahead of 2027 IPO",
+      "excerpt": "OpenAI Co-Founder and President Greg Brockman said Wednesday (Nov. 4) that the company could be ready for an initial public offering in 2027 and that it has formed a strategic partnership with JPMorganChase to supply the bank with artificial intelligence services, The Wall Street",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-forms-jpmorgan-partnership-ahead-of-2027-ipo/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T00:46:38.000Z"
+    },
+    {
+      "id": "5f265a53c6600347d61c",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "India's NPCI creates tech and innovation unit",
+      "excerpt": "The National Payments Corporation of India (NPCI) has set up a technology and innovation arm focused on areas including AI and blockchain.",
+      "url": "https://www.finextra.com/newsarticle/48711/indias-npci-creates-tech-and-innovation-unit?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T00:01:00.000Z"
+    },
+    {
+      "id": "afbc6fd3dcfb13be4b54",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "JP Morgan Payments and Mastercard invest in agentic commerce startup firmly",
+      "excerpt": "JP Morgan Payments and Mastercard have joined a $15 million Series A funding round for no-code agentic commerce platform firmly.",
+      "url": "https://www.finextra.com/newsarticle/48712/jp-morgan-payments-and-mastercard-invest-in-agentic-commerce-startup-firmly?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T00:01:00.000Z"
+    },
+    {
+      "id": "f59e5476d16a0f7408c2",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "India's NPCI creates tech and innovation unit",
+      "excerpt": "The National Payments Corporation of India (NPCI) has set up a technology and innovation arm focused on areas including AI and blockchain.",
+      "url": "https://www.finextra.com/newsarticle/48711/indias-npci-creates-tech-and-innovation-unit?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T00:01:00.000Z"
+    },
+    {
+      "id": "4a944360a8f19a7ea921",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Monzo Eyes VC Funding as Private Equity Talks Stall",
+      "excerpt": "London-based digital bank Monzo is considering a funding round that would value it at 7.5 billion pounds (about $10.1 billion) after failing to secure a takeover by Nubank or a stake sale to private equity, The Financial Times reported Thursday (Nov. 5), citing unnamed sources. M",
+      "url": "https://www.pymnts.com/news/investment-tracker/2026/monzo-eyes-vc-funding-as-private-equity-talks-stall/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T23:45:22.000Z"
+    },
+    {
+      "id": "c3bc2e6e3d3717591aa1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Payment Processors Compete on Checkout With Passkeys",
+      "excerpt": "A shopper taps “Pay” with a card they’ve already saved. The retailer has the card details, but the purchase may still require the shopper to confirm it’s really them. The requirement might typically demand a series of steps, such as entering a code sent by text, opening a banking",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/payment-processors-compete-on-checkout-with-passkeys/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T23:05:15.000Z"
+    },
+    {
+      "id": "e809aaf5ee42e2418d3a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anthropic Invites Banks to Help Shape New Personal Finance Offerings",
+      "excerpt": "Anthropic is rolling out a Personal Finance feature in Claude and is inviting financial services professionals and firms to help shape how it might work alongside them. Anthropic announced Personal Finance in a Thursday (Nov. 5) product update, saying that people will soon be abl",
+      "url": "https://www.pymnts.com/consumer-finance/2026/anthropic-invites-banks-to-help-shape-new-personal-finance-offerings/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T22:06:02.000Z"
+    },
+    {
+      "id": "3c37fee785ccf53a15e1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Amazon Raises Seller Fees as Walmart Expands Drone Delivery",
+      "excerpt": "Amazon will charge marketplace sellers in the United States an average of 19 cents more per item to fulfill orders in 2027, according to a Thursday (Nov. 5) company announcement. However, for a merchant deciding how much stock to send Amazon before the next holiday rush, the bigg",
+      "url": "https://www.pymnts.com/news/retail/2026/amazon-raises-seller-fees-walmart-expands-drone-delivery/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T21:53:45.000Z"
+    },
+    {
+      "id": "42c31d788ac2efbd53fb",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Priority Commerce Revenues Rise 11% Ahead of Go-Private Deal",
+      "excerpt": "Priority Commerce saw its revenue increase in its last quarter as a public company. The payments and banking solutions provider released earnings Thursday (Nov. 5) showing revenues of $268.6 million, an 11.3% increase. That followed a 9.2% uptick in the second quarter to $262 mil",
+      "url": "https://www.pymnts.com/earnings/2026/priority-commerce-revenues-rise-11percent-ahead-of-go-private-deal/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T21:01:46.000Z"
+    },
     {
       "id": "73a692feb0920d9ea78a",
       "sourceId": "latam-fintech-hub",
@@ -15,48 +141,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-05T20:26:00.000Z"
-    },
-    {
-      "id": "680e5ce71f9cf35c5fba",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fed: Banks Tightened Lending Standards for Small Businesses and Subprime Consumers",
-      "excerpt": "Banks reported that during the third quarter, they tightened their lending standards for small businesses, subprime mortgages and borrowers not meeting credit scoring thresholds for consumer loans, the Federal Reserve said in the October edition of its Senior Loan Officer Opinion",
-      "url": "https://www.pymnts.com/loans/2026/federal-reserve-says-banks-tightened-lending-standards-small-businesses-subprime-consumers/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T20:22:07.000Z"
-    },
-    {
-      "id": "117d18468306563d2a66",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Payoneer B2B Volume Surges 59% Ahead of Nuvei Acquisition",
-      "excerpt": "Cross-border payments firm Payoneer increased its revenue by 5% year over year to $222 million in the third quarter and secured payment licenses in two more countries as it works toward a close of its acquisition by Nuvei, according to a Thursday (Nov. 5) press release. Payoneer’",
-      "url": "https://www.pymnts.com/earnings/2026/payoneer-b2b-volume-surges-59-ahead-of-nuvei-acquisition/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T19:07:53.000Z"
-    },
-    {
-      "id": "6cdfa5b3297687948f57",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "FinTechs Hand AI Agents the Company Card",
-      "excerpt": "Artificial intelligence (AI) agents are getting corporate cards of their own. The cards let the agents buy supplies, book travel and pay vendors without an employee entering payment details for every purchase. Ramp, Mercury, Corpay and Sunrate are introducing cards for autonomous",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/fintechs-hand-ai-agents-the-company-card/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T18:47:18.000Z"
     },
     {
       "id": "d91cfbaa254604d7813d",
@@ -85,20 +169,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-05T18:44:05.000Z"
-    },
-    {
-      "id": "7ca5f33dbbd32a105a89",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Huntington Platform Unifies Distributed Treasury Operations",
-      "excerpt": "The Huntington National Bank launched a treasury management platform that brings together treasury operations distributed across banks, enterprise resource planning systems and FinTech providers, the company said in a Thursday (Nov. 5) press release. Developed in collaboration wi",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/huntington-platform-unifies-distributed-treasury-operations/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T18:30:38.000Z"
     },
     {
       "id": "6d1cb9093ae1d25f0fb0",
@@ -141,6 +211,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-05T14:44:00.000Z"
+    },
+    {
+      "id": "9ec27a31004065c8d080",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 30 de Octubre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_952_30102026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-05T12:00:00.000Z"
     },
     {
       "id": "52a2d4b0abe28b74a7fa",
@@ -451,20 +535,6 @@
       "publishedAt": "2026-10-30T14:10:00.000Z"
     },
     {
-      "id": "71268a3e838e1832d15e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "ECB picks digital euro network service providers",
-      "excerpt": "The European Central Bank has selected two network service providers to connect PSPs and national central banks to the digital euro service platform.",
-      "url": "https://www.finextra.com/newsarticle/48678/ecb-picks-digital-euro-network-service-providers?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T13:25:00.000Z"
-    },
-    {
       "id": "a21592d62679a1086f3b",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -477,20 +547,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-30T12:00:00.000Z"
-    },
-    {
-      "id": "f5ed498f8b925d876656",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Apple Pay and Google Pay launch in Uzbekistan",
-      "excerpt": "Uzbekistan has announced the arrival of Apple Pay and Google Pay into its banking system as the central Asian nation looks to open up its financial services.",
-      "url": "https://www.finextra.com/newsarticle/48676/apple-pay-and-google-pay-launch-in-uzbekistan?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T11:35:00.000Z"
     },
     {
       "id": "102b089b1dd2cfca6cbe",
@@ -647,20 +703,6 @@
       "publishedAt": "2026-10-28T19:16:14.000Z"
     },
     {
-      "id": "348c49515c3d5106e8c1",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "La infraestructura de pagos en Venezuela atrae una inversión de US$1,3 millones",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdFRRZ1Q2eEZyNE1zZEpjXy1mWWRZZEZCN2Jzd040V18zdEtlMnNXelU3X2JzVWVhaG5sZ2N6MkpBSlB0eWJFYWh4Z3plMlRHN29XM1hzTnNrdVAzeVpCeUJtS3Izd1V3SksxLUZmV2lSLWUxdUY1TWF6UE5xakxERkFnaVljNVJ4MnlrSk9PMkVXOWdFMl9UdUZlSTZxaFo5OWNrSk1NRkY4OVhBSzNCakJlSGlEbjRBRUpCTUF0LUUwMVZPTmNKeWQxMl81UdIB4gFBVV95cUxPalNtTDhYNzd2eWpZTmxvY2NaN2taT1BsWnVWQThwVXUtQ0RiR2hCUlNSWFl2eTNTWlhzS1RjRzdqNGhBZVpXNWctbkEtNjhuM2NSMTJKWXhmckhXUFZobWVuY1FPdnlTWEdDNV8yYWFsWDJGZXR3cFdGcHl5WEZqXzhiZUEyNkV0SXhPNi1YTGF2MkhpT0hrTnhacXUtQnlpTDhSUFJrYm5UeHg5enN2aDRVZTk4WlVCMzZ0bmo0OHNXdUgxSXFmQl9KLW5GaVE3ZU5NUDJ6VWl5M09kd0xVTEJB?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-28T18:13:26.000Z"
-    },
-    {
       "id": "3e3bafe34c9015ece399",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -731,6 +773,20 @@
       "publishedAt": "2026-10-28T08:00:00.000Z"
     },
     {
+      "id": "348c49515c3d5106e8c1",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "La infraestructura de pagos en Venezuela atrae una inversión de US$1,3 millones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNdFRRZ1Q2eEZyNE1zZEpjXy1mWWRZZEZCN2Jzd040V18zdEtlMnNXelU3X2JzVWVhaG5sZ2N6MkpBSlB0eWJFYWh4Z3plMlRHN29XM1hzTnNrdVAzeVpCeUJtS3Izd1V3SksxLUZmV2lSLWUxdUY1TWF6UE5xakxERkFnaVljNVJ4MnlrSk9PMkVXOWdFMl9UdUZlSTZxaFo5OWNrSk1NRkY4OVhBSzNCakJlSGlEbjRBRUpCTUF0LUUwMVZPTmNKeWQxMl81UdIB4gFBVV95cUxPalNtTDhYNzd2eWpZTmxvY2NaN2taT1BsWnVWQThwVXUtQ0RiR2hCUlNSWFl2eTNTWlhzS1RjRzdqNGhBZVpXNWctbkEtNjhuM2NSMTJKWXhmckhXUFZobWVuY1FPdnlTWEdDNV8yYWFsWDJGZXR3cFdGcHl5WEZqXzhiZUEyNkV0SXhPNi1YTGF2MkhpT0hrTnhacXUtQnlpTDhSUFJrYm5UeHg5enN2aDRVZTk4WlVCMzZ0bmo0OHNXdUgxSXFmQl9KLW5GaVE3ZU5NUDJ6VWl5M09kd0xVTEJB?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-28T07:00:00.000Z"
+    },
+    {
       "id": "928b62733bba566a5d48",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -743,20 +799,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-27T21:49:13.000Z"
-    },
-    {
-      "id": "7b8b9e1a52ed71516e25",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Ripple secures national bank charter; inks deals with BNY and Robinhood",
-      "excerpt": "Digital asset infrastructure firm Ripple has been granted approval to establish a national trust bank and struck separate partnerships agreements with BNY and Robinhood.",
-      "url": "https://www.finextra.com/newsarticle/48655/ripple-secures-national-bank-charter-inks-deals-with-bny-and-robinhood?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T15:16:00.000Z"
     },
     {
       "id": "f72b6c111b547b1ebf03",
@@ -1103,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 4
     },
     {
@@ -1114,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 0
     },
     {
@@ -1125,9 +1167,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
+      "recentCount": 8
     },
     {
       "id": "bce-boletines",
@@ -1136,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 6
     },
     {
@@ -1147,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 1
     },
     {
@@ -1158,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 0
     },
     {
@@ -1169,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 0
     },
     {
@@ -1180,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 1
     },
     {
@@ -1191,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 6
     },
     {
@@ -1202,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 8
     },
     {
@@ -1213,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 6
     },
     {
@@ -1224,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 5
     },
     {
@@ -1235,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 2
     },
     {
@@ -1246,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1257,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 12
     },
     {
@@ -1268,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 8
     },
     {
@@ -1279,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-05T20:40:06.773Z",
-      "lastSuccessAt": "2026-11-05T20:40:06.773Z",
+      "checkedAt": "2026-11-06T01:33:04.933Z",
+      "lastSuccessAt": "2026-11-06T01:33:04.933Z",
       "recentCount": 10
     }
   ]
