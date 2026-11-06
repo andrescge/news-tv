@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T09:24:42.957Z",
+  "generatedAt": "2026-11-06T17:29:34.871Z",
   "stories": [
+    {
+      "id": "c546bdd95ba2f2cc7e9e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "How Banks Can Avoid Sending a Stablecoin Payment Twice",
+      "excerpt": "Binance stopped withdrawals after attackers stole $6.3 billion in digital assets on Oct. 30. The cryptocurrency exchange restored access in stages. By Monday (Nov. 2), Federal Reserve and Office of the Comptroller of the Currency supervisors were asking banks in the United States",
+      "url": "https://www.pymnts.com/news/banking/2026/how-banks-can-avoid-sending-stablecoin-payment-twice/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T16:23:28.000Z"
+    },
+    {
+      "id": "d09a5b0a065699c1e048",
+      "sourceId": "finextra-latam",
+      "category": "latam",
+      "kind": "news",
+      "title": "Monzo eyes fresh funding at £7.5bn valuation - FT",
+      "excerpt": "After a takeover by Brazil's Nubank failed to materialise, Monzo is exploring a new funding round that would value the UK digital bank at around £7.5 billion, according to the Financial Times.",
+      "url": "https://www.finextra.com/newsarticle/48715/monzo-eyes-fresh-funding-at-75bn-valuation---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · LATAM",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T13:52:00.000Z"
+    },
     {
       "id": "71bc9a30c646b5de51f8",
       "sourceId": "pymnts",
@@ -45,20 +73,6 @@
       "publishedAt": "2026-11-06T02:46:33.000Z"
     },
     {
-      "id": "2a177c6325ea953aabc4",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OpenAI Forms JPMorgan Partnership Ahead of 2027 IPO",
-      "excerpt": "OpenAI Co-Founder and President Greg Brockman said Wednesday (Nov. 4) that the company could be ready for an initial public offering in 2027 and that it has formed a strategic partnership with JPMorganChase to supply the bank with artificial intelligence services, The Wall Street",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-forms-jpmorgan-partnership-ahead-of-2027-ipo/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T00:46:38.000Z"
-    },
-    {
       "id": "5f265a53c6600347d61c",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -99,34 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T00:01:00.000Z"
-    },
-    {
-      "id": "4a944360a8f19a7ea921",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Monzo Eyes VC Funding as Private Equity Talks Stall",
-      "excerpt": "London-based digital bank Monzo is considering a funding round that would value it at 7.5 billion pounds (about $10.1 billion) after failing to secure a takeover by Nubank or a stake sale to private equity, The Financial Times reported Thursday (Nov. 5), citing unnamed sources. M",
-      "url": "https://www.pymnts.com/news/investment-tracker/2026/monzo-eyes-vc-funding-as-private-equity-talks-stall/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T23:45:22.000Z"
-    },
-    {
-      "id": "c3bc2e6e3d3717591aa1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Payment Processors Compete on Checkout With Passkeys",
-      "excerpt": "A shopper taps “Pay” with a card they’ve already saved. The retailer has the card details, but the purchase may still require the shopper to confirm it’s really them. The requirement might typically demand a series of steps, such as entering a code sent by text, opening a banking",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/payment-processors-compete-on-checkout-with-passkeys/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T23:05:15.000Z"
     },
     {
       "id": "73a692feb0920d9ea78a",
@@ -337,20 +323,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-04T14:47:00.000Z"
-    },
-    {
-      "id": "ca6e71c9b05924e9d95a",
-      "sourceId": "finextra-latam",
-      "category": "latam",
-      "kind": "news",
-      "title": "Etoro targets Latin America through LB Finanzas acquisition",
-      "excerpt": "Trading and investment platform etoro is expanding into Argentina through the acquisition of all-in-one financial app LB Finanzas. Terms of the deal were not disclosed.",
-      "url": "https://www.finextra.com/newsarticle/48701/etoro-targets-latin-america-through-lb-finanzas-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · LATAM",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T14:34:00.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -871,20 +843,6 @@
       "publishedAt": "2026-10-26T12:00:00.000Z"
     },
     {
-      "id": "5a53d32c92b266c51d55",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "Seguros Azteca: cuando las exclusiones ponen límites a la cobertura antifraude",
-      "excerpt": "El seguro contempla coberturas para el fraude en línea, el robo de identidad y la extorsión cibernética. Su director explica por qué entregar las claves podría estar cubierto en caso de extorsión, aunque la póliza excluye pérdidas por revelarlas ante engaños.... Leer más... La en",
-      "url": "https://iupana.com/2026/10/26/seguros-azteca-exclusiones-ponen-limites-a-cobertura-antifraude/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-26T09:00:04.000Z"
-    },
-    {
       "id": "f05c731c55ef004758a6",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1039,6 +997,20 @@
       "publishedAt": "2026-10-19T07:00:00.000Z"
     },
     {
+      "id": "78e80966558f9df82583",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank lanza herramienta de IA que promete recomendaciones de inversión imparciales",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUEotWFcwaHBoTGxMcUl2OElhWjlKeXJMdFBYTWplOUlpMGs2UHFmZ2V5ejlLa25KZ2UxcW1KUDd5M0Y3Uzc4S3BEVzlLbWRDdTg0NWIzRVNvM3ZtWEMyY3h5b3FzdXc5VHlZcUl2OFo3aV85aXBwSkhNcmV4bEV5U0ktLVB3dnE3dXRMRllzSjRmZVF2em93NHlESUJtekdEa0s1OXBsUDBKSGluOGZXNml4czlwODVzVV9Qdi1jcXJjd9IB1gFBVV95cUxQZnAzdklBb05GUTIzNFMydVBaUHBQT3VUQ0VjbkZ0NzNvc0Z1aHNXRHJ5MFJja3JNQ1o4UXdLdnR5QWVEbWZNUkM0U0N3eTFRaUFWUVlmWUxXd0pJRGl4V3VfRzdWSkJKUGZidkZLSENrenRRS0l5RHBicXpQblpYMmFtSmdyaEVpNW80bHVqbF9lSjVaM0FTSWZIRlg4VmprS0F5ZjZJQjZTalFab2RpbGg4U1d2OHVoODE3U1NDYXVDVFl4RTRfYjl2eU9Va3cwOHBySHhB?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-19T07:00:00.000Z"
+    },
+    {
       "id": "b7c18c0c9d6cae95d07b",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -1145,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 4
     },
     {
@@ -1156,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 6
     },
     {
@@ -1244,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 8
     },
     {
@@ -1255,9 +1227,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
+      "recentCount": 5
     },
     {
       "id": "latam-bloomberg",
@@ -1266,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 2
     },
     {
@@ -1288,9 +1260,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T09:24:42.957Z",
-      "lastSuccessAt": "2026-11-06T09:24:42.957Z",
+      "checkedAt": "2026-11-06T17:29:34.871Z",
+      "lastSuccessAt": "2026-11-06T17:29:34.871Z",
       "recentCount": 10
     }
   ]
