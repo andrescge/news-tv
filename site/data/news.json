@@ -1,7 +1,35 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-06T23:08:09.492Z",
+  "generatedAt": "2026-11-07T02:48:20.923Z",
   "stories": [
+    {
+      "id": "b58c0d0f11acd2690243",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Revolving Debt Jumps as Spending Strains Credit Cards",
+      "excerpt": "The fastest-growing part of consumer credit in September was the kind that lets a household put this week’s groceries on next month’s bill. The Federal Reserve’s Friday (Nov. 6) G19 report on consumer credit indicated that revolving credit, which includes credit cards, accounted ",
+      "url": "https://www.pymnts.com/economy/2026/revolving-debt-jumps-as-spending-strains-credit-cards/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T23:46:41.000Z"
+    },
+    {
+      "id": "b14189e55e11ecd48bbd",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "BMO Turns to Agentic AI to Resolve Card Issues",
+      "excerpt": "BMO is employing an artificial intelligence (AI) agent to help clients resolve credit card transaction issues. The bank’s AI Agent Assist, announced Friday (Nov. 6), is designed for in-house use by employees and uses agentic AI to help those workers spend less time navigating sys",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bmo-turns-to-agentic-ai-to-resolve-card-issues/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T23:13:58.000Z"
+    },
     {
       "id": "22e7b0b0e83f05dfb20f",
       "sourceId": "pymnts",
@@ -57,20 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T20:03:26.000Z"
-    },
-    {
-      "id": "f74f83a066667dba0358",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anthropic Launches Claude Personal Finance Ahead of Nasdaq Listing",
-      "excerpt": "The game is on for large language models (LLMs) and financial services. Anthropic unveiled Claude Personal Finance last week, nearly six months after OpenAI did the same with ChatGPT. Both assistants connect to bank accounts through Plaid, track spending and subscriptions and ans",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropic-launches-claude-personal-finance-ahead-of-nasdaq-listing/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T18:07:14.000Z"
     },
     {
       "id": "b0c078836308ac606e35",
@@ -1131,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 4
     },
     {
@@ -1142,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 6
     },
     {
@@ -1230,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 5
     },
     {
@@ -1252,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 5
     },
     {
@@ -1263,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 2
     },
     {
@@ -1274,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 8
     },
     {
@@ -1307,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-06T23:08:09.492Z",
-      "lastSuccessAt": "2026-11-06T23:08:09.492Z",
+      "checkedAt": "2026-11-07T02:48:20.923Z",
+      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
       "recentCount": 10
     }
   ]
