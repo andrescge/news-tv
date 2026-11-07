@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-07T02:48:20.923Z",
+  "generatedAt": "2026-11-07T10:09:17.644Z",
   "stories": [
+    {
+      "id": "80800d8ac1b961ab4629",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Black Friday Escapes the Calendar and Heads for Your Wallet",
+      "excerpt": "Black Friday has developed a scheduling problem. It keeps arriving before Friday. The official date this year is Nov. 27, followed by Cyber Monday on Nov. 30. But retailers are already warming up the discount machinery. Apparently, consumers need several weeks to prepare for the ",
+      "url": "https://www.pymnts.com/news/retail/2026/black-friday-escapes-calendar-moves-toward-your-wallet/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-07T09:00:37.000Z"
+    },
     {
       "id": "b58c0d0f11acd2690243",
       "sourceId": "pymnts",
@@ -1145,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 4
     },
     {
@@ -1156,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 6
     },
     {
@@ -1244,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 5
     },
     {
@@ -1266,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 5
     },
     {
@@ -1277,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 2
     },
     {
@@ -1288,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-07T02:48:20.923Z",
-      "lastSuccessAt": "2026-11-07T02:48:20.923Z",
+      "checkedAt": "2026-11-07T10:09:17.644Z",
+      "lastSuccessAt": "2026-11-07T10:09:17.644Z",
       "recentCount": 10
     }
   ]
