@@ -1,21 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T00:35:49.642Z",
+  "generatedAt": "2026-11-08T07:20:39.427Z",
   "stories": [
-    {
-      "id": "2d71920c22d5a115be88",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Nuevas reglas para pagos con tarjetas de crédito y débito en Ecuador: comercios no podrán cobrar recargos, entre otros cambios",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd1hzQkt4Q1V4emlNLXBITDRsVTNvbUFxY1dVQ2hGN3N2eU5ZaHgwUG1IOTAxUGlwMkp1RFBfUExOeUdLbXdVaERKSkNUakI3OFZScXc4QTFnQmpPbUl4UDNhZVh1VkpwcnhPOVgtRWVaY3J4eUxrYlJOMnA1T0ZRbDNPeUYwQzhrQVFrOTdwMWVpVnFnakdkRUo0cmdwRlky?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-07T22:39:32.000Z"
-    },
     {
       "id": "070704612122f2fda857",
       "sourceId": "ecuador-news",
@@ -29,6 +15,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-07T16:55:00.000Z"
+    },
+    {
+      "id": "2d71920c22d5a115be88",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Nuevas reglas para pagos con tarjetas de crédito y débito en Ecuador: comercios no podrán cobrar recargos, entre otros cambios",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd1hzQkt4Q1V4emlNLXBITDRsVTNvbUFxY1dVQ2hGN3N2eU5ZaHgwUG1IOTAxUGlwMkp1RFBfUExOeUdLbXdVaERKSkNUakI3OFZScXc4QTFnQmpPbUl4UDNhZVh1VkpwcnhPOVgtRWVaY3J4eUxrYlJOMnA1T0ZRbDNPeUYwQzhrQVFrOTdwMWVpVnFnakdkRUo0cmdwRlky?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-07T16:28:37.000Z"
     },
     {
       "id": "bd478c58ac0f13465e8e",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 6
     },
     {
@@ -1197,8 +1197,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
+      "status": "error",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
       "lastSuccessAt": "2026-11-08T00:35:49.642Z",
       "recentCount": 0
     },
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 1
     },
     {
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 6
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 5
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 5
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 2
     },
     {
@@ -1330,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 7
     },
     {
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T00:35:49.642Z",
-      "lastSuccessAt": "2026-11-08T00:35:49.642Z",
+      "checkedAt": "2026-11-08T07:20:39.427Z",
+      "lastSuccessAt": "2026-11-08T07:20:39.427Z",
       "recentCount": 10
     }
   ]
