@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T15:12:45.920Z",
+  "generatedAt": "2026-11-08T19:41:52.400Z",
   "stories": [
     {
       "id": "070704612122f2fda857",
@@ -885,13 +885,13 @@
       "publishedAt": "2026-10-27T12:00:00.000Z"
     },
     {
-      "id": "dccdabc9130e0f2d40d8",
+      "id": "af417c1c061716c2e156",
       "sourceId": "ecuador-news",
       "category": "ecuador",
       "kind": "news",
-      "title": "¿Cubren los seguros vehiculares los daños provocados por las inundaciones en Ecuador?",
+      "title": "¿Cubren los seguros vehiculares los daños provocados por las inundaciones en Ecuador? | Negocios | Economía",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN0szbHppSU5SSXgtNG94WHNsTW1HMzUxcHhqQWFwU3JpS1RkSUg4YzdKSENXUHJReXk2d08xMFA4Y2JBNy1zbHV1eFZPb2FpeGNxU0ZNOHNqVlJrRm5mcmZjekpkZnU1SklQRXBoRzFSV01WeU9WV3JMT3pfVmJHRXptT01leXZDcUduVDR5ZkViZmR5ZnJ4N0owVXVVdkcwRjNzM0hMTlRYd28zRVVtclJINHhidlgzaF9SN1V5SWZLU3BUbElia0NEaGdqWnFL0gHkAUFVX3lxTE5vNHdrV1dEMUtYWjYyY2dySHpKaEFqODd4dkJjNXZ6UFFFT3Y1Y3lWeUlZWjh4cFBMZUNmNXB0cFpyN0JGVVVrdnNVd0JrTjRNNEhJdzFzRHgxeExZdnB3bWxBbVRDVG5Dd09UQXRnLVNXRllja3VrOU5BcnlYMTdKWGtqZlBoTnBQdktiRTA4Mmh5M0FuREpXNktGS0ZsXzdwRTNOSG1wN0FPLUJWa1loNnRicy1rekFxN2puRXZEclgxUUhRUWVybkMzRXlOb2pjV2pxX3NSeTFYMGxOMXZabXJWNQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN0szbHppSU5SSXgtNG94WHNsTW1HMzUxcHhqQWFwU3JpS1RkSUg4YzdKSENXUHJReXk2d08xMFA4Y2JBNy1zbHV1eFZPb2FpeGNxU0ZNOHNqVlJrRm5mcmZjekpkZnU1SklQRXBoRzFSV01WeU9WV3JMT3pfVmJHRXptT01leXZDcUduVDR5ZkViZmR5ZnJ4N0owVXVVdkcwRjNzM0hMTlRYd28zRVVtclJINHhidlgzaF9SN1V5SWZLU3BUbElia0NEaGdqWnFL?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1187,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 6
     },
     {
@@ -1198,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 1
     },
     {
@@ -1275,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 6
     },
     {
@@ -1286,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 5
     },
     {
@@ -1308,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 5
     },
     {
@@ -1319,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 2
     },
     {
@@ -1330,8 +1330,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 7
     },
     {
@@ -1341,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T15:12:45.920Z",
-      "lastSuccessAt": "2026-11-08T15:12:45.920Z",
+      "checkedAt": "2026-11-08T19:41:52.400Z",
+      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
       "recentCount": 10
     }
   ]
