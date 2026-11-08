@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T19:41:52.400Z",
+  "generatedAt": "2026-11-08T23:42:56.778Z",
   "stories": [
+    {
+      "id": "58e6c7db3b99c904b6c1",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Revolut prevé lanzar su banco en Argentina en el segundo semestre de 2027",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWVNnVEZEMW1PbnNjaWNfV0gzYkZkOVdUMzd3QVJIOExJRVp6V0ZIWXRMQTJQRHRRaW9iRnFOSVRmcTdZdjlvX3RYd2RrWkxKN3Z5bzBvQ3JsZkdiS1poV2ZId0x4clUzaC1ZM3dIVWRzSEx0Yk5YRS1yV2xGMXYzMHQwUENGdlBCalZOUGprdm01YUZTbk9rSWc3bktuLVZpSjlWUG5WVnlvWTlrMGZRdUwxVTFMUkNEN0VpYUFKQU16WVBxMUYxUmlBUnl6NFVYejZWOEhtc3M0dzJZ0gHcAUFVX3lxTE5ZU2dURkQxbU9uc2NpY19XSDNiRmQ5V1QzN3dBUkg4TElFWnpXRkhZdExBMlBEdFFpb2JGcU5JVGZxN1l2OW9fdFh3ZGtaTEo3dnlvMG9DcmxmR2JLWmhXZkh3THhyVTNoLVkzd0hVZHNITHRiTlhFLXJXbEYxdjMwdDBQQ0Z2UEJqVk5Qamt2bTVhRlNuT2tJZzduS24tVmlKOVZQblZWeW9ZOWswZlF1TDFVMUxSQ0Q3RWlhQUpBTXpZUHExRjFSaUFSeXo0VVh6NlY4SG1zczR3Mlk?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-08T20:48:43.000Z"
+    },
     {
       "id": "070704612122f2fda857",
       "sourceId": "ecuador-news",
@@ -127,20 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T21:13:20.000Z"
-    },
-    {
-      "id": "19d4df9815c318efbdbb",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Synctera Raises $24.5 Million to Support New BaaS Demand",
-      "excerpt": "Embedded finance and banking-as-a-service (BaaS) company Synctera raised $24.5 million in new funding, according to a Friday (Nov. 6) news release. The financing will support “Synctera’s work with sponsor banks and FinTechs as more banks get back in the game with BaaS,” the relea",
-      "url": "https://www.pymnts.com/startups/2026/synctera-raises-25-million-dollars-support-new-baas-demand/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T20:03:26.000Z"
     },
     {
       "id": "b0c078836308ac606e35",
@@ -1081,34 +1081,6 @@
       "publishedAt": "2026-10-19T07:00:00.000Z"
     },
     {
-      "id": "78e80966558f9df82583",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nubank lanza herramienta de IA que promete recomendaciones de inversión imparciales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUEotWFcwaHBoTGxMcUl2OElhWjlKeXJMdFBYTWplOUlpMGs2UHFmZ2V5ejlLa25KZ2UxcW1KUDd5M0Y3Uzc4S3BEVzlLbWRDdTg0NWIzRVNvM3ZtWEMyY3h5b3FzdXc5VHlZcUl2OFo3aV85aXBwSkhNcmV4bEV5U0ktLVB3dnE3dXRMRllzSjRmZVF2em93NHlESUJtekdEa0s1OXBsUDBKSGluOGZXNml4czlwODVzVV9Qdi1jcXJjd9IB1gFBVV95cUxQZnAzdklBb05GUTIzNFMydVBaUHBQT3VUQ0VjbkZ0NzNvc0Z1aHNXRHJ5MFJja3JNQ1o4UXdLdnR5QWVEbWZNUkM0U0N3eTFRaUFWUVlmWUxXd0pJRGl4V3VfRzdWSkJKUGZidkZLSENrenRRS0l5RHBicXpQblpYMmFtSmdyaEVpNW80bHVqbF9lSjVaM0FTSWZIRlg4VmprS0F5ZjZJQjZTalFab2RpbGg4U1d2OHVoODE3U1NDYXVDVFl4RTRfYjl2eU9Va3cwOHBySHhB?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T07:00:00.000Z"
-    },
-    {
-      "id": "b7c18c0c9d6cae95d07b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Operativos contra secuestros y extorsiones evitaron pagos por $ 2,3 millones en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcTdsOU1EVjFfQUlzVDhEVDZmUlQ3b2dRbEhwSkRrRjU4aFdBQ1BtYWl0dE5lU1F3MDZaZXpJSUNBcVBna2RLSC1JZGUzZjNEVjgtYUstV1lvWHJsVWtocDlPSEJEeEdkSHNYTnFJNjh3czhKdm1nTGVPRkcwNmg5V29YUlA0TTNRUUVLUXFLeDc2MFZBTDVBTVU1UGpuSnFmdG9IdzJEOXpFWC1zSnVKcks2dzFZdXVNTkgwRlVSTmRHQnNra0FQUDVVVmRRY0syeFHSAeYBQVVfeXFMT1dWbnE2a2lPc2owdE9RSXN2R2tjVXZ4ZEk0ZmZ5VVNGUEJ6SmZGZk5xNFItTm03U19tYWxQN2lIOWtZRS1hZWxrMGNJdWhYN2JyeU56WXBKa2RPaURlQTBheWx1ZXFJREtRYW92Y0NQWVRGdm43cDVkNWxVMDFfLWhDSUc0eFhIT0o1V0lUUmJXd3M4MTcwOVZmVnZhdk1vMFI0a3IwTzk3WTZCSjhIczgxajZTcTRUUmltNXMtd2lUM1JJSzRDd0JGeEtDaGpkM0JfdTZDMXJnZnRLVWRiRzItQmVsUVE?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-18T07:00:00.000Z"
-    },
-    {
       "id": "4fa21e47e6800c6a9c7a",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -1187,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "recentCount": 5
     },
     {
       "id": "bce-junta",
@@ -1198,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 0
     },
     {
@@ -1209,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 8
     },
     {
@@ -1220,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 1
     },
     {
@@ -1275,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 6
     },
     {
@@ -1286,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 5
     },
     {
@@ -1308,9 +1280,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-latam",
@@ -1319,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 2
     },
     {
@@ -1330,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1341,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T19:41:52.400Z",
-      "lastSuccessAt": "2026-11-08T19:41:52.400Z",
+      "checkedAt": "2026-11-08T23:42:56.778Z",
+      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
       "recentCount": 10
     }
   ]
