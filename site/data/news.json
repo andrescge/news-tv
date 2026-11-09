@@ -1,20 +1,132 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T06:28:20.076Z",
+  "generatedAt": "2026-11-09T17:29:03.904Z",
   "stories": [
     {
-      "id": "5847a94d73bfc430118b",
+      "id": "14d16297ac7ecb72b781",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "Western Europe’s $2 Trillion Crypto Economy Holds Firm",
+      "excerpt": "Summary Western Europe’s $2.08 trillion crypto economy held firm despite a global downturn. The region grew 1.2% between July 2025…",
+      "url": "https://www.chainalysis.com/blog/western-europe-crypto-adoption-2026/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T17:21:46.000Z"
+    },
+    {
+      "id": "57166f6a5af9a51d77d0",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Gnosis Pay Breach Reveals Crypto Customer Home Addresses",
-      "excerpt": "Gnosis Pay has disclosed a data breach that revealed customer information, the latest in a series of security incidents at digital asset companies. The company, which lets users spend stablecoins with Visa debit cards tied to their crypto wallets, announced Friday (Nov. 6) it had",
-      "url": "https://www.pymnts.com/cybersecurity/2026/gnosis-pay-breach-reveals-crypto-customer-home-addresses/",
+      "title": "Canada Launches Real-Time Rail for 24/7 Payments",
+      "excerpt": "Canada has officially launched its Real-Time Rail Monday (Nov. 9), introducing around-the-clock payment infrastructure designed to accelerate money movement, improve cash flow management and give financial institutions and payment providers a platform for developing new services.",
+      "url": "https://www.pymnts.com/real-time-payments/2026/canada-launches-real-time-rail-for-24-7-payments/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-08T23:44:40.000Z"
+      "publishedAt": "2026-11-09T16:25:51.000Z"
+    },
+    {
+      "id": "43ec9654f1cb192dd1ea",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Canada's real-time payments system launches",
+      "excerpt": "Following years of delays, Canada's Real-Time Rail (RTR) payments system has finally launched.",
+      "url": "https://www.finextra.com/newsarticle/48725/canadas-real-time-payments-system-launches?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T15:10:00.000Z"
+    },
+    {
+      "id": "72ab2ca0001a42efb65a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Priority Commerce Deepens NFL Ties With Browns’ Ticketing Pact",
+      "excerpt": "Priority Commerce’s collaboration with the National Football League (NFL) continues with a new partnership with the Cleveland Browns. This new agreement will see the company provide ticketing payment processing to the team to help “ensure secure, fast and efficient ticket transac",
+      "url": "https://www.pymnts.com/partnerships/2026/priority-commerce-deepens-nfl-ties-with-browns-ticketing-pact/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T14:00:17.000Z"
+    },
+    {
+      "id": "990ff27ded16d96e086a",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Chase customers can now deposit cash into their accounts at UK PayPoint locations",
+      "excerpt": "With more than 30,000 PayPoint locations available across the UK and over 99% of the population living within one mile of a PayPoint store, Chase has made it easier for its customers to manage their money.",
+      "url": "https://www.finextra.com/newsarticle/48723/chase-customers-can-now-deposit-cash-into-their-accounts-at-uk-paypoint-locations?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T13:07:00.000Z"
+    },
+    {
+      "id": "b8de8cf8d60c9d33bcec",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Semanal de Tasas de Interés. 29 de Octubre al 04 de Noviembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-09T12:00:00.000Z"
+    },
+    {
+      "id": "c66c650bf8605b48c81a",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "La JPRFM establece las condiciones para la implementación del diferimiento temporal de obligaciones crediticias para deudores afectados por el fenómeno de El Niño",
+      "excerpt": "La medida es temporal y voluntaria y podrá aplicarse por acuerdo entre el deudor afectado y su entidad financiera. Las personas y negocios cuyos ingresos,",
+      "url": "https://www.bce.fin.ec/la-jprfm-establece-las-condiciones-para-la-implementacion-del-diferimiento-temporal-de-obligaciones-crediticias-para-deudores-afectados-por-el-fenomeno-de-el-nino/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-09T12:00:00.000Z"
+    },
+    {
+      "id": "032b61cb38c5153a0dac",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "EE. UU. cuestiona gobernanza de Pix, pero reelección de Lula fortalece posición del Banco Central como regulador y operador",
+      "excerpt": "El presidente brasileño considera que el sistema de pagos local es un bien público que debe ser defendido de intereses extranjeros. Brasil rechaza ceder ante las presiones comerciales de la Casa Blanca, pero expertos no descartan ajustes intermedios que calibren las tensiones. ..",
+      "url": "https://iupana.com/2026/11/09/ee-uu-cuestiona-gobernanza-pix-reeleccion-lula-fortalece-posicion-banco-central-regulador-operador/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-09T11:00:56.000Z"
+    },
+    {
+      "id": "5762f8b0746323384008",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa benchmark finds AI models fail 43% of shopping test runs",
+      "excerpt": "With agentic commerce beginning to gain traction, Visa has put a slew of models through their paces by giving them realistic shopping scenarios. The models failed 43% of the test runs.",
+      "url": "https://www.finextra.com/newsarticle/48719/visa-benchmark-finds-ai-models-fail-43-of-shopping-test-runs?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T00:01:00.000Z"
     },
     {
       "id": "58e6c7db3b99c904b6c1",
@@ -57,48 +169,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-07T12:00:00.000Z"
-    },
-    {
-      "id": "80800d8ac1b961ab4629",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Black Friday Escapes the Calendar and Heads for Your Wallet",
-      "excerpt": "Black Friday has developed a scheduling problem. It keeps arriving before Friday. The official date this year is Nov. 27, followed by Cyber Monday on Nov. 30. But retailers are already warming up the discount machinery. Apparently, consumers need several weeks to prepare for the ",
-      "url": "https://www.pymnts.com/news/retail/2026/black-friday-escapes-calendar-moves-toward-your-wallet/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-07T09:00:37.000Z"
-    },
-    {
-      "id": "b58c0d0f11acd2690243",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Revolving Debt Jumps as Spending Strains Credit Cards",
-      "excerpt": "The fastest-growing part of consumer credit in September was the kind that lets a household put this week’s groceries on next month’s bill. The Federal Reserve’s Friday (Nov. 6) G19 report on consumer credit indicated that revolving credit, which includes credit cards, accounted ",
-      "url": "https://www.pymnts.com/economy/2026/revolving-debt-jumps-as-spending-strains-credit-cards/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T23:46:41.000Z"
-    },
-    {
-      "id": "b14189e55e11ecd48bbd",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BMO Turns to Agentic AI to Resolve Card Issues",
-      "excerpt": "BMO is employing an artificial intelligence (AI) agent to help clients resolve credit card transaction issues. The bank’s AI Agent Assist, announced Friday (Nov. 6), is designed for in-house use by employees and uses agentic AI to help those workers spend less time navigating sys",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/bmo-turns-to-agentic-ai-to-resolve-card-issues/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T23:13:58.000Z"
     },
     {
       "id": "b0c078836308ac606e35",
@@ -225,20 +295,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-05T18:44:05.000Z"
-    },
-    {
-      "id": "6d1cb9093ae1d25f0fb0",
-      "sourceId": "finextra-latam",
-      "category": "latam",
-      "kind": "news",
-      "title": "Stablecoin firm Yellow Card target Brazil through GoMoney acquisition",
-      "excerpt": "Stablecoin payments infrastructure provider Yellow Card has set its sights on Brazil after acquiring local virtual asset service outfit GoMoney. Financial terms were not disclosed.",
-      "url": "https://www.finextra.com/newsarticle/48710/stablecoin-firm-yellow-card-target-brazil-through-gomoney-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · LATAM",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T15:45:00.000Z"
     },
     {
       "id": "eb93f83688ba5d492d1c",
@@ -395,20 +451,6 @@
       "publishedAt": "2026-11-04T14:47:00.000Z"
     },
     {
-      "id": "b8de8cf8d60c9d33bcec",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Semanal de Tasas de Interés. 22 al 28 de Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-04T12:00:00.000Z"
-    },
-    {
       "id": "253e58eae9979a3bc477",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -463,20 +505,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-03T19:23:32.000Z"
-    },
-    {
-      "id": "1c14b804f0d4c95f29bc",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "EU and Canada plan to link real-time payment systems",
-      "excerpt": "The European Union and Canada have committed to connect their real-time payment systems and to explore ways to open up their markets to each other's banks and fintechs.",
-      "url": "https://www.finextra.com/newsarticle/48692/eu-and-canada-plan-to-link-real-time-payment-systems?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T15:20:00.000Z"
     },
     {
       "id": "ca3686824b15a5e469e2",
@@ -547,34 +575,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-30T21:14:00.000Z"
-    },
-    {
-      "id": "1e092fdac402dd84191e",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "PE firm CD&R targets buyout of $40bn Global Payments - FT",
-      "excerpt": "Global Payments, the payments processor with an enterprise value of around $40 billion, is an acquisition target for private equity firm CD&R, according to the Financial Times.",
-      "url": "https://www.finextra.com/newsarticle/48681/pe-firm-cdr-targets-buyout-of-40bn-global-payments---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T18:15:00.000Z"
-    },
-    {
-      "id": "be907b0955c1b6033365",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Kipp acquired by LTVCo-led investor group for US push",
-      "excerpt": "Kipp, a Tel Aviv-headquartered fintech platform connecting card issuers and merchants to approve more transactions, has been acquired by an investor group ahead of a push into the US market.",
-      "url": "https://www.finextra.com/newsarticle/48679/kipp-acquired-by-ltvco-led-investor-group-for-us-push?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T14:10:00.000Z"
     },
     {
       "id": "a21592d62679a1086f3b",
@@ -1053,20 +1053,6 @@
       "publishedAt": "2026-10-19T07:00:00.000Z"
     },
     {
-      "id": "4fa21e47e6800c6a9c7a",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "Ecuador cerró los primeros ocho meses de 2026 con un saldo comercial favorable de USD 3.054 millones",
-      "excerpt": "La balanza comercial de bienes de Ecuador cerró los primeros ocho meses de 2026 con un saldo favorable de USD 3.054 millones, una cifra 32%",
-      "url": "https://www.bce.fin.ec/ecuador-cerro-los-primeros-ocho-meses-de-2026-con-un-saldo-comercial-favorable-de-usd-3-054-millones/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-16T12:00:00.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1095,20 +1081,6 @@
       "publishedAt": "2026-10-14T12:48:32.000Z"
     },
     {
-      "id": "887dcfd5e33859ac713e",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "Chainalysis Reactor Withstands Daubert Scrutiny Again on Appeal",
-      "excerpt": "Summary Chainalysis Reactor’s evidentiary admissibility has now withstood scrutiny at two levels of federal court. In September, the D.C. Circuit…",
-      "url": "https://www.chainalysis.com/blog/chainalysis-daubert-standard-appeal/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-13T15:57:50.000Z"
-    },
-    {
       "id": "2c03341852750e99c35c",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1131,8 +1103,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 5
     },
     {
@@ -1142,8 +1114,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1125,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1136,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1147,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1158,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1169,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1180,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1191,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 6
     },
     {
@@ -1230,8 +1202,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 8
     },
     {
@@ -1241,9 +1213,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "recentCount": 6
     },
     {
       "id": "latam-bloomberg",
@@ -1252,8 +1224,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 6
     },
     {
@@ -1263,9 +1235,9 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "recentCount": 1
     },
     {
       "id": "pymnts",
@@ -1274,9 +1246,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1257,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1268,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 8
     },
     {
@@ -1307,8 +1279,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T06:28:20.076Z",
-      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "checkedAt": "2026-11-09T17:29:03.904Z",
+      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
       "recentCount": 10
     }
   ]
