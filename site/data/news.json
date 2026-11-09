@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-08T23:42:56.778Z",
+  "generatedAt": "2026-11-09T06:28:20.076Z",
   "stories": [
+    {
+      "id": "5847a94d73bfc430118b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Gnosis Pay Breach Reveals Crypto Customer Home Addresses",
+      "excerpt": "Gnosis Pay has disclosed a data breach that revealed customer information, the latest in a series of security incidents at digital asset companies. The company, which lets users spend stablecoins with Visa debit cards tied to their crypto wallets, announced Friday (Nov. 6) it had",
+      "url": "https://www.pymnts.com/cybersecurity/2026/gnosis-pay-breach-reveals-crypto-customer-home-addresses/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-08T23:44:40.000Z"
+    },
     {
       "id": "58e6c7db3b99c904b6c1",
       "sourceId": "latam-bloomberg",
@@ -15,20 +29,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-08T20:48:43.000Z"
-    },
-    {
-      "id": "070704612122f2fda857",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-07T16:55:00.000Z"
     },
     {
       "id": "2d71920c22d5a115be88",
@@ -101,48 +101,6 @@
       "publishedAt": "2026-11-06T23:13:58.000Z"
     },
     {
-      "id": "22e7b0b0e83f05dfb20f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Study Finds Most Stablecoins Fail GENIUS Act Requirements",
-      "excerpt": "New research shows most U.S. dollar stablecoins will not follow the GENIUS Act’s reserve asset requirements. A study from the Bank Policy Institute (BPI) published Friday (Nov. 6) examined data on the reserve asset holdings of the 10 largest circulating dollar stablecoins, which ",
-      "url": "https://www.pymnts.com/news/2026/study-finds-most-stablecoins-fail-genius-act-requirements/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T21:46:39.000Z"
-    },
-    {
-      "id": "d38fa384d60432eae847",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Samsung’s 82-Million-Device Bet Shows Stablecoin Wars Moving Beyond Crypto",
-      "excerpt": "Stablecoins are becoming a distribution business before they have conclusively become a profitable payments business. And if stablecoins are a distribution business, then a new player might be trying to corner the market. Samsung last month gave stablecoins something the cryptocu",
-      "url": "https://www.pymnts.com/blockchain/2026/samsungs-82-million-device-bet-shows-stablecoin-wars-moving-beyond-crypto/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T21:38:03.000Z"
-    },
-    {
-      "id": "04690b2a5e1f9d25afae",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Nubank and Mercado Pago Pause Crypto Operations Following Provider Issues",
-      "excerpt": "Nubank and Mercado Pago paused some cryptocurrency operations due to issues with third-party providers, Bloomberg reported Friday (Nov. 6). The suspensions by the financial services firms came a week after hackers stole a record $6.3 billion from Binance Oct. 30. “All assets and ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/nubank-mercado-pago-pause-crypto-operations-following-provider-issues/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T21:13:20.000Z"
-    },
-    {
       "id": "b0c078836308ac606e35",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -169,6 +127,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T13:52:00.000Z"
+    },
+    {
+      "id": "070704612122f2fda857",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-06T08:00:00.000Z"
     },
     {
       "id": "5f265a53c6600347d61c",
@@ -885,13 +857,13 @@
       "publishedAt": "2026-10-27T12:00:00.000Z"
     },
     {
-      "id": "af417c1c061716c2e156",
+      "id": "dccdabc9130e0f2d40d8",
       "sourceId": "ecuador-news",
       "category": "ecuador",
       "kind": "news",
-      "title": "¿Cubren los seguros vehiculares los daños provocados por las inundaciones en Ecuador? | Negocios | Economía",
+      "title": "¿Cubren los seguros vehiculares los daños provocados por las inundaciones en Ecuador?",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN0szbHppSU5SSXgtNG94WHNsTW1HMzUxcHhqQWFwU3JpS1RkSUg4YzdKSENXUHJReXk2d08xMFA4Y2JBNy1zbHV1eFZPb2FpeGNxU0ZNOHNqVlJrRm5mcmZjekpkZnU1SklQRXBoRzFSV01WeU9WV3JMT3pfVmJHRXptT01leXZDcUduVDR5ZkViZmR5ZnJ4N0owVXVVdkcwRjNzM0hMTlRYd28zRVVtclJINHhidlgzaF9SN1V5SWZLU3BUbElia0NEaGdqWnFL?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPN0szbHppSU5SSXgtNG94WHNsTW1HMzUxcHhqQWFwU3JpS1RkSUg4YzdKSENXUHJReXk2d08xMFA4Y2JBNy1zbHV1eFZPb2FpeGNxU0ZNOHNqVlJrRm5mcmZjekpkZnU1SklQRXBoRzFSV01WeU9WV3JMT3pfVmJHRXptT01leXZDcUduVDR5ZkViZmR5ZnJ4N0owVXVVdkcwRjNzM0hMTlRYd28zRVVtclJINHhidlgzaF9SN1V5SWZLU3BUbElia0NEaGdqWnFL0gHkAUFVX3lxTE5vNHdrV1dEMUtYWjYyY2dySHpKaEFqODd4dkJjNXZ6UFFFT3Y1Y3lWeUlZWjh4cFBMZUNmNXB0cFpyN0JGVVVrdnNVd0JrTjRNNEhJdzFzRHgxeExZdnB3bWxBbVRDVG5Dd09UQXRnLVNXRllja3VrOU5BcnlYMTdKWGtqZlBoTnBQdktiRTA4Mmh5M0FuREpXNktGS0ZsXzdwRTNOSG1wN0FPLUJWa1loNnRicy1rekFxN2puRXZEclgxUUhRUWVybkMzRXlOb2pjV2pxX3NSeTFYMGxOMXZabXJWNQ?oc=5",
       "source": "El Universo",
       "sourceUrl": "https://www.eluniverso.com/",
       "via": "Vía Google News",
@@ -1159,8 +1131,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 5
     },
     {
@@ -1170,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 1
     },
     {
@@ -1247,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 6
     },
     {
@@ -1258,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 5
     },
     {
@@ -1280,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 6
     },
     {
@@ -1291,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 2
     },
     {
@@ -1302,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-08T23:42:56.778Z",
-      "lastSuccessAt": "2026-11-08T23:42:56.778Z",
+      "checkedAt": "2026-11-09T06:28:20.076Z",
+      "lastSuccessAt": "2026-11-09T06:28:20.076Z",
       "recentCount": 10
     }
   ]
