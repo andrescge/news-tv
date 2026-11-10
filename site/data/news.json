@@ -1,48 +1,188 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T17:50:44.736Z",
+  "generatedAt": "2026-11-10T23:22:06.207Z",
   "stories": [
     {
-      "id": "2d48c2ca45dc44ed90f9",
+      "id": "52b7b57f49df1ee48055",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "October CPI Shows Grocery Bills Rising as Inflation Slows",
-      "excerpt": "Grocery prices rebounded in October, and eating out got more expensive, too. The increases put pressure on two parts of the food budget that households must manage with an eye on the confines of their wallets. Among paycheck-to-paycheck consumers who were keeping up with their bi",
-      "url": "https://www.pymnts.com/economy/2026/october-cpi-shows-grocery-bills-rising-inflation-slows/",
+      "title": "Fed Data Shows Household Debt Hits $19.1 Trillion as Bill Payers Lose Confidence",
+      "excerpt": "Consumers living paycheck to paycheck who were keeping up with their bills grew less confident as recently as last month that they could manage their debt over the next year. Higher regular expenses and expenses that exceeded income were the two most common reasons cardholders ga",
+      "url": "https://www.pymnts.com/consumer-finance/2026/fed-data-shows-household-debt-hits-19-1-trillion-as-bill-payers-lose-confidence/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-10T17:09:23.000Z"
+      "publishedAt": "2026-11-10T23:14:54.000Z"
     },
     {
-      "id": "dc343100ce001dfde3ba",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "782fd3c77ff40d74e1cc",
+      "sourceId": "latamlist",
+      "category": "latam",
       "kind": "news",
-      "title": "IBM and Microsoft Launch AI Agent Platform",
-      "excerpt": "IBM and Microsoft on Tuesday (Nov. 10) introduced Imagine Enterprise, an artificial intelligence (AI) agent platform combining more than 6,000 prebuilt AI agents and related assets with Microsoft’s cloud infrastructure to help banks, insurers and retailers automate business proce",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ibm-and-microsoft-launch-ai-agent-platform/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Nexu secures $55M credit line from BBVA Spark",
+      "excerpt": "Mexican fintech Nexu secured a $55M revolving credit line from BBVA Spark. Founded 12 years ago, Nexu provides…",
+      "url": "https://latamlist.com/nexu-secures-55m-credit-line-from-bbva-spark/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-10T16:42:47.000Z"
+      "publishedAt": "2026-11-10T23:03:07.000Z"
     },
     {
-      "id": "15def64e7064167034e1",
+      "id": "fed585c902f90c5e1bc3",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Yellow Card acquires GoMoney",
+      "excerpt": "Yellow Card, a stablecoin payment infrastructure provider, acquired Brazilian virtual asset service provider GoMoney in October 2026. The…",
+      "url": "https://latamlist.com/yellow-card-acquires-gomoney/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T22:42:19.000Z"
+    },
+    {
+      "id": "1689e610bf6224e3fb03",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Digital Asset Weekly: Stablecoins Use Partnerships to Access Corporate Cash",
-      "excerpt": "Stablecoins are coming for corporate banking. However, headlines this week showed that the cryptocurrency companies behind them are finding that the fastest way in may be through traditional banks themselves. Rather than persuading companies to replace conventional banking relati",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/digital-asset-weekly-stablecoins-use-partnerships-access-corporate-cash/",
+      "title": "KeyBank Upgrades Products as Consumers Struggle to Save",
+      "excerpt": "KeyBank has introduced a series of enhancements to its digital and mobile banking offerings. The new additions, announced Tuesday (Nov. 10), are designed to provide clients with personalized financial guidance, while also boosting security and making it easier to save. “The updat",
+      "url": "https://www.pymnts.com/news/banking/2026/keybank-upgrades-products-as-consumers-struggle-to-save/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-10T16:31:19.000Z"
+      "publishedAt": "2026-11-10T21:52:18.000Z"
+    },
+    {
+      "id": "739c9b086592afa01b6d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Bilt Seeks Slice of $6 Trillion Neighborhood Commerce Space",
+      "excerpt": "FinTech Bilt is expanding beyond the home and out into the neighborhood. The company, which made its name by offering rewards to consumers for rent payments, on Tuesday (Nov. 10) announced the launch of its Bilt Neighborhood operating system. The artificial intelligence-powered p",
+      "url": "https://www.pymnts.com/smbs/2026/bilt-seeks-slice-of-6-trillion-neighborhood-commerce-space/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T21:48:34.000Z"
+    },
+    {
+      "id": "14706766d4cfd826bf44",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Affirm and Nuvei Seek Bigger Roles in Merchants’ Payment Operations",
+      "excerpt": "FinTechs are using cross-border acquisitions to add a service to payment relationships merchants already have. For a lender, that means buying a provider whose payment option is already on a retailer’s checkout page. For a processor, it means buying the accounts and payout servic",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/affirm-and-nuvei-seek-bigger-roles-in-merchants-payment-operations/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T21:27:36.000Z"
+    },
+    {
+      "id": "47d9ac8b1ebfe90af8ff",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Clara raises $105M Series C round",
+      "excerpt": "Mexican fintech Clara secured $105M in equity and debt. The $65M Series C round was led by Citius,…",
+      "url": "https://latamlist.com/clara-raises-105m-series-c-round/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T21:10:30.000Z"
+    },
+    {
+      "id": "d9d2b50c1d7042a5ece3",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Boost Payment Solutions Expands Cross-Border Card Acceptance for Medical Providers",
+      "excerpt": "Boost Payment Solutions is expanding access to cross-border commercial card payments through a partnership with the Medical Tourism Association (MTA), aiming to reduce the fees and administrative hurdles that can discourage international healthcare providers from accepting cards.",
+      "url": "https://www.pymnts.com/healthcare/2026/boost-payment-solutions-expands-cross-border-card-acceptance-for-medical-providers/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T20:44:10.000Z"
+    },
+    {
+      "id": "d63900c6cf28fc6d7c74",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "BPC celebra 13 años de colaboración con Banco BHD impulsando la modernización de los pagos en República Dominicana",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNLWhQRVJEa2o5OHhIa3dtUkRqUFdlaXJZaTlxeXNTX204OVc4WE1hU1VaUTFLNEszb1lTYk9McmZfS3JTY1VmbFJTZFh0LXdUWDRFZUNBQU54WFFERFBfTDlJR1JiTVRZdTd6VEt4ZnNkOVIxOV9UWTNFcXlNeTNlMTViVVlfenRFTEFQd3VvQVgzOTdpRFd5VXMtQkYxUjNpWHhNaHdqT3lHNVlIcE1VNUZGcXhQTTVleXRrUzE3NHJQWkF2ZXQyTVpOU1RvcmRjRmJOcDZ3RVNHYm1IOWNWU2E2bThidw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-10T20:44:01.000Z"
+    },
+    {
+      "id": "d89f654f9313b0be3c3d",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech brasileña Conta Azul compra PlayBPO para ampliar su oferta de servicios de tercerización financiera para pymes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSHpfZ1BZVFE1azZMdXhKN0pVa1BaZ1NlV1hNUld4V1B0ZXFoRS1JYlRxc2RySHEwT2pwUlh4QnBNOXpma241WTlEdHZHc0RWOGpBUmFieDY1WEd1RlRKSG5yS3ZSc3BVdm05eWk3aVd5dXNib1pwU3k1MjBwODVCQUVyMThPYWNBa20zZ1lUVGkxRzFCclZrcE9JQ3JuUnVLVDdRY3VEcWptV1M2MUZId0FtaFp0d3RfSnhBYjUxdzBWY0RMeUVqZG12WEl1ZDFqeWRtZk41bGFxM2ZaNEdlMHFmZW5DTUJHV3F3?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-10T20:33:34.000Z"
+    },
+    {
+      "id": "a34a7c3eb2453d47ce05",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "What Skydance’s $6 Billion Bet Teaches CFOs About One-Time Charges",
+      "excerpt": "Corporate America is spending billions to make itself cheaper. Across media, technology and financial services, mergers and restructuring programs are producing a familiar combination of severance payments, technology migrations, consulting expenses and asset write-downs. But the",
+      "url": "https://www.pymnts.com/back-office/cfo/2026/what-skydances-6-billion-bet-teaches-cfos-about-one-time-charges/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T20:19:51.000Z"
+    },
+    {
+      "id": "e08644cf167b05c394e1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Brazilian Regulators Hope to Shed Light on Shadow Banks",
+      "excerpt": "A wave of defaults and fraud among Brazil’s “shadow banks” has reportedly caught the attention of regulators. That’s according to a report Tuesday (Nov. 10) from Bloomberg News, which says Brazil’s central bank is worried that some investors aren’t getting the transparency requir",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/brazilian-regulators-hope-to-shed-light-on-shadow-banks/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T19:03:23.000Z"
+    },
+    {
+      "id": "02038b8506463a4d4823",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Banking giants commit $270m to stablecoin venture - Bloomberg",
+      "excerpt": "Some of the world's biggest banks - including Citi, Goldman Sachs and Deutsche Bank - have committed around $270 million to a new stablecoin venture called Project Faro, according to Bloomberg.",
+      "url": "https://www.finextra.com/newsarticle/48738/banking-giants-commit-270m-to-stablecoin-venture---bloomberg?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T18:46:00.000Z"
     },
     {
       "id": "2c893398280142f30012",
@@ -57,20 +197,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-10T16:02:36.000Z"
-    },
-    {
-      "id": "6df5c5bb3c3610300f38",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bottomline Marks First Cross-Border Stablecoin Transactions",
-      "excerpt": "Business payments company Bottomline completed cross-border stablecoin payments through its payments and cash management platform, according to a Tuesday (Nov. 10) press release. The transactions, using Circle’s USDC stablecoin, marked Bottomline’s first live stablecoin transacti",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/bottomline-marks-first-cross-border-stablecoin-transactions/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T15:39:15.000Z"
     },
     {
       "id": "7cf410a8259554532120",
@@ -101,20 +227,6 @@
       "publishedAt": "2026-11-10T15:12:00.000Z"
     },
     {
-      "id": "1b6f4eba2865a174689a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Sage Launches Small Business Partnerships With Mastercard and Adyen",
-      "excerpt": "Business management software company Sage launched new partnerships with Mastercard and FinTech platform Adyen, according to a Tuesday (Nov. 10) press release. The collaborations are designed to help Sage as it develops financial services for small businesses in Europe, per the r",
-      "url": "https://www.pymnts.com/partnerships/2026/sage-launches-smb-partnerships-with-mastercard-adyen/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T14:25:10.000Z"
-    },
-    {
       "id": "71f89c1f6cf671d20d88",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -127,20 +239,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-10T14:24:00.000Z"
-    },
-    {
-      "id": "d25ed7799fd0f1236533",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anchorage and Lydian Team to Promote Stablecoin Payments",
-      "excerpt": "Cryptocurrency-focused bank Anchorage Digital has launched a partnership with digital asset payment infrastructure company Lydian. With this collaboration, Lydian has onboarded to Anchorage stablecoin minting and redemption, with digital assets custodied with the bank, the compan",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/anchorage-and-lydian-team-to-promote-stablecoin-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T14:00:06.000Z"
     },
     {
       "id": "f005f6b7177570424832",
@@ -157,18 +255,18 @@
       "publishedAt": "2026-11-10T12:24:00.000Z"
     },
     {
-      "id": "00ced6000034b5bfc5ad",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "How Banks Can Spot Scams That Pass Authentication",
-      "excerpt": "Watch more: Need to Know With Paymentology’s Stephen Bowe A bank can authenticate the person making a payment and still send money exactly where a criminal wants it to go. “It doesn’t matter how sophisticated your authentication protocol is, if it’s actually me [the legitimate cu",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/how-banks-can-spot-scams-that-pass-authentication/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "id": "f9489d7ffe8d62664967",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 06 de Noviembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_953_06112026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T09:03:44.000Z"
+      "language": "es",
+      "publishedAt": "2026-11-10T12:00:00.000Z"
     },
     {
       "id": "ef1605c16145dca9cf64",
@@ -239,6 +337,20 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-09T21:14:42.000Z"
+    },
+    {
+      "id": "c3fdf90c74724ff0a5ad",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "El Banco Central dispone cambios para los depósitos de billetes de USD 50 y USD 100 para prevenir lavado de activos en Ecuador",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQUNMTDk1eTNWVjdyNnIwUzJxWElrVS1CRzRYMzh2NnZmYm1mdkFubVNrMlRhM2tyU3JWZ3hQclpNMUhrdXZnOGc1LXVTalgxSTRTM0N3T0ZoR3E2NTRENS1RdGhQOF9NcWFwRzhsYVczaDJvYjNmNjFWZUh5YXZoZ0MtcmdsZnVIUnFnbXdmRTZYeHZDT0kwZGdaUUJqMVIxNGlPWWJJRQ?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T21:11:04.000Z"
     },
     {
       "id": "18e55d9381377fc88095",
@@ -423,6 +535,20 @@
       "publishedAt": "2026-11-07T12:00:00.000Z"
     },
     {
+      "id": "ad04219779f4500cd288",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Equity Link secures $53M in financing from BBVA Spark",
+      "excerpt": "Mexican fintech Equity Link secured $53M in financing from BBVA Spark. Founded 11 years ago, Equity Link provides…",
+      "url": "https://latamlist.com/equity-link-secures-53m-in-financing-from-bbva-spark/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T22:52:07.000Z"
+    },
+    {
       "id": "b0c078836308ac606e35",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -493,34 +619,6 @@
       "publishedAt": "2026-11-05T20:26:00.000Z"
     },
     {
-      "id": "d91cfbaa254604d7813d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech argentina LB Finanzas será adquirida por eToro para ampliar las oportunidades de inversión de sus usuarios",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNXhMdUV6U1NLQWp2cnBmR2hoSFBncThsX0hpTHV0RnhDamFDWlM0cEVnczQzSy1CRFEySEsyV2lJOHdxbmtVRF9mLWlrYjR2b1pxOHBsTkF4SHdMZGVKenJTMzFpUGtZcVE2NGxkdUI3Zm9Gb09nRHBWT2hiVHV3d0tTbEU0NktXSFAzTzdGU251S1NKX0tHZUNodmxNQ0pJZUk4S2xXSVNNSnV0SEhqS3J1OHZodGVVRDBxbk9xdl92TkY3VDNwZlhYb3dxRWsz?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-05T18:44:05.000Z"
-    },
-    {
-      "id": "ee9c10107210083f3e14",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintechs Payválida y Pagui se alían para llevar el pago a cuotas sin tarjeta de crédito al eCommerce en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPdldhazJYTEFHQ1M1aGJrcGtrclNWWWZpM2dUc2h3MHRSYUN0SHo3S3U2TVdBWDJvV0ZJR1h4eFJQVmhJdGprb2trdm9vbElVUTJRanNnNzZYZl95NVFHbVBOaEdqUHpLSktwV1hpOUdjRGhCWGY3MEVkdG9SdkgycWYtdnFvMTM5aXI3R3FRdjhaU3lSNlktMEhtdVAySGxxZFVaaUJLN19NaHFlaDhYNHBRLXNEVFlXY3FHVDdzWTZiREExc0dNckdtXzFOMXhFOEZxVFhkSHpzeDVvWWZXdkoxdw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-05T18:44:05.000Z"
-    },
-    {
       "id": "eb93f83688ba5d492d1c",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -563,18 +661,18 @@
       "publishedAt": "2026-11-05T12:00:00.000Z"
     },
     {
-      "id": "52a2d4b0abe28b74a7fa",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
+      "id": "34fedc15535f48a3c62c",
+      "sourceId": "latamlist",
+      "category": "latam",
       "kind": "news",
-      "title": "AI accounting platform Kabilio raises €10m",
-      "excerpt": "Kabilio, a Barcelona-based AI platform for accounting firms and the small businesses they serve, has raised €10 million in a funding round led by Picus Capital and Visionaries.",
-      "url": "https://www.finextra.com/newsarticle/48704/ai-accounting-platform-kabilio-raises-10m?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "title": "Bloquo raises $3.7M seed round",
+      "excerpt": "Brazilian fintech Bloquo raised $3.7M in a seed round co-led by Crescera Capital and Triaxis Capital, with participation…",
+      "url": "https://latamlist.com/bloquo-raises-3-7m-seed-round/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-05T09:00:00.000Z"
+      "publishedAt": "2026-11-04T20:53:54.000Z"
     },
     {
       "id": "da091334d210f5a9808b",
@@ -815,20 +913,6 @@
       "publishedAt": "2026-10-29T06:55:01.000Z"
     },
     {
-      "id": "09d5827d86b55ad291c0",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Itaú to acquire NeoSpace AI for $589M",
-      "excerpt": "Brazilian bank Itaú announced an agreement to acquire 100% of NeoSpace AI for approximately $589M. The bank will…",
-      "url": "https://latamlist.com/itau-to-acquire-neospace-ai-for-589m/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T23:10:59.000Z"
-    },
-    {
       "id": "104b18d380385b4e0648",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1011,20 +1095,6 @@
       "publishedAt": "2026-10-24T07:00:00.000Z"
     },
     {
-      "id": "333f04e2b81c725182b7",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Colombian fintech Bold secures $11.3M credit facility from BBVA Spark",
-      "excerpt": "Colombian fintech Bold secured an $11.3M credit facility from BBVA Spark. Founded in 2020, Bold provides financial services…",
-      "url": "https://latamlist.com/colombian-fintech-bold-secures-11-3m-credit-facility-from-bbva-spark/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-23T22:47:35.000Z"
-    },
-    {
       "id": "30d581a61d1112258b6e",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -1065,20 +1135,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-10-21T07:00:00.000Z"
-    },
-    {
-      "id": "ffa7dbcd0526fe41ae47",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Argentine fintech Rebill raises $5.4M Pre Series A round",
-      "excerpt": "Argentine fintech Rebill raised $5.4M in a pre Series A round, bringing its total funding to more than…",
-      "url": "https://latamlist.com/argentine-fintech-rebill-raises-5-4m-pre-series-a-round/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T23:24:46.000Z"
     },
     {
       "id": "d138356cf27287a16330",
@@ -1123,34 +1179,6 @@
       "publishedAt": "2026-10-19T12:00:00.000Z"
     },
     {
-      "id": "979761a1c4fd9f669a81",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Kapital obtiene autorización inicial para un banco en Colombia",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNTDZ4Zk5OWmNIeXhkWmZQZEw3bm1yVWM3OGpkVWhoU1NsRzN3YXc1TUdGUTdQd09HYk5lbzhTVlJiSTJEQk5YSkZzSV9CZ2VZcmlid01BcmdZcWJRZHA5QUNJY2ZBUmJxdGVpLVJpR05rb2hBWGxUcUVObXhwMVZXTlF0LWROeU56a0U4eE5yZl9hamFaMTgyYkJCd2JXdjNKdC1USmZqZHhqZk5kTlBtSVVEM2poa0NIWjl6MGdmeXLSAdQBQVVfeXFMTlhPUDRoOUhmS1J3Z0k0NGozeGcxN05wYjhRTkUybGxXdjJRNmxjMzdJcDZTaV80Mm5FYnAycDNtMTFnMWNOOS1JRWFTejFuTzQybkJLWk9QVi1OdVJZTDhGV0VENTRTNGNKWVNZbE1Md1FHbzRBMkVqekZpYlBZYmx0Z3ZWNmZReGNGWU9DMDB0bFpTcmVwTEN2VnR0dW5UUFNtdGFMNTJ3bEU2UXpKSXlyUjhrQWQyNXpOaG5XeGVLaUs5bHBiQ2ZNNkhPeHU4M1gzRE8?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T07:00:00.000Z"
-    },
-    {
-      "id": "78e80966558f9df82583",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Nubank lanza herramienta de IA que promete recomendaciones de inversión imparciales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUEotWFcwaHBoTGxMcUl2OElhWjlKeXJMdFBYTWplOUlpMGs2UHFmZ2V5ejlLa25KZ2UxcW1KUDd5M0Y3Uzc4S3BEVzlLbWRDdTg0NWIzRVNvM3ZtWEMyY3h5b3FzdXc5VHlZcUl2OFo3aV85aXBwSkhNcmV4bEV5U0ktLVB3dnE3dXRMRllzSjRmZVF2em93NHlESUJtekdEa0s1OXBsUDBKSGluOGZXNml4czlwODVzVV9Qdi1jcXJjd9IB1gFBVV95cUxQZnAzdklBb05GUTIzNFMydVBaUHBQT3VUQ0VjbkZ0NzNvc0Z1aHNXRHJ5MFJja3JNQ1o4UXdLdnR5QWVEbWZNUkM0U0N3eTFRaUFWUVlmWUxXd0pJRGl4V3VfRzdWSkJKUGZidkZLSENrenRRS0l5RHBicXpQblpYMmFtSmdyaEVpNW80bHVqbF9lSjVaM0FTSWZIRlg4VmprS0F5ZjZJQjZTalFab2RpbGg4U1d2OHVoODE3U1NDYXVDVFl4RTRfYjl2eU9Va3cwOHBySHhB?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-19T07:00:00.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1187,9 +1215,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1198,8 +1226,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 0
     },
     {
@@ -1209,9 +1237,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
+      "recentCount": 9
     },
     {
       "id": "bce-boletines",
@@ -1220,8 +1248,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 6
     },
     {
@@ -1231,8 +1259,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 1
     },
     {
@@ -1242,8 +1270,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 0
     },
     {
@@ -1253,8 +1281,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 0
     },
     {
@@ -1264,8 +1292,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 1
     },
     {
@@ -1275,9 +1303,9 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
+      "recentCount": 8
     },
     {
       "id": "latam-fintech-hub",
@@ -1286,8 +1314,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 8
     },
     {
@@ -1297,8 +1325,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 6
     },
     {
@@ -1308,8 +1336,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 6
     },
     {
@@ -1319,8 +1347,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 0
     },
     {
@@ -1330,8 +1358,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 7
     },
     {
@@ -1341,8 +1369,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 12
     },
     {
@@ -1352,8 +1380,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 8
     },
     {
@@ -1363,8 +1391,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T17:50:44.736Z",
-      "lastSuccessAt": "2026-11-10T17:50:44.736Z",
+      "checkedAt": "2026-11-10T23:22:06.207Z",
+      "lastSuccessAt": "2026-11-10T23:22:06.207Z",
       "recentCount": 10
     }
   ]
