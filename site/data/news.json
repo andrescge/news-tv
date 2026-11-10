@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-10T01:31:24.811Z",
+  "generatedAt": "2026-11-10T09:50:18.501Z",
   "stories": [
+    {
+      "id": "00ced6000034b5bfc5ad",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "How Banks Can Spot Scams That Pass Authentication",
+      "excerpt": "Watch more: Need to Know With Paymentology’s Stephen Bowe A bank can authenticate the person making a payment and still send money exactly where a criminal wants it to go. “It doesn’t matter how sophisticated your authentication protocol is, if it’s actually me [the legitimate cu",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/how-banks-can-spot-scams-that-pass-authentication/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T09:03:44.000Z"
+    },
+    {
+      "id": "5a8d544969286fb3f79a",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "The Growth Fix for Embedded Payments Starts Before Launch",
+      "excerpt": "For companies embedding payments into their products, the biggest operational risk may be that the technology succeeds, particularly when embedded payments succeed beyond even the expectations of the business. The problem, according to the October edition of PYMNTS Intelligence’s",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/growth-fix-embedded-payments-starts-before-launch/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T09:01:06.000Z"
+    },
+    {
+      "id": "cc099aabb1e3fba69d6d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Paysafe’s Customer Chief Finds the Limits of Faster Service",
+      "excerpt": "Companies can’t hire, train, automate or optimize their way out of demand that shouldn’t exist in the first place, Paysafe Chief Customer Officer Ali Wilkes writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” At the start of 2026, I believed the biggest l",
+      "url": "https://www.pymnts.com/opinion/2026/paysafes-customer-chief-finds-the-limits-of-faster-service/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T09:00:48.000Z"
+    },
+    {
+      "id": "7ae180fd355e0d9a91ec",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "61.1% of Paycheck-to-Paycheck Bill Payers Remain Confident About Debt",
+      "excerpt": "Consumers who still pay their bills comfortably are losing confidence in managing debt, giving banks an opportunity to recognize financial pressure before customers fall behind. The PYMNTS Intelligence report “Keeping Up Gets Harder: Debt Confidence Falls Among Bill Payers,” base",
+      "url": "https://www.pymnts.com/debt/2026/61percent-paycheck-bill-payers-remain-confident-about-debt/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T09:00:47.000Z"
+    },
     {
       "id": "7f8be28d9caf1aa589f1",
       "sourceId": "pymnts",
@@ -115,20 +171,6 @@
       "publishedAt": "2026-11-09T21:14:42.000Z"
     },
     {
-      "id": "5323cb985efe230f4269",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Nexi Sells Payment Provider Ratepay to Affirm",
-      "excerpt": "European digital payments infrastructure company Nexi is selling its payment provider business Ratepay to buy now pay later (BNPL) company Affirm. As part of the deal, Nexi and Affirm inked a memorandum of understanding to expand their current partnership in Germany, Austria and ",
-      "url": "https://www.pymnts.com/news/acquiring/2026/nexi-sells-payment-provider-ratepay-to-affirm/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-09T20:30:08.000Z"
-    },
-    {
       "id": "18e55d9381377fc88095",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -141,20 +183,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-09T20:27:58.000Z"
-    },
-    {
-      "id": "50aa04c0a468c2443983",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "How Better Payment Details Help Banks Screen Crypto Exposure",
-      "excerpt": "Authorities in the United States are targeting the firms that move money for sanctioned cryptocurrency exchanges. After sanctioning Iranian exchanges in June and August, the Treasury Department on Friday (Nov. 6) sanctioned eight Canadian currency dealers, many of which had trans",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/how-better-payment-details-help-banks-screen-crypto-exposure/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-09T20:09:54.000Z"
     },
     {
       "id": "d565bc5cf57f73d94538",
@@ -1159,8 +1187,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 6
     },
     {
@@ -1170,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 1
     },
     {
@@ -1247,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 6
     },
     {
@@ -1258,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 6
     },
     {
@@ -1280,8 +1308,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 6
     },
     {
@@ -1291,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 1
     },
     {
@@ -1302,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-10T01:31:24.811Z",
-      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "checkedAt": "2026-11-10T09:50:18.501Z",
+      "lastSuccessAt": "2026-11-10T09:50:18.501Z",
       "recentCount": 10
     }
   ]
