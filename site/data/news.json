@@ -1,7 +1,175 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-09T17:29:03.904Z",
+  "generatedAt": "2026-11-10T01:31:24.811Z",
   "stories": [
+    {
+      "id": "7f8be28d9caf1aa589f1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Global Payments Expands Authentication Platform With Visa Data-Sharing Tool",
+      "excerpt": "Payment technology provider Global Payments announced in a Monday (Nov. 9) press release that it has expanded its Adaptive Authentication platform through the integration of Visa’s Intelligent Data Exchange API, aiming to curb false card declines and streamline digital checkouts ",
+      "url": "https://www.pymnts.com/authentication/2026/global-payments-expands-authentication-platform-with-visa-data-sharing-tool/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T00:26:01.000Z"
+    },
+    {
+      "id": "ef1605c16145dca9cf64",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "PNC launches stablecoin payments for corporate clients",
+      "excerpt": "PNC Bank is working with Coinbase to make incoming stablecoin payments available to its corporate and institutional clients.",
+      "url": "https://www.finextra.com/newsarticle/48728/pnc-launches-stablecoin-payments-for-corporate-clients?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T00:01:00.000Z"
+    },
+    {
+      "id": "b6028f440b7469117ffb",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "PNC launches stablecoin payments for corporate clients",
+      "excerpt": "PNC Bank is working with Coinbase to make incoming stablecoin payments available to its corporate and institutional clients.",
+      "url": "https://www.finextra.com/newsarticle/48728/pnc-launches-stablecoin-payments-for-corporate-clients?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-10T00:01:00.000Z"
+    },
+    {
+      "id": "3ff70021fbc7315ff4cf",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Banks Draw Lines Around Customers’ AI Agents",
+      "excerpt": "Banks are beginning to consider how much access artificial intelligence (AI) agents should have to customers’ online banking accounts, as financial institutions weigh the potential of agentic AI against security and account-access concerns. In a recently released survey of 70 ban",
+      "url": "https://www.pymnts.com/news/banking/2026/banks-draw-lines-around-customers-ai-agents/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T23:44:07.000Z"
+    },
+    {
+      "id": "7a18b80640dc99c43b8e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Consumers See a Brighter Economy but Less Room in the Holiday Budget",
+      "excerpt": "Consumers took a slightly brighter view of the economy in October in a PYMNTS Intelligence survey, while New York Fed respondents saw a greater chance of missing a minimum debt payment in the next three months. The Federal Reserve Bank of New York’s October Survey of Consumer Exp",
+      "url": "https://www.pymnts.com/consumer-insights/2026/consumers-see-a-brighter-economy-but-less-room-in-the-holiday-budget/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T23:28:16.000Z"
+    },
+    {
+      "id": "0c1faa7068bdb9403e1b",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Nuevas reglas para tarjetas en Ecuador: 7 cambios que te interesan si pagas con crédito o débito",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPd3ZzazBlNnN1czlreXVTUlp1VjcxbjBNdnR2dlk5R24xMklfbU9xdGcxVHBGRm9hZk5jVDUwc2xRV0VJWkJseGtDX1IyZk5zeW5FdlNFeFk4WkliaXlKU0FQbWhrc3NnTzJraS1fWjd2Q1dxamJFNjFQZnpFbEV3cFBYM1phNmJwS1ZKc0RJN1g4czZzLTB3MjYtOWtSRHBzWWRIcjlFbFgtZlJld3FLd0JPbzZWcGZZZ3RldGZBYXp5em1HbkMwNzFzUUpvamc1c1lCX3ZkNVJQcjNlM25UcUZYZGpORnI4Qlg0dklB0gGCAkFVX3lxTE5ybXJ0TzZYa2dpRGlhcTFhem1aVmlDU0lCcDF5LTVQbUZxRENmNzNqS1llOFdOZDFDaHdET0kxZUxucTg4NWNfS2tHZzVCWE5vakhDbzd0OWd2Nk5BZGJnUzduLU9ZdGhzQkFQZG5UQVhWdHR6YUxJdnd1cHpLdTZGSWxrT1JDT0JfZ0hOV3EybzlwcjdKUERETTdrWm1RTWUtSTFMeXVlOVlRLWJEOV9IWGthb0VBVHc3S2ExTnV3MU8yb3BDQ3lvM2NRUlFOZ3JoYVdPbmxLNVk3YkpLSnBkMFZ6M0V5NVo5TnJIazFIU3hYZldoUVVsM0pmWU1WaTYwdw?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T22:00:00.000Z"
+    },
+    {
+      "id": "7c8a987fbb9782ed4271",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech brasileña GoMoney es adquirida por Yellow Card para fortalecer los servicios de pagos con stablecoins en Brasil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxOblV2TEdkN3NFSzB6OWx6SjYxTEdsOElqLXRDTHFrMnBDZHNUOUV1M1haWHJVREVtU29aZVlvZzB0NmhCNG9oNFhKOVhfTlBFTUxPRkc0NVJlUFNWOVVSaGN1RWNuQUVicVJGbWdBRW52cW5WSEwzRy1EajREWDRhSTFoLXZudksweFNwdkdlWUJybXI2U0xVSDV6d21PRVFZOW5rMTBsZW9sZktNWUJocVpYVUhwVnBXdlpNV0QyMWdZMFB5cksxREt2QXVvOGFQYVZmdVpqeEEyb3FtSWlzTEpwY0RZcUw5bFBDZw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T21:14:42.000Z"
+    },
+    {
+      "id": "766914aa08724c59562b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Mercado Pago realizó su primera colocación de deuda en el mercado bursátil mexicano",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZlpuOExvemNYeG9DX3M4MldXeHhRVjB2MXVsamNvRnQ5b252a1BVXzZkUUlzVzJUNVVDc3d6dGVBVUVZa1dzZnRPME5wbEZQcnE2WmFCZnlScUhLWHFkdXRKZUZtYnFPWlZKanBwRkswLW1BVWdvcWgyblBNMElYZmRCelJjRkpUcFQ1WTQ1SUp2QjVyS2VDTUszWGU2NUg0clZlSVpnZ3FScGVOWXFhM1JQN3BJYzNtakt3Qw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T21:14:42.000Z"
+    },
+    {
+      "id": "5323cb985efe230f4269",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Nexi Sells Payment Provider Ratepay to Affirm",
+      "excerpt": "European digital payments infrastructure company Nexi is selling its payment provider business Ratepay to buy now pay later (BNPL) company Affirm. As part of the deal, Nexi and Affirm inked a memorandum of understanding to expand their current partnership in Germany, Austria and ",
+      "url": "https://www.pymnts.com/news/acquiring/2026/nexi-sells-payment-provider-ratepay-to-affirm/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T20:30:08.000Z"
+    },
+    {
+      "id": "18e55d9381377fc88095",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "El modelo speedboat: Cómo los bancos lanzan marcas digitales independientes en poco tiempo | Mambu",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeERDZ0hmNGZYSUpXaHE2VVB0VVpleWFEMUw4S041N3ZUcFZyUzFhYzdoVnJLUnpTOC1MZzc3M2ppbTdmODlKTkJhTE8yb2xJa2lsWlZRNHNCVFVBS2xlOTNmLWZIN0JkemRFYmVVUmR3QjhMRFNvUDZfSy1la0hsaDdtWVFrUmhWQldlZEhVU0tUS05TZGJTazRua05kQ3F5blpGVEJ1bURpQ1FZbWp1QWo2dkpMMEg4Z1Y3RTA4Tmk4aUd0R3hrOEJ6SmQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T20:27:58.000Z"
+    },
+    {
+      "id": "50aa04c0a468c2443983",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "How Better Payment Details Help Banks Screen Crypto Exposure",
+      "excerpt": "Authorities in the United States are targeting the firms that move money for sanctioned cryptocurrency exchanges. After sanctioning Iranian exchanges in June and August, the Treasury Department on Friday (Nov. 6) sanctioned eight Canadian currency dealers, many of which had trans",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/how-better-payment-details-help-banks-screen-crypto-exposure/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T20:09:54.000Z"
+    },
+    {
+      "id": "d565bc5cf57f73d94538",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "Sanctioned Canadian Crypto OTCs Served Iran and Drug Cartels",
+      "excerpt": "Summary A group of Canadian OTCs have helped move millions for Iranian illicit financial networks: On Friday, OFAC designated eight…",
+      "url": "https://www.chainalysis.com/blog/ofac-canadian-otcs/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-09T18:35:38.000Z"
+    },
     {
       "id": "14d16297ac7ecb72b781",
       "sourceId": "chainalysis",
@@ -17,20 +185,6 @@
       "publishedAt": "2026-11-09T17:21:46.000Z"
     },
     {
-      "id": "57166f6a5af9a51d77d0",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Canada Launches Real-Time Rail for 24/7 Payments",
-      "excerpt": "Canada has officially launched its Real-Time Rail Monday (Nov. 9), introducing around-the-clock payment infrastructure designed to accelerate money movement, improve cash flow management and give financial institutions and payment providers a platform for developing new services.",
-      "url": "https://www.pymnts.com/real-time-payments/2026/canada-launches-real-time-rail-for-24-7-payments/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-09T16:25:51.000Z"
-    },
-    {
       "id": "43ec9654f1cb192dd1ea",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -43,20 +197,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-09T15:10:00.000Z"
-    },
-    {
-      "id": "72ab2ca0001a42efb65a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Priority Commerce Deepens NFL Ties With Browns’ Ticketing Pact",
-      "excerpt": "Priority Commerce’s collaboration with the National Football League (NFL) continues with a new partnership with the Cleveland Browns. This new agreement will see the company provide ticketing payment processing to the team to help “ensure secure, fast and efficient ticket transac",
-      "url": "https://www.pymnts.com/partnerships/2026/priority-commerce-deepens-nfl-ties-with-browns-ticketing-pact/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-09T14:00:17.000Z"
     },
     {
       "id": "990ff27ded16d96e086a",
@@ -143,6 +283,20 @@
       "publishedAt": "2026-11-08T20:48:43.000Z"
     },
     {
+      "id": "070704612122f2fda857",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-07T16:55:00.000Z"
+    },
+    {
       "id": "2d71920c22d5a115be88",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -197,20 +351,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T13:52:00.000Z"
-    },
-    {
-      "id": "070704612122f2fda857",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-06T08:00:00.000Z"
     },
     {
       "id": "5f265a53c6600347d61c",
@@ -409,34 +549,6 @@
       "publishedAt": "2026-11-04T17:52:32.000Z"
     },
     {
-      "id": "d29b6e0a0024c37e248c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Zoop se convierte en adquirente para ampliar su oferta de pagos a marketplaces en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPUnRodU9fQkZaUjhsZWFVMTBmUGpDVk9NOXFOVVVVcExjWkRvYWM5bzA0UFNpalg5TUFEdWZ4aWVVQnY2UU42NmJINE9HQi14eFVnWHNFS05qRGhrM1pCU19EQVJfMlVyUkQ0TlQ2RnVhOUNZSE9fTG1wclRrR2duTEtnODdTY2NkOXhhd0ViNmkwSlh3eGhxTXVHQUNUeFltRDBhMXVwRlRUNjhDclZXNnNjNWhscE1IcWQwR2JxZHBSMG9rV1NoRmJpMXJxQQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-04T17:52:32.000Z"
-    },
-    {
-      "id": "3d96f6b56976ec1d90fc",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech argentina Takenos levanta US$7M para expandir su plataforma de transacciones internacionales en Latam",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQSEM4Mm10T254cWt3UmxHWjFzeTdKQ2lBOWVHYnZIbEl2ZjI5U05PbWVESU4wazhuZ0d1LTBLNWp4U0tIYkJvTTJZMXVTTXRIN1EwWUpLcWt0NDhLM0UwN1JFd2Rydy1NdVlaM3FLX3ptZUtXYzlvQ2hrcVVYalhWVzRoQlFzUFZCZVJxRTd2S3JiUzJjTGk5NV94VWpOODdIT2tUcHd2bE40ZDFxWF9aajRxa01Bd1RJemlTeGZUQjBtMWYwRy15ekdRSDRLWEctZGNxdVFmTjV3ZnhlQWww?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-04T15:45:09.000Z"
-    },
-    {
       "id": "e8f8f29ab6cfe8c98976",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -465,20 +577,6 @@
       "publishedAt": "2026-11-04T09:30:00.000Z"
     },
     {
-      "id": "06a9eb28978a9fc3d0ac",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "EPC publishes new Verification of Payee matching recommendations",
-      "excerpt": "The European Payments Council (EPC) has published an updated set of recommendations for matching processes under its Verification Of Payee (VOP) scheme, providing additional guidance on character handling and the assessment of beneficiary names ahead of payment initiation.",
-      "url": "https://www.finextra.com/newsarticle/48697/epc-publishes-new-verification-of-payee-matching-recommendations?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T09:00:00.000Z"
-    },
-    {
       "id": "23545be048f1caa6156f",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -491,20 +589,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-03T19:43:21.000Z"
-    },
-    {
-      "id": "27f7e8f40547cf918ab9",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Neobanco Klar se alía con tapi en México para incorporar pagos de servicios y recargas a través de su app",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPQXlKXzlKNHRRQ3hNeGRnYTJlalpfTFFLZVZJZ1ZqSWRQN0JVcnR0cDQ0SlpCOGY2SURSenNSUmVrUXB0a0tneGI1RzFhc0FWc1FBM0ZEajVnTlZFR1RvcVVfblJvWUVtYTZVMi03NlBkb09PR0JPTk5BWDBUVDJkOW5NZHhYNExJSU9BQ0Ezam1GRnFFbkFEdzZYV2Mwbkxsb2VkMmhzZkJ6WHBOeFFheVIxWkt2bmVUeFpnZmg2bE52cGloTnZSTWVEWVBDVzRYX0IwRDBzTVpRZw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-03T19:23:32.000Z"
     },
     {
       "id": "ca3686824b15a5e469e2",
@@ -787,20 +871,6 @@
       "publishedAt": "2026-10-28T08:30:00.000Z"
     },
     {
-      "id": "fe3f346806db8022f4ae",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Zumo and Quantum Chain partner up to fight quantum threats",
-      "excerpt": "Cryptocurrency firm Zumo has joined forces with quantum blockchain platform Quantum Chain in efforts to combat the growing threat of quantum attacks.",
-      "url": "https://www.finextra.com/newsarticle/48656/zumo-and-quantum-chain-partner-up-to-fight-quantum-threats?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T08:00:00.000Z"
-    },
-    {
       "id": "348c49515c3d5106e8c1",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -1067,20 +1137,6 @@
       "publishedAt": "2026-10-15T12:00:00.000Z"
     },
     {
-      "id": "8da3318488d836ce1c4b",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "North America: Inside the Growth of Agentic Commerce",
-      "excerpt": "Summary North America’s $3 trillion crypto economy remained the most influential in the world, with advancements in agentic commerce, exports…",
-      "url": "https://www.chainalysis.com/blog/north-america-crypto-adoption-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-14T12:48:32.000Z"
-    },
-    {
       "id": "2c03341852750e99c35c",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1103,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1114,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 0
     },
     {
@@ -1125,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 8
     },
     {
@@ -1136,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 6
     },
     {
@@ -1147,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 1
     },
     {
@@ -1158,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 0
     },
     {
@@ -1169,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 0
     },
     {
@@ -1180,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 1
     },
     {
@@ -1191,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 6
     },
     {
@@ -1202,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 8
     },
     {
@@ -1213,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 6
     },
     {
@@ -1224,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 6
     },
     {
@@ -1235,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 1
     },
     {
@@ -1246,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1257,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 12
     },
     {
@@ -1268,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 8
     },
     {
@@ -1279,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-09T17:29:03.904Z",
-      "lastSuccessAt": "2026-11-09T17:29:03.904Z",
+      "checkedAt": "2026-11-10T01:31:24.811Z",
+      "lastSuccessAt": "2026-11-10T01:31:24.811Z",
       "recentCount": 10
     }
   ]
