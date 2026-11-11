@@ -1,7 +1,63 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T06:20:35.198Z",
+  "generatedAt": "2026-11-11T15:12:03.335Z",
   "stories": [
+    {
+      "id": "feac8b7cb1afa74d411c",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Western Union ditches Intermax acquisition",
+      "excerpt": "Western Union has pulled the plug on its $500 million acquisition of rival Intermax after failing to secure an \"acceptable approval\" for the deal from regulators.",
+      "url": "https://www.finextra.com/newsarticle/48743/western-union-ditches-intermax-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T14:05:00.000Z"
+    },
+    {
+      "id": "c5915605b39f28ca2872",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "El BCE actualiza normativa aplicable a la recepción y canje de billetes de USD 50 y USD 100",
+      "excerpt": "El Banco Central del Ecuador (BCE) actualizó la normativa aplicable a los procedimientos que deberán cumplir las entidades financieras para realizar depósitos de billetes de",
+      "url": "https://www.bce.fin.ec/el-bce-actualiza-normativa-aplicable-a-la-recepcion-y-canje-de-billetes-de-usd-50-y-usd-100/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-11T12:00:00.000Z"
+    },
+    {
+      "id": "b9705daa996077c0aa70",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Deutsche Bank and Ant set out Roadmap for integrating agentic AI into wholesale banking",
+      "excerpt": "A new research report released by Deutsche Bank and Ant Digital Technologies highlights the potential of agentic AI across institutional treasury, cross border payments and trade finance.",
+      "url": "https://www.finextra.com/newsarticle/48740/deutsche-bank-and-ant-set-out-roadmap-for-integrating-agentic-ai-into-wholesale-banking?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T11:13:00.000Z"
+    },
+    {
+      "id": "b2cc35ec4514969801ef",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Bottomline Sees Expertise Turning AI Potential Into Customer Value",
+      "excerpt": "Customers are willing to adopt AI, but they still want guidance from people who understand business, Bottomline SVP, Product Management Jeff Feuerstein writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” In January, I was convinced like many others that w",
+      "url": "https://www.pymnts.com/opinion/2026/bottomline-sees-expertise-turning-ai-potential-into-customer-value/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T09:00:22.000Z"
+    },
     {
       "id": "5fe1babe64222effaec6",
       "sourceId": "latam-bloomberg",
@@ -59,20 +115,6 @@
       "publishedAt": "2026-11-10T23:22:36.000Z"
     },
     {
-      "id": "52b7b57f49df1ee48055",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fed Data Shows Household Debt Hits $19.1 Trillion as Bill Payers Lose Confidence",
-      "excerpt": "Consumers living paycheck to paycheck who were keeping up with their bills grew less confident as recently as last month that they could manage their debt over the next year. Higher regular expenses and expenses that exceeded income were the two most common reasons cardholders ga",
-      "url": "https://www.pymnts.com/consumer-finance/2026/fed-data-shows-household-debt-hits-19-1-trillion-as-bill-payers-lose-confidence/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T23:14:54.000Z"
-    },
-    {
       "id": "782fd3c77ff40d74e1cc",
       "sourceId": "latamlist",
       "category": "latam",
@@ -99,48 +141,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-10T22:42:19.000Z"
-    },
-    {
-      "id": "1689e610bf6224e3fb03",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "KeyBank Upgrades Products as Consumers Struggle to Save",
-      "excerpt": "KeyBank has introduced a series of enhancements to its digital and mobile banking offerings. The new additions, announced Tuesday (Nov. 10), are designed to provide clients with personalized financial guidance, while also boosting security and making it easier to save. “The updat",
-      "url": "https://www.pymnts.com/news/banking/2026/keybank-upgrades-products-as-consumers-struggle-to-save/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T21:52:18.000Z"
-    },
-    {
-      "id": "739c9b086592afa01b6d",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bilt Seeks Slice of $6 Trillion Neighborhood Commerce Space",
-      "excerpt": "FinTech Bilt is expanding beyond the home and out into the neighborhood. The company, which made its name by offering rewards to consumers for rent payments, on Tuesday (Nov. 10) announced the launch of its Bilt Neighborhood operating system. The artificial intelligence-powered p",
-      "url": "https://www.pymnts.com/smbs/2026/bilt-seeks-slice-of-6-trillion-neighborhood-commerce-space/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T21:48:34.000Z"
-    },
-    {
-      "id": "14706766d4cfd826bf44",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Affirm and Nuvei Seek Bigger Roles in Merchants’ Payment Operations",
-      "excerpt": "FinTechs are using cross-border acquisitions to add a service to payment relationships merchants already have. For a lender, that means buying a provider whose payment option is already on a retailer’s checkout page. For a processor, it means buying the accounts and payout servic",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/affirm-and-nuvei-seek-bigger-roles-in-merchants-payment-operations/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T21:27:36.000Z"
     },
     {
       "id": "47d9ac8b1ebfe90af8ff",
@@ -507,18 +507,18 @@
       "publishedAt": "2026-11-09T00:01:00.000Z"
     },
     {
-      "id": "58e6c7db3b99c904b6c1",
+      "id": "9042dbaaa48e26cb45a8",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
       "title": "Revolut prevé lanzar su banco en Argentina en el segundo semestre de 2027",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOWVNnVEZEMW1PbnNjaWNfV0gzYkZkOVdUMzd3QVJIOExJRVp6V0ZIWXRMQTJQRHRRaW9iRnFOSVRmcTdZdjlvX3RYd2RrWkxKN3Z5bzBvQ3JsZkdiS1poV2ZId0x4clUzaC1ZM3dIVWRzSEx0Yk5YRS1yV2xGMXYzMHQwUENGdlBCalZOUGprdm01YUZTbk9rSWc3bktuLVZpSjlWUG5WVnlvWTlrMGZRdUwxVTFMUkNEN0VpYUFKQU16WVBxMUYxUmlBUnl6NFVYejZWOEhtc3M0dzJZ0gHcAUFVX3lxTE5ZU2dURkQxbU9uc2NpY19XSDNiRmQ5V1QzN3dBUkg4TElFWnpXRkhZdExBMlBEdFFpb2JGcU5JVGZxN1l2OW9fdFh3ZGtaTEo3dnlvMG9DcmxmR2JLWmhXZkh3THhyVTNoLVkzd0hVZHNITHRiTlhFLXJXbEYxdjMwdDBQQ0Z2UEJqVk5Qamt2bTVhRlNuT2tJZzduS24tVmlKOVZQblZWeW9ZOWswZlF1TDFVMUxSQ0Q3RWlhQUpBTXpZUHExRjFSaUFSeXo0VVh6NlY4SG1zczR3Mlk?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQVFvcmtwOEljQjJnanFMbWxFRGRTM1dsamJqRFRjTFBRd2FTVDVyMnlPODVhc3VHdUV6TXg2U2JTcklzSkJfeDhBa3VZX1pfU2x5Q2NZM0hQd0sxRWVNenQzejh1R3VFZV9oSmxTMzFWdlFCTlROeGNVVzhRYnhNNmRLRHBUVjlQcDRZc2I2a1pSWE1tZG5oanYtRVNETW9XTnVMemExSlAzb2VCVkR1U0xybTk1NEVXYkx0TU1FN1JpNWpsMHhtbNIB3AFBVV95cUxOWVNnVEZEMW1PbnNjaWNfV0gzYkZkOVdUMzd3QVJIOExJRVp6V0ZIWXRMQTJQRHRRaW9iRnFOSVRmcTdZdjlvX3RYd2RrWkxKN3Z5bzBvQ3JsZkdiS1poV2ZId0x4clUzaC1ZM3dIVWRzSEx0Yk5YRS1yV2xGMXYzMHQwUENGdlBCalZOUGprdm01YUZTbk9rSWc3bktuLVZpSjlWUG5WVnlvWTlrMGZRdUwxVTFMUkNEN0VpYUFKQU16WVBxMUYxUmlBUnl6NFVYejZWOEhtc3M0dzJZ?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-08T20:48:43.000Z"
+      "publishedAt": "2026-11-08T20:38:41.000Z"
     },
     {
       "id": "070704612122f2fda857",
@@ -617,34 +617,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-06T00:01:00.000Z"
-    },
-    {
-      "id": "eb93f83688ba5d492d1c",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Stablecoin firm Yellow Card target Brazil through GoMoney acquisition",
-      "excerpt": "Stablecoin payments infrastructure provider Yellow Card has set its sights on Brazil after acquiring local virtual asset service outfit GoMoney. Financial terms were not disclosed.",
-      "url": "https://www.finextra.com/newsarticle/48710/stablecoin-firm-yellow-card-target-brazil-through-gomoney-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T15:45:00.000Z"
-    },
-    {
-      "id": "b7249710b7967e5daafe",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Block faces $765m DoJ settlement",
-      "excerpt": "Block has reached a preliminary settlement with the US Department of Justice that could see Jack Dorsey's firm pay $764 million over money laundering failures.",
-      "url": "https://www.finextra.com/newsarticle/48709/block-faces-765m-doj-settlement?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-05T14:44:00.000Z"
     },
     {
       "id": "9ec27a31004065c8d080",
@@ -1151,20 +1123,6 @@
       "publishedAt": "2026-10-19T12:00:00.000Z"
     },
     {
-      "id": "4d7f889e4538284a78a1",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "La JPRFM emite su primer Informe de Estabilidad Financiera: el sistema financiero cerró 2025 con activos por USD 117.334 millones y niveles de solvencia sobre lo exigido",
-      "excerpt": "El documento, el primero desde la conformación de la Junta de Política y Regulación Financiera y Monetaria, abarca el período 2021-2025 y evalúa el desempeño",
-      "url": "https://www.bce.fin.ec/la-jprfm-emite-su-primer-informe-de-estabilidad-financiera-el-sistema-financiero-cerro-2025-con-activos-por-usd-117-334-millones-y-niveles-de-solvencia-sobre-lo-exigido/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-19T12:00:00.000Z"
-    },
-    {
       "id": "08ba4174039e1055bfd3",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1201,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 7
     },
     {
@@ -1212,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 9
     },
     {
@@ -1234,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 6
     },
     {
@@ -1245,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 1
     },
     {
@@ -1289,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 8
     },
     {
@@ -1300,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 7
     },
     {
@@ -1333,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 0
     },
     {
@@ -1344,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T06:20:35.198Z",
-      "lastSuccessAt": "2026-11-11T06:20:35.198Z",
+      "checkedAt": "2026-11-11T15:12:03.335Z",
+      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
       "recentCount": 10
     }
   ]
