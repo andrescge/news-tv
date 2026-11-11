@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T15:12:03.335Z",
+  "generatedAt": "2026-11-11T21:57:58.113Z",
   "stories": [
+    {
+      "id": "223f3e8396121605cd26",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Digital Money Pushes Banks to Rethink Their Investment Priorities",
+      "excerpt": "A bank can hold digital dollars for its clients, help issue them with other institutions and use a payment network to settle obligations in them. Each job calls for a different investment. A series of announcements in recent days indicate where financial institutions are embracin",
+      "url": "https://www.pymnts.com/news/banking/2026/digital-money-pushes-banks-to-rethink-their-investment-priorities/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T21:07:05.000Z"
+    },
+    {
+      "id": "7cce0b4baaa287563af1",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "CFPB Submits Final Mortgage Servicing Rule to White House",
+      "excerpt": "The Consumer Financial Protection Bureau (CFPB) last week sent a final rule governing mortgage servicing to the White House. The rule, titled “Streamlining Mortgage Servicing for Borrowers Experiencing Payment Difficulties (Regulation X),” is the subject of a report Wednesday (No",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/cfpb-submits-final-mortgage-servicing-rule-to-white-house/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T20:28:12.000Z"
+    },
+    {
+      "id": "2e99eae9058f14470d7c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-11T16:24:34.000Z"
+    },
+    {
+      "id": "b553ed952d27d536b3b9",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMl81NzA2WGJvZzd6M2JVS0FZeW9Uc1dra1hla2VvTEs4WDEyZ1lPNGczcUsxRnNKa0Y5TmhSYUowRW5IVUZuUHA4cmVyTVFodkRXUFlsUVhSbWo5WFpkX05haV8yWENtb1NHOU96TlE5eEp6OU1kSktidlNBQzZWRUFHVGxUZ2ZfR2hWN0dVUDVrd2Vjd2JoRC01YXhXaDNIMFVsVUtDalJfQVZjT2JOZk5BVGdaUU9tc1VXclR4QmZXNzR2NjlhRjF1OVV3Q05iTFlRSmlUTzRaSnp5TUlmN0YwM0d1SGl4VWNYcXpyRnQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-11T16:24:34.000Z"
+    },
+    {
+      "id": "bfb174f221873e793329",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Alta raises $47.5m to build blockchain infrastructure for financial institutions",
+      "excerpt": "Google Ventures has joined a $47.5 million Series A round for Alta, a firm building institutional-grade blockchain infrastructure for global finance.",
+      "url": "https://www.finextra.com/newsarticle/48744/alta-raises-475m-to-build-blockchain-infrastructure-for-financial-institutions?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T15:06:00.000Z"
+    },
+    {
+      "id": "b64041f631696ddc856e",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Alta raises $47.5m to build blockchain infrastructure for financial institutions",
+      "excerpt": "Google Ventures has joined a $47.5 million Series A round for Alta, a firm building institutional-grade blockchain infrastructure for global finance.",
+      "url": "https://www.finextra.com/newsarticle/48744/alta-raises-475m-to-build-blockchain-infrastructure-for-financial-institutions?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T15:06:00.000Z"
+    },
     {
       "id": "feac8b7cb1afa74d411c",
       "sourceId": "finextra-payments",
@@ -35,7 +119,7 @@
       "sourceId": "finextra-payments",
       "category": "pagos",
       "kind": "news",
-      "title": "Deutsche Bank and Ant set out Roadmap for integrating agentic AI into wholesale banking",
+      "title": "Deutsche Bank and Ant set out roadmap for integrating agentic AI into wholesale banking",
       "excerpt": "A new research report released by Deutsche Bank and Ant Digital Technologies highlights the potential of agentic AI across institutional treasury, cross border payments and trade finance.",
       "url": "https://www.finextra.com/newsarticle/48740/deutsche-bank-and-ant-set-out-roadmap-for-integrating-agentic-ai-into-wholesale-banking?utm_medium=rssfinextra&utm_source=finextrafeed",
       "source": "Finextra · Payments",
@@ -43,20 +127,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-11T11:13:00.000Z"
-    },
-    {
-      "id": "b2cc35ec4514969801ef",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bottomline Sees Expertise Turning AI Potential Into Customer Value",
-      "excerpt": "Customers are willing to adopt AI, but they still want guidance from people who understand business, Bottomline SVP, Product Management Jeff Feuerstein writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” In January, I was convinced like many others that w",
-      "url": "https://www.pymnts.com/opinion/2026/bottomline-sees-expertise-turning-ai-potential-into-customer-value/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T09:00:22.000Z"
     },
     {
       "id": "5fe1babe64222effaec6",
@@ -71,34 +141,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-11T03:19:25.000Z"
-    },
-    {
-      "id": "9186ef3a4603979c6823",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Card Networks Use B2B Payments to Write the Rules for Agentic Commerce",
-      "excerpt": "Business payments have a bookkeeping problem that’s been keeping them manual for centuries. Millennia, even. In 2026, after one company approves an invoice, someone often must authenticate into a supplier portal, enter payment credentials and complete the transaction. Even two di",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/card-networks-use-b2b-payments-to-write-the-rules-for-agentic-commerce/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T01:25:06.000Z"
-    },
-    {
-      "id": "8ee91e273d376631ff8e",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Goldman and Citi Help Fund $270 Million Stablecoin Venture",
-      "excerpt": "A group of banking giants have reportedly pledged roughly $270 million in financing toward a joint stablecoin venture. The banks included Goldman Sachs, Citigroup, Santander and Deutsche Bank, Bloomberg News reported Tuesday (Nov. 10), citing sources familiar with the matter. The",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/goldman-and-citi-help-fund-270-million-stablecoin-venture/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T23:51:20.000Z"
     },
     {
       "id": "a54c0ed17945b5b79432",
@@ -353,20 +395,6 @@
       "publishedAt": "2026-11-09T21:14:42.000Z"
     },
     {
-      "id": "766914aa08724c59562b",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mercado Pago realizó su primera colocación de deuda en el mercado bursátil mexicano",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNZlpuOExvemNYeG9DX3M4MldXeHhRVjB2MXVsamNvRnQ5b252a1BVXzZkUUlzVzJUNVVDc3d6dGVBVUVZa1dzZnRPME5wbEZQcnE2WmFCZnlScUhLWHFkdXRKZUZtYnFPWlZKanBwRkswLW1BVWdvcWgyblBNMElYZmRCelJjRkpUcFQ1WTQ1SUp2QjVyS2VDTUszWGU2NUg0clZlSVpnZ3FScGVOWXFhM1JQN3BJYzNtakt3Qw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-09T21:14:42.000Z"
-    },
-    {
       "id": "c3fdf90c74724ff0a5ad",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -379,20 +407,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-09T21:11:04.000Z"
-    },
-    {
-      "id": "18e55d9381377fc88095",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "El modelo speedboat: Cómo los bancos lanzan marcas digitales independientes en poco tiempo | Mambu",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQeERDZ0hmNGZYSUpXaHE2VVB0VVpleWFEMUw4S041N3ZUcFZyUzFhYzdoVnJLUnpTOC1MZzc3M2ppbTdmODlKTkJhTE8yb2xJa2lsWlZRNHNCVFVBS2xlOTNmLWZIN0JkemRFYmVVUmR3QjhMRFNvUDZfSy1la0hsaDdtWVFrUmhWQldlZEhVU0tUS05TZGJTazRua05kQ3F5blpGVEJ1bURpQ1FZbWp1QWo2dkpMMEg4Z1Y3RTA4Tmk4aUd0R3hrOEJ6SmQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-09T20:27:58.000Z"
     },
     {
       "id": "d565bc5cf57f73d94538",
@@ -584,20 +598,6 @@
       "title": "India's NPCI creates tech and innovation unit",
       "excerpt": "The National Payments Corporation of India (NPCI) has set up a technology and innovation arm focused on areas including AI and blockchain.",
       "url": "https://www.finextra.com/newsarticle/48711/indias-npci-creates-tech-and-innovation-unit?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T00:01:00.000Z"
-    },
-    {
-      "id": "afbc6fd3dcfb13be4b54",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "JP Morgan Payments and Mastercard invest in agentic commerce startup firmly",
-      "excerpt": "JP Morgan Payments and Mastercard have joined a $15 million Series A funding round for no-code agentic commerce platform firmly.",
-      "url": "https://www.finextra.com/newsarticle/48712/jp-morgan-payments-and-mastercard-invest-in-agentic-commerce-startup-firmly?utm_medium=rssfinextra&utm_source=finextrafeed",
       "source": "Finextra · Payments",
       "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
       "via": "",
@@ -941,20 +941,6 @@
       "publishedAt": "2026-10-28T11:00:30.000Z"
     },
     {
-      "id": "da05291a5981c6a0bad3",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Clearstream makes tokenised fund distribution move",
-      "excerpt": "Deutsche Börse's post-trade business Clearstream is set to enable asset managers to securely issue tokenised fund shares using distributed ledger technology.",
-      "url": "https://www.finextra.com/newsarticle/48658/clearstream-makes-tokenised-fund-distribution-move?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T08:30:00.000Z"
-    },
-    {
       "id": "348c49515c3d5106e8c1",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -1159,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 7
     },
     {
@@ -1170,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 9
     },
     {
@@ -1192,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 1
     },
     {
@@ -1247,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 8
     },
     {
@@ -1258,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 6
     },
     {
@@ -1280,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 7
     },
     {
@@ -1291,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
-      "recentCount": 3
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T15:12:03.335Z",
-      "lastSuccessAt": "2026-11-11T15:12:03.335Z",
+      "checkedAt": "2026-11-11T21:57:58.113Z",
+      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
       "recentCount": 10
     }
   ]
