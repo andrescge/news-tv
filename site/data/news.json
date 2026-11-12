@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-11T21:57:58.113Z",
+  "generatedAt": "2026-11-12T02:58:59.912Z",
   "stories": [
+    {
+      "id": "fa8dd25c291c02753b08",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "United Airlines Blocks AI Bots From Booking Flights",
+      "excerpt": "United Airlines has instituted a policy preventing personal artificial intelligence agents from accessing its systems to complete flight bookings, according to reporting by The Wall Street Journal. The decision highlights emerging friction between merchants and automated agentic ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/united-airlines-blocks-ai-bots-from-booking-flights/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-12T00:53:30.000Z"
+    },
+    {
+      "id": "8a9e02ba8710b6c3bbab",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Credit Card Limits Climb $115 Billion as Delinquencies Ease",
+      "excerpt": "The cards that drove much of the rise in serious post-pandemic delinquency are making a smaller contribution to the overall national rate. As a result, the latest household debt figures from the Federal Reserve show fewer card balances moving into delinquency as a share of the to",
+      "url": "https://www.pymnts.com/credit-cards/2026/credit-card-limits-climb-115-billion-as-delinquencies-ease/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T23:45:27.000Z"
+    },
+    {
+      "id": "89ec04696ef6ffc63c20",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OCC Charter Backlog Could Leave Late FinTech Applicants Behind",
+      "excerpt": "A surge of FinTechs, stablecoin issuers and digital asset companies seeking federal banking charters has created a potential bottleneck at the Office of the Comptroller of the Currency (OCC). And for companies still waiting for approval, the biggest risk may no longer be regulato",
+      "url": "https://www.pymnts.com/legal/bank-regulation/2026/occ-charter-backlog-could-leave-late-fintech-applicants-behind/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T22:59:10.000Z"
+    },
     {
       "id": "223f3e8396121605cd26",
       "sourceId": "pymnts",
@@ -1025,34 +1067,6 @@
       "publishedAt": "2026-10-26T12:00:00.000Z"
     },
     {
-      "id": "f05c731c55ef004758a6",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "¿Cuáles son las cooperativas autorizadas en Ecuador?: cómo consultar el listado oficial de la SEPS",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQclBkSzJhazBnN0VRYVQxcERYbVlfNHV0NVk0LVFPcW5PVFRKUnZ0SmZTSlpmXzRqZU1GdENUcE5iVkdjQkRrMFBsVDhZdVJyVFRsOHY3S19VbVY0SVNjQ050UHluaWJBQ2oxaHEzOWREWkV4Nk5wbS1BRXJjcTlINzNzamw5c3dLOHR4d3FwVFVPMnNVVHRoNVo2T01Ub2p1ZTdWT2ZXTmZfT1hYV1ZIYTBXY09lODF4dzE4SllocDE2TjgxZ2J2N2ZJVGk3OGFRZjdvVGRrRy00YnRIM3RZLUdaOFdEZTFBdF9yRFNn0gGCAkFVX3lxTFBSTmoza1JnOGdTNGRyaWk1NVhCS2tqcV82bXFibVFWUl8tYzU3a0ZJWW5mbzZWWVNQMmNnVkVXR3lVc3hzWjJRM1M4a3hCTFc3bzRJMlpZUDh3SEpaS3RpMzd2bFM0TnZXRUxOWlZkVDhIX0RxcnpIYkFGaTNTeTZsUlBNTmhuNUZBUnl2SXhrWEpBNDFIaVFoazZQWXlRdmNEWGpmWWwxNl9zdzI1SjB1UkhDRlBpSHRBNHo3S1ZpdnVIbXA2WmhvMm42QllBZk9Fdkgyc2pQSGY4cmdSeUp3WjFFNXJDaWFuTW1xS19VbkprdkJDZlB0YzMzbzFUaldoZw?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-24T07:00:00.000Z"
-    },
-    {
-      "id": "3c472524638291260bbe",
-      "sourceId": "regulatory-news",
-      "category": "regulacion",
-      "kind": "news",
-      "title": "¿Cuáles son las cooperativas autorizadas en Ecuador?: cómo consultar el listado oficial de la SEPS",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQclBkSzJhazBnN0VRYVQxcERYbVlfNHV0NVk0LVFPcW5PVFRKUnZ0SmZTSlpmXzRqZU1GdENUcE5iVkdjQkRrMFBsVDhZdVJyVFRsOHY3S19VbVY0SVNjQ050UHluaWJBQ2oxaHEzOWREWkV4Nk5wbS1BRXJjcTlINzNzamw5c3dLOHR4d3FwVFVPMnNVVHRoNVo2T01Ub2p1ZTdWT2ZXTmZfT1hYV1ZIYTBXY09lODF4dzE4SllocDE2TjgxZ2J2N2ZJVGk3OGFRZjdvVGRrRy00YnRIM3RZLUdaOFdEZTFBdF9yRFNn0gGCAkFVX3lxTFBSTmoza1JnOGdTNGRyaWk1NVhCS2tqcV82bXFibVFWUl8tYzU3a0ZJWW5mbzZWWVNQMmNnVkVXR3lVc3hzWjJRM1M4a3hCTFc3bzRJMlpZUDh3SEpaS3RpMzd2bFM0TnZXRUxOWlZkVDhIX0RxcnpIYkFGaTNTeTZsUlBNTmhuNUZBUnl2SXhrWEpBNDFIaVFoazZQWXlRdmNEWGpmWWwxNl9zdzI1SjB1UkhDRlBpSHRBNHo3S1ZpdnVIbXA2WmhvMm42QllBZk9Fdkgyc2pQSGY4cmdSeUp3WjFFNXJDaWFuTW1xS19VbkprdkJDZlB0YzMzbzFUaldoZw?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-24T07:00:00.000Z"
-    },
-    {
       "id": "a5f6fb496fef9731bec3",
       "sourceId": "seps",
       "category": "regulacion",
@@ -1145,9 +1159,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1156,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 9
     },
     {
@@ -1178,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 0
     },
     {
@@ -1222,9 +1236,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
-      "recentCount": 1
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "recentCount": 0
     },
     {
       "id": "latamlist",
@@ -1233,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 8
     },
     {
@@ -1244,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 6
     },
     {
@@ -1266,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 7
     },
     {
@@ -1277,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-11T21:57:58.113Z",
-      "lastSuccessAt": "2026-11-11T21:57:58.113Z",
+      "checkedAt": "2026-11-12T02:58:59.912Z",
+      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
       "recentCount": 10
     }
   ]
