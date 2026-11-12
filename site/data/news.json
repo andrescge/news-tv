@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-12T02:58:59.912Z",
+  "generatedAt": "2026-11-12T11:09:44.209Z",
   "stories": [
+    {
+      "id": "cc6a6c0a91da18b62b12",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "AI Changes the Work, but Trust Remains Essential",
+      "excerpt": "Automating one part of finance doesn’t ensure information and decisions carry through to the next, Tungsten Automation SVP and GM, AP and Payments John Gibbon writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” Artificial intelligence is expected to chang",
+      "url": "https://www.pymnts.com/opinion/2026/ai-changes-the-work-but-trust-remains-essential/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-12T09:02:30.000Z"
+    },
+    {
+      "id": "24536b862548725bf50e",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "42% of Scam Victims Who Report to Banks Recover Every Dollar",
+      "excerpt": "Banks have an opportunity to help more scam victims recover their money by making reporting what happened clearer. The September PYMNTS Intelligence report “Fraud’s Loyalty Tax: How Scams Cost Banks Their Customers,” based on a survey of 9,524 consumers in the United States, exam",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/42percent-scam-victims-who-report-banks-recover-every-dollar/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-12T09:00:40.000Z"
+    },
+    {
+      "id": "9df7caa2798b940a89c4",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "FIS: Issuer Modernization Is Reshaping Card Competition",
+      "excerpt": "Watch more: Need to Know With Troy Mann of FIS Card issuers once had more time to introduce products, process transactions and tell customers what had happened to their money. FinTechs helped shorten that timetable. Consumers accustomed to real-time digital services don’t necessa",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/fis-issuer-modernization-is-reshaping-card-competition/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-12T09:00:25.000Z"
+    },
     {
       "id": "fa8dd25c291c02753b08",
       "sourceId": "pymnts",
@@ -43,34 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-11T22:59:10.000Z"
-    },
-    {
-      "id": "223f3e8396121605cd26",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Digital Money Pushes Banks to Rethink Their Investment Priorities",
-      "excerpt": "A bank can hold digital dollars for its clients, help issue them with other institutions and use a payment network to settle obligations in them. Each job calls for a different investment. A series of announcements in recent days indicate where financial institutions are embracin",
-      "url": "https://www.pymnts.com/news/banking/2026/digital-money-pushes-banks-to-rethink-their-investment-priorities/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T21:07:05.000Z"
-    },
-    {
-      "id": "7cce0b4baaa287563af1",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "CFPB Submits Final Mortgage Servicing Rule to White House",
-      "excerpt": "The Consumer Financial Protection Bureau (CFPB) last week sent a final rule governing mortgage servicing to the White House. The rule, titled “Streamlining Mortgage Servicing for Borrowers Experiencing Payment Difficulties (Regulation X),” is the subject of a report Wednesday (No",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/cfpb-submits-final-mortgage-servicing-rule-to-white-house/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T20:28:12.000Z"
     },
     {
       "id": "2e99eae9058f14470d7c",
@@ -477,6 +491,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-09T17:21:46.000Z"
+    },
+    {
+      "id": "94cdc891ba5b62b43b5f",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Ecuador alcanza acuerdo técnico con el FMI por la sexta revisión y por nuevo crédito de $ 710 millones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPMVBmSlNlSWNxNUNXSkVNc0lKX1hhNEZ2aTgydU9Nak5lZlJpVExmZFBhREU0UVBmb1ExaHFXN0FHVFJuZURzZzFUWjdsWDhKTDh4N0ZGWWpxclBESnlIV2xTTEVJWTFPX0FxMFRsWXpJQjVmUUZIdlFuUE5CbTVOTkFpaElvbENuZjZ0Ry1XVnNYZklOUWllbkY4cktNeDVVQ0oxU3d4T3U5b2JrM1BvRTQ1QmxNaDkybHZrWlV3bGVqa0YweEFnRWNPR3dvSTF2M05ydm10M3lFRlBCX0c0UHJYVXpxQdIB-gFBVV95cUxOZmMzYi0yUFR2Z3BWVlNkXzFHa0lHaE9pWGtaSjZFOTRlZ3lIOVcxaGdhYmZSRzd5M2JiRWtjOFNtNXhXUUV3cFRyYVNjTU5EdXNNei1YeGIyNG5pb2s0RDl0M0FDT21iR3FYeHp5NmFha1Z2UVRWYlQ2U2JmMmphclZweEUzNzF4WFVpcnNleDg5UmZnX1YtM1A5S3JETFNSYmh4MXE1ZXBCQkxBRDVnSHFaTko3OFFNWHJkajM1Q1FvTlFSajQwdVF3SzcxOGFsQ2tWR1ZiMzJaQ2NObFluX0Z5OGpSMGpqQzJucDZlcDVfM1VtNU9NM253?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T15:33:00.000Z"
     },
     {
       "id": "43ec9654f1cb192dd1ea",
@@ -1159,9 +1187,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
+      "recentCount": 7
     },
     {
       "id": "bce-junta",
@@ -1170,8 +1198,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1209,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 9
     },
     {
@@ -1192,8 +1220,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1231,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1242,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1253,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1264,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 0
     },
     {
@@ -1247,8 +1275,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 8
     },
     {
@@ -1258,8 +1286,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 8
     },
     {
@@ -1269,8 +1297,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 6
     },
     {
@@ -1280,9 +1308,9 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-latam",
@@ -1291,8 +1319,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 0
     },
     {
@@ -1302,9 +1330,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1341,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1352,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1363,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-12T02:58:59.912Z",
-      "lastSuccessAt": "2026-11-12T02:58:59.912Z",
+      "checkedAt": "2026-11-12T11:09:44.209Z",
+      "lastSuccessAt": "2026-11-12T11:09:44.209Z",
       "recentCount": 10
     }
   ]
