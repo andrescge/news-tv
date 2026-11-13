@@ -1,7 +1,133 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T07:57:38.129Z",
+  "generatedAt": "2026-11-13T16:23:55.112Z",
   "stories": [
+    {
+      "id": "3e7f50457b744ca1a978",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "FinCEN Bars U.S. Institutions From Moving Funds for MEXC Global",
+      "excerpt": "Summary Under Operation Economic Outcast, the Financial Crimes Enforcement Network (FinCEN) issued an order blocking U.S. financial institutions from sending…",
+      "url": "https://www.chainalysis.com/blog/fincen-mexc-global-november-2026/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T15:19:15.000Z"
+    },
+    {
+      "id": "3b41604a12e7148beb19",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech argentina Cocos levantó US$34M para escalar su banco digital en la región y superó los US$500M de valuación",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQZVBjbklVVGxLYU1MNk5VdVU4anZiZDgwOWpGTUZseE1meElveXA3Tm9MdlA3d1BSNl9Ddy1PcGgxTGhuR0dpYU94c0NPN1ljUVBiRFJYUG9ocFROaUFKNjVfdUF2MENXdl90YTgta0pvOEJodzlUeU5tNTN5SF9wVS1mQlNXWDY2bDJzN1JpYTVad0tkZ25CSE9MTktUX0Z3dWNqblRydkNNcUpld0NBV1JZb0EteUNlTVdFdkxqRG11MFp1NXhkVTlzTm1KRWNyQjQxc2MyTmtobXV1XzJzc3JKb2FpdzQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-13T14:21:08.000Z"
+    },
+    {
+      "id": "08ba4174039e1055bfd3",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Mensual de Tasas de Interés. Octubre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntMensual.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-13T12:00:00.000Z"
+    },
+    {
+      "id": "6a472c57ee078717732c",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Paraguay's digital bank collapse triggers political crisis",
+      "excerpt": "Paraguay’s digital bank ueno collapsed last Tuesday, freezing the savings of nearly 3 million customers and revealing political scandal.",
+      "url": "https://www.finextra.com/newsarticle/48755/paraguays-digital-bank-collapse-triggers-political-crisis?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T11:28:00.000Z"
+    },
+    {
+      "id": "f918f35ff40739e308ac",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Klarna taps Robinhood VP Chris Koegel as CFO",
+      "excerpt": "Klarna has appointed Chris Koegel as their new chief financial officer starting from January 2027.",
+      "url": "https://www.finextra.com/newsarticle/48754/klarna-taps-robinhood-vp-chris-koegel-as-cfo?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T10:31:00.000Z"
+    },
+    {
+      "id": "5063f1ed89f8f4a21042",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Scammers Use Stolen Cards to Fulfill Fake Dumpster Rental Ads",
+      "excerpt": "A homeowner pays a bogus seller but still gets the dumpster they ordered. When the stolen-card charge is reversed, the rental broker can be left with the bill for hauling and disposal. A cardholder calling about an unfamiliar charge can leave Dumpster Rental Enterprises with a co",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scammers-use-stolen-cards-to-fulfill-fake-dumpster-rental-ads/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T09:03:50.000Z"
+    },
+    {
+      "id": "370ea3dd7e5a5c1d6898",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Gen Z Gives Payment Perks More Weight at Grocery Checkout",
+      "excerpt": "Gen Z grocery shoppers want a quick checkout and the freedom to use their preferred payment method. They are also more than twice as likely as baby boomers and seniors to put the value they get from paying first. Twenty-three percent of Gen Z grocery shoppers said payment-linked ",
+      "url": "https://www.pymnts.com/consumer-insights/2026/gen-z-gives-payment-perks-more-weight-at-grocery-checkout/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T09:01:49.000Z"
+    },
+    {
+      "id": "a06b992da8844a332b3b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Velera Says Credit Unions Can Learn Digital Money Together",
+      "excerpt": "Credit unions and industry partners can work together to understand where digital assets could be useful, Velera SVP, Emerging Services Scott P. Young writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” At the start of 2026, the digital asset conversation",
+      "url": "https://www.pymnts.com/opinion/2026/velera-says-credit-unions-can-learn-digital-money-together/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T09:00:33.000Z"
+    },
+    {
+      "id": "56c335b60c98282597ba",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Una fintech argentina consigue inversores de EE.UU. con un negocio de US$5.000 millones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQNERBTkFRb2hfUTNWUElJcVVLWWlibDJ5elZLTDNSTllMZ0taV2gzczdHMDJfaV9uejgyenN4dDBRdVdMSlpkTVlybG1XTjRLT084c1pjbnBTTXJmSktLLThhdEpnVVpCb2o3b0IwTUFfd3dYdzFXMDdockJ3WkFCVmZVZjR6ZmxlXzNFOWNWNnRBOUdhV0lUSWtibmozU0lyZUNVc3BqWmhxWVA4cG1WbTRMWXVyNlFLR0RIZm9FNEthZzZYSWlKU3dQQ3BaRktxRTg1THRR0gHqAUFVX3lxTE9iZ2RRVUdJZl9lZWxJcWJKLU5tNVZxU3lFbURERTZaZ0MzQWJVWnRXYXNsdDFLUGRhWnRreWNrVVZoaEVsSXhnUVlEYXpzcXZZSUZFcGRVMjJPRHpUZEpERzF4eU1JYzVZd01DM3JPVmpQT1pQZGF4TEhLd2syck5hMDY3YzBOakxHZ1Q1ODlKZnZHcDdwbDRhbXFiN0pHQVFzbzI2YllxdW0xMktsRzlUdV9Pak91dkludTAzZkhrd25qUTZNak8xSFJDTTVSNE00M19XbnlxYlZSVnZoaVZlc1pWbnJObm9ndw?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-13T09:00:00.000Z"
+    },
     {
       "id": "fceeec209948491271b6",
       "sourceId": "pymnts",
@@ -43,34 +169,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-13T00:01:00.000Z"
-    },
-    {
-      "id": "dab81a028aa24fb78efd",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "U.S. Bank to Add 60 Roles in Middle Market Banking",
-      "excerpt": "U.S. Bank plans to add 60 roles to its middle market banking team nationwide over the coming months, the bank said Thursday (Nov. 12). The bank plans to hire relationship managers, business development executives and specialists, including in Florida, Texas and California. The hi",
-      "url": "https://www.pymnts.com/news/banking/2026/u-s-bank-to-add-60-roles-in-middle-market-banking/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T23:59:16.000Z"
-    },
-    {
-      "id": "6fcf3799a2fe629f3dc9",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Imprint Raises $130 Million as Brands Race to Keep Customers in the AI Era",
-      "excerpt": "Imprint has raised $130 million at a valuation of about $1.9 billion. The bet is that brands will need their own payment cards to hold on to customers as artificial intelligence agents take over more of the shopping. The New York company builds co-branded credit cards for retaile",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/imprint-raises-130-million-as-brands-race-to-keep-customers-in-the-ai-era/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T23:38:36.000Z"
     },
     {
       "id": "ba6db5d8dbd6c2a5be38",
@@ -409,20 +507,6 @@
       "publishedAt": "2026-11-10T20:32:03.000Z"
     },
     {
-      "id": "02038b8506463a4d4823",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banking giants commit $270m to stablecoin venture - Bloomberg",
-      "excerpt": "Some of the world's biggest banks - including Citi, Goldman Sachs and Deutsche Bank - have committed around $270 million to a new stablecoin venture called Project Faro, according to Bloomberg.",
-      "url": "https://www.finextra.com/newsarticle/48738/banking-giants-commit-270m-to-stablecoin-venture---bloomberg?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T18:46:00.000Z"
-    },
-    {
       "id": "2c893398280142f30012",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -435,34 +519,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-10T16:02:36.000Z"
-    },
-    {
-      "id": "7cf410a8259554532120",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech mexicana Clara levanta US$105 millones para fortalecer su plataforma de automatización e inteligencia artificial",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOMG1Xb3cxNmpySmdxejlvaW9wOENVV0R1UzBVenJLOW9KT2FCd1A1Nnk1VUV6UnBXOVZoRHlUUEo3SjlDb18xdExPc3JYWWI0QnJ6bzhxcUZpc2lqVEVUVUpPakU3RHI2WDZGSEV6WFNYQ2lsUEMwQ0tnWUFQNlZyeTRJMGpYUC1RSlZJMnJ0NGFBY3diZ2VoOVlZUGxjdXQtcXhJTG9sdDRFY3JQcDVNWTROaUxqZVdHTkpndWNxaVhhWTU3VzNDbnJqM3RERkhFc21ja0lLQUhwTWJYMDFoT2pGWlo2cXJjeDFxS213?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-10T15:17:12.000Z"
-    },
-    {
-      "id": "2f30637a48c4d0cc8925",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Nexi to sell Ratepay to Affirm",
-      "excerpt": "Italian payments giant Nexi has agreed to sell German fintech Ratepay to buy now, pay later player Affirm. Financial terms were not disclosed.",
-      "url": "https://www.finextra.com/newsarticle/48736/nexi-to-sell-ratepay-to-affirm?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-10T15:12:00.000Z"
     },
     {
       "id": "f9489d7ffe8d62664967",
@@ -505,20 +561,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-09T22:00:00.000Z"
-    },
-    {
-      "id": "c3fdf90c74724ff0a5ad",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "El Banco Central dispone cambios para los depósitos de billetes de USD 50 y USD 100 para prevenir lavado de activos en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPQUNMTDk1eTNWVjdyNnIwUzJxWElrVS1CRzRYMzh2NnZmYm1mdkFubVNrMlRhM2tyU3JWZ3hQclpNMUhrdXZnOGc1LXVTalgxSTRTM0N3T0ZoR3E2NTRENS1RdGhQOF9NcWFwRzhsYVczaDJvYjNmNjFWZUh5YXZoZ0MtcmdsZnVIUnFnbXdmRTZYeHZDT0kwZGdaUUJqMVIxNGlPWWJJRQ?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-09T21:11:04.000Z"
     },
     {
       "id": "d565bc5cf57f73d94538",
@@ -885,20 +927,6 @@
       "publishedAt": "2026-10-30T09:11:00.000Z"
     },
     {
-      "id": "a6c052e9ec5d210f34c0",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "El fraude más allá de las aplicaciones: fintechs y el reto de proteger al usuario",
-      "excerpt": "Las fintechs deben complementar sus controles tecnológicos con educación al usuario y mecanismos de cooperación para detectar y prevenir fraudes. Llamadas y SMS continúan teniendo éxito.... Leer más... La entrada El fraude más allá de las aplicaciones: fintechs y el reto de prote",
-      "url": "https://iupana.com/2026/10/29/el-fraude-mas-alla-de-las-aplicaciones/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-29T17:52:37.000Z"
-    },
-    {
       "id": "cc075963c930ac66f9ef",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -967,20 +995,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-28T12:00:00.000Z"
-    },
-    {
-      "id": "928b62733bba566a5d48",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "International Law Enforcement Seizes Domain of Virtualine Bulletproof Hosting Service",
-      "excerpt": "Summary The FBI Washington Field Office, working with international law enforcement partners, seized the domain virtualine.net, which, according to the…",
-      "url": "https://www.chainalysis.com/blog/virtualine-bulletproof-hosting-seizure-october-2026/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-27T21:49:13.000Z"
     },
     {
       "id": "f72b6c111b547b1ebf03",
@@ -1121,34 +1135,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-19T12:00:00.000Z"
-    },
-    {
-      "id": "b7c18c0c9d6cae95d07b",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Operativos contra secuestros y extorsiones evitaron pagos por $ 2,3 millones en Ecuador",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxQcTdsOU1EVjFfQUlzVDhEVDZmUlQ3b2dRbEhwSkRrRjU4aFdBQ1BtYWl0dE5lU1F3MDZaZXpJSUNBcVBna2RLSC1JZGUzZjNEVjgtYUstV1lvWHJsVWtocDlPSEJEeEdkSHNYTnFJNjh3czhKdm1nTGVPRkcwNmg5V29YUlA0TTNRUUVLUXFLeDc2MFZBTDVBTVU1UGpuSnFmdG9IdzJEOXpFWC1zSnVKcks2dzFZdXVNTkgwRlVSTmRHQnNra0FQUDVVVmRRY0syeFHSAeYBQVVfeXFMT1dWbnE2a2lPc2owdE9RSXN2R2tjVXZ4ZEk0ZmZ5VVNGUEJ6SmZGZk5xNFItTm03U19tYWxQN2lIOWtZRS1hZWxrMGNJdWhYN2JyeU56WXBKa2RPaURlQTBheWx1ZXFJREtRYW92Y0NQWVRGdm43cDVkNWxVMDFfLWhDSUc0eFhIT0o1V0lUUmJXd3M4MTcwOVZmVnZhdk1vMFI0a3IwTzk3WTZCSjhIczgxajZTcTRUUmltNXMtd2lUM1JJSzRDd0JGeEtDaGpkM0JfdTZDMXJnZnRLVWRiRzItQmVsUVE?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-18T07:00:00.000Z"
-    },
-    {
-      "id": "08ba4174039e1055bfd3",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Mensual de Tasas de Interés. Septiembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntMensual.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-15T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1159,9 +1145,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "recentCount": 6
     },
     {
       "id": "bce-junta",
@@ -1170,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 0
     },
     {
@@ -1181,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 8
     },
     {
@@ -1192,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 6
     },
     {
@@ -1203,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 1
     },
     {
@@ -1214,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 0
     },
     {
@@ -1225,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 0
     },
     {
@@ -1236,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 1
     },
     {
@@ -1247,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 8
     },
     {
@@ -1258,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 8
     },
     {
@@ -1269,9 +1255,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "recentCount": 4
     },
     {
       "id": "latam-bloomberg",
@@ -1280,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 8
     },
     {
@@ -1291,8 +1277,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 1
     },
     {
@@ -1302,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
-      "recentCount": 3
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "recentCount": 4
     },
     {
       "id": "finextra-payments",
@@ -1313,8 +1299,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 12
     },
     {
@@ -1324,8 +1310,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 8
     },
     {
@@ -1335,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T07:57:38.129Z",
-      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "checkedAt": "2026-11-13T16:23:55.112Z",
+      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
       "recentCount": 10
     }
   ]
