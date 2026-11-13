@@ -1,7 +1,91 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T16:23:55.112Z",
+  "generatedAt": "2026-11-13T22:37:52.329Z",
   "stories": [
+    {
+      "id": "51f23cfbcb67378e97ab",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Fed Raises Check Fees as Businesses Keep Writing Them",
+      "excerpt": "Paper checks remain a way of life for some of the businesses where banks have the most room to convert supplier payments. Small- to medium-sized businesses (SMBs) operating for at least 20 years made 54% of their vendor and supplier payments by check, the PYMNTS Intelligence repo",
+      "url": "https://www.pymnts.com/smbs/2026/federal-reserve-raises-check-fees-businesses-keep-writing-them/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T22:09:55.000Z"
+    },
+    {
+      "id": "4ac490873f03c9ada43a",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "ChatGPT podrá comprar por usted usando su tarjeta: así funciona la nueva billetera de OpenAI",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPb21mdHM4VVdkYkxDS1poTzQyRkEwTzYzRkJMTTJhUDJmSWo1Y3V2REhkcTJXcjU3SXZ3XzdobWJpTnpsa3BXbC11V1Z3dFVwbW1jUXBId2tMMW10WnFTOGwyUUdEY1IzZWRydm5GaEJfMzY1WXZWNkNxalgyZWM5bUx4VjZXNjk2cnlGWnBJRHNkeUJJNHI3clZBUnNZTjBLUV9KdFhidjl4d3owcmcyZnBLU19PVUtjVEoxYlJoNE85eXQ1Nk5VQlFzcGJGb1kxUWd5S2NrUkZWU3AybWfSAfIBQVVfeXFMUDNndEJyUmVHUnJPR3hiRFBXX0x0MHpUSENBZVVhMTdnSVdSVEx6LXBEdEZFZFB0NFB3TjVNQ1JlMVhxZWFsTVlaQ25Fd0s0bWtER292dTlmOWN4STFKeFZETzBMeElHVWdBdHlUVVdyTE4xZERHekc4YjRlUG54VTQwQmRQd2RwUWtpb0tCakw0T0lwTXVhSGt6VkRHVnFOZmV6Mk43aVYzdWpxSGp4UHBlWkRIbnJRUDlCUTl0WG5WNlRtZWU1am5PLTJTZ2lQZUhYWnJwRkZRSVhPZjFrTGYwS0NsT3ZhT0V1WXFWTExMS2c?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-13T20:30:25.000Z"
+    },
+    {
+      "id": "46d367edbf10b8a13787",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "JPMorgan Stops AI Agents From Using Customer Credit Cards",
+      "excerpt": "JPMorgan Chase is blocking artificial intelligence (AI) agents from shopping with its customers’ credit cards when customers give the agent their card number, The Wall Street Journal reported Friday (Nov. 13). Cards from Bank of America, Capital One and Citigroup are already bein",
+      "url": "https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T19:26:18.000Z"
+    },
+    {
+      "id": "3b342d302e874932a65b",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OpenAI launches ChatGPT Wallet",
+      "excerpt": "OpenAI has unveiled ChatGPT Wallet, enabling AI agents to pay for purchases on users' behalf without accessing their card details.",
+      "url": "https://www.finextra.com/newsarticle/48759/openai-launches-chatgpt-wallet?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T18:28:00.000Z"
+    },
+    {
+      "id": "39b883c10088500f33f9",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Globalive-Backed WealthOne Bank Seeks $105 Million to Fuel US and Canadian FinTech Push",
+      "excerpt": "WealthOne Bank of Canada is looking to raise $150 million Canadian dollars (about $105 million) as it pursues relationships with FinTechs and wealth firms as well as retail clients, Bloomberg reported Friday (Nov. 13). The bank was acquired by a group of backers led by investment",
+      "url": "https://www.pymnts.com/news/banking/2026/globalive-backed-wealthone-bank-seeks-105-million-dollars-fuel-united-states-canadian-fintech-push/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T18:03:51.000Z"
+    },
+    {
+      "id": "b573e3206fd28abe3cbc",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark para facilitar el acceso a vehículos en México",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaEIwd3hNVmpSdGlQbVM3bG5MX2JkWHlVQ3JaemlZNFNDSEsydmFKZ1BrNUpITGVLSVNjR01CbHJXS2d6eTMzT0RndFB1MWI3UTFwaEZ2RE5NaFVjMkhNZjZSVUpUTVcwb0FLdEl4SUZGVzdMNXZZVktOVE1ZN2ZIS1dqSjdKZjlOaE9rMnpwWERuZkpnbW15Ml9GQkZsWENlVnhUM1F3MkZSQzdvdEtkdWZLRnlDV19WcmV0a2xQa1F3cDdlQzE4RVBqTUpWZDF4N0taV0dpWjRJY05QSFhVSlRjUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-13T16:43:13.000Z"
+    },
     {
       "id": "3e7f50457b744ca1a978",
       "sourceId": "chainalysis",
@@ -45,6 +129,20 @@
       "publishedAt": "2026-11-13T12:00:00.000Z"
     },
     {
+      "id": "4a33851df90dd1823412",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "El crédito del sistema financiero creció 20,9% en octubre y alcanzó USD 4.978 millones",
+      "excerpt": "La colocación de crédito del Sistema Financiero Nacional (SFN) alcanzó los USD 4.978 millones en octubre de 2026, un incremento interanual de 20,9%, impulsado principalmente",
+      "url": "https://www.bce.fin.ec/el-credito-del-sistema-financiero-crecio-209-en-octubre-y-alcanzo-usd-4-978-millones/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-13T12:00:00.000Z"
+    },
+    {
       "id": "6a472c57ee078717732c",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -73,48 +171,6 @@
       "publishedAt": "2026-11-13T10:31:00.000Z"
     },
     {
-      "id": "5063f1ed89f8f4a21042",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Scammers Use Stolen Cards to Fulfill Fake Dumpster Rental Ads",
-      "excerpt": "A homeowner pays a bogus seller but still gets the dumpster they ordered. When the stolen-card charge is reversed, the rental broker can be left with the bill for hauling and disposal. A cardholder calling about an unfamiliar charge can leave Dumpster Rental Enterprises with a co",
-      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/scammers-use-stolen-cards-to-fulfill-fake-dumpster-rental-ads/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T09:03:50.000Z"
-    },
-    {
-      "id": "370ea3dd7e5a5c1d6898",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Gen Z Gives Payment Perks More Weight at Grocery Checkout",
-      "excerpt": "Gen Z grocery shoppers want a quick checkout and the freedom to use their preferred payment method. They are also more than twice as likely as baby boomers and seniors to put the value they get from paying first. Twenty-three percent of Gen Z grocery shoppers said payment-linked ",
-      "url": "https://www.pymnts.com/consumer-insights/2026/gen-z-gives-payment-perks-more-weight-at-grocery-checkout/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T09:01:49.000Z"
-    },
-    {
-      "id": "a06b992da8844a332b3b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Velera Says Credit Unions Can Learn Digital Money Together",
-      "excerpt": "Credit unions and industry partners can work together to understand where digital assets could be useful, Velera SVP, Emerging Services Scott P. Young writes in a new PYMNTS eBook, “Payments Leaders Rethink What Works in 2026.” At the start of 2026, the digital asset conversation",
-      "url": "https://www.pymnts.com/opinion/2026/velera-says-credit-unions-can-learn-digital-money-together/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T09:00:33.000Z"
-    },
-    {
       "id": "56c335b60c98282597ba",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -127,20 +183,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-13T09:00:00.000Z"
-    },
-    {
-      "id": "fceeec209948491271b6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anthropic’s Claude Tops AI Rankings as OpenAI Limits Cyber Model",
-      "excerpt": "The frontier changed hands again this week. Anthropic’s Claude Fable 5.2 moved past Google’s Gemini 4 Carbon on the Artificial Analysis Intelligence Index, the independent scorecard both companies cite. Meta went the other direction with a model priced at $0.10 per million input ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropics-claude-tops-ai-rankings-as-openai-limits-cyber-model/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T01:12:36.000Z"
     },
     {
       "id": "3c4062d14c67463030e3",
@@ -297,20 +339,6 @@
       "publishedAt": "2026-11-12T11:00:01.000Z"
     },
     {
-      "id": "2e99eae9058f14470d7c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-11T16:24:34.000Z"
-    },
-    {
       "id": "b553ed952d27d536b3b9",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -318,6 +346,20 @@
       "title": "Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMl81NzA2WGJvZzd6M2JVS0FZeW9Uc1dra1hla2VvTEs4WDEyZ1lPNGczcUsxRnNKa0Y5TmhSYUowRW5IVUZuUHA4cmVyTVFodkRXUFlsUVhSbWo5WFpkX05haV8yWENtb1NHOU96TlE5eEp6OU1kSktidlNBQzZWRUFHVGxUZ2ZfR2hWN0dVUDVrd2Vjd2JoRC01YXhXaDNIMFVsVUtDalJfQVZjT2JOZk5BVGdaUU9tc1VXclR4QmZXNzR2NjlhRjF1OVV3Q05iTFlRSmlUTzRaSnp5TUlmN0YwM0d1SGl4VWNYcXpyRnQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-11T16:24:34.000Z"
+    },
+    {
+      "id": "2e99eae9058f14470d7c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -379,20 +421,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-11T12:00:00.000Z"
-    },
-    {
-      "id": "b9705daa996077c0aa70",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Deutsche Bank and Ant set out roadmap for integrating agentic AI into wholesale banking",
-      "excerpt": "A new research report released by Deutsche Bank and Ant Digital Technologies highlights the potential of agentic AI across institutional treasury, cross border payments and trade finance.",
-      "url": "https://www.finextra.com/newsarticle/48740/deutsche-bank-and-ant-set-out-roadmap-for-integrating-agentic-ai-into-wholesale-banking?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T11:13:00.000Z"
     },
     {
       "id": "5fe1babe64222effaec6",
@@ -491,20 +519,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-10T20:33:34.000Z"
-    },
-    {
-      "id": "d3f373c56758aedae25d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Paytech colombiana zulu conecta su infraestructura de pagos con Swift para facilitar cobros y pagos en 155 países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQUFuNk13TURTRTZkX0ZEWkFPZG5qRVE5NFk1MDhKNnB4LU0wcHJaMV9XQ0VTclhhZkI3OGszdWZfRm5yajZpcHlJSFZiOXhWbFJ3WTY0akdkSzNkcVl1d3dlZV9Way1NakRvdmxfZzViWWI3Mlo5bWg3bjEwSW1Maks2Y3QxOUNKMG5TMHlUTmtvSTFTTkxQWUxBVGNYZDNfY21IRV85RkU1MlhuSFBabTJERFVqV2w5dEwxNWxMWi1VYjJwUjczOEpOS05uTUlDMk9hSVpYa1JBQ3ZOVWo5WmpJUE0?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-10T20:32:03.000Z"
     },
     {
       "id": "2c893398280142f30012",
@@ -885,20 +899,6 @@
       "publishedAt": "2026-10-30T12:00:00.000Z"
     },
     {
-      "id": "102b089b1dd2cfca6cbe",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "¿Adiós código Swift? BCP de Perú explora pagos internacionales con alias",
-      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú explora pagos internacionales con alia",
-      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T11:00:19.000Z"
-    },
-    {
       "id": "38b0708e38f04f54ed3b",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1121,20 +1121,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-20T12:00:00.000Z"
-    },
-    {
-      "id": "7e868d21883008ab2337",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "La economía ecuatoriana creció 3,5% en agosto de 2026, impulsada por los servicios, la manufactura y el comercio",
-      "excerpt": "En agosto de 2026, el Indicador Mensual de Actividad Económica del Ecuador (IMAEc) registró un crecimiento interanual de 3,5%, impulsado por el desempeño de cinco",
-      "url": "https://www.bce.fin.ec/la-economia-ecuatoriana-crecio-35-en-agosto-de-2026-impulsada-por-los-servicios-la-manufactura-y-el-comercio/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-19T12:00:00.000Z"
     }
   ],
   "sources": [
@@ -1145,8 +1131,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 6
     },
     {
@@ -1156,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 8
     },
     {
@@ -1178,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 8
     },
     {
@@ -1244,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1241,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 4
     },
     {
@@ -1266,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 8
     },
     {
@@ -1277,8 +1263,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 1
     },
     {
@@ -1288,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1285,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1296,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 8
     },
     {
@@ -1321,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T16:23:55.112Z",
-      "lastSuccessAt": "2026-11-13T16:23:55.112Z",
+      "checkedAt": "2026-11-13T22:37:52.329Z",
+      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
       "recentCount": 10
     }
   ]
