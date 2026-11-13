@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T00:23:55.228Z",
+  "generatedAt": "2026-11-13T07:57:38.129Z",
   "stories": [
+    {
+      "id": "fceeec209948491271b6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anthropic’s Claude Tops AI Rankings as OpenAI Limits Cyber Model",
+      "excerpt": "The frontier changed hands again this week. Anthropic’s Claude Fable 5.2 moved past Google’s Gemini 4 Carbon on the Artificial Analysis Intelligence Index, the independent scorecard both companies cite. Meta went the other direction with a model priced at $0.10 per million input ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/anthropics-claude-tops-ai-rankings-as-openai-limits-cyber-model/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T01:12:36.000Z"
+    },
     {
       "id": "3c4062d14c67463030e3",
       "sourceId": "finextra-payments",
@@ -73,48 +87,6 @@
       "publishedAt": "2026-11-12T22:07:03.000Z"
     },
     {
-      "id": "890c2e861ee9a8274bca",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa Helps AviaGames Players Get Paid Faster",
-      "excerpt": "Visa and Global Payments have teamed with AviaGames to help players receive payouts faster. The partnership, announced Thursday (Nov. 12), lets the mobile gaming company’s U.S. players get payouts directly to their Visa cards. AviaGames says it is part of its efforts to provide i",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/visa-helps-aviagames-players-get-paid-faster/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T21:29:11.000Z"
-    },
-    {
-      "id": "e6c5968218f7f3a9fd46",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Klarna Picks Robinhood Vet Chris Koegel as New CFO",
-      "excerpt": "Digital bank/pay later provider Klarna has named a new chief financial officer. Chris Koegel will join the Swedish company effective Jan. 1 of next year, Klarna announced Thursday (Nov. 12). Koegel, head of corporate finance and investor relations at Robinhood, succeeds Niclas Ne",
-      "url": "https://www.pymnts.com/personnel/2026/klarna-picks-robinhood-vet-chris-koegel-as-new-cfo/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T21:09:08.000Z"
-    },
-    {
-      "id": "02955011bf902e4627a6",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard Touts Successful Agentic Travel Transaction",
-      "excerpt": "Mastercard has teamed with a trio of payments and travel companies to complete a live, end-to-end, artificial intelligence-powered travel purchase. This effort, announced Thursday (Nov. 12), combined Mastercard’s payment network with Travelport’s travel retailing and connectivity",
-      "url": "https://www.pymnts.com/transportation/travel-payments/2026/mastercard-touts-successful-agentic-travel-transaction/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:51:28.000Z"
-    },
-    {
       "id": "2b4f77e79eac3c356de2",
       "sourceId": "finextra-latam",
       "category": "latam",
@@ -141,20 +113,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-12T20:43:00.000Z"
-    },
-    {
-      "id": "1b7ffae5dfbe5de5fd6a",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa Expands Stablecoin Services With Anchorage Partnership",
-      "excerpt": "The opportunity of stablecoin settlement lies in the fact that money no longer needs to wait for banks to open. Visa’s Thursday (Nov. 12) stablecoin expansion, through a partnership with Anchorage Digital supporting Western Union’s USDPT token, brings that opportunity into focus.",
-      "url": "https://www.pymnts.com/news/b2b-payments/2026/visa-expands-stablecoin-services-with-anchorage-partnership/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:34:02.000Z"
     },
     {
       "id": "92b0bcfadfd2a3de70bc",
@@ -1201,8 +1159,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1212,8 +1170,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 0
     },
     {
@@ -1223,8 +1181,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1234,8 +1192,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 6
     },
     {
@@ -1245,8 +1203,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 1
     },
     {
@@ -1256,8 +1214,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 0
     },
     {
@@ -1267,8 +1225,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 0
     },
     {
@@ -1278,8 +1236,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 1
     },
     {
@@ -1289,8 +1247,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1300,8 +1258,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1311,8 +1269,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 6
     },
     {
@@ -1322,8 +1280,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1333,8 +1291,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 1
     },
     {
@@ -1344,9 +1302,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1355,8 +1313,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 12
     },
     {
@@ -1366,8 +1324,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 8
     },
     {
@@ -1377,8 +1335,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T00:23:55.228Z",
-      "lastSuccessAt": "2026-11-13T00:23:55.228Z",
+      "checkedAt": "2026-11-13T07:57:38.129Z",
+      "lastSuccessAt": "2026-11-13T07:57:38.129Z",
       "recentCount": 10
     }
   ]
