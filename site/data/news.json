@@ -1,7 +1,21 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-13T22:37:52.329Z",
+  "generatedAt": "2026-11-14T03:15:20.888Z",
   "stories": [
+    {
+      "id": "838e6ff82d84a9692de8",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "OpenAI Gives AI Agents a Wallet While Blocking Them From Seeing the Card",
+      "excerpt": "OpenAI has introduced a ChatGPT Wallet that lets agents pay without access to users’ card details, requires a security check for every purchase, and preserves existing card rewards and protections, the company said in a Friday (Nov. 13) press release. ChatGPT Wallet will initiall",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/openai-gives-ai-agents-a-wallet-while-blocking-them-from-seeing-the-card/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-14T00:16:52.000Z"
+    },
     {
       "id": "51f23cfbcb67378e97ab",
       "sourceId": "pymnts",
@@ -31,20 +45,6 @@
       "publishedAt": "2026-11-13T20:30:25.000Z"
     },
     {
-      "id": "46d367edbf10b8a13787",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "JPMorgan Stops AI Agents From Using Customer Credit Cards",
-      "excerpt": "JPMorgan Chase is blocking artificial intelligence (AI) agents from shopping with its customers’ credit cards when customers give the agent their card number, The Wall Street Journal reported Friday (Nov. 13). Cards from Bank of America, Capital One and Citigroup are already bein",
-      "url": "https://www.pymnts.com/news/2026/jpmorgan-stops-ai-agents-from-using-customer-credit-cards/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T19:26:18.000Z"
-    },
-    {
       "id": "3b342d302e874932a65b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -57,20 +57,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-13T18:28:00.000Z"
-    },
-    {
-      "id": "39b883c10088500f33f9",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Globalive-Backed WealthOne Bank Seeks $105 Million to Fuel US and Canadian FinTech Push",
-      "excerpt": "WealthOne Bank of Canada is looking to raise $150 million Canadian dollars (about $105 million) as it pursues relationships with FinTechs and wealth firms as well as retail clients, Bloomberg reported Friday (Nov. 13). The bank was acquired by a group of backers led by investment",
-      "url": "https://www.pymnts.com/news/banking/2026/globalive-backed-wealthone-bank-seeks-105-million-dollars-fuel-united-states-canadian-fintech-push/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T18:03:51.000Z"
     },
     {
       "id": "b573e3206fd28abe3cbc",
@@ -1131,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 6
     },
     {
@@ -1142,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 0
     },
     {
@@ -1197,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 8
     },
     {
@@ -1230,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 4
     },
     {
@@ -1252,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 8
     },
     {
@@ -1263,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 1
     },
     {
@@ -1274,9 +1260,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
-      "recentCount": 3
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "recentCount": 2
     },
     {
       "id": "finextra-payments",
@@ -1285,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 12
     },
     {
@@ -1296,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 8
     },
     {
@@ -1307,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-13T22:37:52.329Z",
-      "lastSuccessAt": "2026-11-13T22:37:52.329Z",
+      "checkedAt": "2026-11-14T03:15:20.888Z",
+      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
       "recentCount": 10
     }
   ]
