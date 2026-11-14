@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-14T03:15:20.888Z",
+  "generatedAt": "2026-11-14T10:34:31.902Z",
   "stories": [
     {
       "id": "838e6ff82d84a9692de8",
@@ -493,18 +493,18 @@
       "publishedAt": "2026-11-10T20:44:01.000Z"
     },
     {
-      "id": "d89f654f9313b0be3c3d",
+      "id": "d3f373c56758aedae25d",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
       "kind": "news",
-      "title": "Fintech brasileña Conta Azul compra PlayBPO para ampliar su oferta de servicios de tercerización financiera para pymes",
+      "title": "Paytech colombiana zulu conecta su infraestructura de pagos con Swift para facilitar cobros y pagos en 155 países",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPSHpfZ1BZVFE1azZMdXhKN0pVa1BaZ1NlV1hNUld4V1B0ZXFoRS1JYlRxc2RySHEwT2pwUlh4QnBNOXpma241WTlEdHZHc0RWOGpBUmFieDY1WEd1RlRKSG5yS3ZSc3BVdm05eWk3aVd5dXNib1pwU3k1MjBwODVCQUVyMThPYWNBa20zZ1lUVGkxRzFCclZrcE9JQ3JuUnVLVDdRY3VEcWptV1M2MUZId0FtaFp0d3RfSnhBYjUxdzBWY0RMeUVqZG12WEl1ZDFqeWRtZk41bGFxM2ZaNEdlMHFmZW5DTUJHV3F3?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQUFuNk13TURTRTZkX0ZEWkFPZG5qRVE5NFk1MDhKNnB4LU0wcHJaMV9XQ0VTclhhZkI3OGszdWZfRm5yajZpcHlJSFZiOXhWbFJ3WTY0akdkSzNkcVl1d3dlZV9Way1NakRvdmxfZzViWWI3Mlo5bWg3bjEwSW1Maks2Y3QxOUNKMG5TMHlUTmtvSTFTTkxQWUxBVGNYZDNfY21IRV85RkU1MlhuSFBabTJERFVqV2w5dEwxNWxMWi1VYjJwUjczOEpOS05uTUlDMk9hSVpYa1JBQ3ZOVWo5WmpJUE0?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-10T20:33:34.000Z"
+      "publishedAt": "2026-11-10T20:32:03.000Z"
     },
     {
       "id": "2c893398280142f30012",
@@ -773,20 +773,6 @@
       "publishedAt": "2026-11-04T18:44:26.000Z"
     },
     {
-      "id": "a5757911529b1dc9cb7c",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Cierre de Ueno Bank en Paraguay congela depósitos y afecta pagos, pensiones y operaciones comerciales",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxQT0xheExhSGtsOGtvV2lESjdPOFdUbkxuMnpudjVHS185VHFTNkN5UEFNeVNINHRRMllSVWcyOUN2RUhvNVFHUkI2V3c0ZVVRZGpFTlliR24wZVRfV1RacWhtUnJpMVNKb3JXenhBM0UyNVhvOWhJVGdtYnpQQ0dsTmhZeUx6aDMyUmhUX1FIVm9aNm1NcVlUam5JVGlVY3ZybTNIbTdmdzRwNTBJa1pLSEQ3RXA2WUpCMlMyaFZmLTgxSU90RzFGTGpDWFlBWWd6ZC1NWlVUMnU2a3R6bGlB0gHzAUFVX3lxTE1YVW15RVMyYzBvV1VReTRpMkFPdXpSQldreWxweVJlOGI3NWtCaTB3OUd1UjljZ2tYME1NVHhuMzZUdXhkeEhtMS1lREVuWDVSQzRTaGY3V0tMM05KdEwtQ3U4MmhnUW5zVzdfNnh2WTBaLWpIN1Y3TUNMejBKX1pQbW00ME5hNW54bmV1YTJLRXljd3dhQzk2U0w3ajdRaHBLd0NIdlJoU2xxM2dxbldFYTlMWDAxODEtb2ZfQWpCSlpQMXpWTW5zSHBpcjBuMTRkWnE2MVlqSTRVdkRwZ2ZJUzNJZkhUMWUwUmYzd05lUGYtVQ?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-04T08:00:00.000Z"
-    },
-    {
       "id": "23545be048f1caa6156f",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -862,7 +848,7 @@
       "category": "cripto",
       "kind": "analysis",
       "title": "Updated Nov 10: Chainalysis Security Incident Information",
-      "excerpt": "Tuesday Nov 10, 2026 3:00 A.M. EST Update: Data Solutions is now back online. We’re bringing customers back as quickly…",
+      "excerpt": "For more information and ongoing updates, please see our incident page. Tuesday Nov 10, 2026 3:00 A.M. EST Update: Data…",
       "url": "https://www.chainalysis.com/blog/security-incident-october-30/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -883,6 +869,20 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-30T12:00:00.000Z"
+    },
+    {
+      "id": "102b089b1dd2cfca6cbe",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "¿Adiós código Swift? BCP de Perú explora pagos internacionales con alias",
+      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú explora pagos internacionales con alia",
+      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-30T11:00:19.000Z"
     },
     {
       "id": "38b0708e38f04f54ed3b",
@@ -1117,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 6
     },
     {
@@ -1128,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 0
     },
     {
@@ -1139,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 8
     },
     {
@@ -1150,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 6
     },
     {
@@ -1161,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 1
     },
     {
@@ -1172,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 0
     },
     {
@@ -1183,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 0
     },
     {
@@ -1194,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 1
     },
     {
@@ -1205,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 8
     },
     {
@@ -1216,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 8
     },
     {
@@ -1227,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 8
     },
     {
@@ -1249,8 +1249,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 1
     },
     {
@@ -1260,8 +1260,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 2
     },
     {
@@ -1271,8 +1271,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 12
     },
     {
@@ -1282,8 +1282,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 8
     },
     {
@@ -1293,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-14T03:15:20.888Z",
-      "lastSuccessAt": "2026-11-14T03:15:20.888Z",
+      "checkedAt": "2026-11-14T10:34:31.902Z",
+      "lastSuccessAt": "2026-11-14T10:34:31.902Z",
       "recentCount": 10
     }
   ]
