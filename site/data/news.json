@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T09:26:07.649Z",
+  "generatedAt": "2026-11-15T17:11:03.125Z",
   "stories": [
     {
       "id": "838e6ff82d84a9692de8",
@@ -647,18 +647,18 @@
       "publishedAt": "2026-11-08T20:38:41.000Z"
     },
     {
-      "id": "070704612122f2fda857",
-      "sourceId": "ecuador-news",
+      "id": "bd478c58ac0f13465e8e",
+      "sourceId": "bce-boletines",
       "category": "ecuador",
-      "kind": "news",
-      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
-      "source": "El Universo",
-      "sourceUrl": "https://www.eluniverso.com/",
-      "via": "Vía Google News",
+      "kind": "official",
+      "title": "La JPRFM establece nuevas reglas para los pagos con tarjetas y refuerza la protección de los usuarios",
+      "excerpt": "La Junta de Política y Regulación Financiera y Monetaria (JPRFM) aprobó nuevas condiciones para las operaciones con tarjetas de crédito, débito y prepago en Ecuador.",
+      "url": "https://www.bce.fin.ec/la-jprfm-establece-nuevas-reglas-para-los-pagos-con-tarjetas-y-refuerza-la-proteccion-de-los-usuarios/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
       "language": "es",
-      "publishedAt": "2026-11-07T16:55:00.000Z"
+      "publishedAt": "2026-11-07T12:00:00.000Z"
     },
     {
       "id": "2d71920c22d5a115be88",
@@ -672,21 +672,21 @@
       "sourceUrl": "https://www.primicias.ec/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-07T16:28:37.000Z"
+      "publishedAt": "2026-11-07T08:00:00.000Z"
     },
     {
-      "id": "bd478c58ac0f13465e8e",
-      "sourceId": "bce-boletines",
+      "id": "070704612122f2fda857",
+      "sourceId": "ecuador-news",
       "category": "ecuador",
-      "kind": "official",
-      "title": "La JPRFM establece nuevas reglas para los pagos con tarjetas y refuerza la protección de los usuarios",
-      "excerpt": "La Junta de Política y Regulación Financiera y Monetaria (JPRFM) aprobó nuevas condiciones para las operaciones con tarjetas de crédito, débito y prepago en Ecuador.",
-      "url": "https://www.bce.fin.ec/la-jprfm-establece-nuevas-reglas-para-los-pagos-con-tarjetas-y-refuerza-la-proteccion-de-los-usuarios/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
+      "kind": "news",
+      "title": "Pagos con tarjetas en Ecuador: comercios no podrán aplicar recargos y tarjetas físicas se emitirán sin datos sensibles",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxNWkNKcHdaUTc5M3JKNWo1aEhVSW1rZWhQbzBmLVBrdVdMaXp3Z3M2bUV5MEMyR0ZPYnZEajNzT0JmV3o5SjI4WFBONmMwSms4d3JyQVFLc1NwRkREOE9yaExteGhYbnhlMmlOZEpDcE5MaXZvaEgySS1aQ1FWc3NJNlU0VmlCdy14dloyRXNHb0o0U21IZldxSTNwZHpveDRtTFMwUmp4ZTJNa3JlTzRZT2tCSnJyY3labEJVVVBtWDhWcHhVaHBGUUlSUEl3YjNKaEZHaXZ0NU1XVUFZTjE2bGxmbjE0Vm53OGt1WmFJZmY2VEpfNHdjX20xVUV1UlRXWGVLVVdQSUVyVmJyYkY0d1lQT2ZPYzc2ZXpyVWgxaEhWLTNfV0pyLVNueWhQNll2WFHSAcYCQVVfeXFMTVlodWVLaDdwdXlWZWNDLVp6SWJtcXNVZXdyamFkUTFtZjBrTXFVU3BoNlFudER3SmgwTUJUc3I1TFNVSHRWbWIxMWx6em1DTE1haUtEVjJLMGQyWkx6Q0hJY25EY3Y0Qi1NUmgtUTNQSUh5bnlUMGdPQ0taY3hSa3p0Vmoxc1dNY2xKQ1dwT3JYbXMtNnJtUEdneUFGdzFYMENSM1Z1aVZ6MmpnREVHTTR4WlIxM2tXUmE1ajhCTnlCNXY0SDBrSHUyeldwT0Y1eHllRHN0anMtQlZzSFMzV3pHTnItVmlfVV9mNURhWjFHdFZBSzRtY2g4bVc2NnZxS1NVOC1FRG0tWGtKeWtxbk5Tc2h0VHN5UHhwOElWVnZYblczVUF2T0dGUF9NOC1hZEw0X2dqVS0xR18xdjFlMHpWRy1LRXc?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-07T12:00:00.000Z"
+      "publishedAt": "2026-11-07T08:00:00.000Z"
     },
     {
       "id": "ad04219779f4500cd288",
@@ -1117,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 6
     },
     {
@@ -1128,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 0
     },
     {
@@ -1139,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 8
     },
     {
@@ -1150,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 6
     },
     {
@@ -1161,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 1
     },
     {
@@ -1172,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 0
     },
     {
@@ -1183,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 0
     },
     {
@@ -1194,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 1
     },
     {
@@ -1205,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 8
     },
     {
@@ -1216,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 8
     },
     {
@@ -1227,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 8
     },
     {
@@ -1249,7 +1249,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1260,8 +1260,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 2
     },
     {
@@ -1271,7 +1271,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1282,7 +1282,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1293,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T09:26:07.649Z",
-      "lastSuccessAt": "2026-11-15T09:26:07.649Z",
+      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
       "recentCount": 10
     }
   ]
