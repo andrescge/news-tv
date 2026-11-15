@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-15T17:11:03.125Z",
+  "generatedAt": "2026-11-15T21:49:26.518Z",
   "stories": [
     {
       "id": "838e6ff82d84a9692de8",
@@ -309,20 +309,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-12T14:41:00.000Z"
-    },
-    {
-      "id": "5c95407945df8e194deb",
-      "sourceId": "latam-bloomberg",
-      "category": "latam",
-      "kind": "news",
-      "title": "Resultados de Nubank: el mercado espera beneficio récord, pero vigila costo del crédito",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOYWNpS1VhWXdHSzgzbFpFei1DYlZ1VEJkZmJTdFpqb1k2ZmtlamQ1RUFnMWJ4b2JPVW8zWFB3bGtjeDF2cHhvMG12TDBQaWlYS0dEQ0hBNm5XTGU3MzgzeTV1WTNpQmJyVnF2WnNRaDNNWHA5cnpVVUpJR1NIVzFVeXd6Z2RlMU9DM01fQlFyWUl4V3o0aDRsSmRxS0ljbWVOWnBUUlIxS1JodmozVlpscW42X0ZQTkYxeHF5ZjVkd1Jtc1g20gHYAUFVX3lxTFBhUEVGWnpaVE1kS0lSbU82MXBhZ2NBLWNKd1ZmZDJtSThYeUxfbHpBUy0tekc3bUhublZpQWVkaGtxeGNFOTVPcXlWUHdmWGR2QTVIVkJmaTJEankxcEFuWU5xSXFqam0xTFRIcmltTmFOTks5aS1CdmI4YklBVFVYVGlhcWVaWmZsbnNYNHlEbUlwaFRGSUhxT3dzTUlWU05JRGRBV285OHc1aFJjM2hfYlhRbzRUNXp2Z05yQ2JfbXJjMWQwU0pfa1pvcGxKQURwMUJoOWQyMg?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-12T11:00:01.000Z"
     },
     {
       "id": "b553ed952d27d536b3b9",
@@ -913,6 +899,20 @@
       "publishedAt": "2026-10-30T09:11:00.000Z"
     },
     {
+      "id": "a6c052e9ec5d210f34c0",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "El fraude más allá de las aplicaciones: fintechs y el reto de proteger al usuario",
+      "excerpt": "Las fintechs deben complementar sus controles tecnológicos con educación al usuario y mecanismos de cooperación para detectar y prevenir fraudes. Llamadas y SMS continúan teniendo éxito.... Leer más... La entrada El fraude más allá de las aplicaciones: fintechs y el reto de prote",
+      "url": "https://iupana.com/2026/10/29/el-fraude-mas-alla-de-las-aplicaciones/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-29T17:52:37.000Z"
+    },
+    {
       "id": "cc075963c930ac66f9ef",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -1117,8 +1117,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 6
     },
     {
@@ -1128,8 +1128,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 0
     },
     {
@@ -1139,8 +1139,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 8
     },
     {
@@ -1150,8 +1150,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 6
     },
     {
@@ -1161,8 +1161,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 1
     },
     {
@@ -1172,8 +1172,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 0
     },
     {
@@ -1183,8 +1183,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 0
     },
     {
@@ -1194,8 +1194,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 1
     },
     {
@@ -1205,8 +1205,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 8
     },
     {
@@ -1216,8 +1216,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 8
     },
     {
@@ -1227,8 +1227,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 4
     },
     {
@@ -1238,8 +1238,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 8
     },
     {
@@ -1249,7 +1249,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1260,8 +1260,8 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 2
     },
     {
@@ -1271,7 +1271,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1282,7 +1282,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1293,8 +1293,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-15T17:11:03.125Z",
-      "lastSuccessAt": "2026-11-15T17:11:03.125Z",
+      "checkedAt": "2026-11-15T21:49:26.518Z",
+      "lastSuccessAt": "2026-11-15T21:49:26.518Z",
       "recentCount": 10
     }
   ]
