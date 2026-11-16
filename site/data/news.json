@@ -1,34 +1,76 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T02:07:45.712Z",
+  "generatedAt": "2026-11-16T09:43:40.144Z",
   "stories": [
     {
-      "id": "42c613c4356f66057f60",
+      "id": "68e6084d0d9813b48e4d",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "UK Tests Cross-Border Settlement With Singapore and Thailand",
-      "excerpt": "The central banks of England, Singapore and Thailand say they’ve found a new way to streamline foreign exchange (FX) transactions. The Bank of England, Monetary Authority of Singapore and Bank of Thailand published the results of their efforts Friday (Nov. 13), part of what’s kno",
-      "url": "https://www.pymnts.com/news/cross-border-payments/2026/uk-tests-cross-border-settlement-with-singapore-and-thailand/",
+      "title": "Nuvei Says Merchants Need Their Own AI Shopping Agents",
+      "excerpt": "Watch more: The Prompt Economy With Advait Sinha of Nuvei Merchants preparing to sell to artificial intelligence (AI) agents have two decisions to make: how much of the customer relationship they’ll surrender, and how much responsibility they’ll accept when an agent buys somethin",
+      "url": "https://www.pymnts.com/connectedeconomy/2026/nuvei-says-merchants-need-their-own-ai-shopping-agents/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-15T23:36:45.000Z"
+      "publishedAt": "2026-11-16T09:03:33.000Z"
     },
     {
-      "id": "a0935a64d7c38a18eea5",
+      "id": "4886a4f06dcf5b44cd4d",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "InComm Payments and SKUx Tie Digital Offers Directly to Verified Store Purchases",
-      "excerpt": "InComm Payments and SKUx now enable brands, retailers and distribution partners to deliver digital offers that apply to specific products and then confirm which items were purchased when those offers are redeemed, the companies said in a Nov. 11 press release. This capability is ",
-      "url": "https://www.pymnts.com/news/retail/2026/incomm-payments-and-skux-tie-digital-offers-directly-to-verified-store-purchases/",
+      "title": "Google and Nvidia Bring Banks to AI’s Checkout Test",
+      "excerpt": "Google is giving shoppers more help deciding which payment method to use. Nvidia is working with banks on technology designed to keep AI agents within prescribed limits. Together, those developments point toward a banking challenge that reaches from winning a card transaction to ",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/google-and-nvidia-bring-banks-to-ais-checkout-test/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-15T22:23:16.000Z"
+      "publishedAt": "2026-11-16T09:02:26.000Z"
+    },
+    {
+      "id": "40b32b3f6624145ce882",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "More Gaming Payout Options Don’t Guarantee Faster Cashouts",
+      "excerpt": "Roughly seven in 10 recipients of winnings chose instant delivery when they had the option, according to a PYMNTS Intelligence and Ingo Payments report. But the wait for a player who taps “withdraw” can begin well before a payment is sent. BetMGM, for example, says it can take up",
+      "url": "https://www.pymnts.com/real-time-payments/2026/more-gaming-payout-options-dont-guarantee-faster-cashouts/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T09:00:45.000Z"
+    },
+    {
+      "id": "26334ff37de11c38ff99",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Gen Z Turns to AI to Navigate Homebuying",
+      "excerpt": "First-time buyers are turning to artificial intelligence to shortlist homes, often before they call an agent or visit a lender’s site. The real estate industry is adapting. Case in point: Bank of America found in its 2026 Homebuyer Insights Report that 20% of prospective buyers a",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/gen-z-turns-to-ai-to-navigate-homebuying/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T09:00:06.000Z"
+    },
+    {
+      "id": "d6275bbda319516f0f5b",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Building the Intelligent Card Platform",
+      "excerpt": "Card issuing is moving faster. Legacy infrastructure can make it harder to keep up. Modernization gives financial institutions a practical path to greater flexibility, faster innovation and the connected foundation needed for intelligent issuing.",
+      "url": "https://www.pymnts.com/report/tracker/building-the-intelligent-card-platform/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T09:00:00.000Z"
     },
     {
       "id": "4ac490873f03c9ada43a",
@@ -269,18 +311,18 @@
       "publishedAt": "2026-11-12T15:22:00.000Z"
     },
     {
-      "id": "e94a254be864ee0ccc78",
+      "id": "3e086e7f99cfc7d822de",
       "sourceId": "latam-bloomberg",
       "category": "latam",
       "kind": "news",
       "title": "De US$50.000 a valer US$508 millones: la fintech Cocos atrajo al fondo que apostó por Nubank",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQS2ViSTBKdWJ3ZUxfX2FSSnk2bUFhb3RSZG5DNzdTUzVZaklMYkZEcUd3eHBYZnpCemE4TDlZV3V3UGNlcl81RzNnX2dsUnBWUU9rU3Q5eDJhMkZsZHYxTmZrdHFCeEVUS3ZuRUNFSXgxY2IyeHRHT0ZiYm5YVFBYaER2Yzl5d29iY0M3bWpqazlZakp4R1QxeUVoWE5Vb2RDZkM0ckN0STZ0ZjFMQ0oycG9vNE44S1g2ZDNQTFhGZU5aaDFsNkFFSUxqTHQyRDhGaHdial82UEJxdjFBWnZjM3JMSWpZelVqY3lodjJvZ0HSAfABQVVfeXFMUEtlYkkwSnVid2VMX19hUkp5Nm1BYW90UmRuQzc3U1M1WWpJTGJGRHFHd3hwWGZ6QnphOEw5WVd1d1BjZXJfNUczZ19nbFJwVlFPa1N0OXgyYTJGbGR2MU5ma3RxQnhFVEt2bkVDRUl4MWNiMnh0R09GYmJuWFRQWGhEdmM5eXdvYmNDN21qams5WWpKeEdUMXlFaFhOVW9kQ2ZDNHJDdEk2dGYxTENKMnBvbzROOEtYNmQzUExYRmVOWmgxbDZBRUlMakx0MkQ4Rmh3YmpfNlBCcXYxQVp2YzNyTElqWXpVamN5aHYyb2dB?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQanZOcU8yMUdUbFhvREotU29wUXZsSmJoLTBpWXExbXVGbUpzQkplcVpLeFVNTlRHNmhhOXpIdjhIMEltMjE5TUZjSzRkRDdDeWxaN2xKcWF5TUtaSFVmVkpXS1J4aEV5Vk5aUHlWb1I3eDdIRzhyY2FLMlNEbWgwQUpwcUd3TkVfWHJxYW5MMDRZMktGTGlmZnNhVkkyeURlMnZ3STFRVTBDLWRoTXU2a1E0R0xXQ2tOcDZTeDYwQnFRN3NSNUN2NWNVY19Xc3k1T3RwRUNmUUNxeHNF0gHwAUFVX3lxTFBLZWJJMEp1YndlTF9fYVJKeTZtQWFvdFJkbkM3N1NTNVlqSUxiRkRxR3d4cFhmekJ6YThMOVlXdXdQY2VyXzVHM2dfZ2xScFZRT2tTdDl4MmEyRmxkdjFOZmt0cUJ4RVRLdm5FQ0VJeDFjYjJ4dEdPRmJiblhUUFhoRHZjOXl3b2JjQzdtamprOVlqSnhHVDF5RWhYTlVvZENmQzRyQ3RJNnRmMUxDSjJwb280TjhLWDZkM1BMWEZlTlpoMWw2QUVJTGpMdDJEOEZod2JqXzZQQnF2MUFadmMzckxJall6VWpjeWh2Mm9nQQ?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-12T15:21:58.000Z"
+      "publishedAt": "2026-11-12T15:18:01.000Z"
     },
     {
       "id": "65dbe8abae64d22cb6d3",
@@ -647,20 +689,6 @@
       "publishedAt": "2026-11-07T08:00:00.000Z"
     },
     {
-      "id": "2d71920c22d5a115be88",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Nuevas reglas para pagos con tarjetas de crédito y débito en Ecuador: comercios no podrán cobrar recargos, entre otros cambios",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd1hzQkt4Q1V4emlNLXBITDRsVTNvbUFxY1dVQ2hGN3N2eU5ZaHgwUG1IOTAxUGlwMkp1RFBfUExOeUdLbXdVaERKSkNUakI3OFZScXc4QTFnQmpPbUl4UDNhZVh1VkpwcnhPOVgtRWVaY3J4eUxrYlJOMnA1T0ZRbDNPeUYwQzhrQVFrOTdwMWVpVnFnakdkRUo0cmdwRlky?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-07T08:00:00.000Z"
-    },
-    {
       "id": "ad04219779f4500cd288",
       "sourceId": "latamlist",
       "category": "latam",
@@ -885,20 +913,6 @@
       "publishedAt": "2026-10-30T09:11:00.000Z"
     },
     {
-      "id": "a6c052e9ec5d210f34c0",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "El fraude más allá de las aplicaciones: fintechs y el reto de proteger al usuario",
-      "excerpt": "Las fintechs deben complementar sus controles tecnológicos con educación al usuario y mecanismos de cooperación para detectar y prevenir fraudes. Llamadas y SMS continúan teniendo éxito.... Leer más... La entrada El fraude más allá de las aplicaciones: fintechs y el reto de prote",
-      "url": "https://iupana.com/2026/10/29/el-fraude-mas-alla-de-las-aplicaciones/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-29T17:52:37.000Z"
-    },
-    {
       "id": "cc075963c930ac66f9ef",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -911,6 +925,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T17:23:00.000Z"
+    },
+    {
+      "id": "7d6b2a2c8c91857151d6",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombian fintech FinMaq raises $6.5M Series A",
+      "excerpt": "Colombian fintech FinMaq raised $6.5M in a Series A round led by Accion, with participation from Mundi Ventures…",
+      "url": "https://latamlist.com/colombian-fintech-finmaq-raises-6-5m-series-a/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T16:23:10.000Z"
     },
     {
       "id": "e45a50705c424ef777f4",
@@ -1103,9 +1131,9 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "recentCount": 4
     },
     {
       "id": "bce-junta",
@@ -1114,8 +1142,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 0
     },
     {
@@ -1125,8 +1153,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 8
     },
     {
@@ -1136,8 +1164,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 6
     },
     {
@@ -1147,8 +1175,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 1
     },
     {
@@ -1158,8 +1186,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 0
     },
     {
@@ -1169,8 +1197,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 0
     },
     {
@@ -1180,8 +1208,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 1
     },
     {
@@ -1191,8 +1219,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 8
     },
     {
@@ -1202,8 +1230,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 8
     },
     {
@@ -1213,9 +1241,9 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "recentCount": 3
     },
     {
       "id": "latam-bloomberg",
@@ -1224,8 +1252,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 8
     },
     {
@@ -1235,7 +1263,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1246,9 +1274,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "recentCount": 5
     },
     {
       "id": "finextra-payments",
@@ -1257,7 +1285,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1268,7 +1296,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1279,8 +1307,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T02:07:45.712Z",
-      "lastSuccessAt": "2026-11-16T02:07:45.712Z",
+      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 10
     }
   ]
