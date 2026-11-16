@@ -1,76 +1,62 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-16T09:43:40.144Z",
+  "generatedAt": "2026-11-16T20:29:10.139Z",
   "stories": [
     {
-      "id": "68e6084d0d9813b48e4d",
+      "id": "13953dd1a3e0a176cd53",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Nuvei Says Merchants Need Their Own AI Shopping Agents",
-      "excerpt": "Watch more: The Prompt Economy With Advait Sinha of Nuvei Merchants preparing to sell to artificial intelligence (AI) agents have two decisions to make: how much of the customer relationship they’ll surrender, and how much responsibility they’ll accept when an agent buys somethin",
-      "url": "https://www.pymnts.com/connectedeconomy/2026/nuvei-says-merchants-need-their-own-ai-shopping-agents/",
+      "title": "Starling Founder Launches Agentic AI-Focused Bank Lockwood",
+      "excerpt": "The founder of British neobank Starling is reportedly embarking on an artificial intelligence (AI)-focused banking venture. Anne Boden is using some of the proceeds from selling her shares in her former company to help launch her new startup Lockwood, The Times reported Sunday (N",
+      "url": "https://www.pymnts.com/news/banking/2026/starling-founder-launches-agentic-ai-focused-bank-lockwood/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-16T09:03:33.000Z"
+      "publishedAt": "2026-11-16T20:02:41.000Z"
     },
     {
-      "id": "4886a4f06dcf5b44cd4d",
+      "id": "f84c9677249bc79100fb",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Google and Nvidia Bring Banks to AI’s Checkout Test",
-      "excerpt": "Google is giving shoppers more help deciding which payment method to use. Nvidia is working with banks on technology designed to keep AI agents within prescribed limits. Together, those developments point toward a banking challenge that reaches from winning a card transaction to ",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/google-and-nvidia-bring-banks-to-ais-checkout-test/",
+      "title": "Supreme Court Leaves Custodia Bank Locked Out of Federal Reserve Payment System",
+      "excerpt": "The U.S. Supreme Court denied Custodia Bank’s request that the court hear the company’s appeal in which it attempted to gain access to the Federal Reserve payment system, Bloomberg reported Monday (Nov. 16). The Supreme Court’s decision left untouched a federal appeals court deci",
+      "url": "https://www.pymnts.com/legal/2026/supreme-court-leaves-custodia-bank-locked-out-of-federal-reserve-payment-system/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-16T09:02:26.000Z"
+      "publishedAt": "2026-11-16T18:21:54.000Z"
     },
     {
-      "id": "40b32b3f6624145ce882",
+      "id": "8ebff9313eda37fa08c0",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "More Gaming Payout Options Don’t Guarantee Faster Cashouts",
-      "excerpt": "Roughly seven in 10 recipients of winnings chose instant delivery when they had the option, according to a PYMNTS Intelligence and Ingo Payments report. But the wait for a player who taps “withdraw” can begin well before a payment is sent. BetMGM, for example, says it can take up",
-      "url": "https://www.pymnts.com/real-time-payments/2026/more-gaming-payout-options-dont-guarantee-faster-cashouts/",
+      "title": "ECB Warns Rapid AI Expansion Threatens EU Financial Stability",
+      "excerpt": "A European Central Bank official is warning that rapid artificial intelligence (AI) expansion could threaten the region’s financial stability. AI stock market valuations remain stretched and the risk of a repricing has risen, European Central Bank Vice President Boris Vujčić said",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/ecb-warns-rapid-ai-expansion-threatens-eu-financial-stability/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-16T09:00:45.000Z"
+      "publishedAt": "2026-11-16T17:24:44.000Z"
     },
     {
-      "id": "26334ff37de11c38ff99",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Gen Z Turns to AI to Navigate Homebuying",
-      "excerpt": "First-time buyers are turning to artificial intelligence to shortlist homes, often before they call an agent or visit a lender’s site. The real estate industry is adapting. Case in point: Bank of America found in its 2026 Homebuyer Insights Report that 20% of prospective buyers a",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/gen-z-turns-to-ai-to-navigate-homebuying/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "id": "b8de8cf8d60c9d33bcec",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Reporte Interactivo Semanal de Tasas de Interés. 05 al 11 de Noviembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-16T09:00:06.000Z"
-    },
-    {
-      "id": "d6275bbda319516f0f5b",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Building the Intelligent Card Platform",
-      "excerpt": "Card issuing is moving faster. Legacy infrastructure can make it harder to keep up. Modernization gives financial institutions a practical path to greater flexibility, faster innovation and the connected foundation needed for intelligent issuing.",
-      "url": "https://www.pymnts.com/report/tracker/building-the-intelligent-card-platform/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-16T09:00:00.000Z"
+      "language": "es",
+      "publishedAt": "2026-11-16T12:00:00.000Z"
     },
     {
       "id": "4ac490873f03c9ada43a",
@@ -507,20 +493,6 @@
       "publishedAt": "2026-11-10T21:10:30.000Z"
     },
     {
-      "id": "d63900c6cf28fc6d7c74",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "BPC celebra 13 años de colaboración con Banco BHD impulsando la modernización de los pagos en República Dominicana",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNLWhQRVJEa2o5OHhIa3dtUkRqUFdlaXJZaTlxeXNTX204OVc4WE1hU1VaUTFLNEszb1lTYk9McmZfS3JTY1VmbFJTZFh0LXdUWDRFZUNBQU54WFFERFBfTDlJR1JiTVRZdTd6VEt4ZnNkOVIxOV9UWTNFcXlNeTNlMTViVVlfenRFTEFQd3VvQVgzOTdpRFd5VXMtQkYxUjNpWHhNaHdqT3lHNVlIcE1VNUZGcXhQTTVleXRrUzE3NHJQWkF2ZXQyTVpOU1RvcmRjRmJOcDZ3RVNHYm1IOWNWU2E2bThidw?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-10T20:44:01.000Z"
-    },
-    {
       "id": "d3f373c56758aedae25d",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -577,6 +549,20 @@
       "publishedAt": "2026-11-10T00:01:00.000Z"
     },
     {
+      "id": "bd8c2f984cb486c36ca5",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "BanCoppel y tapi se alían en México para habilitar el pago de servicios y recargas móviles desde la app del banco",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQREdvbEhFUXJrZ3k1c1ZkTHlCMG1FbE1aYnE4TVoyRU1IWHV6T3kycEkxeV9NajcteDM0RmxwQWFINUY2eExSZzdXcGlaczhNLXE1dHdkSW5LcVZjMkx6cmV2RXFaRExHc3V1MFM3TnZrVjhHaTBmaWdXdWxGM1VwV1pMeG1MY1diMnNtb3hpMy1FZmd1X3N2SHRDdzlzTV81ZUZJc3VYMzdkSjdCa3JXWVNsQnM1bERaU1FVakluS1N1VklDQkhkMk02ZGx1OHRsUER1ZkZ1NVNLUXNrc25BS1dqWFU?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T21:14:42.000Z"
+    },
+    {
       "id": "d565bc5cf57f73d94538",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -603,20 +589,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-09T17:21:46.000Z"
-    },
-    {
-      "id": "b8de8cf8d60c9d33bcec",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Semanal de Tasas de Interés. 29 de Octubre al 04 de Noviembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-09T12:00:00.000Z"
     },
     {
       "id": "c66c650bf8605b48c81a",
@@ -658,7 +630,7 @@
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-08T20:38:41.000Z"
+      "publishedAt": "2026-11-08T08:00:00.000Z"
     },
     {
       "id": "bd478c58ac0f13465e8e",
@@ -1130,8 +1102,8 @@
       "category": "ecuador",
       "kind": "news",
       "url": "https://news.google.com/",
-      "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "status": "error",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 4
     },
@@ -1142,8 +1114,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1125,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1136,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1147,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1158,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 0
     },
     {
@@ -1196,8 +1168,8 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
-      "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "status": "error",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 0
     },
@@ -1207,8 +1179,8 @@
       "category": "regulacion",
       "kind": "news",
       "url": "https://news.google.com/",
-      "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "status": "error",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-16T09:43:40.144Z",
       "recentCount": 1
     },
@@ -1219,8 +1191,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 8
     },
     {
@@ -1230,8 +1202,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1213,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 3
     },
     {
@@ -1252,8 +1224,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 8
     },
     {
@@ -1263,7 +1235,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1274,9 +1246,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1285,7 +1257,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1296,7 +1268,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1307,8 +1279,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-16T09:43:40.144Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "checkedAt": "2026-11-16T20:29:10.139Z",
+      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
       "recentCount": 10
     }
   ]
