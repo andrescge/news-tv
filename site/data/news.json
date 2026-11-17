@@ -1,90 +1,216 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-17T13:26:33.658Z",
+  "generatedAt": "2026-11-17T22:24:02.624Z",
   "stories": [
     {
-      "id": "5c7a912da1c97d37a59d",
+      "id": "6f8145f04196e54a4429",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Instant Payments Give CFOs a Choice About When to Pay",
-      "excerpt": "Watch more: What’s Next in Payments With John Moodie of Tungsten Automation Business payments have been traditionally defined by what they’re not. They’re not simple, they’re not easy, and they’re certainly not fast. As a result, and for decades, the business payments industry ha",
-      "url": "https://www.pymnts.com/real-time-payments/2026/instant-payments-give-cfos-a-choice-about-when-to-pay/",
+      "title": "From Microsoft to JPMorgan, Corporate America Is Building the Future on Technology It Can’t Afford to Break",
+      "excerpt": "It’s been a week of back-to-back cyber chaos across aviation, banking and enterprise software. And the disruptions are showing no sign of stopping, as on Tuesday (Nov. 17), Apple confirmed new outages impacting its iCloud, Apple Support, Apple Pay and App Store services. Apple’s ",
+      "url": "https://www.pymnts.com/technology/2026/from-microsoft-to-jpmorgan-corporate-america-is-building-the-future-on-technology-it-cant-afford-to-break/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T09:03:30.000Z"
+      "publishedAt": "2026-11-17T22:01:40.000Z"
     },
     {
-      "id": "a977651b6feab602e1ba",
+      "id": "82f155a7dd813d76e881",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Better Rewards Could Move Credit Unions to First Choice",
-      "excerpt": "Credit unions already count some of the people they’re trying to win as primary customers among their members. Better rewards would make 39% of members who bank mainly elsewhere more likely to choose a credit union as their primary financial institution, according to PYMNTS Intel",
-      "url": "https://www.pymnts.com/credit-unions/2026/better-rewards-could-move-credit-unions-to-first-choice/",
+      "title": "Qonto Wins European Banking License and Targets Small Business Lending",
+      "excerpt": "Qonto, a financial solution for small and medium-sized businesses (SMBs) and freelancers, has secured a banking license from French regulator ACPR and the European Central Bank, the company said in a Tuesday (Nov. 17) post on LinkedIn. The banking license marks “a new chapter” fo",
+      "url": "https://www.pymnts.com/news/banking/2026/qonto-wins-european-banking-license-and-targets-small-business-lending/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T09:01:25.000Z"
+      "publishedAt": "2026-11-17T21:16:29.000Z"
     },
     {
-      "id": "521e3e9224738f172c21",
+      "id": "42e7ab1aa8aa001bdcc6",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "47% of Financial Institutions Cite Disconnected Systems as a Payments Barrier",
-      "excerpt": "Banks are preparing to take more of the decision-making out of customers’ payments, with 35% of financial institutions planning centralized systems to coordinate how money moves. That finding, cited in the PYMNTS Intelligence report “Why Multi-Rail Strategy Is Banking’s Next Comp",
-      "url": "https://www.pymnts.com/news/banking/2026/47percent-of-financial-institutions-cite-disconnected-systems-as-a-payments-barrier/",
+      "title": "PNC Bank Lets Customers Get Paid Two Days Early",
+      "excerpt": "PNC Bank launched a feature designed to let eligible clients get paid earlier, according to a Tuesday (Nov. 17) press release. Early Pay gives customers access to qualifying direct deposits up to two business days before their scheduled payday, per the release. PNC began a phased",
+      "url": "https://www.pymnts.com/back-office/payroll/2026/pnc-bank-lets-customers-get-paid-two-days-early/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T09:00:36.000Z"
+      "publishedAt": "2026-11-17T20:58:21.000Z"
     },
     {
-      "id": "42680170027d75a84b54",
+      "id": "187bd7ab38692ff05924",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Apple Taps 26-Year Insider Corey Fugman to Lead Apple Pay and Wallet",
-      "excerpt": "Apple has tapped its senior director of Apple Pay and Wallet, Corey Fugman, to lead that payment service and digital wallet unit, Bloomberg reported Monday (Nov. 16), citing unnamed sources. Fugman succeeds Jennifer Bailey, who is retiring from Apple but will serve as a consultan",
-      "url": "https://www.pymnts.com/news/payment-methods/mobile-payments/2026/apple-taps-26-year-insider-corey-fugman-to-lead-apple-pay-and-wallet/",
+      "title": "JPMorgan Builds One AI Model to Catch 85% More Fraud",
+      "excerpt": "JPMorganChase has built one artificial intelligence model to handle fraud detection, authorization prediction and payment retries, three jobs that draw on much of the same transaction data. Building a separate model for each one means teaching every model the same payment pattern",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/jpmorgan-builds-one-ai-model-to-catch-85-more-fraud/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T01:15:30.000Z"
+      "publishedAt": "2026-11-17T20:54:59.000Z"
     },
     {
-      "id": "47bfdd713841effecf39",
+      "id": "d0b66b66b2cc66f60906",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Crypto Traders Cash Out Stablecoins as Bitcoin Hits 4-Month Low",
-      "excerpt": "The stablecoin sector’s market capitalization has shrunk by about $12 billion over the past 30 days, largely driven by cryptocurrency traders converting the dollar-pegged tokens into dollars and other traditional currencies and cashing out, Bloomberg reported Monday (Nov. 16). Th",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/crypto-traders-cash-out-stablecoins-as-bitcoin-hits-4-month-low/",
+      "title": "KeyBank and Zact Team to Launch Spend Management Platform",
+      "excerpt": "KeyBank has launched a new partnership with spend management company Zact. This collaboration has yielded KeyExpenseIQ, a commercial spend management platform that combines commercial card management and expense management for KeyBank’s commercial clients, the companies said in a",
+      "url": "https://www.pymnts.com/news/b2b-payments/2026/keybank-and-zact-team-to-launch-spend-management-platform/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T01:14:09.000Z"
+      "publishedAt": "2026-11-17T20:39:36.000Z"
     },
     {
-      "id": "b2631fe87a5a3bdaf4c3",
+      "id": "339cc43005c846a8138d",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Visa and Mastercard Hearing Puts Premium Card Pilots on the Line",
-      "excerpt": "Visa and Mastercard asked U.S. District Judge Brian Cogan on Monday (Nov. 16) to grant final approval to a swipe fee settlement opposed by Walmart, Circle K and the National Retail Federation. Cogan ended the Brooklyn hearing without ruling. If he approves the deal as drafted, re",
-      "url": "https://www.pymnts.com/credit-cards/2026/visa-and-mastercard-hearing-puts-premium-card-pilots-on-the-line/",
+      "title": "Model ML Raises $250 Million for AI Banking Tools",
+      "excerpt": "Model ML, a startup that makes artificial intelligence tools for banks, consulting firms and asset managers, is now a $1.5 billion company after raising $250 million, according to a Tuesday (Nov. 17) press release. The new funding will allow Model ML to expand its research and en",
+      "url": "https://www.pymnts.com/startups/2026/model-ml-raises-250-million-dollars-ai-banking-tools/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T00:56:22.000Z"
+      "publishedAt": "2026-11-17T20:25:24.000Z"
+    },
+    {
+      "id": "a0ff002ff661649aadf6",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa and Coda Team to Give Gamers More Payment Choice",
+      "excerpt": "Visa has launched a partnership with the online gaming payments company Coda. The five-year collaboration, announced Tuesday (Nov. 17), is designed to help boost the growth of gaming commerce across Southeast Asia. “Gaming is global, but the way people pay remains deeply local,” ",
+      "url": "https://www.pymnts.com/partnerships/2026/visa-and-coda-team-to-give-gamers-more-payment-choice/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T20:11:20.000Z"
+    },
+    {
+      "id": "5241ac4a86dc55a606ac",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech chilena Toku solicita licencia de subadquirencia ante el regulador tras reorganizar su estructura empresarial",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVVBrN3NqYzd5Vm5vV0U1Rko2WjdiM0RzWEhZWXpTcGl5MEtTbFFpUGttRjdkMGh1Y01yTnpNMEQzX0lUdkZvdmhJSkpaTjlvQ0R4WWRJOTZLUmVTVkZ0R2s1Qkx1cGcxV3Y2S1pQNmtvbTVrME1mbWpZUGpYNzZ4S29tVG1pTGp3UUdWRkEwdGZEelJYWDR6WVAtdWdxZ3hOaFZRNjFnRUthLXJlS3BJXzdzT1dLSW4wUkRPb01qXy1USjZOWlh3VmZvelZRNHNycnVCeWtIYVpkWjA0b2tsN1FHa3hFQ2Rtdnc?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T19:17:26.000Z"
+    },
+    {
+      "id": "443352e3bdae5e279ccf",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Colombian fintech Akua secures investment from Itaú Unibanco",
+      "excerpt": "Colombian fintech Akua secured an investment from Itaú Ventures. The investment amount was not disclosed. The investment follows…",
+      "url": "https://latamlist.com/colombian-fintech-akua-secures-investment-from-itau-unibanco/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T19:01:42.000Z"
+    },
+    {
+      "id": "7a69457cd89aa87ea97b",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Fintech ecuatoriana Captec y Coltefinanciera se alían para ampliar la oferta de medios de pago en Colombia",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNd0FsaG1RV2VlUGRRMXVHUHBGUmhnRFhwTDcxLVF3bnBSUmdVaDgzblI2NVA0dWhlOUppWFdFTUlFUmRvTG16amM4Y3Jtb3FxOUpibGVQU3YycUxSaXVhTER2d0dFdXRmWE8zT3FWNHpGaVA5Ml9UcnVQbWpza0I2V2dDVmg0Qk5jV1JTcUtBZTVnNUIzaXltaExYaU1oM3VSUEM2VmUtUVZLSkhmekxXYnF3TzEtMmxzYkpBd256MmdCZ1kwaXBTOVZOWktsQnpVVHB3NHpCbktEcW8?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T17:24:34.000Z"
+    },
+    {
+      "id": "c8a21475bb1b0d62d826",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank recibe aprobación del Banco Central de Brasil para adquirir el banco de inversión Porto Real y obtiene su licencia bancaria",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxNUXNOSTFqTGJQaWZyMUFBc19vU3hOQUl1QUF3b1dyRmhyblBhUHIyT0dPS2hRTUduMkpkUkU3dy1MT3ZISTNqLW5welhIYVM0QV9mTDh2Tk5lRWwzdWttMDFzblJKSWRkcTA2ZTFESVgzRUpMRjVEYzhWcVI3NmoxWGZRQi1jYV8wbmt2RUp6QmV4TDFuQWFQa21VUXVYTFlnTHgwMEcyV2VlMFd5OGNIUXp5VGtPa1lselVzZFRTQW94OTVNVHQxUld3UkdxZUMydXh5N2JWa01Rb25FQWFNWmdHamhsdUtpNTRwZHdhc1JjMVNkOUMyUFRZcw?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T17:24:34.000Z"
+    },
+    {
+      "id": "015c6d590e3e071703ed",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Paytech Akua recibe inversión de Itaú Ventures para impulsar la inteligencia artificial en la adquirencia en Uruguay y Latam",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNWowaE5FMDN6OEFNWk16WmxxUFZxNHRiQTkzV2dJcDJBMGg3aUVJVV81UVJiWjA0Zl9hWmJpLWVrRDg4Z0lfVUhSbHBmZTFSWlVpOVdlUTZXLUxzbEc0XzFqNy1MS25XOExkYjQ1RUFiM29MQ3hjR3R6WExiU01sYU9VRlhmbWswTENmTmEtTWZvaVl5R1VTaE5nTUdLY2NRcUxhT01zb3RsMnBtd2lwNXdYMk5sM2wwaF85SjdtemRyTy1idjZvTGl5Qy1HbURTWFN4Y09oSHJpMDR5VEVTdFNMVU9JdHVTalF5TlBSOGlFX2c?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T15:02:00.000Z"
+    },
+    {
+      "id": "a7ee956d86d99dda402e",
+      "sourceId": "chainalysis",
+      "category": "cripto",
+      "kind": "analysis",
+      "title": "Refugees, ATMs, and Tax Shifts: What’s Driving Crypto in Eastern Europe",
+      "excerpt": "Summary Eastern Europe’s crypto economy fell 7.9% to $642.1 billion, the weakest performance of any region we study. Countries with…",
+      "url": "https://www.chainalysis.com/blog/eastern-europe-crypto-adoption-2026/",
+      "source": "Chainalysis",
+      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T13:55:51.000Z"
+    },
+    {
+      "id": "59b3e15f1662a45151eb",
+      "sourceId": "bce-publicaciones",
+      "category": "regulacion",
+      "kind": "official",
+      "title": "Boletín Monetario Semanal. 13 de Noviembre 2026",
+      "excerpt": "",
+      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_954_13112026.pdf",
+      "source": "BCE · Datos financieros",
+      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-17T12:00:00.000Z"
+    },
+    {
+      "id": "a165697ca7f2b447374d",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "El BCE impulsó la comercialización responsable de oro con jornadas de capacitación en tres provincias del país",
+      "excerpt": "Un total de 157 actores del sector minero participaron en tres jornadas de capacitación organizadas por el Banco Central del Ecuador (BCE), entre el 9",
+      "url": "https://www.bce.fin.ec/el-bce-impulso-la-comercializacion-responsable-de-oro-con-jornadas-de-capacitacion-en-tres-provincias-del-pais/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-17T12:00:00.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -115,6 +241,20 @@
       "publishedAt": "2026-11-13T20:30:25.000Z"
     },
     {
+      "id": "ea1a2724c78e5b54dbf1",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Palomma raises $14M to expand rental payment platform",
+      "excerpt": "Colombian fintech Palomma raised $14M, including a $10M Series A led by Mexican VC firm Cometa and a…",
+      "url": "https://latamlist.com/palomma-raises-14m-to-expand-rental-payment-platform/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T18:30:55.000Z"
+    },
+    {
       "id": "3b342d302e874932a65b",
       "sourceId": "finextra-payments",
       "category": "pagos",
@@ -127,6 +267,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-13T18:28:00.000Z"
+    },
+    {
+      "id": "539c9aed695eb3df17d5",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Cocos raises $34M at $508M valuation",
+      "excerpt": "Argentine fintech Cocos raised $34M reaching a valuation of $508M. Kaszek led the round, with participation from Spice…",
+      "url": "https://latamlist.com/cocos-raises-34m-at-508m-valuation/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-13T17:24:02.000Z"
     },
     {
       "id": "b573e3206fd28abe3cbc",
@@ -283,6 +437,20 @@
       "publishedAt": "2026-11-12T22:07:03.000Z"
     },
     {
+      "id": "582a5a17e282097e11bc",
+      "sourceId": "latam-bloomberg",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nubank supera las previsiones de ganancias impulsado por Brasil y su expansión hacia nuevos mercados",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQdVRGdzJ4ekhWckxXS2xXeDM5NkxFU0VTeV9oRnNrX0FOUUxlY1pjSjhxUE9DZjZfT1A1VWp6ZVYxRWZhcEtQbTFZVVAtVDBTZk5CcFNnVGhibVVaMEpTQ05VSDJTYUp0U2hLVGJ0a3BwWnBFeHdRS1RqOWtBb2VyblNSaE5RMExOMk1obHRNS2ZxTFZEUy16bGhqSkhTTW9Ob2pFOGFYeXF3UnBzcmE3SDZQLV9TWUFKY0NfSGgweWctcDFZMUtQVHA5eFZyZVdjaFR4NkZEYk3SAewBQVVfeXFMUEpkQ0ZPbk40T0l6RnhhcU1BSndpSXVjQ0gwY01tZFBiVm1GSWhvR2dVZ3RKQVlwb0JPOERYUVBidThibVBXSXEtWnVESWN2WkFtY3lnNkQtOF8wLWo0MjVBeHZ4azNNd28zcnlSV0w4Y3FiRHpnVE82Z25RZU9TSmxhNnFrRWtwVnh4UkZPdmp4MDVIZ2htRUlsbWJPSWFVazZPaERPd3NTQXNXUFNHR2VmdkVuQ0JYWE00bmtydE5Ca1Q2ZjlCY3EyVDBfM00zckZ4ZnRlUW4xMW9kRFBaaXgzLTJNVTRPQ1JIQTU?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-12T21:24:00.000Z"
+    },
+    {
       "id": "2b4f77e79eac3c356de2",
       "sourceId": "finextra-latam",
       "category": "latam",
@@ -323,6 +491,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-12T18:19:00.000Z"
+    },
+    {
+      "id": "0a4d8cec887c5c8006f6",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Nova raises $24M Series A led by Canaan",
+      "excerpt": "Brazilian fintech Nova raised $24M in a Series A round led by Canaan, with participation from Propel Venture…",
+      "url": "https://latamlist.com/nova-raises-24m-series-a-led-by-canaan/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-12T18:06:51.000Z"
     },
     {
       "id": "b21626bd69f2e340e406",
@@ -381,6 +563,20 @@
       "publishedAt": "2026-11-12T14:41:00.000Z"
     },
     {
+      "id": "2cf6262d8e01dfc02762",
+      "sourceId": "latamlist",
+      "category": "latam",
+      "kind": "news",
+      "title": "Conta Azul acquires PlayBPO to expand financial outsourcing services",
+      "excerpt": "Brazilian financial management software company Conta Azul, acquired PlayBPO for an undisclosed amount. This is Conta Azul’s second…",
+      "url": "https://latamlist.com/conta-azul-acquires-playbpo-to-expand-financial-outsourcing-services/",
+      "source": "LatamList",
+      "sourceUrl": "https://latamlist.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T19:03:37.000Z"
+    },
+    {
       "id": "b553ed952d27d536b3b9",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -388,20 +584,6 @@
       "title": "Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMl81NzA2WGJvZzd6M2JVS0FZeW9Uc1dra1hla2VvTEs4WDEyZ1lPNGczcUsxRnNKa0Y5TmhSYUowRW5IVUZuUHA4cmVyTVFodkRXUFlsUVhSbWo5WFpkX05haV8yWENtb1NHOU96TlE5eEp6OU1kSktidlNBQzZWRUFHVGxUZ2ZfR2hWN0dVUDVrd2Vjd2JoRC01YXhXaDNIMFVsVUtDalJfQVZjT2JOZk5BVGdaUU9tc1VXclR4QmZXNzR2NjlhRjF1OVV3Q05iTFlRSmlUTzRaSnp5TUlmN0YwM0d1SGl4VWNYcXpyRnQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-11T16:24:34.000Z"
-    },
-    {
-      "id": "2e99eae9058f14470d7c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -479,20 +661,6 @@
       "publishedAt": "2026-11-11T03:19:25.000Z"
     },
     {
-      "id": "a54c0ed17945b5b79432",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Movantis se integra con Stellar Network para ampliar su infraestructura de pagos transfronterizos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNWEtHc3F4YXFYWlhZblNJMTB1OGVUNUExSnpOTWtDU2k5NFFVQ3RRSkU4MDVSRDlJSEh6bHh4Ql96bHQzbG9KaXFYN19MWHRDaVB6UnM3OG5RVVlxVWRta1NRbkl0amJ3TGZrMXNYSGtUb1BjZXZMZUJnUXpHREJ5UlMxaGFuRjItNXpmODc4MXdoS2RmdkpEMW9WZVluLXZ0R1I3QjhQOVNURG5aYmdNaHU4WkEyd0gyRWRFWVhCRmlnWW93R1FaZ2hjbTNvYjg?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-10T23:22:36.000Z"
-    },
-    {
       "id": "782fd3c77ff40d74e1cc",
       "sourceId": "latamlist",
       "category": "latam",
@@ -535,20 +703,6 @@
       "publishedAt": "2026-11-10T21:10:30.000Z"
     },
     {
-      "id": "d3f373c56758aedae25d",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Paytech colombiana zulu conecta su infraestructura de pagos con Swift para facilitar cobros y pagos en 155 países",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQQUFuNk13TURTRTZkX0ZEWkFPZG5qRVE5NFk1MDhKNnB4LU0wcHJaMV9XQ0VTclhhZkI3OGszdWZfRm5yajZpcHlJSFZiOXhWbFJ3WTY0akdkSzNkcVl1d3dlZV9Way1NakRvdmxfZzViWWI3Mlo5bWg3bjEwSW1Maks2Y3QxOUNKMG5TMHlUTmtvSTFTTkxQWUxBVGNYZDNfY21IRV85RkU1MlhuSFBabTJERFVqV2w5dEwxNWxMWi1VYjJwUjczOEpOS05uTUlDMk9hSVpYa1JBQ3ZOVWo5WmpJUE0?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-10T20:32:03.000Z"
-    },
-    {
       "id": "2c893398280142f30012",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -589,20 +743,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-10T00:01:00.000Z"
-    },
-    {
-      "id": "bd8c2f984cb486c36ca5",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "BanCoppel y tapi se alían en México para habilitar el pago de servicios y recargas móviles desde la app del banco",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQREdvbEhFUXJrZ3k1c1ZkTHlCMG1FbE1aYnE4TVoyRU1IWHV6T3kycEkxeV9NajcteDM0RmxwQWFINUY2eExSZzdXcGlaczhNLXE1dHdkSW5LcVZjMkx6cmV2RXFaRExHc3V1MFM3TnZrVjhHaTBmaWdXdWxGM1VwV1pMeG1MY1diMnNtb3hpMy1FZmd1X3N2SHRDdzlzTV81ZUZJc3VYMzdkSjdCa3JXWVNsQnM1bERaU1FVakluS1N1VklDQkhkMk02ZGx1OHRsUER1ZkZ1NVNLUXNrc25BS1dqWFU?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-09T21:14:42.000Z"
     },
     {
       "id": "d565bc5cf57f73d94538",
@@ -703,20 +843,6 @@
       "publishedAt": "2026-11-07T08:00:00.000Z"
     },
     {
-      "id": "ad04219779f4500cd288",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Equity Link secures $53M in financing from BBVA Spark",
-      "excerpt": "Mexican fintech Equity Link secured $53M in financing from BBVA Spark. Founded 11 years ago, Equity Link provides…",
-      "url": "https://latamlist.com/equity-link-secures-53m-in-financing-from-bbva-spark/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T22:52:07.000Z"
-    },
-    {
       "id": "f59e5476d16a0f7408c2",
       "sourceId": "finextra-crypto",
       "category": "cripto",
@@ -743,34 +869,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-05T12:00:00.000Z"
-    },
-    {
-      "id": "34fedc15535f48a3c62c",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Bloquo raises $3.7M seed round",
-      "excerpt": "Brazilian fintech Bloquo raised $3.7M in a seed round co-led by Crescera Capital and Triaxis Capital, with participation…",
-      "url": "https://latamlist.com/bloquo-raises-3-7m-seed-round/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T20:53:54.000Z"
-    },
-    {
-      "id": "da091334d210f5a9808b",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Takenos raises $7M seed extension to expand across Latin America",
-      "excerpt": "Argentine fintech Takenos raised $7M in a seed extension led by North Island Ventures and Road Capital Management,…",
-      "url": "https://latamlist.com/takenos-raises-7m-seed-extension-to-expand-across-latin-america/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T18:59:24.000Z"
     },
     {
       "id": "f1613bf02d482febd589",
@@ -813,20 +911,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-03T00:01:00.000Z"
-    },
-    {
-      "id": "dcb165641b954a3d0905",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Clip acquires Pulpos to expand business management services",
-      "excerpt": "Mexican fintech unicorn Clip acquired Pulpos, a cloud based business management platform, for an undisclosed amount. Founded in…",
-      "url": "https://latamlist.com/clip-acquires-pulpos-to-expand-business-management-services/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T23:30:07.000Z"
     },
     {
       "id": "06c80af9de4f00f057a4",
@@ -885,20 +969,6 @@
       "publishedAt": "2026-10-30T12:00:00.000Z"
     },
     {
-      "id": "102b089b1dd2cfca6cbe",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "¿Adiós código Swift? BCP de Perú explora pagos internacionales con alias",
-      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú explora pagos internacionales con alia",
-      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T11:00:19.000Z"
-    },
-    {
       "id": "38b0708e38f04f54ed3b",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -941,20 +1011,6 @@
       "publishedAt": "2026-10-29T17:23:00.000Z"
     },
     {
-      "id": "7d6b2a2c8c91857151d6",
-      "sourceId": "latamlist",
-      "category": "latam",
-      "kind": "news",
-      "title": "Colombian fintech FinMaq raises $6.5M Series A",
-      "excerpt": "Colombian fintech FinMaq raised $6.5M in a Series A round led by Accion, with participation from Mundi Ventures…",
-      "url": "https://latamlist.com/colombian-fintech-finmaq-raises-6-5m-series-a/",
-      "source": "LatamList",
-      "sourceUrl": "https://latamlist.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T16:23:10.000Z"
-    },
-    {
       "id": "e45a50705c424ef777f4",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -967,20 +1023,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T06:55:01.000Z"
-    },
-    {
-      "id": "104b18d380385b4e0648",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "analysis",
-      "title": "Treasury Sanctions Russians, North Koreans supporting DPRK IT Worker Fraud",
-      "excerpt": "Summary OFAC sanctioned Russian and DPRK nationals that targeted U.S. businesses with fraudulent IT workers, generating cryptocurrency proceeds to fund…",
-      "url": "https://www.chainalysis.com/blog/ofac-sanctions-dprk-it-worker-fraud/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T19:16:14.000Z"
     },
     {
       "id": "3e3bafe34c9015ece399",
@@ -1020,20 +1062,6 @@
       "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_951_23102026.pdf",
       "source": "BCE · Datos financieros",
       "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-27T12:00:00.000Z"
-    },
-    {
-      "id": "c58478dbe7edd3123d5e",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "El BCE inicia en Paute el programa “100 años, 100 ciudades: Banco Central cerca de ti”",
-      "excerpt": "El programa prevé llegar a 100 ciudades de las 24 provincias del país para acercar a la ciudadanía el patrimonio monetario, la educación financiera y",
-      "url": "https://www.bce.fin.ec/el-bce-inicia-en-paute-el-programa-100-anos-100-ciudades-banco-central-cerca-de-ti/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
       "via": "",
       "language": "es",
       "publishedAt": "2026-10-27T12:00:00.000Z"
@@ -1145,8 +1173,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 4
     },
     {
@@ -1156,8 +1184,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 0
     },
     {
@@ -1167,9 +1195,9 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
+      "recentCount": 9
     },
     {
       "id": "bce-boletines",
@@ -1178,8 +1206,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1217,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1228,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1239,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1250,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1261,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 8
     },
     {
@@ -1244,8 +1272,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1283,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 3
     },
     {
@@ -1266,8 +1294,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 8
     },
     {
@@ -1277,7 +1305,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1288,9 +1316,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
+      "recentCount": 7
     },
     {
       "id": "finextra-payments",
@@ -1299,7 +1327,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1310,7 +1338,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1321,8 +1349,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T13:26:33.658Z",
-      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "checkedAt": "2026-11-17T22:24:02.624Z",
+      "lastSuccessAt": "2026-11-17T22:24:02.624Z",
       "recentCount": 10
     }
   ]
