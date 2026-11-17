@@ -1,7 +1,49 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-17T03:54:04.404Z",
+  "generatedAt": "2026-11-17T13:26:33.658Z",
   "stories": [
+    {
+      "id": "5c7a912da1c97d37a59d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Instant Payments Give CFOs a Choice About When to Pay",
+      "excerpt": "Watch more: What’s Next in Payments With John Moodie of Tungsten Automation Business payments have been traditionally defined by what they’re not. They’re not simple, they’re not easy, and they’re certainly not fast. As a result, and for decades, the business payments industry ha",
+      "url": "https://www.pymnts.com/real-time-payments/2026/instant-payments-give-cfos-a-choice-about-when-to-pay/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T09:03:30.000Z"
+    },
+    {
+      "id": "a977651b6feab602e1ba",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Better Rewards Could Move Credit Unions to First Choice",
+      "excerpt": "Credit unions already count some of the people they’re trying to win as primary customers among their members. Better rewards would make 39% of members who bank mainly elsewhere more likely to choose a credit union as their primary financial institution, according to PYMNTS Intel",
+      "url": "https://www.pymnts.com/credit-unions/2026/better-rewards-could-move-credit-unions-to-first-choice/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T09:01:25.000Z"
+    },
+    {
+      "id": "521e3e9224738f172c21",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "47% of Financial Institutions Cite Disconnected Systems as a Payments Barrier",
+      "excerpt": "Banks are preparing to take more of the decision-making out of customers’ payments, with 35% of financial institutions planning centralized systems to coordinate how money moves. That finding, cited in the PYMNTS Intelligence report “Why Multi-Rail Strategy Is Banking’s Next Comp",
+      "url": "https://www.pymnts.com/news/banking/2026/47percent-of-financial-institutions-cite-disconnected-systems-as-a-payments-barrier/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T09:00:36.000Z"
+    },
     {
       "id": "42680170027d75a84b54",
       "sourceId": "pymnts",
@@ -43,34 +85,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-17T00:56:22.000Z"
-    },
-    {
-      "id": "afbe04709f10e79e6754",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "PayPal Tracks $53 Billion in Treasury Cash With an AI Agent",
-      "excerpt": "Ask PayPal’s treasury team where its cash sits, and the answer now comes from a chat window. A Deutsche Bank case study describes how that change unfolded inside the company. The system handles $53 billion in corporate cash and customer funds, and the team once relied on 90 sprea",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/paypal-tracks-53-billion-in-treasury-cash-with-an-ai-agent/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-16T23:21:16.000Z"
-    },
-    {
-      "id": "35494d4dd3569e54cc3f",
-      "sourceId": "pymnts",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Customers Report Problems Accessing Online Accounts at Major Banks",
-      "excerpt": "Customers of at least five major U.S. banks report having difficulty accessing their online accounts Monday (Nov. 16), the Associated Press (AP) reported. The banks include Bank of America, Chase, Truist, U.S. Bank and Wells Fargo, the report said, citing user reports posted on d",
-      "url": "https://www.pymnts.com/news/banking/2026/customers-report-problems-accessing-online-accounts-at-chase-bank-of-america-and-wells-fargo/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-16T22:01:32.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -1131,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 4
     },
     {
@@ -1142,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 0
     },
     {
@@ -1153,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 8
     },
     {
@@ -1164,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 6
     },
     {
@@ -1175,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 1
     },
     {
@@ -1186,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 0
     },
     {
@@ -1196,9 +1210,9 @@
       "category": "regulacion",
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
-      "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-16T09:43:40.144Z",
+      "status": "ok",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 0
     },
     {
@@ -1208,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 1
     },
     {
@@ -1219,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 8
     },
     {
@@ -1229,9 +1243,9 @@
       "category": "latam",
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
-      "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
+      "status": "ok",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 8
     },
     {
@@ -1241,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 3
     },
     {
@@ -1251,10 +1265,10 @@
       "category": "latam",
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
-      "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-16T20:29:10.139Z",
-      "recentCount": 5
+      "status": "ok",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "recentCount": 8
     },
     {
       "id": "finextra-latam",
@@ -1263,7 +1277,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 1
     },
@@ -1274,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1285,7 +1299,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 12
     },
@@ -1296,7 +1310,7 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "error",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
       "lastSuccessAt": "2026-11-14T17:08:04.895Z",
       "recentCount": 8
     },
@@ -1307,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-17T03:54:04.404Z",
-      "lastSuccessAt": "2026-11-17T03:54:04.404Z",
+      "checkedAt": "2026-11-17T13:26:33.658Z",
+      "lastSuccessAt": "2026-11-17T13:26:33.658Z",
       "recentCount": 10
     }
   ]
