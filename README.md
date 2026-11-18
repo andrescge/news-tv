@@ -24,12 +24,19 @@ El recopilador une varios feeds RSS y las páginas públicas de boletines del BC
 | Canal | Qué entra |
 | --- | --- |
 | Ecuador financiero | Boletines del BCE y resultados de Google News atribuidos a Primicias, El Universo, Expreso o Bloomberg Línea. Los medios deben coincidir con términos financieros y contexto ecuatoriano. |
-| Autoridades EC | Boletines de la Junta del BCE, datos monetarios y financieros oficiales del BCE, entradas de SEPS, Superintendencia de Bancos y Supercias, y cobertura de medios seleccionados sobre esas autoridades. Las noticias de medios se identifican como tales y no como documentos oficiales. |
-| Fintech LATAM | Artículos de LatamList, Latam Fintech Hub, iupana, Bloomberg Línea y Finextra Retail sobre empresas o mercados latinoamericanos; se excluyen eventos y contenido ajeno a banca, fintech, pagos, crédito o seguros. Cada medio aporta como máximo ocho notas por edición para evitar que uno solo domine el canal. |
+| Autoridades EC | Resoluciones de la Junta de Política y Regulación Financiera y Monetaria y resoluciones administrativas del BCE (ver «Seguimiento de resoluciones del BCE»), boletines de la Junta del BCE, datos monetarios y financieros oficiales del BCE, entradas de SEPS, Superintendencia de Bancos y Supercias, y cobertura de medios seleccionados sobre esas autoridades. Las noticias de medios se identifican como tales y no como documentos oficiales. |
+| Fintech LATAM | Artículos de LatamList, Latam Fintech Hub, iupana, Bloomberg Línea y Finextra Retail sobre empresas o mercados latinoamericanos, y publicaciones de Endeavor Argentina y de Endeavor global cuando tratan de la región (son contenido de la propia organización, no periodismo); se excluyen eventos y contenido ajeno a banca, fintech, pagos, crédito o seguros. Cada medio aporta como máximo ocho notas por edición para evitar que uno solo domine el canal. |
 | Pagos globales | Artículos de PYMNTS con términos de pagos, banca o fintech; artículos editoriales de la sección Payments de Finextra. |
 | Cripto | Artículos editoriales de Finextra Blockchain con términos cripto y publicaciones de análisis de Chainalysis. |
 
 Se eliminan entradas duplicadas por enlace o titular/medio dentro de cada canal; una noticia pertinente a dos canales puede aparecer en ambos. Se ordenan por fecha de publicación antes de limitar cada fuente y se conservan hasta 25 noticias por canal. CH03 tiene además un tope de ocho por medio. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno ni resumen inventado.
+
+### Seguimiento de resoluciones del BCE
+
+Las páginas de [resoluciones de la Junta](https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/) y de [resoluciones administrativas](https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/) listan código, descripción y PDF, pero no la fecha. El recopilador usa como fecha la de carga del PDF (cabecera `Last-Modified`), la consulta una sola vez por documento y la guarda en `tracked` dentro de `news.json`; cada nota lo indica en su extracto. Solo se consultan las resoluciones del año en curso que pasan el filtro:
+
+- **Junta:** se excluyen las administrativas (`-A`) y de gobierno interno (`-G`), los informes que la Junta solo «conoce» y las designaciones.
+- **Administrativas:** entran las que tratan de pagos, transferencias, moneda, depósitos y retiros de especies, encaje, liquidez, reservas, tarifas, corresponsales o entidades financieras; se excluyen memorandos, oficios, delegaciones, designaciones, talento humano y contratación.
 
 Los boletines del BCE y SEPS se identifican como publicaciones oficiales. Chainalysis se identifica como análisis empresarial. Los artículos de Finextra se limitan a sus publicaciones editoriales (`newsarticle`) para evitar mezclar comunicados de empresas con noticias. Los extractos se muestran como texto plano y las notas completas se leen en el sitio de origen. El panel Fuentes muestra qué orígenes respondieron y cuáles no tienen novedades.
 

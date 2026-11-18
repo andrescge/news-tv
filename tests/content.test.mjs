@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant } from '../scripts/content.mjs';
+import { normalize, parseBce, parseBcePublications, parseBceResolutions, resolutionYear, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant } from '../scripts/content.mjs';
 
 const now = Date.parse('2026-09-29T15:00:00Z');
 const source = { id: 'prueba', name: 'Medio de prueba', category: 'pagos', kind: 'news', url: 'https://example.com/feed.xml' };
@@ -41,6 +41,37 @@ test('las publicaciones financieras del BCE conservan fecha y enlace, sin descar
   assert.equal(story.url, 'https://contenido.bce.fin.ec/boletin.pdf');
   assert.equal(story.publishedAt, '2026-09-29T12:00:00.000Z');
   assert.equal(relevant(story, bce), true);
+});
+
+test('las resoluciones del BCE se leen de tabla o de lista y toman la fecha que aporta el recopilador', () => {
+  const junta = { ...source, id: 'bce-junta-resoluciones', category: 'regulacion', kind: 'official', url: 'https://www.bce.fin.ec/junta/resoluciones-emitidas/' };
+  const admin = { ...source, id: 'bce-resoluciones-admin', category: 'regulacion', kind: 'official', url: 'https://www.bce.fin.ec/resoluciones-administrativas/' };
+  const table = '<table><tr><td>Resolución</td><td>Descripción</td><td>Año</td><td>Visualizar</td></tr><tr><td><p>JPRFM-2026-048-T</p></td><td><p>Aprueba la <em>Norma que regula la operación de tarjetas de pago</em>.</p></td><td>2026</td><td><a href="https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf">VER</a></td></tr><tr><td>JPRFM-2026-047-A</td><td>Aprueba la política interna de provisiones.</td><td>2026</td><td><a href="/storage/JPRFM/resoluciones/JPRFM-2026-047-A.pdf">VER</a></td></tr><tr><td>JPRFM-2026-049-M</td><td>Conoce el informe sobre reservas de liquidez.</td><td>2026</td><td><a href="/storage/JPRFM/resoluciones/JPRFM-2026-049-M.pdf">VER</a></td></tr></table><a href="/otro/documento.pdf">Otro PDF</a>';
+  const rows = parseBceResolutions(table, junta.url);
+  assert.equal(rows.length, 3);
+  assert.equal(rows[0].title, 'Aprueba la Norma que regula la operación de tarjetas de pago.');
+  assert.equal(rows[1].url, 'https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-047-A.pdf');
+  assert.equal(resolutionYear(rows[0]), 2026);
+  assert.deepEqual(rows.map(row => relevant(row, junta)), [true, false, false]);
+  assert.equal(normalize(rows[0], junta, now), null);
+  const story = normalize({ ...rows[0], publishedAt: '2026-09-27T16:45:32.000Z' }, junta, now);
+  assert.equal(story.publishedAt, '2026-09-27T16:45:32.000Z');
+  assert.match(story.excerpt, /^Resolución JPRFM-2026-048-T\./);
+  assert.equal(relevant(story, junta), true);
+
+  const list = '<p><a href="https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-007-2026.pdf">Resolución Administrativa No. BCE-GG-007-2026: Expide la Norma para el Estándar de Mensajería para Transferencias Electrónicas para Pago en Tiempo Real.</a></p><p><a href="https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-011-2026.pdf">Resolución Administrativa No. BCE-GG-011-2026: Expide el Reglamento Interno de Administración del Talento Humano.</a></p><p><a href="https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-BCE-2026-0327-M.pdf">Memorando Nro. BCE-BCE-2026-0327-M: Delegación para la suscripción del Convenio sobre transferencias.</a></p>';
+  const adminRows = parseBceResolutions(list, admin.url);
+  assert.equal(adminRows[0].code, 'Resolución Administrativa No. BCE-GG-007-2026');
+  assert.deepEqual(adminRows.map(row => relevant(row, admin)), [true, false, false]);
+  assert.throws(() => parseBceResolutions('<p>Sin documentos</p>', admin.url));
+});
+
+test('Endeavor solo aporta notas de la región y sin la coletilla del feed', () => {
+  assert.equal(relevant({ title: 'How these Brazilian scientists built a skincare brand', excerpt: '' }, { id: 'endeavor-global' }), true);
+  assert.equal(relevant({ title: 'Postcards from Elsewhere: Amman, Jordan', excerpt: '' }, { id: 'endeavor-global' }), false);
+  assert.equal(relevant({ title: 'Nuevos miembros del Board de Endeavor Argentina', excerpt: '' }, { id: 'endeavor-ar' }), false);
+  const story = normalize({ title: 'Introducing Endeavor Catalyst Fund V', url: 'https://endeavor.org/fund-v', publishedAt: '2026-09-29T10:00:00Z', excerpt: 'The post Introducing Endeavor Catalyst <span>Fund V</span> appeared first on Endeavor.' }, source, now);
+  assert.equal(story.excerpt, '');
 });
 
 test('las distintas coberturas sobreviven mientras los duplicados se eliminan', () => {

@@ -1,7 +1,7 @@
 import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalize, parseFeed, parseBce, parseBcePublications, deduplicate, relevant, recent } from './content.mjs';
+import { normalize, parseFeed, parseBce, parseBcePublications, parseBceResolutions, resolutionYear, deduplicate, relevant, recent } from './content.mjs';
 
 const googleSearch = query => `https://news.google.com/rss/search?q=${encodeURIComponent(`${query} when:30d`)}&hl=es-419&gl=EC&ceid=EC%3Aes-419`;
 
@@ -9,6 +9,8 @@ export const SOURCES = [
   { id: 'ecuador-news', name: 'Medios de Ecuador', category: 'ecuador', kind: 'news', adapter: 'google', url: 'https://news.google.com/rss/search?q=%28bancos%20OR%20seguros%20OR%20cooperativas%20OR%20fintech%20OR%20pagos%29%20Ecuador%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://news.google.com/', allowHosts: ['primicias.ec', 'bloomberglinea.com', 'eluniverso.com', 'expreso.ec'] },
   { id: 'bce-junta', name: 'BCE · Junta Financiera', category: 'regulacion', kind: 'official', adapter: 'bce', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/boletines-de-prensa/', site: 'https://www.bce.fin.ec/', language: 'es' },
   { id: 'bce-publicaciones', name: 'BCE · Datos financieros', category: 'regulacion', kind: 'official', adapter: 'bce-publications', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', site: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', language: 'es' },
+  { id: 'bce-junta-resoluciones', name: 'BCE · Resoluciones de la Junta', category: 'regulacion', kind: 'official', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', site: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', language: 'es' },
+  { id: 'bce-resoluciones-admin', name: 'BCE · Resoluciones administrativas', category: 'regulacion', kind: 'official', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', site: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', language: 'es' },
   { id: 'bce-boletines', name: 'Banco Central del Ecuador', category: 'ecuador', kind: 'official', adapter: 'bce', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/', site: 'https://www.bce.fin.ec/', language: 'es' },
   { id: 'seps', name: 'SEPS', category: 'regulacion', kind: 'official', adapter: 'rss', url: 'https://www.seps.gob.ec/feed/', site: 'https://www.seps.gob.ec/', language: 'es' },
   { id: 'superbancos', name: 'Superintendencia de Bancos', category: 'regulacion', kind: 'official', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Asuperbancos.gob.ec%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.superbancos.gob.ec/', allowHosts: ['superbancos.gob.ec'], language: 'es' },
@@ -19,6 +21,8 @@ export const SOURCES = [
   { id: 'iupana', name: 'iupana', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://iupana.com/feed/', site: 'https://iupana.com/', language: 'es' },
   { id: 'latam-bloomberg', name: 'Bloomberg Línea · fintech', category: 'latam', kind: 'news', adapter: 'google', url: googleSearch('site:bloomberglinea.com (fintech OR neobanco OR billetera digital OR pagos) (Colombia OR México OR Argentina OR Brasil OR Perú)'), site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], language: 'es' },
   { id: 'finextra-latam', name: 'Finextra · LATAM', category: 'latam', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=retail', site: 'https://www.finextra.com/', language: 'en' },
+  { id: 'endeavor-ar', name: 'Endeavor Argentina', category: 'latam', kind: 'analysis', adapter: 'rss', url: 'https://www.endeavor.org.ar/feed/', site: 'https://www.endeavor.org.ar/', language: 'es' },
+  { id: 'endeavor-global', name: 'Endeavor', category: 'latam', kind: 'analysis', adapter: 'rss', url: 'https://endeavor.org/feed/', site: 'https://endeavor.org/', language: 'en' },
   { id: 'pymnts', name: 'PYMNTS', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.pymnts.com/feed/', site: 'https://www.pymnts.com/', language: 'en' },
   { id: 'finextra-payments', name: 'Finextra · Payments', category: 'pagos', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=payments', site: 'https://www.finextra.com/', language: 'en' },
   { id: 'finextra-crypto', name: 'Finextra · Blockchain', category: 'cripto', kind: 'news', adapter: 'rss', url: 'https://www.finextra.com/rss/channel.aspx?channel=blockchain', site: 'https://www.finextra.com/', language: 'en' },
@@ -28,30 +32,57 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputArg = process.argv.indexOf('--output');
 const output = outputArg === -1 ? resolve(root, 'site/data/news.json') : resolve(process.argv[outputArg + 1]);
 
-async function fetchSource(source) {
-  const response = await fetch(source.url, { headers: { 'User-Agent': 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)', Accept: source.adapter.startsWith('bce') ? 'text/html' : 'application/rss+xml, application/xml, text/xml' }, signal: AbortSignal.timeout(14000) });
+const USER_AGENT = 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)';
+const MAX_DATE_LOOKUPS = 200;
+
+// Fecha de carga de cada PDF de resolución. Se consulta una sola vez por documento y se guarda
+// en `tracked` dentro de news.json, de modo que las ejecuciones siguientes solo consultan los nuevos.
+async function dateResolutions(entries, source, known, now = new Date()) {
+  const minYear = now.getUTCFullYear() - (now.getUTCMonth() === 0 ? 1 : 0);
+  const candidates = entries.filter(entry => (resolutionYear(entry) ?? minYear) >= minYear && relevant(entry, source));
+  const tracked = {};
+  for (const entry of candidates) if (known[entry.url]) tracked[entry.url] = known[entry.url];
+  const pending = candidates.filter(entry => !tracked[entry.url]).slice(0, MAX_DATE_LOOKUPS);
+  const worker = async () => {
+    for (let entry = pending.shift(); entry; entry = pending.shift()) {
+      try {
+        const response = await fetch(entry.url, { method: 'HEAD', headers: { 'User-Agent': USER_AGENT }, signal: AbortSignal.timeout(14000) });
+        const modified = Date.parse(response.headers.get('last-modified') || '');
+        if (response.ok && Number.isFinite(modified)) tracked[entry.url] = new Date(modified).toISOString();
+      } catch { /* Se reintenta en la siguiente ejecución. */ }
+    }
+  };
+  await Promise.all(Array.from({ length: 6 }, worker));
+  return { tracked, rows: candidates.filter(entry => tracked[entry.url]).map(entry => ({ ...entry, publishedAt: tracked[entry.url] })) };
+}
+
+async function fetchSource(source, known = {}) {
+  const response = await fetch(source.url, { headers: { 'User-Agent': USER_AGENT, Accept: source.adapter.startsWith('bce') ? 'text/html' : 'application/rss+xml, application/xml, text/xml' }, signal: AbortSignal.timeout(14000) });
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const body = await response.text();
   if (body.length > 3_000_000) throw new Error('Respuesta demasiado grande');
-  const raw = source.adapter === 'bce' ? parseBce(body) : source.adapter === 'bce-publications' ? parseBcePublications(body) : parseFeed(body, source);
-  return raw.filter(row => {
+  let tracked;
+  let raw = source.adapter === 'bce' ? parseBce(body) : source.adapter === 'bce-publications' ? parseBcePublications(body) : source.adapter === 'bce-resolutions' ? parseBceResolutions(body, source.url) : parseFeed(body, source);
+  if (source.adapter === 'bce-resolutions') ({ tracked, rows: raw } = await dateResolutions(raw, source, known));
+  const stories = raw.filter(row => {
     if (!source.allowHosts) return true;
     try { const host = new URL(row.sourceUrl).hostname.toLowerCase(); return source.allowHosts.some(allowed => host === allowed || host.endsWith(`.${allowed}`)); }
     catch { return false; }
   }).map(row => normalize(row, source)).filter(Boolean).filter(row => relevant(row, source)).sort((a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt)).slice(0, source.category === 'latam' ? 8 : 25);
+  return { stories, tracked };
 }
 
 async function run() {
   let previous = { stories: [], sources: [] };
   try { previous = JSON.parse(await readFile(output, 'utf8')); } catch { /* Primera edición. */ }
   const checkedAt = new Date().toISOString();
-  const results = await Promise.allSettled(SOURCES.map(fetchSource));
-  const stories = []; const sources = []; let successful = 0;
+  const results = await Promise.allSettled(SOURCES.map(source => fetchSource(source, previous.tracked?.[source.id])));
+  const stories = []; const sources = []; const tracked = {}; let successful = 0;
   for (let i = 0; i < SOURCES.length; i++) {
     const source = SOURCES[i], result = results[i], oldState = previous.sources?.find(s => s.id === source.id);
     let current = [];
-    if (result.status === 'fulfilled') { successful++; current = result.value; }
-    else { current = (previous.stories || []).filter(story => story.sourceId === source.id && recent(story.publishedAt)); console.error(`${source.name}: ${result.reason?.message || result.reason}`); }
+    if (result.status === 'fulfilled') { successful++; current = result.value.stories; if (result.value.tracked) tracked[source.id] = result.value.tracked; }
+    else { current = (previous.stories || []).filter(story => story.sourceId === source.id && recent(story.publishedAt)); if (previous.tracked?.[source.id]) tracked[source.id] = previous.tracked[source.id]; console.error(`${source.name}: ${result.reason?.message || result.reason}`); }
     stories.push(...current);
     sources.push({ id: source.id, name: source.name, category: source.category, kind: source.kind, url: source.site, status: result.status === 'fulfilled' ? 'ok' : 'error', checkedAt, lastSuccessAt: result.status === 'fulfilled' ? checkedAt : oldState?.lastSuccessAt || null, recentCount: current.length });
   }
@@ -59,7 +90,7 @@ async function run() {
   const unique = deduplicate(stories);
   const limited = []; const perCategory = new Map();
   for (const story of unique) { const count = perCategory.get(story.category) || 0; if (count >= 25) continue; limited.push(story); perCategory.set(story.category, count + 1); }
-  const payload = { version: 1, generatedAt: checkedAt, stories: limited, sources };
+  const payload = { version: 1, generatedAt: checkedAt, stories: limited, sources, tracked };
   await mkdir(dirname(output), { recursive: true });
   const temp = `${output}.tmp`;
   await writeFile(temp, JSON.stringify(payload, null, 2) + '\n', 'utf8'); await rename(temp, output);
