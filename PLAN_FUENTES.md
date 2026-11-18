@@ -2,6 +2,57 @@
 
 Fecha: 17 de noviembre de 2026 · Auditoría de `scripts/collect.mjs` · No se modificó ningún archivo de código para este plan.
 
+## Estado de ejecución (18 de noviembre de 2026)
+
+El plan se ejecutó en la rama `claude/seguimiento-resoluciones-bce`. El resto del documento conserva el análisis original; esto es lo que cambió respecto a él.
+
+**Hecho como estaba previsto**
+
+- Eliminadas `finextra-latam`, `bce-junta` y `endeavor-global`. Quedan 20 fuentes.
+- Superintendencia de Bancos se lee de su feed propio y Supercias de su página de noticias (la fecha sale del enlace de cada noticia).
+- Añadidas Payments Dive en Pagos y CoinDesk en Cripto. Finextra Payments y Blockchain se conservan por si el acceso vuelve; siguen dando HTTP 403.
+- Deduplicación entre medios en Fintech LATAM, tope por fuente (`limit`), y tipos de fuente «blog de empresa» (Chainalysis) y «contenido de organización» (Endeavor).
+- Filtros más estrictos en Medios de Ecuador, SEPS, PYMNTS, Bloomberg Línea y Chainalysis; BCE Datos limitado a 3.
+- Los boletines del BCE que tratan de la Junta pasan al canal Autoridades EC.
+
+**Descartado al revisar el contenido de los feeds**
+
+| Propuesta del plan | Por qué no se hizo | Qué se hizo en su lugar |
+| --- | --- | --- |
+| Contxto en lugar de Latam Fintech Hub | Publica unas 3 notas al mes y casi ninguna de fintech | Se conserva Latam Fintech Hub; la deduplicación quita sus repeticiones (8 pasan el filtro, 4 quedan) |
+| Bloomberg Línea por su feed directo | El feed trae unas 100 notas generales de los últimos dos días; da menos notas de fintech que la búsqueda de 30 días | Se conserva la búsqueda y el titular debe situar la nota en la región |
+| Expreso por su feed de economía | El feed lleva detenido desde el 19 de octubre | Expreso sigue llegando vía Google News |
+
+**20 fuentes nuevas añadidas tras sondear unos 160 feeds (ahora son 40)**
+
+| Canal | Fuente | Tipo | Qué entra |
+| --- | --- | --- | --- |
+| Ecuador | Primicias (feed propio de economía) | Noticia | Titulares de banca, crédito, seguros, deuda y organismos multilaterales |
+| Ecuador | Asobanca | Organización | Análisis del gremio bancario |
+| Ecuador | BanEcuador y Corporación Financiera Nacional | Oficial | Anuncios de crédito y financiamiento, hasta 2 por entidad |
+| Autoridades | Ministerio de Economía y Finanzas | Oficial | Deuda, FMI, proforma y presupuesto, hasta 3 |
+| Autoridades | UAFE | Oficial | Lavado de activos y normas para sujetos obligados |
+| LATAM | Valora Analitik | Noticia | Banca, crédito y fintech en Colombia |
+| LATAM | Contxto (edición en español) | Noticia | Solo notas de fintech |
+| LATAM | Colombia Fintech, LAVCA, FELABAN | Organización | Fintech colombiana, operaciones de capital de riesgo e informes bancarios regionales |
+| Pagos | Electronic Payments International | Noticia | Solo la sección de noticias |
+| Pagos | Payments Cards & Mobile, Digital Transactions | Noticia | Prensa sectorial de Europa y EE. UU. |
+| Pagos | Reserva Federal y Banco Central Europeo | Oficial | Comunicados sobre pagos, euro digital y activos digitales |
+| Cripto | The Block | Noticia | Regulación, negocio y operaciones con términos financieros |
+| Cripto | CriptoNoticias | Noticia | Secciones de regulación y adopción, en español |
+| Cripto | TRM Labs | Blog de empresa | Sin anuncios de producto |
+| Cripto | Coin Center | Organización | Posiciones sobre regulación |
+
+El tope por canal sube de 25 a 40 para que las fuentes de menor frecuencia (iupana, FELABAN, bancos centrales) no queden desplazadas por las diarias.
+
+Revisadas y no añadidas: PaymentsJournal (su feed pesa más de 3 MB), PaymentMedia (5 MB y texto mal codificado), El Universo y El Comercio por feed propio (una nota de economía entre cien), Extra (contenido de servicio), Registro Oficial (titulares sin contenido: «Edición Jurídica No. 457»), COSEDE (sin publicar desde marzo), Asamblea Nacional, Decrypt, LatinFinance, DPL News, Mobile Time y los medios en portugués.
+
+**Pendiente**
+
+- Marcar en pantalla las notas arrastradas de fuentes caídas.
+- Recuperar el acceso a Finextra.
+- El canal Ecuador sigue con pocas notas (8 en 30 días) y con piezas de servicio de El Universo.
+
 ## Veredicto
 
 De las 21 fuentes configuradas: **7 se mantienen tal cual, 6 se mantienen con cambios, 5 se reemplazan y 3 se eliminan.**

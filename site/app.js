@@ -5,6 +5,14 @@ const channels = [
   { id: 'pagos', name: 'Pagos globales', label: 'PAGOS GLOBALES' },
   { id: 'cripto', name: 'Cripto', label: 'CRIPTO' },
 ];
+const kinds = {
+  official: { screen: 'PUBLICACIÓN OFICIAL', dialog: 'Publicación oficial', source: 'Fuente oficial' },
+  analysis: { screen: 'ANÁLISIS SECTORIAL', dialog: 'Análisis sectorial', source: 'Análisis sectorial' },
+  company: { screen: 'BLOG DE EMPRESA', dialog: 'Blog de empresa', source: 'Blog de empresa' },
+  organization: { screen: 'CONTENIDO DE ORGANIZACIÓN', dialog: 'Contenido de organización', source: 'Organización' },
+  news: { screen: 'NOTICIA DEL SECTOR', dialog: 'Noticia', source: 'Medio / agregador' },
+};
+const kindLabel = (kind, place) => (kinds[kind] || kinds.news)[place];
 const durations = [10_000, 20_000, 40_000];
 const $ = selector => document.querySelector(selector);
 const dateFormat = new Intl.DateTimeFormat('es-EC', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'America/Guayaquil' });
@@ -48,7 +56,7 @@ function renderScreen() {
   $('#next-story').textContent = stories.length > 1 ? `A CONTINUACIÓN · ${stories[(state.storyIndex + 1) % stories.length].title}` : stories.length ? 'UNA NOTICIA EN ESTE CANAL' : 'ESPERANDO NOVEDADES';
   $('#previous').disabled = stories.length < 2; $('#next').disabled = stories.length < 2; $('#read-story').disabled = !story?.excerpt;
   if (story) {
-    $('#story-kind').textContent = story.kind === 'official' ? 'PUBLICACIÓN OFICIAL' : story.kind === 'analysis' ? 'ANÁLISIS SECTORIAL' : 'NOTICIA DEL SECTOR';
+    $('#story-kind').textContent = kindLabel(story.kind, 'screen');
     $('#story-title').textContent = story.title;
     $('#story-excerpt').hidden = !story.excerpt;
     $('#story-excerpt').textContent = story.excerpt || '';
@@ -83,7 +91,7 @@ function renderSources() {
   const root = $('#sources-list'); root.replaceChildren();
   for (const source of state.data?.sources || []) {
     const card = element('article', 'source-card'); const info = element('div');
-    info.append(element('h3', '', source.name), element('p', '', `${source.kind === 'official' ? 'Fuente oficial' : source.kind === 'analysis' ? 'Análisis sectorial' : 'Medio / agregador'} · ${channels.find(ch => ch.id === source.category)?.name || source.category}`));
+    info.append(element('h3', '', source.name), element('p', '', `${kindLabel(source.kind, 'source')} · ${channels.find(ch => ch.id === source.category)?.name || source.category}`));
     const url = safeUrl(source.url); if (url) { const link = element('a', '', 'Visitar sitio ↗'); link.href = url; link.target = '_blank'; link.rel = 'noopener noreferrer'; info.append(link); }
     const badge = element('span', `source-state${source.status === 'ok' ? '' : ' warning'}`, source.status === 'ok' ? source.recentCount ? `${source.recentCount} recientes` : 'Sin novedades' : 'No disponible');
     badge.title = source.lastSuccessAt ? `Última consulta correcta: ${date(source.lastSuccessAt, true)}` : 'Sin consulta correcta'; card.append(info, badge); root.append(card);
@@ -101,7 +109,7 @@ function showStory() {
   state.dialogFocus = document.activeElement;
   $('#dialog-category').textContent = currentChannel().label;
   $('#dialog-title').textContent = story.title;
-  $('#dialog-meta').textContent = `${story.source} · ${date(story.publishedAt, true)} · ${story.kind === 'official' ? 'Publicación oficial' : story.kind === 'analysis' ? 'Análisis sectorial' : 'Noticia'} · ${story.language === 'en' ? 'Inglés' : 'Español'}`;
+  $('#dialog-meta').textContent = `${story.source} · ${date(story.publishedAt, true)} · ${kindLabel(story.kind, 'dialog')} · ${story.language === 'en' ? 'Inglés' : 'Español'}`;
   $('#dialog-excerpt').textContent = story.excerpt;
   $('#dialog-link').href = url; $('#dialog-link').textContent = story.via ? 'ABRIR VÍA GOOGLE NEWS ↗' : 'LEER EN LA FUENTE ↗'; $('#dialog-via').textContent = story.via || '';
   $('#story-dialog').showModal(); $('#close-story').focus();
