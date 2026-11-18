@@ -1,0 +1,5290 @@
+{
+ "source": "https://endeavor.org/wp-json/wp/v2/company",
+ "generatedAt": "2026-11-18T16:39:45.991Z",
+ "totalCompanies": 1380,
+ "count": 528,
+ "companies": [
+  {
+   "name": "123Seguro",
+   "slug": "123seguro",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=123seguro#123seguro"
+  },
+  {
+   "name": "180 Seguros",
+   "slug": "180-seguros",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=180-seguros#180-seguros"
+  },
+  {
+   "name": "99 Minutos",
+   "slug": "99-minutos",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=99-minutos#99-minutos"
+  },
+  {
+   "name": "A.D. Cleantech",
+   "slug": "a-d-cleantech",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=a-d-cleantech#a-d-cleantech"
+  },
+  {
+   "name": "ABC da Construção",
+   "slug": "abc-da-construcao",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=abc-da-construcao#abc-da-construcao"
+  },
+  {
+   "name": "Acqio",
+   "slug": "acqio",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=acqio#acqio"
+  },
+  {
+   "name": "Acsendo",
+   "slug": "acsendo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=acsendo#acsendo"
+  },
+  {
+   "name": "ADDI",
+   "slug": "addi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=addi#addi"
+  },
+  {
+   "name": "Adsmovil",
+   "slug": "adsmovil",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=adsmovil#adsmovil"
+  },
+  {
+   "name": "AgIdea",
+   "slug": "agidea",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=agidea#agidea"
+  },
+  {
+   "name": "Agrofy",
+   "slug": "agrofy",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=agrofy#agrofy"
+  },
+  {
+   "name": "Agrolend",
+   "slug": "404473",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=404473#404473"
+  },
+  {
+   "name": "Agrotop",
+   "slug": "oleotop",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "aquaculture",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=oleotop#oleotop"
+  },
+  {
+   "name": "AIM Manager",
+   "slug": "aim-manager",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=aim-manager#aim-manager"
+  },
+  {
+   "name": "Aivo",
+   "slug": "aivo",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=aivo#aivo"
+  },
+  {
+   "name": "AKAD Seguros",
+   "slug": "akad-seguros",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=akad-seguros#akad-seguros"
+  },
+  {
+   "name": "albo",
+   "slug": "albo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=albo#albo"
+  },
+  {
+   "name": "Aldeamo",
+   "slug": "aldeamo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=aldeamo#aldeamo"
+  },
+  {
+   "name": "Alegra",
+   "slug": "alegra",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alegra#alegra"
+  },
+  {
+   "name": "Alice",
+   "slug": "alice-2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alice-2#alice-2"
+  },
+  {
+   "name": "Alivio Capital",
+   "slug": "alivio",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alivio#alivio"
+  },
+  {
+   "name": "Alltournative",
+   "slug": "alltournative",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alltournative#alltournative"
+  },
+  {
+   "name": "ALTO",
+   "slug": "alto",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alto#alto"
+  },
+  {
+   "name": "AltScore",
+   "slug": "altscore",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=altscore#altscore"
+  },
+  {
+   "name": "Alura",
+   "slug": "alura",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=alura#alura"
+  },
+  {
+   "name": "AMARO",
+   "slug": "amaro",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=amaro#amaro"
+  },
+  {
+   "name": "Ambar",
+   "slug": "ambar",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ambar#ambar"
+  },
+  {
+   "name": "Angelus",
+   "slug": "angelus",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=angelus#angelus"
+  },
+  {
+   "name": "Antara IT",
+   "slug": "antara-it",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=antara-it#antara-it"
+  },
+  {
+   "name": "Aranda Software",
+   "slug": "aranda-software",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=aranda-software#aranda-software"
+  },
+  {
+   "name": "Arbusta",
+   "slug": "arbusta",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=arbusta#arbusta"
+  },
+  {
+   "name": "Archdaily",
+   "slug": "archdaily",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=archdaily#archdaily"
+  },
+  {
+   "name": "Arizona",
+   "slug": "arizona",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=arizona#arizona"
+  },
+  {
+   "name": "Arkimedes",
+   "slug": "arkimedes",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=arkimedes#arkimedes"
+  },
+  {
+   "name": "Arquivei",
+   "slug": "arquivei",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=arquivei#arquivei"
+  },
+  {
+   "name": "Asaas",
+   "slug": "asaas",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "payments-financial-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=asaas#asaas"
+  },
+  {
+   "name": "ASCON",
+   "slug": "ascon",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ascon#ascon"
+  },
+  {
+   "name": "Atlantia Search",
+   "slug": "atlantia-search",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=atlantia-search#atlantia-search"
+  },
+  {
+   "name": "Atmo Digital Media",
+   "slug": "atmo-digital-media",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=atmo-digital-media#atmo-digital-media"
+  },
+  {
+   "name": "Auth0",
+   "slug": "auth0",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=auth0#auth0"
+  },
+  {
+   "name": "Avantia",
+   "slug": "avantia",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=avantia#avantia"
+  },
+  {
+   "name": "Axeso5",
+   "slug": "axeso5",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=axeso5#axeso5"
+  },
+  {
+   "name": "Azos",
+   "slug": "azos",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=azos#azos"
+  },
+  {
+   "name": "B2",
+   "slug": "b2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=b2#b2"
+  },
+  {
+   "name": "BabyTuto",
+   "slug": "babytuto",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=babytuto#babytuto"
+  },
+  {
+   "name": "Bankingly",
+   "slug": "bankingly",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bankingly#bankingly"
+  },
+  {
+   "name": "Barte",
+   "slug": "barte",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "payments-financial-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=barte#barte"
+  },
+  {
+   "name": "Bedu",
+   "slug": "bedu",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bedu#bedu"
+  },
+  {
+   "name": "Beep Saúde",
+   "slug": "beep-saude",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=beep-saude#beep-saude"
+  },
+  {
+   "name": "Belatrix",
+   "slug": "belatrix",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=belatrix#belatrix"
+  },
+  {
+   "name": "Beleza Natural",
+   "slug": "beleza-natural",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=beleza-natural#beleza-natural"
+  },
+  {
+   "name": "Bellísima",
+   "slug": "bellisima",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bellisima#bellisima"
+  },
+  {
+   "name": "Belvo",
+   "slug": "belvo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=belvo#belvo"
+  },
+  {
+   "name": "Ben & Frank",
+   "slug": "ben-frank",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ben-frank#ben-frank"
+  },
+  {
+   "name": "benCorp",
+   "slug": "bencorp",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "digital-health",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bencorp#bencorp"
+  },
+  {
+   "name": "Bercia",
+   "slug": "bercia",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bercia#bercia"
+  },
+  {
+   "name": "Beso Francés",
+   "slug": "beso-frances",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=beso-frances#beso-frances"
+  },
+  {
+   "name": "Betterfly",
+   "slug": "betterfly",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=betterfly#betterfly"
+  },
+  {
+   "name": "Bia Energy",
+   "slug": "bia-energy",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bia-energy#bia-energy"
+  },
+  {
+   "name": "BigBox",
+   "slug": "bigbox",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bigbox#bigbox"
+  },
+  {
+   "name": "Bio Insumos Nativa",
+   "slug": "bio-insumos-nativa",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bio-insumos-nativa#bio-insumos-nativa"
+  },
+  {
+   "name": "Bioelements",
+   "slug": "bioelements",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bioelements#bioelements"
+  },
+  {
+   "name": "bioFeeder",
+   "slug": "biofeeder",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "aquaculture",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=biofeeder#biofeeder"
+  },
+  {
+   "name": "BioFiltro",
+   "slug": "biofiltro",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=biofiltro#biofiltro"
+  },
+  {
+   "name": "Bioled",
+   "slug": "bioled",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "aquaculture",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bioled#bioled"
+  },
+  {
+   "name": "Birdman",
+   "slug": "birdman",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=birdman#birdman"
+  },
+  {
+   "name": "Bitso",
+   "slug": "bitso",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bitso#bitso"
+  },
+  {
+   "name": "Blip (formerly Take)",
+   "slug": "blip-formerly-take",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=blip-formerly-take#blip-formerly-take"
+  },
+  {
+   "name": "Blipay",
+   "slug": "blipay",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=blipay#blipay"
+  },
+  {
+   "name": "BlissHub",
+   "slug": "blisshub",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=blisshub#blisshub"
+  },
+  {
+   "name": "Blue Star Group",
+   "slug": "blue-star-group",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=blue-star-group#blue-star-group"
+  },
+  {
+   "name": "Bodytech",
+   "slug": "bodytech",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bodytech#bodytech"
+  },
+  {
+   "name": "Bold",
+   "slug": "bold",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bold#bold"
+  },
+  {
+   "name": "BrainLogic AI",
+   "slug": "brainlogic-ai",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "services-task-platforms",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=brainlogic-ai#brainlogic-ai"
+  },
+  {
+   "name": "Brasol",
+   "slug": "brasol",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=brasol#brasol"
+  },
+  {
+   "name": "Brex",
+   "slug": "brex",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "expense-management-corporate-cards",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=brex#brex"
+  },
+  {
+   "name": "Brisanet",
+   "slug": "brisanet",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "aerospace-imaging-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=brisanet#brisanet"
+  },
+  {
+   "name": "BSale",
+   "slug": "bsale",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bsale#bsale"
+  },
+  {
+   "name": "BuinZoo",
+   "slug": "buinzoo",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=buinzoo#buinzoo"
+  },
+  {
+   "name": "Buk",
+   "slug": "buk",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=buk#buk"
+  },
+  {
+   "name": "Bunny Studio",
+   "slug": "bunny-studio",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=bunny-studio#bunny-studio"
+  },
+  {
+   "name": "Buscalibre",
+   "slug": "buscalibre",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=buscalibre#buscalibre"
+  },
+  {
+   "name": "Business News Americas",
+   "slug": "business-news-americas",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=business-news-americas#business-news-americas"
+  },
+  {
+   "name": "Campo Vivo",
+   "slug": "campo-vivo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=campo-vivo#campo-vivo"
+  },
+  {
+   "name": "Campoalto",
+   "slug": "campoalto",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=campoalto#campoalto"
+  },
+  {
+   "name": "Capim",
+   "slug": "capim",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=capim#capim"
+  },
+  {
+   "name": "Capitaria",
+   "slug": "capitaria",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=capitaria#capitaria"
+  },
+  {
+   "name": "Caramba!",
+   "slug": "caramba",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=caramba#caramba"
+  },
+  {
+   "name": "Casa do Construtor",
+   "slug": "casa-do-construtor",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=casa-do-construtor#casa-do-construtor"
+  },
+  {
+   "name": "Casai",
+   "slug": "casai",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=casai#casai"
+  },
+  {
+   "name": "Cashea",
+   "slug": "cashea",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cashea#cashea"
+  },
+  {
+   "name": "Cayena",
+   "slug": "cayena",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cayena#cayena"
+  },
+  {
+   "name": "Ceibo",
+   "slug": "aguamarina",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=aguamarina#aguamarina"
+  },
+  {
+   "name": "Celcoin",
+   "slug": "celcoin-2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=celcoin-2#celcoin-2"
+  },
+  {
+   "name": "CEPA",
+   "slug": "cepa",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cepa#cepa"
+  },
+  {
+   "name": "CERC",
+   "slug": "cerc",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cerc#cerc"
+  },
+  {
+   "name": "CERS",
+   "slug": "cers",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cers#cers"
+  },
+  {
+   "name": "Chazki",
+   "slug": "chazki",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=chazki#chazki"
+  },
+  {
+   "name": "Chef Burger",
+   "slug": "chef-burger",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=chef-burger#chef-burger"
+  },
+  {
+   "name": "Chilim Balam",
+   "slug": "chilim-balam",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=chilim-balam#chilim-balam"
+  },
+  {
+   "name": "Chiper",
+   "slug": "chiper",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=chiper#chiper"
+  },
+  {
+   "name": "Cinepapaya",
+   "slug": "cinepapaya",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "commerce",
+   "subVertical": "services-task-platforms",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cinepapaya#cinepapaya"
+  },
+  {
+   "name": "Clara",
+   "slug": "clara",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "expense-management-corporate-cards",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=clara#clara"
+  },
+  {
+   "name": "ClearSale",
+   "slug": "clearsale",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=clearsale#clearsale"
+  },
+  {
+   "name": "Clip",
+   "slug": "clip",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=clip#clip"
+  },
+  {
+   "name": "CloudWalk",
+   "slug": "cloudwalk",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "payments-financial-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cloudwalk#cloudwalk"
+  },
+  {
+   "name": "Cobli",
+   "slug": "cobli",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cobli#cobli"
+  },
+  {
+   "name": "Cobre",
+   "slug": "cobre",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cobre#cobre"
+  },
+  {
+   "name": "Coderhouse",
+   "slug": "coderhouse",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=coderhouse#coderhouse"
+  },
+  {
+   "name": "Colegium",
+   "slug": "colegium",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=colegium#colegium"
+  },
+  {
+   "name": "Comp",
+   "slug": "comp",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=comp#comp"
+  },
+  {
+   "name": "Compara",
+   "slug": "comparaonline",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=comparaonline#comparaonline"
+  },
+  {
+   "name": "Comun",
+   "slug": "comun",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=comun#comun"
+  },
+  {
+   "name": "Comunal",
+   "slug": "comunal",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "co-working",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=comunal#comunal"
+  },
+  {
+   "name": "Comunique-se",
+   "slug": "comunique-se",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=comunique-se#comunique-se"
+  },
+  {
+   "name": "Conekta",
+   "slug": "conekta",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=conekta#conekta"
+  },
+  {
+   "name": "Conexa",
+   "slug": "conexa",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "digital-health",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=conexa#conexa"
+  },
+  {
+   "name": "Conexia",
+   "slug": "conexia",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=conexia#conexia"
+  },
+  {
+   "name": "Confiance Medical",
+   "slug": "confiance-medical",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-equipment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=confiance-medical#confiance-medical"
+  },
+  {
+   "name": "Congelados del Sur",
+   "slug": "congelados-del-sur",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "alternative-models",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=congelados-del-sur#congelados-del-sur"
+  },
+  {
+   "name": "Construex",
+   "slug": "construex",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=construex#construex"
+  },
+  {
+   "name": "ContaAzul",
+   "slug": "contaazul",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=contaazul#contaazul"
+  },
+  {
+   "name": "Contabilizei",
+   "slug": "contabilizei",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=contabilizei#contabilizei"
+  },
+  {
+   "name": "Contifico",
+   "slug": "contifico",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=contifico#contifico"
+  },
+  {
+   "name": "Contigo",
+   "slug": "contigo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=contigo#contigo"
+  },
+  {
+   "name": "CookUnity",
+   "slug": "cookunity",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "alternative-models",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cookunity#cookunity"
+  },
+  {
+   "name": "Cora",
+   "slug": "cora",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cora#cora"
+  },
+  {
+   "name": "CORBAC Foods",
+   "slug": "corbac-foods",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-manufacturing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=corbac-foods#corbac-foods"
+  },
+  {
+   "name": "CORE",
+   "slug": "core",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=core#core"
+  },
+  {
+   "name": "Cornershop",
+   "slug": "cornershop",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cornershop#cornershop"
+  },
+  {
+   "name": "Cortex Intelligence",
+   "slug": "cortex-intelligence",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cortex-intelligence#cortex-intelligence"
+  },
+  {
+   "name": "Covalto",
+   "slug": "covalto",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=covalto#covalto"
+  },
+  {
+   "name": "Cowork Latam",
+   "slug": "cowork-latam",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "co-working",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cowork-latam#cowork-latam"
+  },
+  {
+   "name": "Creator Ads (fmr. BrandLovrs)",
+   "slug": "creator-ads",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=creator-ads#creator-ads"
+  },
+  {
+   "name": "Creditas",
+   "slug": "creditas",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=creditas#creditas"
+  },
+  {
+   "name": "Crehana",
+   "slug": "crehana",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=crehana#crehana"
+  },
+  {
+   "name": "Crepier",
+   "slug": "crepier",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=crepier#crepier"
+  },
+  {
+   "name": "Crezcamos",
+   "slug": "crezcamos",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=crezcamos#crezcamos"
+  },
+  {
+   "name": "Cuatro Cabezas",
+   "slug": "cuatro-cabezas",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cuatro-cabezas#cuatro-cabezas"
+  },
+  {
+   "name": "Cultura Colectiva",
+   "slug": "cultura-colectiva",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=cultura-colectiva#cultura-colectiva"
+  },
+  {
+   "name": "Daniel Espinosa Jewelry",
+   "slug": "daniel-espinosa",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=daniel-espinosa#daniel-espinosa"
+  },
+  {
+   "name": "Delend",
+   "slug": "delend",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=delend#delend"
+  },
+  {
+   "name": "Dermage",
+   "slug": "dermage",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dermage#dermage"
+  },
+  {
+   "name": "Descomplica",
+   "slug": "descomplica",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=descomplica#descomplica"
+  },
+  {
+   "name": "Desinchá Company",
+   "slug": "desincha-company",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=desincha-company#desincha-company"
+  },
+  {
+   "name": "Devsu",
+   "slug": "devsu",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=devsu#devsu"
+  },
+  {
+   "name": "Digital House",
+   "slug": "digital-house",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=digital-house#digital-house"
+  },
+  {
+   "name": "Dito",
+   "slug": "dito",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dito#dito"
+  },
+  {
+   "name": "dLocal",
+   "slug": "dlocal",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dlocal#dlocal"
+  },
+  {
+   "name": "Doce d’ocê",
+   "slug": "doce-doce",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=doce-doce#doce-doce"
+  },
+  {
+   "name": "Docket",
+   "slug": "docket",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=docket#docket"
+  },
+  {
+   "name": "Dominio del Plata",
+   "slug": "dominio-del-plata",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dominio-del-plata#dominio-del-plata"
+  },
+  {
+   "name": "Dominion",
+   "slug": "411125",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=411125#411125"
+  },
+  {
+   "name": "Don’t Worry",
+   "slug": "dont-worry",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dont-worry#dont-worry"
+  },
+  {
+   "name": "dr.consulta",
+   "slug": "dr-consulta",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dr-consulta#dr-consulta"
+  },
+  {
+   "name": "Draftea",
+   "slug": "draftea",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=draftea#draftea"
+  },
+  {
+   "name": "Drillco Tools",
+   "slug": "drillco-tools",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=drillco-tools#drillco-tools"
+  },
+  {
+   "name": "DryWash",
+   "slug": "drywash",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "services-task-platforms",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=drywash#drywash"
+  },
+  {
+   "name": "Dynamo",
+   "slug": "dynamo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=dynamo#dynamo"
+  },
+  {
+   "name": "Ebanx",
+   "slug": "ebanx",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ebanx#ebanx"
+  },
+  {
+   "name": "Ebizmarts",
+   "slug": "ebizmarts",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ebizmarts#ebizmarts"
+  },
+  {
+   "name": "Eco-lógica",
+   "slug": "eco-logica",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=eco-logica#eco-logica"
+  },
+  {
+   "name": "Econduce",
+   "slug": "econduce",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=econduce#econduce"
+  },
+  {
+   "name": "Ecopacific",
+   "slug": "ecopacific",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ecopacific#ecopacific"
+  },
+  {
+   "name": "Eden",
+   "slug": "eden",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=eden#eden"
+  },
+  {
+   "name": "Elenas",
+   "slug": "elenas",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=elenas#elenas"
+  },
+  {
+   "name": "ENA",
+   "slug": "ena",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ena#ena"
+  },
+  {
+   "name": "Enmedio",
+   "slug": "enmedio",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=enmedio#enmedio"
+  },
+  {
+   "name": "Envoys",
+   "slug": "envoys",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=envoys#envoys"
+  },
+  {
+   "name": "Erco Energy",
+   "slug": "erco-energy",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=erco-energy#erco-energy"
+  },
+  {
+   "name": "Escol@24Horas",
+   "slug": "escol24horas",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=escol24horas#escol24horas"
+  },
+  {
+   "name": "Estoca",
+   "slug": "estoca",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=estoca#estoca"
+  },
+  {
+   "name": "Etermax",
+   "slug": "etermax",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=etermax#etermax"
+  },
+  {
+   "name": "EZYTEC",
+   "slug": "ezytec",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ezytec#ezytec"
+  },
+  {
+   "name": "Fairplay",
+   "slug": "fairplay",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fairplay#fairplay"
+  },
+  {
+   "name": "Fën Hoteles",
+   "slug": "fen-hoteles",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fen-hoteles#fen-hoteles"
+  },
+  {
+   "name": "Finkargo",
+   "slug": "finkargo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=finkargo#finkargo"
+  },
+  {
+   "name": "Finsocial",
+   "slug": "finsocial",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=finsocial#finsocial"
+  },
+  {
+   "name": "First-Class Mining Attachments (FMA)",
+   "slug": "first-class-mining-attachments-fma",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=first-class-mining-attachments-fma#first-class-mining-attachments-fma"
+  },
+  {
+   "name": "Flash",
+   "slug": "flash",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=flash#flash"
+  },
+  {
+   "name": "Flat.mx",
+   "slug": "flat-mx",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=flat-mx#flat-mx"
+  },
+  {
+   "name": "Flowics",
+   "slug": "flowics",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "customer-relationship-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=flowics#flowics"
+  },
+  {
+   "name": "Fluency Academy",
+   "slug": "fluency-academy",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fluency-academy#fluency-academy"
+  },
+  {
+   "name": "Fluvip",
+   "slug": "fluvip",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fluvip#fluvip"
+  },
+  {
+   "name": "Foodology",
+   "slug": "foodology",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "alternative-models",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=foodology#foodology"
+  },
+  {
+   "name": "FortBrasil",
+   "slug": "fortbrasil",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fortbrasil#fortbrasil"
+  },
+  {
+   "name": "Frete.com",
+   "slug": "frete-com",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=frete-com#frete-com"
+  },
+  {
+   "name": "Frubana",
+   "slug": "frubana",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=frubana#frubana"
+  },
+  {
+   "name": "Fullsand",
+   "slug": "fullsand",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=fullsand#fullsand"
+  },
+  {
+   "name": "Funtour",
+   "slug": "funtour",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=funtour#funtour"
+  },
+  {
+   "name": "Gaia Desgin",
+   "slug": "gaia-desgin",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gaia-desgin#gaia-desgin"
+  },
+  {
+   "name": "Galgo (formerly Migrante)",
+   "slug": "migrante",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=migrante#migrante"
+  },
+  {
+   "name": "Game Planet",
+   "slug": "game-planet",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=game-planet#game-planet"
+  },
+  {
+   "name": "Geekie",
+   "slug": "geekie",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=geekie#geekie"
+  },
+  {
+   "name": "GENESYS",
+   "slug": "genesys",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=genesys#genesys"
+  },
+  {
+   "name": "Genial Care",
+   "slug": "genial-care",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=genial-care#genial-care"
+  },
+  {
+   "name": "Geo Energetica",
+   "slug": "geo-energetica",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=geo-energetica#geo-energetica"
+  },
+  {
+   "name": "GEOMAR",
+   "slug": "geomar",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=geomar#geomar"
+  },
+  {
+   "name": "GeoPagos",
+   "slug": "geopagos",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=geopagos#geopagos"
+  },
+  {
+   "name": "Geovictoria",
+   "slug": "geovictoria",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=geovictoria#geovictoria"
+  },
+  {
+   "name": "Gera",
+   "slug": "gera",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gera#gera"
+  },
+  {
+   "name": "Gesto",
+   "slug": "gesto",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gesto#gesto"
+  },
+  {
+   "name": "GIINT / Storeacell",
+   "slug": "giint-storeacell",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=giint-storeacell#giint-storeacell"
+  },
+  {
+   "name": "Global66",
+   "slug": "global66",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=global66#global66"
+  },
+  {
+   "name": "Globant",
+   "slug": "globant",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=globant#globant"
+  },
+  {
+   "name": "Gocase",
+   "slug": "gocase",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gocase#gocase"
+  },
+  {
+   "name": "GOintegro",
+   "slug": "gointegro",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gointegro#gointegro"
+  },
+  {
+   "name": "GoodPeople S.A.",
+   "slug": "goodpeople-s-a",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=goodpeople-s-a#goodpeople-s-a"
+  },
+  {
+   "name": "GoPass",
+   "slug": "gopass",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gopass#gopass"
+  },
+  {
+   "name": "Groupon Peixe",
+   "slug": "groupon-peixe",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=groupon-peixe#groupon-peixe"
+  },
+  {
+   "name": "Grupo Air",
+   "slug": "grupo-air",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-air#grupo-air"
+  },
+  {
+   "name": "Grupo ARS",
+   "slug": "grupo-ars",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-ars#grupo-ars"
+  },
+  {
+   "name": "Grupo Gastronómico",
+   "slug": "grupo-gastronomico",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-gastronomico#grupo-gastronomico"
+  },
+  {
+   "name": "Grupo Industrial Ideagro",
+   "slug": "grupo-industrial-ideagro",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-industrial-ideagro#grupo-industrial-ideagro"
+  },
+  {
+   "name": "Grupo MeikO",
+   "slug": "grupo-meiko",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-meiko#grupo-meiko"
+  },
+  {
+   "name": "Grupo SOHIN",
+   "slug": "grupo-sohin",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-sohin#grupo-sohin"
+  },
+  {
+   "name": "Grupo Trigo",
+   "slug": "grupo-trigo",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=grupo-trigo#grupo-trigo"
+  },
+  {
+   "name": "Guapaletas",
+   "slug": "guapaletas",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=guapaletas#guapaletas"
+  },
+  {
+   "name": "GuiaBolso",
+   "slug": "guiabolso",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=guiabolso#guiabolso"
+  },
+  {
+   "name": "Gupy",
+   "slug": "gupy",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=gupy#gupy"
+  },
+  {
+   "name": "Habi",
+   "slug": "habi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=habi#habi"
+  },
+  {
+   "name": "Healthatom",
+   "slug": "healthatom",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=healthatom#healthatom"
+  },
+  {
+   "name": "Hilab",
+   "slug": "hilab",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=hilab#hilab"
+  },
+  {
+   "name": "Hogaru",
+   "slug": "hogaru",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=hogaru#hogaru"
+  },
+  {
+   "name": "Holistik",
+   "slug": "holistik",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=holistik#holistik"
+  },
+  {
+   "name": "Home Burgers",
+   "slug": "home-burgers",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=home-burgers#home-burgers"
+  },
+  {
+   "name": "Homelend Tecnologia",
+   "slug": "homelend-tecnologia",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "payments-financial-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=homelend-tecnologia#homelend-tecnologia"
+  },
+  {
+   "name": "Hotmart",
+   "slug": "hotmart",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=hotmart#hotmart"
+  },
+  {
+   "name": "Houm",
+   "slug": "houm",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=houm#houm"
+  },
+  {
+   "name": "Housi",
+   "slug": "housi",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=housi#housi"
+  },
+  {
+   "name": "Ibushak",
+   "slug": "ibushak",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ibushak#ibushak"
+  },
+  {
+   "name": "idwall",
+   "slug": "idwall",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=idwall#idwall"
+  },
+  {
+   "name": "Ilumexico",
+   "slug": "ilumexico",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ilumexico#ilumexico"
+  },
+  {
+   "name": "Imagen Dental",
+   "slug": "imagen-dental",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=imagen-dental#imagen-dental"
+  },
+  {
+   "name": "Incode",
+   "slug": "incode",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=incode#incode"
+  },
+  {
+   "name": "Incognia",
+   "slug": "incognia",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=incognia#incognia"
+  },
+  {
+   "name": "Infocorp",
+   "slug": "infocorp",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=infocorp#infocorp"
+  },
+  {
+   "name": "Inmunova",
+   "slug": "inmunova",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=inmunova#inmunova"
+  },
+  {
+   "name": "Innovex",
+   "slug": "innovex",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "aquaculture",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=innovex#innovex"
+  },
+  {
+   "name": "Insider",
+   "slug": "insider-2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=insider-2#insider-2"
+  },
+  {
+   "name": "Inspectorio",
+   "slug": "inspectorio",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=inspectorio#inspectorio"
+  },
+  {
+   "name": "InstaFit",
+   "slug": "instafit",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=instafit#instafit"
+  },
+  {
+   "name": "Instaleap",
+   "slug": "instaleap",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=instaleap#instaleap"
+  },
+  {
+   "name": "Intelipost",
+   "slug": "intelipost",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=intelipost#intelipost"
+  },
+  {
+   "name": "Internet Media Services (IMS)",
+   "slug": "internet-media-services-ims",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=internet-media-services-ims#internet-media-services-ims"
+  },
+  {
+   "name": "Intizen",
+   "slug": "intizen",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=intizen#intizen"
+  },
+  {
+   "name": "Inventa",
+   "slug": "inventa",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=inventa#inventa"
+  },
+  {
+   "name": "InvGate",
+   "slug": "invgate",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "it-devops",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=invgate#invgate"
+  },
+  {
+   "name": "Involves",
+   "slug": "involves",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=involves#involves"
+  },
+  {
+   "name": "ISA",
+   "slug": "isa",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=isa#isa"
+  },
+  {
+   "name": "isaac",
+   "slug": "isaac",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=isaac#isaac"
+  },
+  {
+   "name": "ISystems",
+   "slug": "i-systems",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=i-systems#i-systems"
+  },
+  {
+   "name": "iVisa",
+   "slug": "ivisa",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ivisa#ivisa"
+  },
+  {
+   "name": "Jampp",
+   "slug": "jampp",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=jampp#jampp"
+  },
+  {
+   "name": "Jobsity",
+   "slug": "jobsity",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=jobsity#jobsity"
+  },
+  {
+   "name": "Jüsto",
+   "slug": "justo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=justo#justo"
+  },
+  {
+   "name": "Justos",
+   "slug": "justos",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=justos#justos"
+  },
+  {
+   "name": "Kamino",
+   "slug": "432823",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "expense-management-corporate-cards",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=432823#432823"
+  },
+  {
+   "name": "Kavak",
+   "slug": "kavak",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "auto-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kavak#kavak"
+  },
+  {
+   "name": "Keepcon",
+   "slug": "keepcon",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=keepcon#keepcon"
+  },
+  {
+   "name": "KIBERNUM",
+   "slug": "kibernum",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kibernum#kibernum"
+  },
+  {
+   "name": "Kinedu",
+   "slug": "kinedu",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kinedu#kinedu"
+  },
+  {
+   "name": "KingAgro",
+   "slug": "kingagro",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kingagro#kingagro"
+  },
+  {
+   "name": "Klar",
+   "slug": "klar",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=klar#klar"
+  },
+  {
+   "name": "KLog.co",
+   "slug": "klog-co",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=klog-co#klog-co"
+  },
+  {
+   "name": "Knotion",
+   "slug": "knotion",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=knotion#knotion"
+  },
+  {
+   "name": "KO Group",
+   "slug": "ko-group",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ko-group#ko-group"
+  },
+  {
+   "name": "Koltin",
+   "slug": "koltin",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=koltin#koltin"
+  },
+  {
+   "name": "Kovi",
+   "slug": "kovi",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kovi#kovi"
+  },
+  {
+   "name": "Kubo Financiero",
+   "slug": "kubo-financiero",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kubo-financiero#kubo-financiero"
+  },
+  {
+   "name": "Kueski",
+   "slug": "kueski",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kueski#kueski"
+  },
+  {
+   "name": "Kura Biotech",
+   "slug": "kura-biotech",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=kura-biotech#kura-biotech"
+  },
+  {
+   "name": "La Haus",
+   "slug": "la-haus",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=la-haus#la-haus"
+  },
+  {
+   "name": "La Zarza",
+   "slug": "la-zarza",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=la-zarza#la-zarza"
+  },
+  {
+   "name": "Latir",
+   "slug": "latir",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=latir#latir"
+  },
+  {
+   "name": "Laudex",
+   "slug": "laudex",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=laudex#laudex"
+  },
+  {
+   "name": "LEASY",
+   "slug": "leasy",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=leasy#leasy"
+  },
+  {
+   "name": "Lemon",
+   "slug": "lemon",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=lemon#lemon"
+  },
+  {
+   "name": "Lemon Studios",
+   "slug": "lemon-studios",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=lemon-studios#lemon-studios"
+  },
+  {
+   "name": "Lemontech",
+   "slug": "lemontech",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=lemontech#lemontech"
+  },
+  {
+   "name": "Lemu ( Ex OddIndustries)",
+   "slug": "oddindustries",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "it-devops",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=oddindustries#oddindustries"
+  },
+  {
+   "name": "Leonali",
+   "slug": "leonali",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=leonali#leonali"
+  },
+  {
+   "name": "Limonada",
+   "slug": "limonada",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=limonada#limonada"
+  },
+  {
+   "name": "Link Mobile",
+   "slug": "link-mobile",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=link-mobile#link-mobile"
+  },
+  {
+   "name": "LiSim",
+   "slug": "lisim",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=lisim#lisim"
+  },
+  {
+   "name": "Littio",
+   "slug": "littio",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=littio#littio"
+  },
+  {
+   "name": "Liv Up",
+   "slug": "liv-up",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "alternative-models",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=liv-up#liv-up"
+  },
+  {
+   "name": "Livance",
+   "slug": "livance",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=livance#livance"
+  },
+  {
+   "name": "LiveMode",
+   "slug": "livemode",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=livemode#livemode"
+  },
+  {
+   "name": "Location World",
+   "slug": "location-world",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=location-world#location-world"
+  },
+  {
+   "name": "Loft",
+   "slug": "loft",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=loft#loft"
+  },
+  {
+   "name": "LogComex",
+   "slug": "logcomex",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=logcomex#logcomex"
+  },
+  {
+   "name": "Loog Guitars",
+   "slug": "loog-guitars",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "consumer-products",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=loog-guitars#loog-guitars"
+  },
+  {
+   "name": "Lumni",
+   "slug": "lumni",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=lumni#lumni"
+  },
+  {
+   "name": "MadeiraMadeira",
+   "slug": "madeiramadeira",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=madeiramadeira#madeiramadeira"
+  },
+  {
+   "name": "Magnamed",
+   "slug": "magnamed",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-equipment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=magnamed#magnamed"
+  },
+  {
+   "name": "Makasí",
+   "slug": "makasi",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=makasi#makasi"
+  },
+  {
+   "name": "MaqTec",
+   "slug": "maqtec",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=maqtec#maqtec"
+  },
+  {
+   "name": "Maria Almenara",
+   "slug": "maria-almenara",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=maria-almenara#maria-almenara"
+  },
+  {
+   "name": "Maskota",
+   "slug": "maskota",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=maskota#maskota"
+  },
+  {
+   "name": "Mastermaq",
+   "slug": "mastermaq",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mastermaq#mastermaq"
+  },
+  {
+   "name": "MaxMilhas",
+   "slug": "maxmilhas",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=maxmilhas#maxmilhas"
+  },
+  {
+   "name": "Maxtrack",
+   "slug": "maxtrack",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=maxtrack#maxtrack"
+  },
+  {
+   "name": "MCK Hospitality",
+   "slug": "osaka",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=osaka#osaka"
+  },
+  {
+   "name": "MEDIASTREAM",
+   "slug": "mediastream",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mediastream#mediastream"
+  },
+  {
+   "name": "Medica Santa Carmen",
+   "slug": "medica-santa-carmen",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=medica-santa-carmen#medica-santa-carmen"
+  },
+  {
+   "name": "Medix",
+   "slug": "medix",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-equipment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=medix#medix"
+  },
+  {
+   "name": "Megatlon",
+   "slug": "megatlon",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=megatlon#megatlon"
+  },
+  {
+   "name": "Meliuz",
+   "slug": "meliuz",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=meliuz#meliuz"
+  },
+  {
+   "name": "Melonn",
+   "slug": "melonn",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=melonn#melonn"
+  },
+  {
+   "name": "Mendel",
+   "slug": "mendel",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "expense-management-corporate-cards",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mendel#mendel"
+  },
+  {
+   "name": "Mensajeros Urbanos",
+   "slug": "mensajeros-urbanos",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mensajeros-urbanos#mensajeros-urbanos"
+  },
+  {
+   "name": "Mercado Bitcoin",
+   "slug": "mercado-bitcoin",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mercado-bitcoin#mercado-bitcoin"
+  },
+  {
+   "name": "MercadoLibre.com",
+   "slug": "mercadolibre-com",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
+  },
+  {
+   "name": "Merqueo",
+   "slug": "merqueo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=merqueo#merqueo"
+  },
+  {
+   "name": "Meru",
+   "slug": "meru",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=meru#meru"
+  },
+  {
+   "name": "Mesfix",
+   "slug": "mesfix",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mesfix#mesfix"
+  },
+  {
+   "name": "MetaMap",
+   "slug": "metamap",
+   "offices": [
+    "mexico",
+    "poland"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=metamap#metamap"
+  },
+  {
+   "name": "Mi Aguila",
+   "slug": "mi-aguila",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mi-aguila#mi-aguila"
+  },
+  {
+   "name": "Minka",
+   "slug": "minka",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=minka#minka"
+  },
+  {
+   "name": "minu",
+   "slug": "minu",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=minu#minu"
+  },
+  {
+   "name": "Miroculus",
+   "slug": "miroculus",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=miroculus#miroculus"
+  },
+  {
+   "name": "Moises",
+   "slug": "moises",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=moises#moises"
+  },
+  {
+   "name": "Mottu",
+   "slug": "mottu",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mottu#mottu"
+  },
+  {
+   "name": "MoveEdu",
+   "slug": "moveedu",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=moveedu#moveedu"
+  },
+  {
+   "name": "Movii",
+   "slug": "movii",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=movii#movii"
+  },
+  {
+   "name": "Movile",
+   "slug": "movile",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=movile#movile"
+  },
+  {
+   "name": "Mural",
+   "slug": "mural",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=mural#mural"
+  },
+  {
+   "name": "Nelogica",
+   "slug": "nelogica",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nelogica#nelogica"
+  },
+  {
+   "name": "NeoAssist",
+   "slug": "neoassist",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=neoassist#neoassist"
+  },
+  {
+   "name": "Neon",
+   "slug": "neon",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=neon#neon"
+  },
+  {
+   "name": "Neptuno Pumps",
+   "slug": "neptuno-pumps",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=neptuno-pumps#neptuno-pumps"
+  },
+  {
+   "name": "Nexu",
+   "slug": "nexu",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nexu#nexu"
+  },
+  {
+   "name": "NG.CASH",
+   "slug": "ng-cash",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ng-cash#ng-cash"
+  },
+  {
+   "name": "Nimblr.ai",
+   "slug": "nimblr-ai",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nimblr-ai#nimblr-ai"
+  },
+  {
+   "name": "NIU Foods",
+   "slug": "niu-foods",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=niu-foods#niu-foods"
+  },
+  {
+   "name": "nocnoc",
+   "slug": "nocnoc",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nocnoc#nocnoc"
+  },
+  {
+   "name": "Nomad",
+   "slug": "nomad",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nomad#nomad"
+  },
+  {
+   "name": "NotCo",
+   "slug": "notco",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=notco#notco"
+  },
+  {
+   "name": "Novoagro",
+   "slug": "novoagro",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=novoagro#novoagro"
+  },
+  {
+   "name": "Nowports",
+   "slug": "nowports",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nowports#nowports"
+  },
+  {
+   "name": "Nutraline",
+   "slug": "nutraline",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nutraline#nutraline"
+  },
+  {
+   "name": "Nuvemshop",
+   "slug": "nuvemshop",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "ecommerce-enablers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nuvemshop#nuvemshop"
+  },
+  {
+   "name": "Nuvocargo",
+   "slug": "nuvocargo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=nuvocargo#nuvocargo"
+  },
+  {
+   "name": "OFI",
+   "slug": "ofi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ofi#ofi"
+  },
+  {
+   "name": "Olist",
+   "slug": "olist",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "ecommerce-enablers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=olist#olist"
+  },
+  {
+   "name": "Omie",
+   "slug": "omie",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=omie#omie"
+  },
+  {
+   "name": "Onapsis",
+   "slug": "onapsis",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=onapsis#onapsis"
+  },
+  {
+   "name": "OneSkin",
+   "slug": "oneskin",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=oneskin#oneskin"
+  },
+  {
+   "name": "Onfly",
+   "slug": "onfly",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "vertical-saas",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=onfly#onfly"
+  },
+  {
+   "name": "OnTop",
+   "slug": "ontop",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ontop#ontop"
+  },
+  {
+   "name": "OnVacation",
+   "slug": "onvacation",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=onvacation#onvacation"
+  },
+  {
+   "name": "Opendat",
+   "slug": "opendat",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=opendat#opendat"
+  },
+  {
+   "name": "OpenZeppelin",
+   "slug": "openzeppelin",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "it-devops",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=openzeppelin#openzeppelin"
+  },
+  {
+   "name": "OPI Analytics",
+   "slug": "opi-analytics",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=opi-analytics#opi-analytics"
+  },
+  {
+   "name": "OXXEAN",
+   "slug": "oxxean",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=oxxean#oxxean"
+  },
+  {
+   "name": "Ozono Producciones",
+   "slug": "ozono-producciones",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ozono-producciones#ozono-producciones"
+  },
+  {
+   "name": "Paccari",
+   "slug": "pacari",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pacari#pacari"
+  },
+  {
+   "name": "Pagaleve",
+   "slug": "pagaleve",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pagaleve#pagaleve"
+  },
+  {
+   "name": "Pantys",
+   "slug": "pantys",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pantys#pantys"
+  },
+  {
+   "name": "Parkimovil",
+   "slug": "parkimovil",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=parkimovil#parkimovil"
+  },
+  {
+   "name": "Passei Direto",
+   "slug": "passei-direto",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=passei-direto#passei-direto"
+  },
+  {
+   "name": "Patagonia Biotecnología",
+   "slug": "patagonia-biotecnologia",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=patagonia-biotecnologia#patagonia-biotecnologia"
+  },
+  {
+   "name": "PedidosYa",
+   "slug": "pedidosya",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pedidosya#pedidosya"
+  },
+  {
+   "name": "PhageLab",
+   "slug": "phagelab",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=phagelab#phagelab"
+  },
+  {
+   "name": "Pier",
+   "slug": "pier",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pier#pier"
+  },
+  {
+   "name": "Pipefy",
+   "slug": "pipefy",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pipefy#pipefy"
+  },
+  {
+   "name": "Pipo Saúde",
+   "slug": "pipo-saude",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pipo-saude#pipo-saude"
+  },
+  {
+   "name": "Pismo",
+   "slug": "pismo",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pismo#pismo"
+  },
+  {
+   "name": "Pitzi",
+   "slug": "pitzi",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pitzi#pitzi"
+  },
+  {
+   "name": "Platzi",
+   "slug": "platzi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=platzi#platzi"
+  },
+  {
+   "name": "Plaza Logistica",
+   "slug": "plaza-logistica",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=plaza-logistica#plaza-logistica"
+  },
+  {
+   "name": "Pobre Juan",
+   "slug": "pobre-juan",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pobre-juan#pobre-juan"
+  },
+  {
+   "name": "Poke",
+   "slug": "poke",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=poke#poke"
+  },
+  {
+   "name": "Pomelo",
+   "slug": "pomelo",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pomelo#pomelo"
+  },
+  {
+   "name": "Porter Group (Kiper)",
+   "slug": "porter-group-kiper",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "vertical-saas",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=porter-group-kiper#porter-group-kiper"
+  },
+  {
+   "name": "Prática",
+   "slug": "pratica",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pratica#pratica"
+  },
+  {
+   "name": "Prestamype",
+   "slug": "prestamype",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prestamype#prestamype"
+  },
+  {
+   "name": "Previta",
+   "slug": "previta",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=previta#previta"
+  },
+  {
+   "name": "Prex",
+   "slug": "prex",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prex#prex"
+  },
+  {
+   "name": "Prey",
+   "slug": "prey",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prey#prey"
+  },
+  {
+   "name": "Prima",
+   "slug": "prima",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prima#prima"
+  },
+  {
+   "name": "Principia",
+   "slug": "principia",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=principia#principia"
+  },
+  {
+   "name": "ProactiveOffice",
+   "slug": "proactiveoffice",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=proactiveoffice#proactiveoffice"
+  },
+  {
+   "name": "Procesa Chiapas",
+   "slug": "processa-chiapas",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=processa-chiapas#processa-chiapas"
+  },
+  {
+   "name": "Prodalysa (SWT Stevia)",
+   "slug": "prodalysa-swt-stevia",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-manufacturing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prodalysa-swt-stevia#prodalysa-swt-stevia"
+  },
+  {
+   "name": "Prometeo",
+   "slug": "prometeo",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=prometeo#prometeo"
+  },
+  {
+   "name": "Proteus",
+   "slug": "proteus",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=proteus#proteus"
+  },
+  {
+   "name": "Pulso Salud",
+   "slug": "pulso-salud",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=pulso-salud#pulso-salud"
+  },
+  {
+   "name": "Puntaje Nacional-OGR",
+   "slug": "puntaje-nacional-ogr",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=puntaje-nacional-ogr#puntaje-nacional-ogr"
+  },
+  {
+   "name": "Puntored",
+   "slug": "puntored",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=puntored#puntored"
+  },
+  {
+   "name": "Puppis",
+   "slug": "puppis",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=puppis#puppis"
+  },
+  {
+   "name": "QI Tech",
+   "slug": "qi-tech",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=qi-tech#qi-tech"
+  },
+  {
+   "name": "Quadminds",
+   "slug": "quadminds",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=quadminds#quadminds"
+  },
+  {
+   "name": "Quantum Talent",
+   "slug": "quantum-talent",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=quantum-talent#quantum-talent"
+  },
+  {
+   "name": "Quero",
+   "slug": "quero",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "education",
+   "subVertical": "primary-secondary-schools",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=quero#quero"
+  },
+  {
+   "name": "Quinoa",
+   "slug": "quinoa",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=quinoa#quinoa"
+  },
+  {
+   "name": "R2",
+   "slug": "r2",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=r2#r2"
+  },
+  {
+   "name": "R5",
+   "slug": "r5",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=r5#r5"
+  },
+  {
+   "name": "Rappi",
+   "slug": "rappi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rappi#rappi"
+  },
+  {
+   "name": "RD Station",
+   "slug": "rd-station",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rd-station#rd-station"
+  },
+  {
+   "name": "RDA Renting",
+   "slug": "rda-renting",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rda-renting#rda-renting"
+  },
+  {
+   "name": "Recorrido.cl",
+   "slug": "recorrido-cl",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=recorrido-cl#recorrido-cl"
+  },
+  {
+   "name": "Refinancia",
+   "slug": "refinancia",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=refinancia#refinancia"
+  },
+  {
+   "name": "Refurbi",
+   "slug": "refurbi",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "consumer-products",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=refurbi#refurbi"
+  },
+  {
+   "name": "Reservamos",
+   "slug": "reservamos",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=reservamos#reservamos"
+  },
+  {
+   "name": "Retail Compass",
+   "slug": "retail-compass",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "ecommerce-enablers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=retail-compass#retail-compass"
+  },
+  {
+   "name": "Reuse",
+   "slug": "reuse",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "consumer-products",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=reuse#reuse"
+  },
+  {
+   "name": "Ripio",
+   "slug": "ripio",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "investing-trading",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ripio#ripio"
+  },
+  {
+   "name": "RMES Analytics",
+   "slug": "rmes-analytics",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rmes-analytics#rmes-analytics"
+  },
+  {
+   "name": "RobinFood",
+   "slug": "robinfood",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "food-service",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=robinfood#robinfood"
+  },
+  {
+   "name": "Rock Content",
+   "slug": "rock-content",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "adtech-martech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rock-content#rock-content"
+  },
+  {
+   "name": "Rocket.Chat",
+   "slug": "rocket-chat",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rocket-chat#rocket-chat"
+  },
+  {
+   "name": "Rotamundos",
+   "slug": "rotamundos",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=rotamundos#rotamundos"
+  },
+  {
+   "name": "Runa",
+   "slug": "runa",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=runa#runa"
+  },
+  {
+   "name": "Runway",
+   "slug": "runway",
+   "offices": [
+    "chile",
+    "greece"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=runway#runway"
+  },
+  {
+   "name": "SalaUno",
+   "slug": "salauno",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "healthcare-providers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=salauno#salauno"
+  },
+  {
+   "name": "Sallve",
+   "slug": "sallve",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "wellness-beauty",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sallve#sallve"
+  },
+  {
+   "name": "Sami",
+   "slug": "sami",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sami#sami"
+  },
+  {
+   "name": "Satellogic",
+   "slug": "satellogic",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "aerospace-imaging-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=satellogic#satellogic"
+  },
+  {
+   "name": "Savant Pharm",
+   "slug": "savant-pharm",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=savant-pharm#savant-pharm"
+  },
+  {
+   "name": "Scanntech",
+   "slug": "scanntech",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=scanntech#scanntech"
+  },
+  {
+   "name": "Seedz",
+   "slug": "seedz",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "vertical-saas",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=seedz#seedz"
+  },
+  {
+   "name": "SEG Ingeniería",
+   "slug": "seg-ingenieria",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=seg-ingenieria#seg-ingenieria"
+  },
+  {
+   "name": "Seinco",
+   "slug": "seinco",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=seinco#seinco"
+  },
+  {
+   "name": "Selfit",
+   "slug": "selfit",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=selfit#selfit"
+  },
+  {
+   "name": "Sempre Agtech",
+   "slug": "sempre-sementes",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sempre-sementes#sempre-sementes"
+  },
+  {
+   "name": "Sentinel",
+   "slug": "sentinel",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sentinel#sentinel"
+  },
+  {
+   "name": "Servi-All",
+   "slug": "servi-all",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=servi-all#servi-all"
+  },
+  {
+   "name": "Servinformación",
+   "slug": "servinformacion",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "aerospace-imaging-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=servinformacion#servinformacion"
+  },
+  {
+   "name": "SFA Cebar",
+   "slug": "sfa-cebar",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sfa-cebar#sfa-cebar"
+  },
+  {
+   "name": "Shiva",
+   "slug": "shiva",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "vertical-saas",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=shiva#shiva"
+  },
+  {
+   "name": "Siigo",
+   "slug": "siigo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=siigo#siigo"
+  },
+  {
+   "name": "Simetrik",
+   "slug": "simetrik",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=simetrik#simetrik"
+  },
+  {
+   "name": "SimpliRoute",
+   "slug": "simpliroute",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=simpliroute#simpliroute"
+  },
+  {
+   "name": "Sirtec",
+   "slug": "sirtec",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sirtec#sirtec"
+  },
+  {
+   "name": "SiSNova",
+   "slug": "sisnova",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "health-insurtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sisnova#sisnova"
+  },
+  {
+   "name": "Sistema Bio",
+   "slug": "sistema-bio",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sistema-bio#sistema-bio"
+  },
+  {
+   "name": "SkyAlert",
+   "slug": "skyalert",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "aerospace-imaging-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=skyalert#skyalert"
+  },
+  {
+   "name": "Softruck",
+   "slug": "softruck",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=softruck#softruck"
+  },
+  {
+   "name": "Solfácil",
+   "slug": "solfacil",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=solfacil#solfacil"
+  },
+  {
+   "name": "Solfium",
+   "slug": "solfium",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=solfium#solfium"
+  },
+  {
+   "name": "Solinftec",
+   "slug": "solinftec",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=solinftec#solinftec"
+  },
+  {
+   "name": "Solubio",
+   "slug": "solubio",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=solubio#solubio"
+  },
+  {
+   "name": "SOS Asistencia",
+   "slug": "sos-asistencia",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "commerce",
+   "subVertical": "services-task-platforms",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=sos-asistencia#sos-asistencia"
+  },
+  {
+   "name": "Spira",
+   "slug": "spira",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=spira#spira"
+  },
+  {
+   "name": "Stämm",
+   "slug": "stamm",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=stamm#stamm"
+  },
+  {
+   "name": "Stark Bank",
+   "slug": "stark-bank",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=stark-bank#stark-bank"
+  },
+  {
+   "name": "STATUM",
+   "slug": "statum",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=statum#statum"
+  },
+  {
+   "name": "Swap",
+   "slug": "swap",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=swap#swap"
+  },
+  {
+   "name": "Swap",
+   "slug": "swap-2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=swap-2#swap-2"
+  },
+  {
+   "name": "Tako",
+   "slug": "tako-2",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tako-2#tako-2"
+  },
+  {
+   "name": "Tala",
+   "slug": "tala",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tala#tala"
+  },
+  {
+   "name": "Tangelo",
+   "slug": "tangelo",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tangelo#tangelo"
+  },
+  {
+   "name": "Tanya Moss",
+   "slug": "tanya-moss",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tanya-moss#tanya-moss"
+  },
+  {
+   "name": "tapi",
+   "slug": "tapi",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tapi#tapi"
+  },
+  {
+   "name": "Technisys",
+   "slug": "technisys",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "banking-infrastructure",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=technisys#technisys"
+  },
+  {
+   "name": "Tecnovax Laboratories",
+   "slug": "tecnovax-laboratories",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "agriculture-and-agtech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tecnovax-laboratories#tecnovax-laboratories"
+  },
+  {
+   "name": "TECSAÚDE",
+   "slug": "tecsaude",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-equipment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tecsaude#tecsaude"
+  },
+  {
+   "name": "TecVerde",
+   "slug": "tecverde",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tecverde#tecverde"
+  },
+  {
+   "name": "Tekton Labs",
+   "slug": "tekton-labs",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tekton-labs#tekton-labs"
+  },
+  {
+   "name": "Tembici",
+   "slug": "tembici",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tembici#tembici"
+  },
+  {
+   "name": "Tempest Security",
+   "slug": "tempest-security",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tempest-security#tempest-security"
+  },
+  {
+   "name": "Territorium Life",
+   "slug": "territorium-life",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=territorium-life#territorium-life"
+  },
+  {
+   "name": "Tes América",
+   "slug": "tes-america",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "aerospace-imaging-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tes-america#tes-america"
+  },
+  {
+   "name": "Thais",
+   "slug": "thais",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "digital-health",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=thais#thais"
+  },
+  {
+   "name": "The Urban Haus",
+   "slug": "the-urban-haus",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=the-urban-haus#the-urban-haus"
+  },
+  {
+   "name": "Tiaxa",
+   "slug": "tiaxa",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tiaxa#tiaxa"
+  },
+  {
+   "name": "TiendaMIA",
+   "slug": "tiendamia",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tiendamia#tiendamia"
+  },
+  {
+   "name": "TiendaPet",
+   "slug": "tiendapet",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tiendapet#tiendapet"
+  },
+  {
+   "name": "Tipti",
+   "slug": "tipti",
+   "offices": [
+    "ecuador"
+   ],
+   "vertical": "commerce",
+   "subVertical": "delivery",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tipti#tipti"
+  },
+  {
+   "name": "Todotvmedia",
+   "slug": "todotvmedia",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=todotvmedia#todotvmedia"
+  },
+  {
+   "name": "ToLife",
+   "slug": "tolife",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "medical-software",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tolife#tolife"
+  },
+  {
+   "name": "Torre",
+   "slug": "torre",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "human-resource-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=torre#torre"
+  },
+  {
+   "name": "TPaga",
+   "slug": "tpaga",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "consumer-payments",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tpaga#tpaga"
+  },
+  {
+   "name": "TRACTIAN",
+   "slug": "tractian",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tractian#tractian"
+  },
+  {
+   "name": "Trafilea",
+   "slug": "trafilea",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=trafilea#trafilea"
+  },
+  {
+   "name": "Triciclos",
+   "slug": "triciclos",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "energy-and-cleantech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=triciclos#triciclos"
+  },
+  {
+   "name": "Trocafone",
+   "slug": "trocafone",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=trocafone#trocafone"
+  },
+  {
+   "name": "TUL",
+   "slug": "tul",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=tul#tul"
+  },
+  {
+   "name": "Turismocity",
+   "slug": "turismocity",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=turismocity#turismocity"
+  },
+  {
+   "name": "Ualá",
+   "slug": "uala",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=uala#uala"
+  },
+  {
+   "name": "Uatt?",
+   "slug": "uatt",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=uatt#uatt"
+  },
+  {
+   "name": "Ubits",
+   "slug": "ubits",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ubits#ubits"
+  },
+  {
+   "name": "Unico",
+   "slug": "unico",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=unico#unico"
+  },
+  {
+   "name": "Unima",
+   "slug": "unima",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "pharma-diagnostics-life-sciences",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=unima#unima"
+  },
+  {
+   "name": "URBANO DESIGN",
+   "slug": "urbano-design",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=urbano-design#urbano-design"
+  },
+  {
+   "name": "Urbvan",
+   "slug": "urbvan",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=urbvan#urbvan"
+  },
+  {
+   "name": "Vammo",
+   "slug": "vammo",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "mobility",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vammo#vammo"
+  },
+  {
+   "name": "Vanesa Duran Joyas",
+   "slug": "vanesa-duran-joyas",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vanesa-duran-joyas#vanesa-duran-joyas"
+  },
+  {
+   "name": "Vendomatica",
+   "slug": "vendomatica",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vendomatica#vendomatica"
+  },
+  {
+   "name": "Ver de Verdad",
+   "slug": "ver-de-verdad",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=ver-de-verdad#ver-de-verdad"
+  },
+  {
+   "name": "VERTICAL",
+   "slug": "vertical",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "education",
+   "subVertical": "lifelong-learning",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vertical#vertical"
+  },
+  {
+   "name": "Vetto AI",
+   "slug": "vetto-ai",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "it-devops",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vetto-ai#vetto-ai"
+  },
+  {
+   "name": "Vicky Form",
+   "slug": "vicky-form",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vicky-form#vicky-form"
+  },
+  {
+   "name": "VivaReal",
+   "slug": "vivareal",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "proptech-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vivareal#vivareal"
+  },
+  {
+   "name": "Vive Agro",
+   "slug": "vive-agro",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "food-beverage",
+   "subVertical": "cpg",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vive-agro#vive-agro"
+  },
+  {
+   "name": "VN Global BPO SA.",
+   "slug": "vn-global-bpo-sa",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vn-global-bpo-sa#vn-global-bpo-sa"
+  },
+  {
+   "name": "VOPERO",
+   "slug": "vopero",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "fashion-apparel",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vopero#vopero"
+  },
+  {
+   "name": "VTEX",
+   "slug": "vtex",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "ecommerce-enablers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vtex#vtex"
+  },
+  {
+   "name": "VU Security",
+   "slug": "vu-security",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cybersecurity",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=vu-security#vu-security"
+  },
+  {
+   "name": "Welle Laser",
+   "slug": "welle-laser",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "industry-4-0",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=welle-laser#welle-laser"
+  },
+  {
+   "name": "Wellhub (fmr. GymPass)",
+   "slug": "wellhub-fmr-gympass",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=wellhub-fmr-gympass#wellhub-fmr-gympass"
+  },
+  {
+   "name": "Wholemeaning",
+   "slug": "wholemeaning",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=wholemeaning#wholemeaning"
+  },
+  {
+   "name": "Widetech",
+   "slug": "widetech",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "smart-city-and-climate",
+   "subVertical": "logistics-tech",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=widetech#widetech"
+  },
+  {
+   "name": "Wildlife Studios",
+   "slug": "wildlife-studios",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=wildlife-studios#wildlife-studios"
+  },
+  {
+   "name": "Will bank",
+   "slug": "will-bank",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=will-bank#will-bank"
+  },
+  {
+   "name": "Woba",
+   "slug": "woba",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=woba#woba"
+  },
+  {
+   "name": "Wolox",
+   "slug": "wolox",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=wolox#wolox"
+  },
+  {
+   "name": "Wynwood House",
+   "slug": "wynwood-house",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "commerce",
+   "subVertical": "tourism-hospitality",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=wynwood-house#wynwood-house"
+  },
+  {
+   "name": "Xapo",
+   "slug": "xapo",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "fintech",
+   "subVertical": "digital-banking",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=xapo#xapo"
+  },
+  {
+   "name": "Xepelin",
+   "slug": "xepelin",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=xepelin#xepelin"
+  },
+  {
+   "name": "Xertica",
+   "slug": "xertica",
+   "offices": [
+    "peru"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-services-consulting",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=xertica#xertica"
+  },
+  {
+   "name": "Yalo",
+   "slug": "yalo",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=yalo#yalo"
+  },
+  {
+   "name": "Yema",
+   "slug": "yema",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "consumer-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=yema#yema"
+  },
+  {
+   "name": "Yerra",
+   "slug": "yerra",
+   "offices": [
+    "uruguay"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=yerra#yerra"
+  },
+  {
+   "name": "You Order Me (YOM)",
+   "slug": "you-order-me-yom",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "marketplaces",
+   "subVertical": "b2b-marketplaces",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=you-order-me-yom#you-order-me-yom"
+  },
+  {
+   "name": "Yuno",
+   "slug": "yuno",
+   "offices": [
+    "colombia"
+   ],
+   "vertical": "fintech",
+   "subVertical": "merchant-services-payments-processing",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=yuno#yuno"
+  },
+  {
+   "name": "Zapping",
+   "slug": "zapping",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "commerce",
+   "subVertical": "media-entertainment",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zapping#zapping"
+  },
+  {
+   "name": "ZeBrands",
+   "slug": "zebrands",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "commerce",
+   "subVertical": "household-office",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zebrands#zebrands"
+  },
+  {
+   "name": "Zélé",
+   "slug": "zele",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "healthcare",
+   "subVertical": "wellness-lifestyle",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zele#zele"
+  },
+  {
+   "name": "Zenvia",
+   "slug": "zenvia",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zenvia#zenvia"
+  },
+  {
+   "name": "Zig",
+   "slug": "zig",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "business-intelligence-and-process-optimization",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zig#zig"
+  },
+  {
+   "name": "Zippedi Inc.",
+   "slug": "zippedi-inc",
+   "offices": [
+    "chile"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "retail-management",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zippedi-inc#zippedi-inc"
+  },
+  {
+   "name": "Zippi",
+   "slug": "zippi",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "fintech",
+   "subVertical": "business-lending",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zippi#zippi"
+  },
+  {
+   "name": "Zolvers",
+   "slug": "zolvers",
+   "offices": [
+    "argentina"
+   ],
+   "vertical": "commerce",
+   "subVertical": "services-task-platforms",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zolvers#zolvers"
+  },
+  {
+   "name": "Zubale",
+   "slug": "zubale",
+   "offices": [
+    "mexico"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "ecommerce-enablers",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zubale#zubale"
+  },
+  {
+   "name": "ZUP",
+   "slug": "zup",
+   "offices": [
+    "brazil"
+   ],
+   "vertical": "b2b-software",
+   "subVertical": "cloud-communications",
+   "url": "https://endeavor.org/entrepreneur-companies/?_search=zup#zup"
+  }
+ ]
+}

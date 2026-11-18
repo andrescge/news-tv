@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "collect": "node scripts/collect.mjs",
-    "test": "node --test tests/*.test.mjs"
+    "test": "node --test tests/*.test.mjs",
+    "endeavor": "node scripts/endeavor.mjs"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
