@@ -1,76 +1,104 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T04:21:35.349Z",
+  "generatedAt": "2026-11-18T13:58:18.964Z",
   "stories": [
     {
-      "id": "07454224f6efe6783034",
+      "id": "9652517b88947349ab01",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Stablecoins Are Becoming Commodities. The Infrastructure Around Them Isn’t.",
-      "excerpt": "Stablecoins are creating a market for financial intermediation, not eliminating intermediaries. And the biggest winners may be companies that never issue a stablecoin. That was the story hiding across this week’s headlines. JPMorgan and DBS are developing tokenized deposit networ",
-      "url": "https://www.pymnts.com/cryptocurrency/2026/stablecoins-are-becoming-commodities-the-infrastructure-around-them-isnt/",
+      "title": "Singapore Steps Up Use of AI to Combat Fraud",
+      "excerpt": "Singapore is reportedly stepping up its use of artificial intelligence (AI) in finance. Five of the city-state’s banks have begun pooling transaction data so AI can identify scam patterns that individual lenders could miss, while the Monetary Authority of Singapore (MAS) is due t",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/singapore-steps-up-use-of-ai-to-combat-fraud/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T23:42:02.000Z"
+      "publishedAt": "2026-11-18T13:57:08.000Z"
     },
     {
-      "id": "5b7a5c8ae9a0a91ff38c",
+      "id": "0e539ebdad86f2454170",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Bessent Says Proposed FinCEN Rule Cuts Bank Red Tape to Fight Crime",
-      "excerpt": "The Financial Crimes Enforcement Network (FinCEN) is inviting public comment on its proposed rule designed to strengthen customer due diligence requirements, the agency said in a Tuesday (Nov. 17) press release. The proposed rule would provide that covered financial institutions ",
-      "url": "https://www.pymnts.com/legal/bank-regulation/2026/bessent-says-proposed-fincen-rule-cuts-bank-red-tape-to-fight-crime/",
+      "title": "Visa Adds PayPal and Stripe to Agentic Ready Program",
+      "excerpt": "Visa is expanding its Agentic Ready program to the merchant acceptance ecosystem, adding several new partners including PayPal, Adyen and Fiserv. Part of Visa Intelligent Commerce, the expanded program helps prepare merchants, payment service providers (PSPs) and acquirers for ar",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/visa-adds-paypal-and-stripe-to-agentic-ready-program/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T23:37:45.000Z"
+      "publishedAt": "2026-11-18T11:55:55.000Z"
     },
     {
-      "id": "6f8145f04196e54a4429",
+      "id": "69e40238a880ae1e3f8b",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Outages at JPMorganChase and Microsoft Show the Real Cost of Downtime",
-      "excerpt": "It’s been a week of back-to-back cyber chaos across aviation, banking and enterprise software. And the disruptions are showing no sign of stopping, as on Tuesday (Nov. 17), Apple confirmed new outages impacting its iCloud, Apple Support, Apple Pay and App Store services. Apple’s ",
-      "url": "https://www.pymnts.com/technology/2026/from-microsoft-to-jpmorgan-corporate-america-is-building-the-future-on-technology-it-cant-afford-to-break/",
+      "title": "Finastra Says Banks Should Modernize Payments One Step at a Time",
+      "excerpt": "Watch more: What’s Next in Payments With Finastra’s Mihail Duta Jim Collins published “Good to Great” 25 years ago, giving executives a guide to building companies that could improve year after year through disciplined people and processes. For banks heading into 2027, one scenar",
+      "url": "https://www.pymnts.com/news/payments-innovation/2026/finastra-says-banks-should-modernize-payments-one-step-time/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T22:01:40.000Z"
+      "publishedAt": "2026-11-18T09:03:49.000Z"
     },
     {
-      "id": "82f155a7dd813d76e881",
+      "id": "8f067868726b1f3aa391",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Qonto Wins European Banking License and Targets Small Business Lending",
-      "excerpt": "Qonto, a financial solution for small and medium-sized businesses (SMBs) and freelancers, has secured a banking license from French regulator ACPR and the European Central Bank, the company said in a Tuesday (Nov. 17) post on LinkedIn. The banking license marks “a new chapter” fo",
-      "url": "https://www.pymnts.com/news/banking/2026/qonto-wins-european-banking-license-and-targets-small-business-lending/",
+      "title": "When the Payout Becomes the Customer Experience",
+      "excerpt": "A payment may take only moments to arrive, but its impact on the customer relationship can last far longer. For businesses seeking to build trust and loyalty, the experience of receiving money can become something customers remember, along with the company behind it. That shift i",
+      "url": "https://www.pymnts.com/real-time-payments/2026/when-the-payout-becomes-the-customer-experience/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T21:16:29.000Z"
+      "publishedAt": "2026-11-18T09:03:45.000Z"
     },
     {
-      "id": "42e7ab1aa8aa001bdcc6",
+      "id": "3c2fcf5d9feae6c963b2",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "PNC Bank Lets Customers Get Paid Two Days Early",
-      "excerpt": "PNC Bank launched a feature designed to let eligible clients get paid earlier, according to a Tuesday (Nov. 17) press release. Early Pay gives customers access to qualifying direct deposits up to two business days before their scheduled payday, per the release. PNC began a phased",
-      "url": "https://www.pymnts.com/back-office/payroll/2026/pnc-bank-lets-customers-get-paid-two-days-early/",
+      "title": "When the Payout Becomes the Experience",
+      "excerpt": "The moment customers receive their money can shape how they perceive the company sending it. The “Money Movement Tracker®,” a collaboration with U.S. Bank and Visa Direct, explores how Push to Card can improve payout experiences across earned wage access, higher education and tra",
+      "url": "https://www.pymnts.com/report/tracker/money-movement-when-the-payout-becomes-the-experience/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T20:58:21.000Z"
+      "publishedAt": "2026-11-18T09:03:00.000Z"
+    },
+    {
+      "id": "1d6b0440f6c2488d906c",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "For Gen Z Bill Payers, the Bigger Gap Is Paying the Way They Want To",
+      "excerpt": "A customer can get through a biller’s login and still reach a point where the way they want to pay won’t work. And in that moment, that’s where the experiences of Gen Z and Gen X bill payers diverge. In the previous 12 months, 71.9% of Gen Z consumers encountered a payment method",
+      "url": "https://www.pymnts.com/consumer-payments/2026/for-gen-z-bill-payers-the-bigger-gap-is-paying-the-way-they-want-to/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T09:02:28.000Z"
+    },
+    {
+      "id": "e96ac168418f3f67ff86",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Goldman Sachs leads $280m Series C for Payhawk",
+      "excerpt": "Goldman Sachs has led a $280 million Series C funding round for Payhawk that values the European fintech at $2 billion.",
+      "url": "https://www.finextra.com/newsarticle/48775/goldman-sachs-leads-280m-series-c-for-payhawk?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T08:00:00.000Z"
     },
     {
       "id": "5241ac4a86dc55a606ac",
@@ -101,6 +129,20 @@
       "publishedAt": "2026-11-17T19:01:42.000Z"
     },
     {
+      "id": "35edf3d8763066de343f",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "TPG closes in on Bill Holdings acquisition - FT",
+      "excerpt": "Shares in Bill Holdings rose by more than nine per cent on Tuesday on a Financial Times report that private equity firm TPG is nearing a deal to take the payments automation company private.",
+      "url": "https://www.finextra.com/newsarticle/48774/tpg-closes-in-on-bill-holdings-acquisition---ft?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T18:22:00.000Z"
+    },
+    {
       "id": "7a69457cd89aa87ea97b",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -129,18 +171,18 @@
       "publishedAt": "2026-11-17T17:24:34.000Z"
     },
     {
-      "id": "015c6d590e3e071703ed",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
+      "id": "932c0f793ad5483f680e",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
       "kind": "news",
-      "title": "Paytech Akua recibe inversión de Itaú Ventures para impulsar la inteligencia artificial en la adquirencia en Uruguay y Latam",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNWowaE5FMDN6OEFNWk16WmxxUFZxNHRiQTkzV2dJcDJBMGg3aUVJVV81UVJiWjA0Zl9hWmJpLWVrRDg4Z0lfVUhSbHBmZTFSWlVpOVdlUTZXLUxzbEc0XzFqNy1MS25XOExkYjQ1RUFiM29MQ3hjR3R6WExiU01sYU9VRlhmbWswTENmTmEtTWZvaVl5R1VTaE5nTUdLY2NRcUxhT01zb3RsMnBtd2lwNXdYMk5sM2wwaF85SjdtemRyTy1idjZvTGl5Qy1HbURTWFN4Y09oSHJpMDR5VEVTdFNMVU9JdHVTalF5TlBSOGlFX2c?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-17T15:02:00.000Z"
+      "title": "FCA sees jump in applications to regulatory sandbox and Innovation Pathways service",
+      "excerpt": "The UK's Financial Conduct Authority received more applications to its regulatory sandbox and Innovation Pathways service in the first half of 2026 than during the whole of the previous year.",
+      "url": "https://www.finextra.com/newsarticle/48773/fca-sees-jump-in-applications-to-regulatory-sandbox-and-innovation-pathways-service?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T15:39:00.000Z"
     },
     {
       "id": "a7ee956d86d99dda402e",
@@ -183,6 +225,90 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-17T12:00:00.000Z"
+    },
+    {
+      "id": "6cb4a557f6046c70feaa",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Company vet Fugman put in charge of Apple Pay and Wallet",
+      "excerpt": "Apple has appointed company veteran Corey Fugman as head of its payments and digital wallet services, according to Bloomberg.",
+      "url": "https://www.finextra.com/newsarticle/48767/company-vet-fugman-put-in-charge-of-apple-pay-and-wallet?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-17T00:01:00.000Z"
+    },
+    {
+      "id": "9af0d8770f28308118f5",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Major US banks hit by service outages",
+      "excerpt": "Customers of Bank of America, Chase, US Bank and Wells Fargo have all reported problems with accessing a host of services on Monday.",
+      "url": "https://www.finextra.com/newsarticle/48769/major-us-banks-hit-by-service-outages?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T20:14:00.000Z"
+    },
+    {
+      "id": "22ea458cdc82dad4ba51",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Central banks of England, Thailand and Singapore test synchronised FX settlement",
+      "excerpt": "The Bank of England, the Monetary Authority of Singapore, and the Bank of Thailand say that their research shows that synchronisation – a service that coordinates movements of central bank money – could support interoperability across wholesale FX settlement environments built on",
+      "url": "https://www.finextra.com/newsarticle/48764/central-banks-of-england-thailand-and-singapore-test-synchronised-fx-settlement?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T15:17:00.000Z"
+    },
+    {
+      "id": "393db2dd6a7888b74f49",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Anne Boden unveils AI-focused banking venture",
+      "excerpt": "Starling Bank founder Anne Boden has provided details of her latest venture, an agentic-AI-focused banking startup called Lockwood.",
+      "url": "https://www.finextra.com/newsarticle/48763/anne-boden-unveils-ai-focused-banking-venture?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T14:46:00.000Z"
+    },
+    {
+      "id": "f96603c9c5568cd2c74c",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Revolut put under Italian supervision over AML controls",
+      "excerpt": "An Italian court has placed Revolut's European business under judicial administration because of \"serious deficiencies\" in its anti-money laundering controls, according to Reuters.",
+      "url": "https://www.finextra.com/newsarticle/48762/revolut-put-under-italian-supervision-over-aml-controls?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T14:09:00.000Z"
+    },
+    {
+      "id": "b5a9b8a7d202f8483062",
+      "sourceId": "finextra-crypto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Monument becomes first UK bank to offer tokenised retail deposits",
+      "excerpt": "UK challenger bank Monument aims to meet the demands of the mass-affluent, approximately 11 million professionals and high earners across the nation.",
+      "url": "https://www.finextra.com/newsarticle/48761/monument-becomes-first-uk-bank-to-offer-tokenised-retail-deposits?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Blockchain",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-16T12:07:00.000Z"
     },
     {
       "id": "b8de8cf8d60c9d33bcec",
@@ -381,20 +507,6 @@
       "publishedAt": "2026-11-13T00:01:00.000Z"
     },
     {
-      "id": "faac5b259d0b05e3f9e3",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Visa and Anchorage Digital bring Western Union stablecoin to settlement network",
-      "excerpt": "Visa is working with Anchorage Digital to support select stablecoins as native settlement assets on the payment giant's network, starting with Western Union's USDPT.",
-      "url": "https://www.finextra.com/newsarticle/48752/visa-and-anchorage-digital-bring-western-union-stablecoin-to-settlement-network?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T00:01:00.000Z"
-    },
-    {
       "id": "ba6db5d8dbd6c2a5be38",
       "sourceId": "latam-fintech-hub",
       "category": "latam",
@@ -423,48 +535,6 @@
       "publishedAt": "2026-11-12T21:24:00.000Z"
     },
     {
-      "id": "2b4f77e79eac3c356de2",
-      "sourceId": "finextra-latam",
-      "category": "latam",
-      "kind": "news",
-      "title": "Mexico's Clara raises $65m for spend management platform",
-      "excerpt": "Latin American corporate spend management platform Clara has raised $65 million in a Series C equity round.",
-      "url": "https://www.finextra.com/newsarticle/48753/mexicos-clara-raises-65m-for-spend-management-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · LATAM",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=retail",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:43:00.000Z"
-    },
-    {
-      "id": "a1496a0ea9e5ecd18765",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mexico's Clara raises $65m for spend management platform",
-      "excerpt": "Latin American corporate spend management platform Clara has raised $65 million in a Series C equity round.",
-      "url": "https://www.finextra.com/newsarticle/48753/mexicos-clara-raises-65m-for-spend-management-platform?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:43:00.000Z"
-    },
-    {
-      "id": "92b0bcfadfd2a3de70bc",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Fiserv lays groundwork to offload a debit network",
-      "excerpt": "Fiserv is moving clients to one of its two debit networks as it paves the way to sell the other, says Takis Georgakopoulos.",
-      "url": "https://www.finextra.com/newsarticle/48750/fiserv-lays-groundwork-to-offload-a-debit-network?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T18:19:00.000Z"
-    },
-    {
       "id": "0a4d8cec887c5c8006f6",
       "sourceId": "latamlist",
       "category": "latam",
@@ -479,20 +549,6 @@
       "publishedAt": "2026-11-12T18:06:51.000Z"
     },
     {
-      "id": "b21626bd69f2e340e406",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Starling unveils AI-powered 'talk to transact' feature",
-      "excerpt": "Starling is launching an AI-powered feature that lets retail customers set up payments by speaking to the bank's app.",
-      "url": "https://www.finextra.com/newsarticle/48748/starling-unveils-ai-powered-talk-to-transact-feature?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T15:22:00.000Z"
-    },
-    {
       "id": "3e086e7f99cfc7d822de",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -505,34 +561,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-12T15:18:01.000Z"
-    },
-    {
-      "id": "65dbe8abae64d22cb6d3",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Intermex 'rejects' Western Union's termination of takeover deal",
-      "excerpt": "Intermex says that it rejects Western Union's decision to abandon a $500 million acquisition deal and is demanding its rival takes \"all actions necessary to consummate the merger\".",
-      "url": "https://www.finextra.com/newsarticle/48747/intermex-rejects-western-unions-termination-of-takeover-deal?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T15:02:00.000Z"
-    },
-    {
-      "id": "4245d98ed9dc6874a91a",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "BaaS bank Griffin raises £20m to add cards and stablecoin capabilities",
-      "excerpt": "UK Banking-as-a-Service bank Griffin has raised £20 million in a Series B funding round that values the business at over £100 million.",
-      "url": "https://www.finextra.com/newsarticle/48746/baas-bank-griffin-raises-20m-to-add-cards-and-stablecoin-capabilities?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-12T14:41:00.000Z"
     },
     {
       "id": "2cf6262d8e01dfc02762",
@@ -563,18 +591,18 @@
       "publishedAt": "2026-11-11T16:24:34.000Z"
     },
     {
-      "id": "bfb174f221873e793329",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
+      "id": "2e99eae9058f14470d7c",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
       "kind": "news",
-      "title": "Alta raises $47.5m to build blockchain infrastructure for financial institutions",
-      "excerpt": "Google Ventures has joined a $47.5 million Series A round for Alta, a firm building institutional-grade blockchain infrastructure for global finance.",
-      "url": "https://www.finextra.com/newsarticle/48744/alta-raises-475m-to-build-blockchain-infrastructure-for-financial-institutions?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T15:06:00.000Z"
+      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-11T16:24:34.000Z"
     },
     {
       "id": "b64041f631696ddc856e",
@@ -589,20 +617,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-11T15:06:00.000Z"
-    },
-    {
-      "id": "f5767b1a81232f32473d",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Western Union ditches Intermex acquisition",
-      "excerpt": "Western Union has pulled the plug on its $500 million acquisition of rival Intermex after failing to secure an \"acceptable approval\" for the deal from regulators.",
-      "url": "https://www.finextra.com/newsarticle/48743/western-union-ditches-intermex-acquisition?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-11T14:05:00.000Z"
     },
     {
       "id": "c5915605b39f28ca2872",
@@ -801,6 +815,20 @@
       "publishedAt": "2026-11-07T12:00:00.000Z"
     },
     {
+      "id": "2d71920c22d5a115be88",
+      "sourceId": "ecuador-news",
+      "category": "ecuador",
+      "kind": "news",
+      "title": "Nuevas reglas para pagos con tarjetas de crédito y débito en Ecuador: comercios no podrán cobrar recargos, entre otros cambios",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQd1hzQkt4Q1V4emlNLXBITDRsVTNvbUFxY1dVQ2hGN3N2eU5ZaHgwUG1IOTAxUGlwMkp1RFBfUExOeUdLbXdVaERKSkNUakI3OFZScXc4QTFnQmpPbUl4UDNhZVh1VkpwcnhPOVgtRWVaY3J4eUxrYlJOMnA1T0ZRbDNPeUYwQzhrQVFrOTdwMWVpVnFnakdkRUo0cmdwRlky?oc=5",
+      "source": "Primicias",
+      "sourceUrl": "https://www.primicias.ec/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-07T08:00:00.000Z"
+    },
+    {
       "id": "070704612122f2fda857",
       "sourceId": "ecuador-news",
       "category": "ecuador",
@@ -941,6 +969,20 @@
       "publishedAt": "2026-10-30T12:00:00.000Z"
     },
     {
+      "id": "102b089b1dd2cfca6cbe",
+      "sourceId": "iupana",
+      "category": "latam",
+      "kind": "news",
+      "title": "¿Adiós código Swift? BCP de Perú explora pagos internacionales con alias",
+      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú explora pagos internacionales con alia",
+      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-30T11:00:19.000Z"
+    },
+    {
       "id": "38b0708e38f04f54ed3b",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -969,20 +1011,6 @@
       "publishedAt": "2026-10-30T09:11:00.000Z"
     },
     {
-      "id": "cc075963c930ac66f9ef",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "BofE consults on tokenised collateral in central clearing",
-      "excerpt": "The Bank of England has launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
-      "url": "https://www.finextra.com/newsarticle/48670/bofe-consults-on-tokenised-collateral-in-central-clearing?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T17:23:00.000Z"
-    },
-    {
       "id": "e45a50705c424ef777f4",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -995,20 +1023,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T06:55:01.000Z"
-    },
-    {
-      "id": "3e3bafe34c9015ece399",
-      "sourceId": "finextra-crypto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Firms object to shares being part of OKX-ICE tokenised stock trading venture",
-      "excerpt": "A host of companies, including JPMorgan Chase, Goldman Sachs and Microsoft, have registered their objection to their shares trading on a planned tokenised platform developed by Nyse parent Intercontinental Exchange and crypto exchange OKX.",
-      "url": "https://www.finextra.com/newsarticle/48663/firms-object-to-shares-being-part-of-okx-ice-tokenised-stock-trading-venture?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Blockchain",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=blockchain",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-28T14:51:00.000Z"
     },
     {
       "id": "0a33e1daada6f45e9091",
@@ -1109,20 +1123,6 @@
       "publishedAt": "2026-10-22T20:36:33.000Z"
     },
     {
-      "id": "c0b6dd6adb830d6eb465",
-      "sourceId": "ecuador-news",
-      "category": "ecuador",
-      "kind": "news",
-      "title": "Estas son las falsas cooperativas no autorizadas para operar en Ecuador, alerta Superintendencia de Economía Popular y Solidaria",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQeEhwWjJNS3RQSGZrRnJrUzMtOVo3WUREYk5XbWM3ZnROSXpSVUxYczNoUDBaQ0kxdzdIcHZSeEt3VUVhTThad1ZpUnVqTEgxNWg5SjJKcGRMaG95MVpBaU1CdHdIM1dTN0ppQjl5VHRQZDJ1VS1IeWE5Uk5oVW9LV24zOVo4ZlhpYmZzUzZJOHZDTjM4UGlxTXZqY19IbTdwRXpkbXMwX1IzZkVjNmtING5HLTN4eWgtQmtJ?oc=5",
-      "source": "Primicias",
-      "sourceUrl": "https://www.primicias.ec/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-10-21T07:00:00.000Z"
-    },
-    {
       "id": "d138356cf27287a16330",
       "sourceId": "bce-publicaciones",
       "category": "regulacion",
@@ -1145,8 +1145,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 4
     },
     {
@@ -1156,8 +1156,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1167,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 9
     },
     {
@@ -1178,8 +1178,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1189,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1200,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1211,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1222,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1233,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 8
     },
     {
@@ -1244,8 +1244,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1255,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 3
     },
     {
@@ -1266,8 +1266,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 8
     },
     {
@@ -1276,10 +1276,10 @@
       "category": "latam",
       "kind": "news",
       "url": "https://www.finextra.com/",
-      "status": "error",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-14T17:08:04.895Z",
-      "recentCount": 1
+      "status": "ok",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "recentCount": 0
     },
     {
       "id": "pymnts",
@@ -1288,9 +1288,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
-      "recentCount": 5
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "recentCount": 6
     },
     {
       "id": "finextra-payments",
@@ -1298,9 +1298,9 @@
       "category": "pagos",
       "kind": "news",
       "url": "https://www.finextra.com/",
-      "status": "error",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-14T17:08:04.895Z",
+      "status": "ok",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 12
     },
     {
@@ -1309,10 +1309,10 @@
       "category": "cripto",
       "kind": "news",
       "url": "https://www.finextra.com/",
-      "status": "error",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-14T17:08:04.895Z",
-      "recentCount": 8
+      "status": "ok",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "recentCount": 7
     },
     {
       "id": "chainalysis",
@@ -1321,8 +1321,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T04:21:35.349Z",
-      "lastSuccessAt": "2026-11-18T04:21:35.349Z",
+      "checkedAt": "2026-11-18T13:58:18.964Z",
+      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
       "recentCount": 10
     }
   ]
