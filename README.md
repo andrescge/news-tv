@@ -1,6 +1,6 @@
 # NEWS·TV
 
-Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM. Hay cinco canales; cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
+Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM, además de prensa sobre empresas de emprendedores Endeavor en la región. Hay seis canales (las teclas 1 a 6 sintonizan cada uno); cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
 
 **Sitio público:** [andrescge.github.io/news-tv](https://andrescge.github.io/news-tv/). La carcasa de grafito y la pantalla CRT están dibujadas con CSS; no se usa ninguna fotografía de terceros.
 
@@ -19,17 +19,67 @@ Abre la URL local que muestre `serve`. El sitio es HTML, CSS y JavaScript puro; 
 
 ## Fuentes y criterios
 
-El recopilador une varios feeds RSS y páginas públicas del BCE y de Supercias. Google News sirve para descubrir publicaciones de medios que no ofrecen feed propio; cada entrada conserva la fuente identificada y el rótulo «Vía Google News». Noticias sin fecha verificable, con fecha futura o con más de 30 días no entran al sitio. Cada canal muestra inicialmente los últimos 7 días; el control de período permite cambiar a 24 horas o 30 días.
+El recopilador une 52 fuentes: feeds RSS, páginas públicas del BCE y de Supercias, el feed del Registro Oficial y búsquedas de Google News para medios sin feed propio (cada entrada de Google conserva el medio identificado y el rótulo «Vía Google News»). Noticias sin fecha verificable, con fecha futura o con más de 30 días no entran al sitio.
 
-| Canal | Qué entra |
-| --- | --- |
-| Ecuador financiero | Boletines del BCE; noticias de economía de Primicias leídas de su propio feed; resultados de Google News atribuidos a El Universo, Expreso o Bloomberg Línea; análisis de Asobanca, identificados como contenido del gremio bancario; y anuncios de crédito de BanEcuador y la Corporación Financiera Nacional (hasta dos por entidad). El titular de los medios debe contener un término financiero (banca, crédito, seguros, cooperativas, tarjetas, depósitos, remesas…). |
-| Autoridades EC | Resoluciones de la Junta de Política y Regulación Financiera y Monetaria y resoluciones administrativas del BCE (ver «Seguimiento de resoluciones del BCE»), boletines del BCE que tratan de la Junta, las tres publicaciones de datos monetarios y financieros más recientes del BCE, avisos y normas de SEPS, Superintendencia de Bancos y Supercias leídos de sus propios sitios, comunicados del Ministerio de Economía y Finanzas sobre deuda, presupuesto y organismos multilaterales, y publicaciones de la UAFE sobre lavado de activos. Se añade cobertura de medios seleccionados sobre esas autoridades, identificada como periodística y no como documento oficial. |
-| Fintech LATAM | Artículos de LatamList, Latam Fintech Hub, iupana, Bloomberg Línea, Valora Analitik y Contxto sobre empresas o mercados latinoamericanos, y publicaciones de Endeavor Argentina, Colombia Fintech, LAVCA y FELABAN, identificadas como contenido de la organización. Se excluyen eventos y contenido ajeno a banca, fintech, pagos, crédito o seguros. Cada medio aporta como máximo ocho notas por edición (las organizaciones, tres o cuatro) y la misma operación contada por varios medios queda en una sola nota. |
-| Pagos globales | Artículos de PYMNTS cuyo titular trata de pagos, banca o fintech; noticias de Payments Dive y de Electronic Payments International, sin contenido patrocinado; Payments Cards & Mobile; Digital Transactions; comunicados de la Reserva Federal y del Banco Central Europeo sobre pagos, euro digital o activos digitales; artículos editoriales de la sección Payments de Finextra. |
-| Cripto | Artículos editoriales de Finextra Blockchain con términos cripto; notas de política, regulación e infraestructura financiera de CoinDesk y The Block (hasta ocho cada uno, sin precios de mercado); la sección de regulación y adopción de CriptoNoticias, en español; publicaciones de Chainalysis y TRM Labs sobre delito, sanciones y adopción, identificadas como blog de empresa; y posiciones de Coin Center, identificadas como contenido de una organización. |
+Cada fuente declara su **nivel** y su **acceso**, y ambos viajan a cada nota:
 
-Se eliminan entradas duplicadas por enlace o titular/medio dentro de cada canal; una noticia pertinente a dos canales puede aparecer en ambos. En Fintech LATAM, además, cuando varios medios cuentan la misma operación (misma empresa e importe, o dos nombres propios en común, con hasta cuatro días de diferencia) se conserva una sola nota: la que trae extracto y enlace directo. Se ordenan por fecha de publicación antes de limitar cada fuente y se conservan hasta 40 noticias por canal; cada fuente tiene además su propio tope, para que ninguna acapare el canal. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno ni resumen inventado.
+- **Nivel 1:** fuente oficial (banco central, superintendencia, ministerio, Registro Oficial, organismo internacional) o medio de referencia.
+- **Nivel 2:** medio especializado del sector.
+- **Nivel 3:** organización, gremio o empresa que publica su propia posición (Endeavor Argentina, Fintech Business Weekly, Chainalysis). Nunca supera el 20 % de un canal.
+- **Acceso:** `open` (abierto), `paywall` (de pago) o `mixed` (parte de las notas son de pago).
+
+| Canal | Fuentes (nivel · acceso) | Qué entra |
+| --- | --- | --- |
+| Ecuador financiero | Boletines del BCE (1 · abierto); Primicias, economía y empresas (1 · abierto); El Universo (1 · mixto); Forbes Ecuador (2 · abierto, vía Google); Bloomberg Línea · Ecuador (1 · abierto, vía Google) | El titular debe tratar de banca, crédito, seguros, cooperativas, tarjetas, depósitos, remesas, deuda, FMI, riesgo país o presupuesto. Se excluyen promociones de consumo (Black Friday, concursos). De Bloomberg Línea solo entran titulares que nombran a Ecuador y un tema financiero o fiscal. Los boletines del BCE sobre la Junta pasan a Autoridades EC. |
+| Autoridades EC | BCE: resoluciones de la Junta, resoluciones administrativas y datos monetarios y financieros (1 · abierto); Registro Oficial (1 · abierto); SEPS, Superintendencia de Bancos, Supercias y Ministerio de Economía y Finanzas (1 · abierto); prensa sobre reguladores de El Universo y Primicias (1 · mixto, vía Google) | Resoluciones, normas, sanciones, alertas sobre entidades no autorizadas, calificaciones de riesgo y comunicados sobre deuda, presupuesto y organismos multilaterales. Se excluyen actos protocolarios, capacitaciones y aniversarios. La prensa sobre reguladores se identifica como noticia, no como documento oficial. |
+| Fintech LATAM | El Economista, La República, Bloomberg Línea, Expansión y Diario Financiero (1 · abiertos, mixto o de pago); iupana, LatamList y Contxto (2) | Fintech, neobancos y bancos digitales, pagos, billeteras, finanzas abiertas y reguladores del sector en la región. Se excluyen eventos, convocatorias y galas. La misma operación contada por varios medios queda en una sola nota. |
+| Pagos globales | BCE, BCE · Supervisión, BIS (discursos e investigación), Reserva Federal, Banco de Inglaterra, Autoridad Bancaria Europea y Financial Stability Board (1 · abierto); Financial Times · Banking y Fintech, The Wall Street Journal · Markets (1 · de pago); Expansión · Banca (1 · mixto); Payments Dive, Banking Dive, Finextra y PYMNTS (2 · abierto); The Banker y American Banker (2 · de pago); Fintech Business Weekly (3 · mixto) | Pagos, banca, supervisión, estabilidad financiera, euro digital, stablecoins y fintech. Se excluyen contenido patrocinado, columnas de opinión de Finextra y política monetaria. De la Reserva Federal solo entran comunicados sobre pagos, activos digitales o consultas y normas. |
+| Cripto | Cinco Días, Reuters, Financial Times, Expansión y Bloomberg Línea (1); The Block, CoinDesk y CriptoNoticias (2); Chainalysis (3 · blog de empresa) | Regulación, stablecoins, tokenización, monedas digitales de bancos centrales, delito, sanciones, hackeos y custodia. Se excluyen precios, análisis de mercado, ETF y memecoins. De The Block, CoinDesk y CriptoNoticias solo se leen sus secciones de regulación, negocio o sucesos. |
+| Endeavor LATAM | Prensa sobre empresas Endeavor (2 · mixto, vía Google, con el medio real de cada nota); Endeavor Argentina (3 · organización) | Notas de prensa cuyo titular nombra a una empresa de emprendedores Endeavor de la región (ver «Empresas Endeavor»). No es contenido de Endeavor: las notas de endeavor.org y de las sedes nacionales se descartan en la búsqueda, y el blog de Endeavor Argentina conserva su rótulo de organización. Se excluyen notas de cotización y mercado bursátil (precio de la acción, precio objetivo, tickers). |
+
+Los discursos de banqueros centrales del BIS se leen una sola vez: los que tratan de cripto, stablecoins, tokenización o monedas digitales van a Cripto, y el resto a Pagos globales.
+
+Los filtros de cada fuente están en `FILTERS` (`scripts/content.mjs`) y se prueban con titulares reales en `tests/content.test.mjs`. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno ni resumen inventado.
+
+### Períodos, acumulación y composición del canal
+
+La edición cubre cuatro períodos: **24 horas, 7, 15 y 30 días**. Como muchos feeds solo conservan de uno a cinco días, cada ejecución **acumula**: suma a lo que trae el feed las notas que esa misma fuente aportó a la edición anterior, si siguen dentro de los 30 días y siguen pasando el filtro actual. No se repiten notas, y las de una fuente retirada de la lista no se conservan. Si una fuente falla, sus notas conservadas llevan la marca `stale` y la fuente queda con `status: 'error'` y la fecha de su última consulta correcta. Si fallan todas, la recopilación termina con error y no reemplaza la edición anterior.
+
+Luego se compone cada canal:
+
+1. **Una sola copia por nota.** La misma nota en dos canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos fuentes, como un discurso que publican el BCE y el BIS) queda en un solo canal, en este orden de prioridad: Autoridades EC, Ecuador financiero, Fintech LATAM, Cripto, Pagos globales y Endeavor LATAM. Se conserva la copia con extracto y enlace directo.
+2. **Tope por fuente y período.** Cada fuente aporta como máximo su `limit` en cada período, eligiendo notas repartidas en el tiempo para que el período de 15 a 30 días no quede vacío.
+3. **Tope de canal.** Hasta 80 notas, repartidas entre los cuatro períodos.
+4. **Nivel 3.** Como máximo el 20 % del canal.
+
+### Registro Oficial
+
+El feed del Registro Oficial publica el sumario de cada edición. El recopilador agrupa las normas por órgano emisor y solo conserva las de la Junta de Política y Regulación Financiera y Monetaria, las superintendencias de Bancos, Economía Popular y Solidaria y Compañías, el BCE, COSEDE, el SRI y la UAFE. Descarta informes que solo se «conocen», designaciones, delegaciones, estatutos y personerías jurídicas, y las ediciones jurídicas, constitucionales y especiales. Cada edición da una nota: el titular es la primera norma financiera y el extracto nombra la edición y las demás normas que trae. La primera vez lee 16 páginas del feed (alrededor de un mes); después, tres.
+
+### Google News
+
+Google responde con error 429 a ráfagas de consultas, así que sus fuentes se piden de una en una, con una pausa de 2,5 segundos y un reintento. Las demás fuentes se piden en paralelo, también con un reintento.
+
+### Empresas Endeavor
+
+**Origen de la lista.** `scripts/data/endeavor-latam.json` contiene las empresas de la región América Latina del [directorio de Endeavor](https://endeavor.org/entrepreneur-companies/), con nombre, oficinas locales, vertical y enlace a su ficha. Se genera con la API pública de endeavor.org y no se edita a mano. Para regenerarla:
+
+```bash
+npm run endeavor                      # reescribe scripts/data/endeavor-latam.json
+node scripts/endeavor.mjs --output <ruta>
+```
+
+El script recorre todas las páginas de la API, se queda con las empresas de la región, une las que el directorio repite por oficina y se niega a escribir si obtiene menos de 100.
+
+**Cruce con las noticias.** Toda nota de cualquier canal pasa por `matchEndeavor` (`scripts/content.mjs`). Si su titular (o, para nombres inequívocos, su extracto) nombra a una empresa de la lista, la nota lleva el campo `endeavor: { company, country, vertical, url }` y la pantalla muestra el rótulo «EMPRESA ENDEAVOR · empresa · país», enlazado a la ficha del directorio. Las notas etiquetadas siguen en su canal de origen. Reglas:
+
+- Siempre palabra completa: «Bold» no coincide dentro de «Boldface», ni un nombre unido a otra palabra por punto o guion.
+- Nombres inequívocos: sin distinguir mayúsculas ni tildes, en titular o extracto.
+- Nombres ambiguos (lista editable `ENDEAVOR_AMBIGUOUS`; además, todo nombre de tres caracteres o menos): solo en el titular, con la grafía del directorio o con inicial mayúscula, y solo si el titular tiene contexto de negocio o fintech (`ENDEAVOR_CONTEXT`: fintech, startup, ronda, pagos, crédito, alianza, app…) y no trae ruido conocido (`ENDEAVOR_NOISE`: minería, cargos políticos). Se descartan además cuando el nombre va junto a otra palabra con mayúscula (una persona: «Clara Brugada») o cuando, en un titular con mayúsculas en cada palabra, aparece en mitad de la frase. Así, «Clara levanta USD 80 millones» se etiqueta y «una mañana clara en Quito» no; «R2» sin contexto no.
+- Nombres excluidos (`ENDEAVOR_EXCLUDED`): palabras demasiado comunes para un cruce automático (Prima, Torre, Take, ISA…).
+- Alias (`ENDEAVOR_ALIASES`): otras grafías usadas por la prensa, como «Addi» para ADDI o «Mercado Libre».
+
+**Canal Endeavor LATAM.** La fuente «Prensa sobre empresas Endeavor» consulta Google News con los nombres unidos por `OR` en lotes de hasta 28 palabras (`ENDEAVOR_SEARCH`). Empieza por las empresas fintech de la región y las que tienen oficina Endeavor en Ecuador (hoy 109 empresas en 10 lotes, que con las ediciones en español e inglés de Google suman 20 consultas); los nombres ambiguos van en lotes propios con un calificador común («fintech» o «startup»). Cada ejecución consulta 4 lotes y guarda en `tracked['endeavor-prensa']` dónde quedó la rotación; la siguiente sigue desde ahí y la acumulación de 30 días llena el canal con el tiempo. Una nota entra solo si el cruce confirma la empresa en el titular. Se conserva el medio real y el rótulo «Vía Google News». Si Google responde 429, la ejecución se detiene en ese lote y la siguiente lo retoma.
 
 ### Seguimiento de resoluciones del BCE
 
@@ -38,9 +88,9 @@ Las páginas de [resoluciones de la Junta](https://www.bce.fin.ec/junta-de-polit
 - **Junta:** se excluyen las administrativas (`-A`) y de gobierno interno (`-G`), los informes que la Junta solo «conoce» y las designaciones.
 - **Administrativas:** entran las que tratan de pagos, transferencias, moneda, depósitos y retiros de especies, encaje, liquidez, reservas, tarifas, corresponsales o entidades financieras; se excluyen memorandos, oficios, delegaciones, designaciones, talento humano y contratación.
 
-Cada nota lleva el tipo de su fuente: publicación oficial (BCE, superintendencias, ministerio, banca pública y bancos centrales), noticia, blog de empresa (Chainalysis, TRM Labs) o contenido de organización (Endeavor, Asobanca, Colombia Fintech, LAVCA, FELABAN, Coin Center). Las publicaciones oficiales y de organizaciones reflejan la posición de quien las emite. Los artículos de Finextra se limitan a sus publicaciones editoriales (`newsarticle`) para evitar mezclar comunicados de empresas con noticias. Los extractos se muestran como texto plano y las notas completas se leen en el sitio de origen. El panel Fuentes muestra qué orígenes respondieron y cuáles no tienen novedades.
+Cada nota lleva además el tipo de su fuente: publicación oficial (BCE, superintendencias, ministerio, Registro Oficial, bancos centrales y organismos internacionales), noticia, blog de empresa (Chainalysis) o contenido de organización (Endeavor Argentina, Fintech Business Weekly). La prensa sobre empresas Endeavor es noticia, no contenido de Endeavor. Las publicaciones oficiales y de organizaciones reflejan la posición de quien las emite. Los extractos se muestran como texto plano y las notas completas se leen en el sitio de origen. El panel Fuentes muestra qué orígenes respondieron, cuáles no tienen novedades y la última consulta correcta de cada uno.
 
-Si una fuente falla, el recopilador conserva sus entradas válidas de la edición anterior, respetando el límite de 30 días. La página muestra el estado y la última consulta correcta de cada fuente. Si fallan todas, la recopilación termina con error y conserva la edición anterior.
+Para revisar una edición generada en otra ruta: `node scripts/validate.mjs <ruta>` (sin ruta, valida `site/data/news.json`).
 
 ## Publicación y actualización
 
