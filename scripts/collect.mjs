@@ -1,7 +1,7 @@
 import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalize, parseFeed, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS } from './content.mjs';
+import { normalize, parseFeed, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, passes, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
 
 // Cada fuente: `category` (canal), `kind` (official | news | company | organization), `tier` (1 referencia,
 // 2 especializada, 3 interesada o de análisis), `access` (open | paywall | mixed), `language` y `adapter`.
@@ -39,8 +39,9 @@ export const SOURCES = [
 
   // Endeavor LATAM: prensa sobre empresas de la red Endeavor (lista en scripts/data/endeavor-latam.json, ver scripts/endeavor.mjs).
   // `search`: la fuente no tiene una URL fija; consulta en cada ejecución unos lotes de la búsqueda por nombres (ENDEAVOR_SEARCH)
-  // y solo deja las notas cuyo titular nombra a una empresa del directorio (FILTERS). Cada nota conserva su medio real.
-  { id: 'endeavor-prensa', name: 'Prensa sobre empresas Endeavor', category: 'endeavor', kind: 'news', tier: 2, access: 'mixed', language: 'es', adapter: 'google', search: 'endeavor', url: 'https://news.google.com/rss/search', site: 'https://endeavor.org/entrepreneur-companies/', denyHosts: ['endeavor.org', 'endeavor.org.ar', 'endeavor.org.br', 'endeavor.org.mx', 'endeavor.cl', 'endeavor.org.co', 'endeavor.org.uy', 'endeavor.org.pe', 'endeavor.ec'], limit: 20 },
+  // y solo deja las notas cuyo titular nombra a una empresa del directorio (FILTERS). Cada nota conserva su medio real, que debe
+  // estar en la lista de medios aceptados ENDEAVOR_PRESS_HOSTS (content.mjs). `denyHosts` queda como salvaguarda.
+  { id: 'endeavor-prensa', name: 'Prensa sobre empresas Endeavor', category: 'endeavor', kind: 'news', tier: 2, access: 'mixed', language: 'es', adapter: 'google', search: 'endeavor', url: 'https://news.google.com/rss/search', site: 'https://endeavor.org/entrepreneur-companies/', allowHosts: ENDEAVOR_PRESS_HOSTS, denyHosts: ['endeavor.org', 'endeavor.org.ar', 'endeavor.org.br', 'endeavor.org.mx', 'endeavor.cl', 'endeavor.org.co', 'endeavor.org.uy', 'endeavor.org.pe', 'endeavor.ec'], limit: 20 },
   // El blog de Endeavor Argentina sí es contenido de la organización: conserva ese rótulo y el nivel 3.
   { id: 'endeavor-ar', name: 'Endeavor Argentina', category: 'endeavor', kind: 'organization', tier: 3, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.endeavor.org.ar/feed/', site: 'https://www.endeavor.org.ar/', limit: 2 },
 
@@ -236,7 +237,7 @@ async function run() {
     if (ok) { successful++; if (result.value.tracked) tracked[source.id] = result.value.tracked; }
     else { if (previous.tracked?.[source.id]) tracked[source.id] = previous.tracked[source.id]; console.error(`${source.name}: ${result.reason?.message || result.reason}`); }
     // Acumulación: lo nuevo más lo que la edición anterior ya tenía de esta fuente y sigue siendo válido.
-    stories.push(...accumulate(ok ? result.value.stories : [], previous.stories, source, { ok, now, keep: story => allowedHost(story, source) && relevant(story, source) }));
+    stories.push(...accumulate(ok ? result.value.stories : [], previous.stories, source, { ok, now, keep: story => passes(story, source) }));
     states.push({ source, ok, oldState: previous.sources?.find(s => s.id === source.id) });
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }

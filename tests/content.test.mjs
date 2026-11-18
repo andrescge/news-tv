@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH } from '../scripts/content.mjs';
+import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies } from '../scripts/endeavor.mjs';
 import { SOURCES } from '../scripts/collect.mjs';
 
@@ -158,6 +158,35 @@ test('los discursos del BIS se leen una vez, llevan autor y van a pagos o a crip
   const merged = deduplicate([ecb, stories[0]]);
   assert.equal(merged.length, 1);
   assert.equal(merged[0].sourceId, 'bis-discursos');
+});
+
+test('el extracto se recorta en límite de palabra con «…» solo si no cabe entero', () => {
+  // Cabe entero: sale igual, sin «…».
+  assert.equal(clipExcerpt('Un banco abre pagos.'), 'Un banco abre pagos.');
+  const exact = 'a'.repeat(279) + '.';
+  assert.equal(clipExcerpt(exact), exact);
+  // No cabe: se corta en el último espacio, sin palabras partidas ni signos sueltos, y termina en «…» sin pasar de 280.
+  const long = 'Hyundai’s credit card arm says it has seen success from its blockchain payments partnership with Kinexys by J.P. Morgan. This effort has shown the potential for artificial intelligence (AI) agents to “autonomously and securely execute financial transactions,” Hyundai Card said in a statement released this week.';
+  const clipped = clipExcerpt(long);
+  assert.ok(clipped.length <= 280, String(clipped.length));
+  assert.ok(clipped.endsWith('…'));
+  const body = clipped.slice(0, -1);
+  assert.ok(long.startsWith(body), 'solo se quita texto, no se añade');
+  assert.match(long.slice(body.length), /^[\s,.;:]/u, 'el corte cae en límite de palabra');
+  assert.equal(clipExcerpt('uno dos tres cuatro cinco', 12), 'uno dos…');
+  assert.equal(clipExcerpt('uno dos, tres cuatro', 10), 'uno dos…');
+  // Una sola palabra enorme: se corta dentro, pero también con «…».
+  assert.equal(clipExcerpt('x'.repeat(300)), 'x'.repeat(279) + '…');
+  // normalize lo aplica.
+  const story = normalize({ title: 'Hyundai Card prueba pagos con agentes', url: 'https://example.com/h', publishedAt: '2026-09-29T10:00:00Z', excerpt: long }, source, now);
+  assert.equal(story.excerpt, clipped);
+  // Una nota conservada de una edición anterior, cortada en seco a 280 caracteres, se vuelve a cortar en límite de palabra.
+  const legacy = { ...make('prueba', 3), excerpt: long.slice(0, 280) };
+  assert.equal(legacy.excerpt.length, 280);
+  const [carried] = accumulate([], [legacy], source, { now });
+  assert.ok(carried.excerpt.endsWith('said…'), carried.excerpt.slice(-20));
+  const fits = { ...make('prueba', 4), excerpt: 'Extracto corto.' };
+  assert.equal(accumulate([], [fits], source, { now })[0].excerpt, 'Extracto corto.');
 });
 
 test('Google News: solo entran notas del dominio del medio y se quita el sufijo del titular', () => {
@@ -438,7 +467,15 @@ const SAMPLES = [
   ["endeavor-prensa","HYPE Price Jumps as Latin American Exchange Bitso Expands Hyperliquid Access",null,false],
   ["endeavor-prensa","dLocal reports Q3 2026 revenue up 41% and net income",null,true],
   ["endeavor-prensa","Bitso procesa 15% de las remesas de EU a México con stablecoins",null,true],
-  ["endeavor-prensa","Belvo y dLocal se alían en México para llevar la domiciliación bancaria a más empresas",null,true]
+  ["endeavor-prensa","Belvo y dLocal se alían en México para llevar la domiciliación bancaria a más empresas",null,true],
+  // Titulares promocionales reales (ENDEAVOR_PROMO): cupones, 0 % de inicial, «por tiempo limitado», premios a usuarios.
+  ["endeavor-prensa","Cashea activa beneficios de su Club en Tiendas Daka con 0% de inicial hasta finales de 2026",null,false],
+  ["endeavor-prensa","Famosa tienda de electrodomésticos anunció compras con 0% de inicial en Cashea: Lo que debes saber",null,false],
+  ["endeavor-prensa","El cupón que habilitó Cashea hasta el 13Nov y se activa sin costo",null,false],
+  ["endeavor-prensa","¡Melendi ahora con Cashea por tiempo limitado!",null,false],
+  ["endeavor-prensa","Cashea premiará a usuarios nivel 6 con “Mi pase”",null,false],
+  ["endeavor-prensa","Cashea alista nueva etapa para ofrecer financiamiento de vehículos y viviendas en Venezuela: los detalles",null,true],
+  ["endeavor-prensa","Buen Fin: las pymes pueden competir con las grandes cadenas sin sacrificar sus márgenes: Kueski",null,true]
 ];
 test('cada filtro deja pasar las muestras pertinentes del informe y descarta su ruido', () => {
   for (const [id, title, url, expected] of SAMPLES) {
@@ -473,8 +510,8 @@ test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes 
     assert.ok([1, 2, 3].includes(item.tier), `${item.id}: nivel`);
     assert.ok(['open', 'paywall', 'mixed'].includes(item.access), `${item.id}: acceso`);
     assert.ok(['es', 'en'].includes(item.language), `${item.id}: idioma`);
-    // Las búsquedas por nombres (`search`) no se limitan a un medio: las filtra el cruce con el directorio Endeavor.
-    if (item.adapter === 'google' && !item.search) assert.ok(item.allowHosts?.length, `${item.id}: Google News sin allowHosts`);
+    // Toda fuente de Google News se limita a sus medios; la búsqueda Endeavor, a la lista ENDEAVOR_PRESS_HOSTS.
+    if (item.adapter === 'google') assert.ok(item.allowHosts?.length, `${item.id}: Google News sin allowHosts`);
   }
   for (const id of Object.keys(FILTERS)) assert.ok(ids.has(id), `filtro sin fuente: ${id}`);
   for (const id of ['bce-boletines', 'bce-publicaciones', 'bce-junta-resoluciones', 'bce-resoluciones-admin']) assert.equal(sourceById(id).tier, 1);
@@ -734,4 +771,36 @@ test('Endeavor: la nota de Google conserva su medio, lleva «Vía Google News» 
   assert.equal(allowedHost({ sourceUrl: 'https://www.endeavor.org.ar' }, prensa), false);
   assert.equal(allowedHost({ sourceUrl: 'https://endeavor.org' }, prensa), false);
   assert.equal(allowedHost({ sourceUrl: 'https://www.valoraanalitik.com' }, prensa), true);
+});
+
+test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que no la cumplen salen al regenerar', () => {
+  const prensa = sourceById('endeavor-prensa');
+  assert.equal(prensa.allowHosts, ENDEAVOR_PRESS_HOSTS);
+  assert.equal(new Set(ENDEAVOR_PRESS_HOSTS).size, ENDEAVOR_PRESS_HOSTS.length, 'dominios repetidos');
+  for (const host of ENDEAVOR_PRESS_HOSTS) assert.match(host, /^[a-z0-9.-]+\.[a-z]{2,}$/, host);
+  // Dominios reales (sourceUrl de Google News) de la última edición.
+  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com'];
+  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'nada'];
+  for (const url of yes) assert.equal(allowedHost({ sourceUrl: url }, prensa), true, url);
+  for (const url of no) assert.equal(allowedHost({ sourceUrl: url }, prensa), false, url);
+  // Incluye los medios que el proyecto ya usa como fuentes de nivel 1 y 2.
+  for (const item of SOURCES.filter(entry => entry.kind === 'news' && entry.tier <= 2 && !entry.search)) {
+    for (const host of item.allowHosts || [new URL(item.site).hostname]) assert.equal(allowedHost({ sourceUrl: `https://${host}` }, prensa), true, `${item.id}: ${host}`);
+  }
+  // Exclusión de titulares promocionales, editable y aparte de la lista de medios.
+  assert.equal(ENDEAVOR_PROMO.test('Kueski Pay: cupones de descuento por tiempo limitado'), true);
+  assert.equal(ENDEAVOR_PROMO.test('Clip sortea terminales entre sus clientes'), true);
+  assert.equal(ENDEAVOR_PROMO.test('Ualá premia a sus usuarios con reintegros'), true);
+  assert.equal(ENDEAVOR_PROMO.test('Kueski insta a revisar compras ante aumento de ciberfraudes'), false);
+  assert.equal(ENDEAVOR_PROMO.test('De vetar el crédito a monopolizar Cashea en Venezuela'), false);
+  // Al regenerar, la acumulación vuelve a aplicar medio y tema (passes): lo anterior que no cumple sale.
+  const old = (title, sourceUrl, sourceName) => ({ ...make('endeavor-prensa', 30), id: title, category: 'endeavor', title, source: sourceName, sourceUrl, via: 'Vía Google News' });
+  const previous = [
+    old('De vetar el crédito a monopolizar Cashea en Venezuela', 'https://www.elnacional.com/', 'El Nacional'),
+    old('🚨 Money Laundering and Crypto Scandal: Is This the End of Cashea? 🚨', 'https://www.binance.com/', 'Binance'),
+    old('Pix to cross USD 200 billion in Brazilian e-commerce for the first time in 2027, EBANX projects', 'https://www.globenewswire.com/', 'GlobeNewswire'),
+    old('El cupón que habilitó Cashea hasta el 13Nov y se activa sin costo', 'https://www.cronista.com/', 'El Cronista'),
+  ];
+  const kept = accumulate([], previous, prensa, { now, keep: story => passes(story, prensa) });
+  assert.deepEqual(kept.map(story => story.source), ['El Nacional']);
 });

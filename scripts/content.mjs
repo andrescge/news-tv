@@ -58,6 +58,25 @@ export function allowedHost(row, source) {
     return (!source.allowHosts || matches(source.allowHosts)) && !(source.denyHosts && matches(source.denyHosts));
   } catch { return false; }
 }
+// Una nota pasa los filtros de su fuente: dominio del medio (allowedHost) y tema (relevant). La recopilación la aplica a lo
+// nuevo y, en la acumulación, a lo que viene de la edición anterior: una nota conservada que ya no cumple la regla vigente sale.
+export function passes(story, source) {
+  return allowedHost(story, source) && relevant(story, source);
+}
+// Extracto de como máximo `max` caracteres. Si el texto cabe, sale igual. Si no, se corta en el último límite de palabra
+// que deje sitio para «…», se quitan los signos sueltos del final y se añade «…». Nunca se añade texto propio.
+// Solo si no hay ningún espacio aprovechable (una sola palabra enorme) se corta dentro de la palabra.
+export function clipExcerpt(value, max = MAX_EXCERPT) {
+  const text = String(value ?? '');
+  if (text.length <= max) return text;
+  let head = text.slice(0, max - 1);
+  const wordContinues = /[\p{L}\p{N}]/u.test(text[max - 1] ?? '') && /[\p{L}\p{N}]$/u.test(head);
+  if (wordContinues) {
+    const space = head.search(/\s\S*$/);
+    if (space > max / 2) head = head.slice(0, space);
+  }
+  return `${head.replace(/[\s.,;:¿¡([{«“"'‘\-–—/]+$/u, '')}…`;
+}
 export function normalize(raw, source, now = Date.now()) {
   const sourceName = plainText(raw.source || source.name).slice(0, 80);
   let title = plainText(raw.title).slice(0, 300);
@@ -68,7 +87,7 @@ export function normalize(raw, source, now = Date.now()) {
   if (!title || !url || !publishedAt || !recent(publishedAt, now)) return null;
   let excerpt = plainText(raw.excerpt).replace(/(?:^|\s+)The post .+? appeared first on .+\.?$/i, '').trim();
   if (raw.via && excerpt.toLowerCase().startsWith(title.toLowerCase())) excerpt = '';
-  excerpt = excerpt.slice(0, MAX_EXCERPT);
+  excerpt = clipExcerpt(excerpt);
   const sourceUrl = safeUrl(raw.sourceUrl || source.url);
   const language = raw.language || (/\b(el|la|los|las|una|para|del|banco|pagos|financiero|ecuador)\b/i.test(`${title} ${excerpt}`) ? 'es' : 'en');
   const canonical = canonicalUrl(url);
@@ -307,8 +326,9 @@ export const FILTERS = {
   latamlist: { include: rx(String.raw`fintech|bank|payment|credit|lending|financ|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
   contxto: { include: rx(String.raw`fintech|banc|financ|pagos|cr[eé]dito|neobanc|cripto|inversi[oó]n en startups`) },
   // Endeavor LATAM. La búsqueda por nombres trae mucho ruido: solo entra la nota cuyo titular nombra a una empresa del directorio.
-  // Fuera también el ruido bursátil (ENDEAVOR_MARKET_NOISE, definido con el resto del bloque Endeavor).
-  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !!matchEndeavor(story, { titleOnly: true }) },
+  // Fuera también el ruido bursátil y los titulares promocionales (ENDEAVOR_MARKET_NOISE y ENDEAVOR_PROMO, definidos con el
+  // resto del bloque Endeavor). El medio se comprueba aparte, con la lista ENDEAVOR_PRESS_HOSTS (allowHosts de la fuente).
+  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !ENDEAVOR_PROMO.test(story.title) && !!matchEndeavor(story, { titleOnly: true }) },
   'endeavor-ar': { exclude: /\bboard\b|experiencia endeavor|bootcamp|inscrip|convocatoria|bienvenid|emprendedores? endeavor del a[ñn]o|\bgala\b/i },
 
   // Pagos globales.
@@ -374,6 +394,8 @@ export function limitFor(source, category, fallback = 25) {
 // Acumulación: muchos feeds solo conservan de 1 a 5 días. Cada edición suma a lo que trae el feed las notas que esa
 // misma fuente aportó a la edición anterior, si siguen dentro de los 30 días y siguen pasando el filtro actual (`keep`).
 // Si la fuente falló en esta ejecución, las notas conservadas se marcan `stale: true`; si respondió, no llevan marca.
+// Las ediciones anteriores a clipExcerpt cortaban el extracto en seco a 280 caracteres, a veces a mitad de palabra: un
+// extracto conservado de exactamente ese largo y sin «…» se vuelve a cortar en límite de palabra (solo se quita texto).
 export function accumulate(fresh, previous, source, { ok = true, now = Date.now(), keep = () => true } = {}) {
   const byId = new Map();
   for (const story of fresh) if (!byId.has(story.id)) byId.set(story.id, story);
@@ -381,6 +403,7 @@ export function accumulate(fresh, previous, source, { ok = true, now = Date.now(
     if (old.sourceId !== source.id || byId.has(old.id) || !recent(old.publishedAt, now) || !keep(old)) continue;
     const { stale, ...story } = old;
     const carried = { ...story, kind: source.kind, category: channelFor(story, source) };
+    if (typeof story.excerpt === 'string' && story.excerpt.length === MAX_EXCERPT && !story.excerpt.endsWith('…')) carried.excerpt = clipExcerpt(story.excerpt, MAX_EXCERPT - 1);
     if (source.tier) carried.tier = source.tier;
     if (source.access) carried.access = source.access;
     if (!ok) carried.stale = true;
@@ -532,6 +555,45 @@ export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoL
 // Ruido bursátil y de portales de inversión en la búsqueda (precio objetivo, calificaciones de analistas, volumen,
 // transcripciones de resultados, saltos de precio de tokens): como en Cripto, no entran notas de cotización.
 export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$`);
+// Titulares promocionales sobre una empresa de la red (cupones, «0% de inicial», sorteos, «por tiempo limitado», premios a
+// usuarios): son anuncios de consumo, no noticias. Lista editable; cada caso nuevo, con su prueba en tests/content.test.mjs.
+export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]digos? (de descuento|promocional)|promo ?codes?|\b0 ?% (de )?inicial|inicial de 0 ?%|sin (cuota )?inicial|\bsorteos?\b|\bsortea|giveaways?|por tiempo limitado|limited[- ]time|hasta agotar|premi(a|an|ar[aá]n?) a (sus |los )?(usuari|client)|premios? (a|para) (sus |los )?(usuari|client)`);
+
+// Medios aceptados en el canal Endeavor LATAM (allowHosts de la fuente `endeavor-prensa`, ver collect.mjs). Las notas llegan
+// por Google News y se comprueba el dominio del medio real (`sourceUrl`); vale el dominio y sus subdominios.
+// Criterio: prensa con redacción propia, de referencia o especializada. Quedan fuera las agencias de comunicados (GlobeNewswire,
+// PR Newswire, Business Wire), los blogs de empresas y de exchanges (Binance Square), los agregadores, las webs de promociones
+// y las páginas de cotizaciones (TradingView, Investing.com, Pluang). Un medio que no está en la lista no entra: para sumar uno,
+// añade su dominio en el grupo que corresponda y un caso en las pruebas.
+export const ENDEAVOR_PRESS_HOSTS = [
+  // Medios que el proyecto ya usa como fuentes de nivel 1 y 2 (las pruebas comprueban que estén todos).
+  'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
+  'latamlist.com', 'expansion.mx', 'df.cl', 'contxto.com', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
+  'finextra.com', 'thebanker.com', 'americanbanker.com', 'pymnts.com', 'wsj.com', 'elpais.com', 'reuters.com', 'theblock.co',
+  'coindesk.com', 'criptonoticias.com',
+  // Referencia internacional y agencias de noticias (no de comunicados).
+  'bloomberg.com', 'economist.com', 'forbes.com', 'cnbc.com', 'techcrunch.com', 'restofworld.org', 'efe.com', 'americaeconomia.com', 'bnamericas.com',
+  // Argentina.
+  'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar', 'iproup.com',
+  // México.
+  'eluniversal.com.mx', 'elfinanciero.com.mx', 'forbes.com.mx', 'milenio.com', 'excelsior.com.mx', 'razon.com.mx', 'elceo.com', 'reforma.com', 'jornada.com.mx',
+  // Colombia.
+  'eltiempo.com', 'portafolio.co', 'semana.com', 'elespectador.com', 'elcolombiano.com', 'valoraanalitik.com', 'forbes.co',
+  // Perú.
+  'gestion.pe', 'elcomercio.pe', 'semanaeconomica.com', 'larepublica.pe',
+  // Chile.
+  'emol.com', 'elmercurio.com', 'latercera.com', 'biobiochile.cl',
+  // Uruguay.
+  'elpais.com.uy', 'elobservador.com.uy',
+  // Ecuador.
+  'expreso.ec', 'elcomercio.com', 'vistazo.com',
+  // Venezuela.
+  'eluniversal.com', 'elnacional.com', 'eldiario.com', 'bancaynegocios.com',
+  // Brasil.
+  'valor.globo.com', 'oglobo.globo.com', 'folha.uol.com.br', 'estadao.com.br', 'exame.com', 'infomoney.com.br', 'neofeed.com.br', 'braziljournal.com',
+  // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
+  'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+];
 // Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión o finanzas en el titular o el extracto.
 // No incluye importes sueltos («5 millones de toneladas de cobre» no es una ronda).
 export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b`);
