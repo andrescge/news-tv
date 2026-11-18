@@ -1,90 +1,118 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T13:58:18.964Z",
+  "generatedAt": "2026-11-18T21:56:55.646Z",
   "stories": [
     {
-      "id": "9652517b88947349ab01",
+      "id": "ebfd7c128624dfea54da",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Singapore Steps Up Use of AI to Combat Fraud",
-      "excerpt": "Singapore is reportedly stepping up its use of artificial intelligence (AI) in finance. Five of the city-state’s banks have begun pooling transaction data so AI can identify scam patterns that individual lenders could miss, while the Monetary Authority of Singapore (MAS) is due t",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/singapore-steps-up-use-of-ai-to-combat-fraud/",
+      "title": "Chase, Microsoft and FAA Meltdowns Hand AI Its Big Moment",
+      "excerpt": "A series of technology outages has disrupted banking, airlines and enterprise software in recent days. The Federal Aviation Administration grounded flights nationwide on Nov. 13 after a router replacement, and JPMorganChase said a software bug delayed transactions on Nov. 16, PYM",
+      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/chase-microsoft-and-faa-meltdowns-hand-ai-its-big-moment/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T13:57:08.000Z"
+      "publishedAt": "2026-11-18T20:42:09.000Z"
     },
     {
-      "id": "0e539ebdad86f2454170",
+      "id": "4249d5985e2c1f12b283",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Visa Adds PayPal and Stripe to Agentic Ready Program",
-      "excerpt": "Visa is expanding its Agentic Ready program to the merchant acceptance ecosystem, adding several new partners including PayPal, Adyen and Fiserv. Part of Visa Intelligent Commerce, the expanded program helps prepare merchants, payment service providers (PSPs) and acquirers for ar",
-      "url": "https://www.pymnts.com/news/artificial-intelligence/2026/visa-adds-paypal-and-stripe-to-agentic-ready-program/",
+      "title": "World Bank Taps Circle and Citi to Expand Stablecoin Use",
+      "excerpt": "World Bank Group wants to test the potential of regulated stablecoin infrastructure in improving payments and settlements for its clients. “This initiative is about exploring ways to make the financial plumbing of development work better for the people who need it most,” Ajay Ban",
+      "url": "https://www.pymnts.com/blockchain/2026/world-bank-taps-circle-and-citi-to-expand-stablecoin-use/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T11:55:55.000Z"
+      "publishedAt": "2026-11-18T20:41:42.000Z"
     },
     {
-      "id": "69e40238a880ae1e3f8b",
+      "id": "51bc1b03acb85811c04e",
       "sourceId": "pymnts",
       "category": "pagos",
       "kind": "news",
-      "title": "Finastra Says Banks Should Modernize Payments One Step at a Time",
-      "excerpt": "Watch more: What’s Next in Payments With Finastra’s Mihail Duta Jim Collins published “Good to Great” 25 years ago, giving executives a guide to building companies that could improve year after year through disciplined people and processes. For banks heading into 2027, one scenar",
-      "url": "https://www.pymnts.com/news/payments-innovation/2026/finastra-says-banks-should-modernize-payments-one-step-time/",
+      "title": "Circle and DBS Team to Boost USDC Adoption",
+      "excerpt": "Circle is teaming with Singapore-based bank DBS to expand institutional access to its USDC stablecoin, while strengthening stablecoin infrastructure throughout Asia. The collaboration combines Circle’s regulated stablecoin infrastructure and global reach with digital asset capabi",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/circle-and-dbs-team-to-boost-usdc-adoption/",
       "source": "PYMNTS",
       "sourceUrl": "https://www.pymnts.com/feed/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T09:03:49.000Z"
+      "publishedAt": "2026-11-18T19:33:24.000Z"
     },
     {
-      "id": "8f067868726b1f3aa391",
-      "sourceId": "pymnts",
+      "id": "4af63bbac6002efe0c35",
+      "sourceId": "finextra-payments",
       "category": "pagos",
       "kind": "news",
-      "title": "When the Payout Becomes the Customer Experience",
-      "excerpt": "A payment may take only moments to arrive, but its impact on the customer relationship can last far longer. For businesses seeking to build trust and loyalty, the experience of receiving money can become something customers remember, along with the company behind it. That shift i",
-      "url": "https://www.pymnts.com/real-time-payments/2026/when-the-payout-becomes-the-customer-experience/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "World Bank partners Citi and Circle to test stablecoins for development payments",
+      "excerpt": "The World Bank Group is working with Citi and USDC issuer Circle to explore how stablecoins could help modernise payments and free up resources for development work.",
+      "url": "https://www.finextra.com/newsarticle/48780/world-bank-partners-citi-and-circle-to-test-stablecoins-for-development-payments?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T09:03:45.000Z"
+      "publishedAt": "2026-11-18T16:07:00.000Z"
     },
     {
-      "id": "3c2fcf5d9feae6c963b2",
-      "sourceId": "pymnts",
-      "category": "pagos",
+      "id": "8ea47f1df62eead48ff2",
+      "sourceId": "iupana",
+      "category": "latam",
       "kind": "news",
-      "title": "When the Payout Becomes the Experience",
-      "excerpt": "The moment customers receive their money can shape how they perceive the company sending it. The “Money Movement Tracker®,” a collaboration with U.S. Bank and Visa Direct, explores how Push to Card can improve payout experiences across earned wage access, higher education and tra",
-      "url": "https://www.pymnts.com/report/tracker/money-movement-when-the-payout-becomes-the-experience/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "Del código QR al NFC, Redeban ampliará su tecnología en el sistema de pagos inmediatos en Colombia",
+      "excerpt": "A partir del segundo semestre de 2027, los comercios que usen Redeban podrán ofrecer la tecnología inalámbrica de corto alcance para hacer pagos desde la plataforma Bre-B. ... Leer más... La entrada Del código QR al NFC, Redeban ampliará su tecnología en el sistema de pagos inmed",
+      "url": "https://iupana.com/2026/11/18/codigo-qr-nfc-redeban-ampliara-tecnologia-sistema-pagos-inmediatos-colombia/",
+      "source": "iupana",
+      "sourceUrl": "https://iupana.com/feed/",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-18T09:03:00.000Z"
+      "language": "es",
+      "publishedAt": "2026-11-18T16:04:37.000Z"
     },
     {
-      "id": "1d6b0440f6c2488d906c",
-      "sourceId": "pymnts",
+      "id": "52bf199aca293f320113",
+      "sourceId": "finextra-payments",
       "category": "pagos",
       "kind": "news",
-      "title": "For Gen Z Bill Payers, the Bigger Gap Is Paying the Way They Want To",
-      "excerpt": "A customer can get through a biller’s login and still reach a point where the way they want to pay won’t work. And in that moment, that’s where the experiences of Gen Z and Gen X bill payers diverge. In the previous 12 months, 71.9% of Gen Z consumers encountered a payment method",
-      "url": "https://www.pymnts.com/consumer-payments/2026/for-gen-z-bill-payers-the-bigger-gap-is-paying-the-way-they-want-to/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "New Zealand banks form fraud intelligence sharing network",
+      "excerpt": "New Zealand's top banks are backing a fraud and scams intelligence-sharing network using behavioural- and device-based technology from security vendor BioCatch.",
+      "url": "https://www.finextra.com/newsarticle/48779/new-zealand-banks-form-fraud-intelligence-sharing-network?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T09:02:28.000Z"
+      "publishedAt": "2026-11-18T15:29:00.000Z"
+    },
+    {
+      "id": "432b1f189ce6bf6bb0fa",
+      "sourceId": "finextra-payments",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa expands Agentic Ready programme to acceptance ecosystem",
+      "excerpt": "Visa has expanded its Agentic Ready programme to the merchant acceptance ecosystem, signing up big names including Fiserv, PayPal and Stripe.",
+      "url": "https://www.finextra.com/newsarticle/48777/visa-expands-agentic-ready-programme-to-acceptance-ecosystem?utm_medium=rssfinextra&utm_source=finextrafeed",
+      "source": "Finextra · Payments",
+      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T14:29:00.000Z"
+    },
+    {
+      "id": "807b8a0653ad81523bd9",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "Ecuador registró un superávit comercial de USD 3.308 millones entre enero y septiembre de 2026",
+      "excerpt": "Entre enero y septiembre de 2026, Ecuador registró un superávit comercial de USD 3.308 millones, 29% inferior frente a igual período de 2025. Este resultado responde al mayor crecimiento de las importaciones (20%), en comparación con las exportaciones (11%), que alcanzaron USD 27",
+      "url": "https://www.bce.fin.ec/ecuador-registro-un-superavit-comercial-de-usd-3-308-millones-entre-enero-y-septiembre-de-2026/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-18T12:00:00.000Z"
     },
     {
       "id": "e96ac168418f3f67ff86",
@@ -183,6 +211,20 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-17T15:39:00.000Z"
+    },
+    {
+      "id": "015c6d590e3e071703ed",
+      "sourceId": "latam-fintech-hub",
+      "category": "latam",
+      "kind": "news",
+      "title": "Paytech Akua recibe inversión de Itaú Ventures para impulsar la inteligencia artificial en la adquirencia en Uruguay y Latam",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPNWowaE5FMDN6OEFNWk16WmxxUFZxNHRiQTkzV2dJcDJBMGg3aUVJVV81UVJiWjA0Zl9hWmJpLWVrRDg4Z0lfVUhSbHBmZTFSWlVpOVdlUTZXLUxzbEc0XzFqNy1MS25XOExkYjQ1RUFiM29MQ3hjR3R6WExiU01sYU9VRlhmbWswTENmTmEtTWZvaVl5R1VTaE5nTUdLY2NRcUxhT01zb3RsMnBtd2lwNXdYMk5sM2wwaF85SjdtemRyTy1idjZvTGl5Qy1HbURTWFN4Y09oSHJpMDR5VEVTdFNMVU9JdHVTalF5TlBSOGlFX2c?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T15:02:00.000Z"
     },
     {
       "id": "a7ee956d86d99dda402e",
@@ -451,34 +493,6 @@
       "publishedAt": "2026-11-13T12:00:00.000Z"
     },
     {
-      "id": "6a472c57ee078717732c",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Paraguay's digital bank collapse triggers political crisis",
-      "excerpt": "Paraguay’s digital bank ueno collapsed last Tuesday, freezing the savings of nearly 3 million customers and revealing political scandal.",
-      "url": "https://www.finextra.com/newsarticle/48755/paraguays-digital-bank-collapse-triggers-political-crisis?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T11:28:00.000Z"
-    },
-    {
-      "id": "f918f35ff40739e308ac",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Klarna taps Robinhood VP Chris Koegel as CFO",
-      "excerpt": "Klarna has appointed Chris Koegel as their new chief financial officer starting from January 2027.",
-      "url": "https://www.finextra.com/newsarticle/48754/klarna-taps-robinhood-vp-chris-koegel-as-cfo?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T10:31:00.000Z"
-    },
-    {
       "id": "56c335b60c98282597ba",
       "sourceId": "latam-bloomberg",
       "category": "latam",
@@ -491,20 +505,6 @@
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-13T09:00:00.000Z"
-    },
-    {
-      "id": "3c4062d14c67463030e3",
-      "sourceId": "finextra-payments",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Mastercard opens Singapore innovation centre of excellence",
-      "excerpt": "Mastercard has opened an innovation centre of excellence in Singapore that will eventually house 250 specialists working in areas such as AI, digital commerce and cybersecurity.",
-      "url": "https://www.finextra.com/newsarticle/48751/mastercard-opens-singapore-innovation-centre-of-excellence?utm_medium=rssfinextra&utm_source=finextrafeed",
-      "source": "Finextra · Payments",
-      "sourceUrl": "https://www.finextra.com/rss/channel.aspx?channel=payments",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T00:01:00.000Z"
     },
     {
       "id": "ba6db5d8dbd6c2a5be38",
@@ -584,20 +584,6 @@
       "title": "Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",
       "excerpt": "",
       "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxPMl81NzA2WGJvZzd6M2JVS0FZeW9Uc1dra1hla2VvTEs4WDEyZ1lPNGczcUsxRnNKa0Y5TmhSYUowRW5IVUZuUHA4cmVyTVFodkRXUFlsUVhSbWo5WFpkX05haV8yWENtb1NHOU96TlE5eEp6OU1kSktidlNBQzZWRUFHVGxUZ2ZfR2hWN0dVUDVrd2Vjd2JoRC01YXhXaDNIMFVsVUtDalJfQVZjT2JOZk5BVGdaUU9tc1VXclR4QmZXNzR2NjlhRjF1OVV3Q05iTFlRSmlUTzRaSnp5TUlmN0YwM0d1SGl4VWNYcXpyRnQ?oc=5",
-      "source": "Latam Fintech Hub",
-      "sourceUrl": "https://www.latamfintech.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-11T16:24:34.000Z"
-    },
-    {
-      "id": "2e99eae9058f14470d7c",
-      "sourceId": "latam-fintech-hub",
-      "category": "latam",
-      "kind": "news",
-      "title": "Fintech Nova levanta US$24 millones en su serie A para conectar tarjetas de crédito con Pix en Brasil",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQb3FsSUxRWFZqam1ZcTR4UGNUSTBsX2xraW5WVVQ3eTJmZzFfS3hhdVVFMWpMc3pZY0QxM2Y4NjVZT1J3TXdwek4zb1J1Slo2c1AxZTZzb0xxalFBelZlM3dGb3BzSjdGUERRelVDdmFwVDJrbDhMUlVocnlUdUN1NVludVVtMXF5SUFXZ1NGX0JDZzB3ZzY5dzhWLVI2OU9tTkxRRTBCOThURndTZ3BIVXY3ZFRtd3ozc20tREZPWXlLajI3VnkxMmRyWERtZDBDQmRJNg?oc=5",
       "source": "Latam Fintech Hub",
       "sourceUrl": "https://www.latamfintech.co/",
       "via": "Vía Google News",
@@ -969,20 +955,6 @@
       "publishedAt": "2026-10-30T12:00:00.000Z"
     },
     {
-      "id": "102b089b1dd2cfca6cbe",
-      "sourceId": "iupana",
-      "category": "latam",
-      "kind": "news",
-      "title": "¿Adiós código Swift? BCP de Perú explora pagos internacionales con alias",
-      "excerpt": "El banco peruano participa, junto a la plataforma Swift, en una iniciativa global para trasladar la sencillez de los sistemas de pagos locales a las transferencias transfronterizas. ... Leer más... La entrada ¿Adiós código Swift? BCP de Perú explora pagos internacionales con alia",
-      "url": "https://iupana.com/2026/10/30/adios-codigo-swift-bcp-peru-prueba-pagos-internacionales-alias/",
-      "source": "iupana",
-      "sourceUrl": "https://iupana.com/feed/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T11:00:19.000Z"
-    },
-    {
       "id": "38b0708e38f04f54ed3b",
       "sourceId": "chainalysis",
       "category": "cripto",
@@ -1023,20 +995,6 @@
       "via": "",
       "language": "en",
       "publishedAt": "2026-10-29T06:55:01.000Z"
-    },
-    {
-      "id": "0a33e1daada6f45e9091",
-      "sourceId": "bce-boletines",
-      "category": "ecuador",
-      "kind": "official",
-      "title": "El Banco Central del Ecuador amplía proyección internacional de su revista Cuestiones Económicas con la incorporación a la plataforma SciELO",
-      "excerpt": "La revista Cuestiones Económicas, publicación académica del Banco Central del Ecuador (BCE), recibió la aprobación para su incorporación a la Scientific Electronic Library Online (SciELO),",
-      "url": "https://www.bce.fin.ec/el-banco-central-del-ecuador-amplia-proyeccion-internacional-de-su-revista-cuestiones-economicas-con-la-incorporacion-a-la-plataforma-scielo/",
-      "source": "Banco Central del Ecuador",
-      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-28T12:00:00.000Z"
     },
     {
       "id": "f72b6c111b547b1ebf03",
@@ -1145,8 +1103,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 4
     },
     {
@@ -1156,8 +1114,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 0
     },
     {
@@ -1167,8 +1125,8 @@
       "kind": "official",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 9
     },
     {
@@ -1178,8 +1136,8 @@
       "kind": "official",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 6
     },
     {
@@ -1189,8 +1147,8 @@
       "kind": "official",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 1
     },
     {
@@ -1200,8 +1158,8 @@
       "kind": "official",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 0
     },
     {
@@ -1211,8 +1169,8 @@
       "kind": "official",
       "url": "https://www.supercias.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 0
     },
     {
@@ -1222,8 +1180,8 @@
       "kind": "news",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 1
     },
     {
@@ -1233,8 +1191,8 @@
       "kind": "news",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 8
     },
     {
@@ -1244,8 +1202,8 @@
       "kind": "news",
       "url": "https://www.latamfintech.co/articles",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 8
     },
     {
@@ -1255,8 +1213,8 @@
       "kind": "news",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 3
     },
     {
@@ -1266,8 +1224,8 @@
       "kind": "news",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 8
     },
     {
@@ -1277,8 +1235,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 0
     },
     {
@@ -1288,9 +1246,9 @@
       "kind": "news",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
+      "recentCount": 3
     },
     {
       "id": "finextra-payments",
@@ -1299,8 +1257,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 12
     },
     {
@@ -1310,8 +1268,8 @@
       "kind": "news",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 7
     },
     {
@@ -1321,8 +1279,8 @@
       "kind": "analysis",
       "url": "https://www.chainalysis.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T13:58:18.964Z",
-      "lastSuccessAt": "2026-11-18T13:58:18.964Z",
+      "checkedAt": "2026-11-18T21:56:55.646Z",
+      "lastSuccessAt": "2026-11-18T21:56:55.646Z",
       "recentCount": 10
     }
   ]
