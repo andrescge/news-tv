@@ -2,12 +2,14 @@ import { createHash } from 'node:crypto';
 import * as cheerio from 'cheerio';
 import { XMLParser } from 'fast-xml-parser';
 import endeavorDirectory from './data/endeavor-latam.json' with { type: 'json' };
+import { endeavorUrl } from './endeavor.mjs';
 
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_', textNodeName: '#text', trimValues: true });
 const months = { enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5, julio: 6, agosto: 7, septiembre: 8, setiembre: 8, octubre: 9, noviembre: 10, diciembre: 11 };
 const DAY = 24 * 60 * 60 * 1000;
 export const THIRTY_DAYS = 30 * DAY;
 const MAX_EXCERPT = 280;
+const MAX_EXCERPT_SCAN = 4000;
 export const CHANNELS = ['ecuador', 'regulacion', 'latam', 'pagos', 'cripto', 'endeavor'];
 // Períodos que ofrece el sitio (días). La composición de cada canal reparte las notas entre ellos.
 export const PERIOD_DAYS = [1, 7, 15, 30];
@@ -48,6 +50,13 @@ export function recent(iso, now = Date.now()) {
   const time = Date.parse(iso);
   return Number.isFinite(time) && time >= now - THIRTY_DAYS && time <= now + 5 * 60 * 1000;
 }
+// Una URL http/https cuyo dominio es uno de la lista o un subdominio suyo.
+export function inHosts(value, hosts, base) {
+  const href = safeUrl(value, base);
+  if (!href) return false;
+  const host = new URL(href).hostname.toLowerCase();
+  return hosts.some(domain => host === domain || host.endsWith(`.${domain}`));
+}
 // Las fuentes de Google News se restringen al dominio del medio (`allowHosts`), comprobado sobre la URL del editor.
 // `denyHosts` descarta dominios (la búsqueda Endeavor no admite páginas de la propia Endeavor: no son prensa).
 export function allowedHost(row, source) {
@@ -58,10 +67,18 @@ export function allowedHost(row, source) {
     return (!source.allowHosts || matches(source.allowHosts)) && !(source.denyHosts && matches(source.denyHosts));
   } catch { return false; }
 }
-// Una nota pasa los filtros de su fuente: dominio del medio (allowedHost) y tema (relevant). La recopilación la aplica a lo
-// nuevo y, en la acumulación, a lo que viene de la edición anterior: una nota conservada que ya no cumple la regla vigente sale.
+// Las fuentes oficiales que se leen de su propia página o feed solo aceptan enlaces de sus dominios (`linkHosts`): una nota
+// rotulada «Publicación oficial» no puede llevar a otro sitio, y el recopilador no hace peticiones a dominios ajenos.
+// Una fuente sin `linkHosts` acepta cualquier enlace http/https. Los enlaces relativos se resuelven contra `source.url`.
+export function linkAllowed(row, source) {
+  return !source.linkHosts || inHosts(row?.url, source.linkHosts, source.url);
+}
+// Una nota pasa los filtros de su fuente: dominio del medio (allowedHost), dominio del enlace (linkAllowed) y tema (relevant).
+// La recopilación la aplica a lo nuevo y, en la acumulación, a lo que viene de la edición anterior: una nota conservada que ya
+// no cumple la regla vigente sale. Una nota malformada no lanza: cuenta como que no pasa.
 export function passes(story, source) {
-  return allowedHost(story, source) && relevant(story, source);
+  try { return allowedHost(story, source) && linkAllowed(story, source) && relevant(story, source); }
+  catch { return false; }
 }
 // Extracto de como máximo `max` caracteres. Si el texto cabe, sale igual. Si no, se corta en el último límite de palabra
 // que deje sitio para «…», se quitan los signos sueltos del final y se añade «…». Nunca se añade texto propio.
@@ -85,7 +102,9 @@ export function normalize(raw, source, now = Date.now()) {
   const url = safeUrl(raw.url, source.url);
   const publishedAt = parseDate(raw.publishedAt);
   if (!title || !url || !publishedAt || !recent(publishedAt, now)) return null;
-  let excerpt = plainText(raw.excerpt).replace(/(?:^|\s+)The post .+? appeared first on .+\.?$/i, '').trim();
+  // La coletilla de WordPress se busca en un texto acotado: la expresión es cuadrática con extractos enormes, y con
+  // MAX_EXCERPT_SCAN caracteres el recorte a MAX_EXCERPT sale igual.
+  let excerpt = plainText(raw.excerpt).slice(0, MAX_EXCERPT_SCAN).replace(/(?:^|\s+)The post .+? appeared first on .+\.?$/i, '').trim();
   if (raw.via && excerpt.toLowerCase().startsWith(title.toLowerCase())) excerpt = '';
   excerpt = clipExcerpt(excerpt);
   const sourceUrl = safeUrl(raw.sourceUrl || source.url);
@@ -364,17 +383,20 @@ export const FILTERS = {
   coindesk: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|chart|Anthropic|treasury|earnings|revenue|Live updates|Strategy\b`), path: /\/(policy|business)\// },
   chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|How Chainalysis`) },
 };
+// Una nota malformada (por ejemplo, de una edición anterior alterada) no hace lanzar al filtro: cuenta como que no pasa.
 export function relevant(story, source) {
   const filter = FILTERS[source.id];
   if (!filter) return true;
-  const text = filter.on === 'text' ? `${story.title} ${story.excerpt || ''}` : story.title;
-  if (filter.include && !filter.include.test(text)) return false;
-  if (filter.exclude?.test(text)) return false;
-  if (filter.path || filter.skipPath) {
-    const pathname = path(story);
-    if (pathname == null || (filter.path && !filter.path.test(pathname)) || filter.skipPath?.test(pathname)) return false;
-  }
-  return filter.test ? filter.test(story) : true;
+  try {
+    const text = filter.on === 'text' ? `${story.title} ${story.excerpt || ''}` : story.title;
+    if (filter.include && !filter.include.test(text)) return false;
+    if (filter.exclude?.test(text)) return false;
+    if (filter.path || filter.skipPath) {
+      const pathname = path(story);
+      if (pathname == null || (filter.path && !filter.path.test(pathname)) || filter.skipPath?.test(pathname)) return false;
+    }
+    return filter.test ? !!filter.test(story) : true;
+  } catch { return false; }
 }
 
 // Canal de cada nota. Por defecto, el de su fuente; ROUTES lo cambia por tema para fuentes que sirven a dos canales.
@@ -396,11 +418,27 @@ export function limitFor(source, category, fallback = 25) {
 // Si la fuente falló en esta ejecución, las notas conservadas se marcan `stale: true`; si respondió, no llevan marca.
 // Las ediciones anteriores a clipExcerpt cortaban el extracto en seco a 280 caracteres, a veces a mitad de palabra: un
 // extracto conservado de exactamente ese largo y sin «…» se vuelve a cortar en límite de palabra (solo se quita texto).
+// La edición anterior viene de fuera del proceso: cada nota se revalida (`carryable`) antes de conservarla.
+const filled = value => typeof value === 'string' && value.trim() !== '';
+export function carryable(story, source) {
+  if (!story || typeof story !== 'object' || !source || story.sourceId !== source.id) return false;
+  if (!filled(story.id) || !filled(story.title) || !filled(story.source)) return false;
+  if (!safeUrl(story.url) || !safeUrl(story.sourceUrl) || !Number.isFinite(Date.parse(story.publishedAt))) return false;
+  if (story.excerpt !== undefined && typeof story.excerpt !== 'string') return false;
+  return linkAllowed(story, source);
+}
+// Forma mínima de una edición anterior utilizable: `stories` y `sources` arreglos, `tracked` objeto o ausente.
+export function editionShape(data) {
+  const isObject = value => !!value && typeof value === 'object' && !Array.isArray(value);
+  return isObject(data) && Array.isArray(data.stories) && Array.isArray(data.sources) && (data.tracked === undefined || isObject(data.tracked));
+}
 export function accumulate(fresh, previous, source, { ok = true, now = Date.now(), keep = () => true } = {}) {
   const byId = new Map();
   for (const story of fresh) if (!byId.has(story.id)) byId.set(story.id, story);
-  for (const old of previous || []) {
-    if (old.sourceId !== source.id || byId.has(old.id) || !recent(old.publishedAt, now) || !keep(old)) continue;
+  for (const old of Array.isArray(previous) ? previous : []) {
+    if (!carryable(old, source) || byId.has(old.id) || !recent(old.publishedAt, now)) continue;
+    let kept; try { kept = keep(old); } catch { kept = false; }
+    if (!kept) continue;
     const { stale, ...story } = old;
     const carried = { ...story, kind: source.kind, category: channelFor(story, source) };
     if (typeof story.excerpt === 'string' && story.excerpt.length === MAX_EXCERPT && !story.excerpt.endsWith('…')) carried.excerpt = clipExcerpt(story.excerpt, MAX_EXCERPT - 1);
@@ -686,7 +724,8 @@ function endeavorTag({ display, company }) {
   const tag = { company: display };
   if (country) tag.country = country;
   if (company.vertical) tag.vertical = ENDEAVOR_VERTICALS[company.vertical] || company.vertical;
-  const url = safeUrl(company.url);
+  // Solo fichas de endeavor.org (https): un enlace de otro dominio no se publica.
+  const url = endeavorUrl(company.url);
   if (url) tag.url = url;
   return tag;
 }

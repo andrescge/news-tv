@@ -1,8 +1,10 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO } from '../scripts/content.mjs';
-import { decodeEntities, toCompany, latamCompanies } from '../scripts/endeavor.mjs';
-import { SOURCES } from '../scripts/collect.mjs';
+import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO } from '../scripts/content.mjs';
+import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
+import { SOURCES, loadPrevious, dateResolutions, readBody } from '../scripts/collect.mjs';
+import { validateEdition } from '../scripts/validate.mjs';
+import endeavorDirectory from '../scripts/data/endeavor-latam.json' with { type: 'json' };
 
 const now = Date.parse('2026-09-29T15:00:00Z');
 const source = { id: 'prueba', name: 'Medio de prueba', category: 'pagos', kind: 'news', url: 'https://example.com/feed.xml' };
@@ -555,7 +557,7 @@ test('acumulación: si la fuente falló, sus notas conservadas se marcan stale; 
   assert.equal(SOURCES.some(item => item.id === 'retirada'), false);
   // Si una fuente cambia de canal por tema, las notas conservadas se reasignan.
   const bce = sourceById('bce-boletines');
-  const old = { ...make('bce-boletines', 5), title: 'Resolución de la Junta de Política y Regulación', category: 'ecuador' };
+  const old = { ...make('bce-boletines', 5), url: 'https://www.bce.fin.ec/boletin-junta/', title: 'Resolución de la Junta de Política y Regulación', category: 'ecuador' };
   assert.equal(accumulate([], [old], bce, { now })[0].category, 'regulacion');
 });
 
@@ -803,4 +805,168 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   ];
   const kept = accumulate([], previous, prensa, { now, keep: story => passes(story, prensa) });
   assert.deepEqual(kept.map(story => story.source), ['El Nacional']);
+});
+
+// ---------------------------------------------------------------------------------------------------------
+// Revisión de seguridad: dominios de las fuentes oficiales, edición anterior, tamaños y validador.
+const official = SOURCES.filter(item => item.kind === 'official' && item.adapter !== 'google');
+
+test('fuentes oficiales: cada una tiene su lista de dominios y solo acepta enlaces de ella', () => {
+  assert.ok(official.length >= 17);
+  for (const item of official) {
+    assert.ok(Array.isArray(item.linkHosts) && item.linkHosts.length, `${item.id} sin linkHosts`);
+    for (const host of item.linkHosts) assert.match(host, /^[a-z0-9.-]+\.[a-z]{2,}$/, `${item.id}: ${host}`);
+    assert.equal(inHosts(item.url, item.linkHosts), true, `${item.id}: la URL de la fuente no está en su lista`);
+  }
+  // Google News no usa esta regla: su enlace es siempre de news.google.com y el medio se controla con allowHosts.
+  for (const item of SOURCES.filter(entry => entry.adapter === 'google')) assert.equal(item.linkHosts, undefined, item.id);
+  const junta = sourceById('bce-junta-resoluciones');
+  // Los enlaces relativos (y el vacío, que normalize convierte en la página de la fuente) se resuelven contra la URL de la fuente.
+  const yes = ['https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf', 'https://contenido.bce.fin.ec/documentos/a.pdf', '/storage/JPRFM/resoluciones/relativa.pdf', ''];
+  const no = ['https://otro.example/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf', 'https://bce.fin.ec.otro.example/storage/x/resoluciones/a.pdf', 'https://falsobce.fin.ec/a.pdf', 'javascript:alert(1)', 'ftp://www.bce.fin.ec/a.pdf', '//otro.example/a.pdf'];
+  for (const url of yes) assert.equal(linkAllowed({ url }, junta), true, url);
+  for (const url of no) assert.equal(linkAllowed({ url }, junta), false, String(url));
+  // El Ministerio de Economía publica en economicoproductivo.gob.ec (su feed redirige allí).
+  assert.equal(linkAllowed({ url: 'https://www.economicoproductivo.gob.ec/nota/' }, sourceById('mef')), true);
+  assert.equal(linkAllowed({ url: 'https://www.bce.fin.ec/nota/' }, sourceById('mef')), false);
+  // Una fuente sin lista (prensa) acepta cualquier enlace.
+  assert.equal(linkAllowed({ url: 'https://cualquiera.example/nota' }, sourceById('primicias')), true);
+  // Una resolución «oficial» que apunta a otro sitio: el analizador la lee, pero no pasa ni se conserva.
+  const html = '<table><tr><td>JPRFM-2026-050-M</td><td>Aprueba la norma de pagos.</td><td><a href="https://otro.example/storage/JPRFM/resoluciones/JPRFM-2026-050-M.pdf">VER</a></td></tr></table>';
+  const [row] = parseBceResolutions(html, junta.url);
+  assert.equal(linkAllowed(row, junta), false);
+  const story = normalize({ ...row, publishedAt: '2026-09-27T16:45:32.000Z' }, junta, now);
+  assert.equal(passes(story, junta), false);
+  assert.deepEqual(accumulate([], [story], junta, { now }), []);
+});
+
+test('resoluciones del BCE: no se pide la fecha (HEAD) de documentos fuera de los dominios de la fuente', async () => {
+  const junta = sourceById('bce-junta-resoluciones');
+  const html = '<table><tr><td>JPRFM-2026-050-M</td><td>Aprueba la norma de pagos.</td><td><a href="https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-050-M.pdf">VER</a></td></tr><tr><td>JPRFM-2026-051-M</td><td>Aprueba la norma de tarjetas.</td><td><a href="https://otro.example/storage/JPRFM/resoluciones/JPRFM-2026-051-M.pdf">VER</a></td></tr></table>';
+  const rows = parseBceResolutions(html, junta.url);
+  assert.equal(rows.length, 2);
+  const original = globalThis.fetch; const asked = [];
+  globalThis.fetch = async url => { asked.push(String(url)); return new Response(null, { status: 200, headers: { 'last-modified': 'Sun, 27 Sep 2026 16:45:32 GMT' } }); };
+  try {
+    const { tracked, rows: dated } = await dateResolutions(rows, junta, null, new Date(now));
+    assert.deepEqual(asked, ['https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-050-M.pdf']);
+    assert.deepEqual(Object.keys(tracked), asked);
+    assert.equal(dated.length, 1);
+  } finally { globalThis.fetch = original; }
+});
+
+test('edición anterior: si no tiene la forma esperada se trata como vacía, y las notas malformadas se descartan contando cuántas', () => {
+  for (const bad of [null, 'texto', [], { stories: {}, sources: [] }, { stories: [], sources: {} }, { stories: [], sources: [], tracked: [] }, { stories: [], sources: [], tracked: 'x' }]) {
+    assert.equal(editionShape(bad), false, JSON.stringify(bad));
+    const { previous, shapeOk } = loadPrevious(bad);
+    assert.equal(shapeOk, false);
+    assert.deepEqual(previous, { stories: [], sources: [] });
+  }
+  assert.equal(editionShape({ stories: [], sources: [] }), true);
+  assert.equal(editionShape({ stories: [], sources: [], tracked: {} }), true);
+  const bce = sourceById('bce-junta-resoluciones');
+  const good = { ...make('bce-junta-resoluciones', 5), url: 'https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf', excerpt: 'Resolución JPRFM-2026-048-T. Fecha de carga.' };
+  const prensa = make('primicias', 6);
+  const corrupt = [
+    null, 'nota', 42,
+    { ...good, id: 'otra-dominio', url: 'https://otro.example/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf' },
+    { ...prensa, id: 'js', url: 'javascript:alert(1)' },
+    { ...prensa, id: '' }, { ...prensa, id: 'sin-titulo', title: '  ' }, { ...prensa, id: 'sin-medio', source: undefined },
+    { ...prensa, id: 'medio-malo', sourceUrl: 'javascript:alert(1)' }, { ...prensa, id: 'fecha-mala', publishedAt: 'ayer' },
+    { ...prensa, id: 'retirada', sourceId: 'retirada' }, { ...prensa, id: 'extracto-raro', excerpt: { a: 1 } },
+  ];
+  const { previous, shapeOk, dropped } = loadPrevious({ stories: [good, prensa, ...corrupt], sources: [null, { id: 'seps' }], tracked: {} });
+  assert.equal(shapeOk, true);
+  assert.equal(dropped, corrupt.length);
+  assert.deepEqual(previous.stories.map(story => story.id), [good.id, prensa.id]);
+  // accumulate revalida también por su cuenta.
+  assert.equal(carryable(good, bce), true);
+  assert.deepEqual(accumulate([], [good, ...corrupt], bce, { now }).map(story => story.id), [good.id]);
+});
+
+test('una nota malformada no hace lanzar a los filtros: cuenta como que no pasa', () => {
+  const theblock = sourceById('theblock');
+  const junta = sourceById('bce-junta-resoluciones');
+  const odd = [{ title: 'Stablecoin regulation', url: 'no es una url' }, { title: 'Stablecoin regulation' }, {}, { title: 42, url: 42 }];
+  for (const story of odd) {
+    assert.doesNotThrow(() => relevant(story, theblock));
+    assert.equal(relevant(story, theblock), false);
+    assert.equal(passes(story, theblock), false);
+  }
+  // El filtro de la Junta lee el extracto: sin extracto, antes lanzaba.
+  assert.equal(relevant({ title: 'Aprueba la norma de pagos.' }, junta), false);
+  assert.equal(passes({ title: 'Aprueba la norma de pagos.', url: 'https://www.bce.fin.ec/a.pdf' }, junta), false);
+  // Un `keep` que lanza tampoco rompe la acumulación.
+  const feed = { id: 'medio', name: 'Medio', category: 'pagos', kind: 'news' };
+  assert.deepEqual(accumulate([], [make('medio', 3)], feed, { now, keep: () => { throw new Error('roto'); } }), []);
+});
+
+test('el extracto con miles de «The post » se procesa en milisegundos y sin cambiar el recorte', () => {
+  const big = 'Inicio del extracto. ' + 'The post '.repeat(60000) + 'final';
+  assert.ok(big.length > 500_000);
+  const started = performance.now();
+  const story = normalize({ title: 'Nota larga', url: 'https://example.com/larga', publishedAt: '2026-09-29T10:00:00Z', excerpt: big }, source, now);
+  const elapsed = performance.now() - started;
+  assert.ok(elapsed < 1000, `${Math.round(elapsed)} ms`);
+  assert.equal(story.excerpt, clipExcerpt(big));
+  // La coletilla de WordPress se sigue quitando en extractos normales.
+  const wp = normalize({ title: 'Nota', url: 'https://example.com/wp', publishedAt: '2026-09-29T10:00:00Z', excerpt: 'Texto de la nota. The post Nota appeared first on Medio.' }, source, now);
+  assert.equal(wp.excerpt, 'Texto de la nota.');
+});
+
+test('Endeavor: toda ficha del directorio es https de endeavor.org, y un enlace ajeno deja a la empresa sin enlace', () => {
+  for (const entry of endeavorDirectory.companies) {
+    assert.equal(typeof entry.url, 'string', entry.slug);
+    assert.equal(endeavorUrl(entry.url), entry.url, `${entry.slug}: ${entry.url}`);
+  }
+  assert.equal(endeavorUrl('https://endeavor.org/entrepreneur-companies/'), 'https://endeavor.org/entrepreneur-companies/');
+  assert.equal(endeavorUrl('https://www.endeavor.org/x'), 'https://www.endeavor.org/x');
+  for (const bad of ['http://endeavor.org/x', 'https://endeavor.org.otro.example/x', 'https://falsoendeavor.org/x', 'https://otro.example/?endeavor.org', 'javascript:alert(1)', '', null]) assert.equal(endeavorUrl(bad), null, String(bad));
+  const item = { slug: 'kueski', link: 'https://otro.example/kueski', title: { rendered: 'Kueski' }, class_list: ['vertical-fintech', 'region-latin-america', 'local-office-mexico'] };
+  assert.equal('url' in toCompany(item), false);
+  assert.equal(toCompany({ ...item, link: 'https://endeavor.org/kueski' }).url, 'https://endeavor.org/kueski');
+  // Al etiquetar, tampoco se publica un enlace ajeno.
+  const index = endeavorIndex([company('Kueski', { url: 'https://otro.example/kueski' }), company('Konfío', { url: 'https://endeavor.org/konfio' })]);
+  const foreign = matchEndeavor({ title: 'Kueski levanta una ronda de inversión', excerpt: '' }, { index });
+  assert.equal(foreign.company, 'Kueski');
+  assert.equal('url' in foreign, false);
+  assert.equal(matchEndeavor({ title: 'Konfío levanta una ronda de inversión', excerpt: '' }, { index }).url, 'https://endeavor.org/konfio');
+});
+
+test('lectura con tope: se rechaza por Content-Length o al pasar el límite mientras se lee', async () => {
+  assert.equal(await readBody(new Response('hola')), 'hola');
+  assert.equal(await readBody(new Response('ñandú')), 'ñandú');
+  await assert.rejects(readBody(new Response('x', { headers: { 'content-length': '5000000' } }), 3_000_000), /demasiado grande/);
+  let pulls = 0;
+  const endless = new ReadableStream({ pull(controller) { pulls++; controller.enqueue(new Uint8Array(64 * 1024)); } });
+  await assert.rejects(readBody(new Response(endless), 1_000_000), /demasiado grande/);
+  assert.ok(pulls < 40, `partes leídas: ${pulls}`);
+});
+
+test('validador: enlaces del medio y de las fuentes, dominios de las fuentes oficiales y fichas Endeavor', () => {
+  const at = new Date(now - 3600 * 1000).toISOString();
+  const base = () => ({
+    version: 1,
+    sources: [{ id: 'bce-junta-resoluciones', status: 'ok', tier: 1, access: 'open', language: 'es', url: 'https://www.bce.fin.ec/' }],
+    stories: [
+      { id: 'a', sourceId: 'bce-junta-resoluciones', category: 'regulacion', title: 'Resolución', source: 'BCE', url: 'https://www.bce.fin.ec/storage/JPRFM/resoluciones/a.pdf', sourceUrl: 'https://www.bce.fin.ec/', publishedAt: at },
+      { id: 'b', sourceId: 'primicias', category: 'ecuador', title: 'Nota', source: 'Primicias', url: 'https://www.primicias.ec/economia/b/', sourceUrl: 'https://www.primicias.ec/', publishedAt: at, endeavor: { company: 'Kushki', url: 'https://endeavor.org/kushki' } },
+    ],
+  });
+  assert.deepEqual(validateEdition(base(), { now }), { stories: 2, available: 1 });
+  const broken = [
+    [data => { data.stories[0].url = 'https://otro.example/storage/JPRFM/resoluciones/a.pdf'; }, /fuera de los dominios de bce-junta-resoluciones/],
+    [data => { data.stories[1].sourceUrl = 'javascript:alert(1)'; }, /enlace del medio inválido/],
+    [data => { data.sources[0].url = 'javascript:alert(1)'; }, /enlace inválido en la fuente/],
+    [data => { data.stories[1].endeavor.url = 'https://otro.example/kushki'; }, /empresa Endeavor inválida/],
+    [data => { data.stories[1].endeavor.url = 'http://endeavor.org/kushki'; }, /empresa Endeavor inválida/],
+    [data => { data.stories[1].url = 'javascript:alert(1)'; }, /noticia inválida/],
+  ];
+  for (const [damage, message] of broken) {
+    const data = base(); damage(data);
+    assert.throws(() => validateEdition(data, { now }), message);
+  }
+  // Sin sourceUrl ni enlace Endeavor, la nota sigue siendo válida (son opcionales).
+  const optional = base(); delete optional.stories[1].sourceUrl; delete optional.stories[1].endeavor.url;
+  assert.doesNotThrow(() => validateEdition(optional, { now }));
 });

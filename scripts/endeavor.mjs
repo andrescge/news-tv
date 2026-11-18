@@ -19,10 +19,21 @@ export function decodeEntities(value) {
     .trim();
 }
 
+// Enlace a la ficha del directorio: solo https de endeavor.org o un subdominio suyo. Cualquier otro valor da null.
+export function endeavorUrl(value) {
+  try {
+    const url = new URL(String(value ?? ''));
+    const host = url.hostname.toLowerCase();
+    return url.protocol === 'https:' && (host === 'endeavor.org' || host.endsWith('.endeavor.org')) ? url.href : null;
+  } catch { return null; }
+}
+
 // Una empresa del directorio: etiquetas de `class_list` (region-…, local-office-…, vertical-…, sub-vertical-…).
+// Si el enlace no es de endeavor.org, la empresa queda sin enlace.
 export function toCompany(item) {
   const classes = item.class_list || [];
   const tagged = prefix => classes.filter(name => name.startsWith(prefix)).map(name => name.slice(prefix.length));
+  const url = endeavorUrl(item.link);
   return {
     name: decodeEntities(item.title?.rendered),
     slug: item.slug,
@@ -30,7 +41,7 @@ export function toCompany(item) {
     offices: tagged('local-office-'),
     vertical: tagged('vertical-')[0] || null,
     subVertical: tagged('sub-vertical-')[0] || null,
-    url: item.link,
+    ...(url ? { url } : {}),
   };
 }
 
