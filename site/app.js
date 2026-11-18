@@ -59,7 +59,11 @@ const state = {
   tickerKey: null,
   channelButtons: [],
   periodButtons: [],
+  excerptFor: null, // id de la nota cuyo extracto se muestra
+  excerptOpen: false, // en móvil el extracto se muestra en pocas líneas hasta pulsar «Ver todo»
 };
+// Mismo corte que styles.css: por debajo, el extracto se recorta a pocas líneas.
+const narrowScreen = window.matchMedia('(max-width: 719px)');
 
 // ---------- Utilidades ----------
 function safeUrl(value) {
@@ -249,6 +253,9 @@ function renderStory(story) {
   excerptNode.hidden = !excerpt;
   excerptNode.textContent = excerpt;
   excerptNode.lang = lang;
+  // Cada nota nueva empieza con el extracto recogido; un re-render de la misma nota respeta lo que eligió quien lee.
+  if (state.excerptFor !== story.id) { state.excerptFor = story.id; state.excerptOpen = false; }
+  fitExcerpt();
 
   // Línea de estado: medio · tipo de fuente · fecha · idioma (+ de pago, vía Google News); la posición va después.
   const facts = [];
@@ -281,6 +288,21 @@ function renderStory(story) {
   link.href = url || '#';
   $('#nota-enlace-texto').textContent = via ? 'Leer vía Google News' : 'Leer en la fuente';
   $('#nota-sin-enlace').hidden = !!url;
+}
+// Extracto en pantallas estrechas: CSS lo limita a pocas líneas; «Ver todo» aparece solo si de verdad queda texto oculto.
+function fitExcerpt() {
+  const node = $('#nota-extracto');
+  const button = $('#extracto-boton');
+  node.classList.toggle('abierto', state.excerptOpen);
+  const clipped = !node.hidden && !state.excerptOpen && node.scrollHeight > node.clientHeight + 1;
+  button.hidden = node.hidden || !narrowScreen.matches || !(clipped || state.excerptOpen);
+  button.textContent = state.excerptOpen ? 'Ver menos' : 'Ver todo';
+  button.setAttribute('aria-label', state.excerptOpen ? 'Ver menos del extracto' : 'Ver todo el extracto');
+  button.setAttribute('aria-expanded', String(state.excerptOpen));
+}
+function toggleExcerpt() {
+  state.excerptOpen = !state.excerptOpen;
+  fitExcerpt();
 }
 // Rótulo de empresa de la red Endeavor (campo opcional `endeavor`): nombre y país, con enlace a su ficha del directorio.
 function renderEndeavor(tag) {
@@ -637,6 +659,10 @@ function bindEvents() {
   $('#anterior').addEventListener('click', () => moveStory(-1, true));
   $('#adelante').addEventListener('click', () => moveStory(1, true));
   $('#pausa').addEventListener('click', togglePlayback);
+  $('#extracto-boton').addEventListener('click', toggleExcerpt);
+  // El recorte depende del ancho y de la letra: se vuelve a medir al cambiar la ventana y cuando Geist termina de cargar.
+  window.addEventListener('resize', fitExcerpt);
+  document.fonts?.ready?.then(fitExcerpt);
   $('#reintentar').addEventListener('click', () => {
     if ($('#reintentar').getAttribute('aria-disabled') === 'true') return;
     loadNews({ manual: true });

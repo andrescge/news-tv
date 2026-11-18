@@ -40,6 +40,7 @@
         <div class="acciones">
           <a id="nota-enlace" class="accion-enlace" href="#" target="_blank" rel="noopener noreferrer"><span id="nota-enlace-texto">Leer en la fuente</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
           <span id="nota-sin-enlace" class="sin-enlace" hidden>Enlace no disponible</span>
+          <button id="extracto-boton" class="accion" type="button" aria-controls="nota-extracto" aria-expanded="false" hidden>Ver todo</button>
           <span class="mandos">
             <button id="anterior" class="accion" type="button" aria-keyshortcuts="ArrowLeft">Anterior</button>
             <button id="adelante" class="accion" type="button" aria-keyshortcuts="ArrowRight">Siguiente</button>
@@ -58,7 +59,7 @@
 
       <section id="senal" class="senal" aria-labelledby="senal-titulo">
         <p class="estado"><span class="punto" aria-hidden="true"></span><span id="senal-rotulo">Cargando</span></p>
-        <h1 id="senal-titulo" class="titular" data-largo="s">Cargando…</h1>
+        <h2 id="senal-titulo" class="titular" data-largo="s">Cargando…</h2>
         <p id="senal-texto" class="extracto">Cargando la edición más reciente.</p>
         <p id="senal-detalle" class="detalle" hidden></p>
         <div class="acciones"><button id="reintentar" class="accion" type="button" hidden>Reintentar</button></div>
