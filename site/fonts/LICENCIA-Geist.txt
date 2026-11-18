@@ -1,0 +1,8 @@
+Geist-Variable.woff2
+
+Tipografía Geist, Copyright 2024 The Geist Project Authors (github.com/vercel/geist-font).
+Se distribuye bajo la licencia SIL Open Font License, versión 1.1 (openfontlicense.org).
+
+Este sitio la autoaloja sin modificarla. La licencia permite usarla, copiarla y redistribuirla,
+incluso junto a software comercial, siempre que no se venda la fuente por sí sola y que este
+aviso de copyright y licencia acompañe al archivo.

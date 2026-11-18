@@ -3,66 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#090909">
-  <meta name="description" content="NEWS·TV: noticias financieras de Ecuador y LATAM en una televisión de cinco canales, con fechas y fuentes verificables.">
-  <title>NEWS·TV — Señal financiera</title>
+  <meta name="theme-color" content="#0C1821">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="News TV: noticias de banca, autoridades financieras, fintech, pagos, cripto y empresas Endeavor para Ecuador y LATAM, en seis canales con fecha y fuente verificables.">
+  <title>News TV · Catalystica</title>
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./fonts/Geist-Variable.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" type="module"></script>
 </head>
 <body>
-  <a class="skip-link" href="#televisor">Saltar al televisor</a>
-  <main id="televisor" class="stage">
-    <div class="antenna" aria-hidden="true"><i></i><i></i><b></b></div>
-    <div class="tv-case">
-      <div class="cabinet-top">
-        <div class="brand"><span class="brand-spark" aria-hidden="true">◆</span> NEWS<span>·</span>TV <small>SEÑAL FINANCIERA</small></div>
-        <div class="cabinet-top-right"><span id="clock" class="clock" aria-label="Hora de Ecuador"></span><span class="on-air"><i aria-hidden="true"></i> EN VIVO</span><button id="fullscreen" type="button" aria-label="Pantalla completa" title="Pantalla completa">⛶</button></div>
-      </div>
-      <div class="tv-main">
-        <section class="tv-screen" aria-label="Noticias del canal seleccionado">
-          <div class="screen-top"><div class="screen-brand"><span class="signal-dot" aria-hidden="true"></span><span>EN EMISIÓN</span><span class="screen-separator">/</span><span id="screen-channel-name">ECUADOR FINANCIERO</span></div><span id="screen-date"></span></div>
-          <div class="broadcast" aria-live="off"><div class="broadcast-inner">
-            <span id="story-kind" class="story-kind">SINTONIZANDO</span>
-            <h1 id="story-title">Preparando señal…</h1>
-            <p id="story-excerpt">Estamos cargando las noticias del canal.</p>
-            <div id="story-meta" class="story-meta"></div>
-            <div class="story-links"><button id="read-story" class="read-story" type="button" disabled>▸ ABRIR NOTICIA</button><a id="original-link" href="#" target="_blank" rel="noopener noreferrer" hidden>FUENTE ORIGINAL ↗</a></div>
-          </div><div id="watermark" class="watermark" aria-hidden="true">01</div></div>
-          <div class="screen-bottom"><div class="story-queue"><span id="story-position">— / —</span><span class="queue-divider" aria-hidden="true"></span><span id="next-story">A CONTINUACIÓN · ESPERANDO NOTICIAS</span></div><span id="play-state">EN EMISIÓN</span></div>
-          <div class="progress-track" aria-hidden="true"><span id="progress-fill"></span></div>
-        </section>
-        <aside class="tv-side" aria-label="Panel del televisor">
-          <div class="side-plate">NEWS<span>·</span>TV<small>ECUADOR / LATAM</small></div>
-          <div class="dial-area"><span class="dial-caption">CANAL</span><div class="dial"><span id="channel-number">CH 01</span></div><span class="dial-caption">SINTONÍA</span></div>
-          <div class="speaker" aria-hidden="true"></div><div class="side-serial">NTV–EC / 2026</div>
-        </aside>
-      </div>
-      <section class="control-deck" aria-label="Controles del televisor">
-        <div class="deck-top"><span class="deck-label">CANALES <span>01 — 05</span></span><div class="deck-status"><span id="freshness-dot" aria-hidden="true"></span><span id="update-status" role="status">Consultando fuentes…</span></div></div>
-        <div id="channel-buttons" class="channels" role="group" aria-label="Canales"></div>
-        <div class="deck-bottom">
-          <div class="player-controls" role="group" aria-label="Reproducción"><button id="previous" type="button" aria-label="Noticia anterior" title="Noticia anterior (←)">◀</button><button id="play-pause" type="button" aria-label="Pausar reproducción" title="Pausar o reanudar (Espacio)">❚❚ <span>PAUSAR</span></button><button id="next" type="button" aria-label="Siguiente noticia" title="Siguiente noticia (→)">▶</button><button id="speed" type="button" aria-label="Velocidad de reproducción">20 s</button></div>
-          <div class="utility-controls"><label class="period-control"><span>PERÍODO</span><select id="period" aria-label="Período de noticias"><option value="7">7 días</option><option value="1">24 horas</option><option value="30">30 días</option></select></label><button id="open-sources" type="button">FUENTES ↗</button></div>
+  <a class="salto" href="#noticia">Saltar a la noticia</a>
+
+  <header class="nav">
+    <a class="nav-marca" href="https://catalysticagrowth.com/">Catalystica</a>
+    <a class="nav-pagina" href="./" aria-current="page">News TV</a>
+  </header>
+
+  <main class="principal">
+    <nav class="guia" aria-label="Canales y período">
+      <div id="canales" class="canales" role="group" aria-label="Canales"></div>
+      <div id="periodos" class="periodos" role="group" aria-label="Período"></div>
+    </nav>
+
+    <div id="noticia" class="noticia" tabindex="-1" role="region" aria-label="Noticia en pantalla">
+      <article id="nota" class="nota" hidden>
+        <div class="estado">
+          <span class="punto" aria-hidden="true"></span>
+          <ul id="nota-datos" class="datos" aria-label="Datos de la nota"></ul>
+          <p class="posicion"><span id="posicion"></span><span id="estado-emision"></span></p>
         </div>
+        <h1 id="nota-titular" class="titular"></h1>
+        <p id="nota-extracto" class="extracto"></p>
+        <p id="nota-endeavor" class="endeavor" hidden></p>
+        <p id="nota-aviso" class="aviso" hidden>Esta fuente no respondió en la última actualización: la nota viene de una edición anterior.</p>
+        <div class="acciones">
+          <a id="nota-enlace" class="accion-enlace" href="#" target="_blank" rel="noopener noreferrer"><span id="nota-enlace-texto">Leer en la fuente</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
+          <span id="nota-sin-enlace" class="sin-enlace" hidden>Enlace no disponible</span>
+          <span class="mandos">
+            <button id="anterior" class="accion" type="button" aria-keyshortcuts="ArrowLeft">Anterior</button>
+            <button id="adelante" class="accion" type="button" aria-keyshortcuts="ArrowRight">Siguiente</button>
+            <button id="pausa" class="accion" type="button" aria-keyshortcuts="Space">Pausar</button>
+          </span>
+        </div>
+        <p id="periodo-nota" class="aviso" hidden></p>
+        <section id="siguientes" class="siguientes" aria-labelledby="siguientes-rotulo" hidden>
+          <h2 id="siguientes-rotulo" class="etiqueta">A continuación</h2>
+          <ul class="siguientes-lista">
+            <li><button id="siguiente-1" class="siguiente" type="button" hidden><span class="siguiente-numero"></span><span class="siguiente-titulo"></span></button></li>
+            <li><button id="siguiente-2" class="siguiente" type="button" hidden><span class="siguiente-numero"></span><span class="siguiente-titulo"></span></button></li>
+          </ul>
+        </section>
+      </article>
+
+      <section id="senal" class="senal" aria-labelledby="senal-titulo">
+        <p class="estado"><span class="punto" aria-hidden="true"></span><span id="senal-rotulo">Cargando</span></p>
+        <h1 id="senal-titulo" class="titular" data-largo="s">Cargando…</h1>
+        <p id="senal-texto" class="extracto">Cargando la edición más reciente.</p>
+        <p id="senal-detalle" class="detalle" hidden></p>
+        <div class="acciones"><button id="reintentar" class="accion" type="button" hidden>Reintentar</button></div>
       </section>
-      <div class="cabinet-rim" aria-hidden="true"><span></span><span></span><span></span></div>
     </div>
-    <p class="usage-hint">TECLAS <kbd>1</kbd>–<kbd>5</kbd> CAMBIAN DE CANAL <span>·</span> <kbd>←</kbd><kbd>→</kbd> RECORREN NOTICIAS <span>·</span> <kbd>ESPACIO</kbd> PAUSA</p>
-    <footer><span>NEWS·TV / ECUADOR + LATAM</span><span>NOTICIAS CON FECHA Y FUENTE VERIFICABLE.</span><a href="https://github.com/shouvik12/devtv" target="_blank" rel="noopener noreferrer">INSPIRADO EN DEV·TV ↗</a></footer>
   </main>
-  <dialog id="story-dialog" class="overlay-dialog" aria-labelledby="dialog-title"><div class="dialog-content"><div class="dialog-top"><span id="dialog-category" class="eyebrow"></span><button id="close-story" type="button" aria-label="Cerrar noticia">×</button></div><h2 id="dialog-title"></h2><p id="dialog-meta" class="dialog-meta"></p><p id="dialog-excerpt" class="dialog-excerpt"></p><div class="dialog-actions"><a id="dialog-link" href="#" target="_blank" rel="noopener noreferrer">LEER EN LA FUENTE ↗</a><span id="dialog-via"></span></div></div></dialog>
-  <dialog id="sources-dialog" class="overlay-dialog sources-dialog" aria-labelledby="sources-title"><div class="dialog-content"><div class="dialog-top"><span class="eyebrow">TRANSPARENCIA EDITORIAL</span><button id="close-sources" type="button" aria-label="Cerrar fuentes">×</button></div><h2 id="sources-title">Detrás de la señal.</h2>
-    <p class="sources-intro">Cada noticia conserva su medio, fecha y enlace. «Sin novedades» significa que la fuente respondió, pero no produjo entradas que pasaran el filtro.</p>
-    <section class="criteria" aria-labelledby="criteria-title"><h3 id="criteria-title">¿Qué noticias entran?</h3><p>Se exige fecha verificable de los últimos 30 días, un enlace válido y una fuente incluida en la lista. Se eliminan duplicados y se muestran primero las más recientes. La vista abre con 7 días; puedes elegir 24 horas o 30 días.</p>
-      <ul>
-        <li><strong>01 · Ecuador financiero</strong><span>Boletines del BCE, economía de Primicias, noticias de El Universo, Expreso o Bloomberg Línea descubiertas vía Google News, análisis de Asobanca y anuncios de crédito de BanEcuador y la CFN. El titular debe tratar de banca, crédito, seguros, cooperativas o medios de pago.</span></li>
-        <li><strong>02 · Autoridades EC</strong><span>Resoluciones de la Junta y resoluciones administrativas del BCE (fechadas por la carga del documento), boletines del BCE sobre la Junta, sus tres publicaciones de datos más recientes, avisos y normas de SEPS, Superintendencia de Bancos y Supercias, comunicados del Ministerio de Economía y Finanzas sobre deuda y presupuesto, y publicaciones de la UAFE. La cobertura de medios sobre esas autoridades se distingue de los documentos oficiales.</span></li>
-        <li><strong>03 · Fintech LATAM</strong><span>LatamList, Latam Fintech Hub, iupana, Bloomberg Línea, Valora Analitik y Contxto sobre empresas o mercados de la región, más publicaciones de Endeavor Argentina, Colombia Fintech, LAVCA y FELABAN, rotuladas como contenido de la organización. Si varios medios cuentan la misma operación, queda una sola nota. Se excluyen eventos y temas ajenos.</span></li>
-        <li><strong>04 · Pagos globales</strong><span>PYMNTS, Payments Dive, Electronic Payments International, Payments Cards &amp; Mobile, Digital Transactions y Finextra Payments, sin contenido patrocinado, más comunicados de la Reserva Federal y del Banco Central Europeo sobre pagos y euro digital.</span></li>
-        <li><strong>05 · Cripto</strong><span>Regulación e infraestructura financiera en CoinDesk, The Block, Finextra Blockchain y CriptoNoticias, sin precios de mercado; blogs de las empresas Chainalysis y TRM Labs; y posiciones de la organización Coin Center.</span></li>
-      </ul><p>Es un filtro automático por fuente, fecha, tema y tipo de artículo; no verifica de forma independiente las afirmaciones de cada medio.</p>
-    </section>
-    <h3 class="source-list-title">Fuentes consultadas</h3><div id="sources-list" class="sources-list"></div><p class="sources-footnote">Los extractos pertenecen a sus autores. Google News se indica cuando funciona como intermediario; los enlaces pasan por ese servicio cuando no se obtiene una URL directa.</p></div></dialog>
+
+  <section class="cintillo" aria-labelledby="cintillo-rotulo">
+    <h2 id="cintillo-rotulo" class="sr-only">Última hora</h2>
+    <div class="cintillo-visor"><div id="cintillo-pista" class="cintillo-pista quieta"><p class="cintillo-estado">Cargando la edición…</p></div></div>
+  </section>
+
+  <footer class="barra">
+    <p id="edicion" class="edicion">Cargando la edición…</p>
+    <button id="abrir-fuentes" class="barra-enlace" type="button" aria-haspopup="dialog">Fuentes y criterios</button>
+  </footer>
+
+  <p id="anunciador" class="sr-only" aria-live="polite"></p>
+
+  <dialog id="fuentes" class="dialogo" aria-labelledby="fuentes-titulo">
+    <div class="dialogo-cabecera">
+      <h2 id="fuentes-titulo">Fuentes y criterios</h2>
+      <button id="cerrar-fuentes" class="cerrar" type="button">Cerrar</button>
+    </div>
+    <div class="dialogo-cuerpo">
+      <p id="fuentes-resumen" class="fuentes-resumen">Cargando la edición…</p>
+      <section class="criterios" aria-labelledby="criterios-titulo">
+        <h3 id="criterios-titulo">¿Qué notas entran?</h3>
+        <p>Solo notas con fecha verificable de los últimos 30 días, enlace válido y publicadas por una de las fuentes de esta lista. Se eliminan duplicados y se muestran primero las más recientes. La vista abre en 7 días; si un canal tiene menos de 5 notas, el período se amplía y la pantalla lo indica.</p>
+        <p>No se redactan textos propios: si la fuente no trae extracto, se muestra solo el titular y el enlace. Es un filtro automático por fuente, fecha y tema; no verifica de forma independiente lo que afirma cada medio.</p>
+        <p>«Sin novedades» significa que la fuente respondió pero no aportó notas que pasaran el filtro. «Sin respuesta» significa que falló en la última ejecución: sus notas recientes se conservan de la edición anterior y se marcan en pantalla.</p>
+      </section>
+      <div id="fuentes-lista" class="fuentes-lista"></div>
+      <p class="fuentes-nota">Los extractos pertenecen a sus autores. «Vía Google News» indica que el enlace pasa por ese servicio porque no se obtuvo una dirección directa del medio.</p>
+    </div>
+  </dialog>
 </body>
 </html>
