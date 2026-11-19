@@ -218,7 +218,8 @@ const RO_ORGANS = [
 // Encabezados de cualquier otro órgano: si aparecen después del último órgano financiero, el bloque no es financiero.
 const RO_OTHER_ORGAN = /MINISTERIO|AGENCIA|SERVICIO|SECRETAR[IÍ]A|GOBIERNO|CORTE|DEFENSOR|CONSEJO|EMPRESA|PRESIDENCIA|INSTITUTO|ARMADA|POLIC[IÍ]A|UNIVERSIDAD|DIRECCI[OÓ]N|SUPERINTENDENCIA|CORPORACI[OÓ]N|CONTRALOR|PROCURADUR|FISCAL|ASAMBLEA|MUNICIP|CANT[OÓ]N/g;
 // Normas de trámite que no interesan aunque las emita un órgano financiero.
-const RO_NOISE = /^se (conoce|designa|delega|acoge)|defensor\/?a? del cliente|personer[ií]a jur[ií]dica|estatuto|cooperativa de vivienda|extingui|fondo complementario|\bfcpc\b|cesant[ií]a/i;
+// También la contratación de auditores y consultores («Se selecciona como primera opción a la firma…»).
+const RO_NOISE = /^se (conoce|designa|delega|acoge|selecciona)|firma (auditora|consultora)|auditor[ií]a externa|defensor\/?a? del cliente|personer[ií]a jur[ií]dica|estatuto|cooperativa de vivienda|extingui|fondo complementario|\bfcpc\b|cesant[ií]a/i;
 const RO_ACRONYMS = new Set(['SCVS', 'SRI', 'SEPS', 'BCE', 'COSEDE', 'JPRFM', 'UAFE', 'IVA', 'RUC', 'NIIF', 'SB']);
 const lastIndex = (text, pattern) => { let index = -1; for (const match of text.matchAll(pattern)) index = match.index; return index; };
 function roOrgan(heading) {
@@ -291,22 +292,46 @@ export function parseRegistroOficial(xml) {
 // Las expresiones salen de la verificación de fuentes; las que se repiten entre fuentes del mismo tema son constantes.
 const rx = (...parts) => new RegExp(parts.filter(Boolean).map(part => part instanceof RegExp ? part.source : part).join('|'), 'i');
 
-// Ecuador: vocabulario financiero de los feeds de economía de Primicias y El Universo, y su ruido de consumo.
-const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|biess|mercado (de valores|burs[aá]til)|bolsa de valores|proforma|presupuesto|d[eé]ficit|recaudaci[oó]n|diferimiento`;
+// Ecuador: la banca como negocio, que el vocabulario general no reconoce: crédito informal y usura, deudores y mora, banca
+// pública (BanEcuador, CFN, Biess), mercado de valores, titularizaciones y bonos temáticos.
+const EC_BANKING_BUSINESS = String.raw`chulc|chulquer|usura|agiotis|deudor|morosidad|banecuador|\bcfn\b|corporaci[oó]n financiera nacional|biess|banca p[uú]blica|bolsa de valores|casas? de valores|mercado de valores|titulariz|bonos? (azules|verdes|sociales|sostenibles|tem[aá]ticos)`;
+// Ecuador: vocabulario financiero de los feeds de economía de Primicias y El Universo, y su ruido de consumo. «Presupuesto» solo
+// cuenta como el del Estado: «con un presupuesto de USD 19 millones» es el costo de una obra.
+const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|mercado burs[aá]til|proforma|presupuesto (general|del estado)|d[eé]ficit|recaudaci[oó]n|diferimiento|${EC_BANKING_BUSINESS}`;
 const EC_CONSUMER_NOISE = String.raw`black friday|cyber ?(day|monday)|concurso|competencia econ[oó]mica|brigadas`;
 // Supervisores de Ecuador (SEPS, Superintendencia de Bancos, Supercias): actos de control y actos protocolarios.
 const EC_SUPERVISOR_ACTS = String.raw`resoluci[oó]n|sanci|intervenci|liquidaci|alerta|advierte`;
 const EC_INSTITUTIONAL_NOISE = String.raw`capacit|aniversario`;
 // Fintech de la región: términos comunes a La República, Bloomberg Línea, El Economista, Expansión México y Diario Financiero.
 const LATAM_FINTECH = String.raw`fintech|neobanc|bancos? digital|nubank`;
+// Fintech de la región por nombre: las que la prensa nombra sin decir «fintech» (resultados de MercadoLibre, Binance Pay Later).
+const LATAM_FINTECH_NAMES = String.raw`mercado ?libre|mercado pago|bitso|binance|payjoy|kueski|konf[ií]o|ual[aá]\b|nequi|daviplata|dlocal|ebanx|\bstori\b|\bklar\b`;
+// Banca y reguladores de la región (canal Fintech LATAM): supervisores, bancos centrales cuando actúan como reguladores (normas,
+// pagos, capital, estabilidad, lavado), gremios bancarios, pagos inmediatos y efectivo, y la banca como negocio: resultados,
+// licencias, compras y productos de bancos, y ciberseguridad del sistema financiero. La política monetaria y los mercados quedan
+// fuera (LATAM_MARKET_NOISE). Las frases se buscan dentro de una misma oración: sin cruzar punto, punto y coma ni signo de cierre.
+const LATAM_CENTRAL_BANKS = String.raw`banco central|banxico|banco de m[eé]xico|\bbcra\b|\bbacen\b|banco de la rep[uú]blica|\bbanrep\b`;
+const LATAM_REGULATORY_TOPICS = String.raw`regula|\bnormas?\b|normativ|reglas|pagos|transferencias|stablecoins?|cripto|exigencia|capital\b|riesgos? financier|estabilidad|supervis|licencia|lavado|efectivo|billetes|ciber|open finance|finanzas abiertas`;
+const LATAM_REGULATORS = String.raw`\bcmf\b|\bcnbv\b|superfinanciera|superintendencia (financiera|de bancos|de banca)|\babm\b|asociaci[oó]n de bancos|asobancaria|exigencia de capital|estabilidad financiera|riesgos financieros|sistema financiero|\bgafi\b|lista gris|lavado de (dinero|activos)|(${LATAM_CENTRAL_BANKS})[^.;?!]{0,80}(${LATAM_REGULATORY_TOPICS})|(${LATAM_REGULATORY_TOPICS})[^.;?!]{0,80}(${LATAM_CENTRAL_BANKS})`;
+const LATAM_PAYMENTS = String.raw`\bpix\b|bre-?b\b|\bspei\b|\bcodi\b|pagos? (inmediat|instant|digital)|transferencias? (bancari|inmediat|interbancari)|transferir dinero|(uso|pagos?|aceptar[aá]n?) (de |en )?(el )?efectivo|sin efectivo|stablecoins?|pago diferido|pay later`;
+const LATAM_BANKS = String.raw`\bbanc(a|o|os)\b|\bbank\b|bancolombia|davivienda|davibank|bancoomeva|banamex|banorte|bancoestado|\bbci\b|ita[uú]\b|santander|bbva|scotiabank|nubank|neobanc`;
+const BANK_BUSINESS = String.raw`utilidad(es)?|ganancias?|p[eé]rdidas?|ingresos|resultados|licencia|compra\b|adquier|adquisici[oó]n|vend(e|i[oó])\b|venta\b|fusi[oó]n|cartera|tarjetas?|hipotecari|cr[eé]ditos?|pr[eé]stamos?|morosidad|\bmora\b|encaje|dep[oó]sitos|capital\b|estabilidad|solvencia|liquidez|\bapp\b|aplicaci[oó]n|cuentas? de ahorro|titulariz`;
+// Banco y tema de negocio en la misma frase (sin cruzar un punto, un punto y coma ni un signo de cierre; los dos puntos de «Tema: detalle» sí), en cualquier orden.
+const LATAM_BANKING = String.raw`(${LATAM_BANKS})[^.;?!]{0,80}(${BANK_BUSINESS})|(${BANK_BUSINESS})[^.;?!]{0,80}(${LATAM_BANKS})|(ciber|cyber)[^.;?!]{0,80}(financ|banc|bank)|(financ|banc|bank)[^.;?!]{0,80}cibern`;
+const LATAM_BANKING_ALL = rx(LATAM_FINTECH_NAMES, LATAM_REGULATORS, LATAM_PAYMENTS, LATAM_BANKING).source;
+// Política monetaria, tipo de cambio y mercados: tratan del banco central como autoridad monetaria o de la banca como acción
+// en bolsa, no de la banca como negocio. También las páginas de cotización y los listados de casinos.
+const LATAM_MARKET_NOISE = String.raw`\brecortes?\b|\brecorta\b|alzas? de (las )?tasas|(sube|suben|subir|baja|bajan|bajar|mantiene|mantienen|mantener|mantuvo|eleva) (la |las |su )?tasas?\b|tasa (de referencia|objetivo|de pol[ií]tica)|pol[ií]tica monetaria|inflaci[oó]n|\bselic\b|minutas|se deprecia|tipo de cambio|precio del d[oó]lar|el d[oó]lar (cerr|se cotiza|sube|baja)|\boro\b|cotizaci[oó]n|acciones (de|del|m[aá]s)\b|wall street|\bipsa\b|ibovespa|precio objetivo|compra de acciones|recompra|casinos?`;
 const MEXICO_FINTECH = String.raw`econom[ií]a digital|\bcodi\b|\bspei\b|ueno|\bnu\b|mercado pago|sofipo|cnbv|pagos? (digital|electr|con qr)|criptomoneda|openbank|revolut|crowdfunding|inclusi[oó]n financiera`;
 // Cripto en inglés (CoinDesk, The Block, Reuters): política, delito e infraestructura, sin mercado.
-const CRYPTO_POLICY_EN = String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset|finance|money)|deposit token|crypto|blockchain|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|senat`;
+const CRYPTO_POLICY_EN = String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset|finance|money)|deposit token|crypto|blockchain|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|senat|CFTC|digital payments?|\bCircle\b`;
 const CRYPTO_MARKET_NOISE_EN = String.raw`\bprices?\b|analysts?|meme ?coin|Nvidia`;
-// Ruido adicional de la prensa sectorial (CoinDesk, The Block): mineras, valoraciones, ETF y mercados de predicción.
-const CRYPTO_SECTOR_NOISE_EN = String.raw`bottom|\bminers?\b|valuation|prediction market|Kalshi|ETFs?\b|\bperps?\b`;
-// Cripto en español (Cinco Días, Expansión, CriptoNoticias): regulación y delito; y ruido de cotizaciones.
-const CRYPTO_POLICY_ES = String.raw`stablecoin|tokeniz|CBDC|criptoactiv|MiCA\b|\bBCE\b|regula|blanqueo|hacke|robo|licencia|autoriza|supervis`;
+// Ruido adicional de la prensa sectorial (CoinDesk, The Block): mineras, valoraciones, ETF y mercados de predicción. Los mercados
+// de predicción solo son ruido si el titular no trata de su regulación (CFTC, SEC, Senado, tribunales, reguladores, candidatos).
+const CRYPTO_SECTOR_NOISE_EN = String.raw`bottom|\bminers?\b|valuation|^(?!.*\b(CFTC|SEC|Senate|senators?|court|judge|regulators?|nominees?)\b).*\b(prediction markets?|Kalshi)\b|ETFs?\b|\bperps?\b`;
+// Cripto en español (Cinco Días, Expansión, CriptoNoticias): regulación y delito; y ruido de cotizaciones. «Pasaporte»: la licencia
+// MiCA que vale en toda la UE. «Banco»: bancos que adoptan cripto o firmas cripto que abren un banco.
+const CRYPTO_POLICY_ES = String.raw`stablecoin|tokeniz|CBDC|criptoactiv|MiCA\b|\bBCE\b|regula|blanqueo|hacke|robo|licencia|pasaporte|autoriza|supervis|\bbanc(o|os|a)\b`;
 const CRYPTO_MARKET_NOISE_ES = String.raw`precio|\bcaen?\b`;
 // Pagos: las secciones patrocinadas de Payments Dive y Banking Dive.
 const DIVE_SPONSORED = /^\/spons\//;
@@ -319,7 +344,10 @@ const BIS_CRYPTO_CHANNEL = rx(String.raw`stablecoin|tokeni[sz]|CBDC|crypto|digit
 const path = story => { try { return new URL(story.url).pathname; } catch { return null; } };
 export const FILTERS = {
   // Banco Central del Ecuador.
-  'bce-publicaciones': { include: /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reserva internacional|captaciones|colocaciones|volumen de cr[eé]dito/i },
+  // Series de datos: el boletín de reservas se titula «Reservas Internacionales», en plural.
+  'bce-publicaciones': { include: /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reservas? internacional(es)?|captaciones|colocaciones|volumen de cr[eé]dito|oferta y demanda de cr[eé]dito|operaciones activas y pasivas|gesti[oó]n de liquidez/i },
+  // Boletines de prensa del BCE: fuera las jornadas de capacitación, ferias y aniversarios, y la balanza comercial (comercio exterior).
+  'bce-boletines': { exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`jornadas? de|\bferias?\b|concurso|balanza comercial|(super[aá]vit|d[eé]ficit) comercial`) },
   // Junta: el sufijo del código indica la materia. Quedan fuera las administrativas (-A) y de gobierno interno (-G),
   // los informes que la Junta solo «conoce» y las designaciones.
   'bce-junta-resoluciones': { test: story => !['A', 'G'].includes(story.excerpt.match(/\bJPRFM-\d{4}-\d+-([A-Z]+)\b/)?.[1]) && !/^(conoce|designa|designar|nombra|nombrar)\b/i.test(story.title) },
@@ -329,27 +357,31 @@ export const FILTERS = {
   // Ecuador financiero.
   primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
   eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, 'kits|homenaje') },
-  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`), exclude: rx(String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
+  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`, EC_BANKING_BUSINESS), exclude: rx(String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
   // Bloomberg Línea llega por una búsqueda: el titular debe nombrar a Ecuador y un tema financiero o fiscal.
   'bloomberg-ecuador': { include: rx(String.raw`(?=.*(ecuador|ecuatorian))(?=.*(\bfmi\b|riesgo pa[ií]s|deuda|bonos?\b|proforma|\bbanc|cr[eé]dito|financiamiento|fiscal|presupuest|seguros|cooperativ|remesas|dolariza))`), exclude: rx(String.raw`preventa|don omar|extradit|detenid|prisi[oó]n`) },
 
   // Autoridades EC.
-  'reguladores-prensa': { include: rx(String.raw`superintenden|intendente|\bseps\b|junta de pol[ií]tica|no autorizad|(pr[eé]stamos?|cr[eé]ditos?|cooperativas?) fals|nueva norma|nuevas reglas para tarjetas|diferimiento de cr[eé]ditos|econom[ií]a popular y solidaria|\buafe\b|cosede`), exclude: rx(String.raw`paraguay|ueno|europeo|ordenamiento territorial|competencia econ[oó]mica|nutresa|consejo de participaci`) },
+  'reguladores-prensa': { include: rx(String.raw`superintenden|intendente|\bseps\b|junta de pol[ií]tica|no autorizad|(pr[eé]stamos?|cr[eé]ditos?|cooperativas?) fals|nueva norma|nuevas reglas para tarjetas|diferimiento de cr[eé]ditos|econom[ií]a popular y solidaria|\buafe\b|cosede|\bcfn\b|corporaci[oó]n financiera nacional|banecuador|biess|banca p[uú]blica`), exclude: rx(String.raw`paraguay|ueno|europeo|ordenamiento territorial|competencia econ[oó]mica|nutresa|consejo de participaci`) },
   // El adaptador ya separa las normas de órganos financieros; la expresión se aplica al titular y al extracto compuestos.
   'registro-oficial': { on: 'text', include: rx(String.raw`junta de pol[ií]tica y regulaci[oó]n|superintendencia de (bancos|econom[ií]a popular|compa[ñn][ií]as)|banco central|unidad de an[aá]lisis financiero|servicio de rentas internas|monetari|lavado de activos|ley org[aá]nica.*(financ|tribut|monetar|fintech|datos|valores|seguros)|cosede|dep[oó]sitos|fintech|c[oó]digo org[aá]nico monetario`), skipPath: /^\/edicion-(juridica|constitucional|especial)-/ },
   seps: { include: rx(EC_SUPERVISOR_ACTS, String.raw`norma|regulaci[oó]n|reforma|no autorizad|corte|sentencia|tasas?|segmentaci|fusi[oó]n|supervisi[oó]n|balance|indicadores`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`funcionarios|taller|feria|rendici[oó]n de cuentas`) },
   superbancos: { include: rx(EC_SUPERVISOR_ACTS, String.raw`calificaci[oó]n|normativa|circular|regulaci[oó]n|reforma|no autorizad|fintech|tasas?|cr[eé]dito|lavado|supervisi[oó]n|bolet[ií]n (financiero|estad[ií]stico)`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`media day|[aá]rboles|futuros economistas|sesi[oó]n (ordinaria|solemne)|\boea\b|sostenibilidad`) },
-  mef: { include: rx(String.raw`\bfmi\b|deuda|bonos?|presupuest|proforma|multilateral|banco mundial|\bbid\b|\bcaf\b|riesgo pa[ií]s|tribut|recaudaci|calificaci[oó]n|sostenibilidad fiscal`), exclude: rx(String.raw`^\s*$|^proforma \d{4} \(`) },
+  mef: { include: rx(String.raw`\bfmi\b|deuda|bonos?|presupuest|proforma|multilateral|banco mundial|\bbid\b|\bcaf\b|riesgo pa[ií]s|tribut|recaudaci|calificaci[oó]n|sostenibilidad fiscal|banca p[uú]blica`), exclude: rx(String.raw`^\s*$|^proforma \d{4} \(`) },
   supercias: { include: rx(EC_SUPERVISOR_ACTS, String.raw`no (est[aá]n?|se encuentran?) autorizad|no mantienen?|norma|reglamento|\bley\b|disoluci|fraude|plazo|concordato|oficial de cumplimiento|^la superintendencia de compa[ñn][ií]as, valores y seguros a la ciudadan[ií]a`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`asisti[oó]|intervino|particip[oó]|congreso|sesi[oó]n solemne|ceremonia|jornada acad[eé]mica|embajada|estuvo presente|disculpas|semana mundial del inversionista|programa de formaci[oó]n|rindi[oó] cuentas|reuni[oó]n con|inaugur|clausur|estudiantes|recuerda a compa`) },
 
   // Fintech LATAM.
   iupana: { exclude: /ciberseguridad.*telco/i },
-  'el-economista': { include: rx(LATAM_FINTECH, MEXICO_FINTECH), exclude: rx(String.raw`casino|televisa|at&t|\bine\b`) },
-  'expansion-mx': { include: rx(LATAM_FINTECH, MEXICO_FINTECH), exclude: rx('buen fin|condusef|banxico') },
-  'la-republica': { include: rx(LATAM_FINTECH, String.raw`\bnu\b|revolut|billetera|open finance|finanzas abiertas|criptomoneda|d[oó]lares digitales|activos digitales|nequi|daviplata|bre-b|littio|wenia|lulo|pibank|^plata anunci|pagos? (digital|inmediat|con tarjetas|realizados por)|superfinanciera|banca virtual`), exclude: rx(String.raw`precio del d[oó]lar|\boro\b`) },
-  'bloomberg-negocios': { include: rx(LATAM_FINTECH, String.raw`\bnu\b|revolut|mercado pago|billetera|open finance|pagos? digital|\bual[aá]\b|ueno|stablecoin|licencia bancaria`) },
-  'diario-financiero': { include: rx(LATAM_FINTECH, String.raw`billetera|open finance|finanzas abiertas|criptomoneda|medios de pago|transbank|tenpo|\bcmf\b|global66|fintual|toku|\bmach\b|destácame`) },
-  latamlist: { include: rx(String.raw`fintech|bank|payment|credit|lending|financ|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
+  // Los cinco medios generales de la región comparten LATAM_BANKING_ALL (fintech por nombre, banca y reguladores) y el ruido de
+  // política monetaria y mercados (LATAM_MARKET_NOISE).
+  'el-economista': { include: rx(LATAM_FINTECH, MEXICO_FINTECH, LATAM_BANKING_ALL), exclude: rx(LATAM_MARKET_NOISE, String.raw`televisa|at&t|\bine\b`) },
+  'expansion-mx': { include: rx(LATAM_FINTECH, MEXICO_FINTECH, LATAM_BANKING_ALL), exclude: rx(LATAM_MARKET_NOISE, 'buen fin|condusef') },
+  'la-republica': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`\bnu\b|revolut|billetera|open finance|finanzas abiertas|criptomoneda|d[oó]lares digitales|activos digitales|nequi|daviplata|bre-b|littio|wenia|lulo|pibank|^plata anunci|pagos? (digital|inmediat|con tarjetas|realizados por)|superfinanciera|banca virtual`), exclude: rx(LATAM_MARKET_NOISE) },
+  // Bloomberg Línea llega por una búsqueda de Google con términos de banca y fintech en el titular.
+  'bloomberg-negocios': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`\bnu\b|revolut|mercado pago|billetera|open finance|pagos? digital|\bual[aá]\b|ueno|stablecoin|licencia bancaria`), exclude: rx(LATAM_MARKET_NOISE) },
+  'diario-financiero': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`billetera|open finance|finanzas abiertas|criptomoneda|medios de pago|transbank|tenpo|\bcmf\b|global66|fintual|toku|\bmach\b|destácame`), exclude: rx(LATAM_MARKET_NOISE) },
+  // LatamList: el titular de una ronda suele decir solo «raises»; el sector («Brazilian fintech Nova…») está en el extracto.
+  latamlist: { on: 'text', include: rx(String.raw`fintech|bank|payment|credit|lending|\bfinanc(e|ial)\b|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
   contxto: { include: rx(String.raw`fintech|banc|financ|pagos|cr[eé]dito|neobanc|cripto|inversi[oó]n en startups`) },
   // Endeavor LATAM. La búsqueda por nombres trae mucho ruido: solo entra la nota cuyo titular nombra a una empresa del directorio.
   // Fuera también el ruido bursátil y los titulares promocionales (ENDEAVOR_MARKET_NOISE y ENDEAVOR_PROMO, definidos con el
@@ -360,13 +392,16 @@ export const FILTERS = {
   // Pagos globales.
   paymentsdive: { skipPath: DIVE_SPONSORED },
   bankingdive: { exclude: /M&A business/i, skipPath: DIVE_SPONSORED },
-  'expansion-banca': { include: rx(String.raw`pagos|euro digital|BCE|BIS|Bruselas|Europa|europe|Revolut|Qonto|JPMorgan|HSBC|UniCredit|Bank of America|Openbank|Latinoam|Brasil|Paraguay|fintech|neobanco|tarjeta|regulaci|regulator|blanqueo|fraude|\bIA\b|tecnolog|Banco de Inglaterra|UBS|ING |Crédit Agricole|Italia|TSB`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|Rubiales|filantr|Euro Stoxx|economista jefe|Foley|rentables`) },
+  'expansion-banca': { include: rx(String.raw`\bpagos?\b|euro digital|Banco de España|BCE|BIS|Bruselas|Europa|europe|Revolut|Qonto|JPMorgan|HSBC|UniCredit|Bank of America|Openbank|Latinoam|Brasil|Paraguay|fintech|neobanco|tarjeta|regulaci|regulator|blanqueo|fraude|\bIA\b|tecnolog|Banco de Inglaterra|UBS|ING |Crédit Agricole|Italia|TSB`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|filantr|Euro Stoxx|economista jefe|rentables`) },
   'ft-banking': { include: rx(String.raw`bank|deposit|payment|tokeni|lender|JPMorgan|HSBC|UBS|Julius Baer|Rothschild|AI agents`), exclude: rx(String.raw`Epstein|Trump|oligarch|Qatari|Aldi|Putin|jobs deal`) },
   // Finextra llega por Google sin extracto: fuera columnas de opinión firmadas, preguntas y altas en marketplaces.
   finextra: { exclude: rx(String.raw`: By [A-Z]|\?|^(From|Beyond|The (New|Five|building|third)|Building|Your Payment|When|Why|How|Should|1 in 10)|NextGen Nordics|Self-service`, String.raw`\bmarketplace\b`) },
-  thebanker: { include: rx(String.raw`bank|payment|stablecoin|Revolut|Reg Wrap|digital money|FCA`), exclude: rx(String.raw`^(Regulation|Qatar|Germany|The Banker|Ask The Banker) - |Albania|Top 200|Top Islamic|midterm|gold reserves|Protesters|Anthropic IPO|whistleblow|LCF`) },
-  americanbanker: { exclude: /Chosen and Showcased|Sponsor|Partner Insights/i },
-  pymnts: { include: rx(String.raw`payment|bank|fintech|card|wallet|checkout|money transfer|remittance|merchant|digital currency|stablecoin|Visa|Mastercard|PayPal|Stripe|fraud`), exclude: rx(String.raw`^\d+%|Gen Z|When the Payout|Shopper|Nvidia`) },
+  // The Banker: banca, pagos y sus autoridades (BCE, bancos centrales, reguladores). Fuera los rankings, las salidas a bolsa
+  // y los informes por país patrocinados.
+  thebanker: { include: rx(String.raw`bank|payment|stablecoin|Revolut|Reg Wrap|digital money|FCA|\bECB\b|Lagarde|Federal Reserve|regulators?|supervis|watchdog`), exclude: rx(String.raw`^(Regulation|Qatar|Germany|The Banker|Ask The Banker) - |Albania|Top 200|Top Islamic|midterm|gold reserves|Protesters|\bIPOs?\b|whistleblow|LCF`) },
+  // American Banker: banca, pagos, cripto y sus reguladores; fuera el contenido patrocinado, los listados y las salidas a bolsa.
+  americanbanker: { include: rx(String.raw`bank|payment|\bcards?\b|deposit|lend|credit|loan|mortgage|FDIC|\bOCC\b|CFPB|FinCEN|\bFed\b|Federal Reserve|stablecoin|crypto|fintech|charter|regulat|fraud|capital|merger|acqui|launder|\bAML\b|financial|downgrade|\bIMBs?\b`), exclude: rx(String.raw`Chosen and Showcased|Sponsor|Partner Insights|best places|\bIPOs?\b|goes public|Nvidia`) },
+  pymnts: { include: rx(String.raw`payment|bank|fintech|card|wallet|checkout|money transfer|remittance|merchant|digital currency|stablecoin|Visa|Mastercard|PayPal|Stripe|fraud|\bFed\b|Federal Reserve|central bank|crypto`), exclude: rx(String.raw`^\d+%|Gen Z|When the Payout|Shopper|Nvidia`) },
   ecb: { include: rx(String.raw`digital euro|payment|money\b|bank|supervis|financial stability|financial system|TARGET|instant|stablecoin|crypto`), exclude: rx('monetary policy|wage|Interview') },
   'bis-discursos': { include: rx(BIS_PAYMENTS, BIS_CRYPTO) },
   'ft-fintech': { include: rx(String.raw`bank|payment|tokeni|Revolut|Monzo|Starling|Klarna|Stripe|Adyen|stablecoin|fintech|card|ledger`), exclude: rx(String.raw`Binance|hedge fund|bitcoin|prediction market|NYSE`) },
@@ -384,11 +419,15 @@ export const FILTERS = {
   'expansion-cripto': { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|d[oó]lar|moneda|bono) digital|activos (digitales|tokenizados)|blockchain|CNMV|banco central|sanci[oó]n|ciberataque|fraude|custodia|Corea del Norte|Binance`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`baja de|desinfla|m[ií]nimos?|m[aá]ximos|ETF|tesorer[ií]a|Strategy|MSCI|miedo extremo|futuros perpetuos|rentabilidad`), skipPath: /\/mercados\/bitcoin\// },
   criptonoticias: { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|d[oó]lar|real|peso|moneda|bono) digital|activos (digitales|virtuales|tokenizados)|banco central|lavado|sanci[oó]n|restricciones|estafa|fraude|custodia|impuesto|\bSEC\b|\bley\b|condena`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`\bsuben?\b|desplome|rentabilidad|ballenas|ETF|analistas?|tesorer[ií]a|miner[ií]a|\bIA\b|supercomputadora|Java`), path: /\/(regulacion|sucesos|judicial|adopcion)\// },
   'bloomberg-cripto': { include: rx(String.raw`cripto|bitcoin|stablecoin|tokeniz|binance`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`\bsuben?\b|repunta|retrocede|m[ií]nimos?|liquidaci[oó]n|analistas?|Cotizaci[oó]n|bajistas|pierde impulso|recupera terreno|resiste|auge|superando|\bIA\b|Musk`) },
-  'reuters-cripto': { include: rx(String.raw`crypto|stablecoin|tokeni|digital (asset|finance)|binance|coinbase|North Korean hackers`), exclude: rx(CRYPTO_MARKET_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|Anthropic|Crypto Weekly|Tech Weekly|PODCAST|Morning Bid|lows\b|Trump Media|Strategy\b|trading volume|returns to profit|tracks stocks`) },
+  // Reuters llega por una búsqueda con los términos en el titular. Revolut y las fintech entran por su supervisión y van a Pagos
+  // (ROUTES).
+  'reuters-cripto': { include: rx(String.raw`crypto|stablecoin|tokeni|digital (asset|finance)|binance|coinbase|North Korean hackers|Revolut|fintech|neobank`), exclude: rx(CRYPTO_MARKET_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|Anthropic|Crypto Weekly|Tech Weekly|PODCAST|Morning Bid|lows\b|Trump Media|Strategy\b|trading volume|returns to profit|tracks stocks`) },
   'ft-cripto': { exclude: rx(String.raw`Trump Media|Anthropic|Would you take|prediction markets|bitcoin bet`) },
   theblock: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`raises \$|rating`), path: /\/news\/(regulation|business|defi)\// },
   coindesk: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|chart|Anthropic|treasury|earnings|revenue|Live updates|Strategy\b`), path: /\/(policy|business)\// },
-  chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|How Chainalysis`) },
+  // Chainalysis: fuera sus avisos de producto y de la propia empresa (los que empiezan «How Chainalysis…»; un caso que cuenta
+  // cómo congeló fondos robados sí entra) y los informes de geografía cripto de regiones ajenas a LATAM.
+  chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|^How Chainalysis|Sub-Saharan|(Western|Eastern|Northern|Southern) Europe|Central (and Southern )?Asia|\bMENA\b|South Asia|East Asia|North America|Oceania`) },
 };
 // Motivo por el que una nota no pasa el filtro de tema de su fuente, con el nombre de la regla de FILTERS: 'include' (no
 // coincide), 'exclude: <texto que coincidió>', 'path', 'skipPath', 'test' o 'test: <subregla>' (si el filtro define `why`).
@@ -460,6 +499,8 @@ export function discardLog(discards, { generatedAt, perSource = MAX_DISCARDS_PER
 export const ROUTES = {
   'bce-boletines': [{ pattern: /\bJPRFM\b|Junta de Pol[ií]tica/i, category: 'regulacion' }],
   'bis-discursos': [{ pattern: BIS_CRYPTO_CHANNEL, category: 'cripto' }],
+  // Reuters · Cripto también trae la supervisión de fintech y neobancos (Revolut): si el titular no nombra nada cripto, va a Pagos.
+  'reuters-cripto': [{ pattern: /^(?!.*(crypto|stablecoin|tokeni[sz]|digital asset|bitcoin|\bether\b|binance|coinbase|tether|blockchain|CBDC|North Korean hackers))/i, category: 'pagos' }],
 };
 export function channelFor(story, source) {
   return ROUTES[source.id]?.find(route => route.pattern.test(story.title))?.category ?? source.category;

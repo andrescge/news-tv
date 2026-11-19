@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -306,7 +306,7 @@ const SAMPLES = [
   ["la-republica","Plata anunció que elevará su compromiso de inyección de capital a US$400 millones",null,true],
   ["la-republica","El dólar se cotiza más de $7 al alza, mientras estiman nueva subida de tasas de la FED",null,false],
   ["la-republica","Oro cae por debajo de los US$3.800 mientras la FED da señales de subida en las tasas",null,false],
-  ["la-republica","Banco Popular tuvo una utilidad neta acumulada de $50.000 hasta septiembre",null,false],
+  ["la-republica","Banco Popular tuvo una utilidad neta acumulada de $50.000 hasta septiembre",null,true],
   ["expansion-mx","Ley de Economía Digital desempolva a CoDi: bancos facilitarán su uso a partir de diciembre",null,true],
   ["expansion-mx","Quiebra de Ueno Bank exhibe fallas de supervisión y corrupción en Paraguay, advierte Moody’s",null,true],
   ["expansion-mx","Ley de economía digital: los riesgos que enfrentarán los usuarios con más pagos con QR y transferencias",null,true],
@@ -480,7 +480,89 @@ const SAMPLES = [
   ["endeavor-prensa","¡Melendi ahora con Cashea por tiempo limitado!",null,false],
   ["endeavor-prensa","Cashea premiará a usuarios nivel 6 con “Mi pase”",null,false],
   ["endeavor-prensa","Cashea alista nueva etapa para ofrecer financiamiento de vehículos y viviendas en Venezuela: los detalles",null,true],
-  ["endeavor-prensa","Buen Fin: las pymes pueden competir con las grandes cadenas sin sacrificar sus márgenes: Kueski",null,true]
+  ["endeavor-prensa","Buen Fin: las pymes pueden competir con las grandes cadenas sin sacrificar sus márgenes: Kueski",null,true],
+  // Auditoría de filtros (19-11-2026): titulares reales que el filtro descartaba (true) y ruido que debe seguir fuera (false),
+  // tomados de los descartes de cada fuente. Ecuador: la banca como negocio (crédito informal, bolsa, banca pública).
+  ["primicias","Chulco digital crece en Ecuador con tasas de hasta 2.000%; uno de cada tres deudores ha tenido que vender sus bienes para pagar","https://www.primicias.ec/economia/nota/",true],
+  ["primicias","Celec reactiva la construcción de hidroeléctrica San Antonio, en Cañar, con un presupuesto de USD 19 millones","https://www.primicias.ec/economia/nota/",false],
+  ["primicias","Autoriza a la colombiana Nutresa la compra de La Universal en Ecuador","https://www.primicias.ec/economia/nota/",false],
+  ["forbes-ec","Trae nuevos aires a la Bolsa de Valores Guayaquil",null,true],
+  ["forbes-ec","El banco que hizo caer al Presidente de Paraguay, Santiago Peña: toda la cronología",null,false],
+  ["reguladores-prensa","Créditos de hasta $ 1,5 millones para pymes: CFN aprueba reglamento para canalizar $ 203 millones del BID",null,true],
+  ["reguladores-prensa","Biess crea plan CrediCasa con el 7 % de interés para migrantes en el exterior",null,true],
+  ["reguladores-prensa","Fundación Ana y Banco Atlántida firman acuerdo para apoyar con microcréditos a mujeres emprendedoras",null,false],
+  ["reguladores-prensa","Caso La Reina: dictan prisión preventiva para Navila Dieb por presunto lavado de activos",null,false],
+  ["mef","En el gobierno de Daniel Noboa crece el dinamismo económico: USD 5.487 millones en créditos de la banca pública para el sector productivo, inversión pública y desarrollo de los hogares",null,true],
+  ["bce-boletines","El crédito del sistema financiero creció 20,9% en octubre y alcanzó USD 4.978 millones",null,true],
+  ["bce-boletines","El BCE actualiza normativa aplicable a la recepción y canje de billetes de USD 50 y USD 100",null,true],
+  ["bce-boletines","El BCE impulsó la comercialización responsable de oro con jornadas de capacitación en tres provincias del país",null,false],
+  ["bce-boletines","Ecuador registró un superávit comercial de USD 3.308 millones entre enero y septiembre de 2026",null,false],
+  ["bce-publicaciones","Boletín de Reservas Internacionales. Octubre 2026",null,true],
+  ["bce-publicaciones","Perspectivas de Oferta y Demanda de Crédito. III Trimestre 2026",null,true],
+  ["bce-publicaciones","Evolución del Monto de Operaciones Activas y Pasivas. Octubre 2026",null,true],
+  ["bce-publicaciones","Boletín Analítico de Gestión de Liquidez. Septiembre 2026",null,true],
+  ["bce-publicaciones","Boletín Mensual de Inflación. Septiembre 2026",null,false],
+  ["bce-publicaciones","Estadísticas de Cemento en el Ecuador. Septiembre 2026",null,false],
+  // Fintech LATAM: banca y reguladores de la región, pagos inmediatos, fintech por nombre; fuera política monetaria y mercados.
+  ["diario-financiero","Banco Central alista regulación para impulsar el “Pix chileno” y stablecoins",null,true],
+  ["diario-financiero","Banco Central mantiene exigencia de capital para la banca, en medio de elevados riesgos financieros",null,true],
+  ["diario-financiero","IEF del Banco Central advierte por mayores riesgos financieros y deterioro en capacidad de pago de hogares y empresas",null,true],
+  ["diario-financiero","Santander redobla apuesta por el segmento joven y lanza hipotecario con plazo de hasta 40 años",null,true],
+  ["diario-financiero","¿Impacto del alza del dólar? Mercado se abre a la posibilidad de que el Banco Central suba la tasa este año",null,false],
+  ["diario-financiero","US$ 7.500 millones: Banco Central renueva acuerdo de swaps de monedas con su par de China",null,false],
+  ["diario-financiero","Ana Botín vuelve a apostar por Santander y sube su participación en el banco tras compra de acciones",null,false],
+  ["diario-financiero","Minutas de la Fed revelan que funcionarios ven necesarias nuevas alzas de tasas para contener la inflación",null,false],
+  ["el-economista","Transferencias bancarias con tu celular: qué cambia con las nuevas reglas de Banxico",null,true],
+  ["el-economista","Incidentes cibernéticos en el sistema financiero nacional se triplican; van 13 en el 2026",null,true],
+  ["el-economista","GAFI termina evaluación a México contra lavado de dinero",null,true],
+  ["el-economista","Ganancia MercadoLibre no alcanza expectativas por gasto en logística; ingresos superan estimaciones",null,true],
+  ["el-economista","Banco del Bienestar lanza nueva app: Así puedes transferir dinero, pagar y recibir depósitos",null,true],
+  ["el-economista","Financieras tradicionales y nuevas no han cerrado la brecha de crédito por falta de información: PayJoy",null,true],
+  ["el-economista","Conflicto en Medio Oriente exige cautela monetaria ante riesgos inflacionarios: Galia Borja",null,false],
+  ["el-economista","Renta 4 quiere ser Casa de Bolsa en México",null,false],
+  ["la-republica","Binance lanza 'Pay Later', la primera línea de pago diferido respaldada por cripto",null,true],
+  ["la-republica","Los bancos alcanzaron más de $12,8 billones en utilidades con corte al tercer trimestre del año",null,true],
+  ["la-republica","Banco Popular apuesta a duplicar su cartera de tarjetas de crédito con nuevo portafolio",null,true],
+  ["la-republica","El dólar cerró en $3.301,87, $4,8 por encima de la TRM del día, que se ubicó en $3.297,07",null,false],
+  ["la-republica","Preferencial de Davivienda y Grupo Argos, las acciones más valorizadas de la jornada",null,false],
+  ["la-republica","A pesar de crecimiento de la utilidad de Ecopetrol, su acción cae en la Bolsa de Colombia",null,false],
+  ["expansion-mx","Deutsche Bank en México: Vendió su licencia a Citi y los fideicomisos a CIBanco",null,true],
+  ["expansion-mx","Ganancias de los bancos en México caen 5% al cierre del tercer trimestre de 2026",null,true],
+  ["expansion-mx","Subgobernador de Banxico Omar Mejía descarta sorpresa en recorte de tasa a 6.25% y destaca prudencia del banco central",null,false],
+  ["expansion-mx","Peso se deprecia por sorpresa de Banxico y analistas prevén mayor debilidad para moneda mexicana",null,false],
+  ["bloomberg-negocios","Bancos esperan que México se mantenga fuera de la lista gris contra el lavado de dinero",null,true],
+  ["bloomberg-negocios","México inicia cuenta regresiva para decidir los negocios que ya no aceptarán efectivo",null,true],
+  ["bloomberg-negocios","El Niño golpeará la estabilidad de los bancos en Latinoamérica y estos son los países con más riesgo",null,true],
+  ["bloomberg-negocios","Banco central colombiano no sorprendió al mercado: mantuvo tasas en 12,25%",null,false],
+  ["bloomberg-negocios","Cotización Banco de Bogota SA - BOGOTA hoy 2026-11-13",null,false],
+  ["bloomberg-negocios","Vaca Muerta: Techint, de Paolo Rocca, gana un contrato clave para Argentina LNG tras perder tres licitaciones",null,false],
+  // Pagos y Cripto: huecos de plurales, autoridades y temas regulatorios; fuera rankings, salidas a bolsa y geografías ajenas.
+  ["expansion-banca","El Banco de España da a Monei la categoría de entidad de pago",null,true],
+  ["expansion-banca","Visa incorpora los proveedores de pago en su programa de agentes",null,true],
+  ["expansion-banca","Santander elige al nuevo responsable de Riesgos de su banca de inversión",null,false],
+  ["thebanker","ECB president Lagarde to step down in February; Lloyds shares drop 6% despite stronger Q3 earnings",null,true],
+  ["thebanker","Lagarde’s early exit: ‘I don’t think I can remain neutral’",null,true],
+  ["thebanker","Wall Street banks seek higher Anthropic IPO price despite AI sell-off",null,false],
+  ["thebanker","Top 200 Latin American banks 2026: Rankings and performance",null,false],
+  ["americanbanker","Fitch downgrades 4 IMBs over high debt levels",null,true],
+  ["americanbanker","These are the best places for young professionals to work in 2026",null,false],
+  ["americanbanker","What banks have at stake as Anthropic goes public",null,false],
+  ["americanbanker","Nvidia says leadership crisis won’t derail AI capacity work",null,false],
+  ["pymnts","The Fed Is Drawing a Line Between New Money and Trusted Money",null,true],
+  ["pymnts","Snapchat Deploys New AI Tools for Brands and Creators",null,false],
+  ["reuters-cripto","EXCLUSIVE: Italian court places Revolut unit under supervision over money-laundering failings",null,true],
+  ["reuters-cripto","Israel launches ground operation in central Gaza, dozens flee",null,false],
+  ["expansion-cripto","Fazil Crypto consigue el pasaporte europeo para operar en 30 países del EEE","https://www.expansion.com/mercados/criptomonedas/2026/11/06/nota.html",true],
+  ["expansion-cripto","El gigante cripto Ripple lanza su propio banco","https://www.expansion.com/mercados/criptomonedas/2026/10/27/nota.html",true],
+  ["expansion-cripto","Los máximos del dólar ahondan los mínimos del oro y del bitcoin","https://www.expansion.com/mercados/criptomonedas/2026/11/14/nota.html",false],
+  ["coindesk","Circle turns to DBS as banks build rival digital payment systems across Asia","https://www.coindesk.com/business/2026/11/18/nota",true],
+  ["coindesk","CFTC nominee questions public benefit of prediction markets as legal fight grows","https://www.coindesk.com/policy/2026/11/18/nota",true],
+  ["coindesk","Predictions platform Kalshi complies with order to halt Trump mention contracts","https://www.coindesk.com/business/2026/11/18/nota",false],
+  ["theblock","Trump’s CFTC picks face Senate scrutiny as prediction market turf war heats up","https://www.theblock.co/news/regulation/nota",true],
+  ["theblock","Robinhood shrugs off Kalshi equities threat as Mizuho sees 86% HOOD upside","https://www.theblock.co/news/business/nota",false],
+  ["chainalysis","Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",null,true],
+  ["chainalysis","Western Europe’s $2 Trillion Crypto Economy Holds Firm",null,false],
+  ["chainalysis","South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",null,false]
 ];
 test('cada filtro deja pasar las muestras pertinentes del informe y descarta su ruido', () => {
   for (const [id, title, url, expected] of SAMPLES) {
@@ -489,7 +571,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'reguladores-prensa', 'seps', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'reguladores-prensa', 'seps', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
@@ -504,6 +586,22 @@ test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
   assert.equal(ok('finextra', 'Nomupay joins Amazon Web Services marketplace'), false);
   assert.equal(ok('finextra', 'Pliant joins UK banks on government payments framework'), true);
   assert.equal(relevant({ title: 'Banco nuevo', excerpt: '', url: 'no es una url' }, sourceById('primicias')), false);
+});
+
+test('auditoría de filtros: extracto de LatamList, ruta de Reuters a Pagos y contrataciones del Registro Oficial', () => {
+  // LatamList lee titular y extracto: la ronda de una fintech entra aunque el titular solo diga «raises»; una proptech no.
+  const latamlist = sourceById('latamlist');
+  assert.equal(relevant({ title: 'Nova raises $24M Series A led by Canaan', excerpt: 'Brazilian fintech Nova raised $24M in a Series A round led by Canaan, with participation from Propel Venture…', url: 'https://latamlist.com/nota' }, latamlist), true);
+  assert.equal(relevant({ title: 'Vuun raises $525K pre-seed round led by 500 Global', excerpt: 'Colombian proptech Vuun raised $525K in a pre-seed round led by 500 Global, with participation from Reach and…', url: 'https://latamlist.com/nota' }, latamlist), false);
+  // Reuters · Cripto: la supervisión de Revolut va a Pagos; lo que nombra algo cripto se queda en Cripto.
+  const reuters = sourceById('reuters-cripto');
+  assert.equal(channelFor({ title: 'EXCLUSIVE: Italian court places Revolut unit under supervision over money-laundering failings' }, reuters), 'pagos');
+  assert.equal(channelFor({ title: 'UAE court orders freeze on crypto tokens stolen from Binance wallets' }, reuters), 'cripto');
+  assert.equal(channelFor({ title: 'PNC to offer stablecoin payments to clients in Coinbase partnership' }, reuters), 'cripto');
+  // Registro Oficial: la selección de una firma auditora es trámite aunque la emita un órgano financiero.
+  const norm = text => registroOficialRelevant({ organ: 'Corporación del Seguro de Depósitos (COSEDE)', code: 'COSEDE-DIR-2026-031', text });
+  assert.equal(norm('Se selecciona como primera opción a la firma HLB Consultores para la auditoría externa'), false);
+  assert.equal(norm('Se actualizan los valores de la cobertura del seguro de depósitos'), true);
 });
 
 test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes retiradas', () => {
