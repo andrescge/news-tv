@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { EDITORIAL, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, seedMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
-import { accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
+import { EDITORIAL, EVALUATION_ORDER, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, seedMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
+import { CHANNELS, accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
 import { validateEdition } from '../scripts/validate.mjs';
 import { SOURCES } from '../scripts/collect.mjs';
 
@@ -363,6 +363,29 @@ test('capa editorial: lotes por canal, grupos coherentes entre lotes y tope de n
   assert.match([...clusters][0], /^biess-credicasa-[a-z0-9]{1,6}$/);
   assert.deepEqual(result.usage, { input: 2400, output: 600, cacheRead: 1800, cacheWrite: 0 });
   assert.equal(client.calls[0].options.timeout, EDITORIAL.timeoutMs);
+});
+
+test('capa editorial: con el tope por ejecución se evalúan primero Ecuador y Autoridades EC, luego LATAM y Endeavor, luego Pagos y Cripto', async () => {
+  assert.deepEqual(EVALUATION_ORDER, [['ecuador', 'regulacion'], ['latam', 'endeavor'], ['pagos', 'cripto']]);
+  assert.deepEqual(EVALUATION_ORDER.flat().sort(), [...CHANNELS].sort());
+  // Las notas de Pagos y Cripto son las más nuevas, pero las de Ecuador y Autoridades EC van primero.
+  const pool = [
+    story('pagos-1', 1, { category: 'pagos' }), story('cripto-1', 1, { category: 'cripto' }), story('pagos-2', 2, { category: 'pagos' }),
+    story('latam-1', 3, { category: 'latam' }), story('endeavor-1', 2, { category: 'endeavor' }),
+    story('ecuador-viejo', 40), story('regulacion-1', 10, { category: 'regulacion' }), story('ecuador-nuevo', 5),
+  ];
+  const client = fakeClient(everyNote(60));
+  const result = await applyEditorial(pool, { client, now, config: { ...EDITORIAL, maxStories: 5 }, log: quiet() });
+  // Dentro de cada grupo, de la más nueva a la más antigua: el tope de 5 deja fuera a Pagos y Cripto.
+  assert.deepEqual(result.stories.filter(item => item.editorial).map(item => item.id).sort(), ['ecuador-nuevo', 'ecuador-viejo', 'endeavor-1', 'latam-1', 'regulacion-1']);
+  assert.deepEqual(client.calls.map(call => notesOf(call.params).map(note => note.titular)), [
+    ['Titular ecuador-nuevo', 'Titular ecuador-viejo'], ['Titular regulacion-1'], ['Titular latam-1'], ['Titular endeavor-1'],
+  ]);
+  // Con tope 6, de Ecuador y LATAM pasa a lo más nuevo de Pagos y Cripto.
+  const more = fakeClient(everyNote(60));
+  const next = await applyEditorial(pool, { client: more, now, config: { ...EDITORIAL, maxStories: 6 }, log: quiet() });
+  assert.equal(next.stories.filter(item => item.editorial && ['pagos', 'cripto'].includes(item.category)).length, 1);
+  assert.ok(['pagos-1', 'cripto-1'].includes(next.stories.find(item => item.editorial && ['pagos', 'cripto'].includes(item.category)).id));
 });
 
 test('capa editorial: sin clave, con error de la API o con respuesta inválida, la edición sigue sin juicio nuevo', async () => {

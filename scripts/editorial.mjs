@@ -30,7 +30,7 @@ export const EDITORIAL = {
   effort: 'low',
   threshold: 30,        // composición: fuera las notas juzgadas con menos puntos (salvo documentos primarios oficiales)
   neutralScore: 50,     // puntuación con la que se ordena una nota aún sin juicio cuando el canal sí tiene juicios
-  maxStories: 120,      // notas nuevas evaluadas por ejecución (el resto queda para la siguiente)
+  maxStories: 120,      // notas evaluadas por ejecución (el resto queda para la siguiente), por orden de EVALUATION_ORDER
   batchSize: 25,        // notas nuevas por petición
   contextDays: 4,       // juicios previos del mismo canal que ve el modelo para agrupar el mismo hecho
   maxContext: 40,       // como mucho, tantas notas de contexto por petición
@@ -39,7 +39,11 @@ export const EDITORIAL = {
   budgetMs: 300_000,    // tiempo total de la capa por ejecución
   memoMax: 1500,        // juicios guardados de notas que no entraron en la edición (para no volver a evaluarlas)
 };
-export const ES_MAX = 240;       // traducción automática: el prompt pide 240 como máximo
+// Orden en que se evalúan las notas pendientes con el tope por ejecución: primero Ecuador financiero y Autoridades EC,
+// luego Fintech LATAM y Endeavor LATAM, luego Pagos globales y Cripto; dentro de cada grupo, de la más nueva a la más
+// antigua. Así los feeds en inglés, que publican muchas notas por hora, no se comen el tope.
+export const EVALUATION_ORDER = [['ecuador', 'regulacion'], ['latam', 'endeavor'], ['pagos', 'cripto']];
+export const ES_MAX = 240;      // traducción automática: el prompt pide 240 como máximo
 export const WHY_MAX = 180;      // línea «por qué importa» de ediciones anteriores: se acepta al validar, ya no se genera
 export const CLUSTER_MAX = 48;
 const NEW_CLUSTER_MAX = 40;
@@ -476,6 +480,8 @@ export function writeMemo({ pool, edition, memo = new Map(), now = Date.now(), m
 // conservado o nuevo) y un resumen. `client` es el SDK o, en las pruebas, un cliente simulado con la misma forma.
 const byDateDesc = (a, b) => Date.parse(b.publishedAt) - Date.parse(a.publishedAt);
 const chunks = (list, size) => Array.from({ length: Math.ceil(list.length / size) }, (_, i) => list.slice(i * size, (i + 1) * size));
+const RANK = new Map(EVALUATION_ORDER.flatMap((group, rank) => group.map(channel => [channel, rank])));
+const rankOf = story => RANK.get(story.category) ?? EVALUATION_ORDER.length;
 export async function applyEditorial(stories, { client = null, sdk = null, reason = 'falta ANTHROPIC_API_KEY o las variables de Workload Identity Federation', memo = new Map(), now = Date.now(), config = EDITORIAL, primary = () => false, log = console, clock = Date.now } = {}) {
   const pool = stories.map(cleanStory);
   let reused = 0;
@@ -486,9 +492,10 @@ export async function applyEditorial(stories, { client = null, sdk = null, reaso
   }
   const usage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 };
   const summary = { stories: pool, status: 'ok', evaluated: 0, rejected: 0, calls: 0, reused, pending: 0, retranslate: 0, usage, models: [] };
-  // Pendientes: las notas sin juicio y, al final de la cola, las notas en inglés juzgadas antes de la traducción.
+  // Pendientes: las notas sin juicio, por grupo de canales (EVALUATION_ORDER) y de la más nueva a la más antigua; al
+  // final de la cola, las notas en inglés juzgadas antes de la traducción.
   const pending = pool.filter(story => CHANNELS.includes(story.category) && (!story.editorial || untranslated(story)))
-    .sort((a, b) => untranslated(a) - untranslated(b) || byDateDesc(a, b));
+    .sort((a, b) => untranslated(a) - untranslated(b) || rankOf(a) - rankOf(b) || byDateDesc(a, b));
   summary.pending = pending.filter(story => !story.editorial).length;
   summary.retranslate = pending.length - summary.pending;
   const extra = summary.retranslate ? ` y ${summary.retranslate} juzgadas sin traducción` : '';
@@ -504,7 +511,7 @@ export async function applyEditorial(stories, { client = null, sdk = null, reaso
   const models = new Set();
   const position = new Map(pool.map((story, index) => [story.id, index]));
   let stopped = '';
-  outer: for (const channel of CHANNELS) {
+  outer: for (const channel of [...EVALUATION_ORDER.flat(), ...CHANNELS.filter(channel => !RANK.has(channel))]) {
     for (const batch of chunks(chosen.filter(story => story.category === channel), config.batchSize)) {
       if (clock() - started > config.budgetMs) { stopped = 'se agotó el tiempo de la capa'; break outer; }
       const context = pool.filter(story => story.category === channel && story.editorial && now - Date.parse(story.publishedAt) <= config.contextDays * DAY)
