@@ -299,6 +299,8 @@ const EC_BANKING_BUSINESS = String.raw`chulc|chulquer|usura|agiotis|deudor|moros
 // cuenta como el del Estado: «con un presupuesto de USD 19 millones» es el costo de una obra.
 const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|mercado burs[aá]til|proforma|presupuesto (general|del estado)|d[eé]ficit|recaudaci[oó]n|diferimiento|${EC_BANKING_BUSINESS}`;
 const EC_CONSUMER_NOISE = String.raw`black friday|cyber ?(day|monday)|concurso|competencia econ[oó]mica|brigadas`;
+// Prensa ecuatoriana general por búsqueda (El Comercio, Teleamazonas, La Hora): la banca de otros países y los avisos de feriado.
+const EC_PRESS_ABROAD = String.raw`estados unidos|ee\.? ?uu|\basia|europe|paraguay|brasile|\blula\b|del mundo|feriado`;
 // Supervisores de Ecuador (SEPS, Superintendencia de Bancos, Supercias): actos de control y actos protocolarios.
 const EC_SUPERVISOR_ACTS = String.raw`resoluci[oó]n|sanci|intervenci|liquidaci|alerta|advierte`;
 const EC_INSTITUTIONAL_NOISE = String.raw`capacit|aniversario`;
@@ -358,6 +360,13 @@ export const FILTERS = {
   primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
   eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, 'kits|homenaje') },
   'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`, EC_BANKING_BUSINESS), exclude: rx(String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
+  // El Comercio, Teleamazonas y La Hora llegan por una búsqueda con términos de banca en el titular: queda fuera la banca de
+  // otros países (fallas de bancos en EE. UU., crisis de Paraguay, euro digital) y el horario de atención en feriados.
+  'elcomercio-ec': { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
+  teleamazonas: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
+  lahora: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
+  // CFN: productos de crédito y calificaciones de riesgo; fuera compras públicas, subastas, certificaciones y lemas.
+  cfn: { include: rx(String.raw`cr[eé]ditos?|financiamiento|tasas?|calificaci[oó]n de riesgo|producto financiero|cartera|microcr[eé]dito|garant[ií]as`), exclude: rx(String.raw`convocatoria|solicitud de ofertas|cotizaciones|alquiler|contrataci|adquisici|subasta|\biso\b|selecci[oó]n`) },
   // Bloomberg Línea llega por una búsqueda: el titular debe nombrar a Ecuador y un tema financiero o fiscal.
   'bloomberg-ecuador': { include: rx(String.raw`(?=.*(ecuador|ecuatorian))(?=.*(\bfmi\b|riesgo pa[ií]s|deuda|bonos?\b|proforma|\bbanc|cr[eé]dito|financiamiento|fiscal|presupuest|seguros|cooperativ|remesas|dolariza))`), exclude: rx(String.raw`preventa|don omar|extradit|detenid|prisi[oó]n`) },
 
@@ -367,6 +376,8 @@ export const FILTERS = {
   'registro-oficial': { on: 'text', include: rx(String.raw`junta de pol[ií]tica y regulaci[oó]n|superintendencia de (bancos|econom[ií]a popular|compa[ñn][ií]as)|banco central|unidad de an[aá]lisis financiero|servicio de rentas internas|monetari|lavado de activos|ley org[aá]nica.*(financ|tribut|monetar|fintech|datos|valores|seguros)|cosede|dep[oó]sitos|fintech|c[oó]digo org[aá]nico monetario`), skipPath: /^\/edicion-(juridica|constitucional|especial)-/ },
   seps: { include: rx(EC_SUPERVISOR_ACTS, String.raw`norma|regulaci[oó]n|reforma|no autorizad|corte|sentencia|tasas?|segmentaci|fusi[oó]n|supervisi[oó]n|balance|indicadores`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`funcionarios|taller|feria|rendici[oó]n de cuentas`) },
   superbancos: { include: rx(EC_SUPERVISOR_ACTS, String.raw`calificaci[oó]n|normativa|circular|regulaci[oó]n|reforma|no autorizad|fintech|tasas?|cr[eé]dito|lavado|supervisi[oó]n|bolet[ií]n (financiero|estad[ií]stico)`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`media day|[aá]rboles|futuros economistas|sesi[oó]n (ordinaria|solemne)|\boea\b|sostenibilidad`) },
+  // UAFE: lavado de activos, normas y reportes; fuera las páginas de trámites, los operativos de frontera, convocatorias y oficinas.
+  uafe: { include: rx(String.raw`lavado|resoluci[oó]n|\bnormas?\b|sujetos obligados|reportes?\b|\bgafi\b|financiamiento del terrorismo|sanci|activos virtuales|cripto|control financiero`), exclude: rx(String.raw`registro del manual|desactivaci[oó]n|^solicitud de|operativo|convocatoria|oficina de servicios`) },
   mef: { include: rx(String.raw`\bfmi\b|deuda|bonos?|presupuest|proforma|multilateral|banco mundial|\bbid\b|\bcaf\b|riesgo pa[ií]s|tribut|recaudaci|calificaci[oó]n|sostenibilidad fiscal|banca p[uú]blica`), exclude: rx(String.raw`^\s*$|^proforma \d{4} \(`) },
   supercias: { include: rx(EC_SUPERVISOR_ACTS, String.raw`no (est[aá]n?|se encuentran?) autorizad|no mantienen?|norma|reglamento|\bley\b|disoluci|fraude|plazo|concordato|oficial de cumplimiento|^la superintendencia de compa[ñn][ií]as, valores y seguros a la ciudadan[ií]a`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`asisti[oó]|intervino|particip[oó]|congreso|sesi[oó]n solemne|ceremonia|jornada acad[eé]mica|embajada|estuvo presente|disculpas|semana mundial del inversionista|programa de formaci[oó]n|rindi[oó] cuentas|reuni[oó]n con|inaugur|clausur|estudiantes|recuerda a compa`) },
 
@@ -751,7 +762,7 @@ export const ENDEAVOR_PRESS_HOSTS = [
   // Uruguay.
   'elpais.com.uy', 'elobservador.com.uy',
   // Ecuador.
-  'expreso.ec', 'elcomercio.com', 'vistazo.com',
+  'expreso.ec', 'elcomercio.com', 'vistazo.com', 'teleamazonas.com', 'lahora.com.ec',
   // Venezuela.
   'eluniversal.com', 'elnacional.com', 'eldiario.com', 'bancaynegocios.com',
   // Brasil.

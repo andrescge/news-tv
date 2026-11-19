@@ -562,7 +562,34 @@ const SAMPLES = [
   ["theblock","Robinhood shrugs off Kalshi equities threat as Mizuho sees 86% HOOD upside","https://www.theblock.co/news/business/nota",false],
   ["chainalysis","Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",null,true],
   ["chainalysis","Western Europe’s $2 Trillion Crypto Economy Holds Firm",null,false],
-  ["chainalysis","South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",null,false]
+  ["chainalysis","South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",null,false],
+  // Fuentes nuevas de Ecuador (búsquedas de Google News y feeds medidos el 19 de noviembre de 2026).
+  ["elcomercio-ec","Cinco cambios para los usuarios de tarjetas de crédito y de débito en Ecuador",null,true],
+  ["elcomercio-ec","¿Vives fuera de Ecuador? Así puedes acceder al nuevo crédito del Biess para comprar casa",null,true],
+  ["elcomercio-ec","Caída de Microsoft paraliza bancos, tribunales e instituciones de Asia-Pacífico",null,false],
+  ["elcomercio-ec","El Banco Central Europeo presiona para lanzar el euro digital",null,false],
+  ["elcomercio-ec","Cómo atenderán los bancos privados durante el feriado de noviembre",null,false],
+  ["teleamazonas","Nueva regulación para tarjetas de crédito en Ecuador: reglas, prohibiciones y plazos",null,true],
+  ["teleamazonas","Crédito en Ecuador aumentó más de 20% en octubre de 2026; comercio recibió más financiamiento",null,true],
+  ["teleamazonas","Superintendencia alerta sobre 134 entidades no autorizadas para ofrecer créditos en Ecuador",null,true],
+  ["teleamazonas","Falla informática afecta a miles de clientes de bancos en Estados Unidos",null,false],
+  ["teleamazonas","Senado brasileño aprueba recorte de gastos de Lula para contener la deuda pública",null,false],
+  ["teleamazonas","Banco Central de Paraguay devuelve parte de sus ahorros a los clientes de Ueno Bank",null,false],
+  ["lahora","Morosidad, $1.266 millones en créditos castigados y el plazo de 2027: el ultimátum del FMI a las cooperativas en Ecuador",null,true],
+  ["lahora","Deuda interna al 9%: el sobrecosto de financiarse en Ecuador y más de $7.700 millones previstos para 2027",null,true],
+  ["lahora","Banco del Pacífico reactiva créditos para pymes ante el Fenómeno de El Niño",null,true],
+  ["lahora","Santiago Peña renuncia a la Presidencia de Paraguay en medio de crisis bancaria",null,false],
+  ["cfn","CFN y BID impulsan a las mujeres ecuatorianas con el producto financiero “ELLA”","https://www.cfn.fin.ec/cfn-y-bid-impulsan-a-las-mujeres-ecuatorianas-con-el-producto-financiero-ella/",true],
+  ["cfn","LA CFN MANTIENE LA CALIFICACIÓN DE RIESGO “AAA-” Y FORTALECE SU CAPACIDAD PARA IMPULSAR EL DESARROLLO PRODUCTIVO DEL ECUADOR","https://www.cfn.fin.ec/la-cfn-b-p-mantiene-su-solidez/",true],
+  ["cfn","SOLICITUD DE OFERTAS FORTALECIMIENTO TECNOLÓGICO DE LA CFN B.P. MEDIANTE LA ADQUISICIÓN DEL LICENCIAMIENTO PERPETUO DE MICROSOFT OFFICE","https://www.cfn.fin.ec/solicitud-de-ofertas/",false],
+  ["cfn","GRANDES OPCIONES DE INVERSIÓN Y CRECIMIENTO  EN LA SUBASTA DE BIENES 2026","https://www.cfn.fin.ec/subasta/",false],
+  ["cfn","MÁS PRESENTES QUE NUNCA","https://www.cfn.fin.ec/mas-presentes-que-nunca/",false],
+  ["uafe","Ecuador y Estados Unidos fortalecen la lucha contra el lavado de activos con tecnología avanzada e inteligencia artificial","https://www.uafe.gob.ec/nota/",true],
+  ["uafe","Más control financiero y transparencia: Gobierno Nacional articula a cuatro instituciones para detectar riesgos de corrupción y lavado de activos","https://www.uafe.gob.ec/nota/",true],
+  ["uafe","Registro del Manual de Prevención","https://www.uafe.gob.ec/registro-del-manual-de-prevencion/",false],
+  ["uafe","Solicitud de Pronunciamiento de Actividad Sujeta a Reporte","https://www.uafe.gob.ec/solicitud/",false],
+  ["uafe","Ecuador fortalece el control de sus fronteras con el Segundo Operativo Intensificado de 2026","https://www.uafe.gob.ec/nota/",false],
+  ["uafe","UAFE abre convocatoria para reconocer buenas prácticas de transparencia y prevención del lavado de activos","https://www.uafe.gob.ec/nota/",false]
 ];
 test('cada filtro deja pasar las muestras pertinentes del informe y descarta su ruido', () => {
   for (const [id, title, url, expected] of SAMPLES) {
@@ -571,7 +598,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'reguladores-prensa', 'seps', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
@@ -639,7 +666,7 @@ test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes 
   assert.equal(sourceById('bce-publicaciones').limit, 3);
   assert.deepEqual([sourceById('endeavor-ar').kind, sourceById('endeavor-ar').tier, sourceById('endeavor-ar').limit], ['organization', 3, 2]);
   assert.deepEqual([sourceById('fed').kind, sourceById('fed').tier, sourceById('fed').limit], ['official', 1, 2]);
-  for (const retired of ['asobanca', 'banecuador', 'cfn', 'uafe', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
+  for (const retired of ['asobanca', 'banecuador', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
 });
 
 // ---------------------------------------------------------------------------------------------------------
