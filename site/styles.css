@@ -28,7 +28,6 @@
   --text-size: clamp(17px, 1.35vw, 19px);
   --latent: 200;
   --extracto-lineas: 4;
-  --extracto-lineas-traduccion: 3;
   color-scheme: dark;
 }
 
@@ -238,22 +237,6 @@ button:disabled { cursor: default; }
   line-clamp: var(--extracto-lineas);
   overflow: hidden;
 }
-.nota.con-traduccion .extracto:not(.abierto) { -webkit-line-clamp: var(--extracto-lineas-traduccion); line-clamp: var(--extracto-lineas-traduccion); }
-/* Traducción automática del titular de una nota en inglés: rótulo discreto y texto en voz de texto. */
-.traduccion { display: flex; flex-direction: column; gap: 2px; max-width: 46ch; }
-.traduccion-rotulo { font-weight: 600; font-size: 13px; line-height: 1.4; color: var(--fg2-ink); }
-.traduccion-texto {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
-  line-clamp: 4;
-  overflow: hidden;
-  font-weight: 500;
-  font-size: var(--text-size);
-  line-height: 1.4;
-  color: var(--white);
-  overflow-wrap: break-word;
-}
 .cobertura { max-width: 60ch; font-weight: 500; font-size: 13px; line-height: 1.4; color: var(--fg2-ink); overflow-wrap: break-word; }
 .detalle { max-width: 52ch; font-size: 15px; line-height: 1.45; color: var(--fg2-ink); overflow-wrap: anywhere; }
 
@@ -313,6 +296,11 @@ button:disabled { cursor: default; }
 .accion:hover:not(:disabled) { text-decoration-color: var(--white); }
 .accion:disabled { color: var(--fg2-ink); }
 .accion[aria-disabled="true"] { color: var(--fg2-ink); cursor: progress; }
+/* «Siguiente noticia»: solo la flecha, en una zona táctil de 44 × 44 px que no se parte de línea. Sin subrayado: al pasar
+   el puntero, la flecha avanza un poco. */
+.accion-flecha { flex: none; justify-content: center; min-width: 44px; white-space: nowrap; text-decoration: none; }
+.accion-flecha span { display: inline-block; transition: transform var(--t-micro) var(--ease-react); }
+.accion-flecha:hover:not(:disabled) span { transform: translateX(4px); }
 .sin-enlace { font-weight: 500; font-size: 15px; color: var(--fg2-ink); }
 
 /* ---------- Cintillo: franja azul con titulares en tinta, grandes ---------- */

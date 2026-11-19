@@ -36,7 +36,6 @@
           <p id="posicion" class="posicion"></p>
         </div>
         <h1 id="nota-titular" class="titular"></h1>
-        <p id="nota-traduccion" class="traduccion" lang="es" hidden><span class="traduccion-rotulo">Traducción automática</span><span id="nota-traduccion-texto" class="traduccion-texto"></span></p>
         <p id="nota-extracto" class="extracto"></p>
         <p id="nota-cobertura" class="cobertura" hidden></p>
         <p id="nota-endeavor" class="endeavor" hidden></p>
@@ -45,7 +44,7 @@
           <a id="nota-enlace" class="accion-enlace" href="#" target="_blank" rel="noopener noreferrer"><span id="nota-enlace-texto">Leer en la fuente</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
           <span id="nota-sin-enlace" class="sin-enlace" hidden>Enlace no disponible</span>
           <button id="extracto-boton" class="accion" type="button" aria-controls="nota-extracto" aria-expanded="false" hidden>Ver todo</button>
-          <button id="adelante" class="accion" type="button" aria-keyshortcuts="ArrowRight">Siguiente</button>
+          <button id="adelante" class="accion accion-flecha" type="button" aria-keyshortcuts="ArrowRight" aria-label="Siguiente noticia" title="Siguiente noticia (→)"><span aria-hidden="true">→</span></button>
         </div>
       </article>
 
@@ -78,7 +77,7 @@
     </div>
     <div class="dialogo-cuerpo">
       <p id="fuentes-resumen" class="fuentes-resumen">Cargando…</p>
-      <p class="criterios">Notas de los últimos 30 días con fecha y enlace verificables. Si varios medios cuentan lo mismo se muestra una sola y se nombra a los demás. Titular y extracto son siempre del medio; las traducciones son automáticas. La selección es automática y no verifica lo que afirma cada medio.</p>
+      <p class="criterios">Notas de los últimos 30 días con fecha y enlace verificables. Si varios medios cuentan lo mismo se muestra una sola y se nombra a los demás. Titular y extracto son siempre del medio, en su idioma. La selección es automática y no verifica lo que afirma cada medio.</p>
       <div id="fuentes-lista" class="fuentes-lista"></div>
     </div>
   </dialog>
