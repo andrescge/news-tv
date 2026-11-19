@@ -35,6 +35,8 @@
           <p class="posicion"><span id="posicion"></span><span id="estado-emision"></span></p>
         </div>
         <h1 id="nota-titular" class="titular"></h1>
+        <p id="nota-porque" class="porque" lang="es" hidden><span class="porque-rotulo">Por qué importa · resumen automático</span><span id="nota-porque-texto" class="porque-texto"></span></p>
+        <p id="nota-cobertura" class="cobertura" hidden></p>
         <p id="nota-extracto" class="extracto"></p>
         <p id="nota-endeavor" class="endeavor" hidden></p>
         <p id="nota-aviso" class="aviso" hidden>Esta fuente no respondió en la última actualización: la nota viene de una edición anterior.</p>
@@ -89,8 +91,8 @@
       <p id="fuentes-resumen" class="fuentes-resumen">Cargando la edición…</p>
       <section class="criterios" aria-labelledby="criterios-titulo">
         <h3 id="criterios-titulo">¿Qué notas entran?</h3>
-        <p>Solo notas con fecha verificable de los últimos 30 días, enlace válido y publicadas por una de las fuentes de esta lista. Se eliminan duplicados y se muestran primero las más recientes. La vista abre en 7 días; si un canal tiene menos de 5 notas, el período se amplía y la pantalla lo indica.</p>
-        <p>No se redactan textos propios: si la fuente no trae extracto, se muestra solo el titular y el enlace. Es un filtro automático por fuente, fecha y tema; no verifica de forma independiente lo que afirma cada medio.</p>
+        <p>Solo notas con fecha verificable de los últimos 30 días, enlace válido y publicadas por una de las fuentes de esta lista. Se eliminan duplicados: cuando varios medios cuentan el mismo hecho queda una nota y «También en» nombra a los demás. Cuando hay valoración automática, dentro de cada período se muestran primero las más importantes; si no, las más recientes. La vista abre en 7 días; si un canal tiene menos de 5 notas, el período se amplía y la pantalla lo indica.</p>
+        <p>El titular y el extracto son siempre los del medio. La única línea propia es «Por qué importa · resumen automático»: la genera un modelo de lenguaje a partir del titular y el extracto, sin añadir datos, y puede equivocarse. Si la fuente no trae extracto, se muestra el titular y el enlace. Es una selección automática por fuente, fecha, tema y relevancia; no verifica de forma independiente lo que afirma cada medio.</p>
         <p>«Sin novedades» significa que la fuente respondió pero no aportó notas que pasaran el filtro. «Sin respuesta» significa que falló en la última ejecución: sus notas recientes se conservan de la edición anterior y se marcan en pantalla.</p>
       </section>
       <div id="fuentes-lista" class="fuentes-lista"></div>

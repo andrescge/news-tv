@@ -39,7 +39,7 @@ Cada fuente declara su **nivel** y su **acceso**, y ambos viajan a cada nota:
 
 Los discursos de banqueros centrales del BIS se leen una sola vez: los que tratan de cripto, stablecoins, tokenización o monedas digitales van a Cripto, y el resto a Pagos globales.
 
-Los filtros de cada fuente están en `FILTERS` (`scripts/content.mjs`) y se prueban con titulares reales en `tests/content.test.mjs`. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno ni resumen inventado. Los extractos se limitan a 280 caracteres: si el texto no cabe, se corta en el último límite de palabra y termina en «…»; si cabe, se muestra entero y sin «…».
+Los filtros de cada fuente están en `FILTERS` (`scripts/content.mjs`) y se prueban con titulares reales en `tests/content.test.mjs`. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo, a la que la capa editorial (ver más abajo) suma una valoración de importancia cuando está activa. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno. Titular y extracto son siempre los del medio; la única línea generada automáticamente es «Por qué importa», y siempre lleva ese rótulo. Los extractos se limitan a 280 caracteres: si el texto no cabe, se corta en el último límite de palabra y termina en «…»; si cabe, se muestra entero y sin «…».
 
 ### Períodos, acumulación y composición del canal
 
@@ -48,9 +48,66 @@ La edición cubre cuatro períodos: **24 horas, 7, 15 y 30 días**. Como muchos 
 Luego se compone cada canal:
 
 1. **Una sola copia por nota.** La misma nota en dos canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos fuentes, como un discurso que publican el BCE y el BIS) queda en un solo canal, en este orden de prioridad: Autoridades EC, Ecuador financiero, Fintech LATAM, Cripto, Pagos globales y Endeavor LATAM. Se conserva la copia con extracto y enlace directo.
-2. **Tope por fuente y período.** Cada fuente aporta como máximo su `limit` en cada período, eligiendo notas repartidas en el tiempo para que el período de 15 a 30 días no quede vacío.
-3. **Tope de canal.** Hasta 80 notas, repartidas entre los cuatro períodos.
-4. **Nivel 3.** Como máximo el 20 % del canal.
+2. **Un mismo hecho, una nota** (con capa editorial). Las notas de un canal que el modelo asignó al mismo hecho (`cluster`) quedan en una: la de la fuente oficial primaria si la hay, si no la de mejor nivel, con extracto y enlace directo. Los demás medios se listan en `coverage` y la pantalla los muestra como «También en: medio, medio».
+3. **Umbral de importancia** (con capa editorial). Salen las notas juzgadas con menos de 30 puntos, salvo las de fuentes oficiales primarias.
+4. **Tope por edición.** Los boletines de datos del BCE (`perEdition: 1`) aportan como máximo una nota a toda la edición, la más reciente, sea cual sea su puntuación.
+5. **Tope por fuente y período.** Cada fuente aporta como máximo su `limit` en cada período. Sin juicio editorial, se eligen notas repartidas en el tiempo para que el período de 15 a 30 días no quede vacío; con juicio, las de mayor puntuación.
+6. **Tope de canal.** Hasta 80 notas, repartidas entre los cuatro períodos.
+7. **Nivel 3.** Como máximo el 20 % del canal.
+8. **Orden.** Sin juicio editorial, por fecha (de la más reciente a la más antigua). Con juicio, por período y, dentro de cada período, por puntuación (la fecha desempata); una nota todavía sin juicio cuenta como 50. La pantalla respeta ese orden cuando el canal lo trae.
+
+### Capa editorial
+
+Entre la recopilación y la composición, `scripts/editorial.mjs` pide a un modelo de lenguaje de Anthropic (la API de Claude) un juicio sobre cada nota **nueva**, es decir, sin juicio previo. El modelo recibe titular, extracto, medio, tipo, nivel, idioma y fecha de cada nota, más las notas ya juzgadas del mismo canal de los últimos cuatro días, para reconocer un hecho ya contado. Cada nota recibe:
+
+```json
+"editorial": { "score": 72, "why": "…", "cluster": "biess-credicasa-migrantes-mhx2k", "model": "claude-opus-5-5", "at": "2026-11-18T16:26:00.000Z" }
+```
+
+- `score` (0 a 100): importancia para profesionales de banca y finanzas de Ecuador y LATAM. Los reportes periódicos de datos (boletines monetarios, tasas) no pasan de 40.
+- `why`: una frase en español, de 160 caracteres como máximo, que dice por qué importa. Se apoya solo en el titular y el extracto, sin hechos, cifras, nombres ni fechas que no estén ahí; queda vacía si no hay base suficiente. La pantalla la muestra debajo del titular como «Por qué importa · resumen automático».
+- `cluster`: etiqueta del hecho; las notas del mismo canal con la misma etiqueta se agrupan (punto 2 de la lista anterior).
+- `coverage` (en la nota que queda tras agrupar): los otros medios que contaron el mismo hecho.
+
+El juicio viaja con la nota en la acumulación de 30 días, así que cada nota se evalúa una sola vez. Los juicios de notas que no entraron en la edición se guardan en `tracked.editorial` para no volver a pedirlos.
+
+**Seguridad.** Titulares y extractos son texto de terceros: van al modelo como datos delimitados, y el prompt indica que cualquier instrucción dentro de ellos se ignora. La respuesta llega con un esquema JSON fijo y se valida: puntuación entera de 0 a 100, frase en texto plano sin enlaces, etiquetas ni formato, con cifras que figuren en el titular o el extracto, y etiqueta de hecho corta. Si la frase trae enlaces o HTML, la nota queda con 0 puntos y sin frase (se trata como un intento de inyección); si solo es larga o no se apoya en la nota, se descarta la frase y se conserva la puntuación. La pantalla vuelve a comprobar el texto y lo inserta con `textContent`.
+
+**Configuración.** Todo está en `EDITORIAL` (`scripts/editorial.mjs`):
+
+| Clave | Valor | Para qué |
+| --- | --- | --- |
+| `model` | `claude-opus-5-5` | Modelo. Se cambia solo aquí. |
+| `effort` | `low` | Esfuerzo de razonamiento del modelo. |
+| `threshold` | 30 | Umbral de importancia en la composición. |
+| `neutralScore` | 50 | Puntuación de una nota aún sin juicio en un canal con juicios. |
+| `maxStories` | 120 | Notas nuevas evaluadas por ejecución; el resto queda para la siguiente. |
+| `batchSize` | 25 | Notas por petición. |
+| `contextDays`, `maxContext` | 4, 40 | Notas ya juzgadas que ve el modelo para agrupar. |
+| `maxTokens` | 8000 | Tope de salida por petición. |
+| `timeoutMs`, `budgetMs` | 90 s, 300 s | Tiempo por petición y total de la capa por ejecución. |
+| `memoMax` | 1500 | Juicios guardados de notas fuera de la edición. |
+
+La parte fija del prompt se cachea entre peticiones. Cada ejecución registra cuántas notas evaluó, cuántas quedaron sin juicio válido y los tokens usados (entrada, caché y salida).
+
+En `SOURCES` (`scripts/collect.mjs`), `primary: true` marca los documentos primarios oficiales (resoluciones de la Junta y administrativas del BCE, Registro Oficial): se puntúan, pero no caen por el umbral y ganan al agrupar. `perEdition` limita las notas de una fuente en toda la edición.
+
+**Conexión con la API, sin clave guardada.** En GitHub Actions no hay ninguna clave de Anthropic: el workflow usa Workload Identity Federation (en la consola de Anthropic, la opción «Pipeline de CI»). El paso «Pedir el token de identidad para la capa editorial» pide a GitHub un token de identidad OIDC con la audiencia `https://api.anthropic.com` y lo deja en un archivo temporal del runner que solo el runner puede leer; nunca se imprime. El SDK de Anthropic canjea ese token por un token de acceso corto y lo renueva solo. El token de GitHub caduca en unos cinco minutos y cada uno se canjea una sola vez, así que el paso lo renueva cada dos minutos en segundo plano hasta que termina la recopilación, y entonces se borra. La regla de federación de Anthropic solo acepta ejecuciones de este repositorio en la rama `main` (push, programadas y manuales).
+
+Para activarla, carga estas **variables de repositorio** en GitHub (Settings → Secrets and variables → Actions → pestaña **Variables**). No son secretos: son identificadores, y se leen con los mismos nombres que usa el SDK.
+
+| Variable | Valor | Dónde está en la consola de Anthropic |
+| --- | --- | --- |
+| `ANTHROPIC_FEDERATION_RULE_ID` | `fdrl_…` | Workload identity: el identificador de la regla de federación que crea el asistente «Connect workload» (también en el detalle de la regla). |
+| `ANTHROPIC_ORGANIZATION_ID` | UUID de la organización | Settings → Organization. |
+| `ANTHROPIC_SERVICE_ACCOUNT_ID` | `svac_…` | El identificador de la cuenta de servicio que crea el mismo asistente (Settings → Service accounts). Recomendada; si se carga, debe ser la cuenta de la regla. |
+| `ANTHROPIC_WORKSPACE_ID` | `wrkspc_…` | Settings → Workspaces, columna ID. Solo hace falta si la regla vale para varios espacios de trabajo o para todos; con una regla de un solo espacio se puede dejar sin cargar. |
+
+Mientras falten la regla o la organización, el paso del token no corre y la edición se publica sin capa editorial, con un aviso en el registro. El paso de recopilación recibe solo estas variables y el archivo del token, quita las que estén vacías y no define `ANTHROPIC_API_KEY`: una clave presente le ganaría a la federación.
+
+**Pruebas locales.** Fuera de GitHub sigue sirviendo la clave en la variable de entorno `ANTHROPIC_API_KEY` (por ejemplo, `ANTHROPIC_API_KEY=… node scripts/collect.mjs --output /tmp/edicion.json`). Si está definida y no vacía, se usa en lugar de la federación.
+
+**Sin credenciales o con fallos.** Hay credenciales cuando hay clave o cuando están la regla, la organización y el token de identidad (`ANTHROPIC_IDENTITY_TOKEN_FILE` o `ANTHROPIC_IDENTITY_TOKEN`). Ni la clave ni los tokens se escriben en archivos, en la edición ni en los registros, y los errores se describen por su tipo y su código HTTP, nunca con el texto de la respuesta. Sin credenciales, si el canje del token es rechazado (por ejemplo, en una ejecución manual desde otra rama) o si la API falla, agota el tiempo o responde algo inválido, el recopilador sigue, avisa en consola y publica como siempre: las notas sin juicio se ordenan por fecha y no muestran las líneas nuevas. Un lote inválido solo afecta a sus notas, que se vuelven a pedir en la siguiente ejecución. Cuando la federación funcione, el secreto `ANTHROPIC_API_KEY` del repositorio, si existe, ya no se usa y se puede borrar.
 
 ### Registro Oficial
 
