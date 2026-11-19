@@ -484,25 +484,53 @@ export function shares(sizes, cap) {
   }
   return quota;
 }
-function spread(stories, cap, now) {
+function spread(stories, cap, now, pick = spaced) {
   const buckets = byPeriod(stories, now);
   const quota = shares(buckets.map(bucket => bucket.length), cap);
-  return buckets.flatMap((bucket, i) => spaced(bucket, quota[i]));
+  return buckets.flatMap((bucket, i) => pick(bucket, quota[i]));
 }
-export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now() } = {}) {
+// Juicio editorial (scripts/editorial.mjs): puntuación 0-100 de la nota, o null si aún no tiene.
+export const editorialScore = story => Number.isFinite(story?.editorial?.score) ? story.editorial.score : null;
+// Composición con juicio editorial, si alguna nota del canal lo tiene:
+// - `threshold`: fuera las notas juzgadas con menos puntos, salvo las de fuentes primarias oficiales (`primary`).
+// - Los mismos topes, pero dentro de cada período se eligen las de más puntos (fecha como desempate) en vez de espaciarlas,
+//   y el canal sale ordenado por período (de lo más reciente a lo más antiguo) y, dentro de cada uno, por importancia.
+// - Una nota sin juicio se ordena con `neutral`. Sin ningún juicio en el canal, todo queda como antes (espaciado y por fecha).
+export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now(), threshold = 0, neutral = 50, primary = () => false } = {}) {
+  const kept = stories.filter(story => { const score = editorialScore(story); return score == null || score >= threshold || primary(story); });
+  const ranked = kept.some(story => editorialScore(story) != null);
+  const importance = (a, b) => (editorialScore(b) ?? neutral) - (editorialScore(a) ?? neutral) || byDateDesc(a, b);
+  const pick = ranked ? (list, count) => [...list].sort(importance).slice(0, Math.max(0, count)) : spaced;
   const bySource = new Map();
-  for (const story of stories) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
-  const capped = [...bySource.values()].flatMap(list => byPeriod(list, now).flatMap(bucket => spaced(bucket, perPeriod(list[0]))));
+  for (const story of kept) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
+  const capped = [...bySource.values()].flatMap(list => byPeriod(list, now).flatMap(bucket => pick(bucket, perPeriod(list[0]))));
   const tier3 = capped.filter(story => story.tier === 3), others = capped.filter(story => story.tier !== 3);
   let allowed = Math.min(tier3.length, Math.floor(cap * tier3Share));
   const main = Math.min(others.length, cap - allowed);
   allowed = Math.min(allowed, Math.floor(main * tier3Share / (1 - tier3Share) + 1e-9));
-  return [...spread(others, main, now), ...spread(tier3, allowed, now)].sort(byDateDesc);
+  const result = [...spread(others, main, now, pick), ...spread(tier3, allowed, now, pick)];
+  return ranked ? result.sort((a, b) => periodIndex(a, now) - periodIndex(b, now) || importance(a, b)) : result.sort(byDateDesc);
 }
+// Tope por edición (`perEdition` de la fuente, por ejemplo los boletines de datos del BCE): solo las N más recientes de
+// esa fuente en toda la edición, puntúen lo que puntúen.
+export function capPerEdition(stories, perEdition = () => undefined) {
+  const counts = new Map();
+  return [...stories].sort(byDateDesc).filter(story => {
+    const max = perEdition(story);
+    if (!Number.isInteger(max)) return true;
+    const count = counts.get(story.sourceId) || 0;
+    counts.set(story.sourceId, count + 1);
+    return count < max;
+  });
+}
+// Con juicio editorial la edición va canal por canal, cada uno en su orden de importancia (site/app.js lo respeta); sin
+// juicio, toda la edición va por fecha, como antes.
 export function composeEdition(stories, options = {}) {
+  const pool = options.perEdition ? capPerEdition(stories, options.perEdition) : stories;
   const byChannel = new Map();
-  for (const story of stories) byChannel.set(story.category, [...(byChannel.get(story.category) || []), story]);
-  return [...byChannel.values()].flatMap(list => composeChannel(list, options)).sort(byDateDesc);
+  for (const story of pool) byChannel.set(story.category, [...(byChannel.get(story.category) || []), story]);
+  const composed = [...byChannel.values()].flatMap(list => composeChannel(list, options));
+  return composed.some(story => editorialScore(story) != null) ? composed : composed.sort(byDateDesc);
 }
 
 // ---------------------------------------------------------------------------------------------------------

@@ -95,23 +95,42 @@ function ago(ms) {
   if (hours < 48) return `hace ${plural(hours, 'hora', 'horas')}`;
   return `hace ${Math.floor(hours / 24)} días`;
 }
+// Línea «por qué importa» (generada automáticamente): texto plano corto, sin enlaces ni etiquetas; si no, no se muestra.
+function whyOf(story) {
+  const why = story?.editorial?.why;
+  if (typeof why !== 'string') return '';
+  const clean = why.replace(/\s+/g, ' ').trim();
+  return clean.length <= 200 && !/[<>]|https?:|www\./i.test(clean) ? clean : '';
+}
+// «También en»: otros medios que contaron el mismo hecho (campo opcional `coverage`).
+function coverageOf(story) {
+  if (!Array.isArray(story?.coverage)) return [];
+  return story.coverage.filter(name => typeof name === 'string').map(name => name.trim()).filter(name => name && name.length <= 80).slice(0, 8);
+}
 function langOf(story) { return story?.language === 'en' ? 'en' : 'es'; }
 function titleOf(story) { return text(story?.title) || '(sin titular)'; }
 function channelIndexOf(id) { return channels.findIndex(channel => channel.id === id); }
 function dialogOpen() { return $('#fuentes').open; }
 
 // ---------- Selección de notas ----------
+// Juicio editorial (campo opcional `editorial`): puntuación válida, o null. Ediciones sin el campo funcionan igual.
+function scoreOf(story) {
+  const score = story?.editorial?.score;
+  return Number.isInteger(score) && score >= 0 && score <= 100 ? score : null;
+}
+// Si el canal trae juicio editorial, la edición ya viene en su orden (por período y, dentro de cada uno, por importancia)
+// y se respeta; si no, las notas se ordenan por fecha, de la más reciente a la más antigua.
 function storiesIn(channelIndex, periodIndex) {
   const now = Date.now();
   const cutoff = now - periods[periodIndex].days * DAY;
   const id = channels[channelIndex].id;
-  return (state.data?.stories || [])
-    .filter(story => {
-      if (!story || story.category !== id) return false;
-      const published = timeOf(story.publishedAt);
-      return published >= cutoff && published <= now + FUTURE_TOLERANCE;
-    })
-    .sort((a, b) => timeOf(b.publishedAt) - timeOf(a.publishedAt));
+  const list = (state.data?.stories || []).filter(story => {
+    if (!story || story.category !== id) return false;
+    const published = timeOf(story.publishedAt);
+    return published >= cutoff && published <= now + FUTURE_TOLERANCE;
+  });
+  if (list.some(story => scoreOf(story) != null)) return list;
+  return list.sort((a, b) => timeOf(b.publishedAt) - timeOf(a.publishedAt));
 }
 // Si el canal tiene menos de 5 notas en el período elegido, amplía al siguiente.
 function viewFor(channelIndex) {
@@ -131,7 +150,7 @@ function refreshView() {
 }
 function currentStory() { return state.view.stories[state.story] || null; }
 function durationFor(story) {
-  const length = titleOf(story).length + text(story?.excerpt).length;
+  const length = titleOf(story).length + text(story?.excerpt).length + whyOf(story).length;
   return Math.min(40_000, Math.max(15_000, 9_000 + length * 60));
 }
 
@@ -253,6 +272,12 @@ function renderStory(story) {
   excerptNode.hidden = !excerpt;
   excerptNode.textContent = excerpt;
   excerptNode.lang = lang;
+  const why = whyOf(story);
+  $('#nota-porque').hidden = !why;
+  $('#nota-porque-texto').textContent = why;
+  const coverage = coverageOf(story);
+  $('#nota-cobertura').hidden = !coverage.length;
+  $('#nota-cobertura').textContent = coverage.length ? `También en: ${coverage.join(', ')}` : '';
   // Cada nota nueva empieza con el extracto recogido; un re-render de la misma nota respeta lo que eligió quien lee.
   if (state.excerptFor !== story.id) { state.excerptFor = story.id; state.excerptOpen = false; }
   fitExcerpt();

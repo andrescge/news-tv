@@ -3,6 +3,7 @@ import { resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { recent, safeUrl, linkAllowed, CHANNELS } from './content.mjs';
 import { endeavorUrl } from './endeavor.mjs';
+import { validJudgment, validCoverage } from './editorial.mjs';
 // collect.mjs solo recopila cuando se ejecuta como programa: importarlo no hace peticiones.
 import { SOURCES } from './collect.mjs';
 
@@ -30,7 +31,10 @@ export function validateEdition(data, { now = Date.now() } = {}) {
     const source = SOURCE_BY_ID.get(story.sourceId);
     if (source?.linkHosts && !linkAllowed(story, source)) fail(`enlace fuera de los dominios de ${source.id} en ${name}: ${story.url}`);
     // Empresa Endeavor mencionada (opcional): nombre y, si hay enlace, una ficha https de endeavor.org.
-    if (story.endeavor !== undefined && (typeof story.endeavor?.company !== 'string' || !story.endeavor.company || (story.endeavor.url !== undefined && !endeavorUrl(story.endeavor.url)))) fail(`empresa Endeavor inválida en ${name}`);
+    // Capa editorial (opcional): juicio con puntuación, línea en texto plano y grupo válidos; cobertura con nombres cortos.
+    if (story.editorial !== undefined && !validJudgment(story.editorial)) fail(`juicio editorial inválido en ${name}`);
+    if (story.coverage !== undefined && !validCoverage(story.coverage)) fail(`cobertura inválida en ${name}`);
+    if (story.endeavor !== undefined &&(typeof story.endeavor?.company !== 'string' || !story.endeavor.company || (story.endeavor.url !== undefined && !endeavorUrl(story.endeavor.url)))) fail(`empresa Endeavor inválida en ${name}`);
   }
   for (const source of data.sources) {
     if (source.tier !== undefined && !TIERS.includes(source.tier)) fail(`nivel inválido en la fuente ${source.id}`);

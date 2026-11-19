@@ -16,6 +16,8 @@ jobs:
     runs-on: ubuntu-24.04
     permissions:
       contents: write
+      # Token de identidad OIDC de GitHub para la capa editorial (Workload Identity Federation con Anthropic, sin clave).
+      id-token: write
     steps:
       - uses: actions/checkout@v7
         with:
@@ -35,7 +37,59 @@ jobs:
               git show FETCH_HEAD:site/data/news.json > site/data/news.json
             fi
           fi
-      - run: npm run collect
+      # Capa editorial sin clave guardada: el token OIDC de GitHub (audiencia de la API de Anthropic) queda en un archivo
+      # del runner que solo puede leer el propio runner, y el SDK lo canjea por un token corto de Anthropic.
+      # - Sin las variables de repositorio cargadas, este paso no corre y la edición sale sin capa editorial.
+      # - El token nunca se imprime: curl no muestra el cuerpo y jq lo escribe directo al archivo.
+      # - El token de GitHub caduca en unos 5 minutos y cada uno se canjea una sola vez, así que mientras dura la
+      #   recopilación se renueva cada 2 minutos en segundo plano (el SDK relee el archivo en cada canje).
+      # - Cualquier fallo aquí solo deja a la edición sin capa editorial: nunca detiene la publicación.
+      - name: Pedir el token de identidad para la capa editorial
+        id: oidc
+        if: vars.ANTHROPIC_FEDERATION_RULE_ID != '' && vars.ANTHROPIC_ORGANIZATION_ID != ''
+        continue-on-error: true
+        shell: bash
+        run: |
+          umask 077
+          dir="$RUNNER_TEMP/anthropic-oidc"
+          mkdir -p "$dir"
+          file="$dir/token.jwt"
+          fetch_token() {
+            curl -sSf --max-time 20 -H "Authorization: Bearer $ACTIONS_ID_TOKEN_REQUEST_TOKEN" \
+              "${ACTIONS_ID_TOKEN_REQUEST_URL}&audience=https://api.anthropic.com" \
+              | jq -er '.value' > "$file.tmp" && mv -f "$file.tmp" "$file"
+          }
+          if ! fetch_token; then
+            rm -f "$file.tmp"
+            echo "::warning::No se obtuvo el token de identidad de GitHub; la edición se publica sin capa editorial."
+            exit 0
+          fi
+          ( while sleep 120; do fetch_token || rm -f "$file.tmp"; done ) </dev/null >/dev/null 2>&1 &
+          echo "$!" > "$dir/refresh.pid"
+          echo "token_file=$file" >> "$GITHUB_OUTPUT"
+      # Solo las variables que el SDK usa para WIF. Los identificadores no son secretos: son variables de repositorio.
+      # Las vacías se quitan antes de recopilar (una variable vacía puede ocupar su lugar en la precedencia del SDK), y no
+      # se define ninguna clave: ANTHROPIC_API_KEY le ganaría a WIF.
+      - name: Recopilar noticias
+        shell: bash
+        env:
+          ANTHROPIC_FEDERATION_RULE_ID: ${{ vars.ANTHROPIC_FEDERATION_RULE_ID }}
+          ANTHROPIC_ORGANIZATION_ID: ${{ vars.ANTHROPIC_ORGANIZATION_ID }}
+          ANTHROPIC_SERVICE_ACCOUNT_ID: ${{ vars.ANTHROPIC_SERVICE_ACCOUNT_ID }}
+          ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
+          ANTHROPIC_IDENTITY_TOKEN_FILE: ${{ steps.oidc.outputs.token_file }}
+        run: |
+          dir="$RUNNER_TEMP/anthropic-oidc"
+          cleanup() {
+            if [ -f "$dir/refresh.pid" ]; then kill "$(cat "$dir/refresh.pid")" 2>/dev/null || true; fi
+            rm -rf "$dir"
+          }
+          trap cleanup EXIT
+          unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_PROFILE ANTHROPIC_BASE_URL ANTHROPIC_IDENTITY_TOKEN
+          for name in ANTHROPIC_FEDERATION_RULE_ID ANTHROPIC_ORGANIZATION_ID ANTHROPIC_SERVICE_ACCOUNT_ID ANTHROPIC_WORKSPACE_ID ANTHROPIC_IDENTITY_TOKEN_FILE; do
+            if [ -z "${!name}" ]; then unset "$name"; fi
+          done
+          npm run collect
       - name: Verificar edición
         run: node scripts/validate.mjs
       - uses: actions/configure-pages@v6

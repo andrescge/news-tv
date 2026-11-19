@@ -2,6 +2,7 @@ import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalize, parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, linkAllowed, passes, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
+import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, writeMemo } from './editorial.mjs';
 
 // Cada fuente: `category` (canal), `kind` (official | news | company | organization), `tier` (1 referencia,
 // 2 especializada, 3 interesada o de análisis), `access` (open | paywall | mixed), `language` y `adapter`.
@@ -10,6 +11,9 @@ import { normalize, parseFeed, parseDate, parseBce, parseBcePublications, parseB
 // `linkHosts` (fuentes oficiales con página o feed propio): dominios aceptados para el enlace de cada nota, con sus subdominios.
 // Las notas con enlace fuera de la lista se descartan antes de cualquier petición (ver linkAllowed en content.mjs). Las listas
 // salen de los enlaces reales de cada fuente; el feed del Ministerio de Economía redirige a economicoproductivo.gob.ec.
+// Capa editorial (scripts/editorial.mjs): `primary` marca los documentos oficiales primarios (resoluciones del BCE, Registro
+// Oficial), que se puntúan pero no caen por el umbral y ganan al agrupar; `perEdition` limita las notas de la fuente en toda
+// la edición (los boletines y reportes periódicos de datos del BCE: una).
 export const SOURCES = [
   // Ecuador financiero.
   { id: 'bce-boletines', name: 'Banco Central del Ecuador', category: 'ecuador', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/', site: 'https://www.bce.fin.ec/', linkHosts: ['bce.fin.ec'] },
@@ -19,12 +23,12 @@ export const SOURCES = [
   { id: 'bloomberg-ecuador', name: 'Bloomberg Línea · Ecuador', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=(site%3Aexpreso.ec%20OR%20site%3Abloomberglinea.com)%20Ecuador%20(banco%20OR%20bancos%20OR%20banca%20OR%20cr%C3%A9dito%20OR%20cooperativas%20OR%20seguros%20OR%20aseguradora%20OR%20deuda%20OR%20FMI%20OR%20%22riesgo%20pa%C3%ADs%22%20OR%20fintech%20OR%20tarjetas)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 3 },
 
   // Autoridades EC.
-  { id: 'bce-publicaciones', name: 'BCE · Datos financieros', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-publications', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', site: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', linkHosts: ['bce.fin.ec'], limit: 3 },
-  { id: 'bce-junta-resoluciones', name: 'BCE · Resoluciones de la Junta', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', site: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', linkHosts: ['bce.fin.ec'] },
-  { id: 'bce-resoluciones-admin', name: 'BCE · Resoluciones administrativas', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', site: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', linkHosts: ['bce.fin.ec'] },
+  { id: 'bce-publicaciones', name: 'BCE · Datos financieros', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-publications', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', site: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', linkHosts: ['bce.fin.ec'], limit: 3, perEdition: 1 },
+  { id: 'bce-junta-resoluciones', name: 'BCE · Resoluciones de la Junta', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', site: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', linkHosts: ['bce.fin.ec'], primary: true },
+  { id: 'bce-resoluciones-admin', name: 'BCE · Resoluciones administrativas', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', site: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', linkHosts: ['bce.fin.ec'], primary: true },
   { id: 'reguladores-prensa', name: 'Prensa sobre reguladores (El Universo y Primicias)', category: 'regulacion', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=(site%3Aprimicias.ec%20OR%20site%3Aeluniverso.com)%20(superintendencia%20OR%20%22Junta%20de%20Pol%C3%ADtica%22%20OR%20SEPS%20OR%20UAFE%20OR%20SRI%20OR%20%22Banco%20Central%22%20OR%20Cosede)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://news.google.com/', allowHosts: ['eluniverso.com', 'primicias.ec'], limit: 8 },
   // Registro Oficial: feed de ediciones; `pages` se leen en cada ejecución y `backfillPages` cuando no hay historial.
-  { id: 'registro-oficial', name: 'Registro Oficial', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'registro-oficial', url: 'https://www.registroficial.gob.ec/feed/', site: 'https://www.registroficial.gob.ec/', linkHosts: ['registroficial.gob.ec'], limit: 5, pages: 3, backfillPages: 16 },
+  { id: 'registro-oficial', name: 'Registro Oficial', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'registro-oficial', url: 'https://www.registroficial.gob.ec/feed/', site: 'https://www.registroficial.gob.ec/', linkHosts: ['registroficial.gob.ec'], limit: 5, pages: 3, backfillPages: 16, primary: true },
   { id: 'seps', name: 'SEPS', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.seps.gob.ec/feed/', site: 'https://www.seps.gob.ec/', linkHosts: ['seps.gob.ec'], limit: 2 },
   { id: 'superbancos', name: 'Superintendencia de Bancos', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.superbancos.gob.ec/bancos/feed/', site: 'https://www.superbancos.gob.ec/', linkHosts: ['superbancos.gob.ec'], limit: 2 },
   { id: 'supercias', name: 'Supercias', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'supercias', url: 'https://www.supercias.gob.ec/portalscvs/', site: 'https://www.supercias.gob.ec/portalscvs/Noticias/Noticias.php', linkHosts: ['supercias.gob.ec'], limit: 2 },
@@ -243,6 +247,8 @@ function report(stories, sources, now) {
     const periods = PERIOD_DAYS.map((days, index) => `${days === 1 ? '24 h' : `${days} d`}: ${count(story => periodIndex(story, now) <= index)}`).join(', ');
     console.log(`${channel}: ${list.length} notas · nivel 1/2/3: ${[1, 2, 3].map(tier => count(story => story.tier === tier)).join('/')} · es/en: ${count(story => story.language === 'es')}/${count(story => story.language === 'en')} · de pago: ${count(story => story.access === 'paywall')} · conservadas sin respuesta: ${count(story => story.stale)} · ${periods}`);
   }
+  const judged = stories.filter(story => story.editorial);
+  console.log(`Juicio editorial: ${judged.length} de ${stories.length} notas de la edición (${judged.filter(story => story.editorial.why).length} con «por qué importa»); ${stories.filter(story => story.coverage).length} con cobertura agrupada.`);
   const tagged = stories.filter(story => story.endeavor);
   console.log(`Empresas Endeavor: ${tagged.length} notas etiquetadas (${CHANNELS.map(channel => `${channel}: ${tagged.filter(story => story.category === channel).length}`).join(', ')}).`);
   const failed = sources.filter(source => source.status === 'error').map(source => source.name);
@@ -257,6 +263,21 @@ export function loadPrevious(data) {
   if (!editionShape(data)) return { previous: { stories: [], sources: [] }, shapeOk: false, dropped: 0 };
   const stories = data.stories.filter(story => carryable(story, SOURCE_BY_ID.get(story?.sourceId)));
   return { previous: { ...data, stories }, shapeOk: true, dropped: data.stories.length - stories.length };
+}
+
+const isPrimary = story => !!SOURCE_BY_ID.get(story?.sourceId)?.primary;
+// La capa editorial nunca hace fallar la edición: ante cualquier error inesperado, las notas siguen con el juicio que ya
+// traían (saneado) y sin juicio nuevo.
+async function editorialPass(stories, saved, now) {
+  const memo = readMemo(saved, now);
+  try {
+    const { client, sdk, reason } = await editorialClient();
+    const { stories: pool } = await applyEditorial(stories, { client, sdk, reason, memo, now, primary: isPrimary });
+    return { pool, memo };
+  } catch {
+    console.warn('Capa editorial: error inesperado; la edición se publica sin juicio editorial nuevo.');
+    return { pool: stories.map(cleanStory), memo };
+  }
 }
 
 async function run() {
@@ -277,8 +298,12 @@ async function run() {
     states.push({ source, ok, oldState: previous.sources.find(s => s?.id === source.id) });
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }
+  // Capa editorial: juicio para las notas que aún no lo tienen. Sin credenciales o con cualquier fallo, la edición sigue igual.
+  const { pool, memo } = await editorialPass(deduplicate(stories), previous.tracked?.editorial, now);
   // Todas las notas, de todos los canales, llevan `endeavor` si su titular (o su extracto) nombra a una empresa del directorio.
-  const edition = composeEdition(deduplicate(stories), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now }).map(story => tagEndeavor(story));
+  const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
+  const notes = writeMemo({ pool, edition, memo, now });
+  if (Object.keys(notes.notes).length) tracked.editorial = notes;
   const sources = states.map(({ source, ok, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length }));
   const payload = { version: 1, generatedAt: checkedAt, stories: edition, sources, tracked };
   await mkdir(dirname(output), { recursive: true });

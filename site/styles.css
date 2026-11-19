@@ -223,6 +223,18 @@ button:disabled { cursor: default; }
 
 /* Voz de texto. */
 .extracto { max-width: 34ch; font-size: var(--text-size); line-height: 1.45; color: var(--fg2-ink); overflow-wrap: break-word; }
+/* «Por qué importa»: la única línea que no es del medio. Filete azul a la izquierda y rótulo que la declara automática. */
+.porque {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 46ch;
+  padding-left: 14px;
+  border-left: 2px solid var(--blue);
+}
+.porque-rotulo { font-weight: 600; font-size: 13px; line-height: 1.4; color: var(--fg2-ink); }
+.porque-texto { font-weight: 500; font-size: var(--text-size); line-height: 1.4; color: var(--white); overflow-wrap: break-word; }
+.cobertura { max-width: 60ch; font-weight: 600; font-size: 13px; line-height: 1.4; color: var(--fg2-ink); overflow-wrap: break-word; }
 .detalle { max-width: 52ch; font-size: 15px; line-height: 1.45; color: var(--fg2-ink); overflow-wrap: anywhere; }
 
 .endeavor { font-weight: 600; font-size: 15px; line-height: 1.4; color: var(--fg2-ink); }
