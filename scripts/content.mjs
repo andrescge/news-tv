@@ -313,6 +313,10 @@ const EC_BANKING_BUSINESS = String.raw`chulc|chulquer|usura|agiotis|deudor|moros
 // Ecuador: vocabulario financiero de los feeds de economía de Primicias y El Universo, y su ruido de consumo. «Presupuesto» solo
 // cuenta como el del Estado: «con un presupuesto de USD 19 millones» es el costo de una obra.
 const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|mercado burs[aá]til|proforma|presupuesto (general|del estado)|d[eé]ficit|recaudaci[oó]n|diferimiento|${EC_BANKING_BUSINESS}`;
+// Ecuador: lo que dice «banco» o «crédito» sin ser banca: bancos de alimentos, sangre, leche, semillas, ojos o germoplasma, el
+// banco de suplentes y la bancada política, el crédito tributario de obras, y el Banco Mundial cuando habla de precios de
+// alimentos o materias primas (no de financiamiento a Ecuador).
+const EC_NOT_BANKING = String.raw`banco de (alimentos|sangre|leche|semillas|ojos|germoplasma|tejidos|[oó]rganos)|banco de suplentes|bancadas?|cr[eé]ditos? tributari|banco mundial[^.;?!]{0,60}(precios|commodit|materias primas)|(precios|commodit|materias primas)[^.;?!]{0,60}banco mundial`;
 const EC_CONSUMER_NOISE = String.raw`black friday|cyber ?(day|monday)|concurso|competencia econ[oó]mica|brigadas`;
 // Prensa ecuatoriana general por búsqueda (El Comercio, Teleamazonas, La Hora): la banca de otros países y los avisos de feriado.
 const EC_PRESS_ABROAD = String.raw`estados unidos|ee\.? ?uu|\basia|europe|paraguay|brasile|\blula\b|del mundo|feriado`;
@@ -372,14 +376,14 @@ export const FILTERS = {
   'bce-resoluciones-admin': { test: story => /sistema (nacional|central|auxiliar) de pagos|medios? de pago|transferencias?|mensajer[ií]a|moneda|billetes?|especies monetarias|dep[oó]sitos y retiros|encaje|liquidez|reservas?|\boro\b|tarifas?|corresponsal|recaudaci[oó]n|entidades financieras|sistema financiero|certificaci[oó]n de informaci[oó]n|firma electr[oó]nica|tasas? de inter[eé]s|reforma institucional|dinero electr[oó]nico|compensaci[oó]n|c[aá]mara/i.test(story.title) && !/^(memorando|oficio)\b|\b(designa|delega)|delegaci[oó]n|talento humano|remuneraci|anticipos|bienes muebles|r[eé]gimen laboral|[ií]ndice tem[aá]tico|servidores|contrataci[oó]n|proveedor/i.test(`${story.excerpt} ${story.title}`) },
 
   // Ecuador financiero.
-  primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
-  eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, 'kits|homenaje') },
-  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`, EC_BANKING_BUSINESS), exclude: rx(String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
+  primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
+  eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, 'kits|homenaje') },
+  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`, EC_BANKING_BUSINESS), exclude: rx(EC_NOT_BANKING, String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
   // El Comercio, Teleamazonas y La Hora llegan por una búsqueda con términos de banca en el titular: queda fuera la banca de
   // otros países (fallas de bancos en EE. UU., crisis de Paraguay, euro digital) y el horario de atención en feriados.
-  'elcomercio-ec': { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
-  teleamazonas: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
-  lahora: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_PRESS_ABROAD) },
+  'elcomercio-ec': { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  teleamazonas: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  lahora: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
   // CFN: productos de crédito y calificaciones de riesgo; fuera compras públicas, subastas, certificaciones y lemas.
   cfn: { include: rx(String.raw`cr[eé]ditos?|financiamiento|tasas?|calificaci[oó]n de riesgo|producto financiero|cartera|microcr[eé]dito|garant[ií]as`), exclude: rx(String.raw`convocatoria|solicitud de ofertas|cotizaciones|alquiler|contrataci|adquisici|subasta|\biso\b|selecci[oó]n`) },
   // Bloomberg Línea llega por una búsqueda: el titular debe nombrar a Ecuador y un tema financiero o fiscal.
