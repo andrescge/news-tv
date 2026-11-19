@@ -1,9 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO } from '../scripts/content.mjs';
+import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, editionSeries, expectedScore, capPerEdition, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
-import { SOURCES, loadPrevious, dateResolutions, readBody } from '../scripts/collect.mjs';
-import { validateEdition } from '../scripts/validate.mjs';
+import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
+import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
 import endeavorDirectory from '../scripts/data/endeavor-latam.json' with { type: 'json' };
 
 const now = Date.parse('2026-09-29T15:00:00Z');
@@ -102,7 +105,7 @@ test('Supercias aporta fecha desde el enlace y solo entran avisos y normas', () 
   assert.throws(() => parseSupercias('<p>Sin noticias</p>', 'https://www.supercias.gob.ec/portalscvs/'));
 });
 
-test('en Fintech LATAM la misma operación contada por varios medios queda en una nota', () => {
+test('la misma operación contada por varios medios queda en una nota que nombra a los demás, en cualquier canal', () => {
   const latam = { ...source, category: 'latam' };
   const story = (title, medium, publishedAt, extra = {}) => normalize({ title, url: `https://example.com/${encodeURIComponent(`${medium}/${title}`)}`, publishedAt, source: medium, ...extra }, latam, now);
   const english = story('Cocos raises $34M at $508M valuation', 'LatamList', '2026-09-27T10:00:00Z', { excerpt: 'Cocos closed a new round.' });
@@ -111,12 +114,86 @@ test('en Fintech LATAM la misma operación contada por varios medios queda en un
   const partnersEnglish = story('Colombian fintech Akua secures investment from Itaú Unibanco', 'LatamList', '2026-09-28T08:00:00Z');
   const other = story('Revolut prevé lanzar su banco en Argentina', 'Bloomberg Línea', '2026-09-28T07:00:00Z');
   const later = story('Cocos compra una sociedad de bolsa por US$34M', 'iupana', '2026-09-10T07:00:00Z');
-  assert.deepEqual([...coverageSignature('Cocos raises $34M at $508M valuation').amounts], ['34m', '508m']);
+  assert.deepEqual([...coverageSignature('Cocos raises $34M at $508M valuation').amounts], ['34m', '510m']);
   assert.deepEqual([...coverageSignature('Fintech argentina levanta USD 6,4 millones').amounts], ['6.4m']);
   const result = deduplicate([spanish, english, partners, partnersEnglish, other, later]);
   assert.deepEqual(result.map(item => item.title), [english.title, partnersEnglish.title, other.title, later.title]);
+  assert.deepEqual(result.map(item => item.coverage), [['El Economista'], ['El Economista'], undefined, undefined]);
+  // Ahora también en Pagos (antes solo en Fintech LATAM y Endeavor LATAM).
   const payments = [english, spanish].map(item => ({ ...item, category: 'pagos' }));
-  assert.equal(deduplicate(payments).length, 2);
+  assert.equal(deduplicate(payments).length, 1);
+});
+
+test('un hecho, una nota: importes en millones, nombres propios por grupos y titulares en mayúsculas', () => {
+  // Importes: la misma cifra en las formas de la prensa en español e inglés; sin moneda ni unidad no hay importe.
+  const amounts = title => [...coverageSignature(title).amounts];
+  assert.deepEqual(amounts('Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance'), ['6300m']);
+  assert.deepEqual(amounts('Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest'), ['6300m']);
+  assert.deepEqual(amounts('BBVA Spark inyecta más de 1,000 mdp a la fintech mexicana Nexu'), ['1000m']);
+  assert.deepEqual(amounts('Ecuador registró un superávit comercial de USD 3.308 millones entre enero y septiembre de 2026'), ['3300m']);
+  assert.deepEqual(amounts('Proforma 2027 con 20 minutos de debate y 13,4% de crecimiento'), []);
+  // Nombres: «Hong Kong» o «Economía Popular y Solidaria» son un solo nombre; al principio de la frase solo cuentan los que la
+  // tanda escribe con mayúscula en mitad de una frase o siempre con mayúscula.
+  const lexicon = coverageLexicon(['Nubank aumenta ganancias en el tercer trimestre', 'Nubank suspende operaciones con criptomonedas', 'Las webs de Ikea y HSBC sufren un ciberataque']);
+  assert.ok(lexicon.has('nubank') && lexicon.has('ikea') && !lexicon.has('las'));
+  assert.deepEqual(coverageSignature('Banks in Hong Kong test tokenized deposits', lexicon).runs, [['hong', 'kong']]);
+  assert.deepEqual(coverageSignature('Estas son las falsas cooperativas no autorizadas, alerta Superintendencia de Economía Popular y Solidaria').runs, [['economia', 'popular', 'solidaria']]);
+  assert.deepEqual(coverageSignature('Nubank suspende operaciones con criptomonedas en Brasil', lexicon).runs, [['nubank']]);
+  // Titular con todas las palabras en mayúscula: solo cuentan los nombres conocidos de la tanda; las siglas, siempre.
+  assert.deepEqual(coverageSignature('Federal Reserve Board Announces Pricing for Payment Services').runs, []);
+  assert.deepEqual(coverageSignature('OpenAI Gives AI Agents a Wallet Without Seeing the Card').runs, [['openai']]);
+  // Los códigos de norma no son nombres.
+  assert.deepEqual(coverageSignature('La SEPS amplía el plazo: SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160').runs, [['seps']]);
+});
+
+test('un hecho, una nota: titulares reales que se unen entre canales y hechos distintos que no se unen', () => {
+  const at = (iso, sourceId, channel, medium, title, extra = {}) => ({ id: `${sourceId}-${iso}`, sourceId, category: channel, kind: 'news', tier: 2, title, excerpt: '', url: `https://example.com/${encodeURIComponent(sourceId + title)}`, source: medium, sourceUrl: 'https://example.com', via: '', language: 'es', publishedAt: iso, ...extra });
+  const primaryIds = new Set(['bce-junta-resoluciones', 'registro-oficial']);
+  const primary = story => primaryIds.has(story.sourceId);
+  const titles = list => list.map(item => item.title).sort();
+  // El Banco Mundial con Citi y Circle: The Block en Cripto y Finextra en Pagos, el mismo día.
+  const block = at('2026-11-18T04:21:00Z', 'theblock', 'cripto', 'The Block', 'World Bank Group taps Circle and Citi to test stablecoin-based fund disbursements', { excerpt: 'The World Bank Group is testing stablecoins.' });
+  const finextra = at('2026-11-18T09:00:00Z', 'finextra', 'pagos', 'Finextra Research', 'World Bank partners Citi and Circle to test stablecoins for development payments', { via: 'Vía Google News' });
+  const [bank] = deduplicate([finextra, block]);
+  assert.deepEqual([bank.sourceId, bank.category, bank.coverage], ['theblock', 'cripto', ['Finextra Research']]);
+  // La norma de tarjetas del Ecuador: la resolución de la Junta (primaria, Autoridades), el boletín del BCE y Forbes (Ecuador).
+  const junta = at('2026-11-07T16:45:00Z', 'bce-junta-resoluciones', 'regulacion', 'BCE · Resoluciones de la Junta', 'Aprueba la “Norma que regula la operación de tarjetas de pago en el Ecuador”.', { kind: 'official', tier: 1, excerpt: 'Resolución JPRFM-2026-048-T.' });
+  const bulletin = at('2026-11-07T12:00:00Z', 'bce-boletines', 'ecuador', 'Banco Central del Ecuador', 'La JPRFM establece nuevas reglas para los pagos con tarjetas y refuerza la protección de los usuarios', { kind: 'official', tier: 1, excerpt: 'La Junta aprobó la norma.' });
+  const forbes = at('2026-11-10T13:46:00Z', 'forbes-ec', 'ecuador', 'Forbes Ecuador', 'Las nuevas reglas para los pagos con tarjetas en Ecuador', { via: 'Vía Google News' });
+  const cards = deduplicate([forbes, junta, bulletin], { primary });
+  assert.equal(cards.length, 1);
+  assert.deepEqual([cards[0].sourceId, cards[0].category], ['bce-junta-resoluciones', 'regulacion']);
+  assert.deepEqual([...cards[0].coverage].sort(), ['Banco Central del Ecuador', 'Forbes Ecuador']);
+  // Nubank y Mercado Pago suspenden las transferencias cripto: Reuters en Cripto y El Economista en Fintech LATAM.
+  const reuters = at('2026-11-06T08:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Nubank, Mercado Pago halt crypto transfers after external provider disruption', { tier: 1, via: 'Vía Google News' });
+  const economista = at('2026-11-06T14:00:00Z', 'el-economista', 'latam', 'El Economista', 'Nubank y Mercado Pago suspenden sus transferencias de criptomonedas por inestabilidad en el sistema', { tier: 1, via: 'Vía Google News' });
+  assert.equal(deduplicate([reuters, economista]).length, 1);
+  // El hackeo de Binance: la misma cifra el mismo día se une; hechos distintos del mismo caso no.
+  const heist = [
+    at('2026-10-30T07:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest', { tier: 1 }),
+    at('2026-10-30T09:56:00Z', 'cinco-dias-cripto', 'cripto', 'Cinco Días · Criptoactivos', 'Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance, la mayor plataforma cripto del mundo', { tier: 1, excerpt: 'El robo.' }),
+  ];
+  const [one] = deduplicate(heist);
+  assert.deepEqual([one.sourceId, one.coverage], ['cinco-dias-cripto', ['Reuters']]);
+  const distinct = [
+    at('2026-10-30T07:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Blockchain analysis firm TRM says North Korea behind Binance crypto theft'),
+    at('2026-11-03T05:00:00Z', 'ft-cripto', 'cripto', 'Financial Times', 'North Korean hackers expected to take months to launder Binance billions'),
+    at('2026-11-02T15:02:00Z', 'ft-cripto', 'cripto', 'FT Alphaville', 'What caused the $6.3bn Binance hack?'),
+    at('2026-11-13T16:54:00Z', 'expansion-cripto', 'cripto', 'Expansión', 'Binance cerrará todas las cuentas europeas en 2027'),
+    at('2026-11-14T08:45:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Binance targets full reopening of withdrawals by next week'),
+    at('2026-11-17T15:11:00Z', 'coindesk', 'cripto', 'CoinDesk', 'Hong Kong, Swift test tokenized deposits as banks chase stablecoin-style speed'),
+    at('2026-11-18T15:23:00Z', 'decrypt', 'cripto', 'Decrypt', 'Hong Kong wants banks to use AI to catch crypto crime before money disappears'),
+  ];
+  assert.deepEqual(titles(deduplicate([...distinct, heist[0]])), titles([...distinct, heist[0]]));
+  // Dos documentos primarios no se unen entre sí, ni dos notas del mismo medio.
+  const gazette = at('2026-11-09T15:21:00Z', 'registro-oficial', 'regulacion', 'Registro Oficial', 'Se reforma la Norma que regula la operación de tarjetas de pago en el Ecuador', { kind: 'official', tier: 1, excerpt: 'Junta · JPRFM-2026-048-T.' });
+  assert.equal(deduplicate([junta, gazette], { primary }).length, 2);
+  assert.equal(deduplicate([heist[0], { ...heist[1], source: 'Reuters', id: 'otra' }]).length, 2);
+  // Más de cuatro días entre notas: hechos distintos aunque compartan nombre e importe.
+  assert.equal(deduplicate([heist[0], { ...heist[1], publishedAt: '2026-11-04T12:00:00Z' }]).length, 2);
+  // La cobertura de una nota conservada se suma a la de las nuevas.
+  const [kept] = deduplicate([{ ...heist[1], coverage: ['FT'] }, heist[0]]);
+  assert.deepEqual(kept.coverage, ['FT', 'Reuters']);
 });
 
 test('una nota aparece en un solo canal: se elimina el duplicado y gana el canal más específico', () => {
@@ -206,7 +283,7 @@ test('Google News: solo entran notas del dominio del medio y se quita el sufijo 
   assert.equal(relevant(story, forbes), true);
 });
 
-test('Registro Oficial: se compone el titular con órgano y código, y solo entran normas de órganos financieros', () => {
+test('Registro Oficial: el titular es el asunto de la norma, el extracto lleva órgano y código, y solo entran normas de órganos financieros', () => {
   const item = (title, link, html) => `<item><title>${title}</title><link>${link}</link><pubDate>Mon, 28 Sep 2026 13:22:50 +0000</pubDate><description><![CDATA[resumen]]></description><content:encoded><![CDATA[${html}]]></content:encoded></item>`;
   const xml = `<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel>${[
     item('Quinto Suplemento No. 410', 'https://www.registroficial.gob.ec/quinto-suplemento-no-410/', '<p>FUNCIÓN EJECUTIVA<br>ACUERDO:<br>MINISTERIO DE GOBIERNO:<br>MDG-SMS-2026-0218-A Se aprueba el estatuto de la Iglesia Evangélica<br><br>RESOLUCIONES:<br>JUNTA DE POLÍTICA Y REGULACIÓN<br>FINANCIERA Y MONETARIA:<br>JPRFM-2026-050-F Se conoce el contenido del informe de actividades del Directorio<br><br>JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros</p>'),
@@ -218,20 +295,42 @@ test('Registro Oficial: se compone el titular con órgano y código, y solo entr
   ].join('')}</channel></rss>`;
   const ro = sourceById('registro-oficial');
   const rows = parseRegistroOficial(xml);
+  // El titular es el asunto de la norma; el órgano y el código abren el extracto.
   assert.deepEqual(rows.map(row => row.title), [
-    'Junta de Política y Regulación Financiera y Monetaria: JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros',
-    'Superintendencia de Economía Popular y Solidaria: SEPS-IGT-IGS-IGJ-INSESF-INR-INGINT-INSEPS-2026-0157 Se expide la Norma de control de seguridades en el uso de canales electrónicos',
-    'Servicio de Rentas Internas: NAC-DGERCGC26-00000038 Se expiden las normas para el intercambio automático de información de la SCVS y el SRI',
-    'Banco Central del Ecuador: BCE-GG-021-2026 Se reforma la Norma para depósitos y retiros de especies monetarias',
+    'Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros',
+    'Se expide la Norma de control de seguridades en el uso de canales electrónicos',
+    'Se expiden las normas para el intercambio automático de información de la SCVS y el SRI',
+    'Se reforma la Norma para depósitos y retiros de especies monetarias',
   ]);
-  assert.equal(rows[0].excerpt, 'Registro Oficial, Quinto Suplemento No. 410.');
-  assert.equal(rows[1].excerpt, 'Registro Oficial, Segundo Suplemento No. 395. También: Corporación del Seguro de Depósitos (COSEDE): COSEDE-COSEDE-2026-0068-R Se actualizan los valores de benchmark aplicables al sector financiero privado.');
+  assert.equal(rows[0].excerpt, 'Junta de Política y Regulación Financiera y Monetaria · JPRFM-2026-051-F. Registro Oficial, Quinto Suplemento No. 410.');
+  assert.equal(rows[1].excerpt, 'Superintendencia de Economía Popular y Solidaria · SEPS-IGT-IGS-IGJ-INSESF-INR-INGINT-INSEPS-2026-0157. Registro Oficial, Segundo Suplemento No. 395. También: Corporación del Seguro de Depósitos (COSEDE): COSEDE-COSEDE-2026-0068-R Se actualizan los valores de benchmark aplicables al sector financiero privado.');
   const stories = rows.map(row => normalize(row, ro, now));
   assert.deepEqual(stories.map(story => relevant(story, ro)), [true, true, true, false]);
   assert.equal(stories[0].category, 'regulacion');
   assert.equal(stories[0].kind, 'official');
   assert.equal(parseRegistroOficialIndex('<p>MINISTERIO DE SALUD PÚBLICA:<br>MSP-2026-1 Se concede personalidad jurídica</p>')[0].organ, null);
   assert.throws(() => parseRegistroOficial('<html></html>'));
+});
+
+test('Registro Oficial: un asunto largo se recorta en límite de palabra y las notas con el titular antiguo se pasan al nuevo', () => {
+  // Titular real de la edición publicada (255 caracteres con órgano y código).
+  const text = 'Se amplía el plazo para la liquidación de la Cooperativa de Ahorro y Crédito el Esfuerzo Ltda. “En Liquidación”, domiciliada en el cantón Ambato, provincia de Tungurahua';
+  const xml = `<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><item><title>Registro Oficial No. 405</title><link>https://www.registroficial.gob.ec/registro-oficial-no-405/</link><pubDate>Wed, 11 Nov 2026 13:07:00 +0000</pubDate><content:encoded><![CDATA[<p>SUPERINTENDENCIA DE ECONOMÍA POPULAR Y SOLIDARIA:<br>SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160 ${text}</p>]]></content:encoded></item></channel></rss>`;
+  const [row] = parseRegistroOficial(xml);
+  assert.ok(row.title.length <= 160, String(row.title.length));
+  assert.ok(row.title.endsWith('…'));
+  assert.ok(text.startsWith(row.title.slice(0, -1)), 'solo se recorta el texto del sumario');
+  assert.equal(row.excerpt, 'Superintendencia de Economía Popular y Solidaria · SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160. Registro Oficial No. 405.');
+  // Nota conservada de una edición anterior con el titular «Órgano: CÓDIGO asunto».
+  const ro = sourceById('registro-oficial');
+  const old = { ...make('registro-oficial', 30), category: 'regulacion', kind: 'official', url: 'https://www.registroficial.gob.ec/quinto-suplemento-no-410/', title: 'Junta de Política y Regulación Financiera y Monetaria: JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros', excerpt: 'Registro Oficial, Quinto Suplemento No. 410.' };
+  const [carried] = accumulate([], [old], ro, { now, keep: story => relevant(story, ro) });
+  assert.equal(carried.title, 'Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros');
+  assert.equal(carried.excerpt, 'Junta de Política y Regulación Financiera y Monetaria · JPRFM-2026-051-F. Registro Oficial, Quinto Suplemento No. 410.');
+  // Una nota ya en el formato nuevo, o un titular cualquiera con dos puntos, no se toca.
+  assert.equal(readableNorm(carried), carried);
+  const press = { title: 'Superintendencia de Bancos: “Las instituciones financieras tienen el músculo suficiente”' };
+  assert.equal(readableNorm(press), press);
 });
 
 // Muestras de titulares pertinentes (true) y de ruido (false) de la verificación de fuentes, por fuente.
@@ -303,7 +402,7 @@ const SAMPLES = [
   ["la-republica","Plata anunció que elevará su compromiso de inyección de capital a US$400 millones",null,true],
   ["la-republica","El dólar se cotiza más de $7 al alza, mientras estiman nueva subida de tasas de la FED",null,false],
   ["la-republica","Oro cae por debajo de los US$3.800 mientras la FED da señales de subida en las tasas",null,false],
-  ["la-republica","Banco Popular tuvo una utilidad neta acumulada de $50.000 hasta septiembre",null,false],
+  ["la-republica","Banco Popular tuvo una utilidad neta acumulada de $50.000 hasta septiembre",null,true],
   ["expansion-mx","Ley de Economía Digital desempolva a CoDi: bancos facilitarán su uso a partir de diciembre",null,true],
   ["expansion-mx","Quiebra de Ueno Bank exhibe fallas de supervisión y corrupción en Paraguay, advierte Moody’s",null,true],
   ["expansion-mx","Ley de economía digital: los riesgos que enfrentarán los usuarios con más pagos con QR y transferencias",null,true],
@@ -321,11 +420,6 @@ const SAMPLES = [
   ["diario-financiero","Comisión de Hacienda avanza en votación de reforma MK4 y aprueba creación del Fonavi",null,false],
   ["diario-financiero","CMPC vende toda su operación forestal en Argentina por US$ 170 millones",null,false],
   ["diario-financiero","Nuevo proyecto con viviendas y hotel a pasos de mall Alto Las Condes",null,false],
-  ["contxto","FinMaq recibe $6,5 millones de dólares para financiar maquinaria a pequeñas empresas en Colombia",null,true],
-  ["contxto","Las fintech se abren paso en Venezuela en medio del proceso de reconstrucción",null,true],
-  ["contxto","Clara cierra una ronda Serie C de $65 millones de dólares para expandir su plataforma financiera en Latinoamérica",null,true],
-  ["contxto","La edtech hackÜ refuerza su apuesta por el mercado mexicano",null,false],
-  ["contxto","Rappi y bebbia se alían en México para llevar la purificación de agua a su plataforma",null,false],
   ["endeavor-ar","Endeavor Catalyst cierra su Fondo V de USD 320 millones: desde 2011 ya invirtió en 21 compañías argentinas",null,true],
   ["endeavor-ar","Nuevos miembros del Board de Endeavor Argentina",null,false],
   ["endeavor-ar","Los fundadores de Tiendanube fueron elegidos “Emprendedores Endeavor del Año”",null,false],
@@ -477,7 +571,196 @@ const SAMPLES = [
   ["endeavor-prensa","¡Melendi ahora con Cashea por tiempo limitado!",null,false],
   ["endeavor-prensa","Cashea premiará a usuarios nivel 6 con “Mi pase”",null,false],
   ["endeavor-prensa","Cashea alista nueva etapa para ofrecer financiamiento de vehículos y viviendas en Venezuela: los detalles",null,true],
-  ["endeavor-prensa","Buen Fin: las pymes pueden competir con las grandes cadenas sin sacrificar sus márgenes: Kueski",null,true]
+  ["endeavor-prensa","Buen Fin: las pymes pueden competir con las grandes cadenas sin sacrificar sus márgenes: Kueski",null,true],
+  // Auditoría de filtros (19-11-2026): titulares reales que el filtro descartaba (true) y ruido que debe seguir fuera (false),
+  // tomados de los descartes de cada fuente. Ecuador: la banca como negocio (crédito informal, bolsa, banca pública).
+  ["primicias","Chulco digital crece en Ecuador con tasas de hasta 2.000%; uno de cada tres deudores ha tenido que vender sus bienes para pagar","https://www.primicias.ec/economia/nota/",true],
+  ["primicias","Celec reactiva la construcción de hidroeléctrica San Antonio, en Cañar, con un presupuesto de USD 19 millones","https://www.primicias.ec/economia/nota/",false],
+  ["primicias","Autoriza a la colombiana Nutresa la compra de La Universal en Ecuador","https://www.primicias.ec/economia/nota/",false],
+  ["forbes-ec","Trae nuevos aires a la Bolsa de Valores Guayaquil",null,true],
+  ["forbes-ec","El banco que hizo caer al Presidente de Paraguay, Santiago Peña: toda la cronología",null,false],
+  ["reguladores-prensa","Créditos de hasta $ 1,5 millones para pymes: CFN aprueba reglamento para canalizar $ 203 millones del BID",null,true],
+  ["reguladores-prensa","Biess crea plan CrediCasa con el 7 % de interés para migrantes en el exterior",null,true],
+  ["reguladores-prensa","Fundación Ana y Banco Atlántida firman acuerdo para apoyar con microcréditos a mujeres emprendedoras",null,false],
+  ["reguladores-prensa","Caso La Reina: dictan prisión preventiva para Navila Dieb por presunto lavado de activos",null,false],
+  ["mef","En el gobierno de Daniel Noboa crece el dinamismo económico: USD 5.487 millones en créditos de la banca pública para el sector productivo, inversión pública y desarrollo de los hogares",null,true],
+  ["bce-boletines","El crédito del sistema financiero creció 20,9% en octubre y alcanzó USD 4.978 millones",null,true],
+  ["bce-boletines","El BCE actualiza normativa aplicable a la recepción y canje de billetes de USD 50 y USD 100",null,true],
+  ["bce-boletines","El BCE impulsó la comercialización responsable de oro con jornadas de capacitación en tres provincias del país",null,false],
+  ["bce-boletines","Ecuador registró un superávit comercial de USD 3.308 millones entre enero y septiembre de 2026",null,false],
+  ["bce-publicaciones","Boletín de Reservas Internacionales. Octubre 2026",null,true],
+  ["bce-publicaciones","Perspectivas de Oferta y Demanda de Crédito. III Trimestre 2026",null,true],
+  ["bce-publicaciones","Evolución del Monto de Operaciones Activas y Pasivas. Octubre 2026",null,true],
+  ["bce-publicaciones","Boletín Analítico de Gestión de Liquidez. Septiembre 2026",null,true],
+  ["bce-publicaciones","Boletín Mensual de Inflación. Septiembre 2026",null,false],
+  ["bce-publicaciones","Estadísticas de Cemento en el Ecuador. Septiembre 2026",null,false],
+  // Fintech LATAM: banca y reguladores de la región, pagos inmediatos, fintech por nombre; fuera política monetaria y mercados.
+  ["diario-financiero","Banco Central alista regulación para impulsar el “Pix chileno” y stablecoins",null,true],
+  ["diario-financiero","Banco Central mantiene exigencia de capital para la banca, en medio de elevados riesgos financieros",null,true],
+  ["diario-financiero","IEF del Banco Central advierte por mayores riesgos financieros y deterioro en capacidad de pago de hogares y empresas",null,true],
+  ["diario-financiero","Santander redobla apuesta por el segmento joven y lanza hipotecario con plazo de hasta 40 años",null,true],
+  ["diario-financiero","¿Impacto del alza del dólar? Mercado se abre a la posibilidad de que el Banco Central suba la tasa este año",null,false],
+  ["diario-financiero","US$ 7.500 millones: Banco Central renueva acuerdo de swaps de monedas con su par de China",null,false],
+  ["diario-financiero","Ana Botín vuelve a apostar por Santander y sube su participación en el banco tras compra de acciones",null,false],
+  ["diario-financiero","Minutas de la Fed revelan que funcionarios ven necesarias nuevas alzas de tasas para contener la inflación",null,false],
+  ["el-economista","Transferencias bancarias con tu celular: qué cambia con las nuevas reglas de Banxico",null,true],
+  ["el-economista","Incidentes cibernéticos en el sistema financiero nacional se triplican; van 13 en el 2026",null,true],
+  ["el-economista","GAFI termina evaluación a México contra lavado de dinero",null,true],
+  ["el-economista","Ganancia MercadoLibre no alcanza expectativas por gasto en logística; ingresos superan estimaciones",null,true],
+  ["el-economista","Banco del Bienestar lanza nueva app: Así puedes transferir dinero, pagar y recibir depósitos",null,true],
+  ["el-economista","Financieras tradicionales y nuevas no han cerrado la brecha de crédito por falta de información: PayJoy",null,true],
+  ["el-economista","Conflicto en Medio Oriente exige cautela monetaria ante riesgos inflacionarios: Galia Borja",null,false],
+  ["el-economista","Renta 4 quiere ser Casa de Bolsa en México",null,false],
+  ["la-republica","Binance lanza 'Pay Later', la primera línea de pago diferido respaldada por cripto",null,true],
+  ["la-republica","Los bancos alcanzaron más de $12,8 billones en utilidades con corte al tercer trimestre del año",null,true],
+  ["la-republica","Banco Popular apuesta a duplicar su cartera de tarjetas de crédito con nuevo portafolio",null,true],
+  ["la-republica","El dólar cerró en $3.301,87, $4,8 por encima de la TRM del día, que se ubicó en $3.297,07",null,false],
+  ["la-republica","Preferencial de Davivienda y Grupo Argos, las acciones más valorizadas de la jornada",null,false],
+  ["la-republica","A pesar de crecimiento de la utilidad de Ecopetrol, su acción cae en la Bolsa de Colombia",null,false],
+  ["expansion-mx","Deutsche Bank en México: Vendió su licencia a Citi y los fideicomisos a CIBanco",null,true],
+  ["expansion-mx","Ganancias de los bancos en México caen 5% al cierre del tercer trimestre de 2026",null,true],
+  ["expansion-mx","Subgobernador de Banxico Omar Mejía descarta sorpresa en recorte de tasa a 6.25% y destaca prudencia del banco central",null,false],
+  ["expansion-mx","Peso se deprecia por sorpresa de Banxico y analistas prevén mayor debilidad para moneda mexicana",null,false],
+  ["bloomberg-negocios","Bancos esperan que México se mantenga fuera de la lista gris contra el lavado de dinero",null,true],
+  ["bloomberg-negocios","México inicia cuenta regresiva para decidir los negocios que ya no aceptarán efectivo",null,true],
+  ["bloomberg-negocios","El Niño golpeará la estabilidad de los bancos en Latinoamérica y estos son los países con más riesgo",null,true],
+  ["bloomberg-negocios","Banco central colombiano no sorprendió al mercado: mantuvo tasas en 12,25%",null,false],
+  ["bloomberg-negocios","Cotización Banco de Bogota SA - BOGOTA hoy 2026-11-13",null,false],
+  ["bloomberg-negocios","Vaca Muerta: Techint, de Paolo Rocca, gana un contrato clave para Argentina LNG tras perder tres licitaciones",null,false],
+  // Pagos y Cripto: huecos de plurales, autoridades y temas regulatorios; fuera rankings, salidas a bolsa y geografías ajenas.
+  ["expansion-banca","El Banco de España da a Monei la categoría de entidad de pago",null,true],
+  ["expansion-banca","Visa incorpora los proveedores de pago en su programa de agentes",null,true],
+  ["expansion-banca","Santander elige al nuevo responsable de Riesgos de su banca de inversión",null,false],
+  ["thebanker","ECB president Lagarde to step down in February; Lloyds shares drop 6% despite stronger Q3 earnings",null,true],
+  ["thebanker","Lagarde’s early exit: ‘I don’t think I can remain neutral’",null,true],
+  ["thebanker","Wall Street banks seek higher Anthropic IPO price despite AI sell-off",null,false],
+  ["thebanker","Top 200 Latin American banks 2026: Rankings and performance",null,false],
+  ["americanbanker","Fitch downgrades 4 IMBs over high debt levels",null,true],
+  ["americanbanker","These are the best places for young professionals to work in 2026",null,false],
+  ["americanbanker","What banks have at stake as Anthropic goes public",null,false],
+  ["americanbanker","Nvidia says leadership crisis won’t derail AI capacity work",null,false],
+  ["pymnts","The Fed Is Drawing a Line Between New Money and Trusted Money",null,true],
+  ["pymnts","Snapchat Deploys New AI Tools for Brands and Creators",null,false],
+  ["reuters-cripto","EXCLUSIVE: Italian court places Revolut unit under supervision over money-laundering failings",null,true],
+  ["reuters-cripto","Israel launches ground operation in central Gaza, dozens flee",null,false],
+  ["expansion-cripto","Fazil Crypto consigue el pasaporte europeo para operar en 30 países del EEE","https://www.expansion.com/mercados/criptomonedas/2026/11/06/nota.html",true],
+  ["expansion-cripto","El gigante cripto Ripple lanza su propio banco","https://www.expansion.com/mercados/criptomonedas/2026/10/27/nota.html",true],
+  ["expansion-cripto","Los máximos del dólar ahondan los mínimos del oro y del bitcoin","https://www.expansion.com/mercados/criptomonedas/2026/11/14/nota.html",false],
+  ["coindesk","Circle turns to DBS as banks build rival digital payment systems across Asia","https://www.coindesk.com/business/2026/11/18/nota",true],
+  ["coindesk","CFTC nominee questions public benefit of prediction markets as legal fight grows","https://www.coindesk.com/policy/2026/11/18/nota",true],
+  ["coindesk","Predictions platform Kalshi complies with order to halt Trump mention contracts","https://www.coindesk.com/business/2026/11/18/nota",false],
+  ["theblock","Trump’s CFTC picks face Senate scrutiny as prediction market turf war heats up","https://www.theblock.co/news/regulation/nota",true],
+  ["theblock","Robinhood shrugs off Kalshi equities threat as Mizuho sees 86% HOOD upside","https://www.theblock.co/news/business/nota",false],
+  ["chainalysis","Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",null,true],
+  ["chainalysis","Western Europe’s $2 Trillion Crypto Economy Holds Firm",null,false],
+  ["chainalysis","South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",null,false],
+  // Fuentes nuevas de Fintech LATAM: iProUP y Latam Fintech Hub (búsquedas de Google News medidas el 19 de noviembre de 2026).
+  ["iproup","Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X",null,true],
+  ["iproup","Tres bancos argentinos se unen para pelear con Mercado Pago",null,true],
+  ["iproup","Cambian las transferencias y pagos QR tras nueva normativa del BCRA",null,true],
+  ["iproup","Supervielle lanza PollenX, su plataforma de banco como servicio",null,true],
+  ["iproup","Banco Mundial evalúa usar USDC para enviar dinero a países en desarrollo",null,true],
+  ["iproup","Licencias bancarias, crédito y cripto: los pedidos fintech al BCRA",null,true],
+  ["iproup","Qué billetera virtual paga más en noviembre 2026",null,false],
+  ["iproup","Cuánto ganaron los usuarios de Mercado Pago en 2025",null,false],
+  ["iproup","Cuándo es el Argentina Fintech Forum 2026",null,false],
+  ["iproup","Mastercard lanza tarjeta ultra exclusiva en Argentina con beneficios clave",null,false],
+  ["latamfintech","Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark para facilitar el acceso a vehículos en México",null,true],
+  ["latamfintech","Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",null,true],
+  ["latamfintech","Las denuncias por fraude en transferencias electrónicas se duplicaron en Bogotá, Cali y Barranquilla",null,true],
+  ["latamfintech","El Salvador Fintech Forum 2026",null,false],
+  ["latamfintech","🚀 Los 10 neobancos más valiosos de América Latina en 2026",null,false],
+  ["latamfintech","Core bancario desde cero: cómo construir un banco desde la base | Mambu",null,false],
+  ["latamfintech","Podcast: Endeudados by CallbookAI",null,false],
+  ["latamfintech","Equity Link",null,false],
+  ["latamfintech","Open Finance Connect Chile 2027",null,false],
+  // Fuentes nuevas de Ecuador (búsquedas de Google News y feeds medidos el 19 de noviembre de 2026).
+  ["elcomercio-ec","Cinco cambios para los usuarios de tarjetas de crédito y de débito en Ecuador",null,true],
+  ["elcomercio-ec","¿Vives fuera de Ecuador? Así puedes acceder al nuevo crédito del Biess para comprar casa",null,true],
+  ["elcomercio-ec","Caída de Microsoft paraliza bancos, tribunales e instituciones de Asia-Pacífico",null,false],
+  ["elcomercio-ec","El Banco Central Europeo presiona para lanzar el euro digital",null,false],
+  ["elcomercio-ec","Cómo atenderán los bancos privados durante el feriado de noviembre",null,false],
+  ["teleamazonas","Nueva regulación para tarjetas de crédito en Ecuador: reglas, prohibiciones y plazos",null,true],
+  ["teleamazonas","Crédito en Ecuador aumentó más de 20% en octubre de 2026; comercio recibió más financiamiento",null,true],
+  ["teleamazonas","Superintendencia alerta sobre 134 entidades no autorizadas para ofrecer créditos en Ecuador",null,true],
+  ["teleamazonas","Falla informática afecta a miles de clientes de bancos en Estados Unidos",null,false],
+  ["teleamazonas","Senado brasileño aprueba recorte de gastos de Lula para contener la deuda pública",null,false],
+  ["teleamazonas","Banco Central de Paraguay devuelve parte de sus ahorros a los clientes de Ueno Bank",null,false],
+  ["lahora","Morosidad, $1.266 millones en créditos castigados y el plazo de 2027: el ultimátum del FMI a las cooperativas en Ecuador",null,true],
+  ["lahora","Deuda interna al 9%: el sobrecosto de financiarse en Ecuador y más de $7.700 millones previstos para 2027",null,true],
+  ["lahora","Banco del Pacífico reactiva créditos para pymes ante el Fenómeno de El Niño",null,true],
+  ["lahora","Santiago Peña renuncia a la Presidencia de Paraguay en medio de crisis bancaria",null,false],
+  ["lahora","Ambato: Banco de Alimentos lanza campaña 'Elige Alimentar'",null,false],
+  ["lahora","Banco de Sangre de Quito pide donantes tras el feriado",null,false],
+  ["teleamazonas","Banco Mundial proyecta alza del 18 % en precios de alimentos básicos hasta 2027 por El Niño",null,false],
+  ["teleamazonas","Ecuador recibirá hasta USD 30 millones del Banco Mundial por reducir emisiones en el transporte",null,true],
+  ["elcomercio-ec","Ley para hacer obras con crédito tributario",null,false],
+  ["elcomercio-ec","Bancada oficialista rechaza reforma de la ley de bancos",null,false],
+  ["elcomercio-ec","Producto financiero Ella ofrece créditos de hasta 1,5 millones de dólares",null,true],
+  ["forbes-ec","Banco de Semillas de Pichincha amplía su colección de germoplasma",null,false],
+  ["forbes-ec","Banco Pichincha cultiva la confianza de los agronegocios ecuatorianos",null,true],
+  ["eluniverso","El banco de suplentes de Emelec y el crédito de sus jugadores",null,false],
+  ["cfn","CFN y BID impulsan a las mujeres ecuatorianas con el producto financiero “ELLA”","https://www.cfn.fin.ec/cfn-y-bid-impulsan-a-las-mujeres-ecuatorianas-con-el-producto-financiero-ella/",true],
+  ["cfn","LA CFN MANTIENE LA CALIFICACIÓN DE RIESGO “AAA-” Y FORTALECE SU CAPACIDAD PARA IMPULSAR EL DESARROLLO PRODUCTIVO DEL ECUADOR","https://www.cfn.fin.ec/la-cfn-b-p-mantiene-su-solidez/",true],
+  ["cfn","SOLICITUD DE OFERTAS FORTALECIMIENTO TECNOLÓGICO DE LA CFN B.P. MEDIANTE LA ADQUISICIÓN DEL LICENCIAMIENTO PERPETUO DE MICROSOFT OFFICE","https://www.cfn.fin.ec/solicitud-de-ofertas/",false],
+  ["cfn","GRANDES OPCIONES DE INVERSIÓN Y CRECIMIENTO  EN LA SUBASTA DE BIENES 2026","https://www.cfn.fin.ec/subasta/",false],
+  ["cfn","MÁS PRESENTES QUE NUNCA","https://www.cfn.fin.ec/mas-presentes-que-nunca/",false],
+  ["uafe","Ecuador y Estados Unidos fortalecen la lucha contra el lavado de activos con tecnología avanzada e inteligencia artificial","https://www.uafe.gob.ec/nota/",true],
+  ["uafe","Más control financiero y transparencia: Gobierno Nacional articula a cuatro instituciones para detectar riesgos de corrupción y lavado de activos","https://www.uafe.gob.ec/nota/",true],
+  ["uafe","Registro del Manual de Prevención","https://www.uafe.gob.ec/registro-del-manual-de-prevencion/",false],
+  ["uafe","Solicitud de Pronunciamiento de Actividad Sujeta a Reporte","https://www.uafe.gob.ec/solicitud/",false],
+  ["uafe","Ecuador fortalece el control de sus fronteras con el Segundo Operativo Intensificado de 2026","https://www.uafe.gob.ec/nota/",false],
+  ["uafe","UAFE abre convocatoria para reconocer buenas prácticas de transparencia y prevención del lavado de activos","https://www.uafe.gob.ec/nota/",false],
+  // Fuentes nuevas de Pagos y Cripto, y Expansión · Banca acotada a pagos y regulación (feeds medidos el 19 de noviembre de 2026).
+  ["decrypt","Fed's Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",null,true],
+  ["decrypt","Scattered Spider Hacker Sentenced to 6 Years Over $11.6M in Stolen Crypto",null,true],
+  ["decrypt","World Bank Taps Circle and Citi to Test Stablecoins for Development Payments",null,true],
+  ["decrypt","Former Robinhood Engineer Pleads Guilty to Crypto Insider Trading Scheme",null,true],
+  ["decrypt","Judge Acquits MIT Brothers in $25M Ethereum MEV Case, Ending Prosecution",null,true],
+  ["decrypt","Bitcoin Tanks Ahead of Anthropic’s IPO. Should We Really Blame AI?",null,false],
+  ["decrypt","Bitcoin Miners Are Selling Their Stacks to Fund the AI Boom",null,false],
+  ["decrypt","Lucky Trader Banks 66,000% Profit on GTA 6 Meme Coin Ticker Confusion",null,false],
+  ["decrypt","Morning Minute: The CFTC Officially Greenlights Perps in the US, Starting with Backpack",null,false],
+  ["decrypt","AI Will Make the Next 12 Months 'a Slaughterhouse' for Crypto Security: Anchorage Exec",null,false],
+  ["decrypt","Nvidia Board Shuts Down Jensen Huang Comeback, Launches Search for New CEO",null,false],
+  ["decrypt","Bitcoin's $2 Billion Liquidation Weekend Leaves Traders Watching $60,000",null,false],
+  ["occ","Comptroller of the Currency Issues Statement on FinCEN Customer Due Diligence","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-101.html",true],
+  ["occ","Agencies Extend Comment Period for Proposed Third-Party Risk Management Guidance","https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-99.html",true],
+  ["occ","OCC Issues Supervisory Framework on Bank Use of Super Intelligence","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-95.html",true],
+  ["occ","OCC’s Semiannual Risk Perspective Highlights Key Risks in Federal Banking System","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-100.html",true],
+  ["occ","Comptroller Gould Emphasizes OCC’s Continued Momentum to Rightsize Regulation and Reform Federal Banking System","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-102.html",false],
+  ["occ","OCC Releases CRA Performance Evaluations for 19 National Banks and Federal Savings Associations","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-94.html",false],
+  ["occ","OCC Raises Concerns with California's Climate Disclosure Laws","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-93.html",false],
+  ["occ","OCC Announces Enforcement Actions for October 2026","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-90.html",false],
+  ["thepaypers","Mastercard launches Mastercard Accept for card acceptance on phones",null,true],
+  ["thepaypers","Qonto receives credit institution licence from ACPR and ECB",null,true],
+  ["thepaypers","DBS and Kinexys by J.P. Morgan launch 24/7 tokenised deposit transfers",null,true],
+  ["thepaypers","Wise settles Belgian AML probe without admitting wrongdoing",null,true],
+  ["thepaypers","The Paypers",null,false],
+  ["thepaypers","AI payment analytics and orchestration | Gr4vy",null,false],
+  ["thepaypers","Fragmented payments stack costs | DECTA webinar recap",null,false],
+  ["thepaypers","Why AI Model orchestration matters in financial services",null,false],
+  ["fintechfutures","French fintech Qonto secures full banking licence",null,true],
+  ["fintechfutures","Ripple secures final OCC authorisation to establish Ripple National Trust Bank",null,true],
+  ["fintechfutures","Western Union announces termination of $500m Intermex acquisition agreement",null,true],
+  ["fintechfutures","Commerzbank, Deutsche Bank and DSGV form anti-financial crime JV",null,true],
+  ["fintechfutures","ICYMI fintech funding round-up: Mural, ScribeUp, Vrtx, and more",null,false],
+  ["fintechfutures","October 2026: Top five banking technology stories of the month",null,false],
+  ["fintechfutures","PayTech Awards USA 2026 shortlist announced",null,false],
+  ["fintechfutures","What the FinTech? | S.7 Episode 23 | The next generation of business banking in the US",null,false],
+  ["fintechfutures","White paper: One region, many markets - building payments infrastructure for ASEAN scale",null,false],
+  ["fintechfutures","Banking Technology Magazine November 2026 issue out now",null,false],
+  ["fintechfutures","Why banks won’t change",null,false],
+  ["expansion-banca","Monzo ficha en N26 y Revolut para su lanzamiento en España",null,true],
+  ["expansion-banca","Qonto dará el salto a la banca con depósitos y anticipo de facturas en 2027",null,true],
+  ["expansion-banca","El BCE pide a los bancos que revisen sus modelos de gobernanza para controlar la IA",null,true],
+  ["expansion-banca","JPMorgan sufre interrupciones en su servicio de banca online",null,true],
+  ["expansion-banca","Bankinter quiere que los negocios de Portugal e Irlanda se autofinancien",null,false],
+  ["expansion-banca","DBRS eleva a positiva la perspectiva del rating de Abanca",null,false],
+  ["expansion-banca","La Audiencia de A Coruña condena a Abanca a devolver 8.800 euros a una víctima de fraude bancario",null,false],
+  ["expansion-banca","Crédit Agricole propone fusionar su filial en Italia con BPM",null,false],
+  ["expansion-banca","Santander sube un 5% la oferta en acciones por su filial de Brasil ante la evolución de los mercados",null,false],
+  ["expansion-banca","La apuesta de HSBC por los bots podría transformar la batalla por el negocio de la gestión de patrimonios",null,false]
 ];
 test('cada filtro deja pasar las muestras pertinentes del informe y descarta su ruido', () => {
   for (const [id, title, url, expected] of SAMPLES) {
@@ -486,7 +769,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'reguladores-prensa', 'seps', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'thepaypers', 'fintechfutures', 'occ', 'decrypt', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
@@ -501,6 +784,40 @@ test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
   assert.equal(ok('finextra', 'Nomupay joins Amazon Web Services marketplace'), false);
   assert.equal(ok('finextra', 'Pliant joins UK banks on government payments framework'), true);
   assert.equal(relevant({ title: 'Banco nuevo', excerpt: '', url: 'no es una url' }, sourceById('primicias')), false);
+});
+
+test('auditoría de filtros: extracto de LatamList, ruta de Reuters a Pagos y contrataciones del Registro Oficial', () => {
+  // LatamList lee titular y extracto: la ronda de una fintech entra aunque el titular solo diga «raises»; una proptech no.
+  const latamlist = sourceById('latamlist');
+  assert.equal(relevant({ title: 'Nova raises $24M Series A led by Canaan', excerpt: 'Brazilian fintech Nova raised $24M in a Series A round led by Canaan, with participation from Propel Venture…', url: 'https://latamlist.com/nota' }, latamlist), true);
+  assert.equal(relevant({ title: 'Vuun raises $525K pre-seed round led by 500 Global', excerpt: 'Colombian proptech Vuun raised $525K in a pre-seed round led by 500 Global, with participation from Reach and…', url: 'https://latamlist.com/nota' }, latamlist), false);
+  // Reuters · Cripto: la supervisión de Revolut va a Pagos; lo que nombra algo cripto se queda en Cripto.
+  const reuters = sourceById('reuters-cripto');
+  assert.equal(channelFor({ title: 'EXCLUSIVE: Italian court places Revolut unit under supervision over money-laundering failings' }, reuters), 'pagos');
+  assert.equal(channelFor({ title: 'UAE court orders freeze on crypto tokens stolen from Binance wallets' }, reuters), 'cripto');
+  assert.equal(channelFor({ title: 'PNC to offer stablecoin payments to clients in Coinbase partnership' }, reuters), 'cripto');
+  // Registro Oficial: la selección de una firma auditora es trámite aunque la emita un órgano financiero.
+  const norm = text => registroOficialRelevant({ organ: 'Corporación del Seguro de Depósitos (COSEDE)', code: 'COSEDE-DIR-2026-031', text });
+  assert.equal(norm('Se selecciona como primera opción a la firma HLB Consultores para la auditoría externa'), false);
+  assert.equal(norm('Se actualizan los valores de la cobertura del seguro de depósitos'), true);
+});
+
+test('Google News: las consultas con intitle: no pasan de 9 términos y todas piden un período', () => {
+  for (const item of SOURCES.filter(source => source.adapter === 'google' && !source.search)) {
+    const query = new URL(item.url).searchParams.get('q');
+    assert.match(query, /\bwhen:\d+d\b/, `${item.id}: sin when:`);
+    // Con más de 9 términos intitle: Google deja de respetar when: (medido en noviembre de 2026).
+    assert.ok((query.match(/intitle:/g) || []).length <= 9, `${item.id}: demasiados intitle:`);
+  }
+  // Las fuentes que estaban saturadas o mal apuntadas: Bloomberg Línea por búsqueda (ya no la sección Negocios), Ecuador en el
+  // titular y sin Expreso, Reuters con los términos en el titular.
+  assert.equal(sourceById('bloomberg-negocios').adapter, 'google');
+  assert.deepEqual(sourceById('bloomberg-negocios').allowHosts, ['bloomberglinea.com']);
+  const q = id => new URL(sourceById(id).url).searchParams.get('q');
+  assert.match(q('bloomberg-ecuador'), /intitle:Ecuador/);
+  assert.doesNotMatch(q('bloomberg-ecuador'), /expreso/);
+  assert.match(q('reuters-cripto'), /intitle:crypto/);
+  assert.match(q('reguladores-prensa'), /when:7d/);
 });
 
 test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes retiradas', () => {
@@ -520,7 +837,7 @@ test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes 
   assert.equal(sourceById('bce-publicaciones').limit, 3);
   assert.deepEqual([sourceById('endeavor-ar').kind, sourceById('endeavor-ar').tier, sourceById('endeavor-ar').limit], ['organization', 3, 2]);
   assert.deepEqual([sourceById('fed').kind, sourceById('fed').tier, sourceById('fed').limit], ['official', 1, 2]);
-  for (const retired of ['asobanca', 'banecuador', 'cfn', 'uafe', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
+  for (const retired of ['asobanca', 'banecuador', 'contxto', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
 });
 
 // ---------------------------------------------------------------------------------------------------------
@@ -595,6 +912,117 @@ test('composición del canal: tope por fuente en cada período, tope de canal y 
   // composeEdition compone cada canal por separado.
   const edition = composeEdition([...few, { ...make('c', 2), category: 'cripto' }], { now });
   assert.deepEqual([...new Set(edition.map(story => story.category))].sort(), ['cripto', 'pagos']);
+});
+
+test('tope por tema: el hackeo de Binance no ocupa el canal de Cripto; las notas oficiales no cuentan', () => {
+  const crypto = (sourceId, hoursAgo, title, extra = {}) => make(sourceId, hoursAgo, { id: `${sourceId}-${hoursAgo}`, category: 'cripto', tier: 1, title, source: sourceId, ...extra });
+  const days = 24;
+  // Titulares reales de la edición publicada el 19 de noviembre de 2026, en el período de 15 a 30 días.
+  const heist = [
+    crypto('reuters-cripto', 20 * days, 'Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest', { via: 'Vía Google News' }),
+    crypto('reuters-cripto', 20 * days + 1, 'Blockchain analysis firm TRM says North Korea behind Binance crypto theft', { via: 'Vía Google News' }),
+    crypto('cinco-dias-cripto', 20 * days + 2, 'Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance', { excerpt: 'El robo.' }),
+    crypto('cinco-dias-cripto', 19 * days, 'Las claves del robo del siglo en Binance: qué ocurrió, quién está detrás', { excerpt: 'Las claves.' }),
+    crypto('expansion-cripto', 20 * days + 3, 'El robo a Binance dispara la alarma sobre la seguridad cripto', { excerpt: 'La alarma.' }),
+    crypto('expansion-cripto', 20 * days + 4, 'Acusan a Corea del Norte de estar detrás del hackeo a Binance'),
+    crypto('ft-cripto', 17 * days, 'What caused the $6.3bn Binance hack?', { excerpt: 'The hack.' }),
+    crypto('ft-cripto', 17 * days + 5, 'Binance users pull $5bn as crypto exchange restarts services after heist'),
+    crypto('bloomberg-cripto', 18 * days, 'Binance reanuda los retiros mientras persisten las dudas sobre el ataque informático', { via: 'Vía Google News' }),
+  ];
+  const others = [
+    crypto('reuters-cripto', 17 * days + 2, 'Gone in 20 minutes: How the biggest heist in crypto history unfolded'),
+    crypto('reuters-cripto', 16 * days, 'PNC to offer stablecoin payments to clients in Coinbase partnership'),
+    crypto('bis-discursos', 18 * days, 'Piero Cipollone: What the Binance heist teaches central banks', { kind: 'official' }),
+    crypto('reuters-cripto', 10, 'UAE court orders freeze on crypto tokens stolen from Binance wallets'),
+    crypto('reuters-cripto', 12, 'After $6.3 billion crypto heist, Binance plans Asia expansion'),
+  ];
+  const options = { now, cap: 80, limitFor: () => 25, perTopic: 3 };
+  const edition = composeEdition([...heist, ...others], options);
+  const named = edition.filter(story => /Binance/.test(story.title) && story.kind !== 'official');
+  // Como mucho tres por período: tres del período de 15 a 30 días (con extracto y enlace directo primero) y las dos de hoy.
+  assert.equal(named.filter(story => periodIndex(story, now) === 3).length, 3);
+  assert.ok(named.filter(story => periodIndex(story, now) === 3).every(story => story.excerpt));
+  assert.equal(named.filter(story => periodIndex(story, now) === 0).length, 2);
+  // Lo que no nombra a Binance y la nota oficial siguen.
+  for (const story of others) assert.ok(edition.includes(story), story.title);
+  // Sin tope por tema, todo entra.
+  assert.equal(composeEdition([...heist, ...others], { now, cap: 80, limitFor: () => 25 }).length, heist.length + others.length);
+});
+
+test('reserva oficial: el tope de canal no expulsa a la Reserva Federal ni al FSB frente a medios prolíficos', () => {
+  const judgedAt = new Date(now).toISOString();
+  const judged = score => ({ score, why: '', cluster: 'x', model: 'claude-opus-5-5', at: judgedAt });
+  const media = Array.from({ length: 20 }, (_, s) => Array.from({ length: 5 }, (_, i) => make(`medio${s}`, 1 + i + s / 100, { tier: 2, editorial: judged(80) }))).flat();
+  const fed = make('fed', 3, { kind: 'official', tier: 1, title: 'Federal Reserve Board announces pricing, effective January 1, 2027, for payment services', editorial: judged(40) });
+  const fsb = make('fsb', 4, { kind: 'official', tier: 1, title: 'Further work by jurisdictional authorities and private sector necessary to enhance cross-border payments', editorial: judged(40) });
+  const base = { now, cap: 80, limitFor: () => 5, threshold: 30 };
+  const without = composeChannel([...media, fed, fsb], base);
+  assert.equal(without.length, 80);
+  assert.ok(!without.includes(fed) && !without.includes(fsb));
+  const reserve = story => story.kind === 'official' && story.tier === 1;
+  const withReserve = composeChannel([...media, fed, fsb], { ...base, reserve, reserveShare: 0.25 });
+  assert.equal(withReserve.length, 80);
+  assert.ok(withReserve.includes(fed) && withReserve.includes(fsb));
+  // Lo que la reserva no usa vuelve al canal: sin oficiales, 80 notas de medios.
+  assert.equal(composeChannel(media, { ...base, reserve, reserveShare: 0.25 }).length, 80);
+});
+
+test('relleno: si el canal tiene sitio, el tope por fuente no deja fuera notas que pasaron el filtro', () => {
+  const list = ['df', 'la-republica'].flatMap(id => Array.from({ length: 6 }, (_, i) => make(id, 1 + i * 2 + (id === 'df' ? 0 : 1))));
+  const blog = Array.from({ length: 4 }, (_, i) => make('blog', 2 + i, { tier: 3 }));
+  const base = { now, cap: 10, limitFor: () => 2 };
+  assert.equal(composeChannel(list, base).length, 4);
+  const filled = composeChannel([...list, ...blog], { ...base, refill: true });
+  assert.equal(filled.filter(story => story.tier !== 3).length, filled.length - filled.filter(story => story.tier === 3).length);
+  assert.ok(filled.length <= 10);
+  assert.equal(filled.filter(story => story.sourceId !== 'blog').length, filled.length - filled.filter(story => story.sourceId === 'blog').length);
+  // El relleno no suma nivel 3: solo vuelven notas de las fuentes cortadas por su tope.
+  assert.equal(filled.filter(story => story.sourceId === 'blog').length, composeChannel([...list, ...blog], base).filter(story => story.sourceId === 'blog').length);
+  assert.equal(composeChannel(list, { ...base, refill: true }).length, 10);
+});
+
+test('tope por edición: los datos del BCE dejan una nota por serie, la más reciente', () => {
+  assert.equal(editionSeries('Boletín Monetario Semanal. 13 de Noviembre 2026'), 'boletin monetario semanal');
+  assert.equal(editionSeries('Boletín Monetario Semanal 6 de noviembre de 2026'), 'boletin monetario semanal');
+  assert.equal(editionSeries('Boletín de Reservas Internacionales. Octubre 2026'), 'boletin de reservas internacionales');
+  assert.equal(editionSeries('Perspectivas de Oferta y Demanda de Crédito. III Trimestre 2026'), 'perspectivas de oferta y demanda de credito');
+  assert.equal(editionSeries('Reporte Interactivo Mensual de Tasas de Interés'), 'reporte interactivo mensual de tasas de interes');
+  const data = (hoursAgo, title) => make('bce-publicaciones', hoursAgo, { category: 'regulacion', kind: 'official', title });
+  const list = [
+    data(48, 'Boletín Monetario Semanal. 13 de Noviembre 2026'), data(220, 'Boletín Monetario Semanal. 6 de Noviembre 2026'),
+    data(60, 'Reporte Interactivo Mensual de Tasas de Interés'), data(400, 'Reporte Interactivo Mensual de Tasas de Interés'),
+    data(100, 'Boletín de Reservas Internacionales. Octubre 2026'), make('seps', 5, { category: 'regulacion' }),
+  ];
+  const perEdition = story => (story.sourceId === 'bce-publicaciones' ? 1 : undefined);
+  assert.deepEqual(capPerEdition(list, perEdition).map(story => story.id).sort(), ['bce-publicaciones-100', 'bce-publicaciones-48', 'bce-publicaciones-60', 'seps-5']);
+});
+
+test('notas sin juicio: valen lo que suelen valer las de su fuente o el canal, no 50 fijos', () => {
+  const judgedAt = new Date(now).toISOString();
+  const judged = score => ({ score, why: '', cluster: `c${score}`, model: 'claude-opus-5-5', at: judgedAt });
+  const channel = [40, 45, 52, 70, 75].map((score, i) => make(`s${i}`, 2 + i, { editorial: judged(score) }));
+  const expected = expectedScore(channel);
+  assert.equal(expected(make('nueva', 1)), 52);
+  const weak = [35, 38, 40].map((score, i) => make('debil', 10 + i, { id: `debil-${i}`, editorial: judged(score) }));
+  assert.equal(expectedScore([...channel, ...weak])(make('debil', 1)), 38);
+  assert.equal(expectedScore([make('a', 1, { editorial: judged(90) })], 50)(make('b', 1)), 50);
+  // En la composición, la nota nueva de una fuente que suele puntuar bajo no pasa por delante de una juzgada con 45.
+  const fresh = make('debil', 1, { id: 'debil-nueva' });
+  const order = composeChannel([...channel, ...weak, fresh], { now, threshold: 30 }).map(story => story.id);
+  assert.ok(order.indexOf('s1-3') < order.indexOf('debil-nueva'), order.join(' '));
+  assert.ok(order.indexOf('debil-nueva') < order.indexOf('debil-0'), order.join(' '));
+});
+
+test('acumulación: la copia nueva de una nota ya publicada conserva su juicio y su cobertura', () => {
+  const feed = { id: 'medio', name: 'Medio', category: 'pagos', kind: 'news', tier: 2, access: 'open' };
+  const editorial = { score: 72, why: '', cluster: 'hecho', model: 'claude-opus-5-5', at: new Date(now).toISOString() };
+  const previous = [{ ...make('medio', 2), editorial, coverage: ['Reuters'] }, { ...make('medio', 3), title: 'Titular anterior', editorial }];
+  const fresh = [make('medio', 2), make('medio', 3)];
+  const result = accumulate(fresh, previous, feed, { now });
+  const same = result.find(story => story.id === 'medio-2'), changed = result.find(story => story.id === 'medio-3');
+  assert.deepEqual([same.editorial, same.coverage], [editorial, ['Reuters']]);
+  // Si el titular cambió, el juicio se vuelve a pedir.
+  assert.deepEqual([changed.title, changed.editorial], ['Nota medio 3', undefined]);
 });
 
 test('con ejecuciones diarias de feeds cortos, la acumulación deja material en 24 horas, 7, 15 y 30 días', () => {
@@ -701,6 +1129,78 @@ test('Endeavor: los nombres ambiguos y cortos exigen mayúscula, titular y conte
   assert.equal(tagOf('Insider: fintech raises funding round'), null);
 });
 
+test('Endeavor: los nombramientos y el equipo directivo cuentan como contexto de un nombre ambiguo', () => {
+  const titleOnly = title => matchEndeavor({ title, excerpt: '', category: 'endeavor' }, { titleOnly: true })?.company ?? null;
+  // Titulares reales (Revista Mercado e iProUP) que antes no entraban al canal Endeavor.
+  assert.equal(titleOnly('Pomelo nombró a Martín Zanella como nuevo Chief Financial Officer en su equipo directivo'), 'Pomelo');
+  assert.equal(titleOnly('Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X'), 'Pomelo');
+  assert.equal(titleOnly('Pomelo y DiDi Shop lanzan tarjetas de pago en México'), 'Pomelo');
+  // Otros nombres ambiguos con vocabulario de nombramiento, en español, inglés y portugués.
+  assert.equal(titleOnly('Clara nombra a una nueva directora financiera'), 'Clara');
+  assert.equal(titleOnly('Bold designa nuevo gerente general para Colombia'), 'Bold');
+  assert.equal(titleOnly('Klar Appoints Former Banamex Executive as Chief Operating Officer'), 'Klar');
+  assert.equal(titleOnly('Cora contrata ex-executivo do Itaú como novo CFO'), 'Cora');
+  assert.equal(titleOnly('Pomelo: Martín Zanella asume como CFO'), 'Pomelo');
+  // El vocabulario de nombramientos no abre falsos positivos: la fruta, un verbo sin complemento, «named» y «head of» sueltos,
+  // y una persona junto al nombre siguen fuera.
+  assert.equal(titleOnly('Pomelo: el cítrico que el chef incorpora a sus postres'), null);
+  assert.equal(titleOnly('Pomelo: beneficios de incorporar esta fruta a tu dieta'), null);
+  assert.equal(titleOnly('Pomelo, la fruta rica en vitamina C que conviene comer en invierno'), null);
+  assert.equal(titleOnly('Jugo de pomelo: el CEO de una cadena explica su éxito'), null);
+  assert.equal(titleOnly('A cat named Pomelo wins hearts online'), null);
+  assert.equal(titleOnly('Head of State visits Tala region'), null);
+  assert.equal(titleOnly('Clara López asume como directora general del instituto'), null);
+  assert.equal(ENDEAVOR_NOISE.test('Pomelo: el cítrico que el chef incorpora a sus postres'), true);
+  assert.equal(ENDEAVOR_CONTEXT.test('Pomelo: beneficios de incorporar esta fruta a tu dieta'), false);
+});
+
+test('Endeavor: la empresa al final tras el nombre de una persona, altas y salidas con su cargo, y los falsos positivos que siguen fuera', () => {
+  const titleOnly = title => matchEndeavor({ title, excerpt: '', category: 'endeavor' }, { titleOnly: true })?.company ?? null;
+  // La empresa al final, tras una persona y una preposición (nota real de noviembre de 2026).
+  assert.equal(titleOnly('Martín Zanella, nuevo CFO de Pomelo'), 'Pomelo');
+  assert.equal(titleOnly('Nueva Alianza Regional con Klar Para Pagos'), 'Klar');
+  // Altas, ascensos y salidas, siempre con su cargo o su equipo.
+  assert.equal(titleOnly('Una ex Nubank se suma al equipo de Klar'), 'Klar');
+  assert.equal(titleOnly('Exdirectiva de Visa se suma a Pomelo como líder de riesgos'), 'Pomelo');
+  assert.equal(titleOnly('Bold elige a su nuevo CEO para la región'), 'Bold');
+  assert.equal(titleOnly('Tala: su jefa de producto asciende a vicepresidenta'), 'Tala');
+  assert.equal(titleOnly('Clip: renuncia su cofundador tras diez años'), 'Clip');
+  assert.equal(titleOnly('Ripio: el presidente deja el cargo'), 'Ripio');
+  assert.equal(titleOnly('Mendel transforma los viajes corporativos en Latam'), 'Mendel');
+  // Una palabra de producto junto al nombre no es un apellido; Mercado Bitcoin, con sus mayúsculas, no necesita contexto.
+  assert.equal(titleOnly('En seis meses, Klar Empresarial colocó 1,900 millones de pesos en líneas de crédito'), 'Klar');
+  assert.equal(titleOnly('Mercado Bitcoin sufre ataque de hacker y suspende depósitos y retiros'), 'Mercado Bitcoin');
+  assert.equal(titleOnly('El mercado bitcoin vuelve a caer'), null);
+  // Falsos positivos medidos en la búsqueda: lugar, metal, apodo entre comillas, persona y verbos sin cargo.
+  assert.equal(titleOnly('Santa Clara contratará a un gerente de sostenibilidad para dar seguimiento a los objetivos'), null);
+  assert.equal(titleOnly('San Clemente y Puerto Cobre contratan nuevo gerente'), null);
+  assert.equal(titleOnly('Cobre se desploma 5% mientras inversionistas abandonan apuesta por la IA'), null);
+  assert.equal(titleOnly('Cobre asciende a máximos del año en la LME'), null);
+  assert.equal(titleOnly('Jorge Campos explota contra las críticas al ‘Tala’ Rangel y lanza contundente mensaje'), null);
+  assert.equal(titleOnly('Clara Brugada renuncia a su cargo para buscar la candidatura'), null);
+  assert.equal(titleOnly('Clara Brugada, jefa de gobierno, deja el cargo'), null);
+  assert.equal(titleOnly('Mi vecina Clara se suma a la protesta'), null);
+  assert.equal(titleOnly('Clara renuncia a la final del torneo'), null);
+  assert.equal(titleOnly('Clara elige a sus amigas para el viaje'), null);
+  assert.equal(titleOnly('Lemon se suma a la dieta de los deportistas'), null);
+  assert.equal(titleOnly('Bitcoin Holders Face a Swap Deadline as Platform Launches Upgrade'), null);
+});
+
+test('Endeavor LATAM: las notas de nombramientos de Pomelo pasan el filtro de punta a punta', () => {
+  const prensa = sourceById('endeavor-prensa');
+  const rss = '<rss><channel>'
+    + '<item><title>Pomelo nombró a Martín Zanella como nuevo Chief Financial Officer en su equipo directivo - Revista Mercado</title><link>https://news.google.com/rss/articles/p1</link><pubDate>Tue, 29 Sep 2026 10:00:00 GMT</pubDate><source url="https://mercado.com.ar">Revista Mercado</source></item>'
+    + '<item><title>Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X - iProUP</title><link>https://news.google.com/rss/articles/p2</link><pubDate>Tue, 29 Sep 2026 11:00:00 GMT</pubDate><source url="https://www.iproup.com">iProUP</source></item>'
+    + '<item><title>Pomelo: beneficios de incorporar esta fruta a tu dieta - Clarín</title><link>https://news.google.com/rss/articles/p3</link><pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate><source url="https://www.clarin.com">Clarín</source></item>'
+    + '</channel></rss>';
+  const stories = parseFeed(rss, prensa).map(row => normalize(row, prensa, now)).filter(story => story && allowedHost(story, prensa) && relevant(story, prensa));
+  assert.deepEqual(stories.map(story => story.source).sort(), ['Revista Mercado', 'iProUP']);
+  for (const story of stories) {
+    assert.equal(ENDEAVOR_PROMO.test(story.title) || ENDEAVOR_MARKET_NOISE.test(story.title), false, story.title);
+    assert.equal(tagEndeavor(story).endeavor.company, 'Pomelo', story.title);
+  }
+});
+
 test('Endeavor: nombres del directorio sin aclaraciones y etiqueta recalculada en cada nota', () => {
   assert.deepEqual(endeavorNames({ name: 'Galgo (formerly Migrante)', slug: 'migrante' }), ['Galgo', 'Migrante']);
   assert.deepEqual(endeavorNames({ name: 'Wellhub (fmr. GymPass)', slug: 'wellhub' }), ['Wellhub', 'GymPass']);
@@ -717,31 +1217,54 @@ test('Endeavor: nombres del directorio sin aclaraciones y etiqueta recalculada e
 
 test('Endeavor: lotes de búsqueda por nombres con OR, rotación entre ejecuciones y canal propio', () => {
   const companies = searchCompanies();
-  assert.ok(companies.length >= 100 && companies.length <= 120, String(companies.length));
-  assert.ok(companies.every(item => item.vertical === 'fintech' || item.offices.includes('ecuador')));
+  assert.ok(companies.length >= 110 && companies.length <= 130, String(companies.length));
+  assert.ok(companies.every(item => item.vertical === 'fintech' || item.offices.includes('ecuador') || ENDEAVOR_SEARCH.slugs.includes(item.slug)));
+  // Todas las fintech de la red, las de Ecuador y las de pagos y comercio digital de otros sectores.
+  assert.equal(companies.filter(item => item.vertical === 'fintech').length, new Set(ENDEAVOR_COMPANIES.filter(item => item.vertical === 'fintech' && endeavorNames(item).length).map(item => endeavorNames(item)[0].toLowerCase())).size);
+  for (const slug of ['mercadolibre-com', 'rappi', 'kavak', 'vtex']) assert.ok(companies.some(item => item.slug === slug), slug);
   assert.ok(companies.some(item => item.name === 'Tipti') && !companies.some(item => item.name === 'Globant'));
   assert.ok(!companies.some(item => item.name === 'Infocorp'), 'las excluidas no se buscan');
-  assert.equal(searchTerm(byName('Kueski')), '"Kueski"');
+  for (const slug of [...ENDEAVOR_SEARCH.slugs, ...ENDEAVOR_SEARCH.quiet, ...Object.keys(ENDEAVOR_SEARCH.solo)]) assert.ok(ENDEAVOR_COMPANIES.some(item => item.slug === slug), `slug inexistente: ${slug}`);
+  // El nombre va en el titular: el filtro de endeavor-prensa solo acepta titulares que nombran a la empresa.
+  assert.equal(searchTerm(byName('Kueski')), 'intitle:"Kueski"');
   assert.equal(searchQualifier(byName('Kueski')), '');
+  // Sin calificador los ambiguos con poco ruido (caso del CFO de Pomelo, que «fintech» dejaba fuera); con él, los ruidosos.
+  assert.equal(searchQualifier(byName('Pomelo')), '');
+  assert.equal(searchQualifier(byName('Klar')), '');
   assert.equal(searchQualifier(byName('Clara')), 'fintech');
   assert.equal(searchQualifier(byName('R2')), 'fintech');
   const batches = searchBatches(companies);
-  assert.equal(batches.flatMap(batch => batch.terms).length, companies.length);
+  assert.equal(batches.filter(batch => !batch.terms.some(term => /Mercado (Libre|Pago)/.test(term))).flatMap(batch => batch.terms).length, companies.length - 1);
   for (const batch of batches) {
     const query = searchQuery(batch);
-    const words = query.replace(/[()"]/g, ' ').split(/\s+/).filter(Boolean).filter(word => word !== 'OR').length + batch.terms.length - 1;
-    assert.ok(words <= ENDEAVOR_SEARCH.maxWords, `lote de ${words} palabras`);
+    // Con más de 9 intitle: Google ignora when:30d.
+    assert.ok(batch.terms.length <= 9 && (query.match(/intitle:/g) || []).length <= 9, query);
+    assert.match(query, / when:30d$/);
     // Nunca hay grupos anidados: Google los interpreta mal dentro de un OR.
     assert.equal((query.match(/\(/g) || []).length, 1, query);
-    assert.equal(batch.terms.some(term => ['"Clara"', '"Klar"', '"Swap"'].includes(term)), batch.qualifier === 'fintech' && batch.terms.some(term => ['"Clara"', '"Klar"', '"Swap"'].includes(term)));
+    if (batch.terms.some(term => ['intitle:"Clara"', 'intitle:"Swap"'].includes(term))) assert.equal(batch.qualifier, 'fintech');
+    if (batch.terms.some(term => ['intitle:"Pomelo"', 'intitle:"Klar"', 'intitle:"Bitso"'].includes(term))) assert.equal(batch.qualifier, '');
   }
-  assert.deepEqual(searchBatches([company('Aaa1'), company('Bbb2'), company('Ccc3')], 5), [{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Ccc3"'], qualifier: '' }]);
-  assert.deepEqual(searchBatches([company('Aaa1'), company('Clara'), company('Bbb2')]), [{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Clara"'], qualifier: 'fintech' }]);
-  assert.equal(searchQuery({ terms: ['"Clara"', '"Klar"'], qualifier: 'fintech' }), '("Clara" OR "Klar") fintech when:30d');
-  const lots = searchLots([{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Ccc3"'], qualifier: '' }]);
+  // Mercado Libre y Mercado Pago, en lotes propios; las empresas que solo entran por Ecuador, en español.
+  assert.deepEqual(batches.filter(batch => batch.terms.some(term => /Mercado (Libre|Pago)/.test(term))).map(batch => batch.terms), [['intitle:"Mercado Libre"', 'intitle:"MercadoLibre"'], ['intitle:"Mercado Pago"']]);
+  assert.deepEqual(batches.find(batch => batch.terms.includes('intitle:"Tipti"')).languages, ['es']);
+  assert.deepEqual(batches.find(batch => batch.terms.includes('intitle:"Bitso"')).languages, ['es', 'en']);
+  const config = { ...ENDEAVOR_SEARCH, maxTerms: 2, quiet: ['klar'] };
+  assert.deepEqual(searchBatches([company('Aaa1'), company('Bbb2'), company('Ccc3')], config), [{ terms: ['intitle:"Aaa1"', 'intitle:"Bbb2"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Ccc3"'], qualifier: '', languages: ['es', 'en'] }]);
+  assert.deepEqual(searchBatches([company('Aaa1'), company('Clara'), company('Klar'), company('Bbb2')], config), [{ terms: ['intitle:"Aaa1"', 'intitle:"Klar"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Bbb2"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Clara"'], qualifier: 'fintech', languages: ['es', 'en'] }]);
+  assert.equal(searchQuery({ terms: ['intitle:"Clara"', 'intitle:"Cobre"'], qualifier: 'fintech' }), '(intitle:"Clara" OR intitle:"Cobre") fintech when:30d');
+  const lots = searchLots([{ terms: ['intitle:"Aaa1"', 'intitle:"Bbb2"'], qualifier: '' }, { terms: ['intitle:"Ccc3"'], qualifier: '' }]);
   assert.deepEqual(lots.map(lot => [lot.index, lot.language]), [[0, 'es'], [1, 'en'], [2, 'es'], [3, 'en']]);
-  assert.equal(new URL(lots[0].url).searchParams.get('q'), '("Aaa1" OR "Bbb2") when:30d');
+  assert.equal(new URL(lots[0].url).searchParams.get('q'), '(intitle:"Aaa1" OR intitle:"Bbb2") when:30d');
   assert.equal(new URL(lots[3].url).searchParams.get('hl'), 'en-US');
+  assert.deepEqual(searchLots([{ terms: ['intitle:"Tipti"'], qualifier: '', languages: ['es'] }]).map(lot => lot.language), ['es']);
+  // Presupuesto de Google: la vuelta completa en un día (3 ejecuciones reales) y no más de 30 consultas por ejecución,
+  // contando las demás fuentes de Google News.
+  const all = searchLots(batches);
+  assert.ok(searchPerRun(all) * ENDEAVOR_SEARCH.runsPerDay >= all.length);
+  assert.equal(rotation(all, 0).picked.length, searchPerRun(all));
+  const googleQueries = SOURCES.filter(item => item.adapter === 'google' && !item.search).length + searchPerRun(all);
+  assert.ok(googleQueries <= 30, `${googleQueries} consultas a Google por ejecución`);
   // La rotación toma `count` lotes desde el cursor, da la vuelta y no repite un lote en la misma ejecución.
   assert.deepEqual(rotation(lots, 0, 3).picked.map(lot => lot.index), [0, 1, 2]);
   assert.deepEqual(rotation(lots, 3, 3), { picked: [lots[3], lots[0], lots[1]], next: 2 });
@@ -781,8 +1304,8 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   assert.equal(new Set(ENDEAVOR_PRESS_HOSTS).size, ENDEAVOR_PRESS_HOSTS.length, 'dominios repetidos');
   for (const host of ENDEAVOR_PRESS_HOSTS) assert.match(host, /^[a-z0-9.-]+\.[a-z]{2,}$/, host);
   // Dominios reales (sourceUrl de Google News) de la última edición.
-  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com'];
-  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'nada'];
+  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://mercado.com.ar', 'https://www.mercado.com.ar', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com', 'https://www.fintechexpert.mx', 'https://www.xataka.com.mx', 'https://www.mobiletime.la', 'https://lexlatin.com', 'https://www.enter.co', 'https://www.itsitio.com', 'https://mexicobusiness.news', 'https://decrypt.co', 'https://www.fintechfutures.com'];
+  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'https://supermercado.com.ar', 'https://ecosistemastartup.com', 'https://estrelladigital.com.co', 'https://es.tradingview.com', 'https://edomexaldia.com', 'nada'];
   for (const url of yes) assert.equal(allowedHost({ sourceUrl: url }, prensa), true, url);
   for (const url of no) assert.equal(allowedHost({ sourceUrl: url }, prensa), false, url);
   // Incluye los medios que el proyecto ya usa como fuentes de nivel 1 y 2.
@@ -795,6 +1318,16 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   assert.equal(ENDEAVOR_PROMO.test('Ualá premia a sus usuarios con reintegros'), true);
   assert.equal(ENDEAVOR_PROMO.test('Kueski insta a revisar compras ante aumento de ciberfraudes'), false);
   assert.equal(ENDEAVOR_PROMO.test('De vetar el crédito a monopolizar Cashea en Venezuela'), false);
+  // Fugas que abren Mercado Libre, Kavak y las demás empresas sumadas a la búsqueda (titulares reales del 19 de noviembre).
+  for (const title of ['¿Quieres ir a la NFL en México GRATIS? Kavak regalará cinco pases dobles', 'Mercado Libre acelera su apuesta por El Buen Fin 2026 con descuentos de hasta 65%', '¿Qué OFERTAS tendrá Mercado Libre por El Buen Fin? Esto debes saber', 'Prestamype: la fintech que ofrece una rentabilidad garantizada de hasta 10% anual para tu CTS']) assert.equal(ENDEAVOR_PROMO.test(title), true, title);
+  for (const title of ['Mercado Libre profundiza su caída en Wall Street: sus acciones pierden más de 13%', 'Mercado Libre cayó 13%, pero Wall Street espera que suba la acción', 'Mercado Libre se desploma casi 14% en Wall Street pese a ingresos récord']) assert.equal(ENDEAVOR_MARKET_NOISE.test(title), true, title);
+  for (const title of ['Mercado Libre y Sectur impulsan a pymes y artesanos mexicanos en el e-commerce', 'Un ejecutivo de Mercado Libre fue elegido CFO del año', 'Bold lanza cuenta digital gratis en Colombia', 'Addi invertirá US$2.000 millones en Colombia para ampliar el crédito']) assert.equal(ENDEAVOR_PROMO.test(title) || ENDEAVOR_MARKET_NOISE.test(title), false, title);
+  // Mercado Libre y Mercado Pago solo cuentan escritos con mayúsculas: «un mercado libre» es otra cosa.
+  assert.equal(matchEndeavor({ title: 'Mercado Pago lanza una cuenta remunerada en Colombia' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'Mercado Libre construye una nueva nave clave para la región' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'MercadoLibre suma vendedores' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'Un Estado fuerte para un mercado libre' }), null);
+  assert.equal(matchEndeavor({ title: 'Inflación', excerpt: 'Cuando el mercado pagó más por los bonos del Tesoro' }), null);
   // Al regenerar, la acumulación vuelve a aplicar medio y tema (passes): lo anterior que no cumple sale.
   const old = (title, sourceUrl, sourceName) => ({ ...make('endeavor-prensa', 30), id: title, category: 'endeavor', title, source: sourceName, sourceUrl, via: 'Vía Google News' });
   const previous = [
@@ -969,4 +1502,127 @@ test('validador: enlaces del medio y de las fuentes, dominios de las fuentes ofi
   // Sin sourceUrl ni enlace Endeavor, la nota sigue siendo válida (son opcionales).
   const optional = base(); delete optional.stories[1].sourceUrl; delete optional.stories[1].endeavor.url;
   assert.doesNotThrow(() => validateEdition(optional, { now }));
+});
+
+// ---------------------------------------------------------------------------------------------------------
+// Registro de descartes: motivo de cada regla, embudo por fuente y descartes.json junto a la edición.
+test('rejectReason dice qué regla de FILTERS descartó la nota, y relevant es su negación', () => {
+  const why = (id, title, url = 'https://example.com/nota', excerpt = '') => rejectReason({ title, excerpt, url }, sourceById(id));
+  assert.equal(why('primicias', 'Banco Pichincha amplía su crédito', 'https://www.primicias.ec/economia/nota/'), null);
+  assert.equal(why('primicias', 'China Mall se expande en Ecuador', 'https://www.primicias.ec/economia/nota/'), 'include');
+  assert.equal(why('primicias', '¿Va a renovar electrodomésticos en Black Friday? Pague con tarjeta', 'https://www.primicias.ec/economia/nota/'), 'exclude: Black Friday');
+  assert.equal(why('primicias', 'Banco Pichincha amplía su crédito', 'https://www.primicias.ec/entretenimiento/banco/'), 'path');
+  assert.equal(why('paymentsdive', 'Embedded finance in 2026: What merchants want', 'https://www.paymentsdive.com/spons/nota/1/'), 'skipPath');
+  assert.equal(why('bce-junta-resoluciones', 'Designa a los miembros', 'https://www.bce.fin.ec/a.pdf', 'Resolución JPRFM-2026-001-M.'), 'test');
+  // La búsqueda Endeavor dice qué parte de su prueba falló.
+  assert.equal(why('endeavor-prensa', 'DLocal (NASDAQ:DLO) Stock Price Target Cut by Truist Financial'), 'test: ruido bursátil');
+  assert.equal(why('endeavor-prensa', 'El cupón que habilitó Cashea hasta el 13Nov y se activa sin costo'), 'test: promoción');
+  assert.equal(why('endeavor-prensa', 'Una mañana clara en Quito'), 'test: sin empresa Endeavor en el titular');
+  // Sin filtro, todo pasa; una nota malformada no lanza.
+  assert.equal(rejectReason({ title: 'Lo que sea' }, { id: 'sin-filtro' }), null);
+  assert.equal(rejectReason({ title: 'Stablecoin regulation', url: 'no es una url' }, sourceById('theblock')), 'path');
+  assert.equal(rejectReason({ title: 'Aprueba la norma de pagos.' }, sourceById('bce-junta-resoluciones')), 'error');
+  for (const [id, title, url, expected] of SAMPLES) assert.equal(rejectReason({ title, excerpt: '', url: url || 'https://example.com/nota' }, sourceById(id)) === null, expected, `${id}: ${title}`);
+});
+
+test('embudo: cada fila cae en una sola etapa y los descartes por medio y por tema se registran con su motivo', () => {
+  const google = { id: 'prueba-google', name: 'Prueba', category: 'latam', kind: 'news', tier: 2, adapter: 'google', url: 'https://news.google.com/rss/search', allowHosts: ['medio.example'], denyHosts: ['bloqueado.medio.example'] };
+  FILTERS['prueba-google'] = { include: /fintech/i, exclude: /casino/i };
+  try {
+    const at = new Date(now - 2 * 3600 * 1000).toISOString();
+    const row = (title, host, extra = {}) => ({ title, url: `https://news.google.com/articles/${encodeURIComponent(title)}`, publishedAt: at, source: 'Medio', sourceUrl: `https://${host}/`, via: 'Vía Google News', ...extra });
+    const rows = [
+      row('Fintech levanta una ronda', 'medio.example'),
+      row('Fintech fuera de la lista', 'otro.example'),
+      row('Fintech en un subdominio bloqueado', 'bloqueado.medio.example'),
+      row('Fintech sin medio', 'medio.example', { sourceUrl: 'no es una url' }),
+      row('Fintech antigua fuera de la lista', 'otro.example', { publishedAt: '2026-08-01T00:00:00Z' }),
+      row('Fintech antigua', 'medio.example', { publishedAt: '2026-08-01T00:00:00Z' }),
+      row('', 'medio.example'),
+      row('Los mejores casinos fintech', 'medio.example'),
+      row('Minería en Perú', 'medio.example'),
+    ];
+    const { stories, funnel, discards } = screen(rows, google, now);
+    assert.deepEqual(stories.map(story => story.title), ['Fintech levanta una ronda']);
+    assert.deepEqual(funnel, { host: 4, normalize: 2, topic: 2, accepted: 1 });
+    assert.equal(funnel.host + funnel.normalize + funnel.topic + funnel.accepted, rows.length);
+    // La nota antigua fuera de la lista cuenta como caída por medio, pero no se registra: no habría entrado de todos modos.
+    assert.deepEqual(discards.map(entry => [entry.stage, entry.reason, entry.host, entry.title]), [
+      ['medio', 'allowHosts', 'otro.example', 'Fintech fuera de la lista'],
+      ['medio', 'denyHosts', 'bloqueado.medio.example', 'Fintech en un subdominio bloqueado'],
+      ['medio', 'medio sin dominio', undefined, 'Fintech sin medio'],
+      ['tema', 'exclude: casino', undefined, 'Los mejores casinos fintech'],
+      ['tema', 'include', undefined, 'Minería en Perú'],
+    ]);
+    for (const entry of discards) {
+      assert.equal(entry.sourceId, 'prueba-google');
+      assert.ok(safeUrl(entry.url));
+      assert.equal(entry.publishedAt, at);
+    }
+    // El mismo resultado que el embudo anterior: allowedHost, normalize y relevant.
+    const legacy = rows.filter(item => allowedHost(item, google)).map(item => normalize(item, google, now)).filter(Boolean).filter(story => relevant(story, google));
+    assert.deepEqual(stories, legacy);
+  } finally { delete FILTERS['prueba-google']; }
+  assert.equal(hostRejection({ sourceUrl: 'https://cualquiera.example/' }, { id: 'abierta' }), null);
+});
+
+test('descartes.json: por fuente, los más recientes, sin repetir titular y con tope; el validador lo acepta', () => {
+  const at = hours => new Date(now - hours * 3600 * 1000).toISOString();
+  const entry = (sourceId, title, hours, extra = {}) => ({ sourceId, stage: 'tema', reason: 'include', title, url: `https://example.com/${encodeURIComponent(title)}`, source: 'Medio', publishedAt: at(hours), ...extra });
+  const many = Array.from({ length: 45 }, (_, i) => entry('la-republica', `Nota ${i}`, i + 1));
+  const log = discardLog([...many, entry('la-republica', 'NOTA 0', 0.5), entry('primicias', 'Otra', 3, { stage: 'medio', reason: 'allowHosts', host: 'otro.example' })], { generatedAt: at(0) });
+  assert.equal(log.version, 1);
+  assert.equal(log.perSource, MAX_DISCARDS_PER_SOURCE);
+  const republica = log.discards.filter(item => item.sourceId === 'la-republica');
+  assert.equal(republica.length, MAX_DISCARDS_PER_SOURCE);
+  // Gana la copia más reciente del titular repetido (sin distinguir mayúsculas) y sale lo más antiguo.
+  assert.equal(republica[0].title, 'NOTA 0');
+  assert.ok(!republica.some(item => item.title === 'Nota 0'));
+  assert.deepEqual(log.omitted, { 'la-republica': 5 });
+  assert.deepEqual(validateDiscards(log), { discards: MAX_DISCARDS_PER_SOURCE + 1 });
+  const broken = [
+    [data => { data.discards[0].url = 'javascript:alert(1)'; }, /descarte inválido/],
+    [data => { data.discards[0].sourceId = 'retirada'; }, /fuente desconocida/],
+    [data => { data.discards[0].stage = 'tope'; }, /etapa o motivo/],
+    [data => { data.discards[0].reason = ''; }, /etapa o motivo/],
+    [data => { data.discards.push(...many.slice(0, 1)); }, /demasiados descartes/],
+    [data => { data.omitted = { primicias: 0 }; }, /omitidos inválidos/],
+    [data => { delete data.generatedAt; }, /estructura/],
+  ];
+  for (const [damage, message] of broken) {
+    const data = structuredClone(log); damage(data);
+    assert.throws(() => validateDiscards(data), message);
+  }
+});
+
+test('validador: el embudo de cada fuente es opcional y, si está, cuadra', () => {
+  const at = new Date(now - 3600 * 1000).toISOString();
+  const funnel = { read: 12, foreign: 1, undated: 0, host: 2, normalize: 3, topic: 4, accepted: 2 };
+  const base = () => ({ version: 1, sources: [{ id: 'primicias', status: 'ok', funnel: { ...funnel } }, { id: 'mef', status: 'error' }], stories: [{ id: 'a', sourceId: 'primicias', category: 'ecuador', title: 'Nota', source: 'Primicias', url: 'https://www.primicias.ec/economia/a/', publishedAt: at }] });
+  assert.doesNotThrow(() => validateEdition(base(), { now }));
+  const saturated = base(); saturated.sources[0].funnel.saturated = true;
+  assert.doesNotThrow(() => validateEdition(saturated, { now }));
+  assert.equal(validFunnel(funnel), true);
+  for (const damage of [
+    data => { data.sources[0].funnel.saturated = false; },
+    data => { data.sources[0].funnel.read = 13; },
+    data => { data.sources[0].funnel.topic = -1; },
+    data => { data.sources[0].funnel.extra = 1; },
+    data => { delete data.sources[0].funnel.accepted; },
+    data => { data.sources[0].funnel = [1, 2]; },
+  ]) {
+    const data = base(); damage(data);
+    assert.throws(() => validateEdition(data, { now }), /embudo inválido en la fuente primicias/);
+  }
+});
+
+test('el registro de descartes se escribe junto a la edición y de forma atómica', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'news-tv-'));
+  try {
+    const edition = join(dir, 'sub', 'edicion.json');
+    assert.equal(discardsPath(edition), join(dir, 'sub', 'descartes.json'));
+    await writeJson(discardsPath(edition), { version: 1 });
+    assert.deepEqual(JSON.parse(await readFile(join(dir, 'sub', 'descartes.json'), 'utf8')), { version: 1 });
+    assert.deepEqual((await readdir(join(dir, 'sub'))).sort(), ['descartes.json']);
+  } finally { await rm(dir, { recursive: true, force: true }); }
 });

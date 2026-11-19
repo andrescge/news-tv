@@ -1,8 +1,8 @@
 import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalize, parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, linkAllowed, passes, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
-import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, writeMemo } from './editorial.mjs';
+import { parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, linkAllowed, passes, screen, discardLog, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
+import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, seedMemo, writeMemo } from './editorial.mjs';
 
 // Cada fuente: `category` (canal), `kind` (official | news | company | organization), `tier` (1 referencia,
 // 2 especializada, 3 interesada o de análisis), `access` (open | paywall | mixed), `language` y `adapter`.
@@ -11,6 +11,10 @@ import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, 
 // `linkHosts` (fuentes oficiales con página o feed propio): dominios aceptados para el enlace de cada nota, con sus subdominios.
 // Las notas con enlace fuera de la lista se descartan antes de cualquier petición (ver linkAllowed en content.mjs). Las listas
 // salen de los enlaces reales de cada fuente; el feed del Ministerio de Economía redirige a economicoproductivo.gob.ec.
+// Búsquedas de Google News: Google devuelve como mucho 100 resultados por consulta. Si el filtro de la fuente mira el titular, la
+// consulta pide sus términos con `intitle:` para que esos resultados sean del tema; con más de 9 términos `intitle:` Google deja de
+// respetar `when:` (medido en noviembre de 2026). Las consultas que siguen llegando a 100 piden 7 días (`when:7d`): la acumulación
+// completa los 30.
 // Capa editorial (scripts/editorial.mjs): `primary` marca los documentos oficiales primarios (resoluciones del BCE, Registro
 // Oficial), que se puntúan pero no caen por el umbral y ganan al agrupar; `perEdition` limita las notas de la fuente en toda
 // la edición (los boletines y reportes periódicos de datos del BCE: una).
@@ -20,29 +24,41 @@ export const SOURCES = [
   { id: 'primicias', name: 'Primicias', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.primicias.ec/rss/economia.xml', extraUrls: ['https://www.primicias.ec/rss/economia/empresas.xml'], site: 'https://www.primicias.ec/economia/', limit: 8 },
   { id: 'eluniverso', name: 'El Universo', category: 'ecuador', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://www.eluniverso.com/arc/outboundfeeds/rss/category/economia/?outputType=xml', site: 'https://www.eluniverso.com/economia/', limit: 8 },
   { id: 'forbes-ec', name: 'Forbes Ecuador', category: 'ecuador', kind: 'news', tier: 2, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Aforbes.com.ec%20(banco%20OR%20bancos%20OR%20banca%20OR%20cr%C3%A9dito%20OR%20cooperativas%20OR%20seguros%20OR%20aseguradora%20OR%20deuda%20OR%20FMI%20OR%20%22riesgo%20pa%C3%ADs%22%20OR%20fintech%20OR%20tarjetas)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.forbes.com.ec/', allowHosts: ['forbes.com.ec'], limit: 4 },
-  { id: 'bloomberg-ecuador', name: 'Bloomberg Línea · Ecuador', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=(site%3Aexpreso.ec%20OR%20site%3Abloomberglinea.com)%20Ecuador%20(banco%20OR%20bancos%20OR%20banca%20OR%20cr%C3%A9dito%20OR%20cooperativas%20OR%20seguros%20OR%20aseguradora%20OR%20deuda%20OR%20FMI%20OR%20%22riesgo%20pa%C3%ADs%22%20OR%20fintech%20OR%20tarjetas)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 3 },
+  { id: 'bloomberg-ecuador', name: 'Bloomberg Línea · Ecuador', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Abloomberglinea.com%20(intitle%3AEcuador%20OR%20intitle%3Aecuatoriano%20OR%20intitle%3Aecuatoriana%20OR%20intitle%3Aecuatorianos)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 3 },
+  // Medios nacionales sin feed de economía (el de El Comercio es general y guarda unas 7 horas; La Hora y Teleamazonas no
+  // tienen feed): una búsqueda por medio con los términos de banca en el titular. Una sola búsqueda con varios `site:` y
+  // `intitle:` ignora el período (medido en noviembre de 2026), por eso van por separado.
+  { id: 'elcomercio-ec', name: 'El Comercio (Ecuador)', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Aelcomercio.com%20(intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3Acr%C3%A9dito%20OR%20intitle%3Acr%C3%A9ditos%20OR%20intitle%3Atarjetas%20OR%20intitle%3Acooperativas%20OR%20intitle%3ASuperintendencia%20OR%20intitle%3Adeuda)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.elcomercio.com/', allowHosts: ['elcomercio.com'], limit: 3 },
+  { id: 'teleamazonas', name: 'Teleamazonas', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Ateleamazonas.com%20(intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3Acr%C3%A9dito%20OR%20intitle%3Acr%C3%A9ditos%20OR%20intitle%3Atarjetas%20OR%20intitle%3Acooperativas%20OR%20intitle%3ASuperintendencia%20OR%20intitle%3Adeuda)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.teleamazonas.com/', allowHosts: ['teleamazonas.com'], limit: 3 },
+  { id: 'lahora', name: 'Diario La Hora', category: 'ecuador', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Alahora.com.ec%20(intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3Acr%C3%A9dito%20OR%20intitle%3Acr%C3%A9ditos%20OR%20intitle%3Atarjetas%20OR%20intitle%3Acooperativas%20OR%20intitle%3ASuperintendencia%20OR%20intitle%3Adeuda)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.lahora.com.ec/', allowHosts: ['lahora.com.ec'], limit: 3 },
+  // Banca pública: los productos de crédito y las calificaciones de la CFN (fuera compras, subastas y certificaciones).
+  { id: 'cfn', name: 'Corporación Financiera Nacional', category: 'ecuador', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.cfn.fin.ec/feed/', site: 'https://www.cfn.fin.ec/', linkHosts: ['cfn.fin.ec'], limit: 2 },
 
   // Autoridades EC.
   { id: 'bce-publicaciones', name: 'BCE · Datos financieros', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-publications', url: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', site: 'https://contenido.bce.fin.ec/ultimas-publicaciones/', linkHosts: ['bce.fin.ec'], limit: 3, perEdition: 1 },
   { id: 'bce-junta-resoluciones', name: 'BCE · Resoluciones de la Junta', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', site: 'https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/', linkHosts: ['bce.fin.ec'], primary: true },
   { id: 'bce-resoluciones-admin', name: 'BCE · Resoluciones administrativas', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'bce-resolutions', url: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', site: 'https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/', linkHosts: ['bce.fin.ec'], primary: true },
-  { id: 'reguladores-prensa', name: 'Prensa sobre reguladores (El Universo y Primicias)', category: 'regulacion', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=(site%3Aprimicias.ec%20OR%20site%3Aeluniverso.com)%20(superintendencia%20OR%20%22Junta%20de%20Pol%C3%ADtica%22%20OR%20SEPS%20OR%20UAFE%20OR%20SRI%20OR%20%22Banco%20Central%22%20OR%20Cosede)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://news.google.com/', allowHosts: ['eluniverso.com', 'primicias.ec'], limit: 8 },
+  { id: 'reguladores-prensa', name: 'Prensa sobre reguladores (El Universo y Primicias)', category: 'regulacion', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=(site%3Aprimicias.ec%20OR%20site%3Aeluniverso.com)%20(superintendencia%20OR%20%22Junta%20de%20Pol%C3%ADtica%22%20OR%20SEPS%20OR%20UAFE%20OR%20%22Banco%20Central%22%20OR%20Cosede%20OR%20CFN%20OR%20BanEcuador%20OR%20Biess)%20when%3A7d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://news.google.com/', allowHosts: ['eluniverso.com', 'primicias.ec'], limit: 8 },
   // Registro Oficial: feed de ediciones; `pages` se leen en cada ejecución y `backfillPages` cuando no hay historial.
   { id: 'registro-oficial', name: 'Registro Oficial', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'registro-oficial', url: 'https://www.registroficial.gob.ec/feed/', site: 'https://www.registroficial.gob.ec/', linkHosts: ['registroficial.gob.ec'], limit: 5, pages: 3, backfillPages: 16, primary: true },
   { id: 'seps', name: 'SEPS', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.seps.gob.ec/feed/', site: 'https://www.seps.gob.ec/', linkHosts: ['seps.gob.ec'], limit: 2 },
   { id: 'superbancos', name: 'Superintendencia de Bancos', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.superbancos.gob.ec/bancos/feed/', site: 'https://www.superbancos.gob.ec/', linkHosts: ['superbancos.gob.ec'], limit: 2 },
   { id: 'supercias', name: 'Supercias', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'supercias', url: 'https://www.supercias.gob.ec/portalscvs/', site: 'https://www.supercias.gob.ec/portalscvs/Noticias/Noticias.php', linkHosts: ['supercias.gob.ec'], limit: 2 },
   { id: 'mef', name: 'Ministerio de Economía y Finanzas', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.finanzas.gob.ec/feed/', site: 'https://www.finanzas.gob.ec/', linkHosts: ['finanzas.gob.ec', 'economicoproductivo.gob.ec'], limit: 2 },
+  { id: 'uafe', name: 'UAFE', category: 'regulacion', kind: 'official', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.uafe.gob.ec/feed/', site: 'https://www.uafe.gob.ec/', linkHosts: ['uafe.gob.ec'], limit: 2 },
 
   // Fintech LATAM.
   { id: 'iupana', name: 'iupana', category: 'latam', kind: 'news', tier: 2, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://iupana.com/feed/', site: 'https://iupana.com/', limit: 6 },
-  { id: 'el-economista', name: 'El Economista (México)', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Aeleconomista.com.mx%20(fintech%20OR%20neobanco%20OR%20sofipo%20OR%20%22banca%20digital%22%20OR%20CNBV%20OR%20Nu%20OR%20%22Mercado%20Pago%22%20OR%20CoDi)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.eleconomista.com.mx/', allowHosts: ['eleconomista.com.mx'], limit: 6 },
+  { id: 'el-economista', name: 'El Economista (México)', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Aeleconomista.com.mx%20(intitle%3Afintech%20OR%20intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3ACNBV%20OR%20intitle%3ABanxico%20OR%20intitle%3ASPEI%20OR%20intitle%3A%22Mercado%20Pago%22%20OR%20intitle%3Apagos)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.eleconomista.com.mx/', allowHosts: ['eleconomista.com.mx'], limit: 6 },
   { id: 'la-republica', name: 'La República (Colombia)', category: 'latam', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://www.larepublica.co/rss/finanzas', site: 'https://www.larepublica.co/finanzas', limit: 5 },
   { id: 'latamlist', name: 'LatamList', category: 'latam', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'rss', url: 'https://latamlist.com/feed/', site: 'https://latamlist.com/', limit: 5 },
-  { id: 'bloomberg-negocios', name: 'Bloomberg Línea', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.bloomberglinea.com/arc/outboundfeeds/rss/category/negocios/?outputType=xml', site: 'https://www.bloomberglinea.com/negocios/', limit: 4 },
-  { id: 'expansion-mx', name: 'Expansión (México)', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://expansion.mx/rss/economia', site: 'https://expansion.mx/economia', limit: 4 },
-  { id: 'diario-financiero', name: 'Diario Financiero (Chile)', category: 'latam', kind: 'news', tier: 1, access: 'paywall', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Adf.cl%20(fintech%20OR%20neobanco%20OR%20%22banco%20digital%22%20OR%20billetera)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.df.cl/', allowHosts: ['df.cl'], limit: 4 },
-  { id: 'contxto', name: 'Contxto', category: 'latam', kind: 'news', tier: 2, access: 'open', language: 'es', adapter: 'rss', url: 'https://contxto.com/es/feed/', site: 'https://contxto.com/es/', limit: 3 },
+  { id: 'bloomberg-negocios', name: 'Bloomberg Línea', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Abloomberglinea.com%20(intitle%3Afintech%20OR%20intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3ANubank%20OR%20intitle%3APix%20OR%20intitle%3Apagos%20OR%20intitle%3Abilletera)%20-Cotizaci%C3%B3n%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 4 },
+  { id: 'expansion-mx', name: 'Expansión (México)', category: 'latam', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'rss', url: 'https://expansion.mx/rss/economia', site: 'https://expansion.mx/economia', limit: 3 },
+  { id: 'diario-financiero', name: 'Diario Financiero (Chile)', category: 'latam', kind: 'news', tier: 1, access: 'paywall', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Adf.cl%20(intitle%3Afintech%20OR%20intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3Abanca%20OR%20intitle%3ACMF%20OR%20intitle%3Apagos%20OR%20intitle%3Abilletera%20OR%20intitle%3Aneobanco%20OR%20intitle%3Astablecoins)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.df.cl/', allowHosts: ['df.cl'], limit: 4 },
+  // Prensa fintech especializada sin feed útil (el /rss de iProUP es HTML y el /feed de Latam Fintech Hub da 404). iProUP es la
+  // única fuente argentina del canal; la búsqueda pide sus términos en el titular.
+  { id: 'iproup', name: 'iProUP', category: 'latam', kind: 'news', tier: 2, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Aiproup.com%20(intitle%3Afintech%20OR%20intitle%3Abilletera%20OR%20intitle%3A%22Mercado%20Pago%22%20OR%20intitle%3AUal%C3%A1%20OR%20intitle%3Abanco%20OR%20intitle%3Abancos%20OR%20intitle%3ABCRA%20OR%20intitle%3Atarjeta%20OR%20intitle%3Apagos)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.iproup.com/', allowHosts: ['iproup.com'], limit: 4 },
+  { id: 'latamfintech', name: 'Latam Fintech Hub', category: 'latam', kind: 'news', tier: 2, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Alatamfintech.co%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.latamfintech.co/', allowHosts: ['latamfintech.co'], limit: 4 },
 
   // Endeavor LATAM: prensa sobre empresas de la red Endeavor (lista en scripts/data/endeavor-latam.json, ver scripts/endeavor.mjs).
   // `search`: la fuente no tiene una URL fija; consulta en cada ejecución unos lotes de la búsqueda por nombres (ENDEAVOR_SEARCH)
@@ -54,9 +70,13 @@ export const SOURCES = [
 
   // Pagos globales.
   { id: 'paymentsdive', name: 'Payments Dive', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.paymentsdive.com/feeds/news/', site: 'https://www.paymentsdive.com/', limit: 6 },
-  { id: 'expansion-banca', name: 'Expansión · Banca', category: 'pagos', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://e00-expansion.uecdn.es/rss/empresas/banca.xml', site: 'https://www.expansion.com/empresas/banca.html', limit: 6 },
+  { id: 'expansion-banca', name: 'Expansión · Banca', category: 'pagos', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://e00-expansion.uecdn.es/rss/empresas/banca.xml', site: 'https://www.expansion.com/empresas/banca.html', limit: 3 },
   { id: 'ft-banking', name: 'Financial Times · Banking', category: 'pagos', kind: 'news', tier: 1, access: 'paywall', language: 'en', adapter: 'rss', url: 'https://www.ft.com/banking?format=rss', site: 'https://www.ft.com/banking', limit: 5 },
-  { id: 'finextra', name: 'Finextra', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Afinextra.com%20payments%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.finextra.com/', allowHosts: ['finextra.com'], limit: 5 },
+  { id: 'finextra', name: 'Finextra', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Afinextra.com%20payments%20when%3A7d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.finextra.com/', allowHosts: ['finextra.com'], limit: 5 },
+  // The Paypers publica unas 30 notas al día: con when:7d Google ya llega al tope de 100, así que se pide una ventana de 3 días.
+  { id: 'thepaypers', name: 'The Paypers', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Athepaypers.com%20when%3A3d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://thepaypers.com/', allowHosts: ['thepaypers.com'], limit: 3 },
+  // Fintech Futures responde 403 a su feed; Google devuelve unas 70 notas en 30 días.
+  { id: 'fintechfutures', name: 'Fintech Futures', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Afintechfutures.com%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.fintechfutures.com/', allowHosts: ['fintechfutures.com'], limit: 3 },
   { id: 'bankingdive', name: 'Banking Dive', category: 'pagos', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.bankingdive.com/feeds/news/', site: 'https://www.bankingdive.com/', limit: 4 },
   { id: 'thebanker', name: 'The Banker', category: 'pagos', kind: 'news', tier: 2, access: 'paywall', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Athebanker.com%20banks%20OR%20payments%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.thebanker.com/', allowHosts: ['thebanker.com'], limit: 4 },
   { id: 'americanbanker', name: 'American Banker', category: 'pagos', kind: 'news', tier: 2, access: 'paywall', language: 'en', adapter: 'rss', url: 'https://www.americanbanker.com/feed?rss=true', site: 'https://www.americanbanker.com/', limit: 3 },
@@ -73,14 +93,16 @@ export const SOURCES = [
   { id: 'bis-investigacion', name: 'BIS · Investigación', category: 'pagos', kind: 'official', tier: 1, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.bis.org/doclist/bis_fsi_publs.rss', site: 'https://www.bis.org/', linkHosts: ['bis.org'], limit: 2 },
   { id: 'fintech-business-weekly', name: 'Fintech Business Weekly', category: 'pagos', kind: 'organization', tier: 3, access: 'mixed', language: 'en', adapter: 'rss', url: 'https://fintechbusinessweekly.substack.com/feed', site: 'https://fintechbusinessweekly.substack.com/', limit: 2 },
   { id: 'fed', name: 'Reserva Federal de EE. UU.', category: 'pagos', kind: 'official', tier: 1, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.federalreserve.gov/feeds/press_all.xml', site: 'https://www.federalreserve.gov/newsevents/pressreleases.htm', linkHosts: ['federalreserve.gov'], limit: 2 },
+  { id: 'occ', name: 'Oficina del Contralor de la Moneda (OCC)', category: 'pagos', kind: 'official', tier: 1, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.occ.gov/rss/occ_news.xml', site: 'https://www.occ.gov/news-issuances/news-releases/', linkHosts: ['occ.gov'], limit: 2 },
 
   // Cripto.
   { id: 'cinco-dias-cripto', name: 'Cinco Días · Criptoactivos', category: 'cripto', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos', site: 'https://cincodias.elpais.com/criptoactivos/', limit: 6 },
-  { id: 'reuters-cripto', name: 'Reuters · Cripto', category: 'cripto', kind: 'news', tier: 1, access: 'mixed', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Areuters.com%20(crypto%20OR%20stablecoin%20OR%20tokenization%20OR%20%22digital%20assets%22)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.reuters.com/', allowHosts: ['reuters.com'], limit: 6 },
+  { id: 'reuters-cripto', name: 'Reuters · Cripto', category: 'cripto', kind: 'news', tier: 1, access: 'mixed', language: 'en', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Areuters.com%20(intitle%3Acrypto%20OR%20intitle%3Astablecoin%20OR%20intitle%3Astablecoins%20OR%20intitle%3ARevolut%20OR%20intitle%3ABinance%20OR%20intitle%3Atokenized%20OR%20intitle%3Abitcoin)%20when%3A30d&hl=en-US&gl=US&ceid=US%3Aen', site: 'https://www.reuters.com/', allowHosts: ['reuters.com'], limit: 6 },
   { id: 'ft-cripto', name: 'Financial Times · Cryptofinance', category: 'cripto', kind: 'news', tier: 1, access: 'paywall', language: 'en', adapter: 'rss', url: 'https://www.ft.com/cryptofinance?format=rss', site: 'https://www.ft.com/cryptofinance', limit: 5 },
   { id: 'expansion-cripto', name: 'Expansión · Criptomonedas', category: 'cripto', kind: 'news', tier: 1, access: 'mixed', language: 'es', adapter: 'rss', url: 'https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml', site: 'https://www.expansion.com/mercados/criptomonedas.html', limit: 5 },
-  { id: 'bloomberg-cripto', name: 'Bloomberg Línea · Cripto', category: 'cripto', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Abloomberglinea.com%20(cripto%20OR%20criptomonedas%20OR%20stablecoin%20OR%20stablecoins%20OR%20tokenizaci%C3%B3n%20OR%20bitcoin)%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 4 },
+  { id: 'bloomberg-cripto', name: 'Bloomberg Línea · Cripto', category: 'cripto', kind: 'news', tier: 1, access: 'open', language: 'es', adapter: 'google', url: 'https://news.google.com/rss/search?q=site%3Abloomberglinea.com%20(intitle%3Acripto%20OR%20intitle%3Acriptomonedas%20OR%20intitle%3Astablecoin%20OR%20intitle%3Astablecoins%20OR%20intitle%3Atokenizaci%C3%B3n%20OR%20intitle%3Abitcoin%20OR%20intitle%3ABinance)%20-Cotizaci%C3%B3n%20when%3A30d&hl=es-419&gl=EC&ceid=EC%3Aes-419', site: 'https://www.bloomberglinea.com/', allowHosts: ['bloomberglinea.com'], limit: 4 },
   { id: 'theblock', name: 'The Block', category: 'cripto', kind: 'news', tier: 2, access: 'mixed', language: 'en', adapter: 'rss', url: 'https://www.theblock.co/rss.xml', site: 'https://www.theblock.co/', limit: 4 },
+  { id: 'decrypt', name: 'Decrypt', category: 'cripto', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'rss', url: 'https://decrypt.co/feed', site: 'https://decrypt.co/', limit: 3 },
   { id: 'coindesk', name: 'CoinDesk', category: 'cripto', kind: 'news', tier: 2, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.coindesk.com/arc/outboundfeeds/rss/', site: 'https://www.coindesk.com/', limit: 4 },
   { id: 'criptonoticias', name: 'CriptoNoticias', category: 'cripto', kind: 'news', tier: 2, access: 'open', language: 'es', adapter: 'rss', url: 'https://www.criptonoticias.com/feed/', site: 'https://www.criptonoticias.com/', limit: 3 },
   { id: 'chainalysis', name: 'Chainalysis', category: 'cripto', kind: 'company', tier: 3, access: 'open', language: 'en', adapter: 'rss', url: 'https://www.chainalysis.com/blog/feed/', site: 'https://www.chainalysis.com/blog/', limit: 3 },
@@ -89,14 +111,35 @@ const SOURCE_BY_ID = new Map(SOURCES.map(source => [source.id, source]));
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputArg = process.argv.indexOf('--output');
 const output = outputArg === -1 ? resolve(root, 'site/data/news.json') : resolve(process.argv[outputArg + 1]);
+// Registro de descartes de cada ejecución: junto a la edición, en el mismo directorio (ver discardLog en content.mjs).
+export const DISCARDS_FILE = 'descartes.json';
+export const discardsPath = edition => resolve(dirname(edition), DISCARDS_FILE);
+
+// Escritura atómica: se escribe en `.tmp` y se renombra, así un lector nunca ve un archivo a medias.
+export async function writeJson(file, payload) {
+  await mkdir(dirname(file), { recursive: true });
+  const temp = `${file}.tmp`;
+  await writeFile(temp, JSON.stringify(payload, null, 2) + '\n', 'utf8'); await rename(temp, file);
+}
 
 const USER_AGENT = 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)';
 const MAX_DATE_LOOKUPS = 200;
 // Tope por canal. Con la acumulación cada canal reúne hasta 30 días; composeEdition reparte este tope entre períodos.
 const MAX_PER_CHANNEL = 80;
+// Tope por tema: en cada canal y período, como mucho 3 notas que nombren a la misma entidad (el hackeo de Binance llegó a ocupar
+// 35 de 76 notas de Cripto). Las notas oficiales no cuentan.
+const MAX_PER_TOPIC = 3;
+// Plazas del canal reservadas a los documentos oficiales de nivel 1 (Fed, BCE europeo, EBA, FSB, BIS…), que sin reserva
+// quedaban fuera del tope de 80 frente a medios prolíficos; lo que no usan vuelve al canal.
+const OFFICIAL_SHARE = 0.25;
+const isOfficial = story => story.kind === 'official' && story.tier === 1;
 // Google News responde 429 a ráfagas: sus fuentes se piden de una en una, con pausa y un reintento.
 const GOOGLE_PAUSE_MS = 2500;
 const GOOGLE_RETRY_MS = 10000;
+// La búsqueda Endeavor encadena unos 10 lotes detrás de las demás consultas de Google: entre lote y lote, una pausa mayor.
+const SEARCH_PAUSE_MS = 3500;
+// Google News devuelve como mucho 100 resultados por consulta: llegar ahí marca la fuente como saturada en su embudo.
+const GOOGLE_MAX_RESULTS = 100;
 const sleep = ms => new Promise(done => setTimeout(done, ms));
 
 async function fetchText(url, adapter) {
@@ -173,14 +216,16 @@ function urlsFor(source, hasHistory) {
 async function fetchSearch(source, known = {}) {
   const lots = searchLots(searchBatches(searchCompanies()));
   const { picked } = rotation(lots, known?.cursor);
-  const raw = []; let consumed = 0, answered = 0, lastError;
+  const raw = []; let consumed = 0, answered = 0, saturated = false, lastError;
   for (const lot of picked) {
-    if (consumed) await sleep(GOOGLE_PAUSE_MS);
+    if (consumed) await sleep(SEARCH_PAUSE_MS);
     try {
       const body = await fetchText(lot.url, source.adapter);
       // Una búsqueda sin resultados es un RSS válido sin <item>: cuenta como respuesta, no como error.
       if (/<channel[\s>]/.test(body) && !/<item[\s>]/.test(body)) { answered++; consumed++; continue; }
-      raw.push(...parseFeed(body, { ...source, language: lot.language })); answered++; consumed++;
+      const rows = parseFeed(body, { ...source, language: lot.language });
+      if (rows.length >= GOOGLE_MAX_RESULTS) saturated = true;
+      raw.push(...rows); answered++; consumed++;
     }
     catch (error) {
       lastError = error;
@@ -192,30 +237,40 @@ async function fetchSearch(source, known = {}) {
   if (!answered) throw lastError || new Error('Sin lotes de búsqueda');
   const tracked = { cursor: rotation(lots, known?.cursor, consumed).next, lots: lots.length };
   console.log(`${source.name}: lotes ${picked.slice(0, consumed).map(lot => lot.index + 1).join(', ')} de ${lots.length} (${raw.length} resultados).`);
-  return { raw, tracked };
+  return { raw, tracked, saturated };
 }
 
+// Embudo de la fuente (`funnel`, en sources[] de la edición): filas leídas (`read`), fuera por enlace ajeno a sus dominios
+// (`foreign`), resoluciones del BCE que no llegan a tener fecha (`undated`: de años anteriores, fuera de tema o con la consulta
+// pendiente), fuera por medio (`host`), por normalize (`normalize`: sin titular, enlace o fecha, o con más de 30 días), por tema
+// (`topic`) y aceptadas (`accepted`); siempre read = foreign + undated + host + normalize + topic + accepted. `saturated`: una
+// consulta de Google devolvió el máximo de resultados, así que pudo quedar fuera lo peor posicionado sin aviso.
 async function fetchSource(source, { known = {}, hasHistory = false } = {}) {
   if (source.search) {
-    const { raw, tracked } = await fetchSearch(source, known);
-    const stories = raw.filter(row => allowedHost(row, source)).map(row => normalize(row, source)).filter(Boolean).filter(story => relevant(story, source));
-    return { stories, tracked };
+    const { raw, tracked, saturated } = await fetchSearch(source, known);
+    const { stories, funnel, discards } = screen(raw, source);
+    return { stories, tracked, discards, funnel: { read: raw.length, foreign: 0, undated: 0, ...funnel, ...(saturated ? { saturated } : {}) } };
   }
-  let raw = [];
+  let raw = [], saturated = false;
   for (const [index, url] of urlsFor(source, hasHistory).entries()) {
-    try { raw.push(...parse(await fetchText(url, source.adapter), source, url)); }
+    try {
+      const rows = parse(await fetchText(url, source.adapter), source, url);
+      if (source.adapter === 'google' && rows.length >= GOOGLE_MAX_RESULTS) saturated = true;
+      raw.push(...rows);
+    }
     catch (error) { if (!index) throw error; console.warn(`${source.name}: ${url} no respondió (${error.message}).`); break; }
   }
+  const read = raw.length;
   // Enlaces fuera de los dominios de la fuente (`linkHosts`): fuera antes de cualquier otra petición.
   const foreign = raw.filter(row => !linkAllowed(row, source));
   if (foreign.length) {
     console.warn(`${source.name}: ${foreign.length} enlaces fuera de los dominios de la fuente (${[...new Set(foreign.map(row => { try { return new URL(row.url, source.url).hostname; } catch { return String(row.url).slice(0, 60); } }))].join(', ')}).`);
     raw = raw.filter(row => linkAllowed(row, source));
   }
-  let tracked;
-  if (source.adapter === 'bce-resolutions') ({ tracked, rows: raw } = await dateResolutions(raw, source, known));
-  const stories = raw.filter(row => allowedHost(row, source)).map(row => normalize(row, source)).filter(Boolean).filter(story => relevant(story, source));
-  return { stories, tracked };
+  let tracked, undated = 0;
+  if (source.adapter === 'bce-resolutions') { const before = raw.length; ({ tracked, rows: raw } = await dateResolutions(raw, source, known)); undated = before - raw.length; }
+  const { stories, funnel, discards } = screen(raw, source);
+  return { stories, tracked, discards, funnel: { read, foreign: foreign.length, undated, ...funnel, ...(saturated ? { saturated } : {}) } };
 }
 
 const settle = promise => promise.then(value => ({ status: 'fulfilled', value }), reason => ({ status: 'rejected', reason }));
@@ -248,13 +303,15 @@ function report(stories, sources, now) {
     console.log(`${channel}: ${list.length} notas · nivel 1/2/3: ${[1, 2, 3].map(tier => count(story => story.tier === tier)).join('/')} · es/en: ${count(story => story.language === 'es')}/${count(story => story.language === 'en')} · de pago: ${count(story => story.access === 'paywall')} · conservadas sin respuesta: ${count(story => story.stale)} · ${periods}`);
   }
   const judged = stories.filter(story => story.editorial);
-  console.log(`Juicio editorial: ${judged.length} de ${stories.length} notas de la edición (${judged.filter(story => story.editorial.why).length} con «por qué importa»); ${stories.filter(story => story.coverage).length} con cobertura agrupada.`);
+  console.log(`Juicio editorial: ${judged.length} de ${stories.length} notas de la edición (${judged.filter(story => story.editorial.es).length} con traducción); ${stories.filter(story => story.coverage).length} con cobertura agrupada.`);
   const tagged = stories.filter(story => story.endeavor);
   console.log(`Empresas Endeavor: ${tagged.length} notas etiquetadas (${CHANNELS.map(channel => `${channel}: ${tagged.filter(story => story.category === channel).length}`).join(', ')}).`);
   const failed = sources.filter(source => source.status === 'error').map(source => source.name);
   const empty = sources.filter(source => source.status === 'ok' && !source.recentCount).map(source => source.name);
   if (failed.length) console.log(`Fuentes sin respuesta: ${failed.join(', ')}.`);
   if (empty.length) console.log(`Fuentes sin notas: ${empty.join(', ')}.`);
+  const saturated = sources.filter(source => source.funnel?.saturated).map(source => source.name);
+  if (saturated.length) console.log(`Consultas de Google en el máximo de resultados (puede faltar lo peor posicionado): ${saturated.join(', ')}.`);
 }
 
 // Edición anterior leída de disco: si no tiene la forma esperada se trata como si no hubiera (`shapeOk: false`). Si la tiene,
@@ -267,16 +324,21 @@ export function loadPrevious(data) {
 
 const isPrimary = story => !!SOURCE_BY_ID.get(story?.sourceId)?.primary;
 // La capa editorial nunca hace fallar la edición: ante cualquier error inesperado, las notas siguen con el juicio que ya
-// traían (saneado) y sin juicio nuevo.
-async function editorialPass(stories, saved, now) {
+// tenían (el suyo o el del memo, saneado) y sin juicio nuevo.
+// Los juicios de la edición anterior (`carried`) se siembran en el memo antes de juzgar: al acumular gana la copia fresca del
+// feed, que no trae juicio, y sin esto la misma nota se volvería a enviar (y a pagar) en cada ejecución.
+// `connect` y `apply` solo los cambian las pruebas (cliente simulado, sin red ni credenciales).
+export async function editorialPass(stories, saved, now, carried = [], { connect = editorialClient, apply = applyEditorial, log = console } = {}) {
   const memo = readMemo(saved, now);
   try {
-    const { client, sdk, reason } = await editorialClient();
-    const { stories: pool } = await applyEditorial(stories, { client, sdk, reason, memo, now, primary: isPrimary });
+    seedMemo(memo, carried, now);
+    const { client, sdk, reason } = await connect();
+    const { stories: pool } = await apply(stories, { client, sdk, reason, memo, now, primary: isPrimary, log });
     return { pool, memo };
   } catch {
-    console.warn('Capa editorial: error inesperado; la edición se publica sin juicio editorial nuevo.');
-    return { pool: stories.map(cleanStory), memo };
+    log.warn('Capa editorial: error inesperado; la edición se publica sin juicio editorial nuevo.');
+    const known = story => story?.editorial === undefined && memo.has(story?.id) ? { ...story, editorial: memo.get(story.id).judgment } : story;
+    return { pool: stories.map(story => cleanStory(known(story))), memo };
   }
 }
 
@@ -288,28 +350,31 @@ async function run() {
   if (dropped) console.warn(`Edición anterior: ${dropped} notas descartadas por no cumplir la forma o los dominios de su fuente.`);
   const checkedAt = new Date().toISOString(); const now = Date.parse(checkedAt);
   const results = await fetchAll(SOURCES, previous);
-  const stories = []; const states = []; const tracked = {}; let successful = 0;
+  const stories = []; const states = []; const tracked = {}; const discards = []; let successful = 0;
   for (let i = 0; i < SOURCES.length; i++) {
     const source = SOURCES[i], result = results[i], ok = result.status === 'fulfilled';
-    if (ok) { successful++; if (result.value.tracked) tracked[source.id] = result.value.tracked; }
+    if (ok) { successful++; if (result.value.tracked) tracked[source.id] = result.value.tracked; discards.push(...(result.value.discards || [])); }
     else { if (previous.tracked?.[source.id]) tracked[source.id] = previous.tracked[source.id]; console.error(`${source.name}: ${result.reason?.message || result.reason}`); }
     // Acumulación: lo nuevo más lo que la edición anterior ya tenía de esta fuente y sigue siendo válido.
     stories.push(...accumulate(ok ? result.value.stories : [], previous.stories, source, { ok, now, keep: story => passes(story, source) }));
-    states.push({ source, ok, oldState: previous.sources.find(s => s?.id === source.id) });
+    states.push({ source, ok, funnel: ok ? result.value.funnel : undefined, oldState: previous.sources.find(s => s?.id === source.id) });
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }
   // Capa editorial: juicio para las notas que aún no lo tienen. Sin credenciales o con cualquier fallo, la edición sigue igual.
-  const { pool, memo } = await editorialPass(deduplicate(stories), previous.tracked?.editorial, now);
+  // Un hecho, una nota: las copias y las notas de varios medios sobre el mismo hecho quedan en una antes de pedir juicios.
+  const { pool, memo } = await editorialPass(deduplicate(stories, { primary: isPrimary }), previous.tracked?.editorial, now, previous.stories);
   // Todas las notas, de todos los canales, llevan `endeavor` si su titular (o su extracto) nombra a una empresa del directorio.
-  const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
+  const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition, perTopic: MAX_PER_TOPIC, reserve: isOfficial, reserveShare: OFFICIAL_SHARE, refill: true }).map(story => tagEndeavor(story));
   const notes = writeMemo({ pool, edition, memo, now });
   if (Object.keys(notes.notes).length) tracked.editorial = notes;
-  const sources = states.map(({ source, ok, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length }));
+  const sources = states.map(({ source, ok, funnel, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length, ...(funnel ? { funnel } : {}) }));
   const payload = { version: 1, generatedAt: checkedAt, stories: edition, sources, tracked };
-  await mkdir(dirname(output), { recursive: true });
-  const temp = `${output}.tmp`;
-  await writeFile(temp, JSON.stringify(payload, null, 2) + '\n', 'utf8'); await rename(temp, output);
+  await writeJson(output, payload);
   console.log(`Edición generada: ${edition.length} publicaciones, ${successful}/${SOURCES.length} fuentes disponibles.`);
+  // El registro de descartes es un diagnóstico: si no se puede escribir, la edición ya publicada sigue valiendo.
+  const log = discardLog(discards, { generatedAt: checkedAt });
+  try { await writeJson(discardsPath(output), log); console.log(`Descartes: ${discards.filter(entry => entry.stage === 'tema').length} por tema y ${discards.filter(entry => entry.stage === 'medio').length} por medio; ${log.discards.length} en ${DISCARDS_FILE}.`); }
+  catch (error) { console.warn(`No se pudo escribir ${DISCARDS_FILE} (${error.code || error.name}).`); }
   report(edition, sources, now);
 }
 // Solo se ejecuta como programa; las pruebas importan SOURCES sin recopilar.

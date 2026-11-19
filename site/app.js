@@ -23,23 +23,24 @@ const periods = [
   { days: 30, button: '30', name: 'Últimos 30 días', long: '30 días' },
 ];
 const DEFAULT_PERIOD = 1;
-const tierLabels = { 1: 'Nivel 1 · Referencia y oficiales', 2: 'Nivel 2 · Especializada', 3: 'Nivel 3 · Contexto' };
-const accessLabels = { open: 'Acceso abierto', paywall: 'De pago', mixed: 'Acceso mixto' };
+const tierLabels = { 1: 'Oficiales y de referencia', 2: 'Especializadas', 3: 'Contexto' };
 const MIN_STORIES = 5;
 const DAY = 86_400_000;
 const STALE_AFTER = 3 * 3_600_000;
 const FUTURE_TOLERANCE = 5 * 60_000;
 const REFRESH_EVERY = 10 * 60_000;
-const TICKER_ITEMS = 16;
+const TICKER_ITEMS = 12;
+const TICKER_PER_CHANNEL = 3;
+const TICKER_WINDOW = 2 * 86_400_000;
 const TICKER_SPEED = 70; // píxeles por segundo
 const ZONE = 'America/Guayaquil';
 
 const dateTimeFormat = new Intl.DateTimeFormat('es-EC', { day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: ZONE });
-const shortFormat = new Intl.DateTimeFormat('es-EC', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit', hour12: false, timeZone: ZONE });
+const shortFormat = new Intl.DateTimeFormat('es-EC', { day: 'numeric', month: 'short', timeZone: ZONE });
 const yearFormat = new Intl.DateTimeFormat('es-EC', { year: 'numeric', timeZone: ZONE });
 const $ = selector => document.querySelector(selector);
 
-// Estado único del sintonizador: canal, noticia y período (más lo necesario para emitir).
+// Estado único: canal, noticia y período.
 const state = {
   data: null,
   status: 'cargando', // cargando | ok | error
@@ -50,20 +51,13 @@ const state = {
   story: 0,
   period: DEFAULT_PERIOD,
   view: { stories: [], periodIndex: DEFAULT_PERIOD, widened: false },
-  playing: true,
-  hover: false,
-  elapsed: 0,
-  lastFrame: 0,
-  playLabel: null,
   stripChannel: -1,
   tickerKey: null,
   channelButtons: [],
   periodButtons: [],
   excerptFor: null, // id de la nota cuyo extracto se muestra
-  excerptOpen: false, // en móvil el extracto se muestra en pocas líneas hasta pulsar «Ver todo»
+  excerptOpen: false, // el extracto se muestra en pocas líneas hasta pulsar «Ver todo»
 };
-// Mismo corte que styles.css: por debajo, el extracto se recorta a pocas líneas.
-const narrowScreen = window.matchMedia('(max-width: 719px)');
 
 // ---------- Utilidades ----------
 function safeUrl(value) {
@@ -81,10 +75,11 @@ function el(tag, className, content) {
 function text(value) { return value == null ? '' : String(value).trim(); }
 function timeOf(value) { const parsed = Date.parse(value); return Number.isFinite(parsed) ? parsed : NaN; }
 function formatDate(ms) { return Number.isFinite(ms) ? dateTimeFormat.format(ms) : 'fecha no disponible'; }
-// Fecha corta para la línea de estado («7 nov, 09:12»); con año si no es el año en curso.
+// Fecha de la línea de estado: relativa si es de las últimas 48 horas, «7 nov» después (con año si no es el en curso).
 function formatShort(ms) {
   if (!Number.isFinite(ms)) return 'fecha no disponible';
-  return yearFormat.format(ms) === yearFormat.format(Date.now()) ? shortFormat.format(ms) : dateTimeFormat.format(ms);
+  if (Date.now() - ms < 48 * 3_600_000) return ago(Date.now() - ms);
+  return yearFormat.format(ms) === yearFormat.format(Date.now()) ? shortFormat.format(ms) : `${shortFormat.format(ms)} ${yearFormat.format(ms)}`;
 }
 function plural(count, one, many) { return `${count} ${count === 1 ? one : many}`; }
 function ago(ms) {
@@ -95,12 +90,14 @@ function ago(ms) {
   if (hours < 48) return `hace ${plural(hours, 'hora', 'horas')}`;
   return `hace ${Math.floor(hours / 24)} días`;
 }
-// Línea «por qué importa» (generada automáticamente): texto plano corto, sin enlaces ni etiquetas; si no, no se muestra.
-function whyOf(story) {
-  const why = story?.editorial?.why;
-  if (typeof why !== 'string') return '';
-  const clean = why.replace(/\s+/g, ' ').trim();
-  return clean.length <= 200 && !/[<>]|https?:|www\./i.test(clean) ? clean : '';
+// Traducción automática del titular de una nota en inglés (campo opcional `editorial.es`): texto plano corto.
+// Cualquier otro texto de la capa editorial (incluido el campo antiguo de las ediciones previas) no se muestra.
+function translationOf(story) {
+  if (langOf(story) !== 'en') return '';
+  const es = story?.editorial?.es;
+  if (typeof es !== 'string') return '';
+  const clean = es.replace(/\s+/g, ' ').trim();
+  return clean.length <= 240 && !/[<>]|https?:|www\./i.test(clean) ? clean : '';
 }
 // «También en»: otros medios que contaron el mismo hecho (campo opcional `coverage`).
 function coverageOf(story) {
@@ -149,11 +146,6 @@ function refreshView() {
   if (state.story >= state.view.stories.length) state.story = 0;
 }
 function currentStory() { return state.view.stories[state.story] || null; }
-function durationFor(story) {
-  const length = titleOf(story).length + text(story?.excerpt).length + whyOf(story).length;
-  return Math.min(40_000, Math.max(15_000, 9_000 + length * 60));
-}
-
 // ---------- Construcción única de controles ----------
 function buildChannels() {
   const root = $('#canales');
@@ -186,16 +178,12 @@ function updateDeck() {
     const count = state.data ? (index === state.channel ? state.view : viewFor(index)).stories.length : null;
     button.setAttribute('aria-pressed', String(index === state.channel));
     button.querySelector('.canal-cuenta').textContent = count == null ? '—' : String(count);
-    button.setAttribute('aria-label', `${channels[index].name}, canal ${index + 1}${count == null ? '' : `, ${plural(count, 'nota', 'notas')}`}`);
+    button.setAttribute('aria-label', `${channels[index].name}${count == null ? '' : `, ${plural(count, 'nota', 'notas')}`}`);
   });
-  state.periodButtons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === state.period)));
-  const several = state.view.stories.length > 1;
-  $('#anterior').disabled = !several;
-  $('#adelante').disabled = !several;
-  // El rótulo dice lo que hace el botón en cada estado: «Pausar» mientras avanza, «Reanudar» en pausa.
-  $('#pausa').disabled = !several;
-  $('#pausa').textContent = state.playing ? 'Pausar' : 'Reanudar';
-  $('#pausa').title = state.playing ? 'Pausar el avance automático' : 'Reanudar el avance automático';
+  // Marca el período que de verdad se ve (si se amplió, el ampliado).
+  const shown = state.data ? state.view.periodIndex : state.period;
+  state.periodButtons.forEach((button, index) => button.setAttribute('aria-pressed', String(index === shown)));
+  $('#adelante').disabled = state.view.stories.length < 2;
   revealChannel();
 }
 // En pantallas estrechas la lista de canales es una franja horizontal: centra el canal activo.
@@ -219,7 +207,7 @@ function editionTime() {
 function renderEdition() {
   const node = $('#edicion');
   if (!state.data) {
-    node.textContent = state.status === 'error' ? 'Sin edición' : 'Cargando la edición…';
+    node.textContent = state.status === 'error' ? 'Sin edición' : 'Cargando…';
     node.classList.toggle('atrasada', state.status === 'error');
     node.removeAttribute('title');
     return;
@@ -233,8 +221,8 @@ function renderEdition() {
   const age = Date.now() - generated;
   const late = age > STALE_AFTER;
   let label = `Actualizado ${ago(age)}`;
-  if (late) label = `Edición atrasada · actualizada ${ago(age)}`;
-  if (state.refreshError) label = `Sin actualizar · edición de ${ago(age)}`;
+  if (late) label = `Atrasada · actualizada ${ago(age)}`;
+  if (state.refreshError) label = `Sin actualizar · actualizada ${ago(age)}`;
   node.textContent = label;
   node.title = `Edición generada el ${formatDate(generated)} (hora de Ecuador)${state.refreshError ? `. Último intento de actualización fallido: ${state.refreshError}.` : ''}`;
   node.classList.toggle('atrasada', late || !!state.refreshError);
@@ -247,16 +235,11 @@ function showSignal({ label, title, body, detail = '', retry = false }) {
   $('#senal-titulo').textContent = title;
   $('#senal-titulo').dataset.largo = title.length <= 40 ? 's' : 'm';
   $('#senal-texto').textContent = body;
+  $('#senal-texto').hidden = !body;
+  $('#senal-rotulo').parentElement.hidden = !label;
   $('#senal-detalle').hidden = !detail;
   $('#senal-detalle').textContent = detail;
   $('#reintentar').hidden = !retry;
-}
-function channelSourcesSummary() {
-  const sources = (state.data?.sources || []).filter(source => source.category === channels[state.channel].id);
-  if (!sources.length) return 'La edición no registra fuentes para este canal.';
-  const ok = sources.filter(source => source.status === 'ok').length;
-  const failed = sources.length - ok;
-  return `Fuentes de este canal en la última ejecución: ${plural(ok, 'respondió', 'respondieron')}${failed ? `, ${plural(failed, 'sin respuesta', 'sin respuesta')}` : ''}.`;
 }
 function renderStory(story) {
   $('#senal').hidden = true;
@@ -272,21 +255,22 @@ function renderStory(story) {
   excerptNode.hidden = !excerpt;
   excerptNode.textContent = excerpt;
   excerptNode.lang = lang;
-  const why = whyOf(story);
-  $('#nota-porque').hidden = !why;
-  $('#nota-porque-texto').textContent = why;
+  const translation = translationOf(story);
+  $('#nota-traduccion').hidden = !translation;
+  $('#nota-traduccion-texto').textContent = translation;
+  $('#nota').classList.toggle('con-traduccion', !!translation);
   const coverage = coverageOf(story);
   $('#nota-cobertura').hidden = !coverage.length;
-  $('#nota-cobertura').textContent = coverage.length ? `También en: ${coverage.join(', ')}` : '';
+  $('#nota-cobertura').textContent = coverage.length ? `También en ${coverage.join(', ')}` : '';
   // Cada nota nueva empieza con el extracto recogido; un re-render de la misma nota respeta lo que eligió quien lee.
   if (state.excerptFor !== story.id) { state.excerptFor = story.id; state.excerptOpen = false; }
   fitExcerpt();
 
-  // Línea de estado: medio · tipo de fuente · fecha · idioma (+ de pago, vía Google News); la posición va después.
+  // Línea de estado: medio · tipo (solo si no es noticia) · fecha · «en inglés» · «de pago»; la posición va después.
   const facts = [];
   const source = text(story.source);
   if (source) facts.push(el('li', 'dato-medio', source));
-  facts.push(el('li', 'dato-tipo', (kindLabels[story.kind] || kindLabels.news).toLowerCase()));
+  if (kindLabels[story.kind] && story.kind !== 'news') facts.push(el('li', 'dato-tipo', kindLabels[story.kind].toLowerCase()));
   const published = timeOf(story.publishedAt);
   const date = el('li', 'dato-fecha');
   const time = el('time', '', formatShort(published));
@@ -296,13 +280,9 @@ function renderStory(story) {
   }
   date.append(time);
   facts.push(date);
-  const language = el('li', 'dato-idioma');
-  language.title = lang === 'en' ? 'Nota en inglés' : 'Nota en español';
-  language.append(el('span', 'sr-only', 'Idioma: '), document.createTextNode(lang.toUpperCase()));
-  facts.push(language);
-  if (story.access === 'paywall') facts.push(el('li', 'dato-pago', 'De pago'));
+  if (lang === 'en') facts.push(el('li', 'dato-idioma', 'en inglés'));
+  if (story.access === 'paywall') facts.push(el('li', 'dato-pago', 'de pago'));
   const via = text(story.via);
-  if (via) facts.push(el('li', 'dato-via', via));
   $('#nota-datos').replaceChildren(...facts);
 
   renderEndeavor(story.endeavor);
@@ -314,13 +294,13 @@ function renderStory(story) {
   $('#nota-enlace-texto').textContent = via ? 'Leer vía Google News' : 'Leer en la fuente';
   $('#nota-sin-enlace').hidden = !!url;
 }
-// Extracto en pantallas estrechas: CSS lo limita a pocas líneas; «Ver todo» aparece solo si de verdad queda texto oculto.
+// Extracto: CSS lo limita a pocas líneas; «Ver todo» aparece solo si de verdad queda texto oculto.
 function fitExcerpt() {
   const node = $('#nota-extracto');
   const button = $('#extracto-boton');
   node.classList.toggle('abierto', state.excerptOpen);
   const clipped = !node.hidden && !state.excerptOpen && node.scrollHeight > node.clientHeight + 1;
-  button.hidden = node.hidden || !narrowScreen.matches || !(clipped || state.excerptOpen);
+  button.hidden = node.hidden || !(clipped || state.excerptOpen);
   button.textContent = state.excerptOpen ? 'Ver menos' : 'Ver todo';
   button.setAttribute('aria-label', state.excerptOpen ? 'Ver menos del extracto' : 'Ver todo el extracto');
   button.setAttribute('aria-expanded', String(state.excerptOpen));
@@ -335,7 +315,8 @@ function renderEndeavor(tag) {
   const company = text(tag?.company);
   node.hidden = !company;
   if (!company) { node.replaceChildren(); return; }
-  const label = ['Empresa Endeavor', company, text(tag.country)].filter(Boolean).join(' · ');
+  const name = company === company.toUpperCase() && company.length > 3 ? company.charAt(0) + company.slice(1).toLowerCase() : company;
+  const label = ['Empresa Endeavor', name, text(tag.country)].filter(Boolean).join(' · ');
   const url = safeUrl(tag.url);
   if (!url) { node.replaceChildren(el('span', '', label)); return; }
   const link = el('a', '', label);
@@ -350,54 +331,21 @@ function renderScreen() {
   const story = currentStory();
   const channel = channels[state.channel];
   if (!state.data && state.status === 'error') {
-    showSignal({
-      label: 'Error de carga',
-      title: 'Sin señal',
-      body: 'No se pudo cargar la edición de noticias. No es que falten noticias: la señal no llegó a esta pantalla.',
-      detail: `Detalle técnico: ${state.error}.`,
-      retry: true,
-    });
+    showSignal({ label: 'No cargó', title: 'No se pudo cargar la edición', body: '', detail: `${state.error}.`, retry: true });
   } else if (!state.data) {
-    showSignal({ label: 'Cargando', title: 'Cargando…', body: 'Cargando la edición más reciente.' });
+    showSignal({ label: '', title: 'Cargando…', body: '' });
   } else if (!story) {
-    showSignal({
-      label: 'Canal sin notas',
-      title: `${channel.name}: sin notas`,
-      body: `La edición se cargó bien, pero este canal no tiene notas fechadas en los últimos ${periods[periods.length - 1].long}. Elige otro canal en la lista.`,
-      detail: channelSourcesSummary(),
-    });
+    showSignal({ label: 'Sin notas', title: `${channel.short}: sin notas en ${periods[periods.length - 1].long}`, body: '' });
   } else {
     renderStory(story);
   }
   const total = state.view.stories.length;
   $('#posicion').textContent = total ? `${state.story + 1} de ${total}` : '';
   const periodNote = $('#periodo-nota');
-  const requested = periods[state.period];
   periodNote.textContent = state.view.widened
-    ? `Período ampliado a ${periods[state.view.periodIndex].long}: menos de ${MIN_STORIES} notas en ${requested.long}.`
+    ? `Pocas notas en ${periods[state.period].long}: se muestran ${periods[state.view.periodIndex].long}.`
     : '';
   periodNote.hidden = !state.data || !state.view.widened;
-  renderUpcoming();
-  renderPlayStatus();
-}
-// «A continuación»: las dos notas siguientes del canal. Los botones existen una sola vez (no se pierde el foco).
-function renderUpcoming() {
-  const total = state.view.stories.length;
-  const slots = [$('#siguiente-1'), $('#siguiente-2')];
-  slots.forEach((button, offset) => {
-    const show = total > offset + 1;
-    button.hidden = !show;
-    if (!show) { delete button.dataset.index; return; }
-    const index = (state.story + offset + 1) % total;
-    const story = state.view.stories[index];
-    button.dataset.index = String(index);
-    button.querySelector('.siguiente-numero').textContent = String(index + 1);
-    const title = button.querySelector('.siguiente-titulo');
-    title.textContent = titleOf(story);
-    title.lang = langOf(story);
-    button.setAttribute('aria-label', `Ver la nota ${index + 1}: ${titleOf(story)}`);
-  });
-  $('#siguientes').hidden = total < 2;
 }
 function render() {
   refreshView();
@@ -416,15 +364,19 @@ function buildTicker() {
     track.replaceChildren(el('p', 'cintillo-estado', message));
   };
   if (!state.data) {
-    setMessage(`estado:${state.status}`, state.status === 'error' ? 'Sin señal · no se pudo cargar la edición' : 'Cargando la edición…');
+    setMessage(`estado:${state.status}`, state.status === 'error' ? 'No se pudo cargar la edición' : 'Cargando…');
     return;
   }
   const now = Date.now();
-  const items = state.data.stories
-    .filter(story => story && channelIndexOf(story.category) >= 0 && text(story.title) && timeOf(story.publishedAt) <= now + FUTURE_TOLERANCE)
-    .sort((a, b) => timeOf(b.publishedAt) - timeOf(a.publishedAt))
-    .slice(0, TICKER_ITEMS);
-  if (!items.length) { setMessage('vacio', 'Sin titulares en esta edición'); return; }
+  const valid = state.data.stories
+    .filter(story => story && channelIndexOf(story.category) >= 0 && text(story.title) && timeOf(story.publishedAt) <= now + FUTURE_TOLERANCE);
+  // Titulares recientes: los de las últimas 48 horas (si hay pocos, todos), por importancia y después por fecha, máximo 3 por canal.
+  const recent = valid.filter(story => timeOf(story.publishedAt) >= now - TICKER_WINDOW);
+  const pool = (recent.length >= 8 ? recent : valid)
+    .sort((a, b) => ((scoreOf(b) ?? 50) - (scoreOf(a) ?? 50)) || (timeOf(b.publishedAt) - timeOf(a.publishedAt)));
+  const perChannel = {};
+  const items = pool.filter(story => (perChannel[story.category] = (perChannel[story.category] || 0) + 1) <= TICKER_PER_CHANNEL).slice(0, TICKER_ITEMS);
+  if (!items.length) { setMessage('vacio', 'Sin titulares'); return; }
   const key = items.map(story => story.id).join('|');
   if (state.tickerKey === key) return;
   state.tickerKey = key;
@@ -439,7 +391,9 @@ function buildTicker() {
       button.dataset.id = String(story.id);
       const title = el('span', '', titleOf(story));
       title.lang = langOf(story);
-      button.append(el('span', 'sr-only', `${channels[index].name}: `), title, el('span', 'sr-only', `, ${ago(now - timeOf(story.publishedAt))}`));
+      button.append(el('span', 'sr-only', `${channels[index].name}: `));
+      if (langOf(story) === 'en') button.append(el('span', 'cintillo-idioma', 'EN · '));
+      button.append(title, el('span', 'sr-only', `, ${ago(now - timeOf(story.publishedAt))}`));
       if (copy) button.tabIndex = -1;
       item.append(button);
       list.append(item);
@@ -469,7 +423,6 @@ function tuneToStory(id) {
     position = state.view.stories.findIndex(item => item === story);
   }
   state.story = Math.max(0, position);
-  state.elapsed = 0;
   render();
   announceStory(changed);
 }
@@ -479,14 +432,15 @@ function buildSources() {
   const list = $('#fuentes-lista');
   const summary = $('#fuentes-resumen');
   if (!state.data) {
-    summary.textContent = state.status === 'error' ? 'No se pudo cargar la edición: no hay datos de fuentes que mostrar.' : 'Cargando la edición…';
+    summary.textContent = state.status === 'error' ? 'No se pudo cargar la edición.' : 'Cargando…';
     list.replaceChildren();
     return;
   }
   const sources = state.data.sources.filter(source => source && typeof source === 'object');
   const ok = sources.filter(source => source.status === 'ok').length;
   const checks = sources.map(source => timeOf(source.checkedAt)).filter(Number.isFinite);
-  summary.textContent = `${plural(sources.length, 'fuente', 'fuentes')} · ${ok} respondieron · ${sources.length - ok} sin respuesta en la última ejecución${checks.length ? ` (${formatDate(Math.max(...checks))}, hora de Ecuador)` : ''}.`;
+  const failed = sources.length - ok;
+  summary.textContent = `${plural(sources.length, 'fuente', 'fuentes')}${failed ? `, ${failed} sin respuesta` : ', todas respondieron'} en la última ejecución${checks.length ? ` (${formatDate(Math.max(...checks))}, hora de Ecuador)` : ''}.`;
 
   const order = (a, b) => (channelIndexOf(a.category) - channelIndexOf(b.category)) || text(a.name).localeCompare(text(b.name), 'es');
   const groups = [1, 2, 3].map(tier => ({ label: tierLabels[tier], items: sources.filter(source => Number(source.tier) === tier) }));
@@ -514,10 +468,10 @@ function buildSources() {
       }
       const channelIndex = channelIndexOf(source.category);
       const facts = [
-        channelIndex >= 0 ? `Canal ${channelIndex + 1}, ${channels[channelIndex].name}` : text(source.category),
-        kindLabels[source.kind] || '',
-        source.language === 'en' || source.language === 'es' ? source.language.toUpperCase() : '',
-        accessLabels[source.access] || '',
+        channelIndex >= 0 ? channels[channelIndex].short : text(source.category),
+        source.kind && source.kind !== 'news' ? (kindLabels[source.kind] || '').toLowerCase() : '',
+        source.language === 'en' ? 'en inglés' : '',
+        source.access === 'paywall' ? 'de pago' : '',
       ].filter(Boolean);
       info.append(nameNode, el('p', 'fuente-datos', facts.join(' · ')));
       item.append(info, el('p', `fuente-estado${source.status === 'ok' ? '' : ' error'}`, sourceStatus(source)));
@@ -531,7 +485,7 @@ function buildSources() {
 function sourceStatus(source) {
   if (source.status === 'ok') {
     const count = Number(source.recentCount) || 0;
-    return count ? `OK · ${plural(count, 'nota reciente', 'notas recientes')}` : 'OK · sin novedades';
+    return count ? plural(count, 'nota', 'notas') : 'sin novedades';
   }
   const last = timeOf(source.lastSuccessAt);
   return Number.isFinite(last) ? `Sin respuesta · último éxito ${formatDate(last)}` : 'Sin respuesta · sin éxito registrado';
@@ -546,9 +500,9 @@ function announce(message) {
 function announceStory(withChannel) {
   const story = currentStory();
   const total = state.view.stories.length;
-  let message = withChannel ? `Canal ${state.channel + 1}, ${channels[state.channel].name}. ` : '';
-  if (!state.data) message += state.status === 'error' ? 'Sin señal.' : 'Cargando.';
-  else if (!story) message += 'Canal sin notas.';
+  let message = withChannel ? `${channels[state.channel].name}. ` : '';
+  if (!state.data) message += state.status === 'error' ? 'No se pudo cargar la edición.' : 'Cargando.';
+  else if (!story) message += 'Sin notas.';
   else message += `Nota ${state.story + 1} de ${total}: ${titleOf(story)}`;
   if (withChannel && state.view.widened) message += `. Período ampliado a ${periods[state.view.periodIndex].long}.`;
   announce(message);
@@ -559,7 +513,6 @@ function selectChannel(index) {
   if (target === state.channel) return;
   state.channel = target;
   state.story = 0;
-  state.elapsed = 0;
   render();
   announceStory(true);
 }
@@ -567,17 +520,8 @@ function moveStory(direction, manual) {
   const total = state.view.stories.length;
   if (total < 2) return;
   state.story = (state.story + direction + total) % total;
-  state.elapsed = 0;
   renderScreen();
   if (manual) announceStory(false);
-}
-function goToStory(index) {
-  const total = state.view.stories.length;
-  if (!Number.isInteger(index) || index < 0 || index >= total || index === state.story) return;
-  state.story = index;
-  state.elapsed = 0;
-  renderScreen();
-  announceStory(false);
 }
 function setPeriod(index) {
   if (index === state.period) return;
@@ -586,48 +530,10 @@ function setPeriod(index) {
   refreshView();
   const position = state.view.stories.findIndex(story => story.id === currentId);
   state.story = position < 0 ? 0 : position;
-  state.elapsed = 0;
   render();
   const count = state.view.stories.length;
   announce(`Período: ${periods[index].name}. ${channels[state.channel].name}: ${plural(count, 'nota', 'notas')}${state.view.widened ? `, período ampliado a ${periods[state.view.periodIndex].long}` : ''}.`);
 }
-function togglePlayback() {
-  state.playing = !state.playing;
-  state.lastFrame = performance.now();
-  updateDeck();
-  renderPlayStatus();
-}
-// Foco de lectura: dentro de la noticia, salvo en los mandos y en «A continuación» (que no deben congelar el avance).
-function readingFocus() {
-  const active = document.activeElement;
-  return !!active && $('#noticia').contains(active) && !active.closest('.mandos, .siguientes');
-}
-// Avance automático: si corre y qué se muestra junto a «2 de 9» (cuenta atrás o motivo de espera).
-function playState() {
-  if (!state.data || state.view.stories.length < 2) return { running: false, label: '' };
-  if (!state.playing) return { running: false, label: ' · en pausa' };
-  if (dialogOpen() || document.hidden) return { running: false, label: ' · en espera' };
-  if (state.hover || readingFocus()) return { running: false, label: ' · en espera mientras lees' };
-  const story = currentStory();
-  const seconds = story ? Math.max(1, Math.ceil((durationFor(story) - state.elapsed) / 1000)) : 0;
-  return { running: true, label: ` · avance en ${seconds} s` };
-}
-function tick(now) {
-  const delta = Math.min(1000, now - (state.lastFrame || now));
-  state.lastFrame = now;
-  const story = currentStory();
-  if (playState().running && story) {
-    state.elapsed += delta;
-    if (state.elapsed >= durationFor(story)) moveStory(1, false);
-  }
-  renderPlayStatus();
-  requestAnimationFrame(tick);
-}
-function renderPlayStatus() {
-  const { label } = playState();
-  if (label !== state.playLabel) { $('#estado-emision').textContent = label; state.playLabel = label; }
-}
-
 // ---------- Carga de la edición ----------
 async function loadNews({ manual = false } = {}) {
   if (state.loading) return;
@@ -656,7 +562,7 @@ async function loadNews({ manual = false } = {}) {
     buildTicker();
     buildSources();
     if (recovered) {
-      announce('Señal recuperada: edición cargada.');
+      announce('Edición cargada.');
       if (manual) $('#noticia').focus();
     }
   } catch (error) {
@@ -670,7 +576,7 @@ async function loadNews({ manual = false } = {}) {
       render();
       buildTicker();
       buildSources();
-      if (manual) announce(`Sigue sin señal: ${message}.`);
+      if (manual) announce(`Sigue sin cargar: ${message}.`);
     }
   } finally {
     state.loading = false;
@@ -681,9 +587,7 @@ async function loadNews({ manual = false } = {}) {
 
 // ---------- Eventos ----------
 function bindEvents() {
-  $('#anterior').addEventListener('click', () => moveStory(-1, true));
   $('#adelante').addEventListener('click', () => moveStory(1, true));
-  $('#pausa').addEventListener('click', togglePlayback);
   $('#extracto-boton').addEventListener('click', toggleExcerpt);
   // El recorte depende del ancho y de la letra: se vuelve a medir al cambiar la ventana y cuando Geist termina de cargar.
   window.addEventListener('resize', fitExcerpt);
@@ -696,27 +600,17 @@ function bindEvents() {
     const button = event.target.closest('button[data-id]');
     if (button) tuneToStory(button.dataset.id);
   });
-  $('#siguientes').addEventListener('click', event => {
-    const button = event.target.closest('button[data-index]');
-    if (button) goToStory(Number(button.dataset.index));
-  });
 
   const sources = $('#fuentes');
   $('#abrir-fuentes').addEventListener('click', () => sources.showModal());
   $('#cerrar-fuentes').addEventListener('click', () => sources.close());
   sources.addEventListener('click', event => { if (event.target === sources) sources.close(); });
-  sources.addEventListener('close', () => { $('#abrir-fuentes').focus(); state.lastFrame = performance.now(); });
-
-  // Pausa por lectura: puntero sobre la nota (el foco se comprueba en readingFocus).
-  const story = $('#nota');
-  story.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') state.hover = true; });
-  story.addEventListener('pointerleave', () => { state.hover = false; });
+  sources.addEventListener('close', () => $('#abrir-fuentes').focus());
 
   document.addEventListener('keydown', event => {
     if (event.defaultPrevented || event.altKey || event.ctrlKey || event.metaKey || dialogOpen()) return;
     const target = event.target instanceof Element ? event.target : null;
     if (target?.closest('input, select, textarea, [contenteditable="true"]')) return;
-    const onControl = !!target?.closest('button, a, summary');
     // La lista de canales es vertical: ↓ baja al canal siguiente y ↑ sube al anterior.
     if (event.key === 'ArrowDown') { event.preventDefault(); selectChannel(state.channel + 1); }
     else if (event.key === 'ArrowUp') { event.preventDefault(); selectChannel(state.channel - 1); }
@@ -726,7 +620,7 @@ function bindEvents() {
       const number = Number(event.key);
       if (number <= channels.length) selectChannel(number - 1);
       else announce(`El canal ${number} no existe. Hay ${channels.length} canales.`);
-    } else if (event.key === ' ' && !onControl) { event.preventDefault(); togglePlayback(); }
+    }
   });
 }
 
@@ -748,6 +642,5 @@ render();
 buildTicker();
 buildSources();
 loadNews();
-requestAnimationFrame(tick);
 window.setInterval(renderEdition, 15_000);
 window.setInterval(() => loadNews(), REFRESH_EVERY);

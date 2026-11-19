@@ -25,6 +25,7 @@
     <nav class="guia" aria-label="Canales y período">
       <div id="canales" class="canales" role="group" aria-label="Canales"></div>
       <div id="periodos" class="periodos" role="group" aria-label="Período"></div>
+      <p id="periodo-nota" class="aviso" hidden></p>
     </nav>
 
     <div id="noticia" class="noticia" tabindex="-1" role="region" aria-label="Noticia en pantalla">
@@ -32,38 +33,26 @@
         <div class="estado">
           <span class="punto" aria-hidden="true"></span>
           <ul id="nota-datos" class="datos" aria-label="Datos de la nota"></ul>
-          <p class="posicion"><span id="posicion"></span><span id="estado-emision"></span></p>
+          <p id="posicion" class="posicion"></p>
         </div>
         <h1 id="nota-titular" class="titular"></h1>
-        <p id="nota-porque" class="porque" lang="es" hidden><span class="porque-rotulo">Por qué importa · resumen automático</span><span id="nota-porque-texto" class="porque-texto"></span></p>
-        <p id="nota-cobertura" class="cobertura" hidden></p>
+        <p id="nota-traduccion" class="traduccion" lang="es" hidden><span class="traduccion-rotulo">Traducción automática</span><span id="nota-traduccion-texto" class="traduccion-texto"></span></p>
         <p id="nota-extracto" class="extracto"></p>
+        <p id="nota-cobertura" class="cobertura" hidden></p>
         <p id="nota-endeavor" class="endeavor" hidden></p>
-        <p id="nota-aviso" class="aviso" hidden>Esta fuente no respondió en la última actualización: la nota viene de una edición anterior.</p>
+        <p id="nota-aviso" class="aviso" hidden>Nota de una edición anterior: la fuente no respondió.</p>
         <div class="acciones">
           <a id="nota-enlace" class="accion-enlace" href="#" target="_blank" rel="noopener noreferrer"><span id="nota-enlace-texto">Leer en la fuente</span><span class="sr-only"> (se abre en otra pestaña)</span></a>
           <span id="nota-sin-enlace" class="sin-enlace" hidden>Enlace no disponible</span>
           <button id="extracto-boton" class="accion" type="button" aria-controls="nota-extracto" aria-expanded="false" hidden>Ver todo</button>
-          <span class="mandos">
-            <button id="anterior" class="accion" type="button" aria-keyshortcuts="ArrowLeft">Anterior</button>
-            <button id="adelante" class="accion" type="button" aria-keyshortcuts="ArrowRight">Siguiente</button>
-            <button id="pausa" class="accion" type="button" aria-keyshortcuts="Space">Pausar</button>
-          </span>
+          <button id="adelante" class="accion" type="button" aria-keyshortcuts="ArrowRight">Siguiente</button>
         </div>
-        <p id="periodo-nota" class="aviso" hidden></p>
-        <section id="siguientes" class="siguientes" aria-labelledby="siguientes-rotulo" hidden>
-          <h2 id="siguientes-rotulo" class="etiqueta">A continuación</h2>
-          <ul class="siguientes-lista">
-            <li><button id="siguiente-1" class="siguiente" type="button" hidden><span class="siguiente-numero"></span><span class="siguiente-titulo"></span></button></li>
-            <li><button id="siguiente-2" class="siguiente" type="button" hidden><span class="siguiente-numero"></span><span class="siguiente-titulo"></span></button></li>
-          </ul>
-        </section>
       </article>
 
       <section id="senal" class="senal" aria-labelledby="senal-titulo">
-        <p class="estado"><span class="punto" aria-hidden="true"></span><span id="senal-rotulo">Cargando</span></p>
+        <p class="estado" hidden><span class="punto" aria-hidden="true"></span><span id="senal-rotulo"></span></p>
         <h2 id="senal-titulo" class="titular" data-largo="s">Cargando…</h2>
-        <p id="senal-texto" class="extracto">Cargando la edición más reciente.</p>
+        <p id="senal-texto" class="extracto" hidden></p>
         <p id="senal-detalle" class="detalle" hidden></p>
         <div class="acciones"><button id="reintentar" class="accion" type="button" hidden>Reintentar</button></div>
       </section>
@@ -71,12 +60,12 @@
   </main>
 
   <section class="cintillo" aria-labelledby="cintillo-rotulo">
-    <h2 id="cintillo-rotulo" class="sr-only">Última hora</h2>
-    <div class="cintillo-visor"><div id="cintillo-pista" class="cintillo-pista quieta"><p class="cintillo-estado">Cargando la edición…</p></div></div>
+    <h2 id="cintillo-rotulo" class="sr-only">Titulares recientes</h2>
+    <div class="cintillo-visor"><div id="cintillo-pista" class="cintillo-pista quieta"><p class="cintillo-estado">Cargando…</p></div></div>
   </section>
 
   <footer class="barra">
-    <p id="edicion" class="edicion">Cargando la edición…</p>
+    <p id="edicion" class="edicion">Cargando…</p>
     <button id="abrir-fuentes" class="barra-enlace" type="button" aria-haspopup="dialog">Fuentes y criterios</button>
   </footer>
 
@@ -88,15 +77,9 @@
       <button id="cerrar-fuentes" class="cerrar" type="button">Cerrar</button>
     </div>
     <div class="dialogo-cuerpo">
-      <p id="fuentes-resumen" class="fuentes-resumen">Cargando la edición…</p>
-      <section class="criterios" aria-labelledby="criterios-titulo">
-        <h3 id="criterios-titulo">¿Qué notas entran?</h3>
-        <p>Solo notas con fecha verificable de los últimos 30 días, enlace válido y publicadas por una de las fuentes de esta lista. Se eliminan duplicados: cuando varios medios cuentan el mismo hecho queda una nota y «También en» nombra a los demás. Cuando hay valoración automática, dentro de cada período se muestran primero las más importantes; si no, las más recientes. La vista abre en 7 días; si un canal tiene menos de 5 notas, el período se amplía y la pantalla lo indica.</p>
-        <p>El titular y el extracto son siempre los del medio. La única línea propia es «Por qué importa · resumen automático»: la genera un modelo de lenguaje a partir del titular y el extracto, sin añadir datos, y puede equivocarse. Si la fuente no trae extracto, se muestra el titular y el enlace. Es una selección automática por fuente, fecha, tema y relevancia; no verifica de forma independiente lo que afirma cada medio.</p>
-        <p>«Sin novedades» significa que la fuente respondió pero no aportó notas que pasaran el filtro. «Sin respuesta» significa que falló en la última ejecución: sus notas recientes se conservan de la edición anterior y se marcan en pantalla.</p>
-      </section>
+      <p id="fuentes-resumen" class="fuentes-resumen">Cargando…</p>
+      <p class="criterios">Notas de los últimos 30 días con fecha y enlace verificables. Si varios medios cuentan lo mismo se muestra una sola y se nombra a los demás. Titular y extracto son siempre del medio; las traducciones son automáticas. La selección es automática y no verifica lo que afirma cada medio.</p>
       <div id="fuentes-lista" class="fuentes-lista"></div>
-      <p class="fuentes-nota">Los extractos pertenecen a sus autores. «Vía Google News» indica que el enlace pasa por ese servicio porque no se obtuvo una dirección directa del medio.</p>
     </div>
   </dialog>
 </body>

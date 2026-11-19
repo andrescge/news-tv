@@ -7,6 +7,9 @@ import { endeavorUrl } from './endeavor.mjs';
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_', textNodeName: '#text', trimValues: true });
 const months = { enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5, julio: 6, agosto: 7, septiembre: 8, setiembre: 8, octubre: 9, noviembre: 10, diciembre: 11 };
 const DAY = 24 * 60 * 60 * 1000;
+// Texto sin tildes ni mayúsculas, para comparar nombres y palabras.
+const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
+const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 export const THIRTY_DAYS = 30 * DAY;
 const MAX_EXCERPT = 280;
 const MAX_EXCERPT_SCAN = 4000;
@@ -60,12 +63,18 @@ export function inHosts(value, hosts, base) {
 // Las fuentes de Google News se restringen al dominio del medio (`allowHosts`), comprobado sobre la URL del editor.
 // `denyHosts` descarta dominios (la búsqueda Endeavor no admite páginas de la propia Endeavor: no son prensa).
 export function allowedHost(row, source) {
-  if (!source.allowHosts && !source.denyHosts) return true;
-  try {
-    const host = new URL(row.sourceUrl).hostname.toLowerCase();
-    const matches = list => list.some(domain => host === domain || host.endsWith(`.${domain}`));
-    return (!source.allowHosts || matches(source.allowHosts)) && !(source.denyHosts && matches(source.denyHosts));
-  } catch { return false; }
+  return hostRejection(row, source) === null;
+}
+// Motivo por el que el medio de una nota no se acepta: 'allowHosts' (fuera de la lista), 'denyHosts' (en la lista negra) o
+// 'medio sin dominio' (sin URL de medio legible); null si se acepta.
+export function hostRejection(row, source) {
+  if (!source.allowHosts && !source.denyHosts) return null;
+  let host;
+  try { host = new URL(row.sourceUrl).hostname.toLowerCase(); } catch { return 'medio sin dominio'; }
+  const matches = list => list.some(domain => host === domain || host.endsWith(`.${domain}`));
+  if (source.allowHosts && !matches(source.allowHosts)) return 'allowHosts';
+  if (source.denyHosts && matches(source.denyHosts)) return 'denyHosts';
+  return null;
 }
 // Las fuentes oficiales que se leen de su propia página o feed solo aceptan enlaces de sus dominios (`linkHosts`): una nota
 // rotulada «Publicación oficial» no puede llevar a otro sitio, y el recopilador no hace peticiones a dominios ajenos.
@@ -212,7 +221,8 @@ const RO_ORGANS = [
 // Encabezados de cualquier otro órgano: si aparecen después del último órgano financiero, el bloque no es financiero.
 const RO_OTHER_ORGAN = /MINISTERIO|AGENCIA|SERVICIO|SECRETAR[IÍ]A|GOBIERNO|CORTE|DEFENSOR|CONSEJO|EMPRESA|PRESIDENCIA|INSTITUTO|ARMADA|POLIC[IÍ]A|UNIVERSIDAD|DIRECCI[OÓ]N|SUPERINTENDENCIA|CORPORACI[OÓ]N|CONTRALOR|PROCURADUR|FISCAL|ASAMBLEA|MUNICIP|CANT[OÓ]N/g;
 // Normas de trámite que no interesan aunque las emita un órgano financiero.
-const RO_NOISE = /^se (conoce|designa|delega|acoge)|defensor\/?a? del cliente|personer[ií]a jur[ií]dica|estatuto|cooperativa de vivienda|extingui|fondo complementario|\bfcpc\b|cesant[ií]a/i;
+// También la contratación de auditores y consultores («Se selecciona como primera opción a la firma…»).
+const RO_NOISE = /^se (conoce|designa|delega|acoge|selecciona)|firma (auditora|consultora)|auditor[ií]a externa|defensor\/?a? del cliente|personer[ií]a jur[ií]dica|estatuto|cooperativa de vivienda|extingui|fondo complementario|\bfcpc\b|cesant[ií]a/i;
 const RO_ACRONYMS = new Set(['SCVS', 'SRI', 'SEPS', 'BCE', 'COSEDE', 'JPRFM', 'UAFE', 'IVA', 'RUC', 'NIIF', 'SB']);
 const lastIndex = (text, pattern) => { let index = -1; for (const match of text.matchAll(pattern)) index = match.index; return index; };
 function roOrgan(heading) {
@@ -271,35 +281,78 @@ export function parseRegistroOficial(xml) {
     if (!norms.length) continue;
     const [first, ...others] = norms;
     const label = norm => `${norm.organ}: ${norm.code} ${norm.text}`;
-    const excerpt = [/^registro oficial/i.test(edition) ? `${edition}.` : `Registro Oficial, ${edition}.`, ...(others.length ? [`También: ${others.map(label).join('; ')}.`] : [])].join(' ');
-    rows.push({ title: label(first), url: item.link, excerpt, publishedAt: item.pubDate, language: 'es' });
+    const excerpt = [`${first.organ} · ${first.code}.`, /^registro oficial/i.test(edition) ? `${edition}.` : `Registro Oficial, ${edition}.`, ...(others.length ? [`También: ${others.map(label).join('; ')}.`] : [])].join(' ');
+    rows.push({ title: normTitle(first.text), url: item.link, excerpt, publishedAt: item.pubDate, language: 'es' });
   }
   return rows;
+}
+// Titular legible de una norma: su asunto («Se reforma la Codificación…»), recortado en límite de palabra si pasa de
+// NORM_TITLE_MAX; el órgano y el código van al principio del extracto. Solo se reordena y se recorta el texto del índice.
+const NORM_TITLE_MAX = 160;
+const normTitle = text => clipExcerpt(text, NORM_TITLE_MAX);
+// Notas del Registro Oficial de ediciones anteriores, con el titular antiguo «Órgano: CÓDIGO asunto»: se pasan al formato actual.
+const RO_OLD_TITLE = new RegExp(`^(${RO_ORGANS.map(([, name]) => escapeRx(name)).join('|')}): (\\S+) (.+)$`, 'u');
+export function readableNorm(story) {
+  const match = typeof story?.title === 'string' ? story.title.match(RO_OLD_TITLE) : null;
+  if (!match || !/\d/.test(match[2])) return story;
+  const [, organ, code, text] = match;
+  return { ...story, title: normTitle(text), excerpt: clipExcerpt([`${organ} · ${code}.`, story.excerpt].filter(Boolean).join(' ')) };
 }
 
 // ---------------------------------------------------------------------------------------------------------
 // Filtros por fuente. `relevant()` aplica el filtro de FILTERS[source.id]; una fuente sin entrada lo deja pasar todo.
 // Campos: include / exclude (sobre el titular, o sobre titular + extracto con on: 'text'), path (la ruta de la URL
-// debe cumplirlo), skipPath (la ruta no debe cumplirlo) y test (comprobación adicional).
+// debe cumplirlo), skipPath (la ruta no debe cumplirlo), test (comprobación adicional) y why (qué parte de test falló, para el
+// registro de descartes). rejectReason() dice qué regla descartó cada nota.
 // Las expresiones salen de la verificación de fuentes; las que se repiten entre fuentes del mismo tema son constantes.
 const rx = (...parts) => new RegExp(parts.filter(Boolean).map(part => part instanceof RegExp ? part.source : part).join('|'), 'i');
 
-// Ecuador: vocabulario financiero de los feeds de economía de Primicias y El Universo, y su ruido de consumo.
-const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|biess|mercado (de valores|burs[aá]til)|bolsa de valores|proforma|presupuesto|d[eé]ficit|recaudaci[oó]n|diferimiento`;
+// Ecuador: la banca como negocio, que el vocabulario general no reconoce: crédito informal y usura, deudores y mora, banca
+// pública (BanEcuador, CFN, Biess), mercado de valores, titularizaciones y bonos temáticos.
+const EC_BANKING_BUSINESS = String.raw`chulc|chulquer|usura|agiotis|deudor|morosidad|banecuador|\bcfn\b|corporaci[oó]n financiera nacional|biess|banca p[uú]blica|bolsa de valores|casas? de valores|mercado de valores|titulariz|bonos? (azules|verdes|sociales|sostenibles|tem[aá]ticos)`;
+// Ecuador: vocabulario financiero de los feeds de economía de Primicias y El Universo, y su ruido de consumo. «Presupuesto» solo
+// cuenta como el del Estado: «con un presupuesto de USD 19 millones» es el costo de una obra.
+const EC_FINANCE = String.raw`\bbanc|financ|\bsegur(o|os|adora)|aseguradora|cooperativ|fintech|cr[eé]ditos?|tasas? de inter[eé]s|tarjetas?|p[oó]lizas?|dep[oó]sitos?|remesas|riesgo pa[ií]s|billetera|transferencias?|medios de pago|superintendencia|banco mundial|\bfmi\b|\bbid\b|\bcaf\b|deuda|bonos? (soberanos?|de deuda|global)|pr[eé]stamos?|mercado burs[aá]til|proforma|presupuesto (general|del estado)|d[eé]ficit|recaudaci[oó]n|diferimiento|${EC_BANKING_BUSINESS}`;
+// Ecuador: lo que dice «banco» o «crédito» sin ser banca: bancos de alimentos, sangre, leche, semillas, ojos o germoplasma, el
+// banco de suplentes y la bancada política, el crédito tributario de obras, y el Banco Mundial cuando habla de precios de
+// alimentos o materias primas (no de financiamiento a Ecuador).
+const EC_NOT_BANKING = String.raw`banco de (alimentos|sangre|leche|semillas|ojos|germoplasma|tejidos|[oó]rganos)|banco de suplentes|bancadas?|cr[eé]ditos? tributari|banco mundial[^.;?!]{0,60}(precios|commodit|materias primas)|(precios|commodit|materias primas)[^.;?!]{0,60}banco mundial`;
 const EC_CONSUMER_NOISE = String.raw`black friday|cyber ?(day|monday)|concurso|competencia econ[oó]mica|brigadas`;
+// Prensa ecuatoriana general por búsqueda (El Comercio, Teleamazonas, La Hora): la banca de otros países y los avisos de feriado.
+const EC_PRESS_ABROAD = String.raw`estados unidos|ee\.? ?uu|\basia|europe|paraguay|brasile|\blula\b|del mundo|feriado`;
 // Supervisores de Ecuador (SEPS, Superintendencia de Bancos, Supercias): actos de control y actos protocolarios.
 const EC_SUPERVISOR_ACTS = String.raw`resoluci[oó]n|sanci|intervenci|liquidaci|alerta|advierte`;
 const EC_INSTITUTIONAL_NOISE = String.raw`capacit|aniversario`;
 // Fintech de la región: términos comunes a La República, Bloomberg Línea, El Economista, Expansión México y Diario Financiero.
 const LATAM_FINTECH = String.raw`fintech|neobanc|bancos? digital|nubank`;
+// Fintech de la región por nombre: las que la prensa nombra sin decir «fintech» (resultados de MercadoLibre, Binance Pay Later).
+const LATAM_FINTECH_NAMES = String.raw`mercado ?libre|mercado pago|bitso|binance|payjoy|kueski|konf[ií]o|ual[aá]\b|nequi|daviplata|dlocal|ebanx|\bstori\b|\bklar\b`;
+// Banca y reguladores de la región (canal Fintech LATAM): supervisores, bancos centrales cuando actúan como reguladores (normas,
+// pagos, capital, estabilidad, lavado), gremios bancarios, pagos inmediatos y efectivo, y la banca como negocio: resultados,
+// licencias, compras y productos de bancos, y ciberseguridad del sistema financiero. La política monetaria y los mercados quedan
+// fuera (LATAM_MARKET_NOISE). Las frases se buscan dentro de una misma oración: sin cruzar punto, punto y coma ni signo de cierre.
+const LATAM_CENTRAL_BANKS = String.raw`banco central|banxico|banco de m[eé]xico|\bbcra\b|\bbacen\b|banco de la rep[uú]blica|\bbanrep\b`;
+const LATAM_REGULATORY_TOPICS = String.raw`regula|\bnormas?\b|normativ|reglas|pagos|transferencias|stablecoins?|cripto|exigencia|capital\b|riesgos? financier|estabilidad|supervis|licencia|lavado|efectivo|billetes|ciber|open finance|finanzas abiertas`;
+const LATAM_REGULATORS = String.raw`\bcmf\b|\bcnbv\b|superfinanciera|superintendencia (financiera|de bancos|de banca)|\babm\b|asociaci[oó]n de bancos|asobancaria|exigencia de capital|estabilidad financiera|riesgos financieros|sistema financiero|\bgafi\b|lista gris|lavado de (dinero|activos)|(${LATAM_CENTRAL_BANKS})[^.;?!]{0,80}(${LATAM_REGULATORY_TOPICS})|(${LATAM_REGULATORY_TOPICS})[^.;?!]{0,80}(${LATAM_CENTRAL_BANKS})`;
+const LATAM_PAYMENTS = String.raw`\bpix\b|bre-?b\b|\bspei\b|\bcodi\b|pagos? (inmediat|instant|digital)|transferencias? (bancari|inmediat|interbancari)|transferir dinero|(uso|pagos?|aceptar[aá]n?) (de |en )?(el )?efectivo|sin efectivo|stablecoins?|pago diferido|pay later`;
+const LATAM_BANKS = String.raw`\bbanc(a|o|os)\b|\bbank\b|bancolombia|davivienda|davibank|bancoomeva|banamex|banorte|bancoestado|\bbci\b|ita[uú]\b|santander|bbva|scotiabank|nubank|neobanc`;
+const BANK_BUSINESS = String.raw`utilidad(es)?|ganancias?|p[eé]rdidas?|ingresos|resultados|licencia|compra\b|adquier|adquisici[oó]n|vend(e|i[oó])\b|venta\b|fusi[oó]n|cartera|tarjetas?|hipotecari|cr[eé]ditos?|pr[eé]stamos?|morosidad|\bmora\b|encaje|dep[oó]sitos|capital\b|estabilidad|solvencia|liquidez|\bapp\b|aplicaci[oó]n|cuentas? de ahorro|titulariz`;
+// Banco y tema de negocio en la misma frase (sin cruzar un punto, un punto y coma ni un signo de cierre; los dos puntos de «Tema: detalle» sí), en cualquier orden.
+const LATAM_BANKING = String.raw`(${LATAM_BANKS})[^.;?!]{0,80}(${BANK_BUSINESS})|(${BANK_BUSINESS})[^.;?!]{0,80}(${LATAM_BANKS})|(ciber|cyber)[^.;?!]{0,80}(financ|banc|bank)|(financ|banc|bank)[^.;?!]{0,80}cibern`;
+const LATAM_BANKING_ALL = rx(LATAM_FINTECH_NAMES, LATAM_REGULATORS, LATAM_PAYMENTS, LATAM_BANKING).source;
+// Política monetaria, tipo de cambio y mercados: tratan del banco central como autoridad monetaria o de la banca como acción
+// en bolsa, no de la banca como negocio. También las páginas de cotización y los listados de casinos.
+const LATAM_MARKET_NOISE = String.raw`\brecortes?\b|\brecorta\b|alzas? de (las )?tasas|(sube|suben|subir|baja|bajan|bajar|mantiene|mantienen|mantener|mantuvo|eleva) (la |las |su )?tasas?\b|tasa (de referencia|objetivo|de pol[ií]tica)|pol[ií]tica monetaria|inflaci[oó]n|\bselic\b|minutas|se deprecia|tipo de cambio|precio del d[oó]lar|el d[oó]lar (cerr|se cotiza|sube|baja)|\boro\b|cotizaci[oó]n|acciones (de|del|m[aá]s)\b|wall street|\bipsa\b|ibovespa|precio objetivo|compra de acciones|recompra|casinos?`;
 const MEXICO_FINTECH = String.raw`econom[ií]a digital|\bcodi\b|\bspei\b|ueno|\bnu\b|mercado pago|sofipo|cnbv|pagos? (digital|electr|con qr)|criptomoneda|openbank|revolut|crowdfunding|inclusi[oó]n financiera`;
 // Cripto en inglés (CoinDesk, The Block, Reuters): política, delito e infraestructura, sin mercado.
-const CRYPTO_POLICY_EN = String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset|finance|money)|deposit token|crypto|blockchain|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|senat`;
+const CRYPTO_POLICY_EN = String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset|finance|money)|deposit token|crypto|blockchain|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|senat|CFTC|digital payments?|\bCircle\b`;
 const CRYPTO_MARKET_NOISE_EN = String.raw`\bprices?\b|analysts?|meme ?coin|Nvidia`;
-// Ruido adicional de la prensa sectorial (CoinDesk, The Block): mineras, valoraciones, ETF y mercados de predicción.
-const CRYPTO_SECTOR_NOISE_EN = String.raw`bottom|\bminers?\b|valuation|prediction market|Kalshi|ETFs?\b|\bperps?\b`;
-// Cripto en español (Cinco Días, Expansión, CriptoNoticias): regulación y delito; y ruido de cotizaciones.
-const CRYPTO_POLICY_ES = String.raw`stablecoin|tokeniz|CBDC|criptoactiv|MiCA\b|\bBCE\b|regula|blanqueo|hacke|robo|licencia|autoriza|supervis`;
+// Ruido adicional de la prensa sectorial (CoinDesk, The Block): mineras, valoraciones, ETF y mercados de predicción. Los mercados
+// de predicción solo son ruido si el titular no trata de su regulación (CFTC, SEC, Senado, tribunales, reguladores, candidatos).
+const CRYPTO_SECTOR_NOISE_EN = String.raw`bottom|\bminers?\b|valuation|^(?!.*\b(CFTC|SEC|Senate|senators?|court|judge|regulators?|nominees?)\b).*\b(prediction markets?|Kalshi)\b|ETFs?\b|\bperps?\b`;
+// Cripto en español (Cinco Días, Expansión, CriptoNoticias): regulación y delito; y ruido de cotizaciones. «Pasaporte»: la licencia
+// MiCA que vale en toda la UE. «Banco»: bancos que adoptan cripto o firmas cripto que abren un banco.
+const CRYPTO_POLICY_ES = String.raw`stablecoin|tokeniz|CBDC|criptoactiv|MiCA\b|\bBCE\b|regula|blanqueo|hacke|robo|licencia|pasaporte|autoriza|supervis|\bbanc(o|os|a)\b`;
 const CRYPTO_MARKET_NOISE_ES = String.raw`precio|\bcaen?\b`;
 // Pagos: las secciones patrocinadas de Payments Dive y Banking Dive.
 const DIVE_SPONSORED = /^\/spons\//;
@@ -312,7 +365,10 @@ const BIS_CRYPTO_CHANNEL = rx(String.raw`stablecoin|tokeni[sz]|CBDC|crypto|digit
 const path = story => { try { return new URL(story.url).pathname; } catch { return null; } };
 export const FILTERS = {
   // Banco Central del Ecuador.
-  'bce-publicaciones': { include: /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reserva internacional|captaciones|colocaciones|volumen de cr[eé]dito/i },
+  // Series de datos: el boletín de reservas se titula «Reservas Internacionales», en plural.
+  'bce-publicaciones': { include: /bolet[ií]n monetario|tasas de inter[eé]s|indicadores monetarios y financieros|reservas? internacional(es)?|captaciones|colocaciones|volumen de cr[eé]dito|oferta y demanda de cr[eé]dito|operaciones activas y pasivas|gesti[oó]n de liquidez/i },
+  // Boletines de prensa del BCE: fuera las jornadas de capacitación, ferias y aniversarios, y la balanza comercial (comercio exterior).
+  'bce-boletines': { exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`jornadas? de|\bferias?\b|concurso|balanza comercial|(super[aá]vit|d[eé]ficit) comercial`) },
   // Junta: el sufijo del código indica la materia. Quedan fuera las administrativas (-A) y de gobierno interno (-G),
   // los informes que la Junta solo «conoce» y las designaciones.
   'bce-junta-resoluciones': { test: story => !['A', 'G'].includes(story.excerpt.match(/\bJPRFM-\d{4}-\d+-([A-Z]+)\b/)?.[1]) && !/^(conoce|designa|designar|nombra|nombrar)\b/i.test(story.title) },
@@ -320,46 +376,72 @@ export const FILTERS = {
   'bce-resoluciones-admin': { test: story => /sistema (nacional|central|auxiliar) de pagos|medios? de pago|transferencias?|mensajer[ií]a|moneda|billetes?|especies monetarias|dep[oó]sitos y retiros|encaje|liquidez|reservas?|\boro\b|tarifas?|corresponsal|recaudaci[oó]n|entidades financieras|sistema financiero|certificaci[oó]n de informaci[oó]n|firma electr[oó]nica|tasas? de inter[eé]s|reforma institucional|dinero electr[oó]nico|compensaci[oó]n|c[aá]mara/i.test(story.title) && !/^(memorando|oficio)\b|\b(designa|delega)|delegaci[oó]n|talento humano|remuneraci|anticipos|bienes muebles|r[eé]gimen laboral|[ií]ndice tem[aá]tico|servidores|contrataci[oó]n|proveedor/i.test(`${story.excerpt} ${story.title}`) },
 
   // Ecuador financiero.
-  primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
-  eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, 'kits|homenaje') },
-  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`), exclude: rx(String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
+  primicias: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, String.raw`calculadora|bono de contingencia|seguridad`), path: /^\/economia\// },
+  eluniverso: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, 'kits|homenaje') },
+  'forbes-ec': { include: rx(String.raw`\bbanc|cr[eé]dito|microcr[eé]dito|\bfmi\b|deuda|tarjetas?|asobanca|cooperativ|\bsegur(o|os)\b|aseguradora|riesgo pa[ií]s|fintech|bonos? (soberanos?|de deuda)|financiamiento`, EC_BANKING_BUSINESS), exclude: rx(EC_NOT_BANKING, String.raw`estados unidos|ee\.? ?uu|del mundo|paraguay|europe|chase|nvidia|^#|bonos de contingencia|^(forbes|money)\b`) },
+  // El Comercio, Teleamazonas y La Hora llegan por una búsqueda con términos de banca en el titular: queda fuera la banca de
+  // otros países (fallas de bancos en EE. UU., crisis de Paraguay, euro digital) y el horario de atención en feriados.
+  'elcomercio-ec': { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  teleamazonas: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  lahora: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  // CFN: productos de crédito y calificaciones de riesgo; fuera compras públicas, subastas, certificaciones y lemas.
+  cfn: { include: rx(String.raw`cr[eé]ditos?|financiamiento|tasas?|calificaci[oó]n de riesgo|producto financiero|cartera|microcr[eé]dito|garant[ií]as`), exclude: rx(String.raw`convocatoria|solicitud de ofertas|cotizaciones|alquiler|contrataci|adquisici|subasta|\biso\b|selecci[oó]n`) },
   // Bloomberg Línea llega por una búsqueda: el titular debe nombrar a Ecuador y un tema financiero o fiscal.
   'bloomberg-ecuador': { include: rx(String.raw`(?=.*(ecuador|ecuatorian))(?=.*(\bfmi\b|riesgo pa[ií]s|deuda|bonos?\b|proforma|\bbanc|cr[eé]dito|financiamiento|fiscal|presupuest|seguros|cooperativ|remesas|dolariza))`), exclude: rx(String.raw`preventa|don omar|extradit|detenid|prisi[oó]n`) },
 
   // Autoridades EC.
-  'reguladores-prensa': { include: rx(String.raw`superintenden|intendente|\bseps\b|junta de pol[ií]tica|no autorizad|(pr[eé]stamos?|cr[eé]ditos?|cooperativas?) fals|nueva norma|nuevas reglas para tarjetas|diferimiento de cr[eé]ditos|econom[ií]a popular y solidaria|\buafe\b|cosede`), exclude: rx(String.raw`paraguay|ueno|europeo|ordenamiento territorial|competencia econ[oó]mica|nutresa|consejo de participaci`) },
+  'reguladores-prensa': { include: rx(String.raw`superintenden|intendente|\bseps\b|junta de pol[ií]tica|no autorizad|(pr[eé]stamos?|cr[eé]ditos?|cooperativas?) fals|nueva norma|nuevas reglas para tarjetas|diferimiento de cr[eé]ditos|econom[ií]a popular y solidaria|\buafe\b|cosede|\bcfn\b|corporaci[oó]n financiera nacional|banecuador|biess|banca p[uú]blica`), exclude: rx(String.raw`paraguay|ueno|europeo|ordenamiento territorial|competencia econ[oó]mica|nutresa|consejo de participaci`) },
   // El adaptador ya separa las normas de órganos financieros; la expresión se aplica al titular y al extracto compuestos.
   'registro-oficial': { on: 'text', include: rx(String.raw`junta de pol[ií]tica y regulaci[oó]n|superintendencia de (bancos|econom[ií]a popular|compa[ñn][ií]as)|banco central|unidad de an[aá]lisis financiero|servicio de rentas internas|monetari|lavado de activos|ley org[aá]nica.*(financ|tribut|monetar|fintech|datos|valores|seguros)|cosede|dep[oó]sitos|fintech|c[oó]digo org[aá]nico monetario`), skipPath: /^\/edicion-(juridica|constitucional|especial)-/ },
   seps: { include: rx(EC_SUPERVISOR_ACTS, String.raw`norma|regulaci[oó]n|reforma|no autorizad|corte|sentencia|tasas?|segmentaci|fusi[oó]n|supervisi[oó]n|balance|indicadores`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`funcionarios|taller|feria|rendici[oó]n de cuentas`) },
   superbancos: { include: rx(EC_SUPERVISOR_ACTS, String.raw`calificaci[oó]n|normativa|circular|regulaci[oó]n|reforma|no autorizad|fintech|tasas?|cr[eé]dito|lavado|supervisi[oó]n|bolet[ií]n (financiero|estad[ií]stico)`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`media day|[aá]rboles|futuros economistas|sesi[oó]n (ordinaria|solemne)|\boea\b|sostenibilidad`) },
-  mef: { include: rx(String.raw`\bfmi\b|deuda|bonos?|presupuest|proforma|multilateral|banco mundial|\bbid\b|\bcaf\b|riesgo pa[ií]s|tribut|recaudaci|calificaci[oó]n|sostenibilidad fiscal`), exclude: rx(String.raw`^\s*$|^proforma \d{4} \(`) },
+  // UAFE: lavado de activos, normas y reportes; fuera las páginas de trámites, los operativos de frontera, convocatorias y oficinas.
+  uafe: { include: rx(String.raw`lavado|resoluci[oó]n|\bnormas?\b|sujetos obligados|reportes?\b|\bgafi\b|financiamiento del terrorismo|sanci|activos virtuales|cripto|control financiero`), exclude: rx(String.raw`registro del manual|desactivaci[oó]n|^solicitud de|operativo|convocatoria|oficina de servicios`) },
+  mef: { include: rx(String.raw`\bfmi\b|deuda|bonos?|presupuest|proforma|multilateral|banco mundial|\bbid\b|\bcaf\b|riesgo pa[ií]s|tribut|recaudaci|calificaci[oó]n|sostenibilidad fiscal|banca p[uú]blica`), exclude: rx(String.raw`^\s*$|^proforma \d{4} \(`) },
   supercias: { include: rx(EC_SUPERVISOR_ACTS, String.raw`no (est[aá]n?|se encuentran?) autorizad|no mantienen?|norma|reglamento|\bley\b|disoluci|fraude|plazo|concordato|oficial de cumplimiento|^la superintendencia de compa[ñn][ií]as, valores y seguros a la ciudadan[ií]a`), exclude: rx(EC_INSTITUTIONAL_NOISE, String.raw`asisti[oó]|intervino|particip[oó]|congreso|sesi[oó]n solemne|ceremonia|jornada acad[eé]mica|embajada|estuvo presente|disculpas|semana mundial del inversionista|programa de formaci[oó]n|rindi[oó] cuentas|reuni[oó]n con|inaugur|clausur|estudiantes|recuerda a compa`) },
 
   // Fintech LATAM.
   iupana: { exclude: /ciberseguridad.*telco/i },
-  'el-economista': { include: rx(LATAM_FINTECH, MEXICO_FINTECH), exclude: rx(String.raw`casino|televisa|at&t|\bine\b`) },
-  'expansion-mx': { include: rx(LATAM_FINTECH, MEXICO_FINTECH), exclude: rx('buen fin|condusef|banxico') },
-  'la-republica': { include: rx(LATAM_FINTECH, String.raw`\bnu\b|revolut|billetera|open finance|finanzas abiertas|criptomoneda|d[oó]lares digitales|activos digitales|nequi|daviplata|bre-b|littio|wenia|lulo|pibank|^plata anunci|pagos? (digital|inmediat|con tarjetas|realizados por)|superfinanciera|banca virtual`), exclude: rx(String.raw`precio del d[oó]lar|\boro\b`) },
-  'bloomberg-negocios': { include: rx(LATAM_FINTECH, String.raw`\bnu\b|revolut|mercado pago|billetera|open finance|pagos? digital|\bual[aá]\b|ueno|stablecoin|licencia bancaria`) },
-  'diario-financiero': { include: rx(LATAM_FINTECH, String.raw`billetera|open finance|finanzas abiertas|criptomoneda|medios de pago|transbank|tenpo|\bcmf\b|global66|fintual|toku|\bmach\b|destácame`) },
-  latamlist: { include: rx(String.raw`fintech|bank|payment|credit|lending|financ|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
-  contxto: { include: rx(String.raw`fintech|banc|financ|pagos|cr[eé]dito|neobanc|cripto|inversi[oó]n en startups`) },
+  // Los cinco medios generales de la región comparten LATAM_BANKING_ALL (fintech por nombre, banca y reguladores) y el ruido de
+  // política monetaria y mercados (LATAM_MARKET_NOISE).
+  'el-economista': { include: rx(LATAM_FINTECH, MEXICO_FINTECH, LATAM_BANKING_ALL), exclude: rx(LATAM_MARKET_NOISE, String.raw`televisa|at&t|\bine\b`) },
+  'expansion-mx': { include: rx(LATAM_FINTECH, MEXICO_FINTECH, LATAM_BANKING_ALL), exclude: rx(LATAM_MARKET_NOISE, 'buen fin|condusef') },
+  'la-republica': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`\bnu\b|revolut|billetera|open finance|finanzas abiertas|criptomoneda|d[oó]lares digitales|activos digitales|nequi|daviplata|bre-b|littio|wenia|lulo|pibank|^plata anunci|pagos? (digital|inmediat|con tarjetas|realizados por)|superfinanciera|banca virtual`), exclude: rx(LATAM_MARKET_NOISE) },
+  // Bloomberg Línea llega por una búsqueda de Google con términos de banca y fintech en el titular.
+  'bloomberg-negocios': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`\bnu\b|revolut|mercado pago|billetera|open finance|pagos? digital|\bual[aá]\b|ueno|stablecoin|licencia bancaria`), exclude: rx(LATAM_MARKET_NOISE) },
+  'diario-financiero': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`billetera|open finance|finanzas abiertas|criptomoneda|medios de pago|transbank|tenpo|\bcmf\b|global66|fintual|toku|\bmach\b|destácame`), exclude: rx(LATAM_MARKET_NOISE) },
+  // LatamList: el titular de una ronda suele decir solo «raises»; el sector («Brazilian fintech Nova…») está en el extracto.
+  latamlist: { on: 'text', include: rx(String.raw`fintech|bank|payment|credit|lending|\bfinanc(e|ial)\b|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
+  // iProUP (Argentina) llega por una búsqueda con términos de fintech y banca en el titular. Fuera las guías de consumo
+  // («qué billetera paga más», «cómo invertir», plazo fijo, dólar blue), los eventos y los mercados.
+  iproup: { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`billetera|mercado pago|ual[aá]|naranja x|brubank|personal pay|\bcocos\b|\bbcra\b|\bcnv\b|tarjetas?|\bpagos?\b|cr[eé]ditos?|stablecoin|usdc|cripto|licencia|\bmora\b|transferencias|open finance|banco como servicio|ser banco|para su banco|\bIA\b`), exclude: rx(LATAM_MARKET_NOISE, String.raw`^(qu[eé] billetera|cu[aá]nto|cu[aá]ndo es|c[oó]mo (invertir|activar|sacar|pedir|cobrar|comprar))|paga m[aá]s|beneficios (clave|exclusivos)|plazo fijo|d[oó]lar (blue|hoy|oficial|mep)|fintech forum|bancos cerrados|licitaci[oó]n en d[oó]lares`) },
+  // Latam Fintech Hub llega por una búsqueda de su dominio: fuera su agenda de eventos, pódcast y cursos, los listados con emojis,
+  // el contenido de marca («… | Mambu») y las fichas de empresa, que se titulan con el nombre solo.
+  latamfintech: { exclude: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]|\b(forum|summit|bootcamp|podcast|episodio|webinar|stories|roadmap|meetup|hackathon|lab)\b|\s\|\s|\b20\d\d$/iu, test: story => story.title.trim().split(/\s+/).length > 3, why: () => 'ficha de empresa (tres palabras o menos)' },
   // Endeavor LATAM. La búsqueda por nombres trae mucho ruido: solo entra la nota cuyo titular nombra a una empresa del directorio.
   // Fuera también el ruido bursátil y los titulares promocionales (ENDEAVOR_MARKET_NOISE y ENDEAVOR_PROMO, definidos con el
   // resto del bloque Endeavor). El medio se comprueba aparte, con la lista ENDEAVOR_PRESS_HOSTS (allowHosts de la fuente).
-  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !ENDEAVOR_PROMO.test(story.title) && !!matchEndeavor(story, { titleOnly: true }) },
+  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !ENDEAVOR_PROMO.test(story.title) && !!matchEndeavor(story, { titleOnly: true }), why: story => ENDEAVOR_MARKET_NOISE.test(story.title) ? 'ruido bursátil' : ENDEAVOR_PROMO.test(story.title) ? 'promoción' : 'sin empresa Endeavor en el titular' },
   'endeavor-ar': { exclude: /\bboard\b|experiencia endeavor|bootcamp|inscrip|convocatoria|bienvenid|emprendedores? endeavor del a[ñn]o|\bgala\b/i },
 
   // Pagos globales.
   paymentsdive: { skipPath: DIVE_SPONSORED },
   bankingdive: { exclude: /M&A business/i, skipPath: DIVE_SPONSORED },
-  'expansion-banca': { include: rx(String.raw`pagos|euro digital|BCE|BIS|Bruselas|Europa|europe|Revolut|Qonto|JPMorgan|HSBC|UniCredit|Bank of America|Openbank|Latinoam|Brasil|Paraguay|fintech|neobanco|tarjeta|regulaci|regulator|blanqueo|fraude|\bIA\b|tecnolog|Banco de Inglaterra|UBS|ING |Crédit Agricole|Italia|TSB`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|Rubiales|filantr|Euro Stoxx|economista jefe|Foley|rentables`) },
+  // Expansión · Banca: solo pagos, fintech, supervisión y regulación; la banca doméstica española (resultados, fichajes,
+  // ratings, sentencias, fusiones) queda fuera.
+  'expansion-banca': { include: rx(String.raw`\bpagos?\b|entidad de pago|euro digital|Banco de España|\bBCE\b|\bBIS\b|Bruselas|Revolut|Qonto|Monzo|N26|Openbank|neobanco|fintech|tarjeta|\bVisa\b|Mastercard|Bizum|regulaci|regulador|supervis|blanqueo|fraude|ciberataque|\bIA\b|banca (online|digital)|criptoactiv|stablecoin|tokeniz|Banco de Inglaterra`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|filantr|Euro Stoxx|economista jefe|rentables|\brating\b|perspectiva|Audiencia|condena a|fusionar|oferta en acciones`) },
   'ft-banking': { include: rx(String.raw`bank|deposit|payment|tokeni|lender|JPMorgan|HSBC|UBS|Julius Baer|Rothschild|AI agents`), exclude: rx(String.raw`Epstein|Trump|oligarch|Qatari|Aldi|Putin|jobs deal`) },
   // Finextra llega por Google sin extracto: fuera columnas de opinión firmadas, preguntas y altas en marketplaces.
   finextra: { exclude: rx(String.raw`: By [A-Z]|\?|^(From|Beyond|The (New|Five|building|third)|Building|Your Payment|When|Why|How|Should|1 in 10)|NextGen Nordics|Self-service`, String.raw`\bmarketplace\b`) },
-  thebanker: { include: rx(String.raw`bank|payment|stablecoin|Revolut|Reg Wrap|digital money|FCA`), exclude: rx(String.raw`^(Regulation|Qatar|Germany|The Banker|Ask The Banker) - |Albania|Top 200|Top Islamic|midterm|gold reserves|Protesters|Anthropic IPO|whistleblow|LCF`) },
-  americanbanker: { exclude: /Chosen and Showcased|Sponsor|Partner Insights/i },
-  pymnts: { include: rx(String.raw`payment|bank|fintech|card|wallet|checkout|money transfer|remittance|merchant|digital currency|stablecoin|Visa|Mastercard|PayPal|Stripe|fraud`), exclude: rx(String.raw`^\d+%|Gen Z|When the Payout|Shopper|Nvidia`) },
+  // The Paypers y Fintech Futures: fuera webinars, pódcast, white papers, premios, resúmenes, columnas y contenido de marca («… | Gr4vy»).
+  thepaypers: { exclude: /webinar|white ?paper|^The Paypers$|\s\|\s|Total Economic Impact|podcast|\bawards?\b|sponsored|^(why|understanding|adding)\b/i },
+  fintechfutures: { exclude: /What the FinTech|Georgie & Cog|Top five|round-?up|recent news|White ?paper|shortlist|Awards?\b|ICYMI|Episode|webinar|podcast|magazine|Money20\/20|^why\b|read the room/i },
+  // The Banker: banca, pagos y sus autoridades (BCE, bancos centrales, reguladores). Fuera los rankings, las salidas a bolsa
+  // y los informes por país patrocinados.
+  thebanker: { include: rx(String.raw`bank|payment|stablecoin|Revolut|Reg Wrap|digital money|FCA|\bECB\b|Lagarde|Federal Reserve|regulators?|supervis|watchdog`), exclude: rx(String.raw`^(Regulation|Qatar|Germany|The Banker|Ask The Banker) - |Albania|Top 200|Top Islamic|midterm|gold reserves|Protesters|\bIPOs?\b|whistleblow|LCF`) },
+  // American Banker: banca, pagos, cripto y sus reguladores; fuera el contenido patrocinado, los listados y las salidas a bolsa.
+  americanbanker: { include: rx(String.raw`bank|payment|\bcards?\b|deposit|lend|credit|loan|mortgage|FDIC|\bOCC\b|CFPB|FinCEN|\bFed\b|Federal Reserve|stablecoin|crypto|fintech|charter|regulat|fraud|capital|merger|acqui|launder|\bAML\b|financial|downgrade|\bIMBs?\b`), exclude: rx(String.raw`Chosen and Showcased|Sponsor|Partner Insights|best places|\bIPOs?\b|goes public|Nvidia`) },
+  pymnts: { include: rx(String.raw`payment|bank|fintech|card|wallet|checkout|money transfer|remittance|merchant|digital currency|stablecoin|Visa|Mastercard|PayPal|Stripe|fraud|\bFed\b|Federal Reserve|central bank|crypto`), exclude: rx(String.raw`^\d+%|Gen Z|When the Payout|Shopper|Nvidia`) },
   ecb: { include: rx(String.raw`digital euro|payment|money\b|bank|supervis|financial stability|financial system|TARGET|instant|stablecoin|crypto`), exclude: rx('monetary policy|wage|Interview') },
   'bis-discursos': { include: rx(BIS_PAYMENTS, BIS_CRYPTO) },
   'ft-fintech': { include: rx(String.raw`bank|payment|tokeni|Revolut|Monzo|Starling|Klarna|Stripe|Adyen|stablecoin|fintech|card|ledger`), exclude: rx(String.raw`Binance|hedge fund|bitcoin|prediction market|NYSE`) },
@@ -371,38 +453,98 @@ export const FILTERS = {
   'bis-investigacion': { include: rx(String.raw`payment|bank|stablecoin|liquidity|tokeni|CBDC|fintech`), exclude: rx(String.raw`central bankers|Central banks and macro`) },
   'fintech-business-weekly': { exclude: rx(String.raw`Interview:|, with |I Never Thought`) },
   fed: { on: 'text', include: /payment|fednow|fedwire|\bach\b|check services|stablecoin|instant|pricing|debit|interchange|regulation ii|digital (asset|dollar)|crypto|tokeni[sz]|comment period|proposed (rule|guidance)|final rule/i },
+  // OCC: fuera evaluaciones CRA, datos de préstamos, clima, discursos del contralor y listados mensuales de sanciones.
+  occ: { exclude: /CRA Performance|Lending Data|Climate|Discusses|Emphasizes|Remarks|Testimony|Enforcement Actions for/i },
 
   // Cripto.
   'cinco-dias-cripto': { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|bono) digital|activos tokenizados|blockchain|CNMV|ciberataque|cibercrimen|Binance|cripto`), exclude: rx(String.raw`corrige|MSCI|Anthropic|castiga|debilidad de bitcoin`) },
   'expansion-cripto': { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|d[oó]lar|moneda|bono) digital|activos (digitales|tokenizados)|blockchain|CNMV|banco central|sanci[oó]n|ciberataque|fraude|custodia|Corea del Norte|Binance`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`baja de|desinfla|m[ií]nimos?|m[aá]ximos|ETF|tesorer[ií]a|Strategy|MSCI|miedo extremo|futuros perpetuos|rentabilidad`), skipPath: /\/mercados\/bitcoin\// },
   criptonoticias: { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|d[oó]lar|real|peso|moneda|bono) digital|activos (digitales|virtuales|tokenizados)|banco central|lavado|sanci[oó]n|restricciones|estafa|fraude|custodia|impuesto|\bSEC\b|\bley\b|condena`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`\bsuben?\b|desplome|rentabilidad|ballenas|ETF|analistas?|tesorer[ií]a|miner[ií]a|\bIA\b|supercomputadora|Java`), path: /\/(regulacion|sucesos|judicial|adopcion)\// },
   'bloomberg-cripto': { include: rx(String.raw`cripto|bitcoin|stablecoin|tokeniz|binance`), exclude: rx(CRYPTO_MARKET_NOISE_ES, String.raw`\bsuben?\b|repunta|retrocede|m[ií]nimos?|liquidaci[oó]n|analistas?|Cotizaci[oó]n|bajistas|pierde impulso|recupera terreno|resiste|auge|superando|\bIA\b|Musk`) },
-  'reuters-cripto': { include: rx(String.raw`crypto|stablecoin|tokeni|digital (asset|finance)|binance|coinbase|North Korean hackers`), exclude: rx(CRYPTO_MARKET_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|Anthropic|Crypto Weekly|Tech Weekly|PODCAST|Morning Bid|lows\b|Trump Media|Strategy\b|trading volume|returns to profit|tracks stocks`) },
+  // Reuters llega por una búsqueda con los términos en el titular. Revolut y las fintech entran por su supervisión y van a Pagos
+  // (ROUTES).
+  'reuters-cripto': { include: rx(String.raw`crypto|stablecoin|tokeni|digital (asset|finance)|binance|coinbase|North Korean hackers|Revolut|fintech|neobank`), exclude: rx(CRYPTO_MARKET_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|Anthropic|Crypto Weekly|Tech Weekly|PODCAST|Morning Bid|lows\b|Trump Media|Strategy\b|trading volume|returns to profit|tracks stocks`) },
   'ft-cripto': { exclude: rx(String.raw`Trump Media|Anthropic|Would you take|prediction markets|bitcoin bet`) },
   theblock: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`raises \$|rating`), path: /\/news\/(regulation|business|defi)\// },
+  // Decrypt mezcla cripto con IA y tecnología: solo regulación, delitos, bancos y stablecoins; fuera mercado, memecoins y su boletín.
+  decrypt: { include: rx(String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset)|deposit token|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|exploit|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|\btrial\b|prosecut|senat|CFTC|\bbanks?\b|\bCircle\b|lawmakers|\bbill\b|licen[cs]e`), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`\bsurges?\b|\bslides?\b|\bdrops?\b|\bfalls?\b|\btanks?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|Morning Minute|\bAI\b|\bNFTs?\b|airdrop|Polymarket`) },
   coindesk: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|chart|Anthropic|treasury|earnings|revenue|Live updates|Strategy\b`), path: /\/(policy|business)\// },
-  chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|How Chainalysis`) },
+  // Chainalysis: fuera sus avisos de producto y de la propia empresa (los que empiezan «How Chainalysis…»; un caso que cuenta
+  // cómo congeló fondos robados sí entra) y los informes de geografía cripto de regiones ajenas a LATAM.
+  chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|^How Chainalysis|Sub-Saharan|(Western|Eastern|Northern|Southern) Europe|Central (and Southern )?Asia|\bMENA\b|South Asia|East Asia|North America|Oceania`) },
 };
-// Una nota malformada (por ejemplo, de una edición anterior alterada) no hace lanzar al filtro: cuenta como que no pasa.
-export function relevant(story, source) {
+// Motivo por el que una nota no pasa el filtro de tema de su fuente, con el nombre de la regla de FILTERS: 'include' (no
+// coincide), 'exclude: <texto que coincidió>', 'path', 'skipPath', 'test' o 'test: <subregla>' (si el filtro define `why`).
+// null si pasa. Una nota malformada (por ejemplo, de una edición anterior alterada) no hace lanzar: devuelve 'error'.
+export function rejectReason(story, source) {
   const filter = FILTERS[source.id];
-  if (!filter) return true;
+  if (!filter) return null;
   try {
     const text = filter.on === 'text' ? `${story.title} ${story.excerpt || ''}` : story.title;
-    if (filter.include && !filter.include.test(text)) return false;
-    if (filter.exclude?.test(text)) return false;
+    if (filter.include && !filter.include.test(text)) return 'include';
+    const excluded = filter.exclude && text.match(filter.exclude);
+    if (excluded) return `exclude: ${excluded[0].slice(0, 60)}`;
     if (filter.path || filter.skipPath) {
       const pathname = path(story);
-      if (pathname == null || (filter.path && !filter.path.test(pathname)) || filter.skipPath?.test(pathname)) return false;
+      if (pathname == null || (filter.path && !filter.path.test(pathname))) return 'path';
+      if (filter.skipPath?.test(pathname)) return 'skipPath';
     }
-    return filter.test ? !!filter.test(story) : true;
-  } catch { return false; }
+    if (filter.test && !filter.test(story)) return filter.why ? `test: ${filter.why(story)}` : 'test';
+    return null;
+  } catch { return 'error'; }
+}
+export function relevant(story, source) {
+  return rejectReason(story, source) === null;
+}
+
+// ---------------------------------------------------------------------------------------------------------
+// Embudo de una fuente: de las filas leídas, cuáles caen por el medio (allowHosts / denyHosts), por normalize (sin titular,
+// enlace o fecha válidos, o con más de 30 días) y por el filtro de tema, y cuáles se aceptan. Las caídas por medio y por tema
+// que normalize acepta (notas vigentes) se registran en `discards` con su motivo, para revisar después qué se pierde.
+export const DISCARD_STAGES = ['tema', 'medio'];
+const discardOf = (story, stage, reason, row) => {
+  const entry = { sourceId: story.sourceId, stage, reason: String(reason).slice(0, 80), title: story.title, url: story.url, source: story.source, publishedAt: story.publishedAt };
+  if (stage === 'medio') { try { entry.host = new URL(row.sourceUrl).hostname.toLowerCase(); } catch { /* Sin dominio legible. */ } }
+  return entry;
+};
+export function screen(rows, source, now = Date.now()) {
+  const stories = [], discards = [];
+  const funnel = { host: 0, normalize: 0, topic: 0, accepted: 0 };
+  for (const row of rows) {
+    const host = hostRejection(row, source);
+    const story = normalize(row, source, now);
+    if (host) { funnel.host++; if (story) discards.push(discardOf(story, 'medio', host, row)); continue; }
+    if (!story) { funnel.normalize++; continue; }
+    const reason = rejectReason(story, source);
+    if (reason) { funnel.topic++; discards.push(discardOf(story, 'tema', reason, row)); continue; }
+    funnel.accepted++; stories.push(story);
+  }
+  return { stories, funnel, discards };
+}
+// Registro de descartes de una ejecución (descartes.json, junto a la edición): por fuente, como máximo `perSource` entradas,
+// las más recientes y sin repetir titular; `omitted` cuenta las que no caben.
+export const MAX_DISCARDS_PER_SOURCE = 40;
+export function discardLog(discards, { generatedAt, perSource = MAX_DISCARDS_PER_SOURCE } = {}) {
+  const bySource = new Map();
+  for (const entry of [...discards].sort(byDateDesc)) {
+    const list = bySource.get(entry.sourceId) || { kept: [], titles: new Set(), omitted: 0 };
+    bySource.set(entry.sourceId, list);
+    const key = entry.title.toLowerCase();
+    if (list.titles.has(key)) continue;
+    list.titles.add(key);
+    if (list.kept.length < perSource) list.kept.push(entry); else list.omitted++;
+  }
+  const omitted = {};
+  for (const [id, list] of bySource) if (list.omitted) omitted[id] = list.omitted;
+  return { version: 1, generatedAt, perSource, discards: [...bySource.values()].flatMap(list => list.kept), omitted };
 }
 
 // Canal de cada nota. Por defecto, el de su fuente; ROUTES lo cambia por tema para fuentes que sirven a dos canales.
 export const ROUTES = {
   'bce-boletines': [{ pattern: /\bJPRFM\b|Junta de Pol[ií]tica/i, category: 'regulacion' }],
   'bis-discursos': [{ pattern: BIS_CRYPTO_CHANNEL, category: 'cripto' }],
+  // Reuters · Cripto también trae la supervisión de fintech y neobancos (Revolut): si el titular no nombra nada cripto, va a Pagos.
+  'reuters-cripto': [{ pattern: /^(?!.*(crypto|stablecoin|tokeni[sz]|digital asset|bitcoin|\bether\b|binance|coinbase|tether|blockchain|CBDC|North Korean hackers))/i, category: 'pagos' }],
 };
 export function channelFor(story, source) {
   return ROUTES[source.id]?.find(route => route.pattern.test(story.title))?.category ?? source.category;
@@ -432,14 +574,25 @@ export function editionShape(data) {
   const isObject = value => !!value && typeof value === 'object' && !Array.isArray(value);
   return isObject(data) && Array.isArray(data.stories) && Array.isArray(data.sources) && (data.tracked === undefined || isObject(data.tracked));
 }
+// Si el feed vuelve a traer una nota que la edición anterior ya tenía, gana la copia nueva, pero conserva el juicio editorial
+// (si el titular no cambió) y los medios de `coverage` de la anterior: así no se pide otra vez el mismo juicio. Los dos campos
+// se revalidan en la capa editorial (cleanStory).
+function inherit(story, old) {
+  const extra = {};
+  if (old.editorial && !story.editorial && old.title === story.title) extra.editorial = old.editorial;
+  if (Array.isArray(old.coverage) && !story.coverage) extra.coverage = old.coverage;
+  return Object.keys(extra).length ? { ...story, ...extra } : story;
+}
 export function accumulate(fresh, previous, source, { ok = true, now = Date.now(), keep = () => true } = {}) {
   const byId = new Map();
   for (const story of fresh) if (!byId.has(story.id)) byId.set(story.id, story);
   for (const old of Array.isArray(previous) ? previous : []) {
-    if (!carryable(old, source) || byId.has(old.id) || !recent(old.publishedAt, now)) continue;
+    if (!carryable(old, source)) continue;
+    if (byId.has(old.id)) { byId.set(old.id, inherit(byId.get(old.id), old)); continue; }
+    if (!recent(old.publishedAt, now)) continue;
     let kept; try { kept = keep(old); } catch { kept = false; }
     if (!kept) continue;
-    const { stale, ...story } = old;
+    const { stale, ...story } = source.adapter === 'registro-oficial' ? readableNorm(old) : old;
     const carried = { ...story, kind: source.kind, category: channelFor(story, source) };
     if (typeof story.excerpt === 'string' && story.excerpt.length === MAX_EXCERPT && !story.excerpt.endsWith('…')) carried.excerpt = clipExcerpt(story.excerpt, MAX_EXCERPT - 1);
     if (source.tier) carried.tier = source.tier;
@@ -491,66 +644,241 @@ function spread(stories, cap, now, pick = spaced) {
 }
 // Juicio editorial (scripts/editorial.mjs): puntuación 0-100 de la nota, o null si aún no tiene.
 export const editorialScore = story => Number.isFinite(story?.editorial?.score) ? story.editorial.score : null;
+// Puntuación esperada de una nota sin juicio: la mediana de los juicios de su fuente en el canal (con tres o más), si no la del
+// canal (con tres o más), y si no `neutral`. Así una nota recién llegada no queda por encima de la mitad de las juzgadas solo
+// por no tener juicio, ni por debajo de todas: compite con lo que suele valer lo de su fuente.
+const median = values => { if (values.length < 3) return null; const sorted = [...values].sort((a, b) => a - b), middle = sorted.length >> 1; return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2; };
+export function expectedScore(stories, neutral = 50) {
+  const bySource = new Map(); const all = [];
+  for (const story of stories) {
+    const score = editorialScore(story);
+    if (score == null) continue;
+    all.push(score); bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), score]);
+  }
+  const channel = median(all) ?? neutral;
+  const sources = new Map([...bySource].map(([id, scores]) => [id, median(scores)]).filter(([, value]) => value != null));
+  return story => sources.get(story.sourceId) ?? channel;
+}
+// Tope por tema (`perTopic`): en cada período, como mucho N notas que nombren a la misma entidad (`topics`, las palabras de los
+// nombres propios del titular), por orden de mérito. Las notas oficiales no cuentan ni se recortan.
+function capTopics(stories, { now, perTopic, topics, order, exempt }) {
+  const counts = new Map(); const kept = [];
+  for (const story of [...stories].sort(order)) {
+    if (exempt(story)) { kept.push(story); continue; }
+    const period = periodIndex(story, now);
+    const keys = [...new Set(topics(story) || [])].map(word => `${period}\u0000${word}`);
+    if (keys.some(key => (counts.get(key) || 0) >= perTopic)) continue;
+    for (const key of keys) counts.set(key, (counts.get(key) || 0) + 1);
+    kept.push(story);
+  }
+  return kept;
+}
 // Composición con juicio editorial, si alguna nota del canal lo tiene:
 // - `threshold`: fuera las notas juzgadas con menos puntos, salvo las de fuentes primarias oficiales (`primary`).
 // - Los mismos topes, pero dentro de cada período se eligen las de más puntos (fecha como desempate) en vez de espaciarlas,
 //   y el canal sale ordenado por período (de lo más reciente a lo más antiguo) y, dentro de cada uno, por importancia.
-// - Una nota sin juicio se ordena con `neutral`. Sin ningún juicio en el canal, todo queda como antes (espaciado y por fecha).
-export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now(), threshold = 0, neutral = 50, primary = () => false } = {}) {
+// - Una nota sin juicio vale su puntuación esperada (expectedScore). Sin ningún juicio en el canal, todo queda como antes
+//   (espaciado y por fecha).
+// Opciones de la edición (collect.mjs las activa; por omisión no cambian nada):
+// - `perTopic` y `topics`: tope por tema (capTopics), antes del tope por fuente.
+// - `reserve` y `reserveShare`: plazas reservadas para las notas que cumplen `reserve` (documentos oficiales de nivel 1), que
+//   así no quedan fuera del tope de canal frente a medios prolíficos; lo que no usan vuelve al canal.
+// - `refill`: si después de los topes el canal tiene sitio, se completa con las notas que solo había cortado el tope por fuente
+//   (no de nivel 3): el tope por fuente reparte el canal, no deja huecos.
+export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now(), threshold = 0, neutral = 50, primary = () => false, perTopic = Infinity, topics = () => [], reserve = () => false, reserveShare = 0, refill = false } = {}) {
   const kept = stories.filter(story => { const score = editorialScore(story); return score == null || score >= threshold || primary(story); });
   const ranked = kept.some(story => editorialScore(story) != null);
-  const importance = (a, b) => (editorialScore(b) ?? neutral) - (editorialScore(a) ?? neutral) || byDateDesc(a, b);
+  const expected = expectedScore(stories, neutral);
+  const value = story => editorialScore(story) ?? expected(story);
+  const importance = (a, b) => value(b) - value(a) || byDateDesc(a, b);
+  const merit = (a, b) => (a.tier ?? 9) - (b.tier ?? 9) || quality(b) - quality(a) || byDateDesc(a, b);
   const pick = ranked ? (list, count) => [...list].sort(importance).slice(0, Math.max(0, count)) : spaced;
+  const pool = Number.isFinite(perTopic) ? capTopics(kept, { now, perTopic, topics, order: ranked ? importance : merit, exempt: story => story.kind === 'official' || primary(story) }) : kept;
   const bySource = new Map();
-  for (const story of kept) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
+  for (const story of pool) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
   const capped = [...bySource.values()].flatMap(list => byPeriod(list, now).flatMap(bucket => pick(bucket, perPeriod(list[0]))));
-  const tier3 = capped.filter(story => story.tier === 3), others = capped.filter(story => story.tier !== 3);
+  const candidates = capped.filter(story => story.tier !== 3 && reserve(story));
+  const reserved = spread(candidates, Math.min(candidates.length, Math.floor(cap * reserveShare)), now, pick);
+  const taken = new Set(reserved);
+  const rest = capped.filter(story => !taken.has(story));
+  const tier3 = rest.filter(story => story.tier === 3), others = rest.filter(story => story.tier !== 3);
   let allowed = Math.min(tier3.length, Math.floor(cap * tier3Share));
-  const main = Math.min(others.length, cap - allowed);
-  allowed = Math.min(allowed, Math.floor(main * tier3Share / (1 - tier3Share) + 1e-9));
-  const result = [...spread(others, main, now, pick), ...spread(tier3, allowed, now, pick)];
+  const main = Math.min(others.length, cap - reserved.length - allowed);
+  allowed = Math.min(allowed, Math.floor((reserved.length + main) * tier3Share / (1 - tier3Share) + 1e-9));
+  const result = [...reserved, ...spread(others, main, now, pick), ...spread(tier3, allowed, now, pick)];
+  if (refill && result.length < cap) {
+    const chosen = new Set(result);
+    result.push(...spread(pool.filter(story => story.tier !== 3 && !chosen.has(story)), cap - result.length, now, pick));
+  }
   return ranked ? result.sort((a, b) => periodIndex(a, now) - periodIndex(b, now) || importance(a, b)) : result.sort(byDateDesc);
 }
+// Serie de una publicación periódica: el titular sin la fecha ni el número («Boletín Monetario Semanal. 13 de Noviembre 2026»
+// y «Boletín Monetario Semanal. 6 de Noviembre 2026» son la misma serie; «Boletín de Reservas Internacionales. Octubre 2026»,
+// otra).
+const SERIES_CUT = new RegExp(String.raw`[.:;(]|\s\S*\d|\s(?:de\s)?(?:${Object.keys(months).join('|')})(?![a-z])`);
+export function editionSeries(title) {
+  const folded = foldText(title).trim();
+  const cut = folded.search(SERIES_CUT);
+  return (cut > 0 ? folded.slice(0, cut) : folded).trim();
+}
 // Tope por edición (`perEdition` de la fuente, por ejemplo los boletines de datos del BCE): solo las N más recientes de
-// esa fuente en toda la edición, puntúen lo que puntúen.
+// cada serie de esa fuente (editionSeries) en toda la edición, puntúen lo que puntúen.
 export function capPerEdition(stories, perEdition = () => undefined) {
   const counts = new Map();
   return [...stories].sort(byDateDesc).filter(story => {
     const max = perEdition(story);
     if (!Number.isInteger(max)) return true;
-    const count = counts.get(story.sourceId) || 0;
-    counts.set(story.sourceId, count + 1);
+    const key = `${story.sourceId}\u0000${editionSeries(story.title)}`;
+    const count = counts.get(key) || 0;
+    counts.set(key, count + 1);
     return count < max;
   });
 }
 // Con juicio editorial la edición va canal por canal, cada uno en su orden de importancia (site/app.js lo respeta); sin
-// juicio, toda la edición va por fecha, como antes.
+// juicio, toda la edición va por fecha, como antes. Con `perTopic`, los temas salen de los nombres propios de los titulares de
+// toda la edición (coverageSignatures).
 export function composeEdition(stories, options = {}) {
   const pool = options.perEdition ? capPerEdition(stories, options.perEdition) : stories;
+  const signatures = Number.isFinite(options.perTopic) ? coverageSignatures(pool) : null;
+  const topics = signatures ? story => [...(signatures.get(story)?.entities || [])] : options.topics;
   const byChannel = new Map();
   for (const story of pool) byChannel.set(story.category, [...(byChannel.get(story.category) || []), story]);
-  const composed = [...byChannel.values()].flatMap(list => composeChannel(list, options));
+  const composed = [...byChannel.values()].flatMap(list => composeChannel(list, { ...options, ...(topics ? { topics } : {}) }));
   return composed.some(story => editorialScore(story) != null) ? composed : composed.sort(byDateDesc);
 }
 
 // ---------------------------------------------------------------------------------------------------------
-// Palabras con mayúscula que no identifican a una empresa: países, gentilicios y términos genéricos del sector.
-const COVERAGE_STOP = new Set('fintech paytech insurtech neobanco banco bank central capital ventures serie series ronda startup latam latin america américa latina latinoamérica ecuador colombia colombian colombiana colombiano méxico mexico mexican mexicana mexicano argentina argentine argentino brasil brazil brazilian brasileña brasileño perú peru peruvian peruana chile chilean chilena chileno uruguay paraguay bolivia venezuela panamá estados unidos eeuu usd nuevo nueva the and for una uno los las del para con por how why what estas este esta así qué cómo auge ceo cfo'.split(' '));
-export function coverageSignature(title) {
-  const amounts = new Set(); const entities = new Set();
-  for (const match of title.matchAll(/(?:US\$|USD|R\$|\$)\s?(\d+(?:[.,]\d+)?)\s?(mil millones|millones|million|billion|bn|mm|m|b)?(?![a-z])/gi)) {
-    const unit = /^(mil millones|billion|bn|b)$/i.test(match[2] || '') ? 'b' : match[2] ? 'm' : '';
-    amounts.add(`${Number(match[1].replace(',', '.'))}${unit}`);
+// Un hecho, una nota. Cada titular se reduce a una firma (coverageSignature):
+// - entidades: nombres propios en grupos de palabras seguidas («Hong Kong» o «World Bank Group» cuentan como uno). Un nombre es
+//   una palabra con mayúscula en mitad de la frase, una sigla o una palabra con mayúscula interior (BBVA, JPMorgan). Al principio
+//   de la frase y en titulares con todas las palabras en mayúscula («Federal Reserve Board Announces…», «GOBIERNO DE…») solo
+//   cuenta si otro titular de la misma tanda la escribe con mayúscula en mitad de la frase (`lexicon`).
+// - importes: cifras con moneda o unidad, en millones y redondeadas a dos cifras («US$6.300 millones» = «$6.3 bln»).
+// - palabras: las del titular sin palabras vacías ni términos genéricos del sector, sin el plural.
+// Palabras con mayúscula que no identifican a nadie: países, gentilicios, meses, rótulos de sección y términos genéricos.
+const COVERAGE_STOP = new Set(`fintech paytech insurtech neobanco banco bank central capital ventures serie series ronda startup latam latin america américa latina latinoamérica ecuador colombia colombian colombiana colombiano méxico mexico mexican mexicana mexicano argentina argentine argentino brasil brazil brazilian brasileña brasileño perú peru peruvian peruana chile chilean chilena chileno uruguay paraguay bolivia venezuela panamá estados unidos eeuu usd nuevo nueva the and for una uno los las del para con por how why what estas este esta así qué cómo auge ceo cfo
+  ${Object.keys(months).join(' ')} january february march april may june july august september october november december lunes martes miércoles jueves viernes sábado domingo
+  reg wrap buenas fuentes breakingviews commentary exclusive exclusiva update opinión opinion análisis analysis entrevista podcast newsletter gobierno ministerio group grupo sistema financiero financiera nacional banca bancos banks`.split(/\s+/).filter(Boolean).map(word => foldText(word)));
+// Términos de los títulos de las normas que llevan mayúscula pero no son un nombre: sí cuentan como palabra del hecho.
+const NAME_STOP = new Set('junta superintendencia superintendente norma normas resolución resoluciones codificación reglamento metodología'.split(' ').map(word => foldText(word)));
+// Palabras que no distinguen un hecho de otro (ya sin tildes): vacías en español e inglés, cifras dichas con letras y el
+// vocabulario común de todos los canales.
+const WORD_STOP = new Set(`para como sobre entre desde hasta tras ante tiene tienen esta este estos estas esto pero porque cuando donde sera seran puede pueden podra podria hace hacen mucho muchos todo todos toda todas otro otra otros otras nuevo nueva nuevos nuevas cual cuales segun tambien ahora solo mientras durante contra hacia bajo cada mismo misma dice dicen millon millones miles dolar dolares euros pesos reales anos semana semanas meses
+  with from into after over under about than that this these those their there have will would could should says said amid what when where which while more most first last just only also year years week weeks month months million millions billion billions dollar dollars
+  banco bancos banca bank banks banking bancario bancaria fintech fintechs crypto cripto criptomoneda criptomonedas criptoactivo criptoactivos financiero financiera financieros financieras financial finance finanzas sistema system mercado mercados market markets empresa empresas company companies sector industria industry`.split(/\s+/).filter(Boolean));
+const COVERAGE_WORD = /\p{L}[\p{L}\p{N}]*/gu;
+const SENTENCE_START = /(?:^|[:.?!¿¡«“"'‘([|—–-])$/u;
+const AMOUNT = /(US\$|USD|R\$|€|£|\$)?\s?(\d[\d.,]{0,14})\s?(mil millones|millones|mill[oó]n|million|billion|bln|bn|mn|mm|mdp|m|b)?(?![\p{L}\p{N}])(\s?(?:de\s)?(?:d[oó]lares|euros|pesos|reales))?/giu;
+const AMOUNT_WORDS = /^(mil millones|millones|mill[oó]n|million|billion|bln|bn|mn|mdp)$/i;
+// Sinónimos que los medios alternan para la misma norma («nuevas reglas», «la norma que regula»).
+const WORD_SYNONYMS = { regla: 'norma', regula: 'norma', normativa: 'norma', reglamento: 'norma' };
+const stemWord = word => word.length > 5 && /[rlndz]es$/.test(word) ? word.slice(0, -2) : word.length > 4 && /[^s]s$/.test(word) ? word.slice(0, -1) : word;
+// Códigos de norma («SEPS-IGT-IGJ-2026-0160», «JPRFM-2026-048-T»): no son nombres ni palabras del titular.
+const maskCodes = title => String(title).replace(/\S+/g, chunk => chunk.includes('-') && /\d/.test(chunk) && /^[A-Z0-9-]+[.,:;]?$/.test(chunk) ? ' '.repeat(chunk.length) : chunk);
+function titleWords(title) {
+  const shouting = isUpper(title);
+  const words = [...maskCodes(title).matchAll(COVERAGE_WORD)].map(match => ({ text: match[0], index: match.index, end: match.index + match[0].length }));
+  const later = words.slice(1).filter(word => word.text.length >= 4);
+  const titleCase = later.length >= 3 && later.filter(word => /^\p{Lu}/u.test(word.text)).length / later.length >= 0.6;
+  for (const word of words) {
+    word.folded = foldText(word.text);
+    word.capital = /^\p{Lu}/u.test(word.text);
+    word.start = SENTENCE_START.test(title.slice(0, word.index).trimEnd());
+    word.strong = !shouting && word.text.length >= 3 && /\p{Lu}/u.test(word.text.slice(1));
+    word.midSentence = !shouting && !titleCase && word.capital && !word.start && word.text.length >= 3;
+    word.styled = shouting || titleCase;
   }
-  for (const word of title.match(/\p{Lu}[\p{L}\d]{2,}/gu) || []) if (!COVERAGE_STOP.has(word.toLowerCase())) entities.add(word.toLowerCase());
-  return { amounts, entities };
+  return words;
 }
+// Nombres propios de una tanda de titulares: los que alguno escribe con mayúscula en mitad de la frase, y los que salen con
+// mayúscula (al principio de la frase) en dos titulares o más y nunca en minúscula («Nubank aumenta…», «Nubank suspende…»).
+export function coverageLexicon(titles) {
+  const lexicon = new Set(); const capital = new Map(); const lower = new Set();
+  for (const title of titles) {
+    for (const word of titleWords(title)) {
+      if (word.midSentence) lexicon.add(word.folded);
+      if (!word.capital) lower.add(word.folded);
+      else if (!word.styled && word.text.length >= 3) capital.set(word.folded, (capital.get(word.folded) || 0) + 1);
+    }
+  }
+  for (const [word, count] of capital) if (count >= 2 && !lower.has(word)) lexicon.add(word);
+  return lexicon;
+}
+function amountsOf(title) {
+  const amounts = new Set();
+  for (const match of String(title).matchAll(AMOUNT)) {
+    const [, currency, digits, unit = '', named] = match;
+    if (!currency && !named && !AMOUNT_WORDS.test(unit)) continue;
+    const raw = digits.replace(/[.,]+$/, '');
+    const value = /^\d{1,3}(?:[.,]\d\d\d){1,4}$/.test(raw) ? Number(raw.replace(/[.,]/g, '')) : Number(raw.replace(',', '.'));
+    if (!Number.isFinite(value) || value <= 0) continue;
+    const millions = /^(mil millones|billion|bln|bn|b)$/i.test(unit) ? value * 1000 : unit ? value : value / 1e6;
+    amounts.add(`${Number(millions.toPrecision(2))}m`);
+  }
+  return amounts;
+}
+export function coverageSignature(title, lexicon = new Set()) {
+  const words = titleWords(title); const shouting = isUpper(title);
+  // Un nombre de varias palabras sigue con espacios o con un enlace corto («Economía Popular y Solidaria», «Banco de Chile»):
+  // `link` es el enlace pendiente entre dos palabras con mayúscula.
+  const runs = []; let run = null, previous = null, link = false;
+  for (const word of words) {
+    const name = word.text.length >= 3 && (word.strong || word.midSentence || ((word.capital || shouting) && lexicon.has(word.folded)));
+    if (!name) {
+      const connects = run && !link && /^(de|del|y|e|of|and)$/i.test(word.text) && /^\s+$/.test(title.slice(previous.end, word.index));
+      if (connects) { link = true; previous = word; } else { run = null; link = false; }
+      continue;
+    }
+    const joined = run && /^\s+$/.test(title.slice(previous.end, word.index));
+    if (!joined) { run = []; runs.push(run); }
+    if (!COVERAGE_STOP.has(word.folded) && !NAME_STOP.has(word.folded)) run.push(word.folded);
+    previous = word; link = false;
+  }
+  const entityRuns = runs.filter(list => list.length);
+  const tokens = new Set();
+  for (const word of words) if (word.folded.length >= 4 && !/\d/.test(word.folded) && !WORD_STOP.has(word.folded) && !COVERAGE_STOP.has(word.folded)) { const stem = stemWord(word.folded); tokens.add(WORD_SYNONYMS[stem] ?? stem); }
+  return { runs: entityRuns, entities: new Set(entityRuns.flat()), amounts: amountsOf(title), tokens };
+}
+// Firmas de una tanda de notas, con el léxico de nombres propios sacado de la misma tanda.
+export function coverageSignatures(stories) {
+  const lexicon = coverageLexicon(stories.map(story => story.title));
+  return new Map(stories.map(story => [story, coverageSignature(story.title, lexicon)]));
+}
+// Dos notas cuentan el mismo hecho si salen con menos de cuatro días de diferencia y:
+// (a) comparten un importe y una entidad, o dos entidades, y además una palabra que no sea nombre, o salen con menos de dos
+//     días entre sí («Nexu secures $55M credit line from BBVA Spark» y «Fintech Nexu obtiene una línea de crédito de US$55M»);
+// (b) comparten tres palabras que sean al menos la mitad de las del titular más corto, con una entidad en común, con cuatro
+//     palabras o con todas las del titular más corto («Las nuevas reglas para los pagos con tarjetas en Ecuador» y «La JPRFM
+//     establece nuevas reglas para los pagos con tarjetas»).
+// Dos notas distintas sobre Binance («North Korea behind Binance theft», «North Korean hackers… launder Binance billions») o
+// sobre Hong Kong no se unen.
 const COVERAGE_WINDOW = 4 * DAY;
-function sameCoverage(a, b) {
-  if (a.story.source === b.story.source || Math.abs(Date.parse(a.story.publishedAt) - Date.parse(b.story.publishedAt)) > COVERAGE_WINDOW) return false;
-  const entities = [...a.signature.entities].filter(entity => b.signature.entities.has(entity)).length;
-  const amounts = [...a.signature.amounts].filter(amount => b.signature.amounts.has(amount)).length;
-  return entities >= 2 || (entities >= 1 && amounts >= 1);
+const CLOSE_WINDOW = 2 * DAY;
+const sharedRuns = (a, b) => Math.max(a.runs.filter(run => run.some(word => b.entities.has(word))).length, b.runs.filter(run => run.some(word => a.entities.has(word))).length);
+export function sameFact(a, b, { window = COVERAGE_WINDOW } = {}) {
+  const gap = Math.abs(a.time - b.time);
+  if (gap > window) return false;
+  const runs = sharedRuns(a.signature, b.signature);
+  const shared = [...a.signature.tokens].filter(token => b.signature.tokens.has(token));
+  const plain = shared.some(token => !a.signature.entities.has(token) && !b.signature.entities.has(token));
+  const amount = [...a.signature.amounts].some(value => b.signature.amounts.has(value));
+  if ((runs >= 2 || (runs >= 1 && amount)) && (plain || gap <= CLOSE_WINDOW)) return true;
+  const words = shared.length, shorter = Math.min(a.signature.tokens.size, b.signature.tokens.size);
+  return words >= 3 && words * 2 >= shorter && (runs >= 1 || words >= 4 || words === shorter);
+}
+// Medios que también contaron el hecho (`coverage`): nombres de texto plano, sin el de la nota que queda, sin repetir, hasta 8.
+const COVERAGE_MAX = 8;
+function withCoverage(best, group) {
+  const own = String(best.source || '').trim().toLowerCase(); const names = [];
+  for (const story of [best, ...group.filter(story => story !== best)]) {
+    for (const name of [story.source, ...(Array.isArray(story.coverage) ? story.coverage : [])]) {
+      const clean = typeof name === 'string' ? name.trim() : '';
+      if (!clean || clean.length > 80 || /[<>\u0000-\u001f]/.test(clean) || clean.toLowerCase() === own || names.some(other => other.toLowerCase() === clean.toLowerCase())) continue;
+      names.push(clean);
+    }
+  }
+  const { coverage: _old, ...rest } = best;
+  return names.length ? { ...rest, coverage: names.slice(0, COVERAGE_MAX) } : rest;
 }
 // Cuando la misma nota llega a varios canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos
 // fuentes, como un discurso publicado por el BCE y por el BIS), queda una sola copia: la de mejor calidad (con
@@ -570,23 +898,39 @@ function oneCopy(stories) {
     for (const k of keys) if (!index.has(k)) index.set(k, group);
   }
   return groups.map(group => {
+    if (group.length === 1) return group[0];
     const best = group.reduce((a, b) => quality(b) > quality(a) || (quality(b) === quality(a) && channelRank(b.category) < channelRank(a.category)) ? b : a);
     const category = group.reduce((current, story) => channelRank(story.category) < channelRank(current) ? story.category : current, best.category);
-    return category === best.category ? best : { ...best, category };
+    const merged = withCoverage(best, group);
+    return category === merged.category ? merged : { ...merged, category };
   });
 }
-// Una nota aparece en un solo canal (ver oneCopy). En los canales de mergeCoverage (Fintech LATAM y Endeavor LATAM), además, varias notas de medios
-// distintos sobre la misma operación (misma empresa e importe, o dos nombres propios en común, en un margen de cuatro
-// días) se reducen a una: la que trae extracto y enlace directo.
-export function deduplicate(stories, mergeCoverage = ['latam', 'endeavor']) {
-  const kept = [];
-  for (const story of oneCopy(stories).sort(byDateDesc)) {
-    const entry = { story, signature: mergeCoverage.includes(story.category) ? coverageSignature(story.title) : null };
-    const twin = entry.signature ? kept.findIndex(other => other.signature && other.story.category === story.category && sameCoverage(entry, other)) : -1;
-    if (twin === -1) kept.push(entry);
-    else if (quality(story) > quality(kept[twin].story)) kept[twin] = entry;
+// La nota que representa a un hecho: documento primario oficial, mejor nivel de fuente, con extracto, enlace directo, más
+// puntos y más reciente (el mismo orden que groupClusters en editorial.mjs).
+const scoreOf = story => Number.isFinite(story?.editorial?.score) ? story.editorial.score : -1;
+function bestCopy(group, primary) {
+  const key = story => [primary(story) ? 0 : 1, story.tier ?? 9, story.excerpt ? 0 : 1, story.via ? 1 : 0, -scoreOf(story), -Date.parse(story.publishedAt)];
+  return [...group].sort((a, b) => { const x = key(a), y = key(b); for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return x[i] - y[i]; return 0; })[0];
+}
+// Una nota aparece en un solo canal (ver oneCopy). Además, en todos los canales y entre canales, las notas de medios distintos
+// sobre el mismo hecho (sameFact con cualquiera de las notas ya reunidas) quedan en una: la de bestCopy, en su propio canal, con
+// los demás medios en `coverage`. Un grupo no reúne dos notas del mismo medio ni dos documentos primarios oficiales (`primary`).
+export function deduplicate(stories, { primary = () => false, window = COVERAGE_WINDOW } = {}) {
+  const copies = oneCopy(stories).sort(byDateDesc);
+  const signatures = coverageSignatures(copies);
+  const groups = [];
+  for (const story of copies) {
+    const entry = { story, signature: signatures.get(story), time: Date.parse(story.publishedAt), medium: String(story.source || '').trim().toLowerCase() };
+    const fits = group => !group.some(other => other.medium === entry.medium) && !(primary(story) && group.some(other => primary(other.story)))
+      && group.some(other => sameFact(entry, other, { window }));
+    const group = groups.find(fits);
+    if (group) group.push(entry); else groups.push([entry]);
   }
-  return kept.map(entry => entry.story);
+  return groups.map(group => {
+    if (group.length === 1) return group[0].story;
+    const members = group.map(entry => entry.story);
+    return withCoverage(bestCopy(members, primary), members);
+  });
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -607,7 +951,7 @@ export const ENDEAVOR_AMBIGUOUS = new Set([
   'Campo Vivo', 'Capim', 'Caramba', 'Cayena', 'Ceibo', 'CEPA', 'Clara', 'Clip', 'Cobre', 'Compara', 'Comun', 'Comunal', 'Conexa', 'Contigo',
   'Cora', 'Crezcamos', 'Cultura Colectiva', 'Descomplica', 'Dito', 'Docket', 'Dynamo', 'Eden', 'Elenas', 'Enmedio', 'Envoys', 'Estoca',
   'Fairplay', 'Flash', 'Galgo', 'Gera', 'Gesto', 'Imagen Dental', 'Inventa', 'isaac', 'Jüsto', 'Justos', 'Kamino', 'Klar', 'La Zarza', 'Latir', 'Lemon',
-  'Limonada', 'Loft', 'Mendel', 'Mensajeros Urbanos', 'Mercado Bitcoin', 'Meru', 'Migrante', 'Minka', 'Moises', 'Mural', 'Neon', 'Nomad',
+  'Limonada', 'Loft', 'Mendel', 'Mensajeros Urbanos', 'Meru', 'Migrante', 'Minka', 'Moises', 'Mural', 'Neon', 'Nomad',
   'Pier', 'Poke', 'Pomelo', 'Prática', 'Prex', 'Prey', 'Principia', 'Prometeo', 'Proteus', 'Quero', 'Quinoa', 'Refinancia', 'Reservamos',
   'Reuse', 'Ripio', 'Runa', 'Runway', 'Sami', 'Sentinel', 'Shiva', 'Spira', 'Swap', 'Tala', 'Tangelo', 'Thais', 'Triciclos', 'Unico',
   'Ver de Verdad', 'VERTICAL', 'Will bank', 'Will Bank', 'Yema', 'Yerra', 'Zapping',
@@ -617,13 +961,17 @@ export const ENDEAVOR_AMBIGUOUS = new Set([
 // Infocorp (software bancario, Uruguay) se llama igual que la central de riesgo de Perú.
 export const ENDEAVOR_EXCLUDED = new Set(['Arizona', 'Comp', 'CORE', 'Dominion', 'Don’t Worry', 'ENA', 'GENESYS', 'Grupo Gastronómico', 'Infocorp', 'Insider', 'Involves', 'ISA', 'Prima', 'Take', 'Torre']);
 // Otras grafías del nombre de una empresa del directorio (clave: slug). No añade empresas.
-export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoLibre', 'Mercado Libre'], 'will-bank': ['Will Bank'] };
+export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoLibre', 'Mercado Libre', 'Mercado Pago'], 'will-bank': ['Will Bank'] };
+// Nombres hechos de palabras comunes que solo cuentan escritos como en la lista, con cada palabra en mayúscula («Un Estado
+// fuerte para un mercado libre» no es la empresa; «Mercado Pago lanza…» sí). En titular o extracto y sin exigir contexto:
+// con las dos mayúsculas no se confunden con nada («Mercado Bitcoin sufre ataque de hacker…» es la empresa).
+export const ENDEAVOR_CASED = new Set(['Mercado Libre', 'Mercado Pago', 'Mercado Bitcoin']);
 // Ruido bursátil y de portales de inversión en la búsqueda (precio objetivo, calificaciones de analistas, volumen,
-// transcripciones de resultados, saltos de precio de tokens): como en Cripto, no entran notas de cotización.
-export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$`);
+// transcripciones de resultados, saltos de precio de tokens, caídas en Wall Street): como en Cripto, no entran notas de cotización.
+export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$|Wall Street|acciones (pierden|caen|suben|se desploman)|\b(cay[oó]|cae|sube|subi[oó]|se desploma) (casi |m[aá]s de )?\d+(,\d+)? ?%|suba la acci[oó]n`);
 // Titulares promocionales sobre una empresa de la red (cupones, «0% de inicial», sorteos, «por tiempo limitado», premios a
-// usuarios): son anuncios de consumo, no noticias. Lista editable; cada caso nuevo, con su prueba en tests/content.test.mjs.
-export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]digos? (de descuento|promocional)|promo ?codes?|\b0 ?% (de )?inicial|inicial de 0 ?%|sin (cuota )?inicial|\bsorteos?\b|\bsortea|giveaways?|por tiempo limitado|limited[- ]time|hasta agotar|premi(a|an|ar[aá]n?) a (sus |los )?(usuari|client)|premios? (a|para) (sus |los )?(usuari|client)`);
+// usuarios, regalos, «descuentos de hasta…», «rentabilidad garantizada… para tu CTS»): son anuncios de consumo, no noticias. Lista editable; cada caso nuevo, con su prueba en tests/content.test.mjs.
+export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]digos? (de descuento|promocional)|promo ?codes?|\b0 ?% (de )?inicial|inicial de 0 ?%|sin (cuota )?inicial|\bsorteos?\b|\bsortea|giveaways?|por tiempo limitado|limited[- ]time|hasta agotar|premi(a|an|ar[aá]n?) a (sus |los )?(usuari|client)|premios? (a|para) (sus |los )?(usuari|client)|\bregal(a|an|ar[aá]n?)(?![a-záéíóúñ])|descuentos? de hasta \d|qu[eé] ofertas|rentabilidad garantizada|para tu (CTS|aguinaldo|quincena)|programa de referidos`);
 
 // Medios aceptados en el canal Endeavor LATAM (allowHosts de la fuente `endeavor-prensa`, ver collect.mjs). Las notas llegan
 // por Google News y se comprueba el dominio del medio real (`sourceUrl`); vale el dominio y sus subdominios.
@@ -634,13 +982,14 @@ export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]
 export const ENDEAVOR_PRESS_HOSTS = [
   // Medios que el proyecto ya usa como fuentes de nivel 1 y 2 (las pruebas comprueban que estén todos).
   'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
-  'latamlist.com', 'expansion.mx', 'df.cl', 'contxto.com', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
+  'latamlist.com', 'expansion.mx', 'df.cl', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
   'finextra.com', 'thebanker.com', 'americanbanker.com', 'pymnts.com', 'wsj.com', 'elpais.com', 'reuters.com', 'theblock.co',
-  'coindesk.com', 'criptonoticias.com',
+  'coindesk.com', 'criptonoticias.com', 'decrypt.co', 'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'iproup.com',
   // Referencia internacional y agencias de noticias (no de comunicados).
   'bloomberg.com', 'economist.com', 'forbes.com', 'cnbc.com', 'techcrunch.com', 'restofworld.org', 'efe.com', 'americaeconomia.com', 'bnamericas.com',
   // Argentina.
-  'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar', 'iproup.com',
+  'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar',
+  'mercado.com.ar', // Revista Mercado: revista de negocios argentina con redacción propia.
   // México.
   'eluniversal.com.mx', 'elfinanciero.com.mx', 'forbes.com.mx', 'milenio.com', 'excelsior.com.mx', 'razon.com.mx', 'elceo.com', 'reforma.com', 'jornada.com.mx',
   // Colombia.
@@ -652,22 +1001,34 @@ export const ENDEAVOR_PRESS_HOSTS = [
   // Uruguay.
   'elpais.com.uy', 'elobservador.com.uy',
   // Ecuador.
-  'expreso.ec', 'elcomercio.com', 'vistazo.com',
+  'expreso.ec', 'elcomercio.com', 'vistazo.com', 'teleamazonas.com', 'lahora.com.ec',
   // Venezuela.
   'eluniversal.com', 'elnacional.com', 'eldiario.com', 'bancaynegocios.com',
   // Brasil.
   'valor.globo.com', 'oglobo.globo.com', 'folha.uol.com.br', 'estadao.com.br', 'exame.com', 'infomoney.com.br', 'neofeed.com.br', 'braziljournal.com',
   // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
-  'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+  'contxto.com', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+  // Prensa fintech, de tecnología y de negocios con redacción propia que cubre a la red (revisión de noviembre de 2026):
+  // Fintech Expert (México), Xataka México, Mobile Time LATAM, LexLatin (derecho de negocios), Enter.co (Colombia),
+  // ITSitio y Mexico Business News.
+  'fintechexpert.mx', 'xataka.com.mx', 'mobiletime.la', 'lexlatin.com', 'enter.co', 'itsitio.com', 'mexicobusiness.news',
 ];
-// Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión o finanzas en el titular o el extracto.
+// Nombramientos y equipo directivo (español, inglés y portugués): cargos (CEO, CFO, «Chief … Officer», director financiero,
+// gerente general, country manager) y verbos de nombramiento con su complemento («ficha a», «incorpora a»; no «incorporar
+// esta fruta»). «named» y «names» sueltos no cuentan («a cat named Pomelo»), ni «head of» («Head of State visits Tala»). «Pomelo nombró a … como nuevo Chief Financial
+// Officer» y «Pomelo refuerza su equipo directivo con la incorporación de…» son notas de empresa.
+// Altas y salidas solo con su complemento de cargo o de equipo: «se suma al equipo de», «se suma a Klar como», «elige a su
+// nuevo CEO», «asciende a directora», «renuncia a su cargo», «deja el cargo», cofundador, vicepresidente. Sueltos («Clara se
+// suma a la protesta», «renuncia a la final») no cuentan.
+const ENDEAVOR_APPOINTMENTS = String.raw`\b(ceo|cfo|coo|cto|cmo|cio|cpo|cro)\b|\bchief [a-z]+( [a-z]+)? officer\b|country manager|general manager|managing director|gerente (general|de pa[ií]s)|\bdirec?tora? (financ|general|geral|ejecutiv|executiv|de (finanzas|operaciones|tecnolog))|\bdirectiv[oa]s?\b|equipo de liderazgo|leadership team|alta (direcci[oó]n|gerencia)|\bc-?(suite|level)\b|\bnombr(a|ó)|\bdesign(a|ó)|\bfich(aje|ó|a al?\b)|\bincorpor(aci|ó|a al?\b)|\bcontrat(a|ó|ou)|\bnome(ia|ou|ad[oa]|a[cç][aã]o)\b|\bappoint|\bnames (new|its|former|ex)\b|\bhir(es|ed|ing)\b|\basum(e|ió) (como|el cargo|la (direcci|presidencia|gerencia))|\bassume (o cargo|como)|\b(se )?suma (a|al) (su |el |la )?(equipo|directorio|board|junta|comit[eé])|\bse suma a \S+ como\b|\belige a (su |un |una )?(nuev[oa] )?(ceo|cfo|coo|cto|director|directora|presidente|presidenta|gerente)|\bascend(i[oó]|e|ido) a (director|directora|gerente|jef[ea]|vicepresident|presidente|presidenta|socio|socia|ceo|cfo|coo|cto)|\brenunci(a|ó) (a su cargo|al cargo|como)|\bdej(a|ó) (el|su) cargo|\bdej(a|ó) la (direcci[oó]n|presidencia|gerencia)|\bcofundador(a|es)?\b|\bco-?founders?\b|\bvicepresident[ea]s?\b`;
+// Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión, finanzas o nombramientos en el titular o el extracto.
 // No incluye importes sueltos («5 millones de toneladas de cobre» no es una ronda).
-export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b`);
-// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…»), cargos políticos.
-export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|alcald|jefa de gobierno|candidat|diputad|senador`);
+export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b|hacke[or]|\bhacks?\b|ciberataque|gastos? corporativ|viajes corporativos|tarjetas? corporativ|cuentas? en d[oó]lares`, ENDEAVOR_APPOINTMENTS);
+// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…», «Cobre se desploma 5%…»,
+// metal rojo, LME, onzas), cargos políticos, frutas y
+// nutrición («Pomelo: el cítrico que…», también Tangelo, Limonada, Quinoa).
+export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|se desploma|metal rojo|\bLME\b|\bonzas?\b|libra de cobre|alcald|jef[ae] de gobierno|candidat|diputad|senador|\bfrutas?\b|\bfruits?\b|c[ií]tric|citrus|grapefruit|toronja|vitamina|nutrici[oó]n|nutrition|\bdieta?\b`);
 
-const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
-const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 // Palabra completa: ni letras o cifras pegadas, ni unidas por punto o guion a otra palabra («Bal.azos», «Devsu-Korgao»).
 const bounded = body => new RegExp(`(?<![\\p{L}\\p{N}]|[\\p{L}\\p{N}][.-])(?:${body})(?![\\p{L}\\p{N}]|[.-][\\p{L}\\p{N}])`, 'u');
 // Nombres con los que se reconoce una empresa: el del directorio sin aclaraciones («Galgo (formerly Migrante)» → Galgo y
@@ -697,6 +1058,7 @@ export function endeavorIndex(companies = ENDEAVOR_COMPANIES) {
       const key = ambiguous ? `=${name}` : foldText(name);
       if (seen.has(key)) continue;
       seen.add(key);
+      if (ENDEAVOR_CASED.has(name)) { entries.push({ name, display: names[0], company, ambiguous: false, cased: true, pattern: bounded(escapeRx(name)) }); continue; }
       // Ambiguo: tal como está escrito en el directorio («tapi», «albo») o con mayúscula inicial; nunca en mayúsculas sostenidas
       // si el directorio no lo escribe así («TAPI» es el gasoducto). Si no es ambiguo: sin distinguir mayúsculas ni tildes.
       const forms = [...new Set([name, name[0].toUpperCase() + name.slice(1)])];
@@ -720,12 +1082,19 @@ const sentenceCased = (title, match) => {
 //   «María Clara»). La primera palabra del titular no cuenta como vecina: lleva mayúscula por posición.
 // - en mayúscula de título (inglés), en medio del titular: ahí todas las palabras llevan mayúscula («…to Swap Crypto Wallet
 //   Addresses»). Vale al principio, tras «’s» («Brazil’s Loft»), tras dos puntos o raya, antes de una coma o tras una palabra
-//   en minúscula de cuatro letras o más («La fintech Bold…»), que en mayúscula de título no existiría.
+//   en minúscula de cuatro letras o más («La fintech Bold…») o tras una preposición española («nuevo CFO de Pomelo», «alianza
+//   con Klar»; no «a», que el inglés escribe en minúscula), que en mayúscula de título no existirían.
+// - tras Santa, San, Santo o Puerto: es un lugar («Santa Clara contratará…»).
+// Las comillas no separan al vecino («el ‘Tala’ Rangel» es una persona), y las palabras de producto no cuentan como vecino
+// («Klar Empresarial colocó…», «Clip Pay»).
+const PLACE_BEFORE = /(?:^|[^\p{L}])(Santa|San|Santo|Puerto)\s+$/u;
+const PRODUCT_AFTER = /^\s+(Empresarial|Empresas|Business|Pay|Card|Bank|Cash|Wallet|Pro|Plus)(?![\p{L}\p{N}])/u;
 function notACompany(title, match) {
-  const after = title.slice(match.index + match[0].length);
-  const before = title.slice(0, match.index);
-  if (sentenceCased(title, match)) return /^\s+\p{Lu}\p{Ll}/u.test(after) || /\S\s+\p{Lu}\p{Ll}+\s+$/u.test(before);
-  return !(/^\s*$/.test(before) || /['’]s\s+$|[:|–—-]\s+$|(?<![\p{L}\p{N}])\p{Ll}{4,}\s+$/u.test(before) || /^,/.test(after));
+  const after = title.slice(match.index + match[0].length).replace(/^[’'"»”]+/u, '');
+  const before = title.slice(0, match.index).replace(/[‘'"«“]+$/u, '');
+  if (PLACE_BEFORE.test(before)) return true;
+  if (sentenceCased(title, match)) return (/^\s+\p{Lu}\p{Ll}/u.test(after) && !PRODUCT_AFTER.test(after)) || /\S\s+\p{Lu}\p{Ll}+\s+$/u.test(before);
+  return !(/^\s*$/.test(before) || /['’]s\s+$|[:|–—-]\s+$|(?<![\p{L}\p{N}])(\p{Ll}{4,}|de|del|al|con|en|por|y)\s+$/u.test(before) || /^,/.test(after));
 }
 // Empresa Endeavor que menciona una nota: primero el titular y luego el extracto (salvo con `titleOnly`). Los nombres ambiguos
 // solo cuentan en el titular y con contexto (ENDEAVOR_CONTEXT en titular o extracto, o nota del canal latam).
@@ -739,6 +1108,7 @@ export function matchEndeavor(story, { index = ENDEAVOR_INDEX, titleOnly = false
   const hasNoise = () => ENDEAVOR_NOISE.test(title);
   for (const field of excerpt ? [0, 1] : [0]) {
     for (const entry of index) {
+      if (entry.cased) { if (entry.pattern.test(field ? excerpt : title)) return endeavorTag(entry); continue; }
       if (!entry.ambiguous) { if (entry.pattern.test(fields[field])) return endeavorTag(entry); continue; }
       if (field === 1) continue;
       const match = title.match(entry.pattern);
@@ -764,14 +1134,32 @@ export function tagEndeavor(story, options) {
   return tag ? { ...rest, endeavor: tag } : rest;
 }
 
-// Búsqueda dedicada (canal Endeavor LATAM): Google News por lotes de nombres unidos con OR. Se empieza por las fintech de la
-// región y las empresas con oficina en Ecuador. Cada ejecución consulta `perRun` lotes y la siguiente sigue donde quedó
-// (`rotation`); la acumulación de 30 días hace que el canal se llene con el tiempo. `maxWords` evita consultas demasiado largas.
+// Búsqueda dedicada (canal Endeavor LATAM): Google News por lotes de nombres unidos con OR. Se buscan las fintech de la red,
+// las empresas con oficina en Ecuador y las de `slugs`. Cada ejecución consulta una parte de los lotes y la siguiente sigue
+// donde quedó (`rotation`); la acumulación de 30 días hace que el canal se llene con el tiempo.
+// Medido en Google News el 19 de noviembre de 2026:
+// - Cada nombre va como `intitle:"…"`: el filtro de endeavor-prensa solo acepta titulares que nombran a la empresa, así que
+//   pedirlo en el titular no pierde nada y deja fuera las notas que solo la citan en el cuerpo.
+// - Con más de 9 `intitle:` Google ignora `when:30d` y devuelve notas de años (14 nombres: 45 de 45 con más de 30 días).
+// - Un lote de 9 nombres devuelve menos notas de cada uno que la consulta suelta (Pomelo: 4 de 19), pero con lotes más chicos
+//   la vuelta completa no cabe en un día.
+// - Los ambiguos con ruido (Clara, Cobre, Tala, Clip, R2…) sin calificador llenan los 100 resultados con la alcaldesa, el metal
+//   y Santa Clara (1 nota válida); con «fintech», 29 resultados y 13 válidas. Los de `quiet` casi no tienen ruido en el titular
+//   y van sin calificador, con los no ambiguos (lote de Pomelo, Klar, ADDI… : 72 resultados, 13 válidas).
+// - Un calificador con OR («(fintech OR pagos OR CEO)») también hace que Google ignore `when:30d`.
 export const ENDEAVOR_SEARCH = {
   verticals: ['fintech'],
   offices: ['ecuador'],
-  maxWords: 28,
-  perRun: 4,
+  // Empresas de otros sectores con negocio de pagos, crédito o comercio digital (Mercado Pago, RappiPay, el crédito de Kavak).
+  slugs: ['mercadolibre-com', 'rappi', 'kavak', 'vtex', 'nuvemshop', 'simetrik'],
+  // Empresas con lotes propios y términos propios: Mercado Libre sola llena los 100 resultados, y Mercado Pago iría detrás.
+  solo: { 'mercadolibre-com': [['Mercado Libre', 'MercadoLibre'], ['Mercado Pago']] },
+  // Nombres ambiguos con poco ruido en los titulares: sin calificador.
+  quiet: ['addi', 'belvo', 'brex', 'cloudwalk', 'crezcamos', 'klar', 'leasy', 'link-mobile', 'mendel', 'mercado-bitcoin', 'minka', 'pismo', 'pomelo', 'prex', 'prometeo', 'refinancia', 'ripio', 'tangelo', 'will-bank', 'yuno'],
+  maxTerms: 9,
+  // Ejecuciones reales por día (el cron horario corre 3 o 4 veces): cada ejecución consulta lotes / runsPerDay, así que la
+  // vuelta completa cabe en un día.
+  runsPerDay: 3,
   editions: [
     { language: 'es', params: 'hl=es-419&gl=EC&ceid=EC%3Aes-419' },
     { language: 'en', params: 'hl=en-US&gl=US&ceid=US%3Aen' },
@@ -782,53 +1170,60 @@ export function searchCompanies(companies = ENDEAVOR_COMPANIES, config = ENDEAVO
   return companies.filter(company => {
     const [name] = endeavorNames(company);
     if (!name || seen.has(name.toLowerCase())) return false;
-    if (!config.verticals.includes(company.vertical) && !company.offices.some(office => config.offices.includes(office))) return false;
+    if (!config.verticals.includes(company.vertical) && !company.offices.some(office => config.offices.includes(office)) && !config.slugs?.includes(company.slug)) return false;
     seen.add(name.toLowerCase());
     return true;
   });
 }
-// Término de búsqueda de una empresa: su nombre entre comillas.
-export function searchTerm(company) {
-  const [name] = endeavorNames(company);
-  return `"${name.replace(/"/g, '')}"`;
+// Término de búsqueda: el nombre (el primero del directorio, salvo que se indique otro) en el titular.
+export function searchTerm(company, name = endeavorNames(company)[0]) {
+  return `intitle:"${name.replace(/"/g, '')}"`;
 }
-// Calificador del lote: los nombres ambiguos van en lotes propios que añaden su sector a toda la consulta
-// («("Clara" OR "Klar") fintech»). Google no interpreta bien grupos anidados dentro de un OR, así que no se mezclan.
-export function searchQualifier(company) {
-  return endeavorAmbiguous(endeavorNames(company)[0]) ? (company.vertical === 'fintech' ? 'fintech' : 'startup') : '';
+// Calificador del lote: los nombres ambiguos con ruido van en lotes propios que añaden su sector a toda la consulta
+// («(intitle:"Clara" OR intitle:"Cobre") fintech»). Google no interpreta bien grupos anidados dentro de un OR, así que no se
+// mezclan. Los de `quiet` no llevan calificador.
+export function searchQualifier(company, config = ENDEAVOR_SEARCH) {
+  if (!endeavorAmbiguous(endeavorNames(company)[0]) || config.quiet?.includes(company.slug)) return '';
+  return company.vertical === 'fintech' ? 'fintech' : 'startup';
 }
-const wordCount = term => term.replace(/[()"]/g, ' ').split(/\s+/).filter(Boolean).length;
-// Agrupa las empresas en lotes { terms, qualifier }: cada consulta cuenta las palabras de los nombres, un OR entre nombres,
-// el calificador y «when:30d», sin pasar de `maxWords`.
-export function searchBatches(companies, maxWords = ENDEAVOR_SEARCH.maxWords) {
-  const groups = new Map();
+// Ediciones de Google News de una empresa: las que solo entran por su oficina en Ecuador se buscan en español.
+function searchLanguages(company, config) {
+  const regional = !config.verticals.includes(company.vertical) && !config.slugs?.includes(company.slug);
+  return regional ? ['es'] : config.editions.map(edition => edition.language);
+}
+// Agrupa las empresas en lotes { terms, qualifier, languages } de hasta `maxTerms` nombres, por calificador y ediciones.
+// Las de `solo` van en sus propios lotes, uno por grupo de términos.
+export function searchBatches(companies, config = ENDEAVOR_SEARCH) {
+  const groups = new Map(); const solo = [];
   for (const company of companies) {
-    const qualifier = searchQualifier(company);
-    groups.set(qualifier, [...(groups.get(qualifier) || []), searchTerm(company)]);
+    const languages = searchLanguages(company, config);
+    if (config.solo?.[company.slug]) { for (const names of config.solo[company.slug]) solo.push({ terms: names.map(name => searchTerm(company, name)), qualifier: '', languages }); continue; }
+    const qualifier = searchQualifier(company, config);
+    const key = `${qualifier}|${languages.join(',')}`;
+    if (!groups.has(key)) groups.set(key, { qualifier, languages, terms: [] });
+    groups.get(key).terms.push(searchTerm(company));
   }
   const batches = [];
-  for (const [qualifier, terms] of groups) {
-    const base = 1 + (qualifier ? 1 : 0);
-    let current = [], words = base;
-    for (const term of terms) {
-      if (current.length && words + 1 + wordCount(term) > maxWords) { batches.push({ terms: current, qualifier }); current = []; words = base; }
-      words += wordCount(term) + (current.length ? 1 : 0);
-      current.push(term);
-    }
-    if (current.length) batches.push({ terms: current, qualifier });
+  for (const { qualifier, languages, terms } of groups.values()) {
+    for (let start = 0; start < terms.length; start += config.maxTerms) batches.push({ terms: terms.slice(start, start + config.maxTerms), qualifier, languages });
   }
-  return batches;
+  return [...batches, ...solo];
 }
 export function searchQuery({ terms, qualifier }) {
   return `(${terms.join(' OR ')})${qualifier ? ` ${qualifier}` : ''} when:30d`;
 }
-// Cada lote se consulta en cada edición de Google News (español de la región e inglés): lote 1 es, lote 1 en, lote 2 es…
+// Cada lote se consulta en sus ediciones de Google News (español de la región e inglés): lote 1 es, lote 1 en, lote 2 es…
 export function searchLots(batches, editions = ENDEAVOR_SEARCH.editions) {
-  return batches.flatMap(batch => editions.map(edition => ({ ...batch, language: edition.language, url: `https://news.google.com/rss/search?q=${encodeURIComponent(searchQuery(batch))}&${edition.params}` })))
+  return batches.flatMap(batch => editions.filter(edition => !batch.languages || batch.languages.includes(edition.language))
+    .map(edition => ({ ...batch, language: edition.language, url: `https://news.google.com/rss/search?q=${encodeURIComponent(searchQuery(batch))}&${edition.params}` })))
     .map((lot, index) => ({ ...lot, index }));
 }
+// Lotes por ejecución: la vuelta completa en `runsPerDay` ejecuciones.
+export function searchPerRun(lots, runsPerDay = ENDEAVOR_SEARCH.runsPerDay) {
+  return Math.ceil(lots.length / runsPerDay);
+}
 // Rotación: `count` lotes desde `cursor` (con vuelta al inicio) y la posición en la que empezará la ejecución siguiente.
-export function rotation(lots, cursor = 0, count = ENDEAVOR_SEARCH.perRun) {
+export function rotation(lots, cursor = 0, count = searchPerRun(lots)) {
   if (!lots.length) return { picked: [], next: 0 };
   const start = ((Math.trunc(Number(cursor)) || 0) % lots.length + lots.length) % lots.length;
   const picked = Array.from({ length: Math.min(count, lots.length) }, (_, i) => lots[(start + i) % lots.length]);
