@@ -2,7 +2,7 @@ import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { normalize, parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, linkAllowed, passes, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
-import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, writeMemo } from './editorial.mjs';
+import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, seedMemo, writeMemo } from './editorial.mjs';
 
 // Cada fuente: `category` (canal), `kind` (official | news | company | organization), `tier` (1 referencia,
 // 2 especializada, 3 interesada o de análisis), `access` (open | paywall | mixed), `language` y `adapter`.
@@ -268,9 +268,12 @@ export function loadPrevious(data) {
 const isPrimary = story => !!SOURCE_BY_ID.get(story?.sourceId)?.primary;
 // La capa editorial nunca hace fallar la edición: ante cualquier error inesperado, las notas siguen con el juicio que ya
 // traían (saneado) y sin juicio nuevo.
-async function editorialPass(stories, saved, now) {
+// Los juicios de la edición anterior (`carried`) se siembran en el memo antes de juzgar: al acumular gana la copia fresca del
+// feed, que no trae juicio, y sin esto la misma nota se volvería a enviar (y a pagar) en cada ejecución.
+async function editorialPass(stories, saved, now, carried = []) {
   const memo = readMemo(saved, now);
   try {
+    seedMemo(memo, carried, now);
     const { client, sdk, reason } = await editorialClient();
     const { stories: pool } = await applyEditorial(stories, { client, sdk, reason, memo, now, primary: isPrimary });
     return { pool, memo };
@@ -299,7 +302,7 @@ async function run() {
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }
   // Capa editorial: juicio para las notas que aún no lo tienen. Sin credenciales o con cualquier fallo, la edición sigue igual.
-  const { pool, memo } = await editorialPass(deduplicate(stories), previous.tracked?.editorial, now);
+  const { pool, memo } = await editorialPass(deduplicate(stories), previous.tracked?.editorial, now, previous.stories);
   // Todas las notas, de todos los canales, llevan `endeavor` si su titular (o su extracto) nombra a una empresa del directorio.
   const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
   const notes = writeMemo({ pool, edition, memo, now });

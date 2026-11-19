@@ -291,7 +291,9 @@ export async function editorialClient({ env = process.env, config = EDITORIAL, l
 
 // ---------------------------------------------------------------------------------------------------------
 // Juicios guardados (`tracked.editorial` en news.json) de notas que no entraron en la edición: la siguiente ejecución los
-// reutiliza en vez de pedir otra vez el mismo juicio. Las notas de la edición llevan el suyo consigo.
+// reutiliza en vez de pedir otra vez el mismo juicio. Las notas de la edición llevan el suyo consigo, pero el feed vuelve a
+// traer las notas recientes sin juicio y al acumular gana la copia fresca: por eso, antes de juzgar, se siembran en el memo
+// los juicios de la edición anterior (seedMemo) y applyEditorial los devuelve a sus notas por id.
 export function readMemo(value, now = Date.now()) {
   const memo = new Map();
   const notes = value && typeof value === 'object' && value.version === 1 && value.notes && typeof value.notes === 'object' ? value.notes : {};
@@ -301,6 +303,17 @@ export function readMemo(value, now = Date.now()) {
     if (!Number.isFinite(published) || published < now - THIRTY_DAYS) continue;
     const judgment = validJudgment({ score: entry.s, why: entry.w, cluster: entry.c, model: entry.m, at: entry.at });
     if (judgment) memo.set(id, { judgment, publishedAt: new Date(published).toISOString() });
+  }
+  return memo;
+}
+// Añade al memo el juicio válido de cada nota de la edición anterior (de los últimos 30 días) que el memo aún no tenga.
+export function seedMemo(memo, stories, now = Date.now()) {
+  for (const story of Array.isArray(stories) ? stories : []) {
+    if (!story || typeof story !== 'object' || typeof story.id !== 'string' || !/^[\w-]{1,80}$/.test(story.id) || memo.has(story.id) || story.editorial === undefined) continue;
+    const published = Date.parse(story.publishedAt);
+    if (!Number.isFinite(published) || published < now - THIRTY_DAYS) continue;
+    const judgment = validJudgment(story.editorial);
+    if (judgment) memo.set(story.id, { judgment, publishedAt: new Date(published).toISOString() });
   }
   return memo;
 }

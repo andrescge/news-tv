@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { EDITORIAL, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
+import { EDITORIAL, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, seedMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
 import { accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
 import { validateEdition } from '../scripts/validate.mjs';
 import { SOURCES } from '../scripts/collect.mjs';
@@ -219,6 +219,40 @@ test('capa editorial: cada nota se evalúa una sola vez; el juicio viaja con la 
   assert.deepEqual(Object.keys(saved.notes), ['descartada']);
   assert.equal(readMemo(saved, now + 31 * 24 * HOUR).size, 0);
   assert.equal(readMemo({ version: 1, notes: { malo: { s: 500, c: 'x', m: 'm', at, p: at } } }, now).size, 0);
+});
+
+test('capa editorial: una nota juzgada que el feed vuelve a traer conserva su juicio y no se reenvía', async () => {
+  const source = { id: 'primicias', name: 'Primicias', category: 'ecuador', kind: 'news', tier: 1, access: 'open', url: 'https://www.primicias.ec/rss/economia.xml' };
+  // Edición anterior: dos notas juzgadas en la edición y una tercera recordada en el memo.
+  const shown = story('mostrada', 20, { editorial: judged(74, 'biess-credicasa') });
+  const other = story('otra', 30, { editorial: judged(41, 'tasas-activas-octubre') });
+  const saved = writeMemo({ pool: [story('memo', 40, { editorial: judged(15, 'ruido-x') })], edition: [], now });
+  // El feed vuelve a traer las tres, sin juicio: al acumular gana la copia fresca y el juicio se pierde (así se reproducía el fallo).
+  const fresh = [story('mostrada', 20), story('otra', 30), story('memo', 40), story('nueva', 1)];
+  const carried = accumulate(fresh, [shown, other], source, { now });
+  assert.ok(carried.every(item => item.editorial === undefined));
+  // Con el memo sembrado con la edición anterior, solo la nota nueva va al modelo y las demás recuperan su juicio tal cual.
+  const memo = seedMemo(readMemo(saved, now), [shown, other], now);
+  const client = fakeClient(everyNote(60));
+  const result = await applyEditorial(carried, { client, memo, now, log: quiet() });
+  assert.equal(client.calls.length, 1);
+  assert.deepEqual(notesOf(client.calls[0].params).map(note => note.titular), ['Titular nueva']);
+  assert.equal(result.reused, 3);
+  const byId = new Map(result.stories.map(item => [item.id, item]));
+  assert.deepEqual(byId.get('mostrada').editorial, shown.editorial);
+  assert.deepEqual(byId.get('otra').editorial, other.editorial);
+  assert.equal(byId.get('memo').editorial.cluster, 'ruido-x');
+  // La siguiente ejecución, con la edición recién escrita y su memo, no pide nada: el juicio es estable entre ejecuciones.
+  const edition = result.stories.filter(item => item.id !== 'memo');
+  const nextMemo = seedMemo(readMemo(writeMemo({ pool: result.stories, edition, memo, now }), now), edition, now);
+  const again = fakeClient(everyNote(99));
+  const second = await applyEditorial(fresh, { client: again, memo: nextMemo, now, log: quiet() });
+  assert.equal(again.calls.length, 0);
+  assert.deepEqual(second.stories.map(item => item.editorial.score), [74, 41, 15, 60]);
+  // Una nota que sale de la edición pasa al memo con su juicio; lo inválido o de más de 30 días no se siembra.
+  assert.deepEqual(Object.keys(writeMemo({ pool: second.stories, edition: [], memo: nextMemo, now }).notes).sort(), ['memo', 'mostrada', 'nueva', 'otra']);
+  const ignored = seedMemo(new Map(), [{ ...story('vieja', 31 * 24), editorial: judged(70, 'a') }, { ...story('rota', 1), editorial: { score: 500 } }, null, { id: '../x', editorial: judged(70, 'a') }], now);
+  assert.equal(ignored.size, 0);
 });
 
 test('capa editorial: lotes por canal, grupos coherentes entre lotes y tope de notas por ejecución', async () => {
