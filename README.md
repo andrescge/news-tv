@@ -1,6 +1,6 @@
 # NEWS·TV
 
-Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM, además de prensa sobre empresas de emprendedores Endeavor en la región. Hay seis canales (las teclas 1 a 6 sintonizan cada uno); cada uno muestra una noticia a la vez y avanza automáticamente dentro del mismo canal. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
+Televisión de noticias de banca, autoridades financieras, fintech, pagos y cripto para profesionales de Ecuador y LATAM, además de prensa sobre empresas de emprendedores Endeavor en la región. Hay seis canales (las teclas 1 a 6 sintonizan cada uno); cada uno muestra una noticia a la vez; se pasa a la siguiente con «Siguiente» o con las flechas del teclado, sin avance automático. Cada noticia conserva fecha, fuente y enlace; también muestra un extracto cuando la fuente lo proporciona.
 
 **Sitio público:** [andrescge.github.io/news-tv](https://andrescge.github.io/news-tv/). La carcasa de grafito y la pantalla CRT están dibujadas con CSS; no se usa ninguna fotografía de terceros.
 
@@ -39,7 +39,7 @@ Cada fuente declara su **nivel** y su **acceso**, y ambos viajan a cada nota:
 
 Los discursos de banqueros centrales del BIS se leen una sola vez: los que tratan de cripto, stablecoins, tokenización o monedas digitales van a Cripto, y el resto a Pagos globales.
 
-Los filtros de cada fuente están en `FILTERS` (`scripts/content.mjs`) y se prueban con titulares reales en `tests/content.test.mjs`. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo, a la que la capa editorial (ver más abajo) suma una valoración de importancia cuando está activa. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno. Titular y extracto son siempre los del medio; la única línea generada automáticamente es «Por qué importa», y siempre lleva ese rótulo. Los extractos se limitan a 280 caracteres: si el texto no cabe, se corta en el último límite de palabra y termina en «…»; si cabe, se muestra entero y sin «…».
+Los filtros de cada fuente están en `FILTERS` (`scripts/content.mjs`) y se prueban con titulares reales en `tests/content.test.mjs`. No hay puntaje de popularidad ni verificación independiente de las afirmaciones de los medios: es una selección automática por fuente, fecha, tema y tipo de artículo, a la que la capa editorial (ver más abajo) suma una valoración de importancia cuando está activa. Si una fuente no ofrece extracto, la pantalla muestra el titular y un enlace directo, sin texto de relleno. Titular y extracto son siempre los del medio; lo único generado automáticamente es la traducción al español del titular de las notas en inglés, y siempre lleva el rótulo «Traducción automática». Los extractos se limitan a 280 caracteres: si el texto no cabe, se corta en el último límite de palabra y termina en «…»; si cabe, se muestra entero y sin «…».
 
 ### Períodos, acumulación y composición del canal
 
@@ -49,7 +49,7 @@ Luego se compone cada canal:
 
 1. **Una sola copia por nota.** La misma nota en dos canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos fuentes, como un discurso que publican el BCE y el BIS) queda en un solo canal, en este orden de prioridad: Autoridades EC, Ecuador financiero, Fintech LATAM, Cripto, Pagos globales y Endeavor LATAM. Se conserva la copia con extracto y enlace directo; si las copias eran de medios distintos, los demás se listan en `coverage`.
 2. **Un hecho, una nota, en todos los canales.** Las notas de medios distintos sobre el mismo hecho, en el mismo canal o en canales distintos, quedan en una (`deduplicate` y `sameFact` en `scripts/content.mjs`). Dos notas cuentan el mismo hecho si salen con menos de cuatro días de diferencia y comparten un importe y un nombre propio, o dos nombres propios, más una palabra del titular o una diferencia de menos de dos días («Nexu secures $55M credit line from BBVA Spark» y «Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark»); o si comparten tres palabras que sean al menos la mitad de las del titular más corto, con un nombre en común, con cuatro palabras o con todas las del titular más corto («La JPRFM establece nuevas reglas para los pagos con tarjetas» y «Las nuevas reglas para los pagos con tarjetas en Ecuador»). Los importes se comparan en millones («US$6.300 millones» = «$6.3 bln»). Queda la nota de la fuente oficial primaria si la hay; si no, la de mejor nivel, con extracto y enlace directo, en su propio canal. Los demás medios se listan en `coverage` y la pantalla los muestra como «También en: medio, medio». Nunca se unen dos notas del mismo medio ni dos documentos oficiales primarios.
-3. **El mismo hecho según la capa editorial.** Las notas de un canal que el modelo asignó al mismo hecho (`cluster`) también quedan en una, con el mismo criterio.
+3. **El mismo hecho según la capa editorial.** Las notas que el modelo asignó al mismo hecho (`cluster`), en el mismo canal o en otro, también quedan en una, con el mismo criterio.
 4. **Umbral de importancia** (con capa editorial). Salen las notas juzgadas con menos de 30 puntos, salvo las de fuentes oficiales primarias.
 5. **Tope por edición.** Los boletines y reportes de datos del BCE (`perEdition: 1`) aportan como máximo una nota por serie a toda la edición, la más reciente, sea cual sea su puntuación: un boletín monetario semanal, un reporte de tasas de interés, un boletín de reservas internacionales, etc. La serie es el titular sin la fecha («Boletín Monetario Semanal. 13 de Noviembre 2026»).
 6. **Tope por tema.** En cada canal y período, como mucho tres notas que nombren a la misma entidad (por ejemplo, Binance durante su hackeo), elegidas por puntuación o, sin juicio, por nivel, extracto y enlace directo. Las notas oficiales no cuentan ni se recortan.
@@ -63,20 +63,20 @@ Cuando el feed vuelve a traer una nota que la edición anterior ya tenía, la co
 
 ### Capa editorial
 
-Entre la recopilación y la composición, `scripts/editorial.mjs` pide a un modelo de lenguaje de Anthropic (la API de Claude) un juicio sobre cada nota **nueva**, es decir, sin juicio previo. El modelo recibe titular, extracto, medio, tipo, nivel, idioma y fecha de cada nota, más las notas ya juzgadas del mismo canal de los últimos cuatro días, para reconocer un hecho ya contado. Cada nota recibe:
+Entre la recopilación y la composición, `scripts/editorial.mjs` pide a un modelo de lenguaje de Anthropic (la API de Claude) un juicio sobre cada nota **nueva**, es decir, sin juicio previo. El modelo recibe titular, extracto, medio, tipo, nivel, idioma y fecha de cada nota, más las notas ya juzgadas de los últimos cuatro días (de todos los canales), para reconocer un hecho ya contado. Con el tope por ejecución se evalúan primero Ecuador financiero y Autoridades EC, luego Fintech LATAM y Endeavor LATAM, y al final Pagos globales y Cripto (`EVALUATION_ORDER`), de la más nueva a la más antigua. Cada nota recibe:
 
 ```json
-"editorial": { "score": 72, "why": "…", "cluster": "biess-credicasa-migrantes-mhx2k", "model": "claude-opus-5-5", "at": "2026-11-18T16:26:00.000Z" }
+"editorial": { "score": 72, "cluster": "biess-credicasa-migrantes-mhx2k", "es": "…", "model": "claude-opus-5-5", "at": "2026-11-18T16:26:00.000Z" }
 ```
 
-- `score` (0 a 100): importancia para profesionales de banca y finanzas de Ecuador y LATAM. Los reportes periódicos de datos (boletines monetarios, tasas) no pasan de 40.
-- `why`: una frase en español, de 160 caracteres como máximo, que dice por qué importa. Se apoya solo en el titular y el extracto, sin hechos, cifras, nombres ni fechas que no estén ahí; queda vacía si no hay base suficiente. La pantalla la muestra debajo del titular como «Por qué importa · resumen automático».
-- `cluster`: etiqueta del hecho; las notas del mismo canal con la misma etiqueta se agrupan (punto 2 de la lista anterior).
+- `score` (0 a 100): importancia para profesionales de banca y finanzas de Ecuador y LATAM, con anclas por canal en el prompt (por ejemplo, un CFO de una empresa Endeavor vale 75 a 90; una nota de EE. UU. o Europa sin efecto fuera de su mercado, 55 como máximo). Los reportes periódicos de datos (boletines monetarios, tasas) no pasan de 40. Solo ordena: no se muestra. El prompt también aclara la sigla «BCE» (Banco Central del Ecuador en medios ecuatorianos; Banco Central Europeo en medios europeos o en inglés).
+- `es` (opcional, solo en notas cuyo idioma es inglés): traducción fiel al español del titular, de 240 caracteres como máximo; si el extracto aporta el dato central, puede añadir una segunda frase que lo traduzca. Sin valoraciones, ni cifras, nombres o datos que no estén en el titular o el extracto; si no se puede traducir con fidelidad, se omite. La pantalla la muestra debajo del titular original como «Traducción automática». El campo `why` («por qué importa») dejó de generarse; las ediciones antiguas que lo traen se aceptan al validar y la pantalla lo ignora.
+- `cluster`: etiqueta del hecho (actor y hecho); las notas con la misma etiqueta, aunque estén en canales distintos, se agrupan en una, que queda en el primer canal por orden de prioridad (punto 3 de la lista anterior).
 - `coverage` (en la nota que queda tras agrupar): los otros medios que contaron el mismo hecho.
 
-El juicio viaja con la nota en la acumulación de 30 días, así que cada nota se evalúa una sola vez. Los juicios de notas que no entraron en la edición se guardan en `tracked.editorial` para no volver a pedirlos.
+El juicio viaja con la nota en la acumulación de 30 días, así que cada nota se evalúa una sola vez. Los juicios de notas que no entraron en la edición se guardan en `tracked.editorial` para no volver a pedirlos, y se conservan aunque la capa falle ese día. Las notas en inglés con un juicio anterior a la traducción la piden una sola vez, al final de la cola.
 
-**Seguridad.** Titulares y extractos son texto de terceros: van al modelo como datos delimitados, y el prompt indica que cualquier instrucción dentro de ellos se ignora. La respuesta llega con un esquema JSON fijo y se valida: puntuación entera de 0 a 100, frase en texto plano sin enlaces, etiquetas ni formato, con cifras que figuren en el titular o el extracto, y etiqueta de hecho corta. Si la frase trae enlaces o HTML, la nota queda con 0 puntos y sin frase (se trata como un intento de inyección); si solo es larga o no se apoya en la nota, se descarta la frase y se conserva la puntuación. La pantalla vuelve a comprobar el texto y lo inserta con `textContent`.
+**Seguridad.** Titulares y extractos son texto de terceros: van al modelo como datos delimitados, y el prompt indica que cualquier instrucción dentro de ellos se ignora. La respuesta llega con un esquema JSON fijo y se valida: puntuación entera de 0 a 100, traducción en texto plano sin enlaces, etiquetas ni formato, solo para notas en inglés, con cifras, nombres y países que figuren en el titular o el extracto, sin valoraciones que el original no diga, y etiqueta de hecho corta. Si la traducción trae enlaces o HTML, la nota queda con 0 puntos y sin traducción (se trata como un intento de inyección); si solo es larga o no se apoya en la nota, se descarta la traducción y se conserva la puntuación. La pantalla vuelve a comprobar el texto y lo inserta con `textContent`.
 
 **Configuración.** Todo está en `EDITORIAL` (`scripts/editorial.mjs`):
 
@@ -88,7 +88,7 @@ El juicio viaja con la nota en la acumulación de 30 días, así que cada nota s
 | `neutralScore` | 50 | Puntuación de una nota aún sin juicio en un canal con juicios. |
 | `maxStories` | 120 | Notas nuevas evaluadas por ejecución; el resto queda para la siguiente. |
 | `batchSize` | 25 | Notas por petición. |
-| `contextDays`, `maxContext` | 4, 40 | Notas ya juzgadas que ve el modelo para agrupar. |
+| `contextDays`, `maxContext` | 4, 60 | Notas ya juzgadas que ve el modelo para agrupar. |
 | `maxTokens` | 8000 | Tope de salida por petición. |
 | `timeoutMs`, `budgetMs` | 90 s, 300 s | Tiempo por petición y total de la capa por ejecución. |
 | `memoMax` | 1500 | Juicios guardados de notas fuera de la edición. |
