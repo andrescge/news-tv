@@ -303,7 +303,7 @@ function report(stories, sources, now) {
     console.log(`${channel}: ${list.length} notas · nivel 1/2/3: ${[1, 2, 3].map(tier => count(story => story.tier === tier)).join('/')} · es/en: ${count(story => story.language === 'es')}/${count(story => story.language === 'en')} · de pago: ${count(story => story.access === 'paywall')} · conservadas sin respuesta: ${count(story => story.stale)} · ${periods}`);
   }
   const judged = stories.filter(story => story.editorial);
-  console.log(`Juicio editorial: ${judged.length} de ${stories.length} notas de la edición (${judged.filter(story => story.editorial.why).length} con «por qué importa»); ${stories.filter(story => story.coverage).length} con cobertura agrupada.`);
+  console.log(`Juicio editorial: ${judged.length} de ${stories.length} notas de la edición (${judged.filter(story => story.editorial.es).length} con traducción); ${stories.filter(story => story.coverage).length} con cobertura agrupada.`);
   const tagged = stories.filter(story => story.endeavor);
   console.log(`Empresas Endeavor: ${tagged.length} notas etiquetadas (${CHANNELS.map(channel => `${channel}: ${tagged.filter(story => story.category === channel).length}`).join(', ')}).`);
   const failed = sources.filter(source => source.status === 'error').map(source => source.name);
