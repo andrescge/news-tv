@@ -1,9 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { rejectReason, hostRejection, screen, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
-import { SOURCES, loadPrevious, dateResolutions, readBody } from '../scripts/collect.mjs';
-import { validateEdition } from '../scripts/validate.mjs';
+import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
+import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
 import endeavorDirectory from '../scripts/data/endeavor-latam.json' with { type: 'json' };
 
 const now = Date.parse('2026-09-29T15:00:00Z');
@@ -1009,4 +1012,127 @@ test('validador: enlaces del medio y de las fuentes, dominios de las fuentes ofi
   // Sin sourceUrl ni enlace Endeavor, la nota sigue siendo válida (son opcionales).
   const optional = base(); delete optional.stories[1].sourceUrl; delete optional.stories[1].endeavor.url;
   assert.doesNotThrow(() => validateEdition(optional, { now }));
+});
+
+// ---------------------------------------------------------------------------------------------------------
+// Registro de descartes: motivo de cada regla, embudo por fuente y descartes.json junto a la edición.
+test('rejectReason dice qué regla de FILTERS descartó la nota, y relevant es su negación', () => {
+  const why = (id, title, url = 'https://example.com/nota', excerpt = '') => rejectReason({ title, excerpt, url }, sourceById(id));
+  assert.equal(why('primicias', 'Banco Pichincha amplía su crédito', 'https://www.primicias.ec/economia/nota/'), null);
+  assert.equal(why('primicias', 'China Mall se expande en Ecuador', 'https://www.primicias.ec/economia/nota/'), 'include');
+  assert.equal(why('primicias', '¿Va a renovar electrodomésticos en Black Friday? Pague con tarjeta', 'https://www.primicias.ec/economia/nota/'), 'exclude: Black Friday');
+  assert.equal(why('primicias', 'Banco Pichincha amplía su crédito', 'https://www.primicias.ec/entretenimiento/banco/'), 'path');
+  assert.equal(why('paymentsdive', 'Embedded finance in 2026: What merchants want', 'https://www.paymentsdive.com/spons/nota/1/'), 'skipPath');
+  assert.equal(why('bce-junta-resoluciones', 'Designa a los miembros', 'https://www.bce.fin.ec/a.pdf', 'Resolución JPRFM-2026-001-M.'), 'test');
+  // La búsqueda Endeavor dice qué parte de su prueba falló.
+  assert.equal(why('endeavor-prensa', 'DLocal (NASDAQ:DLO) Stock Price Target Cut by Truist Financial'), 'test: ruido bursátil');
+  assert.equal(why('endeavor-prensa', 'El cupón que habilitó Cashea hasta el 13Nov y se activa sin costo'), 'test: promoción');
+  assert.equal(why('endeavor-prensa', 'Una mañana clara en Quito'), 'test: sin empresa Endeavor en el titular');
+  // Sin filtro, todo pasa; una nota malformada no lanza.
+  assert.equal(rejectReason({ title: 'Lo que sea' }, { id: 'sin-filtro' }), null);
+  assert.equal(rejectReason({ title: 'Stablecoin regulation', url: 'no es una url' }, sourceById('theblock')), 'path');
+  assert.equal(rejectReason({ title: 'Aprueba la norma de pagos.' }, sourceById('bce-junta-resoluciones')), 'error');
+  for (const [id, title, url, expected] of SAMPLES) assert.equal(rejectReason({ title, excerpt: '', url: url || 'https://example.com/nota' }, sourceById(id)) === null, expected, `${id}: ${title}`);
+});
+
+test('embudo: cada fila cae en una sola etapa y los descartes por medio y por tema se registran con su motivo', () => {
+  const google = { id: 'prueba-google', name: 'Prueba', category: 'latam', kind: 'news', tier: 2, adapter: 'google', url: 'https://news.google.com/rss/search', allowHosts: ['medio.example'], denyHosts: ['bloqueado.medio.example'] };
+  FILTERS['prueba-google'] = { include: /fintech/i, exclude: /casino/i };
+  try {
+    const at = new Date(now - 2 * 3600 * 1000).toISOString();
+    const row = (title, host, extra = {}) => ({ title, url: `https://news.google.com/articles/${encodeURIComponent(title)}`, publishedAt: at, source: 'Medio', sourceUrl: `https://${host}/`, via: 'Vía Google News', ...extra });
+    const rows = [
+      row('Fintech levanta una ronda', 'medio.example'),
+      row('Fintech fuera de la lista', 'otro.example'),
+      row('Fintech en un subdominio bloqueado', 'bloqueado.medio.example'),
+      row('Fintech sin medio', 'medio.example', { sourceUrl: 'no es una url' }),
+      row('Fintech antigua fuera de la lista', 'otro.example', { publishedAt: '2026-08-01T00:00:00Z' }),
+      row('Fintech antigua', 'medio.example', { publishedAt: '2026-08-01T00:00:00Z' }),
+      row('', 'medio.example'),
+      row('Los mejores casinos fintech', 'medio.example'),
+      row('Minería en Perú', 'medio.example'),
+    ];
+    const { stories, funnel, discards } = screen(rows, google, now);
+    assert.deepEqual(stories.map(story => story.title), ['Fintech levanta una ronda']);
+    assert.deepEqual(funnel, { host: 4, normalize: 2, topic: 2, accepted: 1 });
+    assert.equal(funnel.host + funnel.normalize + funnel.topic + funnel.accepted, rows.length);
+    // La nota antigua fuera de la lista cuenta como caída por medio, pero no se registra: no habría entrado de todos modos.
+    assert.deepEqual(discards.map(entry => [entry.stage, entry.reason, entry.host, entry.title]), [
+      ['medio', 'allowHosts', 'otro.example', 'Fintech fuera de la lista'],
+      ['medio', 'denyHosts', 'bloqueado.medio.example', 'Fintech en un subdominio bloqueado'],
+      ['medio', 'medio sin dominio', undefined, 'Fintech sin medio'],
+      ['tema', 'exclude: casino', undefined, 'Los mejores casinos fintech'],
+      ['tema', 'include', undefined, 'Minería en Perú'],
+    ]);
+    for (const entry of discards) {
+      assert.equal(entry.sourceId, 'prueba-google');
+      assert.ok(safeUrl(entry.url));
+      assert.equal(entry.publishedAt, at);
+    }
+    // El mismo resultado que el embudo anterior: allowedHost, normalize y relevant.
+    const legacy = rows.filter(item => allowedHost(item, google)).map(item => normalize(item, google, now)).filter(Boolean).filter(story => relevant(story, google));
+    assert.deepEqual(stories, legacy);
+  } finally { delete FILTERS['prueba-google']; }
+  assert.equal(hostRejection({ sourceUrl: 'https://cualquiera.example/' }, { id: 'abierta' }), null);
+});
+
+test('descartes.json: por fuente, los más recientes, sin repetir titular y con tope; el validador lo acepta', () => {
+  const at = hours => new Date(now - hours * 3600 * 1000).toISOString();
+  const entry = (sourceId, title, hours, extra = {}) => ({ sourceId, stage: 'tema', reason: 'include', title, url: `https://example.com/${encodeURIComponent(title)}`, source: 'Medio', publishedAt: at(hours), ...extra });
+  const many = Array.from({ length: 45 }, (_, i) => entry('la-republica', `Nota ${i}`, i + 1));
+  const log = discardLog([...many, entry('la-republica', 'NOTA 0', 0.5), entry('primicias', 'Otra', 3, { stage: 'medio', reason: 'allowHosts', host: 'otro.example' })], { generatedAt: at(0) });
+  assert.equal(log.version, 1);
+  assert.equal(log.perSource, MAX_DISCARDS_PER_SOURCE);
+  const republica = log.discards.filter(item => item.sourceId === 'la-republica');
+  assert.equal(republica.length, MAX_DISCARDS_PER_SOURCE);
+  // Gana la copia más reciente del titular repetido (sin distinguir mayúsculas) y sale lo más antiguo.
+  assert.equal(republica[0].title, 'NOTA 0');
+  assert.ok(!republica.some(item => item.title === 'Nota 0'));
+  assert.deepEqual(log.omitted, { 'la-republica': 5 });
+  assert.deepEqual(validateDiscards(log), { discards: MAX_DISCARDS_PER_SOURCE + 1 });
+  const broken = [
+    [data => { data.discards[0].url = 'javascript:alert(1)'; }, /descarte inválido/],
+    [data => { data.discards[0].sourceId = 'retirada'; }, /fuente desconocida/],
+    [data => { data.discards[0].stage = 'tope'; }, /etapa o motivo/],
+    [data => { data.discards[0].reason = ''; }, /etapa o motivo/],
+    [data => { data.discards.push(...many.slice(0, 1)); }, /demasiados descartes/],
+    [data => { data.omitted = { primicias: 0 }; }, /omitidos inválidos/],
+    [data => { delete data.generatedAt; }, /estructura/],
+  ];
+  for (const [damage, message] of broken) {
+    const data = structuredClone(log); damage(data);
+    assert.throws(() => validateDiscards(data), message);
+  }
+});
+
+test('validador: el embudo de cada fuente es opcional y, si está, cuadra', () => {
+  const at = new Date(now - 3600 * 1000).toISOString();
+  const funnel = { read: 12, foreign: 1, undated: 0, host: 2, normalize: 3, topic: 4, accepted: 2 };
+  const base = () => ({ version: 1, sources: [{ id: 'primicias', status: 'ok', funnel: { ...funnel } }, { id: 'mef', status: 'error' }], stories: [{ id: 'a', sourceId: 'primicias', category: 'ecuador', title: 'Nota', source: 'Primicias', url: 'https://www.primicias.ec/economia/a/', publishedAt: at }] });
+  assert.doesNotThrow(() => validateEdition(base(), { now }));
+  const saturated = base(); saturated.sources[0].funnel.saturated = true;
+  assert.doesNotThrow(() => validateEdition(saturated, { now }));
+  assert.equal(validFunnel(funnel), true);
+  for (const damage of [
+    data => { data.sources[0].funnel.saturated = false; },
+    data => { data.sources[0].funnel.read = 13; },
+    data => { data.sources[0].funnel.topic = -1; },
+    data => { data.sources[0].funnel.extra = 1; },
+    data => { delete data.sources[0].funnel.accepted; },
+    data => { data.sources[0].funnel = [1, 2]; },
+  ]) {
+    const data = base(); damage(data);
+    assert.throws(() => validateEdition(data, { now }), /embudo inválido en la fuente primicias/);
+  }
+});
+
+test('el registro de descartes se escribe junto a la edición y de forma atómica', async () => {
+  const dir = await mkdtemp(join(tmpdir(), 'news-tv-'));
+  try {
+    const edition = join(dir, 'sub', 'edicion.json');
+    assert.equal(discardsPath(edition), join(dir, 'sub', 'descartes.json'));
+    await writeJson(discardsPath(edition), { version: 1 });
+    assert.deepEqual(JSON.parse(await readFile(join(dir, 'sub', 'descartes.json'), 'utf8')), { version: 1 });
+    assert.deepEqual((await readdir(join(dir, 'sub'))).sort(), ['descartes.json']);
+  } finally { await rm(dir, { recursive: true, force: true }); }
 });

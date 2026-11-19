@@ -113,6 +113,15 @@ Mientras falten la regla o la organización, el paso del token no corre y la edi
 
 El feed del Registro Oficial publica el sumario de cada edición. El recopilador agrupa las normas por órgano emisor y solo conserva las de la Junta de Política y Regulación Financiera y Monetaria, las superintendencias de Bancos, Economía Popular y Solidaria y Compañías, el BCE, COSEDE, el SRI y la UAFE. Descarta informes que solo se «conocen», designaciones, delegaciones, estatutos y personerías jurídicas, y las ediciones jurídicas, constitucionales y especiales. Cada edición da una nota: el titular es la primera norma financiera y el extracto nombra la edición y las demás normas que trae. La primera vez lee 16 páginas del feed (alrededor de un mes); después, tres.
 
+### Registro de descartes
+
+Cada ejecución deja constancia de lo que no entra, para revisar los filtros con casos reales:
+
+- **Embudo por fuente.** Cada entrada de `sources[]` en `news.json` lleva `funnel`: filas leídas (`read`), fuera por enlace ajeno a los dominios de la fuente (`foreign`), resoluciones del BCE que no llegan a tener fecha (`undated`), fuera por medio (`host`, la lista `allowHosts` o `denyHosts`), por fecha, enlace o titular inválidos o con más de 30 días (`normalize`), por tema (`topic`) y aceptadas (`accepted`). Las cifras siempre suman lo leído. `saturated: true` indica que una consulta de Google devolvió el máximo de 100 resultados: lo peor posicionado pudo quedar fuera sin aviso. Una fuente que no respondió no lleva embudo.
+- **`descartes.json`.** Junto a la edición (en el mismo directorio que `--output`) se escribe, también de forma atómica, la lista de titulares vigentes que cayeron por tema o por medio en esa ejecución: fuente, etapa (`tema` o `medio`), motivo con el nombre de la regla (`include`, `exclude: <texto que coincidió>`, `path`, `skipPath`, `test` o, en la búsqueda Endeavor, `test: ruido bursátil`, `test: promoción` o `test: sin empresa Endeavor en el titular`; para el medio, `allowHosts` o `denyHosts` y su dominio), titular, enlace y fecha. Se guardan como máximo 40 por fuente, las más recientes y sin repetir titular; `omitted` cuenta las que no caben. La pantalla no lo usa.
+
+`node scripts/validate.mjs` comprueba la forma del embudo y, si el registro de descartes está junto a la edición, que sus enlaces sean http o https y que no pase del tope.
+
 ### Google News
 
 Google responde con error 429 a ráfagas de consultas, así que sus fuentes se piden de una en una, con una pausa de 2,5 segundos y un reintento. Las demás fuentes se piden en paralelo, también con un reintento.

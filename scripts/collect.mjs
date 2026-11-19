@@ -1,7 +1,7 @@
 import { readFile, mkdir, writeFile, rename } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { normalize, parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, allowedHost, linkAllowed, passes, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
+import { parseFeed, parseDate, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseSupercias, resolutionYear, deduplicate, relevant, linkAllowed, passes, screen, discardLog, carryable, editionShape, accumulate, composeEdition, limitFor, periodIndex, tagEndeavor, searchCompanies, searchBatches, searchLots, rotation, CHANNELS, PERIOD_DAYS, ENDEAVOR_PRESS_HOSTS } from './content.mjs';
 import { EDITORIAL, applyEditorial, cleanStory, editorialClient, groupClusters, readMemo, writeMemo } from './editorial.mjs';
 
 // Cada fuente: `category` (canal), `kind` (official | news | company | organization), `tier` (1 referencia,
@@ -89,6 +89,16 @@ const SOURCE_BY_ID = new Map(SOURCES.map(source => [source.id, source]));
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const outputArg = process.argv.indexOf('--output');
 const output = outputArg === -1 ? resolve(root, 'site/data/news.json') : resolve(process.argv[outputArg + 1]);
+// Registro de descartes de cada ejecución: junto a la edición, en el mismo directorio (ver discardLog en content.mjs).
+export const DISCARDS_FILE = 'descartes.json';
+export const discardsPath = edition => resolve(dirname(edition), DISCARDS_FILE);
+
+// Escritura atómica: se escribe en `.tmp` y se renombra, así un lector nunca ve un archivo a medias.
+export async function writeJson(file, payload) {
+  await mkdir(dirname(file), { recursive: true });
+  const temp = `${file}.tmp`;
+  await writeFile(temp, JSON.stringify(payload, null, 2) + '\n', 'utf8'); await rename(temp, file);
+}
 
 const USER_AGENT = 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)';
 const MAX_DATE_LOOKUPS = 200;
@@ -97,6 +107,8 @@ const MAX_PER_CHANNEL = 80;
 // Google News responde 429 a ráfagas: sus fuentes se piden de una en una, con pausa y un reintento.
 const GOOGLE_PAUSE_MS = 2500;
 const GOOGLE_RETRY_MS = 10000;
+// Google News devuelve como mucho 100 resultados por consulta: llegar ahí marca la fuente como saturada en su embudo.
+const GOOGLE_MAX_RESULTS = 100;
 const sleep = ms => new Promise(done => setTimeout(done, ms));
 
 async function fetchText(url, adapter) {
@@ -173,14 +185,16 @@ function urlsFor(source, hasHistory) {
 async function fetchSearch(source, known = {}) {
   const lots = searchLots(searchBatches(searchCompanies()));
   const { picked } = rotation(lots, known?.cursor);
-  const raw = []; let consumed = 0, answered = 0, lastError;
+  const raw = []; let consumed = 0, answered = 0, saturated = false, lastError;
   for (const lot of picked) {
     if (consumed) await sleep(GOOGLE_PAUSE_MS);
     try {
       const body = await fetchText(lot.url, source.adapter);
       // Una búsqueda sin resultados es un RSS válido sin <item>: cuenta como respuesta, no como error.
       if (/<channel[\s>]/.test(body) && !/<item[\s>]/.test(body)) { answered++; consumed++; continue; }
-      raw.push(...parseFeed(body, { ...source, language: lot.language })); answered++; consumed++;
+      const rows = parseFeed(body, { ...source, language: lot.language });
+      if (rows.length >= GOOGLE_MAX_RESULTS) saturated = true;
+      raw.push(...rows); answered++; consumed++;
     }
     catch (error) {
       lastError = error;
@@ -192,30 +206,40 @@ async function fetchSearch(source, known = {}) {
   if (!answered) throw lastError || new Error('Sin lotes de búsqueda');
   const tracked = { cursor: rotation(lots, known?.cursor, consumed).next, lots: lots.length };
   console.log(`${source.name}: lotes ${picked.slice(0, consumed).map(lot => lot.index + 1).join(', ')} de ${lots.length} (${raw.length} resultados).`);
-  return { raw, tracked };
+  return { raw, tracked, saturated };
 }
 
+// Embudo de la fuente (`funnel`, en sources[] de la edición): filas leídas (`read`), fuera por enlace ajeno a sus dominios
+// (`foreign`), resoluciones del BCE que no llegan a tener fecha (`undated`: de años anteriores, fuera de tema o con la consulta
+// pendiente), fuera por medio (`host`), por normalize (`normalize`: sin titular, enlace o fecha, o con más de 30 días), por tema
+// (`topic`) y aceptadas (`accepted`); siempre read = foreign + undated + host + normalize + topic + accepted. `saturated`: una
+// consulta de Google devolvió el máximo de resultados, así que pudo quedar fuera lo peor posicionado sin aviso.
 async function fetchSource(source, { known = {}, hasHistory = false } = {}) {
   if (source.search) {
-    const { raw, tracked } = await fetchSearch(source, known);
-    const stories = raw.filter(row => allowedHost(row, source)).map(row => normalize(row, source)).filter(Boolean).filter(story => relevant(story, source));
-    return { stories, tracked };
+    const { raw, tracked, saturated } = await fetchSearch(source, known);
+    const { stories, funnel, discards } = screen(raw, source);
+    return { stories, tracked, discards, funnel: { read: raw.length, foreign: 0, undated: 0, ...funnel, ...(saturated ? { saturated } : {}) } };
   }
-  let raw = [];
+  let raw = [], saturated = false;
   for (const [index, url] of urlsFor(source, hasHistory).entries()) {
-    try { raw.push(...parse(await fetchText(url, source.adapter), source, url)); }
+    try {
+      const rows = parse(await fetchText(url, source.adapter), source, url);
+      if (source.adapter === 'google' && rows.length >= GOOGLE_MAX_RESULTS) saturated = true;
+      raw.push(...rows);
+    }
     catch (error) { if (!index) throw error; console.warn(`${source.name}: ${url} no respondió (${error.message}).`); break; }
   }
+  const read = raw.length;
   // Enlaces fuera de los dominios de la fuente (`linkHosts`): fuera antes de cualquier otra petición.
   const foreign = raw.filter(row => !linkAllowed(row, source));
   if (foreign.length) {
     console.warn(`${source.name}: ${foreign.length} enlaces fuera de los dominios de la fuente (${[...new Set(foreign.map(row => { try { return new URL(row.url, source.url).hostname; } catch { return String(row.url).slice(0, 60); } }))].join(', ')}).`);
     raw = raw.filter(row => linkAllowed(row, source));
   }
-  let tracked;
-  if (source.adapter === 'bce-resolutions') ({ tracked, rows: raw } = await dateResolutions(raw, source, known));
-  const stories = raw.filter(row => allowedHost(row, source)).map(row => normalize(row, source)).filter(Boolean).filter(story => relevant(story, source));
-  return { stories, tracked };
+  let tracked, undated = 0;
+  if (source.adapter === 'bce-resolutions') { const before = raw.length; ({ tracked, rows: raw } = await dateResolutions(raw, source, known)); undated = before - raw.length; }
+  const { stories, funnel, discards } = screen(raw, source);
+  return { stories, tracked, discards, funnel: { read, foreign: foreign.length, undated, ...funnel, ...(saturated ? { saturated } : {}) } };
 }
 
 const settle = promise => promise.then(value => ({ status: 'fulfilled', value }), reason => ({ status: 'rejected', reason }));
@@ -255,6 +279,8 @@ function report(stories, sources, now) {
   const empty = sources.filter(source => source.status === 'ok' && !source.recentCount).map(source => source.name);
   if (failed.length) console.log(`Fuentes sin respuesta: ${failed.join(', ')}.`);
   if (empty.length) console.log(`Fuentes sin notas: ${empty.join(', ')}.`);
+  const saturated = sources.filter(source => source.funnel?.saturated).map(source => source.name);
+  if (saturated.length) console.log(`Consultas de Google en el máximo de resultados (puede faltar lo peor posicionado): ${saturated.join(', ')}.`);
 }
 
 // Edición anterior leída de disco: si no tiene la forma esperada se trata como si no hubiera (`shapeOk: false`). Si la tiene,
@@ -288,14 +314,14 @@ async function run() {
   if (dropped) console.warn(`Edición anterior: ${dropped} notas descartadas por no cumplir la forma o los dominios de su fuente.`);
   const checkedAt = new Date().toISOString(); const now = Date.parse(checkedAt);
   const results = await fetchAll(SOURCES, previous);
-  const stories = []; const states = []; const tracked = {}; let successful = 0;
+  const stories = []; const states = []; const tracked = {}; const discards = []; let successful = 0;
   for (let i = 0; i < SOURCES.length; i++) {
     const source = SOURCES[i], result = results[i], ok = result.status === 'fulfilled';
-    if (ok) { successful++; if (result.value.tracked) tracked[source.id] = result.value.tracked; }
+    if (ok) { successful++; if (result.value.tracked) tracked[source.id] = result.value.tracked; discards.push(...(result.value.discards || [])); }
     else { if (previous.tracked?.[source.id]) tracked[source.id] = previous.tracked[source.id]; console.error(`${source.name}: ${result.reason?.message || result.reason}`); }
     // Acumulación: lo nuevo más lo que la edición anterior ya tenía de esta fuente y sigue siendo válido.
     stories.push(...accumulate(ok ? result.value.stories : [], previous.stories, source, { ok, now, keep: story => passes(story, source) }));
-    states.push({ source, ok, oldState: previous.sources.find(s => s?.id === source.id) });
+    states.push({ source, ok, funnel: ok ? result.value.funnel : undefined, oldState: previous.sources.find(s => s?.id === source.id) });
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }
   // Capa editorial: juicio para las notas que aún no lo tienen. Sin credenciales o con cualquier fallo, la edición sigue igual.
@@ -304,12 +330,14 @@ async function run() {
   const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
   const notes = writeMemo({ pool, edition, memo, now });
   if (Object.keys(notes.notes).length) tracked.editorial = notes;
-  const sources = states.map(({ source, ok, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length }));
+  const sources = states.map(({ source, ok, funnel, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length, ...(funnel ? { funnel } : {}) }));
   const payload = { version: 1, generatedAt: checkedAt, stories: edition, sources, tracked };
-  await mkdir(dirname(output), { recursive: true });
-  const temp = `${output}.tmp`;
-  await writeFile(temp, JSON.stringify(payload, null, 2) + '\n', 'utf8'); await rename(temp, output);
+  await writeJson(output, payload);
   console.log(`Edición generada: ${edition.length} publicaciones, ${successful}/${SOURCES.length} fuentes disponibles.`);
+  // El registro de descartes es un diagnóstico: si no se puede escribir, la edición ya publicada sigue valiendo.
+  const log = discardLog(discards, { generatedAt: checkedAt });
+  try { await writeJson(discardsPath(output), log); console.log(`Descartes: ${discards.filter(entry => entry.stage === 'tema').length} por tema y ${discards.filter(entry => entry.stage === 'medio').length} por medio; ${log.discards.length} en ${DISCARDS_FILE}.`); }
+  catch (error) { console.warn(`No se pudo escribir ${DISCARDS_FILE} (${error.code || error.name}).`); }
   report(edition, sources, now);
 }
 // Solo se ejecuta como programa; las pruebas importan SOURCES sin recopilar.

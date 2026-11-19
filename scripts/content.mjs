@@ -60,12 +60,18 @@ export function inHosts(value, hosts, base) {
 // Las fuentes de Google News se restringen al dominio del medio (`allowHosts`), comprobado sobre la URL del editor.
 // `denyHosts` descarta dominios (la búsqueda Endeavor no admite páginas de la propia Endeavor: no son prensa).
 export function allowedHost(row, source) {
-  if (!source.allowHosts && !source.denyHosts) return true;
-  try {
-    const host = new URL(row.sourceUrl).hostname.toLowerCase();
-    const matches = list => list.some(domain => host === domain || host.endsWith(`.${domain}`));
-    return (!source.allowHosts || matches(source.allowHosts)) && !(source.denyHosts && matches(source.denyHosts));
-  } catch { return false; }
+  return hostRejection(row, source) === null;
+}
+// Motivo por el que el medio de una nota no se acepta: 'allowHosts' (fuera de la lista), 'denyHosts' (en la lista negra) o
+// 'medio sin dominio' (sin URL de medio legible); null si se acepta.
+export function hostRejection(row, source) {
+  if (!source.allowHosts && !source.denyHosts) return null;
+  let host;
+  try { host = new URL(row.sourceUrl).hostname.toLowerCase(); } catch { return 'medio sin dominio'; }
+  const matches = list => list.some(domain => host === domain || host.endsWith(`.${domain}`));
+  if (source.allowHosts && !matches(source.allowHosts)) return 'allowHosts';
+  if (source.denyHosts && matches(source.denyHosts)) return 'denyHosts';
+  return null;
 }
 // Las fuentes oficiales que se leen de su propia página o feed solo aceptan enlaces de sus dominios (`linkHosts`): una nota
 // rotulada «Publicación oficial» no puede llevar a otro sitio, y el recopilador no hace peticiones a dominios ajenos.
@@ -280,7 +286,8 @@ export function parseRegistroOficial(xml) {
 // ---------------------------------------------------------------------------------------------------------
 // Filtros por fuente. `relevant()` aplica el filtro de FILTERS[source.id]; una fuente sin entrada lo deja pasar todo.
 // Campos: include / exclude (sobre el titular, o sobre titular + extracto con on: 'text'), path (la ruta de la URL
-// debe cumplirlo), skipPath (la ruta no debe cumplirlo) y test (comprobación adicional).
+// debe cumplirlo), skipPath (la ruta no debe cumplirlo), test (comprobación adicional) y why (qué parte de test falló, para el
+// registro de descartes). rejectReason() dice qué regla descartó cada nota.
 // Las expresiones salen de la verificación de fuentes; las que se repiten entre fuentes del mismo tema son constantes.
 const rx = (...parts) => new RegExp(parts.filter(Boolean).map(part => part instanceof RegExp ? part.source : part).join('|'), 'i');
 
@@ -347,7 +354,7 @@ export const FILTERS = {
   // Endeavor LATAM. La búsqueda por nombres trae mucho ruido: solo entra la nota cuyo titular nombra a una empresa del directorio.
   // Fuera también el ruido bursátil y los titulares promocionales (ENDEAVOR_MARKET_NOISE y ENDEAVOR_PROMO, definidos con el
   // resto del bloque Endeavor). El medio se comprueba aparte, con la lista ENDEAVOR_PRESS_HOSTS (allowHosts de la fuente).
-  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !ENDEAVOR_PROMO.test(story.title) && !!matchEndeavor(story, { titleOnly: true }) },
+  'endeavor-prensa': { test: story => !ENDEAVOR_MARKET_NOISE.test(story.title) && !ENDEAVOR_PROMO.test(story.title) && !!matchEndeavor(story, { titleOnly: true }), why: story => ENDEAVOR_MARKET_NOISE.test(story.title) ? 'ruido bursátil' : ENDEAVOR_PROMO.test(story.title) ? 'promoción' : 'sin empresa Endeavor en el titular' },
   'endeavor-ar': { exclude: /\bboard\b|experiencia endeavor|bootcamp|inscrip|convocatoria|bienvenid|emprendedores? endeavor del a[ñn]o|\bgala\b/i },
 
   // Pagos globales.
@@ -383,20 +390,70 @@ export const FILTERS = {
   coindesk: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|chart|Anthropic|treasury|earnings|revenue|Live updates|Strategy\b`), path: /\/(policy|business)\// },
   chainalysis: { exclude: rx(String.raw`AI Model|Security Incident|Webinar|Product|How Chainalysis`) },
 };
-// Una nota malformada (por ejemplo, de una edición anterior alterada) no hace lanzar al filtro: cuenta como que no pasa.
-export function relevant(story, source) {
+// Motivo por el que una nota no pasa el filtro de tema de su fuente, con el nombre de la regla de FILTERS: 'include' (no
+// coincide), 'exclude: <texto que coincidió>', 'path', 'skipPath', 'test' o 'test: <subregla>' (si el filtro define `why`).
+// null si pasa. Una nota malformada (por ejemplo, de una edición anterior alterada) no hace lanzar: devuelve 'error'.
+export function rejectReason(story, source) {
   const filter = FILTERS[source.id];
-  if (!filter) return true;
+  if (!filter) return null;
   try {
     const text = filter.on === 'text' ? `${story.title} ${story.excerpt || ''}` : story.title;
-    if (filter.include && !filter.include.test(text)) return false;
-    if (filter.exclude?.test(text)) return false;
+    if (filter.include && !filter.include.test(text)) return 'include';
+    const excluded = filter.exclude && text.match(filter.exclude);
+    if (excluded) return `exclude: ${excluded[0].slice(0, 60)}`;
     if (filter.path || filter.skipPath) {
       const pathname = path(story);
-      if (pathname == null || (filter.path && !filter.path.test(pathname)) || filter.skipPath?.test(pathname)) return false;
+      if (pathname == null || (filter.path && !filter.path.test(pathname))) return 'path';
+      if (filter.skipPath?.test(pathname)) return 'skipPath';
     }
-    return filter.test ? !!filter.test(story) : true;
-  } catch { return false; }
+    if (filter.test && !filter.test(story)) return filter.why ? `test: ${filter.why(story)}` : 'test';
+    return null;
+  } catch { return 'error'; }
+}
+export function relevant(story, source) {
+  return rejectReason(story, source) === null;
+}
+
+// ---------------------------------------------------------------------------------------------------------
+// Embudo de una fuente: de las filas leídas, cuáles caen por el medio (allowHosts / denyHosts), por normalize (sin titular,
+// enlace o fecha válidos, o con más de 30 días) y por el filtro de tema, y cuáles se aceptan. Las caídas por medio y por tema
+// que normalize acepta (notas vigentes) se registran en `discards` con su motivo, para revisar después qué se pierde.
+export const DISCARD_STAGES = ['tema', 'medio'];
+const discardOf = (story, stage, reason, row) => {
+  const entry = { sourceId: story.sourceId, stage, reason: String(reason).slice(0, 80), title: story.title, url: story.url, source: story.source, publishedAt: story.publishedAt };
+  if (stage === 'medio') { try { entry.host = new URL(row.sourceUrl).hostname.toLowerCase(); } catch { /* Sin dominio legible. */ } }
+  return entry;
+};
+export function screen(rows, source, now = Date.now()) {
+  const stories = [], discards = [];
+  const funnel = { host: 0, normalize: 0, topic: 0, accepted: 0 };
+  for (const row of rows) {
+    const host = hostRejection(row, source);
+    const story = normalize(row, source, now);
+    if (host) { funnel.host++; if (story) discards.push(discardOf(story, 'medio', host, row)); continue; }
+    if (!story) { funnel.normalize++; continue; }
+    const reason = rejectReason(story, source);
+    if (reason) { funnel.topic++; discards.push(discardOf(story, 'tema', reason, row)); continue; }
+    funnel.accepted++; stories.push(story);
+  }
+  return { stories, funnel, discards };
+}
+// Registro de descartes de una ejecución (descartes.json, junto a la edición): por fuente, como máximo `perSource` entradas,
+// las más recientes y sin repetir titular; `omitted` cuenta las que no caben.
+export const MAX_DISCARDS_PER_SOURCE = 40;
+export function discardLog(discards, { generatedAt, perSource = MAX_DISCARDS_PER_SOURCE } = {}) {
+  const bySource = new Map();
+  for (const entry of [...discards].sort(byDateDesc)) {
+    const list = bySource.get(entry.sourceId) || { kept: [], titles: new Set(), omitted: 0 };
+    bySource.set(entry.sourceId, list);
+    const key = entry.title.toLowerCase();
+    if (list.titles.has(key)) continue;
+    list.titles.add(key);
+    if (list.kept.length < perSource) list.kept.push(entry); else list.omitted++;
+  }
+  const omitted = {};
+  for (const [id, list] of bySource) if (list.omitted) omitted[id] = list.omitted;
+  return { version: 1, generatedAt, perSource, discards: [...bySource.values()].flatMap(list => list.kept), omitted };
 }
 
 // Canal de cada nota. Por defecto, el de su fuente; ROUTES lo cambia por tema para fuentes que sirven a dos canales.
