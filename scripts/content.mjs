@@ -7,6 +7,9 @@ import { endeavorUrl } from './endeavor.mjs';
 const parser = new XMLParser({ ignoreAttributes: false, attributeNamePrefix: '@_', textNodeName: '#text', trimValues: true });
 const months = { enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5, julio: 6, agosto: 7, septiembre: 8, setiembre: 8, octubre: 9, noviembre: 10, diciembre: 11 };
 const DAY = 24 * 60 * 60 * 1000;
+// Texto sin tildes ni mayúsculas, para comparar nombres y palabras.
+const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
+const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 export const THIRTY_DAYS = 30 * DAY;
 const MAX_EXCERPT = 280;
 const MAX_EXCERPT_SCAN = 4000;
@@ -278,10 +281,22 @@ export function parseRegistroOficial(xml) {
     if (!norms.length) continue;
     const [first, ...others] = norms;
     const label = norm => `${norm.organ}: ${norm.code} ${norm.text}`;
-    const excerpt = [/^registro oficial/i.test(edition) ? `${edition}.` : `Registro Oficial, ${edition}.`, ...(others.length ? [`También: ${others.map(label).join('; ')}.`] : [])].join(' ');
-    rows.push({ title: label(first), url: item.link, excerpt, publishedAt: item.pubDate, language: 'es' });
+    const excerpt = [`${first.organ} · ${first.code}.`, /^registro oficial/i.test(edition) ? `${edition}.` : `Registro Oficial, ${edition}.`, ...(others.length ? [`También: ${others.map(label).join('; ')}.`] : [])].join(' ');
+    rows.push({ title: normTitle(first.text), url: item.link, excerpt, publishedAt: item.pubDate, language: 'es' });
   }
   return rows;
+}
+// Titular legible de una norma: su asunto («Se reforma la Codificación…»), recortado en límite de palabra si pasa de
+// NORM_TITLE_MAX; el órgano y el código van al principio del extracto. Solo se reordena y se recorta el texto del índice.
+const NORM_TITLE_MAX = 160;
+const normTitle = text => clipExcerpt(text, NORM_TITLE_MAX);
+// Notas del Registro Oficial de ediciones anteriores, con el titular antiguo «Órgano: CÓDIGO asunto»: se pasan al formato actual.
+const RO_OLD_TITLE = new RegExp(`^(${RO_ORGANS.map(([, name]) => escapeRx(name)).join('|')}): (\\S+) (.+)$`, 'u');
+export function readableNorm(story) {
+  const match = typeof story?.title === 'string' ? story.title.match(RO_OLD_TITLE) : null;
+  if (!match || !/\d/.test(match[2])) return story;
+  const [, organ, code, text] = match;
+  return { ...story, title: normTitle(text), excerpt: clipExcerpt([`${organ} · ${code}.`, story.excerpt].filter(Boolean).join(' ')) };
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -562,7 +577,7 @@ export function accumulate(fresh, previous, source, { ok = true, now = Date.now(
     if (!carryable(old, source) || byId.has(old.id) || !recent(old.publishedAt, now)) continue;
     let kept; try { kept = keep(old); } catch { kept = false; }
     if (!kept) continue;
-    const { stale, ...story } = old;
+    const { stale, ...story } = source.adapter === 'registro-oficial' ? readableNorm(old) : old;
     const carried = { ...story, kind: source.kind, category: channelFor(story, source) };
     if (typeof story.excerpt === 'string' && story.excerpt.length === MAX_EXCERPT && !story.excerpt.endsWith('…')) carried.excerpt = clipExcerpt(story.excerpt, MAX_EXCERPT - 1);
     if (source.tier) carried.tier = source.tier;
@@ -808,8 +823,6 @@ export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-
 // nutrición («Pomelo: el cítrico que…», también Tangelo, Limonada, Quinoa).
 export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|se desploma|metal rojo|\bLME\b|\bonzas?\b|libra de cobre|alcald|jef[ae] de gobierno|candidat|diputad|senador|\bfrutas?\b|\bfruits?\b|c[ií]tric|citrus|grapefruit|toronja|vitamina|nutrici[oó]n|nutrition|\bdieta?\b`);
 
-const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
-const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 // Palabra completa: ni letras o cifras pegadas, ni unidas por punto o guion a otra palabra («Bal.azos», «Devsu-Korgao»).
 const bounded = body => new RegExp(`(?<![\\p{L}\\p{N}]|[\\p{L}\\p{N}][.-])(?:${body})(?![\\p{L}\\p{N}]|[.-][\\p{L}\\p{N}])`, 'u');
 // Nombres con los que se reconoce una empresa: el del directorio sin aclaraciones («Galgo (formerly Migrante)» → Galgo y

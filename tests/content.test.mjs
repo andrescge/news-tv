@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -209,7 +209,7 @@ test('Google News: solo entran notas del dominio del medio y se quita el sufijo 
   assert.equal(relevant(story, forbes), true);
 });
 
-test('Registro Oficial: se compone el titular con órgano y código, y solo entran normas de órganos financieros', () => {
+test('Registro Oficial: el titular es el asunto de la norma, el extracto lleva órgano y código, y solo entran normas de órganos financieros', () => {
   const item = (title, link, html) => `<item><title>${title}</title><link>${link}</link><pubDate>Mon, 28 Sep 2026 13:22:50 +0000</pubDate><description><![CDATA[resumen]]></description><content:encoded><![CDATA[${html}]]></content:encoded></item>`;
   const xml = `<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel>${[
     item('Quinto Suplemento No. 410', 'https://www.registroficial.gob.ec/quinto-suplemento-no-410/', '<p>FUNCIÓN EJECUTIVA<br>ACUERDO:<br>MINISTERIO DE GOBIERNO:<br>MDG-SMS-2026-0218-A Se aprueba el estatuto de la Iglesia Evangélica<br><br>RESOLUCIONES:<br>JUNTA DE POLÍTICA Y REGULACIÓN<br>FINANCIERA Y MONETARIA:<br>JPRFM-2026-050-F Se conoce el contenido del informe de actividades del Directorio<br><br>JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros</p>'),
@@ -221,20 +221,42 @@ test('Registro Oficial: se compone el titular con órgano y código, y solo entr
   ].join('')}</channel></rss>`;
   const ro = sourceById('registro-oficial');
   const rows = parseRegistroOficial(xml);
+  // El titular es el asunto de la norma; el órgano y el código abren el extracto.
   assert.deepEqual(rows.map(row => row.title), [
-    'Junta de Política y Regulación Financiera y Monetaria: JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros',
-    'Superintendencia de Economía Popular y Solidaria: SEPS-IGT-IGS-IGJ-INSESF-INR-INGINT-INSEPS-2026-0157 Se expide la Norma de control de seguridades en el uso de canales electrónicos',
-    'Servicio de Rentas Internas: NAC-DGERCGC26-00000038 Se expiden las normas para el intercambio automático de información de la SCVS y el SRI',
-    'Banco Central del Ecuador: BCE-GG-021-2026 Se reforma la Norma para depósitos y retiros de especies monetarias',
+    'Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros',
+    'Se expide la Norma de control de seguridades en el uso de canales electrónicos',
+    'Se expiden las normas para el intercambio automático de información de la SCVS y el SRI',
+    'Se reforma la Norma para depósitos y retiros de especies monetarias',
   ]);
-  assert.equal(rows[0].excerpt, 'Registro Oficial, Quinto Suplemento No. 410.');
-  assert.equal(rows[1].excerpt, 'Registro Oficial, Segundo Suplemento No. 395. También: Corporación del Seguro de Depósitos (COSEDE): COSEDE-COSEDE-2026-0068-R Se actualizan los valores de benchmark aplicables al sector financiero privado.');
+  assert.equal(rows[0].excerpt, 'Junta de Política y Regulación Financiera y Monetaria · JPRFM-2026-051-F. Registro Oficial, Quinto Suplemento No. 410.');
+  assert.equal(rows[1].excerpt, 'Superintendencia de Economía Popular y Solidaria · SEPS-IGT-IGS-IGJ-INSESF-INR-INGINT-INSEPS-2026-0157. Registro Oficial, Segundo Suplemento No. 395. También: Corporación del Seguro de Depósitos (COSEDE): COSEDE-COSEDE-2026-0068-R Se actualizan los valores de benchmark aplicables al sector financiero privado.');
   const stories = rows.map(row => normalize(row, ro, now));
   assert.deepEqual(stories.map(story => relevant(story, ro)), [true, true, true, false]);
   assert.equal(stories[0].category, 'regulacion');
   assert.equal(stories[0].kind, 'official');
   assert.equal(parseRegistroOficialIndex('<p>MINISTERIO DE SALUD PÚBLICA:<br>MSP-2026-1 Se concede personalidad jurídica</p>')[0].organ, null);
   assert.throws(() => parseRegistroOficial('<html></html>'));
+});
+
+test('Registro Oficial: un asunto largo se recorta en límite de palabra y las notas con el titular antiguo se pasan al nuevo', () => {
+  // Titular real de la edición publicada (255 caracteres con órgano y código).
+  const text = 'Se amplía el plazo para la liquidación de la Cooperativa de Ahorro y Crédito el Esfuerzo Ltda. “En Liquidación”, domiciliada en el cantón Ambato, provincia de Tungurahua';
+  const xml = `<rss xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><item><title>Registro Oficial No. 405</title><link>https://www.registroficial.gob.ec/registro-oficial-no-405/</link><pubDate>Wed, 11 Nov 2026 13:07:00 +0000</pubDate><content:encoded><![CDATA[<p>SUPERINTENDENCIA DE ECONOMÍA POPULAR Y SOLIDARIA:<br>SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160 ${text}</p>]]></content:encoded></item></channel></rss>`;
+  const [row] = parseRegistroOficial(xml);
+  assert.ok(row.title.length <= 160, String(row.title.length));
+  assert.ok(row.title.endsWith('…'));
+  assert.ok(text.startsWith(row.title.slice(0, -1)), 'solo se recorta el texto del sumario');
+  assert.equal(row.excerpt, 'Superintendencia de Economía Popular y Solidaria · SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160. Registro Oficial No. 405.');
+  // Nota conservada de una edición anterior con el titular «Órgano: CÓDIGO asunto».
+  const ro = sourceById('registro-oficial');
+  const old = { ...make('registro-oficial', 30), category: 'regulacion', kind: 'official', url: 'https://www.registroficial.gob.ec/quinto-suplemento-no-410/', title: 'Junta de Política y Regulación Financiera y Monetaria: JPRFM-2026-051-F Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros', excerpt: 'Registro Oficial, Quinto Suplemento No. 410.' };
+  const [carried] = accumulate([], [old], ro, { now, keep: story => relevant(story, ro) });
+  assert.equal(carried.title, 'Se reforma la Codificación de Resoluciones Monetarias, Financieras, de Valores y Seguros');
+  assert.equal(carried.excerpt, 'Junta de Política y Regulación Financiera y Monetaria · JPRFM-2026-051-F. Registro Oficial, Quinto Suplemento No. 410.');
+  // Una nota ya en el formato nuevo, o un titular cualquiera con dos puntos, no se toca.
+  assert.equal(readableNorm(carried), carried);
+  const press = { title: 'Superintendencia de Bancos: “Las instituciones financieras tienen el músculo suficiente”' };
+  assert.equal(readableNorm(press), press);
 });
 
 // Muestras de titulares pertinentes (true) y de ruido (false) de la verificación de fuentes, por fuente.
