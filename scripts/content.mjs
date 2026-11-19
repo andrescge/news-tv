@@ -408,10 +408,15 @@ export const FILTERS = {
   // Pagos globales.
   paymentsdive: { skipPath: DIVE_SPONSORED },
   bankingdive: { exclude: /M&A business/i, skipPath: DIVE_SPONSORED },
-  'expansion-banca': { include: rx(String.raw`\bpagos?\b|euro digital|Banco de España|BCE|BIS|Bruselas|Europa|europe|Revolut|Qonto|JPMorgan|HSBC|UniCredit|Bank of America|Openbank|Latinoam|Brasil|Paraguay|fintech|neobanco|tarjeta|regulaci|regulator|blanqueo|fraude|\bIA\b|tecnolog|Banco de Inglaterra|UBS|ING |Crédit Agricole|Italia|TSB`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|filantr|Euro Stoxx|economista jefe|rentables`) },
+  // Expansión · Banca: solo pagos, fintech, supervisión y regulación; la banca doméstica española (resultados, fichajes,
+  // ratings, sentencias, fusiones) queda fuera.
+  'expansion-banca': { include: rx(String.raw`\bpagos?\b|entidad de pago|euro digital|Banco de España|\bBCE\b|\bBIS\b|Bruselas|Revolut|Qonto|Monzo|N26|Openbank|neobanco|fintech|tarjeta|\bVisa\b|Mastercard|Bizum|regulaci|regulador|supervis|blanqueo|fraude|ciberataque|\bIA\b|banca (online|digital)|criptoactiv|stablecoin|tokeniz|Banco de Inglaterra`), exclude: rx(String.raw`soporte|media móvil|pistas|huelga|desgravaci|filantr|Euro Stoxx|economista jefe|rentables|\brating\b|perspectiva|Audiencia|condena a|fusionar|oferta en acciones`) },
   'ft-banking': { include: rx(String.raw`bank|deposit|payment|tokeni|lender|JPMorgan|HSBC|UBS|Julius Baer|Rothschild|AI agents`), exclude: rx(String.raw`Epstein|Trump|oligarch|Qatari|Aldi|Putin|jobs deal`) },
   // Finextra llega por Google sin extracto: fuera columnas de opinión firmadas, preguntas y altas en marketplaces.
   finextra: { exclude: rx(String.raw`: By [A-Z]|\?|^(From|Beyond|The (New|Five|building|third)|Building|Your Payment|When|Why|How|Should|1 in 10)|NextGen Nordics|Self-service`, String.raw`\bmarketplace\b`) },
+  // The Paypers y Fintech Futures: fuera webinars, pódcast, white papers, premios, resúmenes, columnas y contenido de marca («… | Gr4vy»).
+  thepaypers: { exclude: /webinar|white ?paper|^The Paypers$|\s\|\s|Total Economic Impact|podcast|\bawards?\b|sponsored|^(why|understanding|adding)\b/i },
+  fintechfutures: { exclude: /What the FinTech|Georgie & Cog|Top five|round-?up|recent news|White ?paper|shortlist|Awards?\b|ICYMI|Episode|webinar|podcast|magazine|Money20\/20|^why\b|read the room/i },
   // The Banker: banca, pagos y sus autoridades (BCE, bancos centrales, reguladores). Fuera los rankings, las salidas a bolsa
   // y los informes por país patrocinados.
   thebanker: { include: rx(String.raw`bank|payment|stablecoin|Revolut|Reg Wrap|digital money|FCA|\bECB\b|Lagarde|Federal Reserve|regulators?|supervis|watchdog`), exclude: rx(String.raw`^(Regulation|Qatar|Germany|The Banker|Ask The Banker) - |Albania|Top 200|Top Islamic|midterm|gold reserves|Protesters|\bIPOs?\b|whistleblow|LCF`) },
@@ -429,6 +434,8 @@ export const FILTERS = {
   'bis-investigacion': { include: rx(String.raw`payment|bank|stablecoin|liquidity|tokeni|CBDC|fintech`), exclude: rx(String.raw`central bankers|Central banks and macro`) },
   'fintech-business-weekly': { exclude: rx(String.raw`Interview:|, with |I Never Thought`) },
   fed: { on: 'text', include: /payment|fednow|fedwire|\bach\b|check services|stablecoin|instant|pricing|debit|interchange|regulation ii|digital (asset|dollar)|crypto|tokeni[sz]|comment period|proposed (rule|guidance)|final rule/i },
+  // OCC: fuera evaluaciones CRA, datos de préstamos, clima, discursos del contralor y listados mensuales de sanciones.
+  occ: { exclude: /CRA Performance|Lending Data|Climate|Discusses|Emphasizes|Remarks|Testimony|Enforcement Actions for/i },
 
   // Cripto.
   'cinco-dias-cripto': { include: rx(CRYPTO_POLICY_ES, String.raw`(euro|bono) digital|activos tokenizados|blockchain|CNMV|ciberataque|cibercrimen|Binance|cripto`), exclude: rx(String.raw`corrige|MSCI|Anthropic|castiga|debilidad de bitcoin`) },
@@ -440,6 +447,8 @@ export const FILTERS = {
   'reuters-cripto': { include: rx(String.raw`crypto|stablecoin|tokeni|digital (asset|finance)|binance|coinbase|North Korean hackers|Revolut|fintech|neobank`), exclude: rx(CRYPTO_MARKET_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|Anthropic|Crypto Weekly|Tech Weekly|PODCAST|Morning Bid|lows\b|Trump Media|Strategy\b|trading volume|returns to profit|tracks stocks`) },
   'ft-cripto': { exclude: rx(String.raw`Trump Media|Anthropic|Would you take|prediction markets|bitcoin bet`) },
   theblock: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`raises \$|rating`), path: /\/news\/(regulation|business|defi)\// },
+  // Decrypt mezcla cripto con IA y tecnología: solo regulación, delitos, bancos y stablecoins; fuera mercado, memecoins y su boletín.
+  decrypt: { include: rx(String.raw`stablecoin|tokeni[sz]|CBDC|digital (euro|dollar|currenc|asset)|deposit token|USDC|Tether|MiCA|GENIUS Act|Clarity Act|launder|sanction|OFAC|FinCEN|North Korea|DPRK|hack|heist|exploit|\bSEC\b|regulat|central bank|\bFed\b|custody|guilty|sentenced|fraud|scam|judge|\btrial\b|prosecut|senat|CFTC|\bbanks?\b|\bCircle\b|lawmakers|\bbill\b|licen[cs]e`), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`\bsurges?\b|\bslides?\b|\bdrops?\b|\bfalls?\b|\btanks?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|Morning Minute|\bAI\b|\bNFTs?\b|airdrop|Polymarket`) },
   coindesk: { include: rx(CRYPTO_POLICY_EN), exclude: rx(CRYPTO_MARKET_NOISE_EN, CRYPTO_SECTOR_NOISE_EN, String.raw`slides?\b|\bdrops?\b|\bfalls?\b|tumbles?|plunge|rall(y|ies)|rebound|liquidation|whales?|outflows?|inflows?|chart|Anthropic|treasury|earnings|revenue|Live updates|Strategy\b`), path: /\/(policy|business)\// },
   // Chainalysis: fuera sus avisos de producto y de la propia empresa (los que empiezan «How Chainalysis…»; un caso que cuenta
   // cómo congeló fondos robados sí entra) y los informes de geografía cripto de regiones ajenas a LATAM.
@@ -750,11 +759,11 @@ export const ENDEAVOR_PRESS_HOSTS = [
   'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
   'latamlist.com', 'expansion.mx', 'df.cl', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
   'finextra.com', 'thebanker.com', 'americanbanker.com', 'pymnts.com', 'wsj.com', 'elpais.com', 'reuters.com', 'theblock.co',
-  'coindesk.com', 'criptonoticias.com',
+  'coindesk.com', 'criptonoticias.com', 'decrypt.co', 'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'iproup.com',
   // Referencia internacional y agencias de noticias (no de comunicados).
   'bloomberg.com', 'economist.com', 'forbes.com', 'cnbc.com', 'techcrunch.com', 'restofworld.org', 'efe.com', 'americaeconomia.com', 'bnamericas.com',
   // Argentina.
-  'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar', 'iproup.com',
+  'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar',
   'mercado.com.ar', // Revista Mercado: revista de negocios argentina con redacción propia.
   // México.
   'eluniversal.com.mx', 'elfinanciero.com.mx', 'forbes.com.mx', 'milenio.com', 'excelsior.com.mx', 'razon.com.mx', 'elceo.com', 'reforma.com', 'jornada.com.mx',
@@ -773,7 +782,7 @@ export const ENDEAVOR_PRESS_HOSTS = [
   // Brasil.
   'valor.globo.com', 'oglobo.globo.com', 'folha.uol.com.br', 'estadao.com.br', 'exame.com', 'infomoney.com.br', 'neofeed.com.br', 'braziljournal.com',
   // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
-  'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'contxto.com', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+  'contxto.com', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
 ];
 // Nombramientos y equipo directivo (español, inglés y portugués): cargos (CEO, CFO, «Chief … Officer», director financiero,
 // gerente general, country manager) y verbos de nombramiento con su complemento («ficha a», «incorpora a»; no «incorporar

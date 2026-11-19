@@ -604,7 +604,57 @@ const SAMPLES = [
   ["uafe","Registro del Manual de Prevención","https://www.uafe.gob.ec/registro-del-manual-de-prevencion/",false],
   ["uafe","Solicitud de Pronunciamiento de Actividad Sujeta a Reporte","https://www.uafe.gob.ec/solicitud/",false],
   ["uafe","Ecuador fortalece el control de sus fronteras con el Segundo Operativo Intensificado de 2026","https://www.uafe.gob.ec/nota/",false],
-  ["uafe","UAFE abre convocatoria para reconocer buenas prácticas de transparencia y prevención del lavado de activos","https://www.uafe.gob.ec/nota/",false]
+  ["uafe","UAFE abre convocatoria para reconocer buenas prácticas de transparencia y prevención del lavado de activos","https://www.uafe.gob.ec/nota/",false],
+  // Fuentes nuevas de Pagos y Cripto, y Expansión · Banca acotada a pagos y regulación (feeds medidos el 19 de noviembre de 2026).
+  ["decrypt","Fed's Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",null,true],
+  ["decrypt","Scattered Spider Hacker Sentenced to 6 Years Over $11.6M in Stolen Crypto",null,true],
+  ["decrypt","World Bank Taps Circle and Citi to Test Stablecoins for Development Payments",null,true],
+  ["decrypt","Former Robinhood Engineer Pleads Guilty to Crypto Insider Trading Scheme",null,true],
+  ["decrypt","Judge Acquits MIT Brothers in $25M Ethereum MEV Case, Ending Prosecution",null,true],
+  ["decrypt","Bitcoin Tanks Ahead of Anthropic’s IPO. Should We Really Blame AI?",null,false],
+  ["decrypt","Bitcoin Miners Are Selling Their Stacks to Fund the AI Boom",null,false],
+  ["decrypt","Lucky Trader Banks 66,000% Profit on GTA 6 Meme Coin Ticker Confusion",null,false],
+  ["decrypt","Morning Minute: The CFTC Officially Greenlights Perps in the US, Starting with Backpack",null,false],
+  ["decrypt","AI Will Make the Next 12 Months 'a Slaughterhouse' for Crypto Security: Anchorage Exec",null,false],
+  ["decrypt","Nvidia Board Shuts Down Jensen Huang Comeback, Launches Search for New CEO",null,false],
+  ["decrypt","Bitcoin's $2 Billion Liquidation Weekend Leaves Traders Watching $60,000",null,false],
+  ["occ","Comptroller of the Currency Issues Statement on FinCEN Customer Due Diligence","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-101.html",true],
+  ["occ","Agencies Extend Comment Period for Proposed Third-Party Risk Management Guidance","https://www.occ.gov/news-issuances/news-releases/2026/nr-ia-2026-99.html",true],
+  ["occ","OCC Issues Supervisory Framework on Bank Use of Super Intelligence","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-95.html",true],
+  ["occ","OCC’s Semiannual Risk Perspective Highlights Key Risks in Federal Banking System","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-100.html",true],
+  ["occ","Comptroller Gould Emphasizes OCC’s Continued Momentum to Rightsize Regulation and Reform Federal Banking System","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-102.html",false],
+  ["occ","OCC Releases CRA Performance Evaluations for 19 National Banks and Federal Savings Associations","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-94.html",false],
+  ["occ","OCC Raises Concerns with California's Climate Disclosure Laws","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-93.html",false],
+  ["occ","OCC Announces Enforcement Actions for October 2026","https://www.occ.gov/news-issuances/news-releases/2026/nr-occ-2026-90.html",false],
+  ["thepaypers","Mastercard launches Mastercard Accept for card acceptance on phones",null,true],
+  ["thepaypers","Qonto receives credit institution licence from ACPR and ECB",null,true],
+  ["thepaypers","DBS and Kinexys by J.P. Morgan launch 24/7 tokenised deposit transfers",null,true],
+  ["thepaypers","Wise settles Belgian AML probe without admitting wrongdoing",null,true],
+  ["thepaypers","The Paypers",null,false],
+  ["thepaypers","AI payment analytics and orchestration | Gr4vy",null,false],
+  ["thepaypers","Fragmented payments stack costs | DECTA webinar recap",null,false],
+  ["thepaypers","Why AI Model orchestration matters in financial services",null,false],
+  ["fintechfutures","French fintech Qonto secures full banking licence",null,true],
+  ["fintechfutures","Ripple secures final OCC authorisation to establish Ripple National Trust Bank",null,true],
+  ["fintechfutures","Western Union announces termination of $500m Intermex acquisition agreement",null,true],
+  ["fintechfutures","Commerzbank, Deutsche Bank and DSGV form anti-financial crime JV",null,true],
+  ["fintechfutures","ICYMI fintech funding round-up: Mural, ScribeUp, Vrtx, and more",null,false],
+  ["fintechfutures","October 2026: Top five banking technology stories of the month",null,false],
+  ["fintechfutures","PayTech Awards USA 2026 shortlist announced",null,false],
+  ["fintechfutures","What the FinTech? | S.7 Episode 23 | The next generation of business banking in the US",null,false],
+  ["fintechfutures","White paper: One region, many markets - building payments infrastructure for ASEAN scale",null,false],
+  ["fintechfutures","Banking Technology Magazine November 2026 issue out now",null,false],
+  ["fintechfutures","Why banks won’t change",null,false],
+  ["expansion-banca","Monzo ficha en N26 y Revolut para su lanzamiento en España",null,true],
+  ["expansion-banca","Qonto dará el salto a la banca con depósitos y anticipo de facturas en 2027",null,true],
+  ["expansion-banca","El BCE pide a los bancos que revisen sus modelos de gobernanza para controlar la IA",null,true],
+  ["expansion-banca","JPMorgan sufre interrupciones en su servicio de banca online",null,true],
+  ["expansion-banca","Bankinter quiere que los negocios de Portugal e Irlanda se autofinancien",null,false],
+  ["expansion-banca","DBRS eleva a positiva la perspectiva del rating de Abanca",null,false],
+  ["expansion-banca","La Audiencia de A Coruña condena a Abanca a devolver 8.800 euros a una víctima de fraude bancario",null,false],
+  ["expansion-banca","Crédit Agricole propone fusionar su filial en Italia con BPM",null,false],
+  ["expansion-banca","Santander sube un 5% la oferta en acciones por su filial de Brasil ante la evolución de los mercados",null,false],
+  ["expansion-banca","La apuesta de HSBC por los bots podría transformar la batalla por el negocio de la gestión de patrimonios",null,false]
 ];
 test('cada filtro deja pasar las muestras pertinentes del informe y descarta su ruido', () => {
   for (const [id, title, url, expected] of SAMPLES) {
@@ -613,7 +663,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'thepaypers', 'fintechfutures', 'occ', 'decrypt', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
