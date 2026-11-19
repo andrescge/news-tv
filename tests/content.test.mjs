@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, editionSeries, expectedScore, capPerEdition, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -902,6 +902,105 @@ test('composición del canal: tope por fuente en cada período, tope de canal y 
   // composeEdition compone cada canal por separado.
   const edition = composeEdition([...few, { ...make('c', 2), category: 'cripto' }], { now });
   assert.deepEqual([...new Set(edition.map(story => story.category))].sort(), ['cripto', 'pagos']);
+});
+
+test('tope por tema: el hackeo de Binance no ocupa el canal de Cripto; las notas oficiales no cuentan', () => {
+  const crypto = (sourceId, hoursAgo, title, extra = {}) => make(sourceId, hoursAgo, { id: `${sourceId}-${hoursAgo}`, category: 'cripto', tier: 1, title, source: sourceId, ...extra });
+  const days = 24;
+  // Titulares reales de la edición publicada el 19 de noviembre de 2026, en el período de 15 a 30 días.
+  const heist = [
+    crypto('reuters-cripto', 20 * days, 'Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest', { via: 'Vía Google News' }),
+    crypto('reuters-cripto', 20 * days + 1, 'Blockchain analysis firm TRM says North Korea behind Binance crypto theft', { via: 'Vía Google News' }),
+    crypto('cinco-dias-cripto', 20 * days + 2, 'Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance', { excerpt: 'El robo.' }),
+    crypto('cinco-dias-cripto', 19 * days, 'Las claves del robo del siglo en Binance: qué ocurrió, quién está detrás', { excerpt: 'Las claves.' }),
+    crypto('expansion-cripto', 20 * days + 3, 'El robo a Binance dispara la alarma sobre la seguridad cripto', { excerpt: 'La alarma.' }),
+    crypto('expansion-cripto', 20 * days + 4, 'Acusan a Corea del Norte de estar detrás del hackeo a Binance'),
+    crypto('ft-cripto', 17 * days, 'What caused the $6.3bn Binance hack?', { excerpt: 'The hack.' }),
+    crypto('ft-cripto', 17 * days + 5, 'Binance users pull $5bn as crypto exchange restarts services after heist'),
+    crypto('bloomberg-cripto', 18 * days, 'Binance reanuda los retiros mientras persisten las dudas sobre el ataque informático', { via: 'Vía Google News' }),
+  ];
+  const others = [
+    crypto('reuters-cripto', 17 * days + 2, 'Gone in 20 minutes: How the biggest heist in crypto history unfolded'),
+    crypto('reuters-cripto', 16 * days, 'PNC to offer stablecoin payments to clients in Coinbase partnership'),
+    crypto('bis-discursos', 18 * days, 'Piero Cipollone: What the Binance heist teaches central banks', { kind: 'official' }),
+    crypto('reuters-cripto', 10, 'UAE court orders freeze on crypto tokens stolen from Binance wallets'),
+    crypto('reuters-cripto', 12, 'After $6.3 billion crypto heist, Binance plans Asia expansion'),
+  ];
+  const options = { now, cap: 80, limitFor: () => 25, perTopic: 3 };
+  const edition = composeEdition([...heist, ...others], options);
+  const named = edition.filter(story => /Binance/.test(story.title) && story.kind !== 'official');
+  // Como mucho tres por período: tres del período de 15 a 30 días (con extracto y enlace directo primero) y las dos de hoy.
+  assert.equal(named.filter(story => periodIndex(story, now) === 3).length, 3);
+  assert.ok(named.filter(story => periodIndex(story, now) === 3).every(story => story.excerpt));
+  assert.equal(named.filter(story => periodIndex(story, now) === 0).length, 2);
+  // Lo que no nombra a Binance y la nota oficial siguen.
+  for (const story of others) assert.ok(edition.includes(story), story.title);
+  // Sin tope por tema, todo entra.
+  assert.equal(composeEdition([...heist, ...others], { now, cap: 80, limitFor: () => 25 }).length, heist.length + others.length);
+});
+
+test('reserva oficial: el tope de canal no expulsa a la Reserva Federal ni al FSB frente a medios prolíficos', () => {
+  const judgedAt = new Date(now).toISOString();
+  const judged = score => ({ score, why: '', cluster: 'x', model: 'claude-opus-5-5', at: judgedAt });
+  const media = Array.from({ length: 20 }, (_, s) => Array.from({ length: 5 }, (_, i) => make(`medio${s}`, 1 + i + s / 100, { tier: 2, editorial: judged(80) }))).flat();
+  const fed = make('fed', 3, { kind: 'official', tier: 1, title: 'Federal Reserve Board announces pricing, effective January 1, 2027, for payment services', editorial: judged(40) });
+  const fsb = make('fsb', 4, { kind: 'official', tier: 1, title: 'Further work by jurisdictional authorities and private sector necessary to enhance cross-border payments', editorial: judged(40) });
+  const base = { now, cap: 80, limitFor: () => 5, threshold: 30 };
+  const without = composeChannel([...media, fed, fsb], base);
+  assert.equal(without.length, 80);
+  assert.ok(!without.includes(fed) && !without.includes(fsb));
+  const reserve = story => story.kind === 'official' && story.tier === 1;
+  const withReserve = composeChannel([...media, fed, fsb], { ...base, reserve, reserveShare: 0.25 });
+  assert.equal(withReserve.length, 80);
+  assert.ok(withReserve.includes(fed) && withReserve.includes(fsb));
+  // Lo que la reserva no usa vuelve al canal: sin oficiales, 80 notas de medios.
+  assert.equal(composeChannel(media, { ...base, reserve, reserveShare: 0.25 }).length, 80);
+});
+
+test('relleno: si el canal tiene sitio, el tope por fuente no deja fuera notas que pasaron el filtro', () => {
+  const list = ['df', 'la-republica'].flatMap(id => Array.from({ length: 6 }, (_, i) => make(id, 1 + i * 2 + (id === 'df' ? 0 : 1))));
+  const blog = Array.from({ length: 4 }, (_, i) => make('blog', 2 + i, { tier: 3 }));
+  const base = { now, cap: 10, limitFor: () => 2 };
+  assert.equal(composeChannel(list, base).length, 4);
+  const filled = composeChannel([...list, ...blog], { ...base, refill: true });
+  assert.equal(filled.filter(story => story.tier !== 3).length, filled.length - filled.filter(story => story.tier === 3).length);
+  assert.ok(filled.length <= 10);
+  assert.equal(filled.filter(story => story.sourceId !== 'blog').length, filled.length - filled.filter(story => story.sourceId === 'blog').length);
+  // El relleno no suma nivel 3: solo vuelven notas de las fuentes cortadas por su tope.
+  assert.equal(filled.filter(story => story.sourceId === 'blog').length, composeChannel([...list, ...blog], base).filter(story => story.sourceId === 'blog').length);
+  assert.equal(composeChannel(list, { ...base, refill: true }).length, 10);
+});
+
+test('tope por edición: los datos del BCE dejan una nota por serie, la más reciente', () => {
+  assert.equal(editionSeries('Boletín Monetario Semanal. 13 de Noviembre 2026'), 'boletin monetario semanal');
+  assert.equal(editionSeries('Boletín Monetario Semanal 6 de noviembre de 2026'), 'boletin monetario semanal');
+  assert.equal(editionSeries('Boletín de Reservas Internacionales. Octubre 2026'), 'boletin de reservas internacionales');
+  assert.equal(editionSeries('Perspectivas de Oferta y Demanda de Crédito. III Trimestre 2026'), 'perspectivas de oferta y demanda de credito');
+  assert.equal(editionSeries('Reporte Interactivo Mensual de Tasas de Interés'), 'reporte interactivo mensual de tasas de interes');
+  const data = (hoursAgo, title) => make('bce-publicaciones', hoursAgo, { category: 'regulacion', kind: 'official', title });
+  const list = [
+    data(48, 'Boletín Monetario Semanal. 13 de Noviembre 2026'), data(220, 'Boletín Monetario Semanal. 6 de Noviembre 2026'),
+    data(60, 'Reporte Interactivo Mensual de Tasas de Interés'), data(400, 'Reporte Interactivo Mensual de Tasas de Interés'),
+    data(100, 'Boletín de Reservas Internacionales. Octubre 2026'), make('seps', 5, { category: 'regulacion' }),
+  ];
+  const perEdition = story => (story.sourceId === 'bce-publicaciones' ? 1 : undefined);
+  assert.deepEqual(capPerEdition(list, perEdition).map(story => story.id).sort(), ['bce-publicaciones-100', 'bce-publicaciones-48', 'bce-publicaciones-60', 'seps-5']);
+});
+
+test('notas sin juicio: valen lo que suelen valer las de su fuente o el canal, no 50 fijos', () => {
+  const judgedAt = new Date(now).toISOString();
+  const judged = score => ({ score, why: '', cluster: `c${score}`, model: 'claude-opus-5-5', at: judgedAt });
+  const channel = [40, 45, 52, 70, 75].map((score, i) => make(`s${i}`, 2 + i, { editorial: judged(score) }));
+  const expected = expectedScore(channel);
+  assert.equal(expected(make('nueva', 1)), 52);
+  const weak = [35, 38, 40].map((score, i) => make('debil', 10 + i, { id: `debil-${i}`, editorial: judged(score) }));
+  assert.equal(expectedScore([...channel, ...weak])(make('debil', 1)), 38);
+  assert.equal(expectedScore([make('a', 1, { editorial: judged(90) })], 50)(make('b', 1)), 50);
+  // En la composición, la nota nueva de una fuente que suele puntuar bajo no pasa por delante de una juzgada con 45.
+  const fresh = make('debil', 1, { id: 'debil-nueva' });
+  const order = composeChannel([...channel, ...weak, fresh], { now, threshold: 30 }).map(story => story.id);
+  assert.ok(order.indexOf('s1-3') < order.indexOf('debil-nueva'), order.join(' '));
+  assert.ok(order.indexOf('debil-nueva') < order.indexOf('debil-0'), order.join(' '));
 });
 
 test('con ejecuciones diarias de feeds cortos, la acumulación deja material en 24 horas, 7, 15 y 30 días', () => {

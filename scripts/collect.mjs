@@ -126,6 +126,13 @@ const USER_AGENT = 'NEWS-TV/1.0 (+https://github.com/andrescge/news-tv)';
 const MAX_DATE_LOOKUPS = 200;
 // Tope por canal. Con la acumulación cada canal reúne hasta 30 días; composeEdition reparte este tope entre períodos.
 const MAX_PER_CHANNEL = 80;
+// Tope por tema: en cada canal y período, como mucho 3 notas que nombren a la misma entidad (el hackeo de Binance llegó a ocupar
+// 35 de 76 notas de Cripto). Las notas oficiales no cuentan.
+const MAX_PER_TOPIC = 3;
+// Plazas del canal reservadas a los documentos oficiales de nivel 1 (Fed, BCE europeo, EBA, FSB, BIS…), que sin reserva
+// quedaban fuera del tope de 80 frente a medios prolíficos; lo que no usan vuelve al canal.
+const OFFICIAL_SHARE = 0.25;
+const isOfficial = story => story.kind === 'official' && story.tier === 1;
 // Google News responde 429 a ráfagas: sus fuentes se piden de una en una, con pausa y un reintento.
 const GOOGLE_PAUSE_MS = 2500;
 const GOOGLE_RETRY_MS = 10000;
@@ -352,7 +359,7 @@ async function run() {
   // Un hecho, una nota: las copias y las notas de varios medios sobre el mismo hecho quedan en una antes de pedir juicios.
   const { pool, memo } = await editorialPass(deduplicate(stories, { primary: isPrimary }), previous.tracked?.editorial, now);
   // Todas las notas, de todos los canales, llevan `endeavor` si su titular (o su extracto) nombra a una empresa del directorio.
-  const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
+  const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition, perTopic: MAX_PER_TOPIC, reserve: isOfficial, reserveShare: OFFICIAL_SHARE, refill: true }).map(story => tagEndeavor(story));
   const notes = writeMemo({ pool, edition, memo, now });
   if (Object.keys(notes.notes).length) tracked.editorial = notes;
   const sources = states.map(({ source, ok, funnel, oldState }) => ({ id: source.id, name: source.name, category: source.category, kind: source.kind, tier: source.tier, access: source.access, language: source.language, url: source.site, status: ok ? 'ok' : 'error', checkedAt, lastSuccessAt: ok ? checkedAt : (typeof oldState?.lastSuccessAt === 'string' && parseDate(oldState.lastSuccessAt)) || null, recentCount: edition.filter(story => story.sourceId === source.id).length, ...(funnel ? { funnel } : {}) }));

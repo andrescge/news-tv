@@ -629,45 +629,106 @@ function spread(stories, cap, now, pick = spaced) {
 }
 // Juicio editorial (scripts/editorial.mjs): puntuación 0-100 de la nota, o null si aún no tiene.
 export const editorialScore = story => Number.isFinite(story?.editorial?.score) ? story.editorial.score : null;
+// Puntuación esperada de una nota sin juicio: la mediana de los juicios de su fuente en el canal (con tres o más), si no la del
+// canal (con tres o más), y si no `neutral`. Así una nota recién llegada no queda por encima de la mitad de las juzgadas solo
+// por no tener juicio, ni por debajo de todas: compite con lo que suele valer lo de su fuente.
+const median = values => { if (values.length < 3) return null; const sorted = [...values].sort((a, b) => a - b), middle = sorted.length >> 1; return sorted.length % 2 ? sorted[middle] : (sorted[middle - 1] + sorted[middle]) / 2; };
+export function expectedScore(stories, neutral = 50) {
+  const bySource = new Map(); const all = [];
+  for (const story of stories) {
+    const score = editorialScore(story);
+    if (score == null) continue;
+    all.push(score); bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), score]);
+  }
+  const channel = median(all) ?? neutral;
+  const sources = new Map([...bySource].map(([id, scores]) => [id, median(scores)]).filter(([, value]) => value != null));
+  return story => sources.get(story.sourceId) ?? channel;
+}
+// Tope por tema (`perTopic`): en cada período, como mucho N notas que nombren a la misma entidad (`topics`, las palabras de los
+// nombres propios del titular), por orden de mérito. Las notas oficiales no cuentan ni se recortan.
+function capTopics(stories, { now, perTopic, topics, order, exempt }) {
+  const counts = new Map(); const kept = [];
+  for (const story of [...stories].sort(order)) {
+    if (exempt(story)) { kept.push(story); continue; }
+    const period = periodIndex(story, now);
+    const keys = [...new Set(topics(story) || [])].map(word => `${period}\u0000${word}`);
+    if (keys.some(key => (counts.get(key) || 0) >= perTopic)) continue;
+    for (const key of keys) counts.set(key, (counts.get(key) || 0) + 1);
+    kept.push(story);
+  }
+  return kept;
+}
 // Composición con juicio editorial, si alguna nota del canal lo tiene:
 // - `threshold`: fuera las notas juzgadas con menos puntos, salvo las de fuentes primarias oficiales (`primary`).
 // - Los mismos topes, pero dentro de cada período se eligen las de más puntos (fecha como desempate) en vez de espaciarlas,
 //   y el canal sale ordenado por período (de lo más reciente a lo más antiguo) y, dentro de cada uno, por importancia.
-// - Una nota sin juicio se ordena con `neutral`. Sin ningún juicio en el canal, todo queda como antes (espaciado y por fecha).
-export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now(), threshold = 0, neutral = 50, primary = () => false } = {}) {
+// - Una nota sin juicio vale su puntuación esperada (expectedScore). Sin ningún juicio en el canal, todo queda como antes
+//   (espaciado y por fecha).
+// Opciones de la edición (collect.mjs las activa; por omisión no cambian nada):
+// - `perTopic` y `topics`: tope por tema (capTopics), antes del tope por fuente.
+// - `reserve` y `reserveShare`: plazas reservadas para las notas que cumplen `reserve` (documentos oficiales de nivel 1), que
+//   así no quedan fuera del tope de canal frente a medios prolíficos; lo que no usan vuelve al canal.
+// - `refill`: si después de los topes el canal tiene sitio, se completa con las notas que solo había cortado el tope por fuente
+//   (no de nivel 3): el tope por fuente reparte el canal, no deja huecos.
+export function composeChannel(stories, { cap = 80, limitFor: perPeriod = () => 25, tier3Share = 0.2, now = Date.now(), threshold = 0, neutral = 50, primary = () => false, perTopic = Infinity, topics = () => [], reserve = () => false, reserveShare = 0, refill = false } = {}) {
   const kept = stories.filter(story => { const score = editorialScore(story); return score == null || score >= threshold || primary(story); });
   const ranked = kept.some(story => editorialScore(story) != null);
-  const importance = (a, b) => (editorialScore(b) ?? neutral) - (editorialScore(a) ?? neutral) || byDateDesc(a, b);
+  const expected = expectedScore(stories, neutral);
+  const value = story => editorialScore(story) ?? expected(story);
+  const importance = (a, b) => value(b) - value(a) || byDateDesc(a, b);
+  const merit = (a, b) => (a.tier ?? 9) - (b.tier ?? 9) || quality(b) - quality(a) || byDateDesc(a, b);
   const pick = ranked ? (list, count) => [...list].sort(importance).slice(0, Math.max(0, count)) : spaced;
+  const pool = Number.isFinite(perTopic) ? capTopics(kept, { now, perTopic, topics, order: ranked ? importance : merit, exempt: story => story.kind === 'official' || primary(story) }) : kept;
   const bySource = new Map();
-  for (const story of kept) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
+  for (const story of pool) bySource.set(story.sourceId, [...(bySource.get(story.sourceId) || []), story]);
   const capped = [...bySource.values()].flatMap(list => byPeriod(list, now).flatMap(bucket => pick(bucket, perPeriod(list[0]))));
-  const tier3 = capped.filter(story => story.tier === 3), others = capped.filter(story => story.tier !== 3);
+  const candidates = capped.filter(story => story.tier !== 3 && reserve(story));
+  const reserved = spread(candidates, Math.min(candidates.length, Math.floor(cap * reserveShare)), now, pick);
+  const taken = new Set(reserved);
+  const rest = capped.filter(story => !taken.has(story));
+  const tier3 = rest.filter(story => story.tier === 3), others = rest.filter(story => story.tier !== 3);
   let allowed = Math.min(tier3.length, Math.floor(cap * tier3Share));
-  const main = Math.min(others.length, cap - allowed);
-  allowed = Math.min(allowed, Math.floor(main * tier3Share / (1 - tier3Share) + 1e-9));
-  const result = [...spread(others, main, now, pick), ...spread(tier3, allowed, now, pick)];
+  const main = Math.min(others.length, cap - reserved.length - allowed);
+  allowed = Math.min(allowed, Math.floor((reserved.length + main) * tier3Share / (1 - tier3Share) + 1e-9));
+  const result = [...reserved, ...spread(others, main, now, pick), ...spread(tier3, allowed, now, pick)];
+  if (refill && result.length < cap) {
+    const chosen = new Set(result);
+    result.push(...spread(pool.filter(story => story.tier !== 3 && !chosen.has(story)), cap - result.length, now, pick));
+  }
   return ranked ? result.sort((a, b) => periodIndex(a, now) - periodIndex(b, now) || importance(a, b)) : result.sort(byDateDesc);
 }
+// Serie de una publicación periódica: el titular sin la fecha ni el número («Boletín Monetario Semanal. 13 de Noviembre 2026»
+// y «Boletín Monetario Semanal. 6 de Noviembre 2026» son la misma serie; «Boletín de Reservas Internacionales. Octubre 2026»,
+// otra).
+const SERIES_CUT = new RegExp(String.raw`[.:;(]|\s\S*\d|\s(?:de\s)?(?:${Object.keys(months).join('|')})(?![a-z])`);
+export function editionSeries(title) {
+  const folded = foldText(title).trim();
+  const cut = folded.search(SERIES_CUT);
+  return (cut > 0 ? folded.slice(0, cut) : folded).trim();
+}
 // Tope por edición (`perEdition` de la fuente, por ejemplo los boletines de datos del BCE): solo las N más recientes de
-// esa fuente en toda la edición, puntúen lo que puntúen.
+// cada serie de esa fuente (editionSeries) en toda la edición, puntúen lo que puntúen.
 export function capPerEdition(stories, perEdition = () => undefined) {
   const counts = new Map();
   return [...stories].sort(byDateDesc).filter(story => {
     const max = perEdition(story);
     if (!Number.isInteger(max)) return true;
-    const count = counts.get(story.sourceId) || 0;
-    counts.set(story.sourceId, count + 1);
+    const key = `${story.sourceId}\u0000${editionSeries(story.title)}`;
+    const count = counts.get(key) || 0;
+    counts.set(key, count + 1);
     return count < max;
   });
 }
 // Con juicio editorial la edición va canal por canal, cada uno en su orden de importancia (site/app.js lo respeta); sin
-// juicio, toda la edición va por fecha, como antes.
+// juicio, toda la edición va por fecha, como antes. Con `perTopic`, los temas salen de los nombres propios de los titulares de
+// toda la edición (coverageSignatures).
 export function composeEdition(stories, options = {}) {
   const pool = options.perEdition ? capPerEdition(stories, options.perEdition) : stories;
+  const signatures = Number.isFinite(options.perTopic) ? coverageSignatures(pool) : null;
+  const topics = signatures ? story => [...(signatures.get(story)?.entities || [])] : options.topics;
   const byChannel = new Map();
   for (const story of pool) byChannel.set(story.category, [...(byChannel.get(story.category) || []), story]);
-  const composed = [...byChannel.values()].flatMap(list => composeChannel(list, options));
+  const composed = [...byChannel.values()].flatMap(list => composeChannel(list, { ...options, ...(topics ? { topics } : {}) }));
   return composed.some(story => editorialScore(story) != null) ? composed : composed.sort(byDateDesc);
 }
 
