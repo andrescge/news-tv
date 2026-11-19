@@ -251,9 +251,12 @@ const EQUIVALENTS = {
   fmi: ['imf'], bpi: ['bis'], ocde: ['oecd'], mundial: ['world'], senado: ['senate'], congreso: ['congress'], parlamento: ['parliament'],
   camara: ['house', 'chamber'], representantes: ['representatives', 'house'], tribunal: ['court', 'tribunal'], corte: ['court'], suprema: ['supreme'],
   ministerio: ['ministry'], ministro: ['minister'], hacienda: ['treasury', 'finance', 'hmt'], gobierno: ['government', 'gov'],
-  autoridad: ['authority'], oficina: ['office'], justicia: ['justice', 'doj'], junta: ['board'], consejo: ['council', 'board'],
+  autoridad: ['authority'], oficina: ['office', 'occ'], justicia: ['justice', 'doj'], junta: ['board'], consejo: ['council', 'board'],
   ley: ['act', 'law', 'bill'], proyecto: ['project'], nueva: ['new'], basilea: ['basel'], dabi: ['dhabi'], londres: ['london'],
   sudafrica: ['south africa'], arabia: ['arabia', 'saudi'], saudi: ['saudi'], ia: ['ai'],
+  inglaterra: ['england', 'boe'], sur: ['south'], norte: ['north'], casa: ['house', 'white'], blanca: ['white'],
+  contralor: ['comptroller', 'occ'], moneda: ['currency', 'coin', 'occ'], financiera: ['financ', 'fca'], financiero: ['financ'],
+  conducta: ['conduct', 'fca'], seguros: ['insur', 'fdic'], depositos: ['deposit', 'fdic'], corporacion: ['corporation', 'corp', 'fdic'],
 };
 const SENTENCE_START = /(?:^|[.!?¿¡:«"“(])\s*$/u;
 function nameOk(word, tokens, raw) {

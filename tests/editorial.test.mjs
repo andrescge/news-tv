@@ -109,6 +109,14 @@ test('capa editorial: la traducción automática solo existe en notas en inglés
     const judgment = esOf(visa, es);
     assert.deepEqual([judgment.score, judgment.es, judgment.cluster], [70, undefined, 'x-y'], es);
   }
+  // Los nombres traducidos de instituciones y países que sí están en el original se aceptan.
+  for (const [title, es] of [
+    ['Bank of England to tighten stablecoin rules', 'El Banco de Inglaterra endurecerá las reglas de stablecoins'],
+    ['South Korea passes crypto bill', 'Corea del Sur aprueba una ley cripto'],
+    ['OCC grants charter to crypto firm', 'La Oficina del Contralor de la Moneda (OCC) otorga licencia a una empresa cripto'],
+    ['UK Financial Conduct Authority fines bank', 'La Autoridad de Conducta Financiera del Reino Unido multa a un banco'],
+    ['White House backs AI payments push', 'La Casa Blanca respalda el impulso a los pagos con IA'],
+  ]) assert.equal(esOf(english('i', 1, { title }), es).es, es, es);
   // Las valoraciones del propio original sí se traducen.
   assert.equal(esOf(english('k', 1, { title: 'Key ruling for stablecoin issuers' }), 'Fallo clave para los emisores de stablecoins').es, 'Fallo clave para los emisores de stablecoins');
   assert.equal(esOf(english('g', 1, { title: 'German parliament passes bill allowing crypto seizures' }), 'El Parlamento de Alemania aprueba una ley que permite incautar cripto').es, 'El Parlamento de Alemania aprueba una ley que permite incautar cripto');
