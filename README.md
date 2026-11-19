@@ -59,6 +59,8 @@ Luego se compone cada canal:
 10. **Nivel 3.** Como máximo el 20 % del canal.
 11. **Orden.** Sin juicio editorial, por fecha (de la más reciente a la más antigua). Con juicio, por período y, dentro de cada período, por puntuación (la fecha desempata). Una nota todavía sin juicio vale lo que suelen valer las de su fuente en ese canal (la mediana de sus juicios, con tres o más); si no, la mediana del canal, y sin tres juicios en el canal, 50. Así no se pone por encima de la mitad de las notas juzgadas solo por no tener juicio. La pantalla respeta ese orden cuando el canal lo trae.
 
+Cuando el feed vuelve a traer una nota que la edición anterior ya tenía, la copia nueva conserva el juicio editorial (si el titular no cambió) y los medios de `coverage`: no se pide otra vez el mismo juicio.
+
 ### Capa editorial
 
 Entre la recopilación y la composición, `scripts/editorial.mjs` pide a un modelo de lenguaje de Anthropic (la API de Claude) un juicio sobre cada nota **nueva**, es decir, sin juicio previo. El modelo recibe titular, extracto, medio, tipo, nivel, idioma y fecha de cada nota, más las notas ya juzgadas del mismo canal de los últimos cuatro días, para reconocer un hecho ya contado. Cada nota recibe:

@@ -570,11 +570,22 @@ export function editionShape(data) {
   const isObject = value => !!value && typeof value === 'object' && !Array.isArray(value);
   return isObject(data) && Array.isArray(data.stories) && Array.isArray(data.sources) && (data.tracked === undefined || isObject(data.tracked));
 }
+// Si el feed vuelve a traer una nota que la edición anterior ya tenía, gana la copia nueva, pero conserva el juicio editorial
+// (si el titular no cambió) y los medios de `coverage` de la anterior: así no se pide otra vez el mismo juicio. Los dos campos
+// se revalidan en la capa editorial (cleanStory).
+function inherit(story, old) {
+  const extra = {};
+  if (old.editorial && !story.editorial && old.title === story.title) extra.editorial = old.editorial;
+  if (Array.isArray(old.coverage) && !story.coverage) extra.coverage = old.coverage;
+  return Object.keys(extra).length ? { ...story, ...extra } : story;
+}
 export function accumulate(fresh, previous, source, { ok = true, now = Date.now(), keep = () => true } = {}) {
   const byId = new Map();
   for (const story of fresh) if (!byId.has(story.id)) byId.set(story.id, story);
   for (const old of Array.isArray(previous) ? previous : []) {
-    if (!carryable(old, source) || byId.has(old.id) || !recent(old.publishedAt, now)) continue;
+    if (!carryable(old, source)) continue;
+    if (byId.has(old.id)) { byId.set(old.id, inherit(byId.get(old.id), old)); continue; }
+    if (!recent(old.publishedAt, now)) continue;
     let kept; try { kept = keep(old); } catch { kept = false; }
     if (!kept) continue;
     const { stale, ...story } = source.adapter === 'registro-oficial' ? readableNorm(old) : old;

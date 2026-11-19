@@ -1003,6 +1003,18 @@ test('notas sin juicio: valen lo que suelen valer las de su fuente o el canal, n
   assert.ok(order.indexOf('debil-nueva') < order.indexOf('debil-0'), order.join(' '));
 });
 
+test('acumulación: la copia nueva de una nota ya publicada conserva su juicio y su cobertura', () => {
+  const feed = { id: 'medio', name: 'Medio', category: 'pagos', kind: 'news', tier: 2, access: 'open' };
+  const editorial = { score: 72, why: '', cluster: 'hecho', model: 'claude-opus-5-5', at: new Date(now).toISOString() };
+  const previous = [{ ...make('medio', 2), editorial, coverage: ['Reuters'] }, { ...make('medio', 3), title: 'Titular anterior', editorial }];
+  const fresh = [make('medio', 2), make('medio', 3)];
+  const result = accumulate(fresh, previous, feed, { now });
+  const same = result.find(story => story.id === 'medio-2'), changed = result.find(story => story.id === 'medio-3');
+  assert.deepEqual([same.editorial, same.coverage], [editorial, ['Reuters']]);
+  // Si el titular cambió, el juicio se vuelve a pedir.
+  assert.deepEqual([changed.title, changed.editorial], ['Nota medio 3', undefined]);
+});
+
 test('con ejecuciones diarias de feeds cortos, la acumulación deja material en 24 horas, 7, 15 y 30 días', () => {
   // Tres fuentes cuyo feed solo conserva dos días, con 10 notas diarias; 40 días de ejecuciones.
   const feeds = ['uno', 'dos', 'tres'].map(id => ({ id, name: id, category: 'pagos', kind: 'news', tier: 1, access: 'open', limit: 4 }));
