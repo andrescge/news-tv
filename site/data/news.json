@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-19T18:11:54.710Z",
+  "generatedAt": "2026-11-19T18:16:26.696Z",
   "stories": [
     {
       "id": "d0746538b1d57d455a7b",
@@ -217,29 +217,6 @@
         "model": "claude-opus-5-5",
         "at": "2026-11-19T13:06:26.728Z",
         "why": "Iosco advierte que muchos productos vendidos como acciones tokenizadas no otorgan derechos ni beneficios económicos sobre las empresas que replican."
-      }
-    },
-    {
-      "id": "070a8ee52c9b089d3402",
-      "sourceId": "decrypt",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Fed's Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",
-      "excerpt": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scale.",
-      "url": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
-      "source": "Decrypt",
-      "sourceUrl": "https://decrypt.co/feed",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-18T18:16:02.000Z",
-      "tier": 2,
-      "access": "open",
-      "editorial": {
-        "score": 50,
-        "cluster": "fed-waller-subida-tokenizacion",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T18:07:31.121Z",
-        "es": "Waller, de la Fed, pide una subida de tipos de 50 puntos básicos y dice que las finanzas tokenizadas aún necesitan a los bancos tradicionales"
       }
     },
     {
@@ -649,6 +626,29 @@
       }
     },
     {
+      "id": "070a8ee52c9b089d3402",
+      "sourceId": "decrypt",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Fed's Waller Calls for 50-Basis-Point Rate Hike, Says Tokenized Finance Still Needs Traditional Banks",
+      "excerpt": "Christopher Waller says stubborn inflation may warrant a bigger December rate hike, while a separate speech outlined why blockchain-based payments still need traditional settlement systems and stronger safeguards to scale.",
+      "url": "https://decrypt.co/383566/fed-waller-50-basis-point-rate-hike-tokenized-finance-banks",
+      "source": "Decrypt",
+      "sourceUrl": "https://decrypt.co/feed",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T18:16:02.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 50,
+        "cluster": "fed-waller-subida-tokenizacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:07:31.121Z",
+        "es": "Waller, de la Fed, pide una subida de tipos de 50 puntos básicos y dice que las finanzas tokenizadas aún necesitan a los bancos tradicionales"
+      }
+    },
+    {
       "id": "7f6dfe53abfa26c095ef",
       "sourceId": "cinco-dias-cripto",
       "category": "cripto",
@@ -903,10 +903,6 @@
       "publishedAt": "2026-11-06T08:00:00.000Z",
       "tier": 1,
       "access": "mixed",
-      "coverage": [
-        "The Paypers",
-        "PYMNTS.com"
-      ],
       "editorial": {
         "score": 72,
         "cluster": "nubank-mercado-pago-cripto-suspension",
@@ -914,6 +910,16 @@
         "at": "2026-11-19T18:11:54.710Z",
         "es": "Nubank y Mercado Pago suspenden transferencias cripto tras una falla de un proveedor externo"
       },
+      "coverage": [
+        "The Paypers",
+        "PYMNTS.com",
+        "El Economista",
+        "La Jornada",
+        "EL CEO",
+        "Bloomberg Línea",
+        "Diario Financiero",
+        "iProUP"
+      ],
       "endeavor": {
         "company": "MercadoLibre.com",
         "country": "Argentina",
@@ -1003,17 +1009,17 @@
       "publishedAt": "2026-11-05T13:28:53.000Z",
       "tier": 1,
       "access": "paywall",
-      "coverage": [
-        "Financial Times · Fintech",
-        "Diario Financiero"
-      ],
       "editorial": {
         "score": 68,
         "cluster": "credit-mutuel-arkea-hackeo",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z",
         "es": "El banco francés Crédit Mutuel Arkéa busca recuperar fondos tras un hackeo de 100 millones de euros"
-      }
+      },
+      "coverage": [
+        "Financial Times · Fintech",
+        "Diario Financiero"
+      ]
     },
     {
       "id": "d565bc5cf57f73d94538",
@@ -1053,16 +1059,16 @@
       "publishedAt": "2026-11-12T00:00:00.000Z",
       "tier": 1,
       "access": "open",
-      "coverage": [
-        "Banco Central Europeo"
-      ],
       "editorial": {
         "score": 62,
         "cluster": "ecb-cipollone-euro-digital-efectivo",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z",
         "es": "Piero Cipollone: El efectivo y el euro digital, dos caras de la misma moneda"
-      }
+      },
+      "coverage": [
+        "Banco Central Europeo"
+      ]
     },
     {
       "id": "3ccc6e0d9616e23ab404",
@@ -1269,98 +1275,6 @@
       ]
     },
     {
-      "id": "fd67071f054ac56a61d0",
-      "sourceId": "expansion-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "El mayor mercado cripto de Brasil también sufre un ciberataque",
-      "excerpt": "El mercado cripto digiere aún los efectos del robo histórico a Binance cuando se ve obligado a desviar también el foco hacia otro 'hackeo', el sufrido por la mayor plataforma de negociación cripto de Brasil, Mercado Bitcoin. Leer",
-      "url": "https://www.expansion.com/mercados/criptomonedas/2026/11/03/mayor-mercado-cripto-brasil-tambien-sufre-ciberataque.html",
-      "source": "Expansión · Criptomonedas",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-03T11:13:07.000Z",
-      "tier": 1,
-      "access": "mixed",
-      "endeavor": {
-        "company": "Mercado Bitcoin",
-        "country": "Brasil",
-        "vertical": "Fintech",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercado-bitcoin#mercado-bitcoin"
-      }
-    },
-    {
-      "id": "7cc9c38ad343e2d2f625",
-      "sourceId": "expansion-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Las retiradas de clientes de Binance ascienden ya a 4.460 millones",
-      "excerpt": "Las retiradas de efectivo de Binance por parte de clientes no han cesado desde el domingo. Leer",
-      "url": "https://www.expansion.com/mercados/criptomonedas/2026/11/03/retiradas-clientes-binance-ascienden-4-460-millones.html",
-      "source": "Expansión · Criptomonedas",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-03T00:35:06.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "06c80af9de4f00f057a4",
-      "sourceId": "chainalysis",
-      "category": "cripto",
-      "kind": "company",
-      "title": "Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",
-      "excerpt": "Early this morning Mercado Bitcoin, Brazil’s largest crypto exchange, suffered a security incident that resulted in approximately $49 million in…",
-      "url": "https://www.chainalysis.com/blog/chainalysis-response-mercado-bitcoin/",
-      "source": "Chainalysis",
-      "sourceUrl": "https://www.chainalysis.com/blog/feed/",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-02T22:59:13.000Z",
-      "tier": 3,
-      "access": "open",
-      "endeavor": {
-        "company": "Mercado Bitcoin",
-        "country": "Brasil",
-        "vertical": "Fintech",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercado-bitcoin#mercado-bitcoin"
-      }
-    },
-    {
-      "id": "260d98c149c97659724f",
-      "sourceId": "expansion-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "El robo a Binance dispara la alarma sobre la seguridad 'cripto'",
-      "excerpt": "El viernes un grupo de hackers atacó la plataforma y sustrajo 6.300 millones de dólares, el mayor robo de la historia 'cripto'. Los expertos explican que el problema no es la tecnología, sino los intermediarios. Leer",
-      "url": "https://www.expansion.com/mercados/criptomonedas/2026/10/31/robo-binance-dispara-alarma-sobre-seguridad-cripto.html",
-      "source": "Expansión · Criptomonedas",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T23:52:03.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "f5f12e44eb991b83c4b8",
-      "sourceId": "expansion-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Acusan a Corea del Norte de estar detrás del hackeo a Binance",
-      "excerpt": "Dos firmas de seguridad digital y prevención de delitos financieros acusaron este viernes al grupo TraderTraitor, vinculado al gobierno de Corea del Norte, de estar detrás del hackeo multimillonario de Binance, la mayor plataforma de criptomonedas del mundo. Leer",
-      "url": "https://www.expansion.com/mercados/criptomonedas/2026/10/30/acusan-corea-norte-detras-hackeo-binance.html",
-      "source": "Expansión · Criptomonedas",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T13:56:42.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
       "id": "df9e1aafae9861194f40",
       "sourceId": "expansion-cripto",
       "category": "cripto",
@@ -1377,6 +1291,91 @@
       "access": "mixed",
       "coverage": [
         "Cinco Días · Criptoactivos"
+      ],
+      "editorial": {
+        "score": 80,
+        "cluster": "bit2me-stx-cnmv-bolsa-blockchain",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "09903a74f0eb24a5b859",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "El fondo europeo de rescate emite su primer bono digital en Pontes, la plataforma del BCE",
+      "excerpt": "La emisión por valor de 1.000 millones de euros, se gestiona en la ‘blockchain` y se liquida con dinero del banco central",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-27/el-fondo-europeo-de-rescate-emite-su-primer-bono-digital-en-pontes-la-plataforma-del-bce.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-27T10:33:38.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 80,
+        "cluster": "mede-bono-digital-pontes",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "96cfc21fe2c643026ea2",
+      "sourceId": "ft-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "FBI blames North Korean group for $6.3bn Binance cyber heist",
+      "excerpt": "Crypto exchanges move to tighten security after record theft from world’s biggest digital assets venue",
+      "url": "https://www.ft.com/content/c7062e37-86fd-45ef-8f58-573de0fcaaf0?syn-25a6b1a6=1",
+      "source": "Financial Times · Cryptofinance",
+      "sourceUrl": "https://www.ft.com/cryptofinance?format=rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-01T04:24:02.000Z",
+      "tier": 1,
+      "access": "paywall",
+      "coverage": [
+        "Reuters",
+        "Cinco Días · Criptoactivos",
+        "Chainalysis",
+        "Bloomberg Línea"
+      ],
+      "editorial": {
+        "score": 78,
+        "cluster": "fbi-corea-norte-binance-robo",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El FBI culpa a un grupo norcoreano del ciberrobo de US$6.300 millones a Binance"
+      }
+    },
+    {
+      "id": "fdb320fd131953fd12a7",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Las claves del robo del siglo en Binance: qué ocurrió, quién está detrás y cómo puede sobrevivir la empresa",
+      "excerpt": "Un grupo de ciberdelincuentes norcoreanos se hizo con 6.300 millones de la mayor plataforma cripto del mundo",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-31/las-claves-del-robo-del-siglo-en-binance-que-ocurrio-quien-esta-detras-y-como-puede-sobrevivir-la-empresa.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-31T04:30:01.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 78,
+        "cluster": "binance-hackeo-robo",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      },
+      "coverage": [
+        "Financial Times · Cryptofinance",
+        "Reuters",
+        "Bloomberg Línea",
+        "Expansión · Criptomonedas"
       ]
     },
     {
@@ -1397,6 +1396,141 @@
       "coverage": [
         "FinTech Futures",
         "Reuters"
+      ],
+      "editorial": {
+        "score": 78,
+        "cluster": "ripple-lanza-banco",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "f400b80f746408bec754",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "¿Ley de rescate fiscal en Colombia le pondría impuesto al bitcoin, ether y otras cripto? así lo plantea el Gobierno",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQR0VhTkZhaW1mUjAwUjNzam1TNlZEVkc3OFJsRlg2V0tOR3pTYW82R2dTdjZrR2puWWIwWWxaN0w2cHcwMWJhTnhxd1hQbC1KOGtzWHNHS3hEVl9ZbXQzaHZFa3ZNaTdXN1VpNjJFR0hnUmM3a2RJYUFfS2Ftbmh5UlJiZ2Job2ptSHd5MVY1NUtleURLLTcxLXdBV0V0cXlOOEtwTGd2dm1xQUtOSVVoZWtBaE40Q0dfRGJNWkZhbnJ4b2JxNVhBTlZuc3NwYnFzODFFYm1xZ09VaUlQdDFZRnMwQ3NwTHRTa2wyZlJxemdnbUFDVlNnNzgzY9IBjwJBVV95cUxNVjRwVmx1cnRkRUVpQkFONnNkR0ZaMDdJM21rU0xSLXgtSFkwaVVvNnlMVUlORGlwRTVwUGJSZlpuSlBfOThBbmtqMm81UzBRMkNtbmRRTGtHRnRnZkR1Ykg3X3RRZW80UjBmWmR1dnNkV2NJZHB6YVB1QURlME9qQ2czM1hRRWNoRDBYZVlDVDhIYzdGelhRVXI4aFRNdUZCbElMUEVMbndsM3hHQWl1ZGc5dzR6a21nSURfOUJ4TUxuUG8yRkF6QmFscnVTSTZSaWdBZEZ1WnlGZUZVT0lzWGZHSi0xTXNrV2JmVnNtOUVsTFRReXlrdVBzNWdJNnA3VHktNlhJTnY1WWJ3WnRj?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 72,
+        "cluster": "colombia-ley-fiscal-impuesto-cripto",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "fd67071f054ac56a61d0",
+      "sourceId": "expansion-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "El mayor mercado cripto de Brasil también sufre un ciberataque",
+      "excerpt": "El mercado cripto digiere aún los efectos del robo histórico a Binance cuando se ve obligado a desviar también el foco hacia otro 'hackeo', el sufrido por la mayor plataforma de negociación cripto de Brasil, Mercado Bitcoin. Leer",
+      "url": "https://www.expansion.com/mercados/criptomonedas/2026/11/03/mayor-mercado-cripto-brasil-tambien-sufre-ciberataque.html",
+      "source": "Expansión · Criptomonedas",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/mercados/criptomonedas.xml",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-03T11:13:07.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 72,
+        "cluster": "mercado-bitcoin-hackeo-brasil",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      },
+      "coverage": [
+        "Chainalysis"
+      ],
+      "endeavor": {
+        "company": "Mercado Bitcoin",
+        "country": "Brasil",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercado-bitcoin#mercado-bitcoin"
+      }
+    },
+    {
+      "id": "c086f42d5d370961b943",
+      "sourceId": "ft-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Crypto exchange HTX agrees to exit UK after being sued by watchdog",
+      "excerpt": "Venture linked to billionaire Trump backer Justin Sun sued by FCA for ‘unlawfully promoting crypto asset services’",
+      "url": "https://www.ft.com/content/54c236ef-af7a-40df-9f0f-abf3d6c825d2?syn-25a6b1a6=1",
+      "source": "Financial Times · Cryptofinance",
+      "sourceUrl": "https://www.ft.com/cryptofinance?format=rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T12:12:38.000Z",
+      "tier": 1,
+      "access": "paywall",
+      "coverage": [
+        "Reuters"
+      ],
+      "editorial": {
+        "score": 72,
+        "cluster": "htx-salida-reino-unido-fca",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El exchange cripto HTX acepta salir del Reino Unido tras ser demandado por el regulador. La FCA lo demandó por promocionar ilegalmente servicios de criptoactivos."
+      }
+    },
+    {
+      "id": "5cb8e6ece0807d9c1acd",
+      "sourceId": "reuters-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Swedish central bank revives e-krona debate as digital euro, stablecoin threat grows",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPVy1xaDI3WlUteUFnVTZtUGRnbnlYRmRWREp5akpFX29zZGVhajhhUUpXUE1RVjUya3dvNFlVdVlTdmd4TkRNVWdELU5IQmV2U0d1Vk1MXy1teXEzSzhWSWtRU3pRNmpKYUpmQjdIZlV4WlRlbVJRZjhOS3V5TDZ2TFhsM1lXdlhYWF9fdmQ4Z1JhTXpvaVQ2WEdvTHB3R082YmZNVXBkeXktc2Y0SXhScGVnckVqU2xFZnlaZmpwVldxSWlDOGZTZzJLSUpQUQ?oc=5",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 72,
+        "cluster": "riksbank-ekrona-debate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El banco central de Suecia reactiva el debate sobre la e-krona ante la creciente amenaza del euro digital y las stablecoins"
+      }
+    },
+    {
+      "id": "1f0c4cab5c02a13c5e4c",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Una falsa entrevista de trabajo: así se ejecutó el robo a Binance, el mayor hackeo de la historia cripto",
+      "excerpt": "La empresa reconoce que el ataque sufrido el pasado jueves se gestó durante varios meses",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-11-03/una-falsa-entrevista-de-trabajo-asi-se-ejecuto-el-robo-a-binance-el-mayor-hackeo-de-la-historia-cripto.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-03T18:18:46.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 70,
+        "cluster": "binance-hackeo-falsa-entrevista",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      },
+      "coverage": [
+        "Financial Times · Cryptofinance",
+        "Reuters",
+        "Bloomberg Línea"
       ]
     },
     {
@@ -1416,6 +1550,29 @@
       "access": "mixed"
     },
     {
+      "id": "9e07a5aba673e088f998",
+      "sourceId": "reuters-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "SoFi targets idle crypto cash with interest-bearing tokenized deposit",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNdTNDVGs1aXYybEEyeDV3Q0U0LVkyWTljdG9xdHVEcnZPaWxxTHJ2eHRUT2pudDd1aklQdkE0Vm5zTWg1cVk0LVZGcmRvbVdjTFNOMlZ0RWJrX19ib1laQzlXa1FiRDV6eGp5SHFrZDBVSVBnMFZvQXQ0TkN2UTNfSzI5WWhnQTExNGdsNkpXMGI0SDdWZnFFVWVMV1d4d1ZoOFZGTVVmN0szUk1qTU94a0gtWUhndXFQNkI1aFhsdFY0TFU?oc=5",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 68,
+        "cluster": "sofi-deposito-tokenizado",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "SoFi apunta al efectivo cripto inactivo con un depósito tokenizado que paga intereses"
+      }
+    },
+    {
       "id": "193a79e3f640903e61b9",
       "sourceId": "reuters-cripto",
       "category": "cripto",
@@ -1432,132 +1589,50 @@
       "access": "mixed"
     },
     {
-      "id": "3e4ad2f09bf8c93b5a3e",
+      "id": "507f3eb48f3b8bd06ea9",
       "sourceId": "reuters-cripto",
       "category": "cripto",
       "kind": "news",
-      "title": "North Korean hackers linked to crypto thefts among world's best, experts say",
+      "title": "Wells Fargo, Intuit latest companies to object to their shares being tokenized, document shows",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQX1VyT1h6VFVDRHB0ZWRFWk9OMVNrYmxIa2lrV181eFhJMEZZMElNNzNLRFVLWGtrWE1lR1hwYjVaS1U4Yjg0RXlIbjZrUHFtREZJUzY2YU9iVU9tVk93YzY1WERWSmQtUHM3WXEzY056dWtPejRIcHRYc1o3N0RNaG5hQXpCeVVfMUdsdnNaQklBRW5BXzNSeGtvaldFNHNEWkRHMDhBVVFsVEVTajJ4WDExdi1IaFo5ZWV6YUpjb3RVQQ?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPY1IyYVRJX1Vlemd2UTZ5OHpUS2ZYU3A2eHpIel9JOHdrUy1sNG40Mlp6M3h4dDhiZmRnMFR0UU5fSGx0SkdPdTVYU2t4NUxFOW9uZTBEbTNZN1RvZVdfajRXbzRrc2xiVXlZRzNvYVdqWjBtd1NaNjVwVzZnQ1QzVVk3aFhGdk9EWkJZcjdndVlIZXNBd1ZUeWlQVEo0S3NwUzdmOVdmNUxlMnRxSHE2TXA4cm00V29Nc01PVktZbFIzZ2c?oc=5",
       "source": "Reuters",
       "sourceUrl": "https://www.reuters.com/",
       "via": "Vía Google News",
       "language": "en",
-      "publishedAt": "2026-10-30T07:00:00.000Z",
+      "publishedAt": "2026-10-23T07:00:00.000Z",
       "tier": 1,
-      "access": "mixed"
+      "access": "mixed",
+      "editorial": {
+        "score": 60,
+        "cluster": "empresas-objecion-acciones-tokenizadas",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Wells Fargo e Intuit, las últimas empresas en objetar la tokenización de sus acciones, según un documento"
+      }
     },
     {
-      "id": "8f9472823bba1b48a16b",
-      "sourceId": "reuters-cripto",
+      "id": "ac4a1bb98cd64632f69b",
+      "sourceId": "ft-cripto",
       "category": "cripto",
       "kind": "news",
-      "title": "Insight: Crypto blitzes midterms with $176 million to support allies as it prepares for post-Trump era",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNbGVzelluUlRtODRKTG5wazVoU01tTjQ5bkZxZGI2TWpkTDNSc01XZEJaQTJlaE1EREtyZ0lqR2RieHZZcWVHcUk3T0RMNTY2SkwzYmhLY0I3aFZhV3RVbEwtakpyYm1tZHpfMlU2VVBIa0RTRGNLVTZRUVRsajJBdkhybVd6Q2tldlAtZGVBT1lWUUxrN2c4eXlfN1FiRWZYZlpjUmEzd1lKVGlQbjRFSkpPOUstSFpabzNjRnhIeDFnWHNZYmRYWHpYN3Q1SUk?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-10-28T07:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "33ba18b75a6950772ace",
-      "sourceId": "reuters-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "The ultra-wealthy crypto executives who are spending big on the midterms",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdl9uZnNNN3FkWnI1VG8xRkxyTXF5dnJwWEMxYVpXLWZIUUt5N0QwX3pYQWlzdzFRN3hlOXNHcmt6VmZCbTkyQnJnWF9yRXRxTDlPa1JuSFF0Vjk5VFZGRmZYdG5SRDdIcERBLWhrQVpaMmViU21uNXc1NkpDS0Y0Tmd0ZTgwTmFWQzIwaV8tM3JjNnhIQXJKRXU2Y3J2d24xVmp3Yk9ueV9WckhNT1JQbmNNZDQ?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-10-27T07:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "bb7802050788d1f16f73",
-      "sourceId": "reuters-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Crypto money floods the midterms as industry eyes life after Trump",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5sMG1PbG5xRkpNcEpBNkl2dnVkU1RRT1NudWh3b0loZHJNWmhxZ3RfSTNxYVVKLXRydGxUSG9ITkJad1ZjYWltNW5rZ1k5MzlPRXgzQnJ2VUZVSjRpTzd2MVpYQ2Ffdzg?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-10-27T07:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "d9c218c592ac7f2bc256",
-      "sourceId": "reuters-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Netanyahu rebuked for plan to use crypto to bypass economic sanctions",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdEZIYi1YYkZXSDlUeWN0cUgzdzdudTFUNlF5bHE1eVM4Z1NZeUFxVWZrVXp3d0N1dnRRWU5iYzZSc3J5QlJiQ3c4bllDUXFJcFFFdjNGeTFPbGhxc2VRZjYzV1dLSmtKX2JqQlpfd2U4RTFmWUhoRGFtVUVtVWRSc0NBZjc0NjhUdUVLNmM2dDVBYUxLOWRob3BwWkY2bnBKSlhnSGc0aXVfTEZ5RjBsTDJ3?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-10-25T07:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "01d82d03706689983305",
-      "sourceId": "bis-discursos",
-      "category": "cripto",
-      "kind": "official",
-      "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
-      "excerpt": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
-      "url": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
-      "source": "BIS · Discursos de banqueros centrales",
-      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
+      "title": "NYSE owner’s tokenised stock plan hits hurdle as big companies object",
+      "excerpt": "Alphabet, Oracle and Microsoft among 38 groups of a proposed 62 saying they do not want their stocks included",
+      "url": "https://www.ft.com/content/b6fe5be5-b508-4fe5-b705-955ae77f208b?syn-25a6b1a6=1",
+      "source": "Financial Times · Cryptofinance",
+      "sourceUrl": "https://www.ft.com/cryptofinance?format=rss",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "publishedAt": "2026-10-29T16:42:40.000Z",
       "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "f400b80f746408bec754",
-      "sourceId": "bloomberg-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "¿Ley de rescate fiscal en Colombia le pondría impuesto al bitcoin, ether y otras cripto? así lo plantea el Gobierno",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQR0VhTkZhaW1mUjAwUjNzam1TNlZEVkc3OFJsRlg2V0tOR3pTYW82R2dTdjZrR2puWWIwWWxaN0w2cHcwMWJhTnhxd1hQbC1KOGtzWHNHS3hEVl9ZbXQzaHZFa3ZNaTdXN1VpNjJFR0hnUmM3a2RJYUFfS2Ftbmh5UlJiZ2Job2ptSHd5MVY1NUtleURLLTcxLXdBV0V0cXlOOEtwTGd2dm1xQUtOSVVoZWtBaE40Q0dfRGJNWkZhbnJ4b2JxNVhBTlZuc3NwYnFzODFFYm1xZ09VaUlQdDFZRnMwQ3NwTHRTa2wyZlJxemdnbUFDVlNnNzgzY9IBjwJBVV95cUxNVjRwVmx1cnRkRUVpQkFONnNkR0ZaMDdJM21rU0xSLXgtSFkwaVVvNnlMVUlORGlwRTVwUGJSZlpuSlBfOThBbmtqMm81UzBRMkNtbmRRTGtHRnRnZkR1Ykg3X3RRZW80UjBmWmR1dnNkV2NJZHB6YVB1QURlME9qQ2czM1hRRWNoRDBYZVlDVDhIYzdGelhRVXI4aFRNdUZCbElMUEVMbndsM3hHQWl1ZGc5dzR6a21nSURfOUJ4TUxuUG8yRkF6QmFscnVTSTZSaWdBZEZ1WnlGZUZVT0lzWGZHSi0xTXNrV2JmVnNtOUVsTFRReXlrdVBzNWdJNnA3VHktNlhJTnY1WWJ3WnRj?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "389743c7b72c987dbc8f",
-      "sourceId": "bloomberg-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "El mercado cripto colombiano crece más que la región, pero sigue sin regulación",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeXdkbk90UFVnZERtYVhOSml5eW1EaTItRWEwU1FTbldMek5ldzBzbl9jU0Y2cFVRdkpRSmZCbFFMWWhrSUdlWVFOWmp0R3VLU1phSFNvTXNNMUw3NGFYU2lJMzlCQzhWekJfWkY3NDBvNXNlcUVueEhvOUVMN0ZndVBlOVFEcHF4YTlRNDlXS3hwVEdQdFZrYWJYa092OWtSVzBBanlYNjluQXR4aHJ6ZXBZQjZjaUNwUHczcXplb3dOWXJHRHF3aXJqSkFUd9IB4gFBVV95cUxPeE9PWUF3Zktjb2k2YTFUTUtDbDRPMzcyUlJncVhUMUszNjNaWnB6YUNPQzN4ZjhJR3VfNXRpdENiNnptLWE1Tm9mYTBqNmFPT1R0ZklHaFBNc1hJeGt6cE1vMGJjQ3FpakNYei14R3RHUzFXb3kzLTJtbGJoaUFBTGwxTDU5enQ4SEc4c0h3TmQ3R21uNTlkdUt0ZzF6WlZXU3ZsRldRVlpEN1hWcTY3Q0tJYy0yQnBQRUxVUFlPV01fVTFsckhyaVVzUEhRWEg1c18zV2lqcm0tOTIya1VKQ0h3?oc=5",
-      "source": "Bloomberg Línea",
-      "sourceUrl": "https://www.bloomberglinea.com/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "tier": 1,
-      "access": "open"
+      "access": "paywall",
+      "editorial": {
+        "score": 58,
+        "cluster": "nyse-acciones-tokenizadas-objeciones",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El plan de acciones tokenizadas del dueño de la NYSE tropieza con la objeción de grandes empresas. Alphabet, Oracle y Microsoft, entre 38 de 62 grupos propuestos, no quieren que se incluyan sus acciones."
+      }
     },
     {
       "id": "cb23e7b9ee5a7c282dc8",
@@ -1576,38 +1651,178 @@
       "access": "open"
     },
     {
-      "id": "8e0110de30814b351fe0",
+      "id": "01d82d03706689983305",
+      "sourceId": "bis-discursos",
+      "category": "cripto",
+      "kind": "official",
+      "title": "Piero Cipollone: Next-day securities settlement, tokenisation and the transformation of Europe’s financial infrastructure",
+      "excerpt": "Keynote address by Mr Piero Cipollone, Member of the Executive Board of the European Central Bank, at an EU T+1 Industry Committee event on “One year to T+1”, Frankfurt am Main, 29 October 2026.",
+      "url": "https://www.bis.org/speeches/20261102-next-day-securities-settlement-tokenisation-and-transformation-europes-financial-infrastructure",
+      "source": "BIS · Discursos de banqueros centrales",
+      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-02T00:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 55,
+        "cluster": "ecb-cipollone-t1-tokenizacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Piero Cipollone: Liquidación de valores al día siguiente, tokenización y la transformación de la infraestructura financiera de Europa"
+      }
+    },
+    {
+      "id": "9aefee51c7e63ac0275f",
       "sourceId": "bloomberg-cripto",
       "category": "cripto",
       "kind": "news",
-      "title": "Netanyahu afirma que Israel evalúa usar criptomonedas ante la posibilidad de sanciones",
+      "title": "Trump y World Liberty son demandados por operaciones cripto vinculadas a Emiratos Árabes Unidos",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNjVEYzFaSTdUQlpQVDBCRHZOalNxVmpMRUx5MGVCZFVpSjNoZ3g1V1FreVpkRkt1ZS13Z0VzVkk5WkVYYVNJbGQwYm5NeVJVcjN3WjhuODl3ajlYNjNJNDVZQ0Z2eUZ6OXZHTURFRThTc3MtN0JHUE8wVGhMWDZVcElpUXRRenhqaHp0aEYyMnpSdk5LRGZhbTlMUmtYUVJwZHBlWWx4N2pwS1lTSU9fWHJ2a0lxQ29lM0dxbnB3RmtZZ9IB1gFBVV95cUxPZERtdHdvTmZlT1NUeTlSRXJBbHNiaVB0MGpIUDFNYmN5LTBnamhocC1kREpKSmNpWG1RRjBBS1BzdTR6UklCbXR6YTZXTUt2R0tQMFFCM0J1aTJJQ1B2RkphRXhack1hdEFxbFQ2Y2dURnZ2M0pXS202enZFdFlVZjFyWWNJMV9DZXhTbmxvU3VQQkVGRWNXa3VxdTlqLW1tMS1aUWJ0VXp4TVdNSE5jZXc1aEF4V3lFTlg0TnBGSDZpZU1wQUU3N0duSlFHbGVxSWVNYy1B?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPdkF2WG5fZTR1dG5lWWVpNVp5QTMyU21WNngxSU9WdEFfWHlqdVp4SXdjb2tZOXZvRlREOWlKeVhnWlJYR3VRSUd4LVotUWZ1UmNYNkNITDNsTjdfOUpjSDY5bjVRSXkxdjdtSmNzM0lNZndoUmt5SWdLY0NOVnpaUGhTRHRYNUw1X2l3eFFzbnlIcEg0Smt2WG9uSDZaVFdFYjBPbG4zeVlZY2l3dWJpdHZXM1o2Vm1DcS15Z0RjVHE5VTh2bDJCbm9zbmxHN2stM1lrWE1Eb2hhUHZlYjZ3cktn0gH2AUFVX3lxTFBJMTZJSnFjRk9YRjcydGszWTIyaGM3WjRsRGhJcnV1ZDliYmxrMDhpU3Q3aERoeUNVbVpVUmVJUlZ0NllXMkZ5N1gtNE1wdWVQdFFWeTJKV2ZKRmhuUEt1OWpValRJbk1jeVBkenZMMURvVW5qQlpJeXM1V0ZYTkFoeV96MXVNNFRvRkJob0FtUFBiLWJmY3J5NXRSVndiUEVEYTByT29JRy1JbnpHbG1jdXhaOHJUUzdsVFBxeDY3bTZjdGRlMjNIQXpncXgwX0d6VGM2ak1tbVFYcjluSjF2NUt6VU9iQkRIbHZld1lfa05mU0VlUQ?oc=5",
       "source": "Bloomberg Línea",
       "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-10-24T07:00:00.000Z",
+      "publishedAt": "2026-10-22T07:00:00.000Z",
       "tier": 1,
-      "access": "open"
+      "access": "open",
+      "editorial": {
+        "score": 55,
+        "cluster": "trump-world-liberty-demanda-emiratos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
     },
     {
-      "id": "1b135222afdc83797cfa",
-      "sourceId": "ft-cripto",
+      "id": "14e67692d27a0f6d725f",
+      "sourceId": "cinco-dias-cripto",
       "category": "cripto",
       "kind": "news",
-      "title": "$6.3bn in 30 minutes: how the world’s biggest heist unfolded",
-      "excerpt": "North Korean hackers’ attack on Binance takes crypto theft to an unprecedented scale",
-      "url": "https://www.ft.com/content/e84eceda-040b-4e5f-b906-09768085933a?syn-25a6b1a6=1",
-      "source": "Financial Times · Cryptofinance",
-      "sourceUrl": "https://www.ft.com/cryptofinance?format=rss",
+      "title": "Stijn Vander Straeten (Crypto Finance): “En 10 años el mercado será híbrido, las finanzas tradicionales coexistirán con las tokenizadas”",
+      "excerpt": "El CEO de la compañía, que se ha convertido en el brazo de activos digitales de Deutsche Börse, asegura que continúa el apetito de los bancos por las cripto",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-11-02/stijn-vander-straeten-crypto-finance-en-10-anos-el-mercado-sera-hibrido-las-finanzas-tradicionales-coexistiran-con-las-tokenizadas.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-30T22:17:15.000Z",
+      "language": "es",
+      "publishedAt": "2026-11-02T04:25:00.000Z",
       "tier": 1,
-      "access": "paywall",
+      "access": "mixed"
+    },
+    {
+      "id": "63f6c02d2df29a64325f",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Víctor Rodríguez (CNMV): “No podemos aceptar ‘stablecoins’ no conformes a MiCA en la UE”",
+      "excerpt": "Varios supervisores europeos reconocen la necesidad de una mayor convergencia supervisora y proteger a los inversores frente a las entidades no autorizadas",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-29/victor-rodriguez-cnmv-no-podemos-aceptar-stablecoins-no-conformes-a-mica-en-la-ue.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-29T13:53:40.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 50,
+        "cluster": "cnmv-stablecoins-mica",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "21c1340df8471a6927de",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Las idas y venidas de la regulación cripto exponen el embrollo de la supervisión europea",
+      "excerpt": "El debate sobre quién debe vigilar a los ‘exchanges’ amenaza con crear solapamientos entre reguladores y permitir controles desiguales dentro de la industria",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-27/las-idas-y-venidas-de-la-regulacion-cripto-exponen-el-embrollo-de-la-supervision-europea.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-10-27T04:25:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 50,
+        "cluster": "ue-supervision-cripto-debate",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "334789cb0d51c7090a16",
+      "sourceId": "cinco-dias-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "La banca reformula su apuesta cripto y entra en la carrera por tokenizar el dinero",
+      "excerpt": "Las entidades financieras quieren ir más allá de la compraventa y custodia de criptos. Apuestan por las ‘stablecoins’, los depósitos tokenizados y por incorporar la ‘blockchain’ a su operativa",
+      "url": "https://cincodias.elpais.com/criptoactivos/2026-11-03/la-banca-reformula-su-apuesta-cripto-y-entra-en-la-carrera-por-tokenizar-el-dinero.html",
+      "source": "Cinco Días · Criptoactivos",
+      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-03T04:30:01.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 48,
+        "cluster": "banca-tokenizacion-dinero-tendencia",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "389743c7b72c987dbc8f",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "El mercado cripto colombiano crece más que la región, pero sigue sin regulación",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeXdkbk90UFVnZERtYVhOSml5eW1EaTItRWEwU1FTbldMek5ldzBzbl9jU0Y2cFVRdkpRSmZCbFFMWWhrSUdlWVFOWmp0R3VLU1phSFNvTXNNMUw3NGFYU2lJMzlCQzhWekJfWkY3NDBvNXNlcUVueEhvOUVMN0ZndVBlOVFEcHF4YTlRNDlXS3hwVEdQdFZrYWJYa092OWtSVzBBanlYNjluQXR4aHJ6ZXBZQjZjaUNwUHczcXplb3dOWXJHRHF3aXJqSkFUd9IB4gFBVV95cUxPeE9PWUF3Zktjb2k2YTFUTUtDbDRPMzcyUlJncVhUMUszNjNaWnB6YUNPQzN4ZjhJR3VfNXRpdENiNnptLWE1Tm9mYTBqNmFPT1R0ZklHaFBNc1hJeGt6cE1vMGJjQ3FpakNYei14R3RHUzFXb3kzLTJtbGJoaUFBTGwxTDU5enQ4SEc4c0h3TmQ3R21uNTlkdUt0ZzF6WlZXU3ZsRldRVlpEN1hWcTY3Q0tJYy0yQnBQRUxVUFlPV01fVTFsckhyaVVzUEhRWEg1c18zV2lqcm0tOTIya1VKQ0h3?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 45,
+        "cluster": "colombia-mercado-cripto-sin-regulacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "d9c218c592ac7f2bc256",
+      "sourceId": "reuters-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Netanyahu rebuked for plan to use crypto to bypass economic sanctions",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOdEZIYi1YYkZXSDlUeWN0cUgzdzdudTFUNlF5bHE1eVM4Z1NZeUFxVWZrVXp3d0N1dnRRWU5iYzZSc3J5QlJiQ3c4bllDUXFJcFFFdjNGeTFPbGhxc2VRZjYzV1dLSmtKX2JqQlpfd2U4RTFmWUhoRGFtVUVtVWRSc0NBZjc0NjhUdUVLNmM2dDVBYUxLOWRob3BwWkY2bnBKSlhnSGc0aXVfTEZ5RjBsTDJ3?oc=5",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-25T07:00:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 45,
+        "cluster": "israel-cripto-sanciones-netanyahu",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Netanyahu recibe críticas por su plan de usar cripto para eludir sanciones económicas"
+      },
       "coverage": [
-        "Reuters"
+        "Bloomberg Línea"
       ]
     },
     {
@@ -1624,23 +1839,17 @@
       "language": "en",
       "publishedAt": "2026-10-30T11:20:19.000Z",
       "tier": 1,
-      "access": "paywall"
-    },
-    {
-      "id": "ac4a1bb98cd64632f69b",
-      "sourceId": "ft-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "NYSE owner’s tokenised stock plan hits hurdle as big companies object",
-      "excerpt": "Alphabet, Oracle and Microsoft among 38 groups of a proposed 62 saying they do not want their stocks included",
-      "url": "https://www.ft.com/content/b6fe5be5-b508-4fe5-b705-955ae77f208b?syn-25a6b1a6=1",
-      "source": "Financial Times · Cryptofinance",
-      "sourceUrl": "https://www.ft.com/cryptofinance?format=rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T16:42:40.000Z",
-      "tier": 1,
-      "access": "paywall"
+      "access": "paywall",
+      "editorial": {
+        "score": 40,
+        "cluster": "corea-norte-hackeo-perfil",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Cómo Corea del Norte se convirtió en una superpotencia del hackeo"
+      },
+      "coverage": [
+        "Reuters"
+      ]
     },
     {
       "id": "bd495afbcef8a23c79d3",
@@ -1659,71 +1868,14 @@
       "access": "paywall",
       "coverage": [
         "Financial Times · Fintech"
-      ]
-    },
-    {
-      "id": "334789cb0d51c7090a16",
-      "sourceId": "cinco-dias-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "La banca reformula su apuesta cripto y entra en la carrera por tokenizar el dinero",
-      "excerpt": "Las entidades financieras quieren ir más allá de la compraventa y custodia de criptos. Apuestan por las ‘stablecoins’, los depósitos tokenizados y por incorporar la ‘blockchain’ a su operativa",
-      "url": "https://cincodias.elpais.com/criptoactivos/2026-11-03/la-banca-reformula-su-apuesta-cripto-y-entra-en-la-carrera-por-tokenizar-el-dinero.html",
-      "source": "Cinco Días · Criptoactivos",
-      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-03T04:30:01.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "63f6c02d2df29a64325f",
-      "sourceId": "cinco-dias-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Víctor Rodríguez (CNMV): “No podemos aceptar ‘stablecoins’ no conformes a MiCA en la UE”",
-      "excerpt": "Varios supervisores europeos reconocen la necesidad de una mayor convergencia supervisora y proteger a los inversores frente a las entidades no autorizadas",
-      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-29/victor-rodriguez-cnmv-no-podemos-aceptar-stablecoins-no-conformes-a-mica-en-la-ue.html",
-      "source": "Cinco Días · Criptoactivos",
-      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-29T13:53:40.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "09903a74f0eb24a5b859",
-      "sourceId": "cinco-dias-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "El fondo europeo de rescate emite su primer bono digital en Pontes, la plataforma del BCE",
-      "excerpt": "La emisión por valor de 1.000 millones de euros, se gestiona en la ‘blockchain` y se liquida con dinero del banco central",
-      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-27/el-fondo-europeo-de-rescate-emite-su-primer-bono-digital-en-pontes-la-plataforma-del-bce.html",
-      "source": "Cinco Días · Criptoactivos",
-      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-27T10:33:38.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "21c1340df8471a6927de",
-      "sourceId": "cinco-dias-cripto",
-      "category": "cripto",
-      "kind": "news",
-      "title": "Las idas y venidas de la regulación cripto exponen el embrollo de la supervisión europea",
-      "excerpt": "El debate sobre quién debe vigilar a los ‘exchanges’ amenaza con crear solapamientos entre reguladores y permitir controles desiguales dentro de la industria",
-      "url": "https://cincodias.elpais.com/criptoactivos/2026-10-27/las-idas-y-venidas-de-la-regulacion-cripto-exponen-el-embrollo-de-la-supervision-europea.html",
-      "source": "Cinco Días · Criptoactivos",
-      "sourceUrl": "https://feeds.elpais.com/mrss-s/list/ep/site/cincodias.elpais.com/section/criptoactivos",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-27T04:25:00.000Z",
-      "tier": 1,
-      "access": "mixed"
+      ],
+      "editorial": {
+        "score": 35,
+        "cluster": "ft-tokenizacion-opinion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El problema del registro. La tokenización no suspende las leyes de las finanzas"
+      }
     },
     {
       "id": "8544cc175dd901615b6f",
@@ -1893,6 +2045,32 @@
         "model": "claude-opus-5-5",
         "at": "2026-11-19T13:06:26.728Z",
         "why": "Propuesta de FinCEN permitiría usar bases de terceros para verificar empresas y elimina reverificación automática, pero los bancos siguen responsables."
+      }
+    },
+    {
+      "id": "5a9976826ef79a1c3249",
+      "sourceId": "thepaypers",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa extends Agentic Ready to acceptance",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNVm1Da2VZT0xnTUhKYTdQWDdQMWg1Y0xKRl8tcjlMb28yNEdLYlZZVEtJWXQzYTZ3RE5RYlp6WHFXeUdHQ0hkN0xoMnRXbnNpUExlcXNXdmNwVlA0TWVRaVMwMlo1b0VoTGdBZ1NoVGZNcHMxdnJoZXMzM2M1LUZlMzBYMnlxai1ZOGZid3AyZ2xXbDBHdFF5dWJZMnBmZw?oc=5",
+      "source": "The Paypers",
+      "sourceUrl": "https://thepaypers.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-19T09:26:33.000Z",
+      "tier": 2,
+      "access": "open",
+      "coverage": [
+        "Finextra Research"
+      ],
+      "editorial": {
+        "score": 68,
+        "cluster": "visa-agentic-ready-aceptacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Visa extiende Agentic Ready a la aceptación"
       }
     },
     {
@@ -2128,29 +2306,6 @@
       }
     },
     {
-      "id": "c99f53e6eb7698a56683",
-      "sourceId": "americanbanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "OCC’s Gould defends charter approvals",
-      "excerpt": "Comptroller Jonathan Gould called the argument that too many trust charters are being approved “one-sided.”",
-      "url": "https://www.americanbanker.com/news/occ-s-gould-defends-charter-approvals",
-      "source": "American Banker",
-      "sourceUrl": "https://www.americanbanker.com/feed?rss=true",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-18T20:54:18.000Z",
-      "tier": 2,
-      "access": "paywall",
-      "editorial": {
-        "score": 58,
-        "cluster": "occ-gould-licencias-fiduciarias-tor32q",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T13:06:26.728Z",
-        "why": "El jefe de la OCC defiende la aprobación de licencias fiduciarias ante críticas de que se otorgan demasiadas."
-      }
-    },
-    {
       "id": "68e5dfe6a483de9f2a57",
       "sourceId": "ecb-supervision",
       "category": "pagos",
@@ -2234,15 +2389,15 @@
       "publishedAt": "2026-11-13T09:00:00.000Z",
       "tier": 1,
       "access": "open",
-      "coverage": [
-        "Finextra Research"
-      ],
       "editorial": {
         "score": 78,
         "cluster": "boe-meridian-fx-apac",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z"
-      }
+      },
+      "coverage": [
+        "Finextra Research"
+      ]
     },
     {
       "id": "2b92b30d12c0f0e0c9a2",
@@ -2355,16 +2510,16 @@
       "publishedAt": "2026-11-17T09:27:51.000Z",
       "tier": 2,
       "access": "open",
-      "coverage": [
-        "Finextra Research"
-      ],
       "editorial": {
         "score": 72,
         "cluster": "openai-chatgpt-wallet",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z",
         "es": "OpenAI lanza ChatGPT Wallet para el comercio agéntico"
-      }
+      },
+      "coverage": [
+        "Finextra Research"
+      ]
     },
     {
       "id": "0ad3c38739a531ea5956",
@@ -2416,6 +2571,29 @@
         "model": "claude-opus-5-5",
         "at": "2026-11-19T13:06:26.728Z",
         "why": "Suspenden la licencia de Kontigo, app cripto venezolana, que queda desconectada del sistema bancario del país."
+      }
+    },
+    {
+      "id": "5bd8ca9828bd388df856",
+      "sourceId": "finextra",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Paraguay's digital bank collapse triggers political crisis",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQLThVd25MTVJjV0tNX2JZSndwZlJ4Z1B5UlFtOU1fOTc5SG14XzZ1cUVrem51Mm9aRTBQVlA4clNIZE02OWxsQ2lKSVpIeGh3ekdDOERHeHQ2emtLRGMwTlhOYlR2QjAzM3d1U2ZkZEoxbFpXd045QTVXOThNWkZub21YOFFnWWpoN0Q2TE95ZnF6YWNLRFhueS1lOWhvODd3Wmc?oc=5",
+      "source": "Finextra Research",
+      "sourceUrl": "https://www.finextra.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-13T11:28:00.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 72,
+        "cluster": "paraguay-banco-digital-colapso",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El colapso de un banco digital de Paraguay desata una crisis política"
       }
     },
     {
@@ -2609,29 +2787,6 @@
       }
     },
     {
-      "id": "e0bda8eda909c6a73ff8",
-      "sourceId": "finextra",
-      "category": "pagos",
-      "kind": "news",
-      "title": "DBS and Kinexys by JP Morgan launch 24/7 tokenised deposit transfers",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOVDUxY0hMVGhWQ1RNNVM4UndiQmVHV0lLS3hCQzN5SUdtZExsdmdsS05rYjI1ZmVEZU1CNWRMN1UwUEtsWXkySzg0Ry0yWHhVSlplbFZGU2JTSjlwWmZSSV9mYU1CQUswQnlGRzVFQ1pBWDVhZ19tOFBTelpqbWdQRVo1ZHl4bW1ZdllBbmlEV1JVM2prS3lqWHJuTE80V0xJTUwzaTQ1amZVanpWSEFfQ2RR?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-16T18:28:00.000Z",
-      "tier": 2,
-      "access": "open",
-      "editorial": {
-        "score": 68,
-        "cluster": "dbs-kinexys-depositos-tokenizados-tor32q",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T13:06:26.728Z",
-        "why": "DBS y Kinexys de JP Morgan lanzan transferencias de depósitos tokenizados 24/7, avance concreto en liquidación bancaria continua."
-      }
-    },
-    {
       "id": "8dc7c236d7585e230c57",
       "sourceId": "fsb",
       "category": "pagos",
@@ -2669,15 +2824,15 @@
       "publishedAt": "2026-11-12T20:00:00.000Z",
       "tier": 1,
       "access": "open",
-      "coverage": [
-        "Reserva Federal de EE. UU."
-      ],
       "editorial": {
         "score": 60,
         "cluster": "occ-perspectiva-riesgo-semestral",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z"
-      }
+      },
+      "coverage": [
+        "Reserva Federal de EE. UU."
+      ]
     },
     {
       "id": "665af10601f880a200ad",
@@ -2717,16 +2872,16 @@
       "publishedAt": "2026-11-05T08:00:00.000Z",
       "tier": 2,
       "access": "open",
-      "coverage": [
-        "iProUP"
-      ],
       "editorial": {
         "score": 72,
         "cluster": "etoro-compra-lb-finanzas",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:11:54.710Z",
         "es": "eToro acuerda la compra de la argentina LB Finanzas mientras continúa la ola de fusiones y adquisiciones de 2026"
-      }
+      },
+      "coverage": [
+        "iProUP"
+      ]
     },
     {
       "id": "96ba10964b18c3398aae",
@@ -3117,6 +3272,52 @@
       }
     },
     {
+      "id": "b027400078774b41e9fb",
+      "sourceId": "fintechfutures",
+      "category": "pagos",
+      "kind": "news",
+      "title": "CD&R and GTCR reportedly weighing $40bn leveraged buyout of Global Payments",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxON2RwNGxac1lpTE5HSnZXWnNRYTQ3OTVlMzBwMm5sN3UyWXlld2JlTDY2NkdoUm43NERFdktFcG9XNl9ydkxfcjJHNWxRamZ5UmltUkFxNEdBeDhZajBNbDZ2aUV1eUhPYjhYMURMc25ZLUJZdzc3YVVla0duNVlHMHN4THhjWFZH?oc=5",
+      "source": "FinTech Futures",
+      "sourceUrl": "https://www.fintechfutures.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 75,
+        "cluster": "global-payments-compra-cdr-gtcr",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "CD&R y GTCR estarían evaluando una compra apalancada de Global Payments por US$40 mil millones"
+      }
+    },
+    {
+      "id": "7e5aee994747c1f014fc",
+      "sourceId": "boe",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Bank of England sets out approach to tokenised collateral in central clearing",
+      "excerpt": "The Bank of England has today launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing",
+      "source": "Banco de Inglaterra",
+      "sourceUrl": "https://www.bankofengland.co.uk/rss/news",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-29T10:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 70,
+        "cluster": "boe-colateral-tokenizado-consulta",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El Banco de Inglaterra expone su enfoque sobre el colateral tokenizado en la compensación central. Lanzó una consulta para apoyar la aceptación por las contrapartes centrales de formas tokenizadas de colateral elegible."
+      }
+    },
+    {
       "id": "ef0b2d431334fe58039a",
       "sourceId": "occ",
       "category": "pagos",
@@ -3143,148 +3344,27 @@
       ]
     },
     {
-      "id": "c783020b334dca2c0ba0",
-      "sourceId": "boe",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Regulators explore credit union reforms to support growth, innovation and better outcomes for members",
-      "excerpt": "Credit unions could benefit from several ideas put forward today by the Prudential Regulation Authority and Financial Conduct Authority aimed at helping the sector grow, innovate and meet the changing needs of their members.",
-      "url": "https://www.bankofengland.co.uk/news/2026/november/regulators-explore-credit-union-reforms-to-support-growth-innovation-and-better-outcomes-for-members",
-      "source": "Banco de Inglaterra",
-      "sourceUrl": "https://www.bankofengland.co.uk/rss/news",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T10:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "7e5aee994747c1f014fc",
-      "sourceId": "boe",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Bank of England sets out approach to tokenised collateral in central clearing",
-      "excerpt": "The Bank of England has today launched a consultation supporting central counterparties (CCPs) acceptance of tokenised forms of eligible collateral.",
-      "url": "https://www.bankofengland.co.uk/news/2026/october/bank-of-england-sets-out-approach-to-tokenised-collateral-in-central-clearing",
-      "source": "Banco de Inglaterra",
-      "sourceUrl": "https://www.bankofengland.co.uk/rss/news",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-29T10:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "5206b6328ed91fbd6721",
+      "id": "c4c6f166815037f77faf",
       "sourceId": "thebanker",
       "category": "pagos",
       "kind": "news",
-      "title": "‘Banks are actually training their customers to ignore them’",
+      "title": "Reg Wrap: BoE plots tokenised collateral rules",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBqQTdBRHRMOEZDMm1kMXl4TVExdVNyb0FvSDEyb1VPOXFSb3ZCd2ZnM0NNSWdRODlEc3E1MUY3aUtkenZ6Z1UzanRYeGNwckUwZ0JTbWFSYmw4MEJ4YzV5QmNUS0R3N29ZMkNfMlF1RU5JOVVKWkY5dU53?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE94OExLRVhFaDByZFBNMnNmS3VyaWFTZ1R1d2dUN2VXek1vaXhLVVRaODBudHRqVDJHeVpRczI0RXp0OHBCaTRHRndhOXlBcVh6U2xROFpONlNqNHpiTzRvQklIVGRWS05TRTZocG5QY2xFd0RSOGF6alFB?oc=5",
       "source": "TheBanker.com",
       "sourceUrl": "https://www.thebanker.com/",
       "via": "Vía Google News",
       "language": "en",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "publishedAt": "2026-10-29T07:00:00.000Z",
       "tier": 2,
-      "access": "paywall"
-    },
-    {
-      "id": "241ef65eb2e5a5eed1d9",
-      "sourceId": "thebanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Reg Wrap: UK targets £840mn bank tax windfall",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0N1l2RmtpQTJpSTRGVlpBVXdUOERjOVRscWExNlAxWDA2NWtERnFQdTBndnNPelFfTkhLeHZWWWhLMDV5Z3JqWFQtYWMtTU14UWtzZHkzbE5Ga2ZVWjlEZk1WcGdyV1FkalZwbDlPR1lqUTdhRmQ2b2h3?oc=5",
-      "source": "TheBanker.com",
-      "sourceUrl": "https://www.thebanker.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "tier": 2,
-      "access": "paywall"
-    },
-    {
-      "id": "3692236d5489506b751e",
-      "sourceId": "thebanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "How digital money could make payments faster and simpler",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPZi1ubDVCUlZ4TUdYYjdxVk1Zckp3Ny12Sm52U20wSFVXcWVsMFZzOWM2VnN0c0tIblNRczE1UmNabU1tajBQM0VRbEE1NXMxcV93RFhIR1VYaFdxZWhOenY1REtzMXNZbEZrQVJqQWFUeUh6TlFueEVZM1FHb1hBbDBRY3g?oc=5",
-      "source": "TheBanker.com",
-      "sourceUrl": "https://www.thebanker.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-03T10:45:31.000Z",
-      "tier": 2,
-      "access": "paywall"
-    },
-    {
-      "id": "e3ac6a7b8ac972a68f03",
-      "sourceId": "thebanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Banks must prepare for quantum threat now, regulators warn",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5OMFh0YnFBYnFxZlVFaXVTRTROZm1aVnk3cHREaU94cE5nYnY1YTdtLWNSSHBtZlhlQkN4Vy1FR0tyXzFmSHpkOFJ1aHZzYkpnRnJCb2Vad1dUR1Y1ejdWdU9yYTQySHpOUi1RMWJhOUN4Mzh0UmdOSHJn?oc=5",
-      "source": "TheBanker.com",
-      "sourceUrl": "https://www.thebanker.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-03T08:00:00.000Z",
-      "tier": 2,
-      "access": "paywall"
-    },
-    {
-      "id": "024a7dd1ca234ca89d72",
-      "sourceId": "reuters-cripto",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Revolut's rise to become Europe's $115 billion big bank rival",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOVFk4NXFxVmF1SEdEazBzWmRUM2VHTjdjNEdaejAzRWRRb1A5RTlYWjh0QW5wNmljSTFfcWxaeVowNHN2V2JqdzJyM0pUdVBycW5haTJ0T2pGYkRDWFZZRVBrbE0xd0Y0T09WdEw4a1BlcDJaOEVCVGNGM3lwcEFFN1hrYjcwcDMxbFoxQzI5d2dJYms0VEEwbS0zYndIZUNjZW15VzY4VUVmbWlP?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "e6abbe6b0aed462ea689",
-      "sourceId": "bis-investigacion",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Scenarios for future banking: implications for profitability, liquidity and solvency",
-      "excerpt": "Who will perform banking’s core functions a decade from now, and how will risks and profitability evolve? Our framework structures expert judgement rather than forecasts.",
-      "url": "https://www.bis.org/publications/scenarios-future-banking-implications-profitability-liquidity-and-solvency",
-      "source": "BIS · Investigación",
-      "sourceUrl": "https://www.bis.org/doclist/bis_fsi_publs.rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-04T00:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "726c51bf663990b859cc",
-      "sourceId": "reuters-cripto",
-      "category": "pagos",
-      "kind": "news",
-      "title": "New Zealand's central bank registers Revolut as country's 27th bank",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFVUcGdGUUZUSDZURDZEVmp5Z1FUeWhTV1ZDX0h2cExZTGJLNVZEWmhxcXlpX3ZndEx1Sm5EMjJpVF9xZ25vZFB4RmJvR2lhRnRTckFaYWR6UW9kWFpFUE9TRUQxcllzbk1vZm56ZEM0WjJudm9QSmJuMFQyUEpPeGlHYWo3NlhWRVdPN21vUzZWZGtOSVlYRURUazdod3pvOEh5ZHo1Z0NCREdoSEs3eXlWQUkxT2hr?oc=5",
-      "source": "Reuters",
-      "sourceUrl": "https://www.reuters.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-02T08:00:00.000Z",
-      "tier": 1,
-      "access": "mixed"
+      "access": "paywall",
+      "editorial": {
+        "score": 68,
+        "cluster": "boe-normas-colateral-tokenizado",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Resumen regulatorio: el Banco de Inglaterra prepara normas sobre colateral tokenizado"
+      }
     },
     {
       "id": "efe209acb20872f26ce9",
@@ -3302,8 +3382,311 @@
       "tier": 1,
       "access": "paywall",
       "coverage": [
-        "Reuters"
-      ]
+        "Reuters",
+        "TheBanker.com"
+      ],
+      "editorial": {
+        "score": 68,
+        "cluster": "boe-revolut-controles-internos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "80fd575c9e21d5d74cb1",
+      "sourceId": "boe",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Regulators unveil plans to simplify Senior Manager and Certification Regime",
+      "excerpt": "The number of financial services roles required to face enhanced checks from regulators will fall significantly under proposals that will support growth.",
+      "url": "https://www.bankofengland.co.uk/news/2026/october/regulators-unveil-plans-to-simplify-senior-manager-and-certification-regime",
+      "source": "Banco de Inglaterra",
+      "sourceUrl": "https://www.bankofengland.co.uk/rss/news",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-10-22T20:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 65,
+        "cluster": "uk-smcr-simplificacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Los reguladores presentan planes para simplificar el Senior Manager and Certification Regime. El número de cargos sujetos a controles reforzados se reducirá significativamente"
+      }
+    },
+    {
+      "id": "e3ac6a7b8ac972a68f03",
+      "sourceId": "thebanker",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Banks must prepare for quantum threat now, regulators warn",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5OMFh0YnFBYnFxZlVFaXVTRTROZm1aVnk3cHREaU94cE5nYnY1YTdtLWNSSHBtZlhlQkN4Vy1FR0tyXzFmSHpkOFJ1aHZzYkpnRnJCb2Vad1dUR1Y1ejdWdU9yYTQySHpOUi1RMWJhOUN4Mzh0UmdOSHJn?oc=5",
+      "source": "TheBanker.com",
+      "sourceUrl": "https://www.thebanker.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "tier": 2,
+      "access": "paywall",
+      "editorial": {
+        "score": 55,
+        "cluster": "reguladores-amenaza-cuantica-bancos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Los bancos deben prepararse ya para la amenaza cuántica, advierten los reguladores"
+      }
+    },
+    {
+      "id": "726c51bf663990b859cc",
+      "sourceId": "reuters-cripto",
+      "category": "pagos",
+      "kind": "news",
+      "title": "New Zealand's central bank registers Revolut as country's 27th bank",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNNFVUcGdGUUZUSDZURDZEVmp5Z1FUeWhTV1ZDX0h2cExZTGJLNVZEWmhxcXlpX3ZndEx1Sm5EMjJpVF9xZ25vZFB4RmJvR2lhRnRTckFaYWR6UW9kWFpFUE9TRUQxcllzbk1vZm56ZEM0WjJudm9QSmJuMFQyUEpPeGlHYWo3NlhWRVdPN21vUzZWZGtOSVlYRURUazdod3pvOEh5ZHo1Z0NCREdoSEs3eXlWQUkxT2hr?oc=5",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 55,
+        "cluster": "revolut-nueva-zelanda-licencia-banco",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "14bad18ba6f9a627b977",
+      "sourceId": "fintechfutures",
+      "category": "pagos",
+      "kind": "news",
+      "title": "European payments players unite to launch the Local Payments Council for Agentic Commerce",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQUHVJTHZvYUdvZDlHMGlqNWVnUW9VdkxFNXNqVDJVRk96WFpIUENjczlzSGpUYmJmS1EwUzlLU2FtM2taNlQyanlqUHRtdzBSRDlIT1Nnb0N5MTZ3ZnpVdXdHVkp4YXpLbGg5OUNoODNISXZ1UWM5V2NsS3I3UWxKWGZ0bmUtV2laRVlLaEp2bXJUcXFGamR4Y2ZVZE5Ldw?oc=5",
+      "source": "FinTech Futures",
+      "sourceUrl": "https://www.fintechfutures.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-25T07:00:00.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 55,
+        "cluster": "europa-consejo-pagos-agenticos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Actores europeos de pagos se unen para lanzar el Local Payments Council for Agentic Commerce"
+      }
+    },
+    {
+      "id": "e4cdb0abadefa417ad92",
+      "sourceId": "fintechfutures",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa signs digital payments MoU with Senegal",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOcG1LaFpQeWlocjBWUVhLdUZsOTd0YWVQWGJGeHhwTHVqaFgzV1p4YjVxaE1OV2VicDE0dkEwZndIbUo4ZVBYR0QxVFVGMFVRRWtHZVN6VWhaajFaOElNQzRjYVFQLW5HQkV4UFhUTHZDQWt5S3JVVFV0UmRzZnY1c3ZFYw?oc=5",
+      "source": "FinTech Futures",
+      "sourceUrl": "https://www.fintechfutures.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-02T08:00:00.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 50,
+        "cluster": "visa-senegal-memorando-pagos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Visa firma un memorando de entendimiento sobre pagos digitales con Senegal"
+      }
+    },
+    {
+      "id": "dea223df15a9c055e6af",
+      "sourceId": "thebanker",
+      "category": "pagos",
+      "kind": "news",
+      "title": "UK bank surcharge doubles to 6% but falls short of feared 8%",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9LRmR3RFIwcFhZTTdVWmFPWVlWeGZSSFd3Nm9laExDeERxVGFYZDBvdVp1OXNmTW5feWUycGlyM0hWekJEeV9WWHpQRktKVFBtUEZmTEo5OVQ5MDRJcTFUelZhMzJ1X1U5dW1rU2dDQ1FsRjBidUJwOFNn?oc=5",
+      "source": "TheBanker.com",
+      "sourceUrl": "https://www.thebanker.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-28T07:00:00.000Z",
+      "tier": 2,
+      "access": "paywall",
+      "editorial": {
+        "score": 50,
+        "cluster": "uk-recargo-bancario-6",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "El recargo bancario del Reino Unido se duplica al 6%, pero queda por debajo del temido 8%"
+      }
+    },
+    {
+      "id": "d141309cf51d1f67b969",
+      "sourceId": "reuters-cripto",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Revolut launches personal loans in UK, taking on major banks",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNYkotM0FkTm56WWNyM1BROVVjRUdOX2VpUTJSN0RYY1VycXBiRmRVb1p1ZVdyaXBETTVVMGtBRmJGLXJVYXJxeUFldGttRjV3NnpfNE5ic0dzamNYV25NSjVSdjBsMG91Z1QzNVJMYVp0X3dFWjJuVjg5djY0d2NwWVlrU0NaU2xoMnNLWjBlUjZtYjRZSVo4c2RyUGxJUm1od0g1c2QtUTFUQQ?oc=5",
+      "source": "Reuters",
+      "sourceUrl": "https://www.reuters.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-25T07:00:00.000Z",
+      "tier": 1,
+      "access": "mixed",
+      "editorial": {
+        "score": 50,
+        "cluster": "revolut-prestamos-personales-uk",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Revolut lanza préstamos personales en el Reino Unido y compite con los grandes bancos"
+      }
+    },
+    {
+      "id": "241ef65eb2e5a5eed1d9",
+      "sourceId": "thebanker",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Reg Wrap: UK targets £840mn bank tax windfall",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0N1l2RmtpQTJpSTRGVlpBVXdUOERjOVRscWExNlAxWDA2NWtERnFQdTBndnNPelFfTkhLeHZWWWhLMDV5Z3JqWFQtYWMtTU14UWtzZHkzbE5Ga2ZVWjlEZk1WcGdyV1FkalZwbDlPR1lqUTdhRmQ2b2h3?oc=5",
+      "source": "TheBanker.com",
+      "sourceUrl": "https://www.thebanker.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "tier": 2,
+      "access": "paywall",
+      "editorial": {
+        "score": 45,
+        "cluster": "uk-impuesto-bancos-840mn",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Resumen regulatorio: Reino Unido busca una recaudación extraordinaria de £840 millones con un impuesto a la banca"
+      }
+    },
+    {
+      "id": "e6abbe6b0aed462ea689",
+      "sourceId": "bis-investigacion",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Scenarios for future banking: implications for profitability, liquidity and solvency",
+      "excerpt": "Who will perform banking’s core functions a decade from now, and how will risks and profitability evolve? Our framework structures expert judgement rather than forecasts.",
+      "url": "https://www.bis.org/publications/scenarios-future-banking-implications-profitability-liquidity-and-solvency",
+      "source": "BIS · Investigación",
+      "sourceUrl": "https://www.bis.org/doclist/bis_fsi_publs.rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-04T00:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 45,
+        "cluster": "bis-escenarios-banca-futuro",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "dac7b0b0bb280e28ecfb",
+      "sourceId": "bis-discursos",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Denis Beau: Payments in a fragmenting world - sovereignty, strategy and system design",
+      "excerpt": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
+      "url": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
+      "source": "BIS · Discursos de banqueros centrales",
+      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 45,
+        "cluster": "banco-francia-beau-discurso-pagos",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Denis Beau: Los pagos en un mundo que se fragmenta: soberanía, estrategia y diseño del sistema"
+      }
+    },
+    {
+      "id": "f2ce5dcff4502d6d9e9f",
+      "sourceId": "bis-discursos",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Tómas Brynjólfsson: A new payment scheme for Iceland - building a sovereign and secure payment system",
+      "excerpt": "Speech by Mr Tómas Brynjólfsson, Deputy Governor for Financial Stability at the Central Bank of Iceland, at the Money Live Nordic Banking conference, Copenhagen, 30 October 2026.",
+      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
+      "source": "BIS · Discursos de banqueros centrales",
+      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 45,
+        "cluster": "islandia-esquema-pagos-soberano",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
+    },
+    {
+      "id": "7d3fc73846cbc6976f8f",
+      "sourceId": "ecb-supervision",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Pedro Machado: Simplification and complexity in the banking union: separating the wheat from the chaff",
+      "excerpt": "",
+      "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261103~dff42acdd1.en.html",
+      "source": "BCE · Supervisión bancaria",
+      "sourceUrl": "https://www.bankingsupervision.europa.eu/rss/press.html",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T08:45:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 38,
+        "cluster": "ecb-machado-discurso-simplificacion",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Pedro Machado: Simplificación y complejidad en la unión bancaria: separar el trigo de la paja"
+      }
+    },
+    {
+      "id": "ca02b5cbc4094f5959bd",
+      "sourceId": "bis-discursos",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Joachim Nagel: Stable banks, strong capital markets - Europe’s financial system for the future",
+      "excerpt": "Keynote speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the conference for the 40th anniversary of the International Bankers Forum, Frankfurt am Main, 21 October 2026.",
+      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
+      "source": "BIS · Discursos de banqueros centrales",
+      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-03T00:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 35,
+        "cluster": "bundesbank-nagel-discurso-sistema",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Joachim Nagel: Bancos estables, mercados de capitales sólidos: el sistema financiero de Europa para el futuro"
+      }
     },
     {
       "id": "91a57c2cd9a56630c46f",
@@ -3320,23 +3703,13 @@
       "publishedAt": "2026-10-25T12:59:37.000Z",
       "tier": 3,
       "access": "mixed",
-      "stale": true
-    },
-    {
-      "id": "7d3fc73846cbc6976f8f",
-      "sourceId": "ecb-supervision",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Pedro Machado: Simplification and complexity in the banking union: separating the wheat from the chaff",
-      "excerpt": "",
-      "url": "https://www.bankingsupervision.europa.eu//press/speeches/date/2026/html/ssm.sp261103~dff42acdd1.en.html",
-      "source": "BCE · Supervisión bancaria",
-      "sourceUrl": "https://www.bankingsupervision.europa.eu/rss/press.html",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T08:45:00.000Z",
-      "tier": 1,
-      "access": "open"
+      "stale": true,
+      "editorial": {
+        "score": 35,
+        "cluster": "earnin-maryland-propinas-demanda",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z"
+      }
     },
     {
       "id": "14a9089747c06ee0b4ea",
@@ -3352,103 +3725,14 @@
       "language": "en",
       "publishedAt": "2026-10-23T08:00:00.000Z",
       "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "943f6657b619ccc2aac1",
-      "sourceId": "fintechfutures",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Tokenisation fintech tZERO to go public via SPAC deal",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQMlpvTkVKOTlrY180WmZsXzRoVncwTDgzRW15b1NOZ2k3dnVGcXhTV3VQdUxIUDJBQVRlMVBpU1JkU3FSMU5lMFRxbWhRNmJPTFJUWUlmUlg3NlphaGVMYVZPSDQ3dkFLM3hYcnhKcmFaOExuOGoxWW1nOXppb1JIRFpmWExaMnM1dUJlbFR1ckdVbktIZTNBakpB?oc=5",
-      "source": "FinTech Futures",
-      "sourceUrl": "https://www.fintechfutures.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-04T08:00:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
-      "id": "09b7f3336bf939b57c62",
-      "sourceId": "fintechfutures",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Ex-Swift CIO launches digital asset evidence layer Logos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOSnNRMnNlckx6amdud3pDbnhYa1o2YWVfbjBnbV9ER0paalFqbnN4cFczcWcxelJOTVRGWDdJQVk4SG5mb0ZEU3Q0d2NVSHpqbk9FVkJSRV9WRWxGekM5ZmZBV0JXVkJ2ai03THliUUNQTTlrZ1htd0JxLUw5QlVUdThOUm5MUlJpLWpoNUN0RkY5cng4NzV3WWpxQ0NaMmM1eDVJNl95Vko?oc=5",
-      "source": "FinTech Futures",
-      "sourceUrl": "https://www.fintechfutures.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-02T08:00:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
-      "id": "b027400078774b41e9fb",
-      "sourceId": "fintechfutures",
-      "category": "pagos",
-      "kind": "news",
-      "title": "CD&R and GTCR reportedly weighing $40bn leveraged buyout of Global Payments",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxON2RwNGxac1lpTE5HSnZXWnNRYTQ3OTVlMzBwMm5sN3UyWXlld2JlTDY2NkdoUm43NERFdktFcG9XNl9ydkxfcjJHNWxRamZ5UmltUkFxNEdBeDhZajBNbDZ2aUV1eUhPYjhYMURMc25ZLUJZdzc3YVVla0duNVlHMHN4THhjWFZH?oc=5",
-      "source": "FinTech Futures",
-      "sourceUrl": "https://www.fintechfutures.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-02T08:00:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
-      "id": "dac7b0b0bb280e28ecfb",
-      "sourceId": "bis-discursos",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Denis Beau: Payments in a fragmenting world - sovereignty, strategy and system design",
-      "excerpt": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the South African Reserve Bank Payments Conference 2026, Pretoria, 21 October 2026.",
-      "url": "https://www.bis.org/speeches/20261103-payments-fragmenting-world-sovereignty-strategy-and-system-design",
-      "source": "BIS · Discursos de banqueros centrales",
-      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "f2ce5dcff4502d6d9e9f",
-      "sourceId": "bis-discursos",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Tómas Brynjólfsson: A new payment scheme for Iceland - building a sovereign and secure payment system",
-      "excerpt": "Speech by Mr Tómas Brynjólfsson, Deputy Governor for Financial Stability at the Central Bank of Iceland, at the Money Live Nordic Banking conference, Copenhagen, 30 October 2026.",
-      "url": "https://www.bis.org/speeches/20261103-new-payment-scheme-iceland-building-sovereign-and-secure-payment-system",
-      "source": "BIS · Discursos de banqueros centrales",
-      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "ca02b5cbc4094f5959bd",
-      "sourceId": "bis-discursos",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Joachim Nagel: Stable banks, strong capital markets - Europe’s financial system for the future",
-      "excerpt": "Keynote speech by Dr Joachim Nagel, President of the Deutsche Bundesbank, at the conference for the 40th anniversary of the International Bankers Forum, Frankfurt am Main, 21 October 2026.",
-      "url": "https://www.bis.org/speeches/20261103-stable-banks-strong-capital-markets-europes-financial-system-future",
-      "source": "BIS · Discursos de banqueros centrales",
-      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-03T00:00:00.000Z",
-      "tier": 1,
-      "access": "open"
+      "access": "open",
+      "editorial": {
+        "score": 35,
+        "cluster": "ecb-montagner-pruebas-estres",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:16:26.696Z",
+        "es": "Patrick Montagner: Pruebas de estrés en un entorno de riesgo cambiante"
+      }
     },
     {
       "id": "04de849c1f1870a5396c",
@@ -7075,15 +7359,15 @@
       }
     },
     {
-      "id": "1be9bb2f8b36c837b158",
-      "sourceId": "el-economista",
+      "id": "18397d8a87533ff7519c",
+      "sourceId": "bloomberg-negocios",
       "category": "latam",
       "kind": "news",
-      "title": "Nubank y Mercado Pago suspenden sus transferencias de criptomonedas por inestabilidad en el sistema",
+      "title": "Nubank suspende depósitos y retiros de criptomonedas en Brasil por problema de un proveedor externo",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVkNPT28zWFhsTGJjczJMRXFSM2N1bEdFa1hxYTRtbFh2RGJ0VDE3d0tFVWNQM0I0elNISVoyb2NhZ3l0VGo5THhrYmJ3SlFBREdmNE0waEZLSGw5ZC01dVJvcWJfSHQzSXVnaXU0UHBDUWtCSVltQ2tFRWtpRUF3elJJdmZzSnhacWR0cnRwS0c5bW9NZlE1akZTM1FkbGxJWGNjLWVMNEJ0SlVpemVYN3hHWU45UHpGZmZwdWluZjVWOWNOWjdDbER0SzRHcmVGXzBFZzVRWXBrd9IB3wFBVV95cUxPTHZNdnBlMHJzM1JqZWF6Xy1BRlNhNGd1NTRRbmtobENBTlRRNi1WcVMxVnp2T1NWanN2NlFFRTdkN1o4cS1ZckRIWWdLYUtKcUFwY0pfNk9lazhZdjNISkJ0ZXhxc2pyc3doZXFHV2RhaVJ6NFFSTjlQeDNQLVd3a2xINmh2Yzd0WGM2V00xYVNtM3dmTVJFU1Q4NHZmdF84NngwQ1VtLVRVRk9BdVhvMUgxb2hFUWxYazJvUlhyd0xJdnhoUGtKSmxaVUJhdzJPYWhrYnNaUEZ5cnpRNWdN?oc=5",
-      "source": "El Economista",
-      "sourceUrl": "https://www.eleconomista.com.mx/",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ3l0N3VYNzgwRDdsaEJxVF9KMVc2Y0VhVG8zYnlQNEdMSzMtMzdxNTR0NXBCeS05Qm5IaTlsUnZwRk9jSDJhOXJaajFPc3RzLV91YmtoSGE1YUd0QzZ0ZzFGdDZhM0ZhR3E0eU9OdkRXdEdiamFTV0VSRGQ1VTRGak5oRUN6dzdYaTdMQzNCd0YzZkpvUFNmNlkzRVNyeGRuei1keWMyRldIcF9oY2tjd2p0QTN1dUhIRldYd3lMYjNSbFB4bEZZLWhLNkQzLUpWb2pDSNIB6AFBVV95cUxOMHVaM3FUai0wWnpSWWtadmNHUTdQc3c3THB2LVZKZTNvdDE0cDFmdnFXR0RhejhoU1Z0LVQyMk5NSlhNZ1d3SEdqei1nYkkxcU8tUjhXZWRwLXJqMzVfUUMtNE41bmxjMkIxb1FxbURmM0ZmR2w0bGR0bGVScS1EZmgzeUZQLUJhdHBQdkhReS0wQjNqZTJmUUNjVHhQbjNWRGwwS28ySGp1ekpzdkpTTzV6eVVmaHhWc1I4eTFEZk5QZW1xdHpDa1N0RnREMHN2QktaVUpQc0xxR3hob2NLVlpiV3NSZVN6?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-06T08:00:00.000Z",
@@ -7096,21 +7380,8 @@
         "at": "2026-11-19T17:20:25.076Z"
       },
       "coverage": [
-        "La Jornada",
-        "EL CEO",
-        "Bloomberg Línea",
-        "Diario Financiero",
-        "iProUP",
-        "Reuters",
-        "The Paypers",
-        "PYMNTS.com"
-      ],
-      "endeavor": {
-        "company": "MercadoLibre.com",
-        "country": "Argentina",
-        "vertical": "Marketplaces",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
-      }
+        "iProUP"
+      ]
     },
     {
       "id": "eb66d1da7bd38e08e323",
@@ -8586,8 +8857,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 6,
@@ -8609,8 +8880,8 @@
       "language": "es",
       "url": "https://www.primicias.ec/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 49,
@@ -8632,8 +8903,8 @@
       "language": "es",
       "url": "https://www.eluniverso.com/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 15,
@@ -8655,8 +8926,8 @@
       "language": "es",
       "url": "https://www.forbes.com.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 38,
@@ -8678,8 +8949,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 4,
       "funnel": {
         "read": 14,
@@ -8701,8 +8972,8 @@
       "language": "es",
       "url": "https://www.elcomercio.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 66,
@@ -8724,15 +8995,15 @@
       "language": "es",
       "url": "https://www.teleamazonas.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 5,
       "funnel": {
-        "read": 41,
+        "read": 40,
         "foreign": 0,
         "undated": 0,
         "host": 0,
-        "normalize": 27,
+        "normalize": 26,
         "topic": 5,
         "accepted": 9
       }
@@ -8747,8 +9018,8 @@
       "language": "es",
       "url": "https://www.lahora.com.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 8,
       "funnel": {
         "read": 64,
@@ -8770,8 +9041,8 @@
       "language": "es",
       "url": "https://www.cfn.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
@@ -8793,8 +9064,8 @@
       "language": "es",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 9,
       "funnel": {
         "read": 33,
@@ -8816,8 +9087,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 162,
@@ -8839,8 +9110,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 148,
@@ -8862,16 +9133,16 @@
       "language": "es",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 4,
       "funnel": {
-        "read": 71,
+        "read": 70,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 10,
-        "topic": 55,
+        "topic": 54,
         "accepted": 6
       }
     },
@@ -8885,8 +9156,8 @@
       "language": "es",
       "url": "https://www.registroficial.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 9,
       "funnel": {
         "read": 0,
@@ -8908,8 +9179,8 @@
       "language": "es",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -8931,8 +9202,8 @@
       "language": "es",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
@@ -8954,8 +9225,8 @@
       "language": "es",
       "url": "https://www.supercias.gob.ec/portalscvs/Noticias/Noticias.php",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 108,
@@ -8977,8 +9248,8 @@
       "language": "es",
       "url": "https://www.finanzas.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9000,8 +9271,8 @@
       "language": "es",
       "url": "https://www.uafe.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
@@ -9023,8 +9294,8 @@
       "language": "es",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 6,
       "funnel": {
         "read": 10,
@@ -9046,16 +9317,16 @@
       "language": "es",
       "url": "https://www.eleconomista.com.mx/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 12,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 11,
       "funnel": {
-        "read": 57,
+        "read": 56,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 38,
+        "topic": 37,
         "accepted": 19
       }
     },
@@ -9069,8 +9340,8 @@
       "language": "es",
       "url": "https://www.larepublica.co/finanzas",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 10,
       "funnel": {
         "read": 60,
@@ -9092,8 +9363,8 @@
       "language": "en",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 8,
       "funnel": {
         "read": 10,
@@ -9115,9 +9386,9 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 9,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 10,
       "funnel": {
         "read": 51,
         "foreign": 0,
@@ -9138,8 +9409,8 @@
       "language": "es",
       "url": "https://expansion.mx/economia",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 5,
       "funnel": {
         "read": 50,
@@ -9161,8 +9432,8 @@
       "language": "es",
       "url": "https://www.df.cl/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 10,
       "funnel": {
         "read": 43,
@@ -9184,8 +9455,8 @@
       "language": "es",
       "url": "https://www.iproup.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 12,
       "funnel": {
         "read": 60,
@@ -9207,8 +9478,8 @@
       "language": "es",
       "url": "https://www.latamfintech.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 8,
       "funnel": {
         "read": 49,
@@ -9230,18 +9501,17 @@
       "language": "es",
       "url": "https://endeavor.org/entrepreneur-companies/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 58,
       "funnel": {
-        "read": 327,
+        "read": 430,
         "foreign": 0,
         "undated": 0,
-        "host": 228,
-        "normalize": 2,
-        "topic": 17,
-        "accepted": 80,
-        "saturated": true
+        "host": 296,
+        "normalize": 74,
+        "topic": 7,
+        "accepted": 53
       }
     },
     {
@@ -9254,8 +9524,8 @@
       "language": "es",
       "url": "https://www.endeavor.org.ar/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9277,8 +9547,8 @@
       "language": "en",
       "url": "https://www.paymentsdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9300,8 +9570,8 @@
       "language": "es",
       "url": "https://www.expansion.com/empresas/banca.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 5,
       "funnel": {
         "read": 50,
@@ -9323,8 +9593,8 @@
       "language": "en",
       "url": "https://www.ft.com/banking",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 25,
@@ -9346,8 +9616,8 @@
       "language": "en",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 4,
       "funnel": {
         "read": 100,
@@ -9370,9 +9640,9 @@
       "language": "en",
       "url": "https://thepaypers.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 3,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 4,
       "funnel": {
         "read": 83,
         "foreign": 0,
@@ -9393,8 +9663,8 @@
       "language": "en",
       "url": "https://www.fintechfutures.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 8,
       "funnel": {
         "read": 84,
@@ -9416,8 +9686,8 @@
       "language": "en",
       "url": "https://www.bankingdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9439,17 +9709,17 @@
       "language": "en",
       "url": "https://www.thebanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 11,
       "funnel": {
-        "read": 67,
+        "read": 68,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 4,
         "topic": 25,
-        "accepted": 38
+        "accepted": 39
       }
     },
     {
@@ -9462,9 +9732,9 @@
       "language": "en",
       "url": "https://www.americanbanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 3,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 2,
       "funnel": {
         "read": 10,
         "foreign": 0,
@@ -9485,8 +9755,8 @@
       "language": "en",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9508,8 +9778,8 @@
       "language": "en",
       "url": "https://www.ecb.europa.eu/press/html/index.en.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 15,
@@ -9531,8 +9801,8 @@
       "language": "en",
       "url": "https://www.bis.org/cbspeeches/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 7,
       "funnel": {
         "read": 50,
@@ -9554,8 +9824,8 @@
       "language": "en",
       "url": "https://www.ft.com/fintech",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 25,
@@ -9577,8 +9847,8 @@
       "language": "en",
       "url": "https://www.wsj.com/finance",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 2,
       "funnel": {
         "read": 61,
@@ -9600,8 +9870,8 @@
       "language": "en",
       "url": "https://www.fsb.org/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9623,8 +9893,8 @@
       "language": "en",
       "url": "https://www.bankofengland.co.uk/news",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 4,
       "funnel": {
         "read": 50,
@@ -9646,8 +9916,8 @@
       "language": "en",
       "url": "https://www.eba.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9669,8 +9939,8 @@
       "language": "en",
       "url": "https://www.bankingsupervision.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 5,
       "funnel": {
         "read": 15,
@@ -9692,8 +9962,8 @@
       "language": "en",
       "url": "https://www.bis.org/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 20,
@@ -9715,7 +9985,7 @@
       "language": "en",
       "url": "https://fintechbusinessweekly.substack.com/",
       "status": "error",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
       "lastSuccessAt": "2026-11-19T18:07:31.121Z",
       "recentCount": 3
     },
@@ -9729,8 +9999,8 @@
       "language": "en",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 0,
       "funnel": {
         "read": 20,
@@ -9752,8 +10022,8 @@
       "language": "en",
       "url": "https://www.occ.gov/news-issuances/news-releases/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9775,9 +10045,9 @@
       "language": "es",
       "url": "https://cincodias.elpais.com/criptoactivos/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 9,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 12,
       "funnel": {
         "read": 25,
         "foreign": 0,
@@ -9798,9 +10068,9 @@
       "language": "en",
       "url": "https://www.reuters.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 19,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 18,
       "funnel": {
         "read": 60,
         "foreign": 0,
@@ -9821,9 +10091,9 @@
       "language": "en",
       "url": "https://www.ft.com/cryptofinance",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 7,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 8,
       "funnel": {
         "read": 25,
         "foreign": 0,
@@ -9844,9 +10114,9 @@
       "language": "es",
       "url": "https://www.expansion.com/mercados/criptomonedas.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 12,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 9,
       "funnel": {
         "read": 50,
         "foreign": 0,
@@ -9867,8 +10137,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 7,
       "funnel": {
         "read": 38,
@@ -9890,8 +10160,8 @@
       "language": "en",
       "url": "https://www.theblock.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 8,
       "funnel": {
         "read": 20,
@@ -9913,8 +10183,8 @@
       "language": "en",
       "url": "https://decrypt.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 6,
       "funnel": {
         "read": 37,
@@ -9936,8 +10206,8 @@
       "language": "en",
       "url": "https://www.coindesk.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 6,
       "funnel": {
         "read": 25,
@@ -9959,8 +10229,8 @@
       "language": "es",
       "url": "https://www.criptonoticias.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9982,9 +10252,9 @@
       "language": "en",
       "url": "https://www.chainalysis.com/blog/",
       "status": "ok",
-      "checkedAt": "2026-11-19T18:11:54.710Z",
-      "lastSuccessAt": "2026-11-19T18:11:54.710Z",
-      "recentCount": 3,
+      "checkedAt": "2026-11-19T18:16:26.696Z",
+      "lastSuccessAt": "2026-11-19T18:16:26.696Z",
+      "recentCount": 2,
       "funnel": {
         "read": 10,
         "foreign": 0,
@@ -10028,7 +10298,7 @@
       "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-021-2026.pdf": "2026-10-28T20:10:51.000Z"
     },
     "endeavor-prensa": {
-      "cursor": 0,
+      "cursor": 10,
       "lots": 30
     },
     "editorial": {
@@ -10688,6 +10958,14 @@
           "at": "2026-11-19T01:17:21.156Z",
           "p": "2026-11-18T21:04:39.000Z",
           "w": "Binance entra al crédito al consumo en Venezuela con Pay Later y compite con Cashea, señal de que los gigantes cripto avanzan hacia el BNPL regional."
+        },
+        "c99f53e6eb7698a56683": {
+          "s": 58,
+          "c": "occ-gould-licencias-fiduciarias-tor32q",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T13:06:26.728Z",
+          "p": "2026-11-18T20:54:18.000Z",
+          "w": "El jefe de la OCC defiende la aprobación de licencias fiduciarias ante críticas de que se otorgan demasiadas."
         },
         "63e73a450ef4d2d11c3d": {
           "s": 45,
@@ -11875,14 +12153,6 @@
           "p": "2026-11-17T05:53:06.000Z",
           "w": "Análisis del token de oro XAUT en el contexto de la ronda de Nomad, con foco en su uso en pagos."
         },
-        "a429332d4ab8ac270e8c": {
-          "s": 50,
-          "c": "optimizely-ciberataque-cripto-iphone-toqca7",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T03:27:43.580Z",
-          "p": "2026-11-17T05:02:17.000Z",
-          "w": "Sitios web populares fueron comprometidos para robar criptomonedas y atacar a usuarios de iPhone."
-        },
         "9f5f45095b8ec758535f": {
           "s": 48,
           "c": "billeteras-dolar-digital-colombia-tor32q",
@@ -11906,6 +12176,14 @@
           "at": "2026-11-19T03:27:43.580Z",
           "p": "2026-11-17T05:00:06.000Z",
           "w": ""
+        },
+        "a429332d4ab8ac270e8c": {
+          "s": 50,
+          "c": "optimizely-ciberataque-cripto-iphone-toqca7",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T03:27:43.580Z",
+          "p": "2026-11-17T04:53:00.000Z",
+          "w": "Sitios web populares fueron comprometidos para robar criptomonedas y atacar a usuarios de iPhone."
         },
         "924bbd4a237ab990892d": {
           "s": 58,
@@ -11953,6 +12231,14 @@
           "at": "2026-11-19T03:27:43.580Z",
           "p": "2026-11-16T20:14:00.000Z",
           "w": "Grandes bancos de EE. UU. sufrieron caídas de servicio, un tema de resiliencia operativa."
+        },
+        "e0bda8eda909c6a73ff8": {
+          "s": 68,
+          "c": "dbs-kinexys-depositos-tokenizados-tor32q",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T13:06:26.728Z",
+          "p": "2026-11-16T18:28:00.000Z",
+          "w": "DBS y Kinexys de JP Morgan lanzan transferencias de depósitos tokenizados 24/7, avance concreto en liquidación bancaria continua."
         },
         "4e2b896e77686b0f376f": {
           "s": 62,
@@ -12825,6 +13111,13 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-09T08:00:00.000Z"
         },
+        "c43e6c33b29c4fef8b07": {
+          "s": 60,
+          "c": "binance-hackeo-blanqueo-memecoins",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-11-09T08:00:00.000Z"
+        },
         "7ce4789a2d20dd868d9c": {
           "s": 40,
           "c": "galperin-perfil-mercado-libre",
@@ -12835,13 +13128,6 @@
         "233d516b9c25c75a50cd": {
           "s": 76,
           "c": "mercado-pago-deuda-biva-mexico",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-11-09T08:00:00.000Z"
-        },
-        "c43e6c33b29c4fef8b07": {
-          "s": 60,
-          "c": "binance-hackeo-blanqueo-memecoins",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-11-09T08:00:00.000Z"
@@ -12913,13 +13199,6 @@
           "p": "2026-11-06T09:00:00.000Z",
           "e": "El Banco Central Europeo publica datos bancarios consolidados a finales de junio de 2026"
         },
-        "18397d8a87533ff7519c": {
-          "s": 65,
-          "c": "nubank-mercado-pago-suspension-cripto",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-06T08:00:00.000Z"
-        },
         "310fe5605e89a6150557": {
           "s": 60,
           "c": "ueno-bank-gilinski-solicitudes",
@@ -12975,6 +13254,13 @@
           "c": "jprfm-2026-051-f-toqca7",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:03:39.594Z",
+          "p": "2026-11-06T08:00:00.000Z"
+        },
+        "1be9bb2f8b36c837b158": {
+          "s": 65,
+          "c": "nubank-mercado-pago-suspension-cripto",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-06T08:00:00.000Z"
         },
         "ed901be01c27dd1220b3": {
@@ -13049,13 +13335,6 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
-        "f6354c117ad59135fd56": {
-          "s": 40,
-          "c": "mercado-pago-mexico-comercio-analisis",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-11-05T08:00:00.000Z"
-        },
         "40e64cbbd50515ae22c5": {
           "s": 68,
           "c": "occ-marco-super-inteligencia",
@@ -13071,6 +13350,13 @@
           "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-11-05T08:00:00.000Z",
           "e": "The Banker"
+        },
+        "f6354c117ad59135fd56": {
+          "s": 40,
+          "c": "mercado-pago-mexico-comercio-analisis",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-11-05T08:00:00.000Z"
         },
         "7d04b5cdfc1cf336a5a4": {
           "s": 78,
@@ -13144,6 +13430,44 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-04T08:00:00.000Z"
         },
+        "6c3522e09160f54b3e47": {
+          "s": 62,
+          "c": "bitso-stablecoins-remesas-mexico-toq68x",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
+        "d33dfd10a6bde288b930": {
+          "s": 40,
+          "c": "cashea-venezuela-credito-analisis",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
+        "943f6657b619ccc2aac1": {
+          "s": 45,
+          "c": "tzero-salida-bolsa-spac",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-04T08:00:00.000Z",
+          "e": "La fintech de tokenización tZERO saldrá a bolsa mediante un acuerdo con una SPAC"
+        },
+        "5206b6328ed91fbd6721": {
+          "s": 30,
+          "c": "bancos-clientes-ignorar-opinion",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-04T08:00:00.000Z",
+          "e": "Los bancos en realidad están entrenando a sus clientes para ignorarlos"
+        },
+        "024a7dd1ca234ca89d72": {
+          "s": 45,
+          "c": "revolut-ascenso-perfil",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-04T08:00:00.000Z",
+          "e": "El ascenso de Revolut hasta convertirse en un rival de US$115 mil millones de los grandes bancos de Europa"
+        },
         "e5853d237eb70862ad36": {
           "s": 70,
           "c": "mercado-libre-resultados-trimestre",
@@ -13179,19 +13503,37 @@
           "at": "2026-11-19T18:07:31.121Z",
           "p": "2026-11-04T08:00:00.000Z"
         },
-        "6c3522e09160f54b3e47": {
-          "s": 62,
-          "c": "bitso-stablecoins-remesas-mexico-toq68x",
+        "29af585d4140464bf8ad": {
+          "s": 45,
+          "c": "binance-hackeo-analisis",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-04T08:00:00.000Z"
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T21:22:50.000Z",
+          "e": "Qué significa para las cripto el histórico robo a Binance. Fue el mayor robo de la historia."
         },
-        "d33dfd10a6bde288b930": {
-          "s": 40,
-          "c": "cashea-venezuela-credito-analisis",
+        "30ace9aabd425c031390": {
+          "s": 70,
+          "c": "binance-hackeo-falsa-entrevista",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-04T08:00:00.000Z"
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T17:00:20.000Z",
+          "e": "Los hackers de Binance usaron entrevistas falsas y perfiles en redes sociales en el robo de US$6.300 millones"
+        },
+        "3692236d5489506b751e": {
+          "s": 38,
+          "c": "dinero-digital-pagos-analisis",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T10:45:31.000Z",
+          "e": "Cómo el dinero digital podría hacer los pagos más rápidos y sencillos"
+        },
+        "c783020b334dca2c0ba0": {
+          "s": 50,
+          "c": "pra-fca-reformas-cooperativas-credito",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T10:00:00.000Z",
+          "e": "Los reguladores exploran reformas para las cooperativas de crédito que apoyen el crecimiento, la innovación y mejores resultados para sus socios"
         },
         "39581caa31c547ea0205": {
           "s": 80,
@@ -13212,6 +13554,28 @@
           "c": "ueno-bank-intervencion-paraguay",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-03T08:00:00.000Z"
+        },
+        "5b89bb51e6e6e03d834b": {
+          "s": 30,
+          "c": "corea-bancos-talento-ciberseguridad",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T08:00:00.000Z",
+          "e": "Los bancos de Corea del Sur luchan por encontrar talento para contrarrestar la amenaza cibernética de la IA"
+        },
+        "afcdf95929d080c632ca": {
+          "s": 35,
+          "c": "binance-hackeo-analisis",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T08:00:00.000Z"
+        },
+        "e63ccee2d6b74b82bf36": {
+          "s": 70,
+          "c": "binance-hackeo-falsa-entrevista",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-11-03T08:00:00.000Z"
         },
         "dd1792e2d3f0dcd89dba": {
@@ -13236,6 +13600,51 @@
           "p": "2026-11-03T08:00:00.000Z",
           "e": "Mercado Bitcoin se compromete a cubrir todas las pérdidas de los usuarios tras un hackeo de casi US$40 millones"
         },
+        "60da03e6aa23f91d3d51": {
+          "s": 65,
+          "c": "binance-hackeo-lavado-corea-norte",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T05:00:13.000Z",
+          "e": "Se espera que los hackers norcoreanos tarden meses en lavar los miles de millones de Binance"
+        },
+        "7cc9c38ad343e2d2f625": {
+          "s": 68,
+          "c": "binance-retiros-tras-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T00:35:06.000Z"
+        },
+        "06c80af9de4f00f057a4": {
+          "s": 72,
+          "c": "mercado-bitcoin-hackeo-brasil",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T22:59:13.000Z"
+        },
+        "cf5504b5198c787146b2": {
+          "s": 45,
+          "c": "binance-hackeo-analisis",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T15:02:52.000Z",
+          "e": "¿Qué causó el hackeo de US$6.300 millones a Binance?"
+        },
+        "cbacc1c908b594ab12f0": {
+          "s": 68,
+          "c": "binance-retiros-tras-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T11:49:21.000Z"
+        },
+        "a6fae684a736fe8b9b31": {
+          "s": 68,
+          "c": "binance-retiros-tras-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T10:01:58.000Z",
+          "e": "Los usuarios de Binance retiran US$5 mil millones mientras el exchange reanuda servicios tras el robo"
+        },
         "5eecd5b2a54332db15cc": {
           "s": 40,
           "c": "bancos-argentinos-fintech-ventaja",
@@ -13256,6 +13665,38 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-02T08:00:00.000Z"
+        },
+        "09b7f3336bf939b57c62": {
+          "s": 35,
+          "c": "logos-capa-evidencia-activos",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T08:00:00.000Z",
+          "e": "Exdirector de sistemas de Swift lanza Logos, una capa de evidencia para activos digitales"
+        },
+        "79166b87c22cf4725489": {
+          "s": 25,
+          "c": "alemania-bancos-banco-defensa",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T08:00:00.000Z",
+          "e": "Los bancos alemanes instan a Berlín a reconsiderar su participación en el banco de defensa"
+        },
+        "aad3472bbaef819d5d94": {
+          "s": 55,
+          "c": "binance-retiros-tras-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T08:00:00.000Z",
+          "e": "Binance reabrirá los retiros de más activos en varias redes"
+        },
+        "a66bf3071c7cf1eb5ffa": {
+          "s": 55,
+          "c": "exchanges-seguridad-tras-binance",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-02T08:00:00.000Z",
+          "e": "Los exchanges cripto piden medidas rápidas para reforzar sus defensas tras el robo a Binance"
         },
         "4146b628318b3fdf2cff": {
           "s": 85,
@@ -13292,6 +13733,21 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-01T07:00:00.000Z"
         },
+        "91f913b6e9639a01e792": {
+          "s": 70,
+          "c": "binance-recupera-fondos-retiros",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-01T07:00:00.000Z",
+          "e": "Binance reanudará los retiros tras recuperar la mayor parte de los US$6 mil millones en fondos robados"
+        },
+        "63866184c91530d13c90": {
+          "s": 68,
+          "c": "binance-retiros-tras-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-01T07:00:00.000Z"
+        },
         "72fb96db733e4c5a3904": {
           "s": 50,
           "c": "gobierno-mercado-libre-contrabando",
@@ -13306,6 +13762,67 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-10-31T07:00:00.000Z"
         },
+        "a64603ca0551c06d4bf6": {
+          "s": 70,
+          "c": "binance-recupera-fondos-retiros",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-31T07:00:00.000Z"
+        },
+        "260d98c149c97659724f": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T23:52:03.000Z"
+        },
+        "1b135222afdc83797cfa": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T22:17:15.000Z",
+          "e": "US$6.300 millones en 30 minutos: cómo se desarrolló el mayor robo del mundo"
+        },
+        "56a05a8d758678a22e03": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T22:12:58.000Z",
+          "e": "Binance se apresura a recuperar el dinero de sus clientes tras un robo de US$6.300 millones. La plataforma dice que se comprometió el portátil de un ingeniero."
+        },
+        "f5f12e44eb991b83c4b8": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T13:56:42.000Z"
+        },
+        "b938b50d6169b0a51b63": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T13:23:45.000Z",
+          "e": "Lo que sabemos del hackeo de US$6.300 millones a Binance"
+        },
+        "a62d8665ace1d05e690a": {
+          "s": 40,
+          "c": "cibc-thought-machine-core",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T13:16:19.000Z",
+          "e": "CIBC adopta Vault Core de Thought Machine"
+        },
+        "678a3792afd270aaac1a": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T10:50:37.000Z",
+          "e": "El robo de US$6.300 millones a Binance es el mayor... pero no el primero"
+        },
         "da79bef914f8b31724ba": {
           "s": 55,
           "c": "bcra-freno-cripto-bancos-stablecoins",
@@ -13318,6 +13835,98 @@
           "c": "credicuotas-emision-bonos-30-millones",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "84541c37a7735cca9235": {
+          "s": 35,
+          "c": "ltvco-compra-kipp",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Un grupo inversor liderado por LTVCo adquiere la fintech estadounidense Kipp"
+        },
+        "e5717a460c5420f5f99c": {
+          "s": 40,
+          "c": "occ-california-clima",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Resumen regulatorio: la OCC abre un enfrentamiento climático con California"
+        },
+        "3e4ad2f09bf8c93b5a3e": {
+          "s": 40,
+          "c": "corea-norte-hackeo-perfil",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Los hackers norcoreanos vinculados a robos de cripto están entre los mejores del mundo, según expertos"
+        },
+        "0858ad388276ff497dbd": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Binance reserva más de US$6.340 millones para cubrir las pérdidas del ataque"
+        },
+        "0f71245e38461baf2dd2": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "La firma de análisis blockchain TRM dice que Corea del Norte está detrás del robo de cripto a Binance"
+        },
+        "2b2ca8a2a79d5328488e": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Dónde se sitúa la brecha de US$6.300 millones de Binance entre los mayores hackeos y robos de cripto"
+        },
+        "0e2a7dc4cae770e794bf": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "Binance no necesita vender acciones de SpaceX para cubrir pérdidas, dice su cofundador"
+        },
+        "3dd7908935b40e4d0460": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z",
+          "e": "El hackeo de US$6.300 millones a Binance: cómo funciona el seguro cripto"
+        },
+        "1f0859c3d027ad544607": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "7de9d919657b070ff306": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "3ae648193f57bf90c864": {
+          "s": 12,
+          "c": "mercados-nasdaq-intel-bitcoin",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "b10f3de23e356505a2a7": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-10-30T07:00:00.000Z"
         },
         "66f951904fa704960e85": {
@@ -13347,6 +13956,13 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:07:31.121Z",
           "p": "2026-10-30T07:00:00.000Z"
+        },
+        "0992179f9677c62bbe2c": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T03:11:47.000Z"
         },
         "68b3834688b9a910a9f2": {
           "s": 58,
@@ -13395,6 +14011,44 @@
           "c": "mambu-ia-core-bancario",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:02:44.854Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "68375a024914df08ccb2": {
+          "s": 15,
+          "c": "metro-bank-presidente-salida",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-29T07:00:00.000Z",
+          "e": "El presidente de Metro Bank, Robert Sharpe, dejará el cargo"
+        },
+        "3596031a2e60e12111cc": {
+          "s": 35,
+          "c": "bancos-ia-china-costos",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-29T07:00:00.000Z",
+          "e": "¿Están recurriendo los bancos a modelos de IA chinos para reducir costos?"
+        },
+        "231fecede382c3768fdf": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-29T07:00:00.000Z",
+          "e": "Binance busca reforzar la confianza tras un robo récord de US$6.300 millones"
+        },
+        "fe539da722250a9a9475": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "1bab9eddff4d1860aecd": {
+          "s": 20,
+          "c": "binance-venezuela-bolivares-fiscal",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-10-29T07:00:00.000Z"
         },
         "dfb9f2075c62de8ec75a": {
@@ -13460,6 +14114,21 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-28T07:00:00.000Z"
         },
+        "8f9472823bba1b48a16b": {
+          "s": 40,
+          "c": "cripto-elecciones-medio-mandato",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-28T07:00:00.000Z",
+          "e": "Análisis: la industria cripto irrumpe en las elecciones de medio mandato con US$176 millones para apoyar a sus aliados mientras se prepara para la era post-Trump"
+        },
+        "be16499cdf571a14893e": {
+          "s": 45,
+          "c": "rusia-binance-condena-donaciones",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-28T07:00:00.000Z"
+        },
         "f72b6c111b547b1ebf03": {
           "s": 35,
           "c": "bce-boletin-monetario-23-octubre",
@@ -13481,6 +14150,54 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-27T07:00:00.000Z"
         },
+        "dbb8d274193000444b55": {
+          "s": 45,
+          "c": "paytabs-compra-seapay",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "PayTabs firma un memorando de entendimiento para comprar la paytech saudí SeaPay en un acuerdo de US$9,3 millones"
+        },
+        "5060f05f20797c2facaa": {
+          "s": 22,
+          "c": "euroclear-eliet-nombramiento",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "Euroclear asciende a su director de riesgos Guillaume Eliet para dirigir Euroclear Bank"
+        },
+        "602fa61dd7709dbecb42": {
+          "s": 35,
+          "c": "netgraph-valuno-participacion",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "Netgraph, de Paysecure, adquiere más del 20% de Valuno Group"
+        },
+        "c85f651351ba4a1a9606": {
+          "s": 40,
+          "c": "bancos-ia-riesgo-cibernetico",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "Resumen regulatorio: más bancos se preocupan por el riesgo cibernético de la IA"
+        },
+        "33ba18b75a6950772ace": {
+          "s": 30,
+          "c": "cripto-elecciones-medio-mandato",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "Los ejecutivos cripto ultrarricos que gastan a lo grande en las elecciones de medio mandato"
+        },
+        "bb7802050788d1f16f73": {
+          "s": 40,
+          "c": "cripto-elecciones-medio-mandato",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z",
+          "e": "El dinero cripto inunda las elecciones de medio mandato mientras la industria mira a la vida después de Trump"
+        },
         "f8e52387ee438718f013": {
           "s": 62,
           "c": "mercado-libre-centro-logistico-argentina",
@@ -13494,6 +14211,14 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-27T07:00:00.000Z"
+        },
+        "c3a552f991261a573588": {
+          "s": 35,
+          "c": "uk-pagos-resiliencia-opinion",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-26T09:09:29.000Z",
+          "e": "La resiliencia debe impulsar el futuro de los pagos en el Reino Unido"
         },
         "9e00d25c289dfe53bc3e": {
           "s": 10,
@@ -13529,6 +14254,30 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-26T07:00:00.000Z"
+        },
+        "47445e5a802be777a71d": {
+          "s": 25,
+          "c": "quirin-tuum-core",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-26T07:00:00.000Z",
+          "e": "El alemán Quirin Privatbank moderniza su arquitectura de core bancario con Tuum"
+        },
+        "9655fa624829517e8289": {
+          "s": 30,
+          "c": "barclays-director-ia",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-26T07:00:00.000Z",
+          "e": "Barclays nombra a Anita Tanna como su primera directora de IA"
+        },
+        "54dd8179aa98ca9cc255": {
+          "s": 45,
+          "c": "tech-mahindra-finastra-compra",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-26T07:00:00.000Z",
+          "e": "Tech Mahindra compra la suite de productos de gestión de efectivo de Finastra"
         },
         "efe2f708e547a6e860a9": {
           "s": 40,
@@ -13573,6 +14322,13 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-10-25T07:00:00.000Z"
         },
+        "8e0110de30814b351fe0": {
+          "s": 45,
+          "c": "israel-cripto-sanciones-netanyahu",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-24T07:00:00.000Z"
+        },
         "57b294cda7dd1e642cae": {
           "s": 8,
           "c": "mercado-pago-descuento-coto",
@@ -13600,6 +14356,30 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-23T07:00:00.000Z"
+        },
+        "875a9cffe44f643ac7a4": {
+          "s": 20,
+          "c": "central1-nuevo-ceo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-23T07:00:00.000Z",
+          "e": "Central 1 nombra al veterano banquero Mike Henry como nuevo CEO y presidente"
+        },
+        "aee71c465ffc4fe74a93": {
+          "s": 15,
+          "c": "griffin-nuevo-cfo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-23T07:00:00.000Z",
+          "e": "David Jenkins es nombrado nuevo CFO de Griffin"
+        },
+        "83e65651c9d03a95e424": {
+          "s": 25,
+          "c": "kingdom-bank-temenos",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-23T07:00:00.000Z",
+          "e": "Kingdom Bank renueva su tecnología de core bancario y pagos con Temenos"
         },
         "6e0177d9f829b116639c": {
           "s": 38,
@@ -13650,6 +14430,30 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-22T07:00:00.000Z"
         },
+        "8885b3af0bb79984720f": {
+          "s": 50,
+          "c": "lseg-compra-octus",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-22T07:00:00.000Z",
+          "e": "LSEG adquirirá Octus en una operación de US$3,5 mil millones en efectivo"
+        },
+        "9200d514f6868543f7b1": {
+          "s": 50,
+          "c": "whop-serie-d",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-22T07:00:00.000Z",
+          "e": "La fintech estadounidense Whop obtiene US$200 millones en una Serie D con una valoración de US$5,1 mil millones"
+        },
+        "b84ebf095381ce6bd0d5": {
+          "s": 45,
+          "c": "cross-river-compra-accrue",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-22T07:00:00.000Z",
+          "e": "Cross River Bank comprará Accrue, paytech enfocada en fidelización de clientes"
+        },
         "1f3a25f27df8a2ef9934": {
           "s": 75,
           "c": "mercado-pago-acciones-argentina",
@@ -13670,6 +14474,14 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-10-22T07:00:00.000Z"
+        },
+        "4c60330d304bb1785732": {
+          "s": 50,
+          "c": "ramp-compra-vesto",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-21T07:00:00.000Z",
+          "e": "Ramp refuerza sus capacidades de gestión de tesorería con la adquisición de Vesto"
         },
         "ec6c440b411231016460": {
           "s": 78,
