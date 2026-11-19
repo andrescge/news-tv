@@ -129,6 +129,8 @@ const MAX_PER_CHANNEL = 80;
 // Google News responde 429 a ráfagas: sus fuentes se piden de una en una, con pausa y un reintento.
 const GOOGLE_PAUSE_MS = 2500;
 const GOOGLE_RETRY_MS = 10000;
+// La búsqueda Endeavor encadena unos 10 lotes detrás de las demás consultas de Google: entre lote y lote, una pausa mayor.
+const SEARCH_PAUSE_MS = 3500;
 // Google News devuelve como mucho 100 resultados por consulta: llegar ahí marca la fuente como saturada en su embudo.
 const GOOGLE_MAX_RESULTS = 100;
 const sleep = ms => new Promise(done => setTimeout(done, ms));
@@ -209,7 +211,7 @@ async function fetchSearch(source, known = {}) {
   const { picked } = rotation(lots, known?.cursor);
   const raw = []; let consumed = 0, answered = 0, saturated = false, lastError;
   for (const lot of picked) {
-    if (consumed) await sleep(GOOGLE_PAUSE_MS);
+    if (consumed) await sleep(SEARCH_PAUSE_MS);
     try {
       const body = await fetchText(lot.url, source.adapter);
       // Una búsqueda sin resultados es un RSS válido sin <item>: cuenta como respuesta, no como error.

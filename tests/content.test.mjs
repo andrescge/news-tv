@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -968,31 +968,54 @@ test('Endeavor: nombres del directorio sin aclaraciones y etiqueta recalculada e
 
 test('Endeavor: lotes de búsqueda por nombres con OR, rotación entre ejecuciones y canal propio', () => {
   const companies = searchCompanies();
-  assert.ok(companies.length >= 100 && companies.length <= 120, String(companies.length));
-  assert.ok(companies.every(item => item.vertical === 'fintech' || item.offices.includes('ecuador')));
+  assert.ok(companies.length >= 110 && companies.length <= 130, String(companies.length));
+  assert.ok(companies.every(item => item.vertical === 'fintech' || item.offices.includes('ecuador') || ENDEAVOR_SEARCH.slugs.includes(item.slug)));
+  // Todas las fintech de la red, las de Ecuador y las de pagos y comercio digital de otros sectores.
+  assert.equal(companies.filter(item => item.vertical === 'fintech').length, new Set(ENDEAVOR_COMPANIES.filter(item => item.vertical === 'fintech' && endeavorNames(item).length).map(item => endeavorNames(item)[0].toLowerCase())).size);
+  for (const slug of ['mercadolibre-com', 'rappi', 'kavak', 'vtex']) assert.ok(companies.some(item => item.slug === slug), slug);
   assert.ok(companies.some(item => item.name === 'Tipti') && !companies.some(item => item.name === 'Globant'));
   assert.ok(!companies.some(item => item.name === 'Infocorp'), 'las excluidas no se buscan');
-  assert.equal(searchTerm(byName('Kueski')), '"Kueski"');
+  for (const slug of [...ENDEAVOR_SEARCH.slugs, ...ENDEAVOR_SEARCH.quiet, ...Object.keys(ENDEAVOR_SEARCH.solo)]) assert.ok(ENDEAVOR_COMPANIES.some(item => item.slug === slug), `slug inexistente: ${slug}`);
+  // El nombre va en el titular: el filtro de endeavor-prensa solo acepta titulares que nombran a la empresa.
+  assert.equal(searchTerm(byName('Kueski')), 'intitle:"Kueski"');
   assert.equal(searchQualifier(byName('Kueski')), '');
+  // Sin calificador los ambiguos con poco ruido (caso del CFO de Pomelo, que «fintech» dejaba fuera); con él, los ruidosos.
+  assert.equal(searchQualifier(byName('Pomelo')), '');
+  assert.equal(searchQualifier(byName('Klar')), '');
   assert.equal(searchQualifier(byName('Clara')), 'fintech');
   assert.equal(searchQualifier(byName('R2')), 'fintech');
   const batches = searchBatches(companies);
-  assert.equal(batches.flatMap(batch => batch.terms).length, companies.length);
+  assert.equal(batches.filter(batch => !batch.terms.some(term => /Mercado (Libre|Pago)/.test(term))).flatMap(batch => batch.terms).length, companies.length - 1);
   for (const batch of batches) {
     const query = searchQuery(batch);
-    const words = query.replace(/[()"]/g, ' ').split(/\s+/).filter(Boolean).filter(word => word !== 'OR').length + batch.terms.length - 1;
-    assert.ok(words <= ENDEAVOR_SEARCH.maxWords, `lote de ${words} palabras`);
+    // Con más de 9 intitle: Google ignora when:30d.
+    assert.ok(batch.terms.length <= 9 && (query.match(/intitle:/g) || []).length <= 9, query);
+    assert.match(query, / when:30d$/);
     // Nunca hay grupos anidados: Google los interpreta mal dentro de un OR.
     assert.equal((query.match(/\(/g) || []).length, 1, query);
-    assert.equal(batch.terms.some(term => ['"Clara"', '"Klar"', '"Swap"'].includes(term)), batch.qualifier === 'fintech' && batch.terms.some(term => ['"Clara"', '"Klar"', '"Swap"'].includes(term)));
+    if (batch.terms.some(term => ['intitle:"Clara"', 'intitle:"Swap"'].includes(term))) assert.equal(batch.qualifier, 'fintech');
+    if (batch.terms.some(term => ['intitle:"Pomelo"', 'intitle:"Klar"', 'intitle:"Bitso"'].includes(term))) assert.equal(batch.qualifier, '');
   }
-  assert.deepEqual(searchBatches([company('Aaa1'), company('Bbb2'), company('Ccc3')], 5), [{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Ccc3"'], qualifier: '' }]);
-  assert.deepEqual(searchBatches([company('Aaa1'), company('Clara'), company('Bbb2')]), [{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Clara"'], qualifier: 'fintech' }]);
-  assert.equal(searchQuery({ terms: ['"Clara"', '"Klar"'], qualifier: 'fintech' }), '("Clara" OR "Klar") fintech when:30d');
-  const lots = searchLots([{ terms: ['"Aaa1"', '"Bbb2"'], qualifier: '' }, { terms: ['"Ccc3"'], qualifier: '' }]);
+  // Mercado Libre y Mercado Pago, en lotes propios; las empresas que solo entran por Ecuador, en español.
+  assert.deepEqual(batches.filter(batch => batch.terms.some(term => /Mercado (Libre|Pago)/.test(term))).map(batch => batch.terms), [['intitle:"Mercado Libre"', 'intitle:"MercadoLibre"'], ['intitle:"Mercado Pago"']]);
+  assert.deepEqual(batches.find(batch => batch.terms.includes('intitle:"Tipti"')).languages, ['es']);
+  assert.deepEqual(batches.find(batch => batch.terms.includes('intitle:"Bitso"')).languages, ['es', 'en']);
+  const config = { ...ENDEAVOR_SEARCH, maxTerms: 2, quiet: ['klar'] };
+  assert.deepEqual(searchBatches([company('Aaa1'), company('Bbb2'), company('Ccc3')], config), [{ terms: ['intitle:"Aaa1"', 'intitle:"Bbb2"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Ccc3"'], qualifier: '', languages: ['es', 'en'] }]);
+  assert.deepEqual(searchBatches([company('Aaa1'), company('Clara'), company('Klar'), company('Bbb2')], config), [{ terms: ['intitle:"Aaa1"', 'intitle:"Klar"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Bbb2"'], qualifier: '', languages: ['es', 'en'] }, { terms: ['intitle:"Clara"'], qualifier: 'fintech', languages: ['es', 'en'] }]);
+  assert.equal(searchQuery({ terms: ['intitle:"Clara"', 'intitle:"Cobre"'], qualifier: 'fintech' }), '(intitle:"Clara" OR intitle:"Cobre") fintech when:30d');
+  const lots = searchLots([{ terms: ['intitle:"Aaa1"', 'intitle:"Bbb2"'], qualifier: '' }, { terms: ['intitle:"Ccc3"'], qualifier: '' }]);
   assert.deepEqual(lots.map(lot => [lot.index, lot.language]), [[0, 'es'], [1, 'en'], [2, 'es'], [3, 'en']]);
-  assert.equal(new URL(lots[0].url).searchParams.get('q'), '("Aaa1" OR "Bbb2") when:30d');
+  assert.equal(new URL(lots[0].url).searchParams.get('q'), '(intitle:"Aaa1" OR intitle:"Bbb2") when:30d');
   assert.equal(new URL(lots[3].url).searchParams.get('hl'), 'en-US');
+  assert.deepEqual(searchLots([{ terms: ['intitle:"Tipti"'], qualifier: '', languages: ['es'] }]).map(lot => lot.language), ['es']);
+  // Presupuesto de Google: la vuelta completa en un día (3 ejecuciones reales) y no más de 30 consultas por ejecución,
+  // contando las demás fuentes de Google News.
+  const all = searchLots(batches);
+  assert.ok(searchPerRun(all) * ENDEAVOR_SEARCH.runsPerDay >= all.length);
+  assert.equal(rotation(all, 0).picked.length, searchPerRun(all));
+  const googleQueries = SOURCES.filter(item => item.adapter === 'google' && !item.search).length + searchPerRun(all);
+  assert.ok(googleQueries <= 30, `${googleQueries} consultas a Google por ejecución`);
   // La rotación toma `count` lotes desde el cursor, da la vuelta y no repite un lote en la misma ejecución.
   assert.deepEqual(rotation(lots, 0, 3).picked.map(lot => lot.index), [0, 1, 2]);
   assert.deepEqual(rotation(lots, 3, 3), { picked: [lots[3], lots[0], lots[1]], next: 2 });
@@ -1046,6 +1069,16 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   assert.equal(ENDEAVOR_PROMO.test('Ualá premia a sus usuarios con reintegros'), true);
   assert.equal(ENDEAVOR_PROMO.test('Kueski insta a revisar compras ante aumento de ciberfraudes'), false);
   assert.equal(ENDEAVOR_PROMO.test('De vetar el crédito a monopolizar Cashea en Venezuela'), false);
+  // Fugas que abren Mercado Libre, Kavak y las demás empresas sumadas a la búsqueda (titulares reales del 19 de noviembre).
+  for (const title of ['¿Quieres ir a la NFL en México GRATIS? Kavak regalará cinco pases dobles', 'Mercado Libre acelera su apuesta por El Buen Fin 2026 con descuentos de hasta 65%', '¿Qué OFERTAS tendrá Mercado Libre por El Buen Fin? Esto debes saber', 'Prestamype: la fintech que ofrece una rentabilidad garantizada de hasta 10% anual para tu CTS']) assert.equal(ENDEAVOR_PROMO.test(title), true, title);
+  for (const title of ['Mercado Libre profundiza su caída en Wall Street: sus acciones pierden más de 13%', 'Mercado Libre cayó 13%, pero Wall Street espera que suba la acción', 'Mercado Libre se desploma casi 14% en Wall Street pese a ingresos récord']) assert.equal(ENDEAVOR_MARKET_NOISE.test(title), true, title);
+  for (const title of ['Mercado Libre y Sectur impulsan a pymes y artesanos mexicanos en el e-commerce', 'Un ejecutivo de Mercado Libre fue elegido CFO del año', 'Bold lanza cuenta digital gratis en Colombia', 'Addi invertirá US$2.000 millones en Colombia para ampliar el crédito']) assert.equal(ENDEAVOR_PROMO.test(title) || ENDEAVOR_MARKET_NOISE.test(title), false, title);
+  // Mercado Libre y Mercado Pago solo cuentan escritos con mayúsculas: «un mercado libre» es otra cosa.
+  assert.equal(matchEndeavor({ title: 'Mercado Pago lanza una cuenta remunerada en Colombia' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'Mercado Libre construye una nueva nave clave para la región' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'MercadoLibre suma vendedores' })?.company, 'MercadoLibre.com');
+  assert.equal(matchEndeavor({ title: 'Un Estado fuerte para un mercado libre' }), null);
+  assert.equal(matchEndeavor({ title: 'Inflación', excerpt: 'Cuando el mercado pagó más por los bonos del Tesoro' }), null);
   // Al regenerar, la acumulación vuelve a aplicar medio y tema (passes): lo anterior que no cumple sale.
   const old = (title, sourceUrl, sourceName) => ({ ...make('endeavor-prensa', 30), id: title, category: 'endeavor', title, source: sourceName, sourceUrl, via: 'Vía Google News' });
   const previous = [

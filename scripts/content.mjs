@@ -740,13 +740,16 @@ export const ENDEAVOR_AMBIGUOUS = new Set([
 // Infocorp (software bancario, Uruguay) se llama igual que la central de riesgo de Perú.
 export const ENDEAVOR_EXCLUDED = new Set(['Arizona', 'Comp', 'CORE', 'Dominion', 'Don’t Worry', 'ENA', 'GENESYS', 'Grupo Gastronómico', 'Infocorp', 'Insider', 'Involves', 'ISA', 'Prima', 'Take', 'Torre']);
 // Otras grafías del nombre de una empresa del directorio (clave: slug). No añade empresas.
-export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoLibre', 'Mercado Libre'], 'will-bank': ['Will Bank'] };
+export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoLibre', 'Mercado Libre', 'Mercado Pago'], 'will-bank': ['Will Bank'] };
+// Nombres hechos de palabras comunes que solo cuentan escritos como en la lista, con cada palabra en mayúscula («Un Estado
+// fuerte para un mercado libre» no es la empresa; «Mercado Pago lanza…» sí). En titular o extracto y sin exigir contexto.
+export const ENDEAVOR_CASED = new Set(['Mercado Libre', 'Mercado Pago']);
 // Ruido bursátil y de portales de inversión en la búsqueda (precio objetivo, calificaciones de analistas, volumen,
-// transcripciones de resultados, saltos de precio de tokens): como en Cripto, no entran notas de cotización.
-export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$`);
+// transcripciones de resultados, saltos de precio de tokens, caídas en Wall Street): como en Cripto, no entran notas de cotización.
+export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$|Wall Street|acciones (pierden|caen|suben|se desploman)|\b(cay[oó]|cae|sube|subi[oó]|se desploma) (casi |m[aá]s de )?\d+(,\d+)? ?%|suba la acci[oó]n`);
 // Titulares promocionales sobre una empresa de la red (cupones, «0% de inicial», sorteos, «por tiempo limitado», premios a
-// usuarios): son anuncios de consumo, no noticias. Lista editable; cada caso nuevo, con su prueba en tests/content.test.mjs.
-export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]digos? (de descuento|promocional)|promo ?codes?|\b0 ?% (de )?inicial|inicial de 0 ?%|sin (cuota )?inicial|\bsorteos?\b|\bsortea|giveaways?|por tiempo limitado|limited[- ]time|hasta agotar|premi(a|an|ar[aá]n?) a (sus |los )?(usuari|client)|premios? (a|para) (sus |los )?(usuari|client)`);
+// usuarios, regalos, «descuentos de hasta…», «rentabilidad garantizada… para tu CTS»): son anuncios de consumo, no noticias. Lista editable; cada caso nuevo, con su prueba en tests/content.test.mjs.
+export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]digos? (de descuento|promocional)|promo ?codes?|\b0 ?% (de )?inicial|inicial de 0 ?%|sin (cuota )?inicial|\bsorteos?\b|\bsortea|giveaways?|por tiempo limitado|limited[- ]time|hasta agotar|premi(a|an|ar[aá]n?) a (sus |los )?(usuari|client)|premios? (a|para) (sus |los )?(usuari|client)|\bregal(a|an|ar[aá]n?)(?![a-záéíóúñ])|descuentos? de hasta \d|qu[eé] ofertas|rentabilidad garantizada|para tu (CTS|aguinaldo|quincena)|programa de referidos`);
 
 // Medios aceptados en el canal Endeavor LATAM (allowHosts de la fuente `endeavor-prensa`, ver collect.mjs). Las notas llegan
 // por Google News y se comprueba el dominio del medio real (`sourceUrl`); vale el dominio y sus subdominios.
@@ -827,6 +830,7 @@ export function endeavorIndex(companies = ENDEAVOR_COMPANIES) {
       const key = ambiguous ? `=${name}` : foldText(name);
       if (seen.has(key)) continue;
       seen.add(key);
+      if (ENDEAVOR_CASED.has(name)) { entries.push({ name, display: names[0], company, ambiguous: false, cased: true, pattern: bounded(escapeRx(name)) }); continue; }
       // Ambiguo: tal como está escrito en el directorio («tapi», «albo») o con mayúscula inicial; nunca en mayúsculas sostenidas
       // si el directorio no lo escribe así («TAPI» es el gasoducto). Si no es ambiguo: sin distinguir mayúsculas ni tildes.
       const forms = [...new Set([name, name[0].toUpperCase() + name.slice(1)])];
@@ -869,6 +873,7 @@ export function matchEndeavor(story, { index = ENDEAVOR_INDEX, titleOnly = false
   const hasNoise = () => ENDEAVOR_NOISE.test(title);
   for (const field of excerpt ? [0, 1] : [0]) {
     for (const entry of index) {
+      if (entry.cased) { if (entry.pattern.test(field ? excerpt : title)) return endeavorTag(entry); continue; }
       if (!entry.ambiguous) { if (entry.pattern.test(fields[field])) return endeavorTag(entry); continue; }
       if (field === 1) continue;
       const match = title.match(entry.pattern);
@@ -894,14 +899,32 @@ export function tagEndeavor(story, options) {
   return tag ? { ...rest, endeavor: tag } : rest;
 }
 
-// Búsqueda dedicada (canal Endeavor LATAM): Google News por lotes de nombres unidos con OR. Se empieza por las fintech de la
-// región y las empresas con oficina en Ecuador. Cada ejecución consulta `perRun` lotes y la siguiente sigue donde quedó
-// (`rotation`); la acumulación de 30 días hace que el canal se llene con el tiempo. `maxWords` evita consultas demasiado largas.
+// Búsqueda dedicada (canal Endeavor LATAM): Google News por lotes de nombres unidos con OR. Se buscan las fintech de la red,
+// las empresas con oficina en Ecuador y las de `slugs`. Cada ejecución consulta una parte de los lotes y la siguiente sigue
+// donde quedó (`rotation`); la acumulación de 30 días hace que el canal se llene con el tiempo.
+// Medido en Google News el 19 de noviembre de 2026:
+// - Cada nombre va como `intitle:"…"`: el filtro de endeavor-prensa solo acepta titulares que nombran a la empresa, así que
+//   pedirlo en el titular no pierde nada y deja fuera las notas que solo la citan en el cuerpo.
+// - Con más de 9 `intitle:` Google ignora `when:30d` y devuelve notas de años (14 nombres: 45 de 45 con más de 30 días).
+// - Un lote de 9 nombres devuelve menos notas de cada uno que la consulta suelta (Pomelo: 4 de 19), pero con lotes más chicos
+//   la vuelta completa no cabe en un día.
+// - Los ambiguos con ruido (Clara, Cobre, Tala, Clip, R2…) sin calificador llenan los 100 resultados con la alcaldesa, el metal
+//   y Santa Clara (1 nota válida); con «fintech», 29 resultados y 13 válidas. Los de `quiet` casi no tienen ruido en el titular
+//   y van sin calificador, con los no ambiguos (lote de Pomelo, Klar, ADDI… : 72 resultados, 13 válidas).
+// - Un calificador con OR («(fintech OR pagos OR CEO)») también hace que Google ignore `when:30d`.
 export const ENDEAVOR_SEARCH = {
   verticals: ['fintech'],
   offices: ['ecuador'],
-  maxWords: 28,
-  perRun: 4,
+  // Empresas de otros sectores con negocio de pagos, crédito o comercio digital (Mercado Pago, RappiPay, el crédito de Kavak).
+  slugs: ['mercadolibre-com', 'rappi', 'kavak', 'vtex', 'nuvemshop', 'simetrik'],
+  // Empresas con lotes propios y términos propios: Mercado Libre sola llena los 100 resultados, y Mercado Pago iría detrás.
+  solo: { 'mercadolibre-com': [['Mercado Libre', 'MercadoLibre'], ['Mercado Pago']] },
+  // Nombres ambiguos con poco ruido en los titulares: sin calificador.
+  quiet: ['addi', 'belvo', 'brex', 'cloudwalk', 'crezcamos', 'klar', 'leasy', 'link-mobile', 'mendel', 'mercado-bitcoin', 'minka', 'pismo', 'pomelo', 'prex', 'prometeo', 'refinancia', 'ripio', 'tangelo', 'will-bank', 'yuno'],
+  maxTerms: 9,
+  // Ejecuciones reales por día (el cron horario corre 3 o 4 veces): cada ejecución consulta lotes / runsPerDay, así que la
+  // vuelta completa cabe en un día.
+  runsPerDay: 3,
   editions: [
     { language: 'es', params: 'hl=es-419&gl=EC&ceid=EC%3Aes-419' },
     { language: 'en', params: 'hl=en-US&gl=US&ceid=US%3Aen' },
@@ -912,53 +935,60 @@ export function searchCompanies(companies = ENDEAVOR_COMPANIES, config = ENDEAVO
   return companies.filter(company => {
     const [name] = endeavorNames(company);
     if (!name || seen.has(name.toLowerCase())) return false;
-    if (!config.verticals.includes(company.vertical) && !company.offices.some(office => config.offices.includes(office))) return false;
+    if (!config.verticals.includes(company.vertical) && !company.offices.some(office => config.offices.includes(office)) && !config.slugs?.includes(company.slug)) return false;
     seen.add(name.toLowerCase());
     return true;
   });
 }
-// Término de búsqueda de una empresa: su nombre entre comillas.
-export function searchTerm(company) {
-  const [name] = endeavorNames(company);
-  return `"${name.replace(/"/g, '')}"`;
+// Término de búsqueda: el nombre (el primero del directorio, salvo que se indique otro) en el titular.
+export function searchTerm(company, name = endeavorNames(company)[0]) {
+  return `intitle:"${name.replace(/"/g, '')}"`;
 }
-// Calificador del lote: los nombres ambiguos van en lotes propios que añaden su sector a toda la consulta
-// («("Clara" OR "Klar") fintech»). Google no interpreta bien grupos anidados dentro de un OR, así que no se mezclan.
-export function searchQualifier(company) {
-  return endeavorAmbiguous(endeavorNames(company)[0]) ? (company.vertical === 'fintech' ? 'fintech' : 'startup') : '';
+// Calificador del lote: los nombres ambiguos con ruido van en lotes propios que añaden su sector a toda la consulta
+// («(intitle:"Clara" OR intitle:"Cobre") fintech»). Google no interpreta bien grupos anidados dentro de un OR, así que no se
+// mezclan. Los de `quiet` no llevan calificador.
+export function searchQualifier(company, config = ENDEAVOR_SEARCH) {
+  if (!endeavorAmbiguous(endeavorNames(company)[0]) || config.quiet?.includes(company.slug)) return '';
+  return company.vertical === 'fintech' ? 'fintech' : 'startup';
 }
-const wordCount = term => term.replace(/[()"]/g, ' ').split(/\s+/).filter(Boolean).length;
-// Agrupa las empresas en lotes { terms, qualifier }: cada consulta cuenta las palabras de los nombres, un OR entre nombres,
-// el calificador y «when:30d», sin pasar de `maxWords`.
-export function searchBatches(companies, maxWords = ENDEAVOR_SEARCH.maxWords) {
-  const groups = new Map();
+// Ediciones de Google News de una empresa: las que solo entran por su oficina en Ecuador se buscan en español.
+function searchLanguages(company, config) {
+  const regional = !config.verticals.includes(company.vertical) && !config.slugs?.includes(company.slug);
+  return regional ? ['es'] : config.editions.map(edition => edition.language);
+}
+// Agrupa las empresas en lotes { terms, qualifier, languages } de hasta `maxTerms` nombres, por calificador y ediciones.
+// Las de `solo` van en sus propios lotes, uno por grupo de términos.
+export function searchBatches(companies, config = ENDEAVOR_SEARCH) {
+  const groups = new Map(); const solo = [];
   for (const company of companies) {
-    const qualifier = searchQualifier(company);
-    groups.set(qualifier, [...(groups.get(qualifier) || []), searchTerm(company)]);
+    const languages = searchLanguages(company, config);
+    if (config.solo?.[company.slug]) { for (const names of config.solo[company.slug]) solo.push({ terms: names.map(name => searchTerm(company, name)), qualifier: '', languages }); continue; }
+    const qualifier = searchQualifier(company, config);
+    const key = `${qualifier}|${languages.join(',')}`;
+    if (!groups.has(key)) groups.set(key, { qualifier, languages, terms: [] });
+    groups.get(key).terms.push(searchTerm(company));
   }
   const batches = [];
-  for (const [qualifier, terms] of groups) {
-    const base = 1 + (qualifier ? 1 : 0);
-    let current = [], words = base;
-    for (const term of terms) {
-      if (current.length && words + 1 + wordCount(term) > maxWords) { batches.push({ terms: current, qualifier }); current = []; words = base; }
-      words += wordCount(term) + (current.length ? 1 : 0);
-      current.push(term);
-    }
-    if (current.length) batches.push({ terms: current, qualifier });
+  for (const { qualifier, languages, terms } of groups.values()) {
+    for (let start = 0; start < terms.length; start += config.maxTerms) batches.push({ terms: terms.slice(start, start + config.maxTerms), qualifier, languages });
   }
-  return batches;
+  return [...batches, ...solo];
 }
 export function searchQuery({ terms, qualifier }) {
   return `(${terms.join(' OR ')})${qualifier ? ` ${qualifier}` : ''} when:30d`;
 }
-// Cada lote se consulta en cada edición de Google News (español de la región e inglés): lote 1 es, lote 1 en, lote 2 es…
+// Cada lote se consulta en sus ediciones de Google News (español de la región e inglés): lote 1 es, lote 1 en, lote 2 es…
 export function searchLots(batches, editions = ENDEAVOR_SEARCH.editions) {
-  return batches.flatMap(batch => editions.map(edition => ({ ...batch, language: edition.language, url: `https://news.google.com/rss/search?q=${encodeURIComponent(searchQuery(batch))}&${edition.params}` })))
+  return batches.flatMap(batch => editions.filter(edition => !batch.languages || batch.languages.includes(edition.language))
+    .map(edition => ({ ...batch, language: edition.language, url: `https://news.google.com/rss/search?q=${encodeURIComponent(searchQuery(batch))}&${edition.params}` })))
     .map((lot, index) => ({ ...lot, index }));
 }
+// Lotes por ejecución: la vuelta completa en `runsPerDay` ejecuciones.
+export function searchPerRun(lots, runsPerDay = ENDEAVOR_SEARCH.runsPerDay) {
+  return Math.ceil(lots.length / runsPerDay);
+}
 // Rotación: `count` lotes desde `cursor` (con vuelta al inicio) y la posición en la que empezará la ejecución siguiente.
-export function rotation(lots, cursor = 0, count = ENDEAVOR_SEARCH.perRun) {
+export function rotation(lots, cursor = 0, count = searchPerRun(lots)) {
   if (!lots.length) return { picked: [], next: 0 };
   const start = ((Math.trunc(Number(cursor)) || 0) % lots.length + lots.length) % lots.length;
   const picked = Array.from({ length: Math.min(count, lots.length) }, (_, i) => lots[(start + i) % lots.length]);
