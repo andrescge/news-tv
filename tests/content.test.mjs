@@ -324,11 +324,6 @@ const SAMPLES = [
   ["diario-financiero","Comisión de Hacienda avanza en votación de reforma MK4 y aprueba creación del Fonavi",null,false],
   ["diario-financiero","CMPC vende toda su operación forestal en Argentina por US$ 170 millones",null,false],
   ["diario-financiero","Nuevo proyecto con viviendas y hotel a pasos de mall Alto Las Condes",null,false],
-  ["contxto","FinMaq recibe $6,5 millones de dólares para financiar maquinaria a pequeñas empresas en Colombia",null,true],
-  ["contxto","Las fintech se abren paso en Venezuela en medio del proceso de reconstrucción",null,true],
-  ["contxto","Clara cierra una ronda Serie C de $65 millones de dólares para expandir su plataforma financiera en Latinoamérica",null,true],
-  ["contxto","La edtech hackÜ refuerza su apuesta por el mercado mexicano",null,false],
-  ["contxto","Rappi y bebbia se alían en México para llevar la purificación de agua a su plataforma",null,false],
   ["endeavor-ar","Endeavor Catalyst cierra su Fondo V de USD 320 millones: desde 2011 ya invirtió en 21 compañías argentinas",null,true],
   ["endeavor-ar","Nuevos miembros del Board de Endeavor Argentina",null,false],
   ["endeavor-ar","Los fundadores de Tiendanube fueron elegidos “Emprendedores Endeavor del Año”",null,false],
@@ -563,6 +558,26 @@ const SAMPLES = [
   ["chainalysis","Disrupting the Mercado Bitcoin Attack: How Chainalysis Led the Freeze of Nearly $10M in Stolen Funds",null,true],
   ["chainalysis","Western Europe’s $2 Trillion Crypto Economy Holds Firm",null,false],
   ["chainalysis","South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",null,false],
+  // Fuentes nuevas de Fintech LATAM: iProUP y Latam Fintech Hub (búsquedas de Google News medidas el 19 de noviembre de 2026).
+  ["iproup","Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X",null,true],
+  ["iproup","Tres bancos argentinos se unen para pelear con Mercado Pago",null,true],
+  ["iproup","Cambian las transferencias y pagos QR tras nueva normativa del BCRA",null,true],
+  ["iproup","Supervielle lanza PollenX, su plataforma de banco como servicio",null,true],
+  ["iproup","Banco Mundial evalúa usar USDC para enviar dinero a países en desarrollo",null,true],
+  ["iproup","Licencias bancarias, crédito y cripto: los pedidos fintech al BCRA",null,true],
+  ["iproup","Qué billetera virtual paga más en noviembre 2026",null,false],
+  ["iproup","Cuánto ganaron los usuarios de Mercado Pago en 2025",null,false],
+  ["iproup","Cuándo es el Argentina Fintech Forum 2026",null,false],
+  ["iproup","Mastercard lanza tarjeta ultra exclusiva en Argentina con beneficios clave",null,false],
+  ["latamfintech","Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark para facilitar el acceso a vehículos en México",null,true],
+  ["latamfintech","Fintech colombiana Palomma levanta US$14 millones y busca convertirse en el banco nativo de IA para el sector inmobiliario",null,true],
+  ["latamfintech","Las denuncias por fraude en transferencias electrónicas se duplicaron en Bogotá, Cali y Barranquilla",null,true],
+  ["latamfintech","El Salvador Fintech Forum 2026",null,false],
+  ["latamfintech","🚀 Los 10 neobancos más valiosos de América Latina en 2026",null,false],
+  ["latamfintech","Core bancario desde cero: cómo construir un banco desde la base | Mambu",null,false],
+  ["latamfintech","Podcast: Endeudados by CallbookAI",null,false],
+  ["latamfintech","Equity Link",null,false],
+  ["latamfintech","Open Finance Connect Chile 2027",null,false],
   // Fuentes nuevas de Ecuador (búsquedas de Google News y feeds medidos el 19 de noviembre de 2026).
   ["elcomercio-ec","Cinco cambios para los usuarios de tarjetas de crédito y de débito en Ecuador",null,true],
   ["elcomercio-ec","¿Vives fuera de Ecuador? Así puedes acceder al nuevo crédito del Biess para comprar casa",null,true],
@@ -598,7 +613,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'contxto', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
@@ -666,7 +681,7 @@ test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes 
   assert.equal(sourceById('bce-publicaciones').limit, 3);
   assert.deepEqual([sourceById('endeavor-ar').kind, sourceById('endeavor-ar').tier, sourceById('endeavor-ar').limit], ['organization', 3, 2]);
   assert.deepEqual([sourceById('fed').kind, sourceById('fed').tier, sourceById('fed').limit], ['official', 1, 2]);
-  for (const retired of ['asobanca', 'banecuador', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
+  for (const retired of ['asobanca', 'banecuador', 'contxto', 'ecuador-news', 'regulatory-news', 'latam-fintech-hub', 'latam-bloomberg', 'valora-analitik', 'colombia-fintech', 'lavca', 'felaban', 'digitaltransactions', 'epi', 'pcm', 'finextra-payments', 'finextra-crypto', 'trmlabs', 'coincenter']) assert.equal(sourceById(retired), undefined, retired);
 });
 
 // ---------------------------------------------------------------------------------------------------------

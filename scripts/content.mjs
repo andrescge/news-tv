@@ -393,7 +393,12 @@ export const FILTERS = {
   'diario-financiero': { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`billetera|open finance|finanzas abiertas|criptomoneda|medios de pago|transbank|tenpo|\bcmf\b|global66|fintual|toku|\bmach\b|destácame`), exclude: rx(LATAM_MARKET_NOISE) },
   // LatamList: el titular de una ronda suele decir solo «raises»; el sector («Brazilian fintech Nova…») está en el extracto.
   latamlist: { on: 'text', include: rx(String.raw`fintech|bank|payment|credit|lending|\bfinanc(e|ial)\b|wallet|crypto|stablecoin|insur|clara|cocos|yellow card|bbva|ita[uú]`) },
-  contxto: { include: rx(String.raw`fintech|banc|financ|pagos|cr[eé]dito|neobanc|cripto|inversi[oó]n en startups`) },
+  // iProUP (Argentina) llega por una búsqueda con términos de fintech y banca en el titular. Fuera las guías de consumo
+  // («qué billetera paga más», «cómo invertir», plazo fijo, dólar blue), los eventos y los mercados.
+  iproup: { include: rx(LATAM_FINTECH, LATAM_BANKING_ALL, String.raw`billetera|mercado pago|ual[aá]|naranja x|brubank|personal pay|\bcocos\b|\bbcra\b|\bcnv\b|tarjetas?|\bpagos?\b|cr[eé]ditos?|stablecoin|usdc|cripto|licencia|\bmora\b|transferencias|open finance|banco como servicio|ser banco|para su banco|\bIA\b`), exclude: rx(LATAM_MARKET_NOISE, String.raw`^(qu[eé] billetera|cu[aá]nto|cu[aá]ndo es|c[oó]mo (invertir|activar|sacar|pedir|cobrar|comprar))|paga m[aá]s|beneficios (clave|exclusivos)|plazo fijo|d[oó]lar (blue|hoy|oficial|mep)|fintech forum|bancos cerrados|licitaci[oó]n en d[oó]lares`) },
+  // Latam Fintech Hub llega por una búsqueda de su dominio: fuera su agenda de eventos, pódcast y cursos, los listados con emojis,
+  // el contenido de marca («… | Mambu») y las fichas de empresa, que se titulan con el nombre solo.
+  latamfintech: { exclude: /[\u{1F300}-\u{1FAFF}\u{2600}-\u{27BF}]|\b(forum|summit|bootcamp|podcast|episodio|webinar|stories|roadmap|meetup|hackathon|lab)\b|\s\|\s|\b20\d\d$/iu, test: story => story.title.trim().split(/\s+/).length > 3, why: () => 'ficha de empresa (tres palabras o menos)' },
   // Endeavor LATAM. La búsqueda por nombres trae mucho ruido: solo entra la nota cuyo titular nombra a una empresa del directorio.
   // Fuera también el ruido bursátil y los titulares promocionales (ENDEAVOR_MARKET_NOISE y ENDEAVOR_PROMO, definidos con el
   // resto del bloque Endeavor). El medio se comprueba aparte, con la lista ENDEAVOR_PRESS_HOSTS (allowHosts de la fuente).
@@ -743,7 +748,7 @@ export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]
 export const ENDEAVOR_PRESS_HOSTS = [
   // Medios que el proyecto ya usa como fuentes de nivel 1 y 2 (las pruebas comprueban que estén todos).
   'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
-  'latamlist.com', 'expansion.mx', 'df.cl', 'contxto.com', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
+  'latamlist.com', 'expansion.mx', 'df.cl', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
   'finextra.com', 'thebanker.com', 'americanbanker.com', 'pymnts.com', 'wsj.com', 'elpais.com', 'reuters.com', 'theblock.co',
   'coindesk.com', 'criptonoticias.com',
   // Referencia internacional y agencias de noticias (no de comunicados).
@@ -768,7 +773,7 @@ export const ENDEAVOR_PRESS_HOSTS = [
   // Brasil.
   'valor.globo.com', 'oglobo.globo.com', 'folha.uol.com.br', 'estadao.com.br', 'exame.com', 'infomoney.com.br', 'neofeed.com.br', 'braziljournal.com',
   // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
-  'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+  'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'contxto.com', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
 ];
 // Nombramientos y equipo directivo (español, inglés y portugués): cargos (CEO, CFO, «Chief … Officer», director financiero,
 // gerente general, country manager) y verbos de nombramiento con su complemento («ficha a», «incorpora a»; no «incorporar
