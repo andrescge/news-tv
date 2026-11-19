@@ -604,6 +604,24 @@ test('auditoría de filtros: extracto de LatamList, ruta de Reuters a Pagos y co
   assert.equal(norm('Se actualizan los valores de la cobertura del seguro de depósitos'), true);
 });
 
+test('Google News: las consultas con intitle: no pasan de 9 términos y todas piden un período', () => {
+  for (const item of SOURCES.filter(source => source.adapter === 'google' && !source.search)) {
+    const query = new URL(item.url).searchParams.get('q');
+    assert.match(query, /\bwhen:\d+d\b/, `${item.id}: sin when:`);
+    // Con más de 9 términos intitle: Google deja de respetar when: (medido en noviembre de 2026).
+    assert.ok((query.match(/intitle:/g) || []).length <= 9, `${item.id}: demasiados intitle:`);
+  }
+  // Las fuentes que estaban saturadas o mal apuntadas: Bloomberg Línea por búsqueda (ya no la sección Negocios), Ecuador en el
+  // titular y sin Expreso, Reuters con los términos en el titular.
+  assert.equal(sourceById('bloomberg-negocios').adapter, 'google');
+  assert.deepEqual(sourceById('bloomberg-negocios').allowHosts, ['bloomberglinea.com']);
+  const q = id => new URL(sourceById(id).url).searchParams.get('q');
+  assert.match(q('bloomberg-ecuador'), /intitle:Ecuador/);
+  assert.doesNotMatch(q('bloomberg-ecuador'), /expreso/);
+  assert.match(q('reuters-cripto'), /intitle:crypto/);
+  assert.match(q('reguladores-prensa'), /when:7d/);
+});
+
 test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes retiradas', () => {
   const ids = new Set();
   for (const item of SOURCES) {
