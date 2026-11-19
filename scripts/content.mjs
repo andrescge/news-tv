@@ -730,7 +730,7 @@ export const ENDEAVOR_AMBIGUOUS = new Set([
   'Campo Vivo', 'Capim', 'Caramba', 'Cayena', 'Ceibo', 'CEPA', 'Clara', 'Clip', 'Cobre', 'Compara', 'Comun', 'Comunal', 'Conexa', 'Contigo',
   'Cora', 'Crezcamos', 'Cultura Colectiva', 'Descomplica', 'Dito', 'Docket', 'Dynamo', 'Eden', 'Elenas', 'Enmedio', 'Envoys', 'Estoca',
   'Fairplay', 'Flash', 'Galgo', 'Gera', 'Gesto', 'Imagen Dental', 'Inventa', 'isaac', 'Jüsto', 'Justos', 'Kamino', 'Klar', 'La Zarza', 'Latir', 'Lemon',
-  'Limonada', 'Loft', 'Mendel', 'Mensajeros Urbanos', 'Mercado Bitcoin', 'Meru', 'Migrante', 'Minka', 'Moises', 'Mural', 'Neon', 'Nomad',
+  'Limonada', 'Loft', 'Mendel', 'Mensajeros Urbanos', 'Meru', 'Migrante', 'Minka', 'Moises', 'Mural', 'Neon', 'Nomad',
   'Pier', 'Poke', 'Pomelo', 'Prática', 'Prex', 'Prey', 'Principia', 'Prometeo', 'Proteus', 'Quero', 'Quinoa', 'Refinancia', 'Reservamos',
   'Reuse', 'Ripio', 'Runa', 'Runway', 'Sami', 'Sentinel', 'Shiva', 'Spira', 'Swap', 'Tala', 'Tangelo', 'Thais', 'Triciclos', 'Unico',
   'Ver de Verdad', 'VERTICAL', 'Will bank', 'Will Bank', 'Yema', 'Yerra', 'Zapping',
@@ -742,8 +742,9 @@ export const ENDEAVOR_EXCLUDED = new Set(['Arizona', 'Comp', 'CORE', 'Dominion',
 // Otras grafías del nombre de una empresa del directorio (clave: slug). No añade empresas.
 export const ENDEAVOR_ALIASES = { addi: ['Addi'], 'mercadolibre-com': ['MercadoLibre', 'Mercado Libre', 'Mercado Pago'], 'will-bank': ['Will Bank'] };
 // Nombres hechos de palabras comunes que solo cuentan escritos como en la lista, con cada palabra en mayúscula («Un Estado
-// fuerte para un mercado libre» no es la empresa; «Mercado Pago lanza…» sí). En titular o extracto y sin exigir contexto.
-export const ENDEAVOR_CASED = new Set(['Mercado Libre', 'Mercado Pago']);
+// fuerte para un mercado libre» no es la empresa; «Mercado Pago lanza…» sí). En titular o extracto y sin exigir contexto:
+// con las dos mayúsculas no se confunden con nada («Mercado Bitcoin sufre ataque de hacker…» es la empresa).
+export const ENDEAVOR_CASED = new Set(['Mercado Libre', 'Mercado Pago', 'Mercado Bitcoin']);
 // Ruido bursátil y de portales de inversión en la búsqueda (precio objetivo, calificaciones de analistas, volumen,
 // transcripciones de resultados, saltos de precio de tokens, caídas en Wall Street): como en Cripto, no entran notas de cotización.
 export const ENDEAVOR_MARKET_NOISE = rx(String.raw`\((NASDAQ|NYSE|BSP|BVMF|BMV|B3):|\((DLO|MELI|NU|STNE|PAGS|VTEX|XP)\)|\bstock\b|price target|precio objetivo|\bshares (are|fall|rise|drop|jump|slide)|large volume|time to buy|earnings call|\bupside\b|\bdownside\b|undervalued|overvalued|bargain|\brating\b|\bBPA\b|\bEPS\b|la acci[oó]n de|acciones (de|del)\b|\bprice (jumps|drops|falls|rises|surges)|\brall(y|ies)\b|outperforms|\| News$|Wall Street|acciones (pierden|caen|suben|se desploman)|\b(cay[oó]|cae|sube|subi[oó]|se desploma) (casi |m[aá]s de )?\d+(,\d+)? ?%|suba la acci[oó]n`);
@@ -786,18 +787,26 @@ export const ENDEAVOR_PRESS_HOSTS = [
   'valor.globo.com', 'oglobo.globo.com', 'folha.uol.com.br', 'estadao.com.br', 'exame.com', 'infomoney.com.br', 'neofeed.com.br', 'braziljournal.com',
   // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
   'contxto.com', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
+  // Prensa fintech, de tecnología y de negocios con redacción propia que cubre a la red (revisión de noviembre de 2026):
+  // Fintech Expert (México), Xataka México, Mobile Time LATAM, LexLatin (derecho de negocios), Enter.co (Colombia),
+  // ITSitio y Mexico Business News.
+  'fintechexpert.mx', 'xataka.com.mx', 'mobiletime.la', 'lexlatin.com', 'enter.co', 'itsitio.com', 'mexicobusiness.news',
 ];
 // Nombramientos y equipo directivo (español, inglés y portugués): cargos (CEO, CFO, «Chief … Officer», director financiero,
 // gerente general, country manager) y verbos de nombramiento con su complemento («ficha a», «incorpora a»; no «incorporar
 // esta fruta»). «named» y «names» sueltos no cuentan («a cat named Pomelo»), ni «head of» («Head of State visits Tala»). «Pomelo nombró a … como nuevo Chief Financial
 // Officer» y «Pomelo refuerza su equipo directivo con la incorporación de…» son notas de empresa.
-const ENDEAVOR_APPOINTMENTS = String.raw`\b(ceo|cfo|coo|cto|cmo|cio|cpo|cro)\b|\bchief [a-z]+( [a-z]+)? officer\b|country manager|general manager|managing director|gerente (general|de pa[ií]s)|\bdirec?tora? (financ|general|geral|ejecutiv|executiv|de (finanzas|operaciones|tecnolog))|\bdirectiv[oa]s?\b|equipo de liderazgo|leadership team|alta (direcci[oó]n|gerencia)|\bc-?(suite|level)\b|\bnombr(a|ó)|\bdesign(a|ó)|\bfich(aje|ó|a al?\b)|\bincorpor(aci|ó|a al?\b)|\bcontrat(a|ó|ou)|\bnome(ia|ou|ad[oa]|a[cç][aã]o)\b|\bappoint|\bnames (new|its|former|ex)\b|\bhir(es|ed|ing)\b|\basum(e|ió) (como|el cargo|la (direcci|presidencia|gerencia))|\bassume (o cargo|como)`;
+// Altas y salidas solo con su complemento de cargo o de equipo: «se suma al equipo de», «se suma a Klar como», «elige a su
+// nuevo CEO», «asciende a directora», «renuncia a su cargo», «deja el cargo», cofundador, vicepresidente. Sueltos («Clara se
+// suma a la protesta», «renuncia a la final») no cuentan.
+const ENDEAVOR_APPOINTMENTS = String.raw`\b(ceo|cfo|coo|cto|cmo|cio|cpo|cro)\b|\bchief [a-z]+( [a-z]+)? officer\b|country manager|general manager|managing director|gerente (general|de pa[ií]s)|\bdirec?tora? (financ|general|geral|ejecutiv|executiv|de (finanzas|operaciones|tecnolog))|\bdirectiv[oa]s?\b|equipo de liderazgo|leadership team|alta (direcci[oó]n|gerencia)|\bc-?(suite|level)\b|\bnombr(a|ó)|\bdesign(a|ó)|\bfich(aje|ó|a al?\b)|\bincorpor(aci|ó|a al?\b)|\bcontrat(a|ó|ou)|\bnome(ia|ou|ad[oa]|a[cç][aã]o)\b|\bappoint|\bnames (new|its|former|ex)\b|\bhir(es|ed|ing)\b|\basum(e|ió) (como|el cargo|la (direcci|presidencia|gerencia))|\bassume (o cargo|como)|\b(se )?suma (a|al) (su |el |la )?(equipo|directorio|board|junta|comit[eé])|\bse suma a \S+ como\b|\belige a (su |un |una )?(nuev[oa] )?(ceo|cfo|coo|cto|director|directora|presidente|presidenta|gerente)|\bascend(i[oó]|e|ido) a (director|directora|gerente|jef[ea]|vicepresident|presidente|presidenta|socio|socia|ceo|cfo|coo|cto)|\brenunci(a|ó) (a su cargo|al cargo|como)|\bdej(a|ó) (el|su) cargo|\bdej(a|ó) la (direcci[oó]n|presidencia|gerencia)|\bcofundador(a|es)?\b|\bco-?founders?\b|\bvicepresident[ea]s?\b`;
 // Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión, finanzas o nombramientos en el titular o el extracto.
 // No incluye importes sueltos («5 millones de toneladas de cobre» no es una ronda).
-export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b`, ENDEAVOR_APPOINTMENTS);
-// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…»), cargos políticos, frutas y
+export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b|hacke[or]|\bhacks?\b|ciberataque|gastos? corporativ|viajes corporativos|tarjetas? corporativ|cuentas? en d[oó]lares`, ENDEAVOR_APPOINTMENTS);
+// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…», «Cobre se desploma 5%…»,
+// metal rojo, LME, onzas), cargos políticos, frutas y
 // nutrición («Pomelo: el cítrico que…», también Tangelo, Limonada, Quinoa).
-export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|alcald|jefa de gobierno|candidat|diputad|senador|\bfrutas?\b|\bfruits?\b|c[ií]tric|citrus|grapefruit|toronja|vitamina|nutrici[oó]n|nutrition|\bdieta?\b`);
+export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|se desploma|metal rojo|\bLME\b|\bonzas?\b|libra de cobre|alcald|jef[ae] de gobierno|candidat|diputad|senador|\bfrutas?\b|\bfruits?\b|c[ií]tric|citrus|grapefruit|toronja|vitamina|nutrici[oó]n|nutrition|\bdieta?\b`);
 
 const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
 const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -854,12 +863,19 @@ const sentenceCased = (title, match) => {
 //   «María Clara»). La primera palabra del titular no cuenta como vecina: lleva mayúscula por posición.
 // - en mayúscula de título (inglés), en medio del titular: ahí todas las palabras llevan mayúscula («…to Swap Crypto Wallet
 //   Addresses»). Vale al principio, tras «’s» («Brazil’s Loft»), tras dos puntos o raya, antes de una coma o tras una palabra
-//   en minúscula de cuatro letras o más («La fintech Bold…»), que en mayúscula de título no existiría.
+//   en minúscula de cuatro letras o más («La fintech Bold…») o tras una preposición española («nuevo CFO de Pomelo», «alianza
+//   con Klar»; no «a», que el inglés escribe en minúscula), que en mayúscula de título no existirían.
+// - tras Santa, San, Santo o Puerto: es un lugar («Santa Clara contratará…»).
+// Las comillas no separan al vecino («el ‘Tala’ Rangel» es una persona), y las palabras de producto no cuentan como vecino
+// («Klar Empresarial colocó…», «Clip Pay»).
+const PLACE_BEFORE = /(?:^|[^\p{L}])(Santa|San|Santo|Puerto)\s+$/u;
+const PRODUCT_AFTER = /^\s+(Empresarial|Empresas|Business|Pay|Card|Bank|Cash|Wallet|Pro|Plus)(?![\p{L}\p{N}])/u;
 function notACompany(title, match) {
-  const after = title.slice(match.index + match[0].length);
-  const before = title.slice(0, match.index);
-  if (sentenceCased(title, match)) return /^\s+\p{Lu}\p{Ll}/u.test(after) || /\S\s+\p{Lu}\p{Ll}+\s+$/u.test(before);
-  return !(/^\s*$/.test(before) || /['’]s\s+$|[:|–—-]\s+$|(?<![\p{L}\p{N}])\p{Ll}{4,}\s+$/u.test(before) || /^,/.test(after));
+  const after = title.slice(match.index + match[0].length).replace(/^[’'"»”]+/u, '');
+  const before = title.slice(0, match.index).replace(/[‘'"«“]+$/u, '');
+  if (PLACE_BEFORE.test(before)) return true;
+  if (sentenceCased(title, match)) return (/^\s+\p{Lu}\p{Ll}/u.test(after) && !PRODUCT_AFTER.test(after)) || /\S\s+\p{Lu}\p{Ll}+\s+$/u.test(before);
+  return !(/^\s*$/.test(before) || /['’]s\s+$|[:|–—-]\s+$|(?<![\p{L}\p{N}])(\p{Ll}{4,}|de|del|al|con|en|por|y)\s+$/u.test(before) || /^,/.test(after));
 }
 // Empresa Endeavor que menciona una nota: primero el titular y luego el extracto (salvo con `titleOnly`). Los nombres ambiguos
 // solo cuentan en el titular y con contexto (ENDEAVOR_CONTEXT en titular o extracto, o nota del canal latam).

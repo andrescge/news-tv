@@ -937,6 +937,38 @@ test('Endeavor: los nombramientos y el equipo directivo cuentan como contexto de
   assert.equal(ENDEAVOR_CONTEXT.test('Pomelo: beneficios de incorporar esta fruta a tu dieta'), false);
 });
 
+test('Endeavor: la empresa al final tras el nombre de una persona, altas y salidas con su cargo, y los falsos positivos que siguen fuera', () => {
+  const titleOnly = title => matchEndeavor({ title, excerpt: '', category: 'endeavor' }, { titleOnly: true })?.company ?? null;
+  // La empresa al final, tras una persona y una preposición (nota real de noviembre de 2026).
+  assert.equal(titleOnly('Martín Zanella, nuevo CFO de Pomelo'), 'Pomelo');
+  assert.equal(titleOnly('Nueva Alianza Regional con Klar Para Pagos'), 'Klar');
+  // Altas, ascensos y salidas, siempre con su cargo o su equipo.
+  assert.equal(titleOnly('Una ex Nubank se suma al equipo de Klar'), 'Klar');
+  assert.equal(titleOnly('Exdirectiva de Visa se suma a Pomelo como líder de riesgos'), 'Pomelo');
+  assert.equal(titleOnly('Bold elige a su nuevo CEO para la región'), 'Bold');
+  assert.equal(titleOnly('Tala: su jefa de producto asciende a vicepresidenta'), 'Tala');
+  assert.equal(titleOnly('Clip: renuncia su cofundador tras diez años'), 'Clip');
+  assert.equal(titleOnly('Ripio: el presidente deja el cargo'), 'Ripio');
+  assert.equal(titleOnly('Mendel transforma los viajes corporativos en Latam'), 'Mendel');
+  // Una palabra de producto junto al nombre no es un apellido; Mercado Bitcoin, con sus mayúsculas, no necesita contexto.
+  assert.equal(titleOnly('En seis meses, Klar Empresarial colocó 1,900 millones de pesos en líneas de crédito'), 'Klar');
+  assert.equal(titleOnly('Mercado Bitcoin sufre ataque de hacker y suspende depósitos y retiros'), 'Mercado Bitcoin');
+  assert.equal(titleOnly('El mercado bitcoin vuelve a caer'), null);
+  // Falsos positivos medidos en la búsqueda: lugar, metal, apodo entre comillas, persona y verbos sin cargo.
+  assert.equal(titleOnly('Santa Clara contratará a un gerente de sostenibilidad para dar seguimiento a los objetivos'), null);
+  assert.equal(titleOnly('San Clemente y Puerto Cobre contratan nuevo gerente'), null);
+  assert.equal(titleOnly('Cobre se desploma 5% mientras inversionistas abandonan apuesta por la IA'), null);
+  assert.equal(titleOnly('Cobre asciende a máximos del año en la LME'), null);
+  assert.equal(titleOnly('Jorge Campos explota contra las críticas al ‘Tala’ Rangel y lanza contundente mensaje'), null);
+  assert.equal(titleOnly('Clara Brugada renuncia a su cargo para buscar la candidatura'), null);
+  assert.equal(titleOnly('Clara Brugada, jefa de gobierno, deja el cargo'), null);
+  assert.equal(titleOnly('Mi vecina Clara se suma a la protesta'), null);
+  assert.equal(titleOnly('Clara renuncia a la final del torneo'), null);
+  assert.equal(titleOnly('Clara elige a sus amigas para el viaje'), null);
+  assert.equal(titleOnly('Lemon se suma a la dieta de los deportistas'), null);
+  assert.equal(titleOnly('Bitcoin Holders Face a Swap Deadline as Platform Launches Upgrade'), null);
+});
+
 test('Endeavor LATAM: las notas de nombramientos de Pomelo pasan el filtro de punta a punta', () => {
   const prensa = sourceById('endeavor-prensa');
   const rss = '<rss><channel>'
@@ -1055,8 +1087,8 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   assert.equal(new Set(ENDEAVOR_PRESS_HOSTS).size, ENDEAVOR_PRESS_HOSTS.length, 'dominios repetidos');
   for (const host of ENDEAVOR_PRESS_HOSTS) assert.match(host, /^[a-z0-9.-]+\.[a-z]{2,}$/, host);
   // Dominios reales (sourceUrl de Google News) de la última edición.
-  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://mercado.com.ar', 'https://www.mercado.com.ar', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com'];
-  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'https://supermercado.com.ar', 'nada'];
+  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://mercado.com.ar', 'https://www.mercado.com.ar', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com', 'https://www.fintechexpert.mx', 'https://www.xataka.com.mx', 'https://www.mobiletime.la', 'https://lexlatin.com', 'https://www.enter.co', 'https://www.itsitio.com', 'https://mexicobusiness.news', 'https://decrypt.co', 'https://www.fintechfutures.com'];
+  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'https://supermercado.com.ar', 'https://ecosistemastartup.com', 'https://estrelladigital.com.co', 'https://es.tradingview.com', 'https://edomexaldia.com', 'nada'];
   for (const url of yes) assert.equal(allowedHost({ sourceUrl: url }, prensa), true, url);
   for (const url of no) assert.equal(allowedHost({ sourceUrl: url }, prensa), false, url);
   // Incluye los medios que el proyecto ya usa como fuentes de nivel 1 y 2.
