@@ -90,15 +90,8 @@ function ago(ms) {
   if (hours < 48) return `hace ${plural(hours, 'hora', 'horas')}`;
   return `hace ${Math.floor(hours / 24)} días`;
 }
-// Traducción automática del titular de una nota en inglés (campo opcional `editorial.es`): texto plano corto.
-// Cualquier otro texto de la capa editorial (incluido el campo antiguo de las ediciones previas) no se muestra.
-function translationOf(story) {
-  if (langOf(story) !== 'en') return '';
-  const es = story?.editorial?.es;
-  if (typeof es !== 'string') return '';
-  const clean = es.replace(/\s+/g, ' ').trim();
-  return clean.length <= 240 && !/[<>]|https?:|www\./i.test(clean) ? clean : '';
-}
+// La capa editorial no aporta ningún texto a la pantalla: solo ordena (puntuación) y agrupa (cobertura). Los campos
+// de ediciones anteriores con texto generado (la traducción `es`, la línea antigua) se ignoran.
 // «También en»: otros medios que contaron el mismo hecho (campo opcional `coverage`).
 function coverageOf(story) {
   if (!Array.isArray(story?.coverage)) return [];
@@ -255,10 +248,6 @@ function renderStory(story) {
   excerptNode.hidden = !excerpt;
   excerptNode.textContent = excerpt;
   excerptNode.lang = lang;
-  const translation = translationOf(story);
-  $('#nota-traduccion').hidden = !translation;
-  $('#nota-traduccion-texto').textContent = translation;
-  $('#nota').classList.toggle('con-traduccion', !!translation);
   const coverage = coverageOf(story);
   $('#nota-cobertura').hidden = !coverage.length;
   $('#nota-cobertura').textContent = coverage.length ? `También en ${coverage.join(', ')}` : '';

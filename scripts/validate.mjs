@@ -43,7 +43,7 @@ export function validateEdition(data, { now = Date.now() } = {}) {
     const source = SOURCE_BY_ID.get(story.sourceId);
     if (source?.linkHosts && !linkAllowed(story, source)) fail(`enlace fuera de los dominios de ${source.id} en ${name}: ${story.url}`);
     // Empresa Endeavor mencionada (opcional): nombre y, si hay enlace, una ficha https de endeavor.org.
-    // Capa editorial (opcional): juicio con puntuación, grupo y traducción opcional en texto plano (el «why» antiguo se acepta); cobertura con nombres cortos.
+    // Capa editorial (opcional): juicio con puntuación y grupo (la traducción `es` y el «why» de ediciones anteriores se aceptan si son texto plano corto); cobertura con nombres cortos.
     if (story.editorial !== undefined && !validJudgment(story.editorial)) fail(`juicio editorial inválido en ${name}`);
     if (story.coverage !== undefined && !validCoverage(story.coverage)) fail(`cobertura inválida en ${name}`);
     if (story.endeavor !== undefined &&(typeof story.endeavor?.company !== 'string' || !story.endeavor.company || (story.endeavor.url !== undefined && !endeavorUrl(story.endeavor.url)))) fail(`empresa Endeavor inválida en ${name}`);

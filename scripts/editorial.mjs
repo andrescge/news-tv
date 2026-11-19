@@ -1,6 +1,5 @@
-// Capa editorial: Claude da a cada nota un juicio editorial una sola vez (relevancia, el hecho que cuenta y, solo en notas
-// en inglés, la traducción del titular), y con ese juicio la composición agrupa duplicados, ordena por importancia y
-// descarta lo que no viene al caso.
+// Capa editorial: Claude da a cada nota un juicio editorial una sola vez (relevancia y el hecho que cuenta), y con ese
+// juicio la composición agrupa duplicados, ordena por importancia y descarta lo que no viene al caso.
 //
 // Reglas que no se negocian:
 // - Las credenciales se leen solo del entorno. En GitHub Actions no hay clave guardada: el SDK canjea el token de
@@ -11,10 +10,10 @@
 //   recopilación sigue sin juicio nuevo.
 // - Titulares y extractos son texto de terceros: van como datos delimitados y el modelo debe ignorar cualquier orden
 //   dentro de ellos. Toda salida se valida antes de usarla; lo que no valida se descarta para esa nota.
-// - El titular y el extracto siguen siendo los del medio. La única línea generada es `es`: la traducción fiel al español
-//   del titular de una nota en inglés (la pantalla la rotula «Traducción automática»). Sin valoraciones ni datos que no
-//   estén en el titular o el extracto; nunca en notas en español. Si no valida, se omite y el puntaje se conserva.
-//   El campo `why` («por qué importa») ya no se genera: el de ediciones anteriores se acepta al validar y no se muestra.
+// - El titular y el extracto siguen siendo los del medio. La capa no genera ningún texto que se muestre: solo ordena
+//   (puntuación) y agrupa (grupo). Los campos `es` (traducción automática) y `why` («por qué importa») de ediciones y
+//   memos anteriores se aceptan al validar si están bien formados, pero se descartan al sanear: el juicio conserva su
+//   puntuación y su grupo, y la nota no se vuelve a enviar.
 // - Un juicio ya emitido para una nota se conserva (viaja con la nota, en la edición anterior o en el memo) y esa nota
 //   no se vuelve a enviar.
 //
@@ -26,7 +25,7 @@ export const EDITORIAL = {
   // Modelo por defecto según la guía del SDK (claude-api): Claude Opus 5.5. Para abaratar, el dueño puede cambiarlo aquí
   // (por ejemplo, 'claude-sonnet-5-5' o 'claude-haiku-5-5'); README.md compara el coste.
   model: 'claude-opus-5-5',
-  // Clasificar y traducir un titular no necesita razonamiento largo: esfuerzo bajo (en Opus 5.5 el pensamiento no se apaga).
+  // Puntuar y agrupar un titular no necesita razonamiento largo: esfuerzo bajo (en Opus 5.5 el pensamiento no se apaga).
   effort: 'low',
   threshold: 30,        // composición: fuera las notas juzgadas con menos puntos (salvo documentos primarios oficiales)
   neutralScore: 50,     // puntuación con la que se ordena una nota aún sin juicio cuando el canal sí tiene juicios
@@ -43,8 +42,8 @@ export const EDITORIAL = {
 // luego Fintech LATAM y Endeavor LATAM, luego Pagos globales y Cripto; dentro de cada grupo, de la más nueva a la más
 // antigua. Así los feeds en inglés, que publican muchas notas por hora, no se comen el tope.
 export const EVALUATION_ORDER = [['ecuador', 'regulacion'], ['latam', 'endeavor'], ['pagos', 'cripto']];
-export const ES_MAX = 240;      // traducción automática: el prompt pide 240 como máximo
-export const WHY_MAX = 180;      // línea «por qué importa» de ediciones anteriores: se acepta al validar, ya no se genera
+// Textos de ediciones anteriores, que ya no se generan: se aceptan al validar con estos topes y se descartan al sanear.
+export const LEGACY_TEXT_MAX = { es: 240, why: 180 }; // traducción automática y línea «por qué importa»
 export const CLUSTER_MAX = 48;
 const NEW_CLUSTER_MAX = 40;
 const COVERAGE_MAX = 8;
@@ -97,15 +96,7 @@ Ejemplos calibrados (titulares ilustrativos):
 - Cualquier canal, «Un bufete asesora en la compra de un banco»: 5.
 Las notas que cuentan el mismo hecho llevan la misma puntuación.
 
-2. "es": traducción automática del titular al español, solo si la nota está en inglés (idioma "inglés"). Si la nota está en español, devuelve siempre "" (cadena vacía).
-- Traduce con fidelidad el titular. Si el extracto da el dato central de la nota, puedes añadir una segunda frase que lo traduzca. Máximo 240 caracteres en total.
-- Es una traducción, no un resumen ni una explicación. No valores («clave», «señal de», «avance», «relevante», «hito») salvo que el original lo diga, no expliques por qué importa y no describas a empresas, personas ni países con datos que no estén en el titular o el extracto. No añadas nombres, cifras, fechas, causas ni consecuencias, ni conocimiento propio.
-- Conserva los nombres propios como vienen. Usa los mismos dígitos que el original: billion es mil millones ($70 billion → US$70 mil millones) y trillion es billón ($1.2 trillion → US$1,2 billones).
-- El Banco Central Europeo (ECB) se escribe completo, nunca «BCE».
-- Texto plano: sin enlaces, sin direcciones web, sin HTML, sin Markdown, sin comillas de adorno y sin emojis. No nombres al medio (la pantalla ya lo muestra).
-- Si no puedes traducir con fidelidad, devuelve "".
-
-3. "cluster": identificador del hecho que cuenta la nota, para reunir en una sola las notas de distintos medios sobre el mismo hecho.
+2. "cluster": identificador del hecho que cuenta la nota, para reunir en una sola las notas de distintos medios sobre el mismo hecho.
 - Si la nota cuenta el mismo hecho concreto que una nota de <contexto>, de cualquier canal, copia exactamente su "cluster".
 - Si cuenta el mismo hecho que otra nota nueva, usa el mismo "cluster" en ambas.
 - Si no, crea uno nuevo: de 2 a 5 palabras en minúsculas, sin tildes ni eñes, separadas por guiones, con el actor principal primero y el hecho después (por ejemplo, biess-credicasa-migrantes o binance-hackeo-robo). No pongas fechas, medios ni el idioma de la nota. Los del Banco Central del Ecuador empiezan por bce- y los del Banco Central Europeo por ecb-.
@@ -121,8 +112,8 @@ export const OUTPUT_SCHEMA = {
       type: 'array',
       items: {
         type: 'object',
-        properties: { ref: { type: 'string' }, score: { type: 'integer' }, es: { type: 'string' }, cluster: { type: 'string' } },
-        required: ['ref', 'score', 'es', 'cluster'],
+        properties: { ref: { type: 'string' }, score: { type: 'integer' }, cluster: { type: 'string' } },
+        required: ['ref', 'score', 'cluster'],
         additionalProperties: false,
       },
     },
@@ -132,45 +123,37 @@ export const OUTPUT_SCHEMA = {
 };
 
 // ---------------------------------------------------------------------------------------------------------
-// Validación. Un juicio válido: score entero 0-100, cluster corto, model y at; `es` opcional (texto plano de hasta
-// ES_MAX caracteres). Un `why` de ediciones anteriores se acepta si es texto plano corto y se conserva tal cual (la
-// pantalla no lo muestra); sirve para saber que la nota se juzgó antes de que existiera la traducción.
+// Validación. Un juicio válido: score entero 0-100, cluster corto, model y at; nada más. Los textos que generaban
+// versiones anteriores (`es`, la traducción automática, y `why`, «por qué importa») se aceptan si son texto plano corto,
+// para que las ediciones y los memos ya publicados sigan siendo válidos, pero no se conservan: el juicio validado es
+// siempre { score, cluster, model, at }. Así desaparecen de la edición en la siguiente ejecución sin perder puntuación
+// ni grupo, y la nota no se vuelve a enviar al modelo.
 const CLUSTER_RX = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const MODEL_RX = /^[a-z0-9][a-z0-9.-]{0,63}$/i;
 // Sin HTML ni Markdown, sin enlaces ni dominios, sin caracteres de control.
 const UNSAFE_TEXT = /[<>{}[\]`|\\]|\*\*|__|https?:|www\.|\b[\p{L}\d-]+\.(?:com|net|org|ec|io|co|mx|gov|gob|info|xyz|ly|me|app|dev|ai|br|ar|cl|pe|uy|es|uk|eu)\b|[\u0000-\u001f\u007f-\u009f\u200b-\u200f\u2028-\u202e\u2066-\u2069]/iu;
 const plainText = (value, max) => {
-  if (typeof value !== 'string') return null;
+  if (typeof value !== 'string') return false;
   const text = value.replace(/[\t\r\n]+/g, ' ').replace(/ {2,}/g, ' ').trim();
-  if (text.length > max || UNSAFE_TEXT.test(text)) return null;
-  return text;
+  return text.length <= max && !UNSAFE_TEXT.test(text);
 };
-export const plainWhy = value => plainText(value, WHY_MAX);
-export const plainEs = value => plainText(value, ES_MAX);
 export function validJudgment(raw) {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
-  const { score, why, es, cluster, model, at } = raw;
+  const { score, cluster, model, at } = raw;
   if (typeof score !== 'number' || !Number.isInteger(score) || score < 0 || score > 100) return null;
-  const legacy = why === undefined ? undefined : plainWhy(why);
-  if (legacy === null) return null;
-  const translation = es === undefined ? undefined : plainEs(es);
-  if (translation === null) return null;
+  for (const [field, max] of Object.entries(LEGACY_TEXT_MAX)) if (raw[field] !== undefined && !plainText(raw[field], max)) return null;
   if (typeof cluster !== 'string' || cluster.length > CLUSTER_MAX || !CLUSTER_RX.test(cluster)) return null;
   if (typeof model !== 'string' || !MODEL_RX.test(model)) return null;
   const time = typeof at === 'string' ? Date.parse(at) : NaN;
   if (!Number.isFinite(time)) return null;
-  return { score, cluster, model, at: new Date(time).toISOString(), ...(translation ? { es: translation } : {}), ...(legacy !== undefined ? { why: legacy } : {}) };
+  return { score, cluster, model, at: new Date(time).toISOString() };
 }
-// Versión tolerante: si solo fallan los textos (`why` o `es`), se conserva el juicio sin ellos.
+// Versión tolerante, para sanear: un texto antiguo mal formado no invalida la puntuación ni el grupo (se descarta igual).
 function lenientJudgment(raw) {
-  const judgment = validJudgment(raw);
-  if (judgment || !raw || typeof raw !== 'object' || Array.isArray(raw)) return judgment;
-  const { why: _why, es: _es, ...rest } = raw;
+  if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
+  const { es: _es, why: _why, ...rest } = raw;
   return validJudgment(rest);
 }
-// Juicio anterior a la traducción automática (trae `why` y no `es`) de una nota en inglés: se le pide la traducción una
-// sola vez, al final de la cola, y conserva su puntuación y su grupo.
-export const untranslated = story => story?.language === 'en' && !!story.editorial && story.editorial.why !== undefined && !story.editorial.es;
 // Medios que también cubrieron el hecho: nombres cortos de texto plano, sin repetir.
 export function validCoverage(value) {
   if (!Array.isArray(value)) return null;
@@ -184,117 +167,13 @@ export function validCoverage(value) {
   return names.length && names.length <= COVERAGE_MAX ? names : null;
 }
 // Una nota con juicio o cobertura alterados (por ejemplo, de una edición anterior manipulada) pierde esos campos: una
-// puntuación o un grupo inválidos, el juicio entero; un texto inválido, solo ese texto. Una traducción que ya no se
-// sostiene con el titular y el extracto de la nota (o en una nota que no es en inglés) se quita.
+// puntuación o un grupo inválidos, el juicio entero. Un `es` o un `why` antiguos se quitan siempre, válidos o no.
 export function cleanStory(story) {
   if (!story || typeof story !== 'object') return story;
   const { editorial, coverage, ...rest } = story;
   const judgment = editorial === undefined ? null : lenientJudgment(editorial);
-  if (judgment?.es && !faithfulEs(judgment.es, rest)) delete judgment.es;
   const names = coverage === undefined ? null : validCoverage(coverage);
   return { ...rest, ...(judgment ? { editorial: judgment } : {}), ...(names ? { coverage: names } : {}) };
-}
-
-// ---------------------------------------------------------------------------------------------------------
-// Regla «no añadir hechos» en la traducción, comprobada en lo que se puede comprobar sin el modelo.
-//
-// Cifras: toda cifra de la traducción debe estar en el titular o el extracto.
-// - Una cifra con escala («mil millones», «millones», «billones», «mil») debe valer lo mismo que una cifra del original
-//   con la suya: billion es mil millones ($70 billion → US$70 mil millones o US$70.000 millones) y trillion es billón
-//   ($1.2 trillion → US$1,2 billones). Así se rechaza el falso amigo «billion» → «billones», que conserva los dígitos.
-// - Una cifra sin escala (porcentajes, años, plazos) debe aparecer en el original con los mismos dígitos.
-// Separadores: seguidos de tres cifras son de miles (6.300, 1,200); si no, el último es el decimal (6.3, 1,2).
-const digitsOf = text => (String(text ?? '').match(/\d[\d.,]*/g) || []).map(number => number.replace(/[.,]+$/, '').replace(/[.,]/g, '')).filter(Boolean);
-function amount(raw) {
-  const groups = raw.replace(/[.,]+$/, '').split(/[.,]/);
-  if (groups.length === 1 || groups.slice(1).every(group => group.length === 3)) return Number(groups.join(''));
-  return Number(`${groups.slice(0, -1).join('')}.${groups[groups.length - 1]}`);
-}
-const EN_SCALE = /(\d[\d.,]*)\s?(trillions?|tln|tn|billions?|bln|bn|b|millions?|mln|mn|m|thousand|k)?(?!\p{L})/giu;
-const ES_SCALE = /(\d[\d.,]*)\s?(mil\s+millones|millones|mill[oó]n|billones|bill[oó]n|mil|mm|mdd|mdp)?(?!\p{L})/giu;
-const enScale = word => !word ? 1 : /^t/i.test(word) ? 1e12 : /^b/i.test(word) ? 1e9 : /^m/i.test(word) ? 1e6 : 1e3;
-const esScale = word => /^mil\s/i.test(word) ? 1e9 : /^bill/i.test(word) ? 1e12 : /^mil$/i.test(word) ? 1e3 : 1e6;
-export function grounded(text, story) {
-  const original = `${story?.title ?? ''} ${story?.excerpt ?? ''}`;
-  const digits = new Set(digitsOf(original));
-  const values = [...original.matchAll(EN_SCALE)].map(match => amount(match[1]) * enScale(match[2])).filter(Number.isFinite);
-  const same = value => values.some(known => Math.abs(known - value) <= Math.abs(known) * 1e-9);
-  for (const match of String(text ?? '').matchAll(ES_SCALE)) {
-    if (match[2] ? !same(amount(match[1]) * esScale(match[2])) : !digitsOf(match[1]).every(number => digits.has(number))) return false;
-  }
-  return true;
-}
-
-// Nombres: toda palabra con mayúscula de la traducción (salvo la que abre una frase) debe estar en el titular o el
-// extracto, o ser la traducción de una que esté (Banco ← bank, Alemania ← German…). Los países se comprueban siempre,
-// también al abrir la frase («Colombia crea…» en una nota que no nombra a Colombia). Un equivalente que empieza por letra
-// se busca como comienzo de palabra del original; uno con otros signos ($, u.s), como texto.
-const fold = text => String(text ?? '').normalize('NFD').replace(/\p{M}+/gu, '').toLowerCase();
-const COUNTRIES = {
-  alemania: ['german'], argentina: ['argentin'], bolivia: ['bolivia'], brasil: ['brazil', 'brasil'], canada: ['canad'], chile: ['chile'],
-  china: ['china', 'chinese'], colombia: ['colombia'], corea: ['korea'], cuba: ['cuba'], ecuador: ['ecuador'], espana: ['spain', 'spanish'],
-  francia: ['france', 'french'], guatemala: ['guatemal'], honduras: ['hondura'], india: ['india'], italia: ['ital'], japon: ['japan'],
-  mexico: ['mexic'], nicaragua: ['nicaragua'], panama: ['panam'], paraguay: ['paragua'], peru: ['peru'], rusia: ['russia'],
-  singapur: ['singapore'], suiza: ['swiss', 'switzerland'], turquia: ['turk'], uruguay: ['urugua'], venezuela: ['venezuel'],
-  europa: ['europe', 'eu'], australia: ['australia'], nigeria: ['nigeria'], israel: ['israel'], irlanda: ['ireland', 'irish'],
-  holanda: ['dutch', 'netherlands'], belgica: ['belgi'], suecia: ['swed'], noruega: ['norw'], polonia: ['poland', 'polish'],
-};
-const EQUIVALENTS = {
-  ...COUNTRIES,
-  estados: ['us', 'u.s', 'united', 'america'], unidos: ['us', 'u.s', 'united', 'america', 'uae', 'emirat'], ee: ['us', 'u.s', 'america'], uu: ['us', 'u.s', 'america'],
-  eeuu: ['us', 'u.s', 'america'], us: ['us', 'u.s', '$', 'usd', 'dollar'], usd: ['usd', '$', 'dollar'], reino: ['uk', 'u.k', 'britain', 'british', 'kingdom'],
-  unido: ['uk', 'u.k', 'britain', 'british', 'united'], gran: ['great', 'britain'], bretana: ['britain', 'british'],
-  union: ['union', 'eu'], europea: ['europe', 'eu'], europeo: ['europe', 'eu', 'ecb'], ue: ['eu', 'europe'], emiratos: ['uae', 'emirat'], arabes: ['uae', 'arab'],
-  banco: ['bank', 'ecb', 'fed', 'bis', 'boe', 'boj'], bancos: ['bank'], central: ['central', 'ecb', 'fed', 'boe', 'bis'], reserva: ['reserve', 'fed'], federal: ['federal', 'fed'],
-  tesoro: ['treasury'], departamento: ['department', 'dept'], comision: ['commission', 'sec', 'cftc', 'fca'], bolsa: ['exchange', 'stock', 'bourse'],
-  valores: ['securities', 'sec', 'exchange'], fondo: ['fund', 'imf'], monetario: ['monetary', 'imf'], internacional: ['international', 'imf'],
-  fmi: ['imf'], bpi: ['bis'], ocde: ['oecd'], mundial: ['world'], senado: ['senate'], congreso: ['congress'], parlamento: ['parliament'],
-  camara: ['house', 'chamber'], representantes: ['representatives', 'house'], tribunal: ['court', 'tribunal'], corte: ['court'], suprema: ['supreme'],
-  ministerio: ['ministry'], ministro: ['minister'], hacienda: ['treasury', 'finance', 'hmt'], gobierno: ['government', 'gov'],
-  autoridad: ['authority'], oficina: ['office', 'occ'], justicia: ['justice', 'doj'], junta: ['board'], consejo: ['council', 'board'],
-  ley: ['act', 'law', 'bill'], proyecto: ['project'], nueva: ['new'], basilea: ['basel'], dabi: ['dhabi'], londres: ['london'],
-  sudafrica: ['south africa'], arabia: ['arabia', 'saudi'], saudi: ['saudi'], ia: ['ai'],
-  inglaterra: ['england', 'boe'], sur: ['south'], norte: ['north'], casa: ['house', 'white'], blanca: ['white'],
-  contralor: ['comptroller', 'occ'], moneda: ['currency', 'coin', 'occ'], financiera: ['financ', 'fca'], financiero: ['financ'],
-  conducta: ['conduct', 'fca'], seguros: ['insur', 'fdic'], depositos: ['deposit', 'fdic'], corporacion: ['corporation', 'corp', 'fdic'],
-};
-const SENTENCE_START = /(?:^|[.!?¿¡:«"“(])\s*$/u;
-function nameOk(word, tokens, raw) {
-  if (tokens.has(word)) return true;
-  if (word.length >= 3 && [...tokens].some(token => token.startsWith(word))) return true;
-  return (EQUIVALENTS[word] || []).some(stem => /^[a-z]+$/.test(stem) ? [...tokens].some(token => token.startsWith(stem)) : raw.includes(stem));
-}
-export function named(text, story) {
-  const raw = fold(`${story?.title ?? ''} ${story?.excerpt ?? ''}`);
-  const tokens = new Set(raw.split(/[^\p{L}\p{N}]+/u).filter(Boolean));
-  for (const match of String(text ?? '').matchAll(/\p{L}[\p{L}\p{N}]*/gu)) {
-    if (!/^\p{Lu}/u.test(match[0])) continue;
-    const word = fold(match[0]);
-    const initial = SENTENCE_START.test(text.slice(0, match.index));
-    if (initial && !COUNTRIES[word]) continue;
-    if (!nameOk(word, tokens, raw)) return false;
-  }
-  return true;
-}
-
-// Valoraciones: no se admiten salvo que el original diga lo mismo (key → clave, milestone → hito…).
-const EVALUATIVE = [
-  [/\bclaves?\b/iu, ['key']], [/\bse[ñn]al(es)?\b/iu, ['signal', 'sign']], [/\bavances?\b/iu, ['advanc', 'progress', 'breakthrough']],
-  [/\bhitos?\b/iu, ['milestone', 'landmark']], [/\brelevantes?\b/iu, ['relevan', 'significan']], [/\bapuesta\b/iu, ['bet']],
-  [/\bprecedente\b/iu, ['precedent']], [/\bimportantes?\b/iu, ['important', 'major', 'significant']], [/\bhist[oó]ric[oa]s?\b/iu, ['histor', 'record']],
-  [/\bmuestra de\b|\bejemplo de\b|\botro caso\b|\bgran actor\b|\bcompetencia directa\b|\bpara el (sector|mercado)\b|\bpara la banca\b|\ben un contexto\b/iu, null],
-];
-function evaluative(text, story) {
-  const tokens = fold(`${story?.title ?? ''} ${story?.excerpt ?? ''}`).split(/[^\p{L}\p{N}]+/u);
-  return EVALUATIVE.some(([pattern, stems]) => pattern.test(text) && (!stems || !stems.some(stem => tokens.some(token => token.startsWith(stem)))));
-}
-
-// Traducción fiel: solo en notas en inglés, sin «BCE» (en una nota en inglés es el Banco Central Europeo y el lector
-// ecuatoriano lee Banco Central del Ecuador), sin valoraciones añadidas, sin cifras ni nombres que no estén en la nota.
-export function faithfulEs(text, story) {
-  if (story?.language !== 'en' || typeof text !== 'string' || !text) return false;
-  if (/\bBCE\b/.test(text)) return false;
-  return !evaluative(text, story) && grounded(text, story) && named(text, story);
 }
 
 // ---------------------------------------------------------------------------------------------------------
@@ -360,24 +239,15 @@ export function readResponse(response) {
 //   limpio, salvo que coincida con el de notas juzgadas más antiguas que el modelo no vio (`taken`): entonces lleva el
 //   sufijo de la ejecución para no mezclar dos hechos.
 // - Puntuación o grupo inválidos: no hay juicio (la nota se vuelve a evaluar en otra ejecución).
-// - Traducción con enlaces, HTML, Markdown de enlace o caracteres de control: además de omitirse, es la huella de un modelo
-//   que siguió una instrucción inyectada en el titular o el extracto (ninguna traducción fiel los lleva). La nota queda con
-//   puntuación 0 (el umbral la saca, salvo si es un documento primario) y no se vuelve a pedir.
-// - Traducción larga, con un dominio suelto, con cifras, nombres o valoraciones que no están en la nota, o en una nota que
-//   no es en inglés: se omite y la puntuación y el grupo se conservan.
-const SUSPECT_TEXT = /https?:|www\.|javascript:|<\s*\/?[a-z!]|\]\(|[\u0000-\u0008\u000b\u000c\u000e-\u001f\u007f\u202a-\u202e\u2066-\u2069]/i;
-export function toJudgment(item, story, { known = new Set(), taken = new Set(), runTag, model, at }) {
+// - Cualquier otro campo que traiga el elemento se ignora: el juicio es solo { score, cluster, model, at }.
+export function toJudgment(item, _story, { known = new Set(), taken = new Set(), runTag, model, at }) {
   if (!item || typeof item !== 'object') return null;
   let cluster = typeof item.cluster === 'string' ? item.cluster.trim() : '';
   if (!known.has(cluster)) {
     if (cluster.length > NEW_CLUSTER_MAX || !CLUSTER_RX.test(cluster)) return null;
     if (taken.has(cluster)) cluster = `${cluster}-${runTag}`;
   }
-  const raw = typeof item.es === 'string' ? item.es : '';
-  const suspect = SUSPECT_TEXT.test(raw);
-  const text = suspect ? '' : plainEs(raw) ?? '';
-  const es = text && faithfulEs(text, story) ? text : '';
-  return validJudgment({ score: suspect ? 0 : item.score, cluster, model, at, ...(es ? { es } : {}) });
+  return validJudgment({ score: item.score, cluster, model, at });
 }
 
 // Descripción de un fallo sin datos sensibles: la clase del error y, si viene, el tipo de error de la API. Nunca el mensaje.
@@ -439,8 +309,8 @@ export async function editorialClient({ env = process.env, config = EDITORIAL, l
 }
 
 // ---------------------------------------------------------------------------------------------------------
-// Juicios guardados (`tracked.editorial` en news.json: `{ version: 1, notes: { id: { s, c, m, at, p, e?, w? } } }`, con
-// `e` la traducción y `w` la línea antigua) de notas que no entraron en la edición: la siguiente ejecución los
+// Juicios guardados (`tracked.editorial` en news.json: `{ version: 1, notes: { id: { s, c, m, at, p } } }`; los `e`
+// (traducción) y `w` (línea antigua) de memos anteriores se ignoran) de notas que no entraron en la edición: la siguiente ejecución los
 // reutiliza en vez de pedir otra vez el mismo juicio. Las notas de la edición llevan el suyo consigo, pero el feed vuelve a
 // traer las notas recientes sin juicio y al acumular gana la copia fresca: por eso, antes de juzgar, se siembran en el memo
 // los juicios de la edición anterior (seedMemo) y applyEditorial los devuelve a sus notas por id.
@@ -451,7 +321,7 @@ export function readMemo(value, now = Date.now()) {
     if (!/^[\w-]{1,80}$/.test(id) || !entry || typeof entry !== 'object') continue;
     const published = Date.parse(entry.p);
     if (!Number.isFinite(published) || published < now - THIRTY_DAYS) continue;
-    const judgment = lenientJudgment({ score: entry.s, cluster: entry.c, model: entry.m, at: entry.at, ...(entry.e !== undefined ? { es: entry.e } : {}), ...(entry.w !== undefined ? { why: entry.w } : {}) });
+    const judgment = validJudgment({ score: entry.s, cluster: entry.c, model: entry.m, at: entry.at });
     if (judgment) memo.set(id, { judgment, publishedAt: new Date(published).toISOString() });
   }
   return memo;
@@ -476,7 +346,7 @@ export function writeMemo({ pool, edition, memo = new Map(), now = Date.now(), m
     .sort((a, b) => Date.parse(b[1].publishedAt) - Date.parse(a[1].publishedAt)).slice(0, max);
   const notes = {};
   for (const [id, { judgment, publishedAt }] of kept) {
-    notes[id] = { s: judgment.score, c: judgment.cluster, m: judgment.model, at: judgment.at, p: publishedAt, ...(judgment.es ? { e: judgment.es } : {}), ...(judgment.why !== undefined ? { w: judgment.why } : {}) };
+    notes[id] = { s: judgment.score, c: judgment.cluster, m: judgment.model, at: judgment.at, p: publishedAt };
   }
   return { version: 1, notes };
 }
@@ -507,21 +377,19 @@ export async function applyEditorial(stories, { client = null, sdk = null, reaso
     if (restored.editorial) { pool[index] = restored; reused++; }
   }
   const usage = { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 };
-  const summary = { stories: pool, status: 'ok', evaluated: 0, rejected: 0, calls: 0, reused, pending: 0, retranslate: 0, usage, models: [] };
-  // Pendientes: las notas sin juicio, por grupo de canales (EVALUATION_ORDER) y de la más nueva a la más antigua; al
-  // final de la cola, las notas en inglés juzgadas antes de la traducción.
-  const pending = pool.filter(story => CHANNELS.includes(story.category) && (!story.editorial || untranslated(story)))
-    .sort((a, b) => untranslated(a) - untranslated(b) || rankOf(a) - rankOf(b) || byDateDesc(a, b));
-  summary.pending = pending.filter(story => !story.editorial).length;
-  summary.retranslate = pending.length - summary.pending;
-  const extra = summary.retranslate ? ` y ${summary.retranslate} juzgadas sin traducción` : '';
+  const summary = { stories: pool, status: 'ok', evaluated: 0, rejected: 0, calls: 0, reused, pending: 0, usage, models: [] };
+  // Pendientes: solo las notas sin juicio, por grupo de canales (EVALUATION_ORDER) y de la más nueva a la más antigua.
+  // Una nota ya juzgada nunca vuelve al modelo.
+  const pending = pool.filter(story => CHANNELS.includes(story.category) && !story.editorial)
+    .sort((a, b) => rankOf(a) - rankOf(b) || byDateDesc(a, b));
+  summary.pending = pending.length;
   if (!pending.length) { log.log(`Capa editorial: no hay notas nuevas sin juicio${reused ? ` (${reused} juicios reutilizados)` : ''}.`); return { ...summary, status: 'sin-novedades' }; }
   if (!client) {
-    log.warn(`Capa editorial desactivada (${reason}): ${summary.pending} notas sin juicio editorial nuevo${extra}; ${reused} juicios reutilizados; la edición se publica como siempre.`);
+    log.warn(`Capa editorial desactivada (${reason}): ${summary.pending} notas sin juicio editorial nuevo; ${reused} juicios reutilizados; la edición se publica como siempre.`);
     return { ...summary, status: 'sin-clave' };
   }
   const chosen = pending.slice(0, config.maxStories);
-  log.log(`Capa editorial: ${summary.pending} notas sin juicio${extra}; se evalúan ${chosen.length} (tope ${config.maxStories}) con ${config.model}; ${reused} juicios reutilizados.`);
+  log.log(`Capa editorial: ${summary.pending} notas sin juicio; se evalúan ${chosen.length} (tope ${config.maxStories}) con ${config.model}; ${reused} juicios reutilizados.`);
   const started = clock();
   const runTag = Math.floor(now / 1000).toString(36).slice(-6);
   const models = new Set();
@@ -554,10 +422,7 @@ export async function applyEditorial(stories, { client = null, sdk = null, reaso
       batch.forEach((story, index) => {
         const judgment = toJudgment(read.items.get(`n${index + 1}`), story, { known, taken, runTag, model, at });
         if (!judgment) { summary.rejected++; return; }
-        // Una nota que ya tenía juicio solo gana la traducción: conserva su puntuación y su grupo (otras notas pueden
-        // compartirlo) y pierde el campo antiguo, así que no se vuelve a pedir aunque la traducción salga vacía.
-        const editorial = story.editorial ? { ...judgment, score: story.editorial.score, cluster: story.editorial.cluster } : judgment;
-        pool[position.get(story.id)] = { ...story, editorial };
+        pool[position.get(story.id)] = { ...story, editorial: judgment };
         summary.evaluated++;
       });
     }

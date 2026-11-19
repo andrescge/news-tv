@@ -12,19 +12,32 @@ test('pantalla: ya no muestra «Por qué importa» ni lee editorial.why', async 
   assert.doesNotMatch(css, /\.porque/);
 });
 
-test('pantalla: la traducción se rotula «Traducción automática» y solo sale de editorial.es en notas en inglés', async () => {
-  const [html, js] = await Promise.all([leer('index.html'), leer('app.js')]);
-  assert.match(html, /Traducción automática/);
-  assert.match(js, /editorial\?\.es/);
-  assert.match(js, /langOf\(story\) !== 'en'\) return ''/);
-  assert.match(js, /length <= 240/);
-  assert.match(js, /textContent = translation/);
+test('pantalla: no muestra traducción automática ni lee editorial.es (las ediciones que lo traen se muestran igual)', async () => {
+  const [html, js, css] = await Promise.all([leer('index.html'), leer('app.js'), leer('styles.css')]);
+  assert.doesNotMatch(html, /Traducción automática|nota-traduccion|traducciones/i);
+  assert.doesNotMatch(js, /editorial\?\.es|\.es\b|translationOf|nota-traduccion|con-traduccion/);
+  assert.doesNotMatch(css, /traduccion/);
+  // La marca de idioma de la línea de datos se queda.
+  assert.match(js, /'en inglés'/);
 });
 
-test('pantalla: la fila de acciones es «Leer en la fuente» y «Siguiente», sin Anterior, Pausar ni «A continuación»', async () => {
+test('pantalla: la fila de acciones es «Leer en la fuente» y una flecha «→» para la siguiente, sin Anterior, Pausar ni «A continuación»', async () => {
   const [html, js, css] = await Promise.all([leer('index.html'), leer('app.js'), leer('styles.css')]);
   assert.match(html, /Leer en la fuente/);
-  assert.match(html, />Siguiente</);
+  // La flecha: nombre accesible y título, la misma tecla, sin la palabra «Siguiente» como texto visible.
+  const boton = html.match(/<button id="adelante"[^>]*>([\s\S]*?)<\/button>/);
+  assert.ok(boton, 'falta el botón #adelante');
+  assert.match(boton[0], /aria-label="Siguiente noticia"/);
+  assert.match(boton[0], /title="Siguiente noticia[^"]*"/);
+  assert.match(boton[0], /aria-keyshortcuts="ArrowRight"/);
+  assert.equal(boton[1].replace(/<[^>]+>/g, '').trim(), '→');
+  assert.doesNotMatch(html, />Siguiente</);
+  // Zona táctil de 44 × 44 px que no se parte de línea.
+  const flecha = css.match(/\.accion-flecha \{[^}]*\}/)?.[0] ?? '';
+  assert.match(flecha, /min-width: 44px/);
+  assert.match(flecha, /white-space: nowrap/);
+  assert.match(css, /\.accion-enlace, \.accion, \.sin-enlace \{[^}]*min-height: 44px/);
+  assert.match(js, /\$\('#adelante'\)\.addEventListener\('click', \(\) => moveStory\(1, true\)\)/);
   assert.doesNotMatch(html, />Anterior<|>Pausar<|A continuación|id="siguientes"|class="mandos"/);
   assert.doesNotMatch(js, /togglePlayback|requestAnimationFrame\(tick\)|durationFor/);
   assert.doesNotMatch(css, /\.mandos|\.siguientes/);
