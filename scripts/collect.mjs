@@ -349,7 +349,8 @@ async function run() {
   }
   if (!successful) { console.error('Ninguna fuente respondió; se conserva la edición anterior.'); process.exitCode = 1; return; }
   // Capa editorial: juicio para las notas que aún no lo tienen. Sin credenciales o con cualquier fallo, la edición sigue igual.
-  const { pool, memo } = await editorialPass(deduplicate(stories), previous.tracked?.editorial, now);
+  // Un hecho, una nota: las copias y las notas de varios medios sobre el mismo hecho quedan en una antes de pedir juicios.
+  const { pool, memo } = await editorialPass(deduplicate(stories, { primary: isPrimary }), previous.tracked?.editorial, now);
   // Todas las notas, de todos los canales, llevan `endeavor` si su titular (o su extracto) nombra a una empresa del directorio.
   const edition = composeEdition(groupClusters(pool, { primary: isPrimary }), { cap: MAX_PER_CHANNEL, limitFor: story => limitFor(SOURCE_BY_ID.get(story.sourceId), story.category), now, threshold: EDITORIAL.threshold, neutral: EDITORIAL.neutralScore, primary: isPrimary, perEdition: story => SOURCE_BY_ID.get(story.sourceId)?.perEdition }).map(story => tagEndeavor(story));
   const notes = writeMemo({ pool, edition, memo, now });

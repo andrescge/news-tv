@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -105,7 +105,7 @@ test('Supercias aporta fecha desde el enlace y solo entran avisos y normas', () 
   assert.throws(() => parseSupercias('<p>Sin noticias</p>', 'https://www.supercias.gob.ec/portalscvs/'));
 });
 
-test('en Fintech LATAM la misma operación contada por varios medios queda en una nota', () => {
+test('la misma operación contada por varios medios queda en una nota que nombra a los demás, en cualquier canal', () => {
   const latam = { ...source, category: 'latam' };
   const story = (title, medium, publishedAt, extra = {}) => normalize({ title, url: `https://example.com/${encodeURIComponent(`${medium}/${title}`)}`, publishedAt, source: medium, ...extra }, latam, now);
   const english = story('Cocos raises $34M at $508M valuation', 'LatamList', '2026-09-27T10:00:00Z', { excerpt: 'Cocos closed a new round.' });
@@ -114,12 +114,86 @@ test('en Fintech LATAM la misma operación contada por varios medios queda en un
   const partnersEnglish = story('Colombian fintech Akua secures investment from Itaú Unibanco', 'LatamList', '2026-09-28T08:00:00Z');
   const other = story('Revolut prevé lanzar su banco en Argentina', 'Bloomberg Línea', '2026-09-28T07:00:00Z');
   const later = story('Cocos compra una sociedad de bolsa por US$34M', 'iupana', '2026-09-10T07:00:00Z');
-  assert.deepEqual([...coverageSignature('Cocos raises $34M at $508M valuation').amounts], ['34m', '508m']);
+  assert.deepEqual([...coverageSignature('Cocos raises $34M at $508M valuation').amounts], ['34m', '510m']);
   assert.deepEqual([...coverageSignature('Fintech argentina levanta USD 6,4 millones').amounts], ['6.4m']);
   const result = deduplicate([spanish, english, partners, partnersEnglish, other, later]);
   assert.deepEqual(result.map(item => item.title), [english.title, partnersEnglish.title, other.title, later.title]);
+  assert.deepEqual(result.map(item => item.coverage), [['El Economista'], ['El Economista'], undefined, undefined]);
+  // Ahora también en Pagos (antes solo en Fintech LATAM y Endeavor LATAM).
   const payments = [english, spanish].map(item => ({ ...item, category: 'pagos' }));
-  assert.equal(deduplicate(payments).length, 2);
+  assert.equal(deduplicate(payments).length, 1);
+});
+
+test('un hecho, una nota: importes en millones, nombres propios por grupos y titulares en mayúsculas', () => {
+  // Importes: la misma cifra en las formas de la prensa en español e inglés; sin moneda ni unidad no hay importe.
+  const amounts = title => [...coverageSignature(title).amounts];
+  assert.deepEqual(amounts('Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance'), ['6300m']);
+  assert.deepEqual(amounts('Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest'), ['6300m']);
+  assert.deepEqual(amounts('BBVA Spark inyecta más de 1,000 mdp a la fintech mexicana Nexu'), ['1000m']);
+  assert.deepEqual(amounts('Ecuador registró un superávit comercial de USD 3.308 millones entre enero y septiembre de 2026'), ['3300m']);
+  assert.deepEqual(amounts('Proforma 2027 con 20 minutos de debate y 13,4% de crecimiento'), []);
+  // Nombres: «Hong Kong» o «Economía Popular y Solidaria» son un solo nombre; al principio de la frase solo cuentan los que la
+  // tanda escribe con mayúscula en mitad de una frase o siempre con mayúscula.
+  const lexicon = coverageLexicon(['Nubank aumenta ganancias en el tercer trimestre', 'Nubank suspende operaciones con criptomonedas', 'Las webs de Ikea y HSBC sufren un ciberataque']);
+  assert.ok(lexicon.has('nubank') && lexicon.has('ikea') && !lexicon.has('las'));
+  assert.deepEqual(coverageSignature('Banks in Hong Kong test tokenized deposits', lexicon).runs, [['hong', 'kong']]);
+  assert.deepEqual(coverageSignature('Estas son las falsas cooperativas no autorizadas, alerta Superintendencia de Economía Popular y Solidaria').runs, [['economia', 'popular', 'solidaria']]);
+  assert.deepEqual(coverageSignature('Nubank suspende operaciones con criptomonedas en Brasil', lexicon).runs, [['nubank']]);
+  // Titular con todas las palabras en mayúscula: solo cuentan los nombres conocidos de la tanda; las siglas, siempre.
+  assert.deepEqual(coverageSignature('Federal Reserve Board Announces Pricing for Payment Services').runs, []);
+  assert.deepEqual(coverageSignature('OpenAI Gives AI Agents a Wallet Without Seeing the Card').runs, [['openai']]);
+  // Los códigos de norma no son nombres.
+  assert.deepEqual(coverageSignature('La SEPS amplía el plazo: SEPS-IGT-IGJ-INFMR-DNLESF-2026-0160').runs, [['seps']]);
+});
+
+test('un hecho, una nota: titulares reales que se unen entre canales y hechos distintos que no se unen', () => {
+  const at = (iso, sourceId, channel, medium, title, extra = {}) => ({ id: `${sourceId}-${iso}`, sourceId, category: channel, kind: 'news', tier: 2, title, excerpt: '', url: `https://example.com/${encodeURIComponent(sourceId + title)}`, source: medium, sourceUrl: 'https://example.com', via: '', language: 'es', publishedAt: iso, ...extra });
+  const primaryIds = new Set(['bce-junta-resoluciones', 'registro-oficial']);
+  const primary = story => primaryIds.has(story.sourceId);
+  const titles = list => list.map(item => item.title).sort();
+  // El Banco Mundial con Citi y Circle: The Block en Cripto y Finextra en Pagos, el mismo día.
+  const block = at('2026-11-18T04:21:00Z', 'theblock', 'cripto', 'The Block', 'World Bank Group taps Circle and Citi to test stablecoin-based fund disbursements', { excerpt: 'The World Bank Group is testing stablecoins.' });
+  const finextra = at('2026-11-18T09:00:00Z', 'finextra', 'pagos', 'Finextra Research', 'World Bank partners Citi and Circle to test stablecoins for development payments', { via: 'Vía Google News' });
+  const [bank] = deduplicate([finextra, block]);
+  assert.deepEqual([bank.sourceId, bank.category, bank.coverage], ['theblock', 'cripto', ['Finextra Research']]);
+  // La norma de tarjetas del Ecuador: la resolución de la Junta (primaria, Autoridades), el boletín del BCE y Forbes (Ecuador).
+  const junta = at('2026-11-07T16:45:00Z', 'bce-junta-resoluciones', 'regulacion', 'BCE · Resoluciones de la Junta', 'Aprueba la “Norma que regula la operación de tarjetas de pago en el Ecuador”.', { kind: 'official', tier: 1, excerpt: 'Resolución JPRFM-2026-048-T.' });
+  const bulletin = at('2026-11-07T12:00:00Z', 'bce-boletines', 'ecuador', 'Banco Central del Ecuador', 'La JPRFM establece nuevas reglas para los pagos con tarjetas y refuerza la protección de los usuarios', { kind: 'official', tier: 1, excerpt: 'La Junta aprobó la norma.' });
+  const forbes = at('2026-11-10T13:46:00Z', 'forbes-ec', 'ecuador', 'Forbes Ecuador', 'Las nuevas reglas para los pagos con tarjetas en Ecuador', { via: 'Vía Google News' });
+  const cards = deduplicate([forbes, junta, bulletin], { primary });
+  assert.equal(cards.length, 1);
+  assert.deepEqual([cards[0].sourceId, cards[0].category], ['bce-junta-resoluciones', 'regulacion']);
+  assert.deepEqual([...cards[0].coverage].sort(), ['Banco Central del Ecuador', 'Forbes Ecuador']);
+  // Nubank y Mercado Pago suspenden las transferencias cripto: Reuters en Cripto y El Economista en Fintech LATAM.
+  const reuters = at('2026-11-06T08:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Nubank, Mercado Pago halt crypto transfers after external provider disruption', { tier: 1, via: 'Vía Google News' });
+  const economista = at('2026-11-06T14:00:00Z', 'el-economista', 'latam', 'El Economista', 'Nubank y Mercado Pago suspenden sus transferencias de criptomonedas por inestabilidad en el sistema', { tier: 1, via: 'Vía Google News' });
+  assert.equal(deduplicate([reuters, economista]).length, 1);
+  // El hackeo de Binance: la misma cifra el mismo día se une; hechos distintos del mismo caso no.
+  const heist = [
+    at('2026-10-30T07:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Binance freezes assets after $6.3 bln heist, crypto industry\'s biggest', { tier: 1 }),
+    at('2026-10-30T09:56:00Z', 'cinco-dias-cripto', 'cripto', 'Cinco Días · Criptoactivos', 'Robo histórico de 6.300 millones de dólares en 20 minutos: jaque a Binance, la mayor plataforma cripto del mundo', { tier: 1, excerpt: 'El robo.' }),
+  ];
+  const [one] = deduplicate(heist);
+  assert.deepEqual([one.sourceId, one.coverage], ['cinco-dias-cripto', ['Reuters']]);
+  const distinct = [
+    at('2026-10-30T07:00:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Blockchain analysis firm TRM says North Korea behind Binance crypto theft'),
+    at('2026-11-03T05:00:00Z', 'ft-cripto', 'cripto', 'Financial Times', 'North Korean hackers expected to take months to launder Binance billions'),
+    at('2026-11-02T15:02:00Z', 'ft-cripto', 'cripto', 'FT Alphaville', 'What caused the $6.3bn Binance hack?'),
+    at('2026-11-13T16:54:00Z', 'expansion-cripto', 'cripto', 'Expansión', 'Binance cerrará todas las cuentas europeas en 2027'),
+    at('2026-11-14T08:45:00Z', 'reuters-cripto', 'cripto', 'Reuters', 'Binance targets full reopening of withdrawals by next week'),
+    at('2026-11-17T15:11:00Z', 'coindesk', 'cripto', 'CoinDesk', 'Hong Kong, Swift test tokenized deposits as banks chase stablecoin-style speed'),
+    at('2026-11-18T15:23:00Z', 'decrypt', 'cripto', 'Decrypt', 'Hong Kong wants banks to use AI to catch crypto crime before money disappears'),
+  ];
+  assert.deepEqual(titles(deduplicate([...distinct, heist[0]])), titles([...distinct, heist[0]]));
+  // Dos documentos primarios no se unen entre sí, ni dos notas del mismo medio.
+  const gazette = at('2026-11-09T15:21:00Z', 'registro-oficial', 'regulacion', 'Registro Oficial', 'Se reforma la Norma que regula la operación de tarjetas de pago en el Ecuador', { kind: 'official', tier: 1, excerpt: 'Junta · JPRFM-2026-048-T.' });
+  assert.equal(deduplicate([junta, gazette], { primary }).length, 2);
+  assert.equal(deduplicate([heist[0], { ...heist[1], source: 'Reuters', id: 'otra' }]).length, 2);
+  // Más de cuatro días entre notas: hechos distintos aunque compartan nombre e importe.
+  assert.equal(deduplicate([heist[0], { ...heist[1], publishedAt: '2026-11-04T12:00:00Z' }]).length, 2);
+  // La cobertura de una nota conservada se suma a la de las nuevas.
+  const [kept] = deduplicate([{ ...heist[1], coverage: ['FT'] }, heist[0]]);
+  assert.deepEqual(kept.coverage, ['FT', 'Reuters']);
 });
 
 test('una nota aparece en un solo canal: se elimina el duplicado y gana el canal más específico', () => {

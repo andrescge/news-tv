@@ -672,23 +672,137 @@ export function composeEdition(stories, options = {}) {
 }
 
 // ---------------------------------------------------------------------------------------------------------
-// Palabras con mayúscula que no identifican a una empresa: países, gentilicios y términos genéricos del sector.
-const COVERAGE_STOP = new Set('fintech paytech insurtech neobanco banco bank central capital ventures serie series ronda startup latam latin america américa latina latinoamérica ecuador colombia colombian colombiana colombiano méxico mexico mexican mexicana mexicano argentina argentine argentino brasil brazil brazilian brasileña brasileño perú peru peruvian peruana chile chilean chilena chileno uruguay paraguay bolivia venezuela panamá estados unidos eeuu usd nuevo nueva the and for una uno los las del para con por how why what estas este esta así qué cómo auge ceo cfo'.split(' '));
-export function coverageSignature(title) {
-  const amounts = new Set(); const entities = new Set();
-  for (const match of title.matchAll(/(?:US\$|USD|R\$|\$)\s?(\d+(?:[.,]\d+)?)\s?(mil millones|millones|million|billion|bn|mm|m|b)?(?![a-z])/gi)) {
-    const unit = /^(mil millones|billion|bn|b)$/i.test(match[2] || '') ? 'b' : match[2] ? 'm' : '';
-    amounts.add(`${Number(match[1].replace(',', '.'))}${unit}`);
+// Un hecho, una nota. Cada titular se reduce a una firma (coverageSignature):
+// - entidades: nombres propios en grupos de palabras seguidas («Hong Kong» o «World Bank Group» cuentan como uno). Un nombre es
+//   una palabra con mayúscula en mitad de la frase, una sigla o una palabra con mayúscula interior (BBVA, JPMorgan). Al principio
+//   de la frase y en titulares con todas las palabras en mayúscula («Federal Reserve Board Announces…», «GOBIERNO DE…») solo
+//   cuenta si otro titular de la misma tanda la escribe con mayúscula en mitad de la frase (`lexicon`).
+// - importes: cifras con moneda o unidad, en millones y redondeadas a dos cifras («US$6.300 millones» = «$6.3 bln»).
+// - palabras: las del titular sin palabras vacías ni términos genéricos del sector, sin el plural.
+// Palabras con mayúscula que no identifican a nadie: países, gentilicios, meses, rótulos de sección y términos genéricos.
+const COVERAGE_STOP = new Set(`fintech paytech insurtech neobanco banco bank central capital ventures serie series ronda startup latam latin america américa latina latinoamérica ecuador colombia colombian colombiana colombiano méxico mexico mexican mexicana mexicano argentina argentine argentino brasil brazil brazilian brasileña brasileño perú peru peruvian peruana chile chilean chilena chileno uruguay paraguay bolivia venezuela panamá estados unidos eeuu usd nuevo nueva the and for una uno los las del para con por how why what estas este esta así qué cómo auge ceo cfo
+  ${Object.keys(months).join(' ')} january february march april may june july august september october november december lunes martes miércoles jueves viernes sábado domingo
+  reg wrap buenas fuentes breakingviews commentary exclusive exclusiva update opinión opinion análisis analysis entrevista podcast newsletter gobierno ministerio group grupo sistema financiero financiera nacional banca bancos banks`.split(/\s+/).filter(Boolean).map(word => foldText(word)));
+// Términos de los títulos de las normas que llevan mayúscula pero no son un nombre: sí cuentan como palabra del hecho.
+const NAME_STOP = new Set('junta superintendencia superintendente norma normas resolución resoluciones codificación reglamento metodología'.split(' ').map(word => foldText(word)));
+// Palabras que no distinguen un hecho de otro (ya sin tildes): vacías en español e inglés, cifras dichas con letras y el
+// vocabulario común de todos los canales.
+const WORD_STOP = new Set(`para como sobre entre desde hasta tras ante tiene tienen esta este estos estas esto pero porque cuando donde sera seran puede pueden podra podria hace hacen mucho muchos todo todos toda todas otro otra otros otras nuevo nueva nuevos nuevas cual cuales segun tambien ahora solo mientras durante contra hacia bajo cada mismo misma dice dicen millon millones miles dolar dolares euros pesos reales anos semana semanas meses
+  with from into after over under about than that this these those their there have will would could should says said amid what when where which while more most first last just only also year years week weeks month months million millions billion billions dollar dollars
+  banco bancos banca bank banks banking bancario bancaria fintech fintechs crypto cripto criptomoneda criptomonedas criptoactivo criptoactivos financiero financiera financieros financieras financial finance finanzas sistema system mercado mercados market markets empresa empresas company companies sector industria industry`.split(/\s+/).filter(Boolean));
+const COVERAGE_WORD = /\p{L}[\p{L}\p{N}]*/gu;
+const SENTENCE_START = /(?:^|[:.?!¿¡«“"'‘([|—–-])$/u;
+const AMOUNT = /(US\$|USD|R\$|€|£|\$)?\s?(\d[\d.,]{0,14})\s?(mil millones|millones|mill[oó]n|million|billion|bln|bn|mn|mm|mdp|m|b)?(?![\p{L}\p{N}])(\s?(?:de\s)?(?:d[oó]lares|euros|pesos|reales))?/giu;
+const AMOUNT_WORDS = /^(mil millones|millones|mill[oó]n|million|billion|bln|bn|mn|mdp)$/i;
+// Sinónimos que los medios alternan para la misma norma («nuevas reglas», «la norma que regula»).
+const WORD_SYNONYMS = { regla: 'norma', regula: 'norma', normativa: 'norma', reglamento: 'norma' };
+const stemWord = word => word.length > 5 && /[rlndz]es$/.test(word) ? word.slice(0, -2) : word.length > 4 && /[^s]s$/.test(word) ? word.slice(0, -1) : word;
+// Códigos de norma («SEPS-IGT-IGJ-2026-0160», «JPRFM-2026-048-T»): no son nombres ni palabras del titular.
+const maskCodes = title => String(title).replace(/\S+/g, chunk => chunk.includes('-') && /\d/.test(chunk) && /^[A-Z0-9-]+[.,:;]?$/.test(chunk) ? ' '.repeat(chunk.length) : chunk);
+function titleWords(title) {
+  const shouting = isUpper(title);
+  const words = [...maskCodes(title).matchAll(COVERAGE_WORD)].map(match => ({ text: match[0], index: match.index, end: match.index + match[0].length }));
+  const later = words.slice(1).filter(word => word.text.length >= 4);
+  const titleCase = later.length >= 3 && later.filter(word => /^\p{Lu}/u.test(word.text)).length / later.length >= 0.6;
+  for (const word of words) {
+    word.folded = foldText(word.text);
+    word.capital = /^\p{Lu}/u.test(word.text);
+    word.start = SENTENCE_START.test(title.slice(0, word.index).trimEnd());
+    word.strong = !shouting && word.text.length >= 3 && /\p{Lu}/u.test(word.text.slice(1));
+    word.midSentence = !shouting && !titleCase && word.capital && !word.start && word.text.length >= 3;
+    word.styled = shouting || titleCase;
   }
-  for (const word of title.match(/\p{Lu}[\p{L}\d]{2,}/gu) || []) if (!COVERAGE_STOP.has(word.toLowerCase())) entities.add(word.toLowerCase());
-  return { amounts, entities };
+  return words;
 }
+// Nombres propios de una tanda de titulares: los que alguno escribe con mayúscula en mitad de la frase, y los que salen con
+// mayúscula (al principio de la frase) en dos titulares o más y nunca en minúscula («Nubank aumenta…», «Nubank suspende…»).
+export function coverageLexicon(titles) {
+  const lexicon = new Set(); const capital = new Map(); const lower = new Set();
+  for (const title of titles) {
+    for (const word of titleWords(title)) {
+      if (word.midSentence) lexicon.add(word.folded);
+      if (!word.capital) lower.add(word.folded);
+      else if (!word.styled && word.text.length >= 3) capital.set(word.folded, (capital.get(word.folded) || 0) + 1);
+    }
+  }
+  for (const [word, count] of capital) if (count >= 2 && !lower.has(word)) lexicon.add(word);
+  return lexicon;
+}
+function amountsOf(title) {
+  const amounts = new Set();
+  for (const match of String(title).matchAll(AMOUNT)) {
+    const [, currency, digits, unit = '', named] = match;
+    if (!currency && !named && !AMOUNT_WORDS.test(unit)) continue;
+    const raw = digits.replace(/[.,]+$/, '');
+    const value = /^\d{1,3}(?:[.,]\d\d\d){1,4}$/.test(raw) ? Number(raw.replace(/[.,]/g, '')) : Number(raw.replace(',', '.'));
+    if (!Number.isFinite(value) || value <= 0) continue;
+    const millions = /^(mil millones|billion|bln|bn|b)$/i.test(unit) ? value * 1000 : unit ? value : value / 1e6;
+    amounts.add(`${Number(millions.toPrecision(2))}m`);
+  }
+  return amounts;
+}
+export function coverageSignature(title, lexicon = new Set()) {
+  const words = titleWords(title); const shouting = isUpper(title);
+  // Un nombre de varias palabras sigue con espacios o con un enlace corto («Economía Popular y Solidaria», «Banco de Chile»):
+  // `link` es el enlace pendiente entre dos palabras con mayúscula.
+  const runs = []; let run = null, previous = null, link = false;
+  for (const word of words) {
+    const name = word.text.length >= 3 && (word.strong || word.midSentence || ((word.capital || shouting) && lexicon.has(word.folded)));
+    if (!name) {
+      const connects = run && !link && /^(de|del|y|e|of|and)$/i.test(word.text) && /^\s+$/.test(title.slice(previous.end, word.index));
+      if (connects) { link = true; previous = word; } else { run = null; link = false; }
+      continue;
+    }
+    const joined = run && /^\s+$/.test(title.slice(previous.end, word.index));
+    if (!joined) { run = []; runs.push(run); }
+    if (!COVERAGE_STOP.has(word.folded) && !NAME_STOP.has(word.folded)) run.push(word.folded);
+    previous = word; link = false;
+  }
+  const entityRuns = runs.filter(list => list.length);
+  const tokens = new Set();
+  for (const word of words) if (word.folded.length >= 4 && !/\d/.test(word.folded) && !WORD_STOP.has(word.folded) && !COVERAGE_STOP.has(word.folded)) { const stem = stemWord(word.folded); tokens.add(WORD_SYNONYMS[stem] ?? stem); }
+  return { runs: entityRuns, entities: new Set(entityRuns.flat()), amounts: amountsOf(title), tokens };
+}
+// Firmas de una tanda de notas, con el léxico de nombres propios sacado de la misma tanda.
+export function coverageSignatures(stories) {
+  const lexicon = coverageLexicon(stories.map(story => story.title));
+  return new Map(stories.map(story => [story, coverageSignature(story.title, lexicon)]));
+}
+// Dos notas cuentan el mismo hecho si salen con menos de cuatro días de diferencia y:
+// (a) comparten un importe y una entidad, o dos entidades, y además una palabra que no sea nombre, o salen con menos de dos
+//     días entre sí («Nexu secures $55M credit line from BBVA Spark» y «Fintech Nexu obtiene una línea de crédito de US$55M»);
+// (b) comparten tres palabras que sean al menos la mitad de las del titular más corto, con una entidad en común, con cuatro
+//     palabras o con todas las del titular más corto («Las nuevas reglas para los pagos con tarjetas en Ecuador» y «La JPRFM
+//     establece nuevas reglas para los pagos con tarjetas»).
+// Dos notas distintas sobre Binance («North Korea behind Binance theft», «North Korean hackers… launder Binance billions») o
+// sobre Hong Kong no se unen.
 const COVERAGE_WINDOW = 4 * DAY;
-function sameCoverage(a, b) {
-  if (a.story.source === b.story.source || Math.abs(Date.parse(a.story.publishedAt) - Date.parse(b.story.publishedAt)) > COVERAGE_WINDOW) return false;
-  const entities = [...a.signature.entities].filter(entity => b.signature.entities.has(entity)).length;
-  const amounts = [...a.signature.amounts].filter(amount => b.signature.amounts.has(amount)).length;
-  return entities >= 2 || (entities >= 1 && amounts >= 1);
+const CLOSE_WINDOW = 2 * DAY;
+const sharedRuns = (a, b) => Math.max(a.runs.filter(run => run.some(word => b.entities.has(word))).length, b.runs.filter(run => run.some(word => a.entities.has(word))).length);
+export function sameFact(a, b, { window = COVERAGE_WINDOW } = {}) {
+  const gap = Math.abs(a.time - b.time);
+  if (gap > window) return false;
+  const runs = sharedRuns(a.signature, b.signature);
+  const shared = [...a.signature.tokens].filter(token => b.signature.tokens.has(token));
+  const plain = shared.some(token => !a.signature.entities.has(token) && !b.signature.entities.has(token));
+  const amount = [...a.signature.amounts].some(value => b.signature.amounts.has(value));
+  if ((runs >= 2 || (runs >= 1 && amount)) && (plain || gap <= CLOSE_WINDOW)) return true;
+  const words = shared.length, shorter = Math.min(a.signature.tokens.size, b.signature.tokens.size);
+  return words >= 3 && words * 2 >= shorter && (runs >= 1 || words >= 4 || words === shorter);
+}
+// Medios que también contaron el hecho (`coverage`): nombres de texto plano, sin el de la nota que queda, sin repetir, hasta 8.
+const COVERAGE_MAX = 8;
+function withCoverage(best, group) {
+  const own = String(best.source || '').trim().toLowerCase(); const names = [];
+  for (const story of [best, ...group.filter(story => story !== best)]) {
+    for (const name of [story.source, ...(Array.isArray(story.coverage) ? story.coverage : [])]) {
+      const clean = typeof name === 'string' ? name.trim() : '';
+      if (!clean || clean.length > 80 || /[<>\u0000-\u001f]/.test(clean) || clean.toLowerCase() === own || names.some(other => other.toLowerCase() === clean.toLowerCase())) continue;
+      names.push(clean);
+    }
+  }
+  const { coverage: _old, ...rest } = best;
+  return names.length ? { ...rest, coverage: names.slice(0, COVERAGE_MAX) } : rest;
 }
 // Cuando la misma nota llega a varios canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos
 // fuentes, como un discurso publicado por el BCE y por el BIS), queda una sola copia: la de mejor calidad (con
@@ -708,23 +822,39 @@ function oneCopy(stories) {
     for (const k of keys) if (!index.has(k)) index.set(k, group);
   }
   return groups.map(group => {
+    if (group.length === 1) return group[0];
     const best = group.reduce((a, b) => quality(b) > quality(a) || (quality(b) === quality(a) && channelRank(b.category) < channelRank(a.category)) ? b : a);
     const category = group.reduce((current, story) => channelRank(story.category) < channelRank(current) ? story.category : current, best.category);
-    return category === best.category ? best : { ...best, category };
+    const merged = withCoverage(best, group);
+    return category === merged.category ? merged : { ...merged, category };
   });
 }
-// Una nota aparece en un solo canal (ver oneCopy). En los canales de mergeCoverage (Fintech LATAM y Endeavor LATAM), además, varias notas de medios
-// distintos sobre la misma operación (misma empresa e importe, o dos nombres propios en común, en un margen de cuatro
-// días) se reducen a una: la que trae extracto y enlace directo.
-export function deduplicate(stories, mergeCoverage = ['latam', 'endeavor']) {
-  const kept = [];
-  for (const story of oneCopy(stories).sort(byDateDesc)) {
-    const entry = { story, signature: mergeCoverage.includes(story.category) ? coverageSignature(story.title) : null };
-    const twin = entry.signature ? kept.findIndex(other => other.signature && other.story.category === story.category && sameCoverage(entry, other)) : -1;
-    if (twin === -1) kept.push(entry);
-    else if (quality(story) > quality(kept[twin].story)) kept[twin] = entry;
+// La nota que representa a un hecho: documento primario oficial, mejor nivel de fuente, con extracto, enlace directo, más
+// puntos y más reciente (el mismo orden que groupClusters en editorial.mjs).
+const scoreOf = story => Number.isFinite(story?.editorial?.score) ? story.editorial.score : -1;
+function bestCopy(group, primary) {
+  const key = story => [primary(story) ? 0 : 1, story.tier ?? 9, story.excerpt ? 0 : 1, story.via ? 1 : 0, -scoreOf(story), -Date.parse(story.publishedAt)];
+  return [...group].sort((a, b) => { const x = key(a), y = key(b); for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return x[i] - y[i]; return 0; })[0];
+}
+// Una nota aparece en un solo canal (ver oneCopy). Además, en todos los canales y entre canales, las notas de medios distintos
+// sobre el mismo hecho (sameFact con cualquiera de las notas ya reunidas) quedan en una: la de bestCopy, en su propio canal, con
+// los demás medios en `coverage`. Un grupo no reúne dos notas del mismo medio ni dos documentos primarios oficiales (`primary`).
+export function deduplicate(stories, { primary = () => false, window = COVERAGE_WINDOW } = {}) {
+  const copies = oneCopy(stories).sort(byDateDesc);
+  const signatures = coverageSignatures(copies);
+  const groups = [];
+  for (const story of copies) {
+    const entry = { story, signature: signatures.get(story), time: Date.parse(story.publishedAt), medium: String(story.source || '').trim().toLowerCase() };
+    const fits = group => !group.some(other => other.medium === entry.medium) && !(primary(story) && group.some(other => primary(other.story)))
+      && group.some(other => sameFact(entry, other, { window }));
+    const group = groups.find(fits);
+    if (group) group.push(entry); else groups.push([entry]);
   }
-  return kept.map(entry => entry.story);
+  return groups.map(group => {
+    if (group.length === 1) return group[0].story;
+    const members = group.map(entry => entry.story);
+    return withCoverage(bestCopy(members, primary), members);
+  });
 }
 
 // ---------------------------------------------------------------------------------------------------------

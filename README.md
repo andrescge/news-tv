@@ -47,14 +47,15 @@ La edición cubre cuatro períodos: **24 horas, 7, 15 y 30 días**. Como muchos 
 
 Luego se compone cada canal:
 
-1. **Una sola copia por nota.** La misma nota en dos canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos fuentes, como un discurso que publican el BCE y el BIS) queda en un solo canal, en este orden de prioridad: Autoridades EC, Ecuador financiero, Fintech LATAM, Cripto, Pagos globales y Endeavor LATAM. Se conserva la copia con extracto y enlace directo.
-2. **Un mismo hecho, una nota** (con capa editorial). Las notas de un canal que el modelo asignó al mismo hecho (`cluster`) quedan en una: la de la fuente oficial primaria si la hay, si no la de mejor nivel, con extracto y enlace directo. Los demás medios se listan en `coverage` y la pantalla los muestra como «También en: medio, medio».
-3. **Umbral de importancia** (con capa editorial). Salen las notas juzgadas con menos de 30 puntos, salvo las de fuentes oficiales primarias.
-4. **Tope por edición.** Los boletines de datos del BCE (`perEdition: 1`) aportan como máximo una nota a toda la edición, la más reciente, sea cual sea su puntuación.
-5. **Tope por fuente y período.** Cada fuente aporta como máximo su `limit` en cada período. Sin juicio editorial, se eligen notas repartidas en el tiempo para que el período de 15 a 30 días no quede vacío; con juicio, las de mayor puntuación.
-6. **Tope de canal.** Hasta 80 notas, repartidas entre los cuatro períodos.
-7. **Nivel 3.** Como máximo el 20 % del canal.
-8. **Orden.** Sin juicio editorial, por fecha (de la más reciente a la más antigua). Con juicio, por período y, dentro de cada período, por puntuación (la fecha desempata); una nota todavía sin juicio cuenta como 50. La pantalla respeta ese orden cuando el canal lo trae.
+1. **Una sola copia por nota.** La misma nota en dos canales (mismo enlace, mismo medio y titular, o el mismo titular largo en dos fuentes, como un discurso que publican el BCE y el BIS) queda en un solo canal, en este orden de prioridad: Autoridades EC, Ecuador financiero, Fintech LATAM, Cripto, Pagos globales y Endeavor LATAM. Se conserva la copia con extracto y enlace directo; si las copias eran de medios distintos, los demás se listan en `coverage`.
+2. **Un hecho, una nota, en todos los canales.** Las notas de medios distintos sobre el mismo hecho, en el mismo canal o en canales distintos, quedan en una (`deduplicate` y `sameFact` en `scripts/content.mjs`). Dos notas cuentan el mismo hecho si salen con menos de cuatro días de diferencia y comparten un importe y un nombre propio, o dos nombres propios, más una palabra del titular o una diferencia de menos de dos días («Nexu secures $55M credit line from BBVA Spark» y «Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark»); o si comparten tres palabras que sean al menos la mitad de las del titular más corto, con un nombre en común, con cuatro palabras o con todas las del titular más corto («La JPRFM establece nuevas reglas para los pagos con tarjetas» y «Las nuevas reglas para los pagos con tarjetas en Ecuador»). Los importes se comparan en millones («US$6.300 millones» = «$6.3 bln»). Queda la nota de la fuente oficial primaria si la hay; si no, la de mejor nivel, con extracto y enlace directo, en su propio canal. Los demás medios se listan en `coverage` y la pantalla los muestra como «También en: medio, medio». Nunca se unen dos notas del mismo medio ni dos documentos oficiales primarios.
+3. **El mismo hecho según la capa editorial.** Las notas de un canal que el modelo asignó al mismo hecho (`cluster`) también quedan en una, con el mismo criterio.
+4. **Umbral de importancia** (con capa editorial). Salen las notas juzgadas con menos de 30 puntos, salvo las de fuentes oficiales primarias.
+5. **Tope por edición.** Los boletines de datos del BCE (`perEdition: 1`) aportan como máximo una nota a toda la edición, la más reciente, sea cual sea su puntuación.
+6. **Tope por fuente y período.** Cada fuente aporta como máximo su `limit` en cada período. Sin juicio editorial, se eligen notas repartidas en el tiempo para que el período de 15 a 30 días no quede vacío; con juicio, las de mayor puntuación.
+7. **Tope de canal.** Hasta 80 notas, repartidas entre los cuatro períodos.
+8. **Nivel 3.** Como máximo el 20 % del canal.
+9. **Orden.** Sin juicio editorial, por fecha (de la más reciente a la más antigua). Con juicio, por período y, dentro de cada período, por puntuación (la fecha desempata); una nota todavía sin juicio cuenta como 50. La pantalla respeta ese orden cuando el canal lo trae.
 
 ### Capa editorial
 
