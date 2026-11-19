@@ -107,7 +107,7 @@ test('capa editorial: la traducción automática solo existe en notas en inglés
     'El BCE aprueba los servicios de Visa',                                          // «BCE» en una nota en inglés
   ]) {
     const judgment = esOf(visa, es);
-    assert.deepEqual([judgment.score, judgment.es, judgment.cluster], [70, undefined, 'x-y-abc123'], es);
+    assert.deepEqual([judgment.score, judgment.es, judgment.cluster], [70, undefined, 'x-y'], es);
   }
   // Las valoraciones del propio original sí se traducen.
   assert.equal(esOf(english('k', 1, { title: 'Key ruling for stablecoin issuers' }), 'Fallo clave para los emisores de stablecoins').es, 'Fallo clave para los emisores de stablecoins');
@@ -228,9 +228,17 @@ test('capa editorial: el mismo hecho contado por varios medios queda en una nota
   // Gana la de mejor nivel con extracto y enlace directo; en empate, la de más puntos (El Universo, 76).
   assert.equal(kept.id, 'u1');
   assert.deepEqual(kept.coverage, ['Primicias']);
-  // Mismo grupo en otro canal: no se mezcla.
-  const other = groupClusters([biess[1], { ...biess[0], category: 'latam' }]);
-  assert.equal(other.length, 2);
+  // Mismo grupo en otro canal: también se une, y la nota queda en el canal más específico del grupo (orden de la
+  // deduplicación: regulación, Ecuador, LATAM, cripto, pagos; Endeavor al final).
+  const other = groupClusters([{ ...biess[1], category: 'pagos' }, { ...biess[0], category: 'latam' }]);
+  assert.deepEqual(other.map(item => [item.id, item.category, item.coverage]), [['u1', 'latam', ['Primicias']]]);
+  const crossed = groupClusters([
+    story('fx', 2, { sourceId: 'finextra', source: 'Finextra', category: 'pagos', tier: 2, excerpt: 'World Bank, Citi and Circle.', editorial: judged(72, 'banco-mundial-stablecoins') }),
+    story('tb', 3, { sourceId: 'theblock', source: 'The Block', category: 'cripto', tier: 2, editorial: judged(70, 'banco-mundial-stablecoins') }),
+    story('en', 3, { sourceId: 'endeavor-prensa', source: 'LatamList', category: 'endeavor', tier: 3, editorial: judged(65, 'littio-plan-remoto') }),
+    story('la', 4, { sourceId: 'larepublica', source: 'La República', category: 'latam', tier: 2, excerpt: 'Littio lanza su Plan Remoto.', editorial: judged(66, 'littio-plan-remoto') }),
+  ]);
+  assert.deepEqual(crossed.map(item => [item.id, item.category, item.coverage]), [['fx', 'cripto', ['The Block']], ['la', 'latam', ['LatamList']]]);
   // Un documento primario oficial gana a la prensa que lo cuenta, aunque la prensa puntúe más; la cobertura acumulada se conserva.
   const resolution = story('r1', 6, { sourceId: 'bce-junta-resoluciones', source: 'Banco Central del Ecuador', kind: 'official', category: 'regulacion', title: 'Resolución JPRFM-2026-051-F', excerpt: 'Resolución JPRFM-2026-051-F.', editorial: judged(80, 'jprfm-051') });
   const press = story('e1', 2, { sourceId: 'eluniverso', source: 'El Universo', category: 'regulacion', title: 'La Junta reforma la codificación', excerpt: 'La Junta…', editorial: judged(88, 'jprfm-051'), coverage: ['Primicias'] });
@@ -357,12 +365,53 @@ test('capa editorial: lotes por canal, grupos coherentes entre lotes y tope de n
   // Tope de 3 notas (las más recientes) en lotes de 2: dos peticiones; las otras dos quedan para la siguiente ejecución.
   assert.equal(client.calls.length, 2);
   assert.deepEqual(result.stories.filter(item => item.editorial).map(item => item.id), ['s1', 's2', 's3']);
-  // El segundo lote ve los juicios del primero y reutiliza su grupo; el grupo nuevo lleva el sufijo de la ejecución.
+  // El segundo lote ve los juicios del primero y reutiliza su grupo; un grupo nuevo que no choca con nada queda limpio.
   const clusters = new Set(result.stories.filter(item => item.editorial).map(item => item.editorial.cluster));
-  assert.equal(clusters.size, 1);
-  assert.match([...clusters][0], /^biess-credicasa-[a-z0-9]{1,6}$/);
+  assert.deepEqual([...clusters], ['biess-credicasa']);
   assert.deepEqual(result.usage, { input: 2400, output: 600, cacheRead: 1800, cacheWrite: 0 });
   assert.equal(client.calls[0].options.timeout, EDITORIAL.timeoutMs);
+});
+
+test('capa editorial: el mismo hecho queda en el mismo grupo aunque llegue otro día, en otra ejecución o en otro canal', async () => {
+  const options = { model: 'claude-opus-5-5', at };
+  // Primera ejecución: una nota de Pagos. Su grupo nuevo no choca con nada y queda limpio (sin sufijo de ejecución).
+  const day1 = english('visa-1', 30, { title: 'Visa launches agentic commerce program for merchants' });
+  const first = await applyEditorial([day1], { client: fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, es: '', cluster: 'visa-comercio-agentico' })))), now: now - 24 * HOUR, log: quiet(), ...options });
+  assert.equal(first.stories[0].editorial.cluster, 'visa-comercio-agentico');
+  // Segunda ejecución, al día siguiente: la misma noticia llega por un medio de Fintech LATAM. El modelo ve en el contexto
+  // la nota de Pagos (otro canal), copia su grupo y la agrupación deja una sola nota, en Fintech LATAM.
+  const day2 = story('visa-2', 2, { sourceId: 'larepublica', source: 'La República', category: 'latam', title: 'Visa lanza su programa de comercio agéntico para comercios' });
+  const client = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, es: '', cluster: contextOf(params).find(item => item.titular.startsWith('Visa'))?.cluster || 'otro-grupo' }))));
+  const second = await applyEditorial([...first.stories, day2], { client, now, log: quiet() });
+  assert.deepEqual(contextOf(client.calls[0].params).map(item => [item.cluster, item.canal]), [['visa-comercio-agentico', 'pagos']]);
+  assert.equal(second.stories.find(item => item.id === 'visa-2').editorial.cluster, 'visa-comercio-agentico');
+  const grouped = groupClusters(second.stories);
+  assert.deepEqual(grouped.map(item => [item.category, item.coverage]), [['latam', ['Finextra']]]);
+  // Un grupo nuevo igual al de una nota juzgada reciente que no cupo en el contexto es el mismo hecho: se conserva. Igual
+  // al de una nota de hace más de contextDays días, que el modelo no vio, se considera otro hecho y lleva el sufijo.
+  const old = story('viejo', 6 * 24, { editorial: judged(40, 'bce-boletin-monetario') });
+  const recent = Array.from({ length: 3 }, (_, i) => story(`r${i}`, 1 + i, { editorial: judged(50, `hecho-reciente-${i}`) }));
+  const fresh = [story('n1', 1), story('n2', 1)];
+  const names = { 'Titular n1': 'bce-boletin-monetario', 'Titular n2': 'hecho-reciente-2' };
+  const tight = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 40, es: '', cluster: names[note.titular] }))));
+  const third = await applyEditorial([old, ...recent, ...fresh], { client: tight, now, config: { ...EDITORIAL, maxContext: 1 }, log: quiet() });
+  assert.equal(contextOf(tight.calls[0].params).length, 1);
+  const byId = new Map(third.stories.map(item => [item.id, item]));
+  assert.match(byId.get('n1').editorial.cluster, /^bce-boletin-monetario-[a-z0-9]{1,6}$/);
+  assert.equal(byId.get('n2').editorial.cluster, 'hecho-reciente-2');
+  // El contexto trae notas de todos los canales de los últimos días, hasta dos tercios del mismo canal del lote.
+  const mixed = [
+    ...Array.from({ length: 5 }, (_, i) => story(`own${i}`, 1 + i, { editorial: judged(50, `propio-${i}`) })),
+    ...Array.from({ length: 5 }, (_, i) => story(`other${i}`, 1 + i, { category: 'pagos', editorial: judged(50, `ajeno-${i}`) })),
+    story('lejos', 5 * 24, { category: 'pagos', editorial: judged(50, 'lejos') }), story('nueva', 1),
+  ];
+  const wide = fakeClient(everyNote(50));
+  await applyEditorial(mixed, { client: wide, now, config: { ...EDITORIAL, maxContext: 6 }, log: quiet() });
+  const seen = contextOf(wide.calls[0].params);
+  assert.deepEqual([seen.filter(item => item.canal === 'ecuador').length, seen.filter(item => item.canal === 'pagos').length], [4, 2]);
+  assert.ok(!seen.some(item => item.cluster === 'lejos'));
+  assert.match(SYSTEM_PROMPT, /de cualquier canal, copia exactamente su "cluster"/);
+  assert.match(SYSTEM_PROMPT, /aunque se publique en días distintos, en otro idioma o en otro canal/);
 });
 
 test('capa editorial: con el tope por ejecución se evalúan primero Ecuador y Autoridades EC, luego LATAM y Endeavor, luego Pagos y Cripto', async () => {
