@@ -1,21 +1,69 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-18T22:45:12.800Z",
+  "generatedAt": "2026-11-19T00:33:38.193Z",
   "stories": [
+    {
+      "id": "bb77042b0a52541b995d",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Visa and PYMNTS Agree: CFOs Are Moving Payment Security Upstream",
+      "excerpt": "A company can outsource its payment processing, automate its accounts payable and delegate fraud monitoring to specialized providers. What it cannot wholly outsource is the financial damage when those systems fail. A compromised supplier, payment processor or technology platform…",
+      "url": "https://www.pymnts.com/cybersecurity/fraud-prevention/2026/visa-and-pymnts-agree-cfos-are-moving-payment-security-upstream/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-19T00:31:02.000Z",
+      "tier": 2,
+      "access": "open"
+    },
+    {
+      "id": "5d97eabb5f32a951dc02",
+      "sourceId": "expansion-banca",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Santander compensa con venta de riesgo el impacto en capital de Webster y TSB",
+      "excerpt": "El banco apela a todas las modalidades de movilización de activos para mejorar su solvencia y anticipa una aceleración en el cuarto trimestre para recuperar cuanto antes el 13%. Leer",
+      "url": "https://www.expansion.com/empresas/banca/2026/11/19/santander-compensa-venta-riesgo-impacto-capital-webster-tsb.html",
+      "source": "Expansión · Banca",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-19T00:24:28.000Z",
+      "tier": 1,
+      "access": "mixed"
+    },
     {
       "id": "264594aadd8004db8fb1",
       "sourceId": "wsj-markets",
       "category": "pagos",
       "kind": "news",
-      "title": "Weil Gotshal’s Bankruptcy Team Heading to Skadden",
+      "title": "Weil Gotshal Bankruptcy Team Heading to Skadden",
       "excerpt": "The firm’s restructuring practice was once its crown jewel before it announced plans earlier this fall to dissolve itself.",
       "url": "https://www.wsj.com/business/weil-gotshals-bankruptcy-team-heading-to-skadden-feb22b3b?mod=rss_markets_main",
       "source": "The Wall Street Journal · Markets",
       "sourceUrl": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T22:31:00.000Z",
+      "publishedAt": "2026-11-18T23:11:00.000Z",
       "tier": 1,
+      "access": "paywall"
+    },
+    {
+      "id": "170aa087d211c902d911",
+      "sourceId": "americanbanker",
+      "category": "pagos",
+      "kind": "news",
+      "title": "These are the best places for young professionals to work in 2026",
+      "excerpt": "Attracting and retaining talent — especially young professionals — is crucial for any firm’s succession and longevity. These 17 firms have figured out how to keep their employees happy.",
+      "url": "https://www.americanbanker.com/news/these-are-the-best-places-for-young-professionals-to-work-in-2026",
+      "source": "American Banker",
+      "sourceUrl": "https://www.americanbanker.com/feed?rss=true",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T23:10:41.000Z",
+      "tier": 2,
       "access": "paywall"
     },
     {
@@ -35,22 +83,6 @@
       "access": "open"
     },
     {
-      "id": "b52106c83bc374499bf9",
-      "sourceId": "americanbanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Anchorage, Kalshi bet on crypto collateral for trading",
-      "excerpt": "Anchorage Digital, which holds a national trust bank charter, will provide custody of digital assets as trade margin for Kalshi’s FCM division.",
-      "url": "https://www.americanbanker.com/news/anchorage-kalshi-bet-on-crypto-collateral-for-trading",
-      "source": "American Banker",
-      "sourceUrl": "https://www.americanbanker.com/feed?rss=true",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-18T22:09:55.000Z",
-      "tier": 2,
-      "access": "paywall"
-    },
-    {
       "id": "634d2ff0d4f6f4e1bd95",
       "sourceId": "theblock",
       "category": "cripto",
@@ -65,6 +97,22 @@
       "publishedAt": "2026-11-18T22:09:17.000Z",
       "tier": 2,
       "access": "mixed"
+    },
+    {
+      "id": "551a7dfe18ee94788636",
+      "sourceId": "criptonoticias",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Un banco ruso se convierte en exchange de criptomonedas y apunta a la custodia propia",
+      "excerpt": "La banca rusa gana espacio en el mercado, pero los pequeños inversores enfrentarán barreras para acceder a estos activos. La nota Un banco ruso se convierte en exchange de criptomonedas y apunta a la custodia propia se publicó primero en CriptoNoticias - Noticias de Bitcoin…",
+      "url": "https://www.criptonoticias.com/comunidad/adopcion/banco-rusia-exchange-criptomonedas-custodia/",
+      "source": "CriptoNoticias",
+      "sourceUrl": "https://www.criptonoticias.com/feed/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-18T22:00:00.000Z",
+      "tier": 2,
+      "access": "open"
     },
     {
       "id": "379a9f22eb90fcd4d553",
@@ -137,18 +185,34 @@
       }
     },
     {
-      "id": "4249d5985e2c1f12b283",
-      "sourceId": "pymnts",
+      "id": "c99f53e6eb7698a56683",
+      "sourceId": "americanbanker",
       "category": "pagos",
       "kind": "news",
-      "title": "World Bank Taps Circle and Citi to Expand Stablecoin Use",
-      "excerpt": "World Bank Group wants to test the potential of regulated stablecoin infrastructure in improving payments and settlements for its clients. “This initiative is about exploring ways to make the financial plumbing of development work better for the people who need it most,” Ajay…",
-      "url": "https://www.pymnts.com/blockchain/2026/world-bank-taps-circle-and-citi-to-expand-stablecoin-use/",
-      "source": "PYMNTS",
-      "sourceUrl": "https://www.pymnts.com/feed/",
+      "title": "OCC’s Gould defends charter approvals",
+      "excerpt": "Comptroller Jonathan Gould called the argument that too many trust charters are being approved “one-sided.”",
+      "url": "https://www.americanbanker.com/news/occ-s-gould-defends-charter-approvals",
+      "source": "American Banker",
+      "sourceUrl": "https://www.americanbanker.com/feed?rss=true",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T20:41:42.000Z",
+      "publishedAt": "2026-11-18T20:54:18.000Z",
+      "tier": 2,
+      "access": "paywall"
+    },
+    {
+      "id": "9ff2922e1612e99fb257",
+      "sourceId": "finextra",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Provable partners Brave to bring one-click private trading to 130 million users",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPal8yTldOYkNuSkZ3b1VrTS1MdXFhaWJubWRSMUtYTzU0aS1DYmw0ZC1Lak43NnUzS2hTVmM3cFhpbTdKVWRMSkxDcEpwVzk2OHNhWjRpSGoxMENWWXBpdVlKQ3NfUWEtcFQ0YlhOQVE2SnZaNnZOMkg4ZG00eGJOWGxMYzAtMlJxNzF1N2dEa3BvQWxFdUtTdVkzYTJhazVVOS00Qm1HYWl4dWhwWmZERHk1NlRYNTlWRTcyTm1VR1JFZw?oc=5",
+      "source": "Finextra Research",
+      "sourceUrl": "https://www.finextra.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-18T20:26:00.000Z",
       "tier": 2,
       "access": "open"
     },
@@ -183,22 +247,6 @@
       "publishedAt": "2026-11-18T18:50:35.000Z",
       "tier": 1,
       "access": "mixed"
-    },
-    {
-      "id": "99ea29b0b34543fccd75",
-      "sourceId": "finextra",
-      "category": "pagos",
-      "kind": "news",
-      "title": "ACI Worldwide CEO Thomas Warsop leaves",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQa0VwRzdGbGx1eVdwcUgxRVY3cHJnY1dEb2NNS0NmN3N5NUdVWUdfZHVKcWFmbElZWHJKZHJmRUxZUmZsZVp5UFU0eW5YS1RTbVFjZzA5X3o4ampyd2xOanFUeFJSZkQxTFVfR21DbS12UWhMOUIxbktBaTNGY1o4dkI0TWtKTm9xTmdN?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-18T18:16:00.000Z",
-      "tier": 2,
-      "access": "open"
     },
     {
       "id": "eee9991e27f5624038ec",
@@ -345,6 +393,22 @@
       "access": "open"
     },
     {
+      "id": "2a9b6cc53288308b10a8",
+      "sourceId": "bankingdive",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Klarna launches AI ‘concierge’",
+      "excerpt": "The buy now, pay later provider has waded into agentic commerce with a new tool and aims to expand its longer-term loan portfolio.",
+      "url": "https://www.bankingdive.com/news/klarna-launches-ai-concierge/875099/",
+      "source": "Banking Dive",
+      "sourceUrl": "https://www.bankingdive.com/feeds/news/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-18T15:45:00.000Z",
+      "tier": 2,
+      "access": "open"
+    },
+    {
       "id": "65c37e3c3f0d706028a2",
       "sourceId": "paymentsdive",
       "category": "pagos",
@@ -377,22 +441,6 @@
       "access": "open"
     },
     {
-      "id": "13151597e593ec9cdbb5",
-      "sourceId": "finextra",
-      "category": "pagos",
-      "kind": "news",
-      "title": "New Zealand banks form fraud intelligence sharing network",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQUnVDMzlNVDF5d3dzeGlNb0hCM0ZUZy1tUV9OWEVXNVVWejI1dE1TX3RaTDVQTE9QOE9ydmVFUHA2M3pMMTR5ekx3U0lhUzF1YWlzWS1ZbUliejQ4ZWRaS0wyRWpWNUxHaGZLMmlVb3hVYVBic19WZXJiVjJTYy1IQ2RfajlRWVFFVHh0aENiZFpZdjduZnljdFNPcmQ3UnFHTlE?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-18T15:29:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
       "id": "808819622f9dfa778a8b",
       "sourceId": "coindesk",
       "category": "cripto",
@@ -409,34 +457,18 @@
       "access": "open"
     },
     {
-      "id": "4744ac0cb42aa84472c5",
+      "id": "0d839c0a7d80be3e8980",
       "sourceId": "finextra",
       "category": "pagos",
       "kind": "news",
-      "title": "Miden and Visa partner on commercial card issuing for African businesses",
+      "title": "Singapore's Nets boosts app",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPRzZsOW44dDR5MTJ6cFowY3lfMXIyNWpoa05lRFN5Qm5mTU5nT18xTFFzV09tR3Jhd3dNdXJpZEZEeFNITlJDU1JFUnkwQzdfY21sRHdBbWp0eVhMcUFCX0d0LWU2VjNXRVpXeURBUHV2emNRZGJ3ekR5Mkh6V2VJRzdRQTh3VXRrU0x6eEE0YTNCLUNnZEN5RXBxSkc2THdadEtxUkc3Z1lMdEtGX1dZWFp6SVdPMjNE?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBtZXZhVlBRNTBhX3FaMVhfX0YtUkxnWmkxM29MMFZtVkFpbXhGUWxSZFRmY3FxTjFKWVFUdklmY3llX3czbW5QTGpXR0syLTBWaFFhSHdNX0xmdlBZNElPendicXUxbHVQVmZ4Yk82ZXQ0MGxPWUd5MTgzOA?oc=5",
       "source": "Finextra Research",
       "sourceUrl": "https://www.finextra.com/",
       "via": "Vía Google News",
       "language": "en",
-      "publishedAt": "2026-11-18T13:55:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
-      "id": "16bc8d9107d0566c9228",
-      "sourceId": "finextra",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Holvi connects business accounts to ChatGPT and Claude",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOWFEU2FhZE8ydDZnNHlaRXJmcjdVMUhHWU15aGVSUHpIc3BtOGF6V2U1cjlTQ2drdEsydFVYcnBGZGF2Sk5nY0lCcVVQS0YxVEs1LUhlYlVKSE5kMlR0Z09kNHVaYmlUWjNmZEktY3Y0QkstQnJjUUZqNmVOVFpTbXZ6T1ItQllvSDNfcjlGQl9HZGQxMjNXMERRZUJuMmU1?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-18T13:18:00.000Z",
+      "publishedAt": "2026-11-18T13:20:00.000Z",
       "tier": 2,
       "access": "open"
     },
@@ -489,20 +521,20 @@
       "access": "open"
     },
     {
-      "id": "10541d3c975c5997807b",
-      "sourceId": "thebanker",
+      "id": "64f0a9b7cc72e690aea7",
+      "sourceId": "eba",
       "category": "pagos",
-      "kind": "news",
-      "title": "UBS set to concede defeat over Swiss capital requirements; Deutsche Bank’s Colombian transactions under scrutiny",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5qeFZvbkZPaHFwWE4wM1R1WkdzSHB3RG5HSWkyZXFhX2ZTV3l4NWt5dE5ueUJVRFJmZ2ZkV0dTcG1wenc5TmhkLTlRY1lqSk1iekZYNnpaQnQ3Uml5VVhhM015QzI3VVJUZXpTVXQ0M2FOdXpoMzBmbHF3?oc=5",
-      "source": "TheBanker.com",
-      "sourceUrl": "https://www.thebanker.com/",
-      "via": "Vía Google News",
+      "kind": "official",
+      "title": "​The EBA reports growing market share of third-country bank subsidiaries in the EU and reduced foreign currency mismatches",
+      "excerpt": "​The European Banking Authority (EBA) today published two Reports on the market share of subsidiaries of non-EU banks in the EU, as well as on EU banks’ assets and liabilities in foreign currencies. As of December 2025, subsidiaries of third country banking groups accounted for…",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-reports-growing-market-share-third-country-bank-subsidiaries-eu-and-reduced-foreign-currency",
+      "source": "Autoridad Bancaria Europea",
+      "sourceUrl": "https://www.eba.europa.eu/news-press/news/rss.xml",
+      "via": "",
       "language": "en",
-      "publishedAt": "2026-11-18T11:13:05.000Z",
-      "tier": 2,
-      "access": "paywall"
+      "publishedAt": "2026-11-18T11:32:00.000Z",
+      "tier": 1,
+      "access": "open"
     },
     {
       "id": "b616f7ad37b2a631bdd4",
@@ -783,20 +815,20 @@
       }
     },
     {
-      "id": "d441237316c557191201",
-      "sourceId": "finextra",
+      "id": "c836786c7242dcd1e354",
+      "sourceId": "wsj-markets",
       "category": "pagos",
       "kind": "news",
-      "title": "Further work necessary to boost cross-border payments - FSB",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOaVBndnZVN0d1TGswTEhSR2kyRV9weXdnMG0tNFhkZnBHSDNrQ3laMUtySDJ0ZE1DUTh0OHFSWW82NTZQT3BtSEFIYzBLY19NZTNQYzNvYWhmSXBKS3kyRDdoSWRtZExCOFYwcURicEVkcHFRajk4Z2VsRHd5LVFSVE9SN1RYS0hqQXlKaXRZNE85SndTaFB4YmIzZlZCX1UyLXN5SEp0WQ?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
+      "title": "Corporate-Card Startup Ramp Raising Funds at $70 Billion Valuation",
+      "excerpt": "The financing round is the fast-growing company’s third fundraise in a year.",
+      "url": "https://www.wsj.com/finance/corporate-card-startup-ramp-raising-funds-at-70-billion-valuation-631b071a?mod=rss_markets_main",
+      "source": "The Wall Street Journal · Markets",
+      "sourceUrl": "https://feeds.content.dowjones.io/public/rss/RSSMarketsMain",
+      "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T20:38:00.000Z",
-      "tier": 2,
-      "access": "open"
+      "publishedAt": "2026-11-17T20:00:00.000Z",
+      "tier": 1,
+      "access": "paywall"
     },
     {
       "id": "20838a143b03e7f858cf",
@@ -847,18 +879,18 @@
       "access": "mixed"
     },
     {
-      "id": "016f61831200d583de15",
+      "id": "821f93b73f45e4378dee",
       "sourceId": "bankingdive",
       "category": "pagos",
       "kind": "news",
-      "title": "Banking disruption resolved after thousands report access issues",
-      "excerpt": "JPMorgan Chase has fixed a “technical issue” that caused delays in transactions – and a furious spike in errors reported to Downdetector, including among users of other large banks.",
-      "url": "https://www.bankingdive.com/news/jpmorgan-chase-banking-service-disruption-app-website-bofa-wells-capital-one-zelle/874922/",
+      "title": "Dave applies for national bank charter",
+      "excerpt": "A charter would give Dave an opportunity to offer products “to level the playing field for everyday Americans,” said proposed bank president Anthony Sharett.",
+      "url": "https://www.bankingdive.com/news/dave-fintech-applies-national-bank-charter-occ-fdic-fed/874920/",
       "source": "Banking Dive",
       "sourceUrl": "https://www.bankingdive.com/feeds/news/",
       "via": "",
       "language": "en",
-      "publishedAt": "2026-11-17T17:06:06.000Z",
+      "publishedAt": "2026-11-17T17:04:43.000Z",
       "tier": 2,
       "access": "open"
     },
@@ -877,22 +909,6 @@
       "publishedAt": "2026-11-17T17:00:05.000Z",
       "tier": 2,
       "access": "open"
-    },
-    {
-      "id": "e232d7ca75984e9370f1",
-      "sourceId": "expansion-banca",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Qonto dará el salto a la banca con depósitos y anticipo de facturas en 2027",
-      "excerpt": "El neobanco acaba de recibir la licencia bancaria por parte del Banco Central Europeo (BCE). Leer",
-      "url": "https://www.expansion.com/empresas/banca/2026/11/17/qonto-dara-salto-banca-depositos-anticipo-facturas-2027.html",
-      "source": "Expansión · Banca",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-17T16:02:27.000Z",
-      "tier": 1,
-      "access": "mixed"
     },
     {
       "id": "359bbaae08001ed4a34d",
@@ -943,12 +959,28 @@
       "access": "open"
     },
     {
+      "id": "a6112f57bbedb930d2f4",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "HSBC, CNN y otras empresas fueron afectadas por un ciberataque que buscaba robar criptos e infectar iPhones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxPalVVZXdVVEVqTEF6c3VLMW5QTTNjNWpGbHNONllLUDlxMFVOYmpISnhEOE55TDdCdXFGTXhWcVRIT2hMM1lkc19lbTBQS2FCdFVkTFlMbzBiMHhGTVRhTFQwY1RONUVJRlV2VTBkSnQ3QWJrWXZGbmE0cUppbzB3NDU4elB4QnpjdWhpU1lFbFBLbEtBYWZBUkRkZHZ6NkVyMzZ6b1ZIWkQtaEJUTV9IOFl4cFBuemdNeXhXbUVpVFBBQU1wWXU5UkpiN25tRHI1Ni1sOFVwdVd6MVBySmd3dmUtd9IB9wFBVV95cUxOc2s5ZlQxQ3lqLTlPeXQ1RS0zUTU5UDk0WmJJZGVCQmFNSnB0dFgwOVFWUWVnM0ZaaUZ0aXVaUlB3LUtqeXpod1MwLXpPWnJoeEl5dmFiMERjNFBEbFNfVGFqZE9DZkl6NjlqbXFIR2lSaGdVMEwzTWRuVnM5OVBZdXE3NnhLSjBNb2VnNURnNUJzMGJxTVg4eWFkNGtoX0p4MVczREUyRXBtdUdoelJOZURMdmU5RFFDVk41RnJpdmJhVFltSGM1dE1tSS10SjFpTnc1alVCOVdiNmdITWdZUDdKNGIzX3ZZcHpWRG1HTlRkV3NjcFhz?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-17T14:30:34.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
       "id": "a7ee956d86d99dda402e",
       "sourceId": "chainalysis",
       "category": "cripto",
       "kind": "company",
       "title": "Refugees, ATMs, and Tax Shifts: What’s Driving Crypto in Eastern Europe",
-      "excerpt": "Summary Eastern Europe’s crypto economy fell 7.9% to $642.1 billion, the weakest performance of any region we study. Countries with…",
+      "excerpt": "This post is an excerpt from our 2026 Geography of Cryptocurrency Report. Download now. Summary Eastern Europe’s crypto economy fell…",
       "url": "https://www.chainalysis.com/blog/eastern-europe-crypto-adoption-2026/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -1141,20 +1173,20 @@
       "access": "mixed"
     },
     {
-      "id": "924bbd4a237ab990892d",
-      "sourceId": "finextra",
+      "id": "32228d5171e55c06c133",
+      "sourceId": "expansion-banca",
       "category": "pagos",
       "kind": "news",
-      "title": "Google lets users connect their Wallet to Gemini for personal finance insights",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQME16WG5yV1l6c21nWUN2SEJLUk9BYUNkR1lXR1pleGdGalRaMFpPTW5jSy1za0tobmZlUEdKeElGT2xlaHJCdjlObkJ3b3BRcjIteW4zRlhiVVdNTHhLSmo5dUR3dktxRHVuRDYzWUctbV9obEpqWGFfbVhtVVdvc2NoOUNyQWdZSWNiUGpVRmlQNmFkcWZQX09fdEN6VHZhYjlFRzFvZGZWR3dZcGUwcjZRTFc5d1F2OEtPN3dB?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-17T00:01:00.000Z",
-      "tier": 2,
-      "access": "open"
+      "title": "UniCredit-Commerzbank: una operación bancaria europea poco exportable",
+      "excerpt": "Desde 2008, los reguladores europeos pedían fusiones entre países para competir con los gigantes de Estados Unidos, pero los gobiernos nacionales las bloqueaban por proteccionismo. Leer",
+      "url": "https://www.expansion.com/empresas/banca/2026/11/17/unicredit-commerzbank-operacion-bancaria-europea-poco-exportable.html",
+      "source": "Expansión · Banca",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-16T23:43:43.000Z",
+      "tier": 1,
+      "access": "mixed"
     },
     {
       "id": "f23332a85739a8d36957",
@@ -1205,6 +1237,28 @@
       "access": "open"
     },
     {
+      "id": "abc2f6143adcdbf7ff5a",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Santiago Peralta, fundador de Paccari: ‘Ecuador tiene estabilidad, una ventaja ante otros países’",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQZGxvdk5FRGdtcmRKaFZ4SVdkbndTV0FlTmJwTlpVM2VETWdUR3dkWHdYeGtjQWJTMEdydlZ0TTFOOE5kZjlwX3dGSnBkVmJtdXhjdkktaXB4eUc1eEtHNE5mVkpUeWIyYmdwYWZldDd3MUx0UDdkN1FLenVpX2tqaTF5ODAwZmIybE5rN1ZjZnBwU192Q3p0QWZGSnNIRm44aDJxTk9aV2R2bTFUdXVvWlZMbUt5VE40RHEzQkpyYzV0cTA0U2xDNjBMRmpmMDJuVFE5aThFT2VjYk1oQmc?oc=5",
+      "source": "El Universo",
+      "sourceUrl": "https://www.eluniverso.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-16T15:41:00.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Paccari",
+        "country": "Ecuador",
+        "vertical": "Alimentos y bebidas",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=pacari#pacari"
+      }
+    },
+    {
       "id": "c4907e8d2c0359f2a19e",
       "sourceId": "endeavor-prensa",
       "category": "endeavor",
@@ -1225,6 +1279,22 @@
         "vertical": "Fintech",
         "url": "https://endeavor.org/entrepreneur-companies/?_search=ebanx#ebanx"
       }
+    },
+    {
+      "id": "234658dc7d98fffe4c25",
+      "sourceId": "finextra",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Adyen wins deal with UK energy supplier OVO",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNUTA3TFZBOFMwM1J5dll6dGUzMUNfMzFxbGpIM2lyWU53QnBvNUNpdGs2NEltVWhWbFZEV0JSN3NFMVI2N3IzOXpRNFRKRXIzSW5oSUdjSEY4R0tQaElsZjRJOEFRc203eXprMWhOSWhFS3NvMm5KOHN4LWl2c1R0M1RIY0ZGQmU2RWRUTjdHZ1Zodw?oc=5",
+      "source": "Finextra Research",
+      "sourceUrl": "https://www.finextra.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-16T15:07:00.000Z",
+      "tier": 2,
+      "access": "open"
     },
     {
       "id": "4f43288c2a61d4b20018",
@@ -1307,22 +1377,6 @@
       "access": "open"
     },
     {
-      "id": "b8de8cf8d60c9d33bcec",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Semanal de Tasas de Interés. 05 al 11 de Noviembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntSemanal.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-16T12:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
       "id": "0bcae4699c378730d57a",
       "sourceId": "iupana",
       "category": "latam",
@@ -1353,6 +1407,22 @@
       "publishedAt": "2026-11-16T07:32:41.000Z",
       "tier": 1,
       "access": "open"
+    },
+    {
+      "id": "d44f81cd60bb64544215",
+      "sourceId": "ft-banking",
+      "category": "pagos",
+      "kind": "news",
+      "title": "EU banking watchdog veers away from single deposit insurance scheme",
+      "excerpt": "Chair of European Banking Authority working on alternative ways to free up more cross-border lending",
+      "url": "https://www.ft.com/content/016ce22d-1e09-4f1d-a7e6-9acf183e757f?syn-25a6b1a6=1",
+      "source": "Financial Times · Banking",
+      "sourceUrl": "https://www.ft.com/banking?format=rss",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-15T22:07:45.000Z",
+      "tier": 1,
+      "access": "paywall"
     },
     {
       "id": "cc8384c1132add0e5ac6",
@@ -1387,20 +1457,48 @@
       "access": "mixed"
     },
     {
-      "id": "3bc2c5a60210ca9fd5d7",
-      "sourceId": "fed",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Agencies extend comment period for proposed third-party risk management guidance",
-      "excerpt": "Agencies extend comment period for proposed third-party risk management guidance",
-      "url": "https://www.federalreserve.gov/newsevents/pressreleases/bcreg20261113a.htm",
-      "source": "Reserva Federal de EE. UU.",
-      "sourceUrl": "https://www.federalreserve.gov/feeds/press_all.xml",
+      "id": "18b461386679365931e2",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Littio lanza 'Plan Remoto' para gestionar ingresos internacionales sin cuotas de suscripción",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxONlRfY2lNT3B4ckx6RUl3T2VNSTc5R0RYcTg1VEM5MkNTUVE3bGlPcU9pZVJaTTFRZFFoM3JOSjdNTzNpTUk2cDdGNnhieUlubk03SzZBV0ZSdjUwNW1CbHdZU0d3TE1xZXJqVFV6cGQ2OC11dU95YUpGbTItVlNrUHJMTHdzeThtMHRUbDhfckYxd1VpdFk3d0xZNlZFT0tBWjdCRXBJZXY2V2RIUU9GWDY1a2kxNjhzNXN5LTdBLWdEMlJvM3Q4VnUyNzhfTFXSAc8BQVVfeXFMTklaQW5wc213SUhFT2dlNmgxakNsT3JrLXZiZGNkTHBvVkhQdldJWXdpelJSTUN0OWJoMEZjMGctTjdxcTZSRGhGMkpQei1od0Iyd0gtcnA3Y0JMNFdMV1ZFblBNSHRxdjhyY2ZIbnpQMzBBdTVhMDBHY1VkblZTZmphaWZPa1Q1SFBOOXBnYVBuM1FOcWJQaGh4OGtaUUFNblVYYm5yMUtCbklCaGJ2VE9YejZjMTBoLXFnRXBmcnNCYS04UWhpQ3RDMXp0WjhV?oc=5",
+      "source": "LaRepublica.co",
+      "sourceUrl": "https://www.larepublica.co/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-13T22:37:37.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Littio",
+        "country": "Colombia",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=littio#littio"
+      }
+    },
+    {
+      "id": "da5fa86d6ab6b7f9bd83",
+      "sourceId": "la-republica",
+      "category": "latam",
+      "kind": "news",
+      "title": "Littio lanza 'Plan Remoto' que permite gestionar ingresos internacionales",
+      "excerpt": "Para activar y mantener los beneficios, los usuarios deben recibir al menos US$500 cada 30 días en pagos elegibles de empleadores, clientes o plataformas internacionales",
+      "url": "https://www.larepublica.co/finanzas/littio-lanza-plan-remoto-para-gestionar-ingresos-internacionales-sin-cuotas-de-suscripcion-4524519",
+      "source": "La República (Colombia)",
+      "sourceUrl": "https://www.larepublica.co/rss/finanzas",
       "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-13T21:15:00.000Z",
+      "language": "es",
+      "publishedAt": "2026-11-13T22:37:37.000Z",
       "tier": 1,
-      "access": "open"
+      "access": "mixed",
+      "endeavor": {
+        "company": "Littio",
+        "country": "Colombia",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=littio#littio"
+      }
     },
     {
       "id": "ea1a2724c78e5b54dbf1",
@@ -1489,20 +1587,26 @@
       "access": "mixed"
     },
     {
-      "id": "33febdab9f0b667a9670",
-      "sourceId": "la-republica",
-      "category": "latam",
+      "id": "1b919e171db3ad2bbbfb",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
       "kind": "news",
-      "title": "Pibank contó con un crecimiento de 70% en cuanto a sus captaciones frente al año anterior",
-      "excerpt": "La banca mejoró sus condiciones de ciberseguridad y autenticación biométrica. Asimismo, reveló mejoras en su plataforma",
-      "url": "https://www.larepublica.co/finanzas/pibank-presento-un-crecimiento-de-70-en-sus-captaciones-frente-a-octubre-de-2025-4524209",
-      "source": "La República (Colombia)",
-      "sourceUrl": "https://www.larepublica.co/rss/finanzas",
-      "via": "",
+      "title": "Fintech Nexu obtiene una línea de crédito de US$55M de BBVA Spark para facilitar el acceso a vehículos en México",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQaEIwd3hNVmpSdGlQbVM3bG5MX2JkWHlVQ3JaemlZNFNDSEsydmFKZ1BrNUpITGVLSVNjR01CbHJXS2d6eTMzT0RndFB1MWI3UTFwaEZ2RE5NaFVjMkhNZjZSVUpUTVcwb0FLdEl4SUZGVzdMNXZZVktOVE1ZN2ZIS1dqSjdKZjlOaE9rMnpwWERuZkpnbW15Ml9GQkZsWENlVnhUM1F3MkZSQzdvdEtkdWZLRnlDV19WcmV0a2xQa1F3cDdlQzE4RVBqTUpWZDF4N0taV0dpWjRJY05QSFhVSlRjUQ?oc=5",
+      "source": "Latam Fintech Hub",
+      "sourceUrl": "https://www.latamfintech.co/",
+      "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-13T16:16:46.000Z",
-      "tier": 1,
-      "access": "mixed"
+      "publishedAt": "2026-11-13T16:43:13.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Nexu",
+        "country": "México",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=nexu#nexu"
+      }
     },
     {
       "id": "ee3d9a76b823e030f1e5",
@@ -1575,6 +1679,22 @@
       "access": "paywall"
     },
     {
+      "id": "c87be2e8f7eab7f63732",
+      "sourceId": "thebanker",
+      "category": "pagos",
+      "kind": "news",
+      "title": "Reg Wrap: Global stablecoins threaten cross-border stability, says FSB",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE92S2Z1QndlTW1reGtMcUJYWEppTjNQbjJGVHFUcGVZeVJhR2N1QXJKRFNOMmRQbkN0T05iZnFhaDRDVFY5ZTYtcFBNcm9zaS1Mb25iTmhVcnFTSVI3V0RiaTFpMnpheXRMS1lXdnh6bHduTHJ4Nk1yUEVn?oc=5",
+      "source": "TheBanker.com",
+      "sourceUrl": "https://www.thebanker.com/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-13T13:12:34.000Z",
+      "tier": 2,
+      "access": "paywall"
+    },
+    {
       "id": "4a33851df90dd1823412",
       "sourceId": "bce-boletines",
       "category": "ecuador",
@@ -1584,22 +1704,6 @@
       "url": "https://www.bce.fin.ec/el-credito-del-sistema-financiero-crecio-209-en-octubre-y-alcanzo-usd-4-978-millones/",
       "source": "Banco Central del Ecuador",
       "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-13T12:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "08ba4174039e1055bfd3",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Reporte Interactivo Mensual de Tasas de Interés. Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/bi_ReporteIntMensual.html",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-13T12:00:00.000Z",
@@ -1620,22 +1724,6 @@
       "language": "es",
       "publishedAt": "2026-11-13T11:00:38.000Z",
       "tier": 2,
-      "access": "mixed"
-    },
-    {
-      "id": "f204552f34a25d019c2e",
-      "sourceId": "expansion-banca",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Los agentes de IA no deberían necesitar hacerse pasar por nosotros",
-      "excerpt": "Los proveedores de servicios, desde los bancos hasta las plataformas digitales, deben ofrecer un canal de acceso estándar en condiciones equitativas. Leer",
-      "url": "https://www.expansion.com/economia/financial-times/2026/11/13/agentes-ia-deberian-necesitar-hacerse-pasar-nosotros.html",
-      "source": "Expansión · Banca",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-13T10:33:46.000Z",
-      "tier": 1,
       "access": "mixed"
     },
     {
@@ -1789,6 +1877,22 @@
       "access": "open"
     },
     {
+      "id": "e3150632fdba34f23a43",
+      "sourceId": "la-republica",
+      "category": "latam",
+      "kind": "news",
+      "title": "Banco Falabella habilita pago con tarjetas y dispositivos móviles en Metro de Medellín",
+      "excerpt": "Con esta implementación, el sistema masivo de la capital antioqueña adopta un esquema que ya opera en ciudades como Londres, Nueva York y Ciudad de México",
+      "url": "https://www.larepublica.co/finanzas/banco-falabella-habilita-pago-con-tarjetas-y-dispositivos-moviles-en-metro-de-medellin-4523396",
+      "source": "La República (Colombia)",
+      "sourceUrl": "https://www.larepublica.co/rss/finanzas",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-12T17:20:13.000Z",
+      "tier": 1,
+      "access": "mixed"
+    },
+    {
       "id": "fe4b583cd4c389f03455",
       "sourceId": "finextra",
       "category": "pagos",
@@ -1802,6 +1906,22 @@
       "language": "en",
       "publishedAt": "2026-11-12T16:08:00.000Z",
       "tier": 2,
+      "access": "open"
+    },
+    {
+      "id": "411742ffc9ac4c9a93ee",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Tokenización de acciones busca abrirse paso en el mercado bursátil de EE.UU. pese al rechazo de las empresas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQeG9xVU1yNzNmNkk0eWUycEQ3MGt2X1B3ZHgwRmhhVExSUXk0clpqcTk4aU1Zbk0ybmRHUXkwTHFvY2cxU0F5NFYwanZCMlVSMTRuaUhXTGY4ZUtBWF9pd2IteFNEMko3b0d3MXppeXdGNVZpZ0tFbGItSmdGRVVyOGtkamhyTjZaOVVYLXBxTWsxMG9tREtNOXdCWGZ6M2xuOUVDdTVSSTFEWEhRRUFORWhuV3JjSG5QLUZvSFEtYWZoYUxZWHE3ZjVnV2ZrOWhadnFUWmpFQUdTME1memfSAfIBQVVfeXFMTnhBNThHZXlRdUpnNlJzRXpMaFlKeVVNaWJ5VnNESG1iYzl5NlExMVgzc3lZdnJiR09EVlluMWRXRnF2c3BWYUhZZ2lhLXlsMm9Kd1ZZM3VNWGNkd3lvbEFEbjRoUmpiUldhZHIwWERHMEZlVnhtNHdoQVkyYjV1QlVnY2FKWTZVYklPMGRUV2l1TmJhcFdodzRBVFFwdnhaQklqWjFtQV9IZ2hOaGVCVlhpMnpUOGhwNjI4WkFFOWtlSFhtYTFGNjZtX2htZWpVSEtxclFGQ055eGN1aDZ5NFRBdFUwdG5ZZk95VHB6RnR5Wnc?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-12T09:23:18.000Z",
+      "tier": 1,
       "access": "open"
     },
     {
@@ -1837,15 +1957,15 @@
       "access": "paywall"
     },
     {
-      "id": "b605f42bf035c2b8e293",
-      "sourceId": "bis-investigacion",
+      "id": "16a633e6fdaa9ba8c684",
+      "sourceId": "bis-discursos",
       "category": "pagos",
       "kind": "official",
-      "title": "The gig economy and digital payments",
-      "excerpt": "The growth of the “gig” economy could have far-reaching implications for payment systems. Gig work involves digital platforms that intermediate between workers and (retail or business) customers, in areas as diverse as ride-hailing and food delivery, freelance design and…",
-      "url": "https://www.bis.org/publications/paper-177-gig-economy-and-digital-payments",
-      "source": "BIS · Investigación",
-      "sourceUrl": "https://www.bis.org/doclist/bis_fsi_publs.rss",
+      "title": "Emmanuel Moulin: Competitiveness and resilience in the financial sector - oxymoron or complementarity?",
+      "excerpt": "Speech by Mr Emmanuel Moulin, Governor of the Bank of France and Chairman of the Autorité de contrôle prudentiel et de resolution (ACPR), at the ACPR conference, Paris, 5 November 2026.",
+      "url": "https://www.bis.org/speeches/20261112-competitiveness-and-resilience-financial-sector-oxymoron-or-complementarity",
+      "source": "BIS · Discursos de banqueros centrales",
+      "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
       "via": "",
       "language": "en",
       "publishedAt": "2026-11-12T00:00:00.000Z",
@@ -1949,6 +2069,22 @@
       "access": "paywall"
     },
     {
+      "id": "eecffbf6898b736863b2",
+      "sourceId": "expansion-banca",
+      "category": "pagos",
+      "kind": "news",
+      "title": "La inclinación de Italia a interferir en la banca se vuelve en su contra",
+      "excerpt": "Banco BPM, un codiciado objetivo de adquisición, podría terminar bajo control francés. Leer",
+      "url": "https://www.expansion.com/economia/financial-times/2026/11/11/inclinacion-italia-interferir-banca-vuelve.html",
+      "source": "Expansión · Banca",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-11T18:40:00.000Z",
+      "tier": 1,
+      "access": "mixed"
+    },
+    {
       "id": "27733d86dfa483055381",
       "sourceId": "reuters-cripto",
       "category": "cripto",
@@ -1978,22 +2114,6 @@
       "language": "es",
       "publishedAt": "2026-11-11T14:55:56.000Z",
       "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "1061024528afc298b1c5",
-      "sourceId": "finextra",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Duffel and Katanox bring hotel bookings, payments and financing into single flow for travel sellers",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPNy1RcHVGcU5xb2ZXekRraWNCMHlpSF9USjkzWEF0enJTaEE3S0d3eWxaWEdsU1dxWXgyUDlyRjdwZFlGRC1zRDFWTy1NOXVMeWppQTR1Yy1sRXl4czhvamRFRGRZaHhVdHhPOE5YQW1jYnM4MFdwQWdZNXRvclNTT3RFQXZxelFZUmpCY2tMcjRuTENWQmJXdm4yWElXWXVubnJLa00tck5iSC1fcFRWQ09wSDJMUGp2RzlOanhublJmQ1k0STJEQ3VpZ2ZkNnpEeFJiblp3TUxzOEU?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-11T14:00:00.000Z",
-      "tier": 2,
       "access": "open"
     },
     {
@@ -2093,6 +2213,22 @@
       "access": "mixed"
     },
     {
+      "id": "47353bc3e654a8f4fe7b",
+      "sourceId": "fsb",
+      "category": "pagos",
+      "kind": "official",
+      "title": "FSB recommends Türkiye further strengthens its regulatory framework for crypto-assets and stablecoins",
+      "excerpt": "Türkiye should operationalise a financial stability monitoring framework, establish a regime for stablecoins, strengthen supervision and enforcement, and promote cross-border cooperation and information sharing.",
+      "url": "https://www.fsb.org/2026/11/fsb-recommends-turkiye-further-strengthens-its-regulatory-framework-for-crypto-assets-and-stablecoins/",
+      "source": "Financial Stability Board",
+      "sourceUrl": "https://www.fsb.org/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-11T08:00:00.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
       "id": "c7d9b73bd800b642b598",
       "sourceId": "el-economista",
       "category": "latam",
@@ -2107,22 +2243,6 @@
       "publishedAt": "2026-11-11T02:50:32.000Z",
       "tier": 1,
       "access": "open"
-    },
-    {
-      "id": "91d21cb8323e111d5195",
-      "sourceId": "expansion-banca",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Bruselas cita a las autoridades bancarias para impulsar la competitividad del sector",
-      "excerpt": "La Comisión Europea busca mejorar la coordinación de las instituciones y un cambio cultural para que sean más tolerantes con el riesgo. Leer",
-      "url": "https://www.expansion.com/empresas/banca/2026/11/11/bruselas-cita-autoridades-bancarias-impulsar-competitividad-sector.html",
-      "source": "Expansión · Banca",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-11T00:10:37.000Z",
-      "tier": 1,
-      "access": "mixed"
     },
     {
       "id": "eb2bfa14fee2f39365e6",
@@ -2233,6 +2353,22 @@
       "access": "open"
     },
     {
+      "id": "9ff747bc4fe843b85e20",
+      "sourceId": "expansion-banca",
+      "category": "pagos",
+      "kind": "news",
+      "title": "La Audiencia de A Coruña condena a Abanca a devolver 8.800 euros a una víctima de fraude bancario",
+      "excerpt": "La sección quinta de la Audiencia Provincial aplica la sentencia del Tribunal de Justicia de la Unión Europea que obliga a los bancos a devolver el importe de un pago no autorizado por el cliente. Leer",
+      "url": "https://www.expansion.com/galicia/2026/11/10/audiencia-coruna-condena-abanca-devolver-8-800-euros-victima-fraude-bancario.html",
+      "source": "Expansión · Banca",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-10T16:54:17.000Z",
+      "tier": 1,
+      "access": "mixed"
+    },
+    {
       "id": "54717ff22f3412466c8e",
       "sourceId": "cinco-dias-cripto",
       "category": "cripto",
@@ -2265,36 +2401,20 @@
       "access": "open"
     },
     {
-      "id": "7e5aef1d5bc99f2c0b7d",
-      "sourceId": "finextra",
+      "id": "0d22728cdb6820bb8bb2",
+      "sourceId": "expansion-banca",
       "category": "pagos",
       "kind": "news",
-      "title": "Bottomline brings USDC stablecoin payments into platform",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQYktLOWsyNzFWWi1ZVExhem1oaEtNOGpGY1pMSmRQSjNJek5NYWlMTnBROWlEakp5dU5WWjM0ZGM1VXVaSkc2dVJkZTJzeXFIUUpxOGJXUDlId1FVeGVST3I0VGE5YjdzVE9fVllwdlBWX284Y2NMeExtN0hrMGtNb0oyNFdiMmNBQnlBOTVHdFI2ZldFZkJSTGFWN0oxY0ZLXzNn?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-10T13:32:00.000Z",
-      "tier": 2,
-      "access": "open"
-    },
-    {
-      "id": "f9489d7ffe8d62664967",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 06 de Noviembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_953_06112026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "title": "Santander UK pide autorización para transferir el negocio de TSB el próximo 22 de marzo",
+      "excerpt": "La filial británica del banco español espera realizar la migración en la segunda mitad de 2027 y asegura que no cerrará oficinas antes de 2028 Leer",
+      "url": "https://www.expansion.com/empresas/banca/2026/11/10/santander-uk-pide-autorizacion-transferir-negocio-tsb-proximo-22-marzo.html",
+      "source": "Expansión · Banca",
+      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
       "via": "",
       "language": "es",
-      "publishedAt": "2026-11-10T12:00:00.000Z",
+      "publishedAt": "2026-11-10T09:49:58.000Z",
       "tier": 1,
-      "access": "open"
+      "access": "mixed"
     },
     {
       "id": "3e58060655b3126366c9",
@@ -2350,7 +2470,7 @@
       "category": "cripto",
       "kind": "company",
       "title": "Western Europe’s $2 Trillion Crypto Economy Holds Firm",
-      "excerpt": "Summary Western Europe’s $2.08 trillion crypto economy held firm despite a global downturn. The region grew 1.2% between July 2025…",
+      "excerpt": "This post is an excerpt from our 2026 Geography of Cryptocurrency Report. Download now. Summary Western Europe’s $2.08 trillion crypto economy…",
       "url": "https://www.chainalysis.com/blog/western-europe-crypto-adoption-2026/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -2389,22 +2509,6 @@
       "via": "",
       "language": "es",
       "publishedAt": "2026-11-09T15:21:53.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
-      "id": "1df50ef64ee1c7d8ebdb",
-      "sourceId": "eba",
-      "category": "pagos",
-      "kind": "official",
-      "title": "The EBA streamlines the 2027 EU-wide stress test with more than 55% reduction in requested data",
-      "excerpt": "The European Banking Authority (EBA) today released the final methodology, draft templates, and template guidance for its 2027 EU-wide stress test, together with the key milestones for the exercise. Following extensive engagement with industry participants, the EBA has…",
-      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-streamlines-2027-eu-wide-stress-test-more-55-reduction-requested-data",
-      "source": "Autoridad Bancaria Europea",
-      "sourceUrl": "https://www.eba.europa.eu/news-press/news/rss.xml",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-09T15:08:44.000Z",
       "tier": 1,
       "access": "open"
     },
@@ -2489,6 +2593,22 @@
       "access": "mixed"
     },
     {
+      "id": "dcbd3208cc27d2323c22",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Empresas cripto disuelven alianza contra el crimen mientras aumentan los robos de criptomonedas",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOdTE5UVU0UXVNcWlIVlo2cE1kQTNoMmFzTFZWdWZmREhYaTljSjBuS3lBNlR3cklubWtBTjRVLTRLX1hMZC1nT01lUlI1UzVDbW1BU3ZmelZ0SlREdndvZnQzZ0lKSFpva3RnbXZYTFRvY2JHRnl5WExEREVPS0NTdU1oVzRjWGN2Y1p5MXlBQ1ZoaVhXb3h6dl9qdFhjd2lGU3d6RThBbzlxR2t1eEdfSkRsV1E4dFZpd3BXMjlLcDd6OGFJVXBNdW1aYjhTUHPSAeMBQVVfeXFMTzBpeFM1bkpwZ1E2eVFEdllRT3lTMDV5SkV6NllXUTVpWF92THNtbEhkbTlycUljNzBBU3k0TzVjRE5ad0ZUckZZWkJUeUxQQzgxMzNwdWJTVmlMZ01YbXJZTkxMZk9KMkNqTkJXbXU1X1dkdzNSZEhmek5pZkRLVjU4LVhwbE82NUUtd2lfSFJOdjFKWVIwTVB2Wm5QUzVJQlB1a2NFTEtKM1RVZ2hMY0ExcDQ4R1BaTGppS2tyanNDSWE4azRZXy03WHEwWmNFdVRhbkFLMklaa1hpUmNCOGQ4WkU?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
       "id": "1b633d4568b9f416a866",
       "sourceId": "forbes-ec",
       "category": "ecuador",
@@ -2521,6 +2641,28 @@
       "access": "open"
     },
     {
+      "id": "9b9062091b409ca1eb20",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "¿Quieres un auto nuevo? BBVA Spark inyecta más de 1,000 mdp a la fintech mexicana Nexu para sacudir el crédito automotriz con IA",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQZXZSRlF5Ml9mQW84enpFNXl3d3NLcWxac3pGdXZFa3lGN21xT3hmRnJoa2RwT1hVVmtfZVVqdUhZTklfVUM2eW1lUFhacEk5N29iNmVTRERWMnlBYk02b0RSckhpQm9HbGo5Y19oUnpxUzNmZWoyLVl6d0ppbW9HR191OG1SRXpWcXZYSUdJcGVOdHU5ZEtBQWlWQnhxZzFFaXIzT3BNc2xkV0JFOFVvMEtyM0UwRGVwRG1wN19QdU9WTjNPUTF6M3B5ZkpndF9hUGpSaUtqSHpqZ0hHYS1SYlp0OFJnVlpaUmRZUlhiOTjSAfYBQVVfeXFMTTMyLWZZdGNKY3ZWZENSR3hPWG9HWlJZSE94Sk10ZW1YbVJ6QkxmSlZfUC1YUC1ETDNVUGY2M1NqYWU5WUxPMWxqZW9KWmdoajQtTGkzcVo1YzBxWFpDWU9VZTk4cGRGbTRpUG85UllDMUtqOEFaamxyOFhrc2RycFhvTnlkekxOYUlhMWpiVzlLV3J1WmoxbUdjdlhSb2NEcUpZc3RJLVBaVHE5RkQtSXUyZm5FMWRCSEhmQk1jd1NSQlhkeE5CdzBBeTZ4ZWN5X0g2MmE5a25RZEtIVUVDMmhvdmNCNG5uNGd4d2hwN0YwaDE3VUZn?oc=5",
+      "source": "Ambito",
+      "sourceUrl": "https://www.ambito.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T08:00:00.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Nexu",
+        "country": "México",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=nexu#nexu"
+      }
+    },
+    {
       "id": "edd62eea6e0bcf216ab4",
       "sourceId": "reguladores-prensa",
       "category": "regulacion",
@@ -2537,13 +2679,35 @@
       "access": "mixed"
     },
     {
-      "id": "1fd33ec8a230ad06857a",
+      "id": "0d6c070c1e5854c7efdd",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Kueski insta a revisar compras ante aumento de ciberfraudes",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNc0c0a1BwUVhReGprWmlnVzl6ZVhaa2x4aXlGQWRxTmVTbGNQcmF4eVdFREVabURqdVdHQVpzZ1Y4SkdJWnNOYzdvcF9lU1QtSEtQVWI0UXltcVg4bVlETFExZUFUbUx5alRteGNWeV9KZUtUVTRFb2NQUXNibERQZk9jV2U4aDZmTUc1TE5GQUhDVW5mTW94OU9Ed2VhLVhjeUpZdnBNSGPSAcMBQVVfeXFMUExLdmtyRC1xVDRVdC10WVkxNmQ0NmwwMWFtSFNnbzcwSXZxazdfNTVFSzZRRW5zaE9LUklhSW5PR3NmWWVUakZyQ0RTdDFidkRJVmp2V0JLQXBISWZzVlY1NG9WWFJWV0tWNUM2S0g4a1dydGpqWWlKZ2lrMHVEaFJJMjFNbVZHUUR4VXVybEVFeUtiNTNEdWZDZkFBaWh2YmxZMmd2X1dDcUFQVFVKb21qTVNHRmdsYzhWX1JzN0VBWnlj?oc=5",
+      "source": "La Razón de México",
+      "sourceUrl": "https://www.razon.com.mx/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-09T05:00:00.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Kueski",
+        "country": "México",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=kueski#kueski"
+      }
+    },
+    {
+      "id": "81a3c635be9680a82972",
       "sourceId": "bis-discursos",
       "category": "pagos",
       "kind": "official",
-      "title": "Sergio Nicoletti Altimari: Making AI-driven finance work for consumers",
-      "excerpt": "Welcome address by Mr Sergio Nicoletti Altimari, Deputy Governor of the Bank of Italy, at the 13th Joint ESA’s Consumer Protection Day, Rome, 4 November 2026.",
-      "url": "https://www.bis.org/speeches/20261109-making-ai-driven-finance-work-consumers",
+      "title": "Denis Beau: Safeguarding trust and monetary sovereignty in a digital payments era",
+      "excerpt": "Speech by Mr Denis Beau, First Deputy Governor of the Bank of France, at the Hong Kong FinTech Week 2026, Hong Kong, 3 November 2026.",
+      "url": "https://www.bis.org/speeches/20261109-safeguarding-trust-and-monetary-sovereignty-digital-payments-era",
       "source": "BIS · Discursos de banqueros centrales",
       "sourceUrl": "https://www.bis.org/doclist/cbspeeches.rss",
       "via": "",
@@ -2767,6 +2931,22 @@
       "access": "mixed"
     },
     {
+      "id": "c147b5db4ddab2127d18",
+      "sourceId": "ecb",
+      "category": "pagos",
+      "kind": "official",
+      "title": "ECB publishes consolidated banking data for end-June 2026",
+      "excerpt": "",
+      "url": "https://www.ecb.europa.eu//press/pr/date/2026/html/ecb.pr261106~356f2fc73a.en.html",
+      "source": "Banco Central Europeo",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-06T09:00:00.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
       "id": "ab7af24ef4c0515fff70",
       "sourceId": "reuters-cripto",
       "category": "cripto",
@@ -2781,6 +2961,28 @@
       "publishedAt": "2026-11-06T08:00:00.000Z",
       "tier": 1,
       "access": "mixed"
+    },
+    {
+      "id": "77a27c679d1979592e29",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Littio, la fintech que movilizó más de US$1.300 millones en su plataforma",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOaFJVX1lxYWQ2YktCWUlTNHRHMHVWN1hqc044M2Z0TlZMRzBENUV1VlN4Zi1uWW1JNy16MUlSemozUjQ1R2dxYzdrU2MxN20yU2kzSzZnekhoOXlydHRBckdpbjNmcDFlRk5fTXRZVlAzc3Rlai1hRktGZW5RMlpsbGhPOHhKSktIeWkwTHhjWVpINGpseDc1RUwzQ2NWbHRYbWZXb0FxZUhpQlctS2M2NnBrZE9icS1HSHBaanFTZVpjNy1icVFWZ1FUZ3F1T09LU2xRNngzZkNfZjMzeW40NnZNdks?oc=5",
+      "source": "El Colombiano",
+      "sourceUrl": "https://www.elcolombiano.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-06T08:00:00.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Littio",
+        "country": "Colombia",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=littio#littio"
+      }
     },
     {
       "id": "384d83a7740ecda9a96c",
@@ -2845,22 +3047,6 @@
       "publishedAt": "2026-11-06T08:00:00.000Z",
       "tier": 1,
       "access": "mixed"
-    },
-    {
-      "id": "96ba10964b18c3398aae",
-      "sourceId": "ft-fintech",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Monzo explores fundraising at £7.5bn valuation as private equity talks stall",
-      "excerpt": "Lender had shifted focus to talks with buyout groups after failing to clinch a £10bn takeover by Brazilian fintech Nubank",
-      "url": "https://www.ft.com/content/6553ec40-00a8-4832-8ca5-c528b9da224a?syn-25a6b1a6=1",
-      "source": "Financial Times · Fintech",
-      "sourceUrl": "https://www.ft.com/fintech?format=rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-11-06T07:44:30.000Z",
-      "tier": 1,
-      "access": "paywall"
     },
     {
       "id": "ed901be01c27dd1220b3",
@@ -2943,34 +3129,18 @@
       "access": "open"
     },
     {
-      "id": "ed708a60bacca8f9a2d9",
-      "sourceId": "expansion-banca",
+      "id": "cc81376ab4e91c69fcb3",
+      "sourceId": "eba",
       "category": "pagos",
-      "kind": "news",
-      "title": "El Banco de Inglaterra sube los tipos por primera vez en tres años, hasta el 4%",
-      "excerpt": "La institución eleva el precio del dinero para luchar contra la inflación, ayudada por un comportamiento económico mejor del esperado. Los expertos creen que habrá más subidas en las próximas reuniones en las condiciones actuales. Leer",
-      "url": "https://www.expansion.com/empresas/banca/2026/11/05/banco-inglaterra-sube-tipos-primera-vez-tres-anos-4.html",
-      "source": "Expansión · Banca",
-      "sourceUrl": "https://e00-expansion.uecdn.es/rss/empresas/banca.xml",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-05T12:23:37.000Z",
-      "tier": 1,
-      "access": "mixed"
-    },
-    {
-      "id": "9ec27a31004065c8d080",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
       "kind": "official",
-      "title": "Boletín Monetario Semanal. 30 de Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_952_30102026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
+      "title": "The EBA publishes revised Guidelines on internal governance, delivering greater proportionality and simplification for banks",
+      "excerpt": "The European Banking Authority (EBA) today published its revised Guidelines on internal governance under the Capital Requirements Directive (CRD). The revised Guidelines reflect the changes introduced by CRD VI and form part of the EBA’s broader commitment to simplify the…",
+      "url": "https://www.eba.europa.eu/publications-and-media/press-releases/eba-publishes-revised-guidelines-internal-governance-delivering-greater-proportionality-and",
+      "source": "Autoridad Bancaria Europea",
+      "sourceUrl": "https://www.eba.europa.eu/news-press/news/rss.xml",
       "via": "",
-      "language": "es",
-      "publishedAt": "2026-11-05T12:00:00.000Z",
+      "language": "en",
+      "publishedAt": "2026-11-05T12:22:03.000Z",
       "tier": 1,
       "access": "open"
     },
@@ -2989,22 +3159,6 @@
       "publishedAt": "2026-11-05T08:25:00.000Z",
       "tier": 1,
       "access": "open"
-    },
-    {
-      "id": "bd4b7d408d61ff6180ee",
-      "sourceId": "thebanker",
-      "category": "pagos",
-      "kind": "news",
-      "title": "Reg Wrap: OCC creates ‘Super Intelligence’ risk manual",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9PajlMbXU0OW8zZGl6cklqSEg5T2wzS1lGakJxSWU0M19PUEV6dE1PdTJvcTdBal9TMWswVC1tX09kSXNXTE51cV9zUmQtRl9CMG8ySkJXS0lIUDNmUndyalRhXzlsM3RmbmgwaEZwNjJrMTBfN3pXT3N3?oc=5",
-      "source": "TheBanker.com",
-      "sourceUrl": "https://www.thebanker.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-05T08:00:00.000Z",
-      "tier": 2,
-      "access": "paywall"
     },
     {
       "id": "d4440e8068a4d75d2187",
@@ -3053,6 +3207,22 @@
       "publishedAt": "2026-11-05T08:00:00.000Z",
       "tier": 1,
       "access": "paywall"
+    },
+    {
+      "id": "500a43bdd16eb872400c",
+      "sourceId": "ecb",
+      "category": "pagos",
+      "kind": "official",
+      "title": "Piero Cipollone: Shaping the future of money",
+      "excerpt": "",
+      "url": "https://www.ecb.europa.eu//press/key/date/2026/html/ecb.sp261105~6495a0df6f.en.html",
+      "source": "Banco Central Europeo",
+      "sourceUrl": "https://www.ecb.europa.eu/rss/press.html",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-05T07:30:00.000Z",
+      "tier": 1,
+      "access": "open"
     },
     {
       "id": "5a877c8b4ef46891a09f",
@@ -3135,20 +3305,20 @@
       "access": "open"
     },
     {
-      "id": "97aa68c8e8e4023be7b2",
-      "sourceId": "finextra",
+      "id": "241ef65eb2e5a5eed1d9",
+      "sourceId": "thebanker",
       "category": "pagos",
       "kind": "news",
-      "title": "Iceland prepares for domestic account-to-account payments infrastructure",
+      "title": "Reg Wrap: UK targets £840mn bank tax windfall",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPYmc4QTFtN2Q3UDZsNXkyWWdKeEkzNGZxc1BwQXg3djRaNVNPZkNfVzkydFRJSldaT1NpVGhzbGtkZVo2QmdvM0plcnJYNjhfLWl4MjJ3N1Q4OWtXcHdTRlpPZF92WWs5MG1VMG5IMVlUaGV0ZzFZZ3REUU0zb2pUek94YVlYUGFwQjdOR1FkbXFfMHVTSEs2WVFiZ004T21kQm1WcW5rS1ZBS05Kb0tvbkp5ak41Zw?oc=5",
-      "source": "Finextra Research",
-      "sourceUrl": "https://www.finextra.com/",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFA0N1l2RmtpQTJpSTRGVlpBVXdUOERjOVRscWExNlAxWDA2NWtERnFQdTBndnNPelFfTkhLeHZWWWhLMDV5Z3JqWFQtYWMtTU14UWtzZHkzbE5Ga2ZVWjlEZk1WcGdyV1FkalZwbDlPR1lqUTdhRmQ2b2h3?oc=5",
+      "source": "TheBanker.com",
+      "sourceUrl": "https://www.thebanker.com/",
       "via": "Vía Google News",
       "language": "en",
       "publishedAt": "2026-11-04T08:00:00.000Z",
       "tier": 2,
-      "access": "open"
+      "access": "paywall"
     },
     {
       "id": "193a79e3f640903e61b9",
@@ -3165,6 +3335,22 @@
       "publishedAt": "2026-11-04T08:00:00.000Z",
       "tier": 1,
       "access": "mixed"
+    },
+    {
+      "id": "f400b80f746408bec754",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "¿Ley de rescate fiscal en Colombia le pondría impuesto al bitcoin, ether y otras cripto? así lo plantea el Gobierno",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxQR0VhTkZhaW1mUjAwUjNzam1TNlZEVkc3OFJsRlg2V0tOR3pTYW82R2dTdjZrR2puWWIwWWxaN0w2cHcwMWJhTnhxd1hQbC1KOGtzWHNHS3hEVl9ZbXQzaHZFa3ZNaTdXN1VpNjJFR0hnUmM3a2RJYUFfS2Ftbmh5UlJiZ2Job2ptSHd5MVY1NUtleURLLTcxLXdBV0V0cXlOOEtwTGd2dm1xQUtOSVVoZWtBaE40Q0dfRGJNWkZhbnJ4b2JxNVhBTlZuc3NwYnFzODFFYm1xZ09VaUlQdDFZRnMwQ3NwTHRTa2wyZlJxemdnbUFDVlNnNzgzY9IBjwJBVV95cUxNVjRwVmx1cnRkRUVpQkFONnNkR0ZaMDdJM21rU0xSLXgtSFkwaVVvNnlMVUlORGlwRTVwUGJSZlpuSlBfOThBbmtqMm81UzBRMkNtbmRRTGtHRnRnZkR1Ykg3X3RRZW80UjBmWmR1dnNkV2NJZHB6YVB1QURlME9qQ2czM1hRRWNoRDBYZVlDVDhIYzdGelhRVXI4aFRNdUZCbElMUEVMbndsM3hHQWl1ZGc5dzR6a21nSURfOUJ4TUxuUG8yRkF6QmFscnVTSTZSaWdBZEZ1WnlGZUZVT0lzWGZHSi0xTXNrV2JmVnNtOUVsTFRReXlrdVBzNWdJNnA3VHktNlhJTnY1WWJ3WnRj?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-04T08:00:00.000Z",
+      "tier": 1,
+      "access": "open"
     },
     {
       "id": "5d212cacda33afb79b66",
@@ -3435,6 +3621,22 @@
       "access": "mixed"
     },
     {
+      "id": "389743c7b72c987dbc8f",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "El mercado cripto colombiano crece más que la región, pero sigue sin regulación",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPeXdkbk90UFVnZERtYVhOSml5eW1EaTItRWEwU1FTbldMek5ldzBzbl9jU0Y2cFVRdkpRSmZCbFFMWWhrSUdlWVFOWmp0R3VLU1phSFNvTXNNMUw3NGFYU2lJMzlCQzhWekJfWkY3NDBvNXNlcUVueEhvOUVMN0ZndVBlOVFEcHF4YTlRNDlXS3hwVEdQdFZrYWJYa092OWtSVzBBanlYNjluQXR4aHJ6ZXBZQjZjaUNwUHczcXplb3dOWXJHRHF3aXJqSkFUd9IB4gFBVV95cUxPeE9PWUF3Zktjb2k2YTFUTUtDbDRPMzcyUlJncVhUMUszNjNaWnB6YUNPQzN4ZjhJR3VfNXRpdENiNnptLWE1Tm9mYTBqNmFPT1R0ZklHaFBNc1hJeGt6cE1vMGJjQ3FpakNYei14R3RHUzFXb3kzLTJtbGJoaUFBTGwxTDU5enQ4SEc4c0h3TmQ3R21uNTlkdUt0ZzF6WlZXU3ZsRldRVlpEN1hWcTY3Q0tJYy0yQnBQRUxVUFlPV01fVTFsckhyaVVzUEhRWEg1c18zV2lqcm0tOTIya1VKQ0h3?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-03T08:00:00.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
       "id": "695687dfffc3d24cb8fc",
       "sourceId": "bloomberg-ecuador",
       "category": "ecuador",
@@ -3697,22 +3899,6 @@
       "access": "open"
     },
     {
-      "id": "a21592d62679a1086f3b",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Tasas de Interés Efectivas. Noviembre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-30T12:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
       "id": "678a3792afd270aaac1a",
       "sourceId": "ft-cripto",
       "category": "cripto",
@@ -3791,6 +3977,38 @@
       "publishedAt": "2026-10-30T07:00:00.000Z",
       "tier": 1,
       "access": "mixed"
+    },
+    {
+      "id": "3ae648193f57bf90c864",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Nasdaq 100 roza la corrección tras desplome de Intel, hackeo a Binance golpea al bitcoin y el oro se hunde",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPbTRlTG1qdENFU0NqNkY5enFwVzVsaFd0bXBtRGVPYlcxcXVNVE9LWXgyOUxzbUZtb2RGbGg0RlVNOHpCZTBCbXV3WVJRanZReS1nbnZfV05TaEdKWWZEWm1WN0phQUFVTXR0bTJlU2dPVHVCb1VWZzJyZW9FMTFJUURnbFdtTHBXZ05NWi1sQTZBeXVlaVlETVFBUUJKOTZRRHVQXzFMOTJNR2hwSU9sNGo2RGxNVXI4TDFEelNIX1EwVkZ2RXVPWGtTYjNxUdIB4gFBVV95cUxOcGxUWmZkRDM1ell3amVicmhXNU8tZUFWaEx4UVN2VjRCanktVmtBdlJ3TDNFVElYd3BVb2s3NXhuTTJHdkxIVHpzTXNlTTVaTWFocXdaTjg4c29mRHpZeXlYdW5HNTJnUlB6TzJjcFBxaFFGWW05SlhmUXMwMTl5T3NhR0ZLVUZ0MzQyT1dYNHRGNnZwU3N1TmlzRi1iR2J2RXowSE5NQ1BydmJJSDJZNE4wRzBFa2c4eVZpYUxEWVhJNEFybjBZVnpRYlZNXzd0RmNWUDVBaFRXX1NaMVNLcFhB?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-30T07:00:00.000Z",
+      "tier": 1,
+      "access": "open"
+    },
+    {
+      "id": "ec1bec8879e6e2e9656e",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Binance reanudará los retiros el domingo y apartó US$6.340 millones para cubrir el mayor hackeo cripto",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPcHh6X0Mwamh3amxXS2VvZ25LdUJLR08teDMwMjA5aHFtbURVNThmd2VxM29sRkZHWXJ2Z2l2TkVHVFd2U2dVbnFVd1Z0NWNtM0VQTjBjSWJQUy1iaHVseGVNNEZfY0pEQ2J1NDVXbWFXSXIyNDZYM1MxYWNYZjZ5YUJUTWJINzFPc2s3cVN5T1duaWM0LW1yUEIyZEdzRzExYlI1bk9qaldPNTdXdWZFSGtCaTZCdnQ2SDdCRVVvQTVVOWVtVFdhaVhFbzZCQWJVRDhyMjRn0gHqAUFVX3lxTFBNR3lkY3ZobGVqV0ZLOEQ2RVlMeGVfNjlKM0RiZFNRTG9saHJIXzdocFA1cW94OFF3YjFrMFpCNVB6NHZxRTlVUEhYQXJZWmJHei0tNFRkOXdaWXdjYUNZVEkxV2hVT2FDRVdGREh1NGpRU0RkOEJ2ZXBkYzJpSnJZUnYwZnoxWlBYZ2hMV0JRZlVxcVlxRWVZemtqMXhpUE1xTU44ZnlmVEp0UXJtWmZLYW9lNWY0M05LREpFZHRWZHBsQ3RzZGhSb2hLN2ZYWWJvMmFXV3Z6SW5MNUZxMGJTbUNVSVc0LXotdw?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-30T07:00:00.000Z",
+      "tier": 1,
+      "access": "open"
     },
     {
       "id": "d6a70924a67cdab2261f",
@@ -3948,7 +4166,7 @@
       "category": "cripto",
       "kind": "company",
       "title": "South Africa Leads Sub-Saharan Africa’s 13.4% Crypto Growth",
-      "excerpt": "Summary Everyday financial needs are driving Sub-Saharan Africa’s crypto growth. The region’s crypto economy grew 13.4% to $101 billion, making…",
+      "excerpt": "This post is an excerpt from our 2026 Geography of Cryptocurrency Report. Download now. Summary Everyday financial needs are driving…",
       "url": "https://www.chainalysis.com/blog/sub-saharan-africa-crypto-adoption-2026/",
       "source": "Chainalysis",
       "sourceUrl": "https://www.chainalysis.com/blog/feed/",
@@ -4005,6 +4223,28 @@
       "publishedAt": "2026-10-28T07:00:00.000Z",
       "tier": 1,
       "access": "open"
+    },
+    {
+      "id": "96eb6f5b9f50b5eb5469",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Mexico clears Gema's takeover of digital lender Kubo Financiero",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOTmxObTRlbGlLWlpWRTlWSmlLRFk5VGxfcXRHTl9jNkUweVQzSVQtajVQSU0wa2xiUHV1VEJuZ0htRWF2VWJLcDFjZXY5Mksxc1dwYzl3TnR2QkVjZTRUM2pta0RMZGp5YXNLS1VGb3J1YUdTRzROX01qcVh1S0tsTzlIU0k1ZXZwU211blFMd0V4eGdQMTdIeXFrMkRIdw?oc=5",
+      "source": "Dealroom",
+      "sourceUrl": "https://app.dealroom.co/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-10-27T18:23:36.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "endeavor": {
+        "company": "Kubo Financiero",
+        "country": "México",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=kubo-financiero#kubo-financiero"
+      }
     },
     {
       "id": "09903a74f0eb24a5b859",
@@ -4069,22 +4309,6 @@
       "publishedAt": "2026-10-27T05:00:28.000Z",
       "tier": 1,
       "access": "paywall"
-    },
-    {
-      "id": "c9ce116fa8e0572349bc",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Monitoreo de los Principales Indicadores Monetarios y Financieros de la Economía Ecuatoriana. Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/PublicacionesNotas/Presentacion_Oct26.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-26T12:00:00.000Z",
-      "tier": 1,
-      "access": "open"
     },
     {
       "id": "c3a552f991261a573588",
@@ -4155,6 +4379,22 @@
       "publishedAt": "2026-10-25T07:00:00.000Z",
       "tier": 1,
       "access": "mixed"
+    },
+    {
+      "id": "8e0110de30814b351fe0",
+      "sourceId": "bloomberg-cripto",
+      "category": "cripto",
+      "kind": "news",
+      "title": "Netanyahu afirma que Israel evalúa usar criptomonedas ante la posibilidad de sanciones",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNNjVEYzFaSTdUQlpQVDBCRHZOalNxVmpMRUx5MGVCZFVpSjNoZ3g1V1FreVpkRkt1ZS13Z0VzVkk5WkVYYVNJbGQwYm5NeVJVcjN3WjhuODl3ajlYNjNJNDVZQ0Z2eUZ6OXZHTURFRThTc3MtN0JHUE8wVGhMWDZVcElpUXRRenhqaHp0aEYyMnpSdk5LRGZhbTlMUmtYUVJwZHBlWWx4N2pwS1lTSU9fWHJ2a0lxQ29lM0dxbnB3RmtZZ9IB1gFBVV95cUxPZERtdHdvTmZlT1NUeTlSRXJBbHNiaVB0MGpIUDFNYmN5LTBnamhocC1kREpKSmNpWG1RRjBBS1BzdTR6UklCbXR6YTZXTUt2R0tQMFFCM0J1aTJJQ1B2RkphRXhack1hdEFxbFQ2Y2dURnZ2M0pXS202enZFdFlVZjFyWWNJMV9DZXhTbmxvU3VQQkVGRWNXa3VxdTlqLW1tMS1aUWJ0VXp4TVdNSE5jZXc1aEF4V3lFTlg0TnBGSDZpZU1wQUU3N0duSlFHbGVxSWVNYy1B?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-10-24T07:00:00.000Z",
+      "tier": 1,
+      "access": "open"
     },
     {
       "id": "7a3e40ab21c5c8adc97d",
@@ -4511,22 +4751,6 @@
       "access": "open"
     },
     {
-      "id": "d138356cf27287a16330",
-      "sourceId": "bce-publicaciones",
-      "category": "regulacion",
-      "kind": "official",
-      "title": "Boletín Monetario Semanal. 16 de Octubre 2026",
-      "excerpt": "",
-      "url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/IMS_950_16102026.pdf",
-      "source": "BCE · Datos financieros",
-      "sourceUrl": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
-      "via": "",
-      "language": "es",
-      "publishedAt": "2026-10-20T12:00:00.000Z",
-      "tier": 1,
-      "access": "open"
-    },
-    {
       "id": "615cad1fd2e694127a73",
       "sourceId": "expansion-cripto",
       "category": "cripto",
@@ -4669,22 +4893,6 @@
       "publishedAt": "2026-10-20T07:00:00.000Z",
       "tier": 1,
       "access": "mixed"
-    },
-    {
-      "id": "096f18c5cf822a660624",
-      "sourceId": "bis-investigacion",
-      "category": "pagos",
-      "kind": "official",
-      "title": "Bank liquidity regulation and the growth of private credit",
-      "excerpt": "We study the role of bank liquidity regulation in the growth of private credit. Following the introduction of the liquidity coverage ratio (LCR), private credit increases significantly more in U.S. counties with a larger footprint of banks subject to the LCR or of LCR banks with…",
-      "url": "https://www.bis.org/publications/bank-liquidity-regulation-and-growth-private-credit",
-      "source": "BIS · Investigación",
-      "sourceUrl": "https://www.bis.org/doclist/bis_fsi_publs.rss",
-      "via": "",
-      "language": "en",
-      "publishedAt": "2026-10-20T00:00:00.000Z",
-      "tier": 1,
-      "access": "open"
     }
   ],
   "sources": [
@@ -4698,8 +4906,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 6
     },
     {
@@ -4712,8 +4920,8 @@
       "language": "es",
       "url": "https://www.primicias.ec/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 5
     },
     {
@@ -4726,8 +4934,8 @@
       "language": "es",
       "url": "https://www.eluniverso.com/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 2
     },
     {
@@ -4740,8 +4948,8 @@
       "language": "es",
       "url": "https://www.forbes.com.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 7
     },
     {
@@ -4754,8 +4962,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 4
     },
     {
@@ -4768,9 +4976,9 @@
       "language": "es",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 1
     },
     {
       "id": "bce-junta-resoluciones",
@@ -4782,8 +4990,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 2
     },
     {
@@ -4796,8 +5004,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 1
     },
     {
@@ -4810,8 +5018,8 @@
       "language": "es",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 8
     },
     {
@@ -4824,8 +5032,8 @@
       "language": "es",
       "url": "https://www.registroficial.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 12
     },
     {
@@ -4838,8 +5046,8 @@
       "language": "es",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 2
     },
     {
@@ -4852,8 +5060,8 @@
       "language": "es",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 1
     },
     {
@@ -4866,8 +5074,8 @@
       "language": "es",
       "url": "https://www.supercias.gob.ec/portalscvs/Noticias/Noticias.php",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 1
     },
     {
@@ -4880,8 +5088,8 @@
       "language": "es",
       "url": "https://www.finanzas.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 2
     },
     {
@@ -4894,8 +5102,8 @@
       "language": "es",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 9
     },
     {
@@ -4908,8 +5116,8 @@
       "language": "es",
       "url": "https://www.eleconomista.com.mx/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 16
     },
     {
@@ -4922,9 +5130,9 @@
       "language": "es",
       "url": "https://www.larepublica.co/finanzas",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 9
     },
     {
       "id": "latamlist",
@@ -4936,8 +5144,8 @@
       "language": "en",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 8
     },
     {
@@ -4950,8 +5158,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/negocios/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 3
     },
     {
@@ -4964,8 +5172,8 @@
       "language": "es",
       "url": "https://expansion.mx/economia",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 3
     },
     {
@@ -4978,8 +5186,8 @@
       "language": "es",
       "url": "https://www.df.cl/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 10
     },
     {
@@ -4992,8 +5200,8 @@
       "language": "es",
       "url": "https://contxto.com/es/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 3
     },
     {
@@ -5006,9 +5214,9 @@
       "language": "es",
       "url": "https://endeavor.org/entrepreneur-companies/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 14
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 21
     },
     {
       "id": "endeavor-ar",
@@ -5020,8 +5228,8 @@
       "language": "es",
       "url": "https://www.endeavor.org.ar/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 3
     },
     {
@@ -5034,8 +5242,8 @@
       "language": "en",
       "url": "https://www.paymentsdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 6
     },
     {
@@ -5048,9 +5256,9 @@
       "language": "es",
       "url": "https://www.expansion.com/empresas/banca.html",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 8
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 9
     },
     {
       "id": "ft-banking",
@@ -5062,9 +5270,9 @@
       "language": "en",
       "url": "https://www.ft.com/banking",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 5
     },
     {
       "id": "finextra",
@@ -5076,9 +5284,9 @@
       "language": "en",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 17
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 11
     },
     {
       "id": "bankingdive",
@@ -5090,9 +5298,9 @@
       "language": "en",
       "url": "https://www.bankingdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 6
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 7
     },
     {
       "id": "thebanker",
@@ -5104,8 +5312,8 @@
       "language": "en",
       "url": "https://www.thebanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 10
     },
     {
@@ -5118,9 +5326,9 @@
       "language": "en",
       "url": "https://www.americanbanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 3
     },
     {
       "id": "pymnts",
@@ -5132,8 +5340,8 @@
       "language": "en",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 1
     },
     {
@@ -5146,9 +5354,9 @@
       "language": "en",
       "url": "https://www.ecb.europa.eu/press/html/index.en.html",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 3
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 5
     },
     {
       "id": "bis-discursos",
@@ -5160,9 +5368,9 @@
       "language": "en",
       "url": "https://www.bis.org/cbspeeches/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 7
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 8
     },
     {
       "id": "ft-fintech",
@@ -5174,9 +5382,9 @@
       "language": "en",
       "url": "https://www.ft.com/fintech",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 1
     },
     {
       "id": "wsj-markets",
@@ -5188,9 +5396,9 @@
       "language": "en",
       "url": "https://www.wsj.com/finance",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 3
     },
     {
       "id": "fsb",
@@ -5202,9 +5410,9 @@
       "language": "en",
       "url": "https://www.fsb.org/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 0
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 1
     },
     {
       "id": "boe",
@@ -5216,8 +5424,8 @@
       "language": "en",
       "url": "https://www.bankofengland.co.uk/news",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 4
     },
     {
@@ -5230,9 +5438,9 @@
       "language": "en",
       "url": "https://www.eba.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 2
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 3
     },
     {
       "id": "ecb-supervision",
@@ -5244,8 +5452,8 @@
       "language": "en",
       "url": "https://www.bankingsupervision.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 4
     },
     {
@@ -5258,9 +5466,9 @@
       "language": "en",
       "url": "https://www.bis.org/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 4
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 2
     },
     {
       "id": "fintech-business-weekly",
@@ -5272,7 +5480,7 @@
       "language": "en",
       "url": "https://fintechbusinessweekly.substack.com/",
       "status": "error",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
       "lastSuccessAt": null,
       "recentCount": 0
     },
@@ -5286,9 +5494,9 @@
       "language": "en",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 1
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 0
     },
     {
       "id": "cinco-dias-cripto",
@@ -5300,8 +5508,8 @@
       "language": "es",
       "url": "https://cincodias.elpais.com/criptoactivos/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 11
     },
     {
@@ -5314,8 +5522,8 @@
       "language": "en",
       "url": "https://www.reuters.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 19
     },
     {
@@ -5328,8 +5536,8 @@
       "language": "en",
       "url": "https://www.ft.com/cryptofinance",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 8
     },
     {
@@ -5342,8 +5550,8 @@
       "language": "es",
       "url": "https://www.expansion.com/mercados/criptomonedas.html",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 9
     },
     {
@@ -5355,10 +5563,10 @@
       "access": "open",
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
-      "status": "error",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": null,
-      "recentCount": 0
+      "status": "ok",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 8
     },
     {
       "id": "theblock",
@@ -5370,8 +5578,8 @@
       "language": "en",
       "url": "https://www.theblock.co/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 4
     },
     {
@@ -5384,8 +5592,8 @@
       "language": "en",
       "url": "https://www.coindesk.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 6
     },
     {
@@ -5398,9 +5606,9 @@
       "language": "es",
       "url": "https://www.criptonoticias.com/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
-      "recentCount": 1
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
+      "recentCount": 2
     },
     {
       "id": "chainalysis",
@@ -5412,8 +5620,8 @@
       "language": "en",
       "url": "https://www.chainalysis.com/blog/",
       "status": "ok",
-      "checkedAt": "2026-11-18T22:45:12.800Z",
-      "lastSuccessAt": "2026-11-18T22:45:12.800Z",
+      "checkedAt": "2026-11-19T00:33:38.193Z",
+      "lastSuccessAt": "2026-11-19T00:33:38.193Z",
       "recentCount": 7
     }
   ],
@@ -5421,19 +5629,19 @@
     "bce-junta-resoluciones": {
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-051-F.pdf": "2026-11-09T13:07:57.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-048-T.pdf": "2026-11-07T16:45:32.000Z",
-      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-034-V.pdf": "2026-08-21T13:59:32.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-044-M.pdf": "2026-10-03T14:27:23.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-042-T.pdf": "2026-10-03T14:27:23.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-036-M.pdf": "2026-09-15T20:46:47.000Z",
+      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-034-V.pdf": "2026-08-21T13:59:32.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-033-F.pdf": "2026-08-21T13:59:32.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-032-S.pdf": "2026-07-29T18:41:24.000Z",
-      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-025-M.pdf": "2026-05-28T14:24:24.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-029-M.pdf": "2026-06-19T16:05:42.000Z",
+      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-025-M.pdf": "2026-05-28T14:24:24.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-023-T.pdf": "2026-05-28T14:24:24.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-021-M.pdf": "2026-05-01T02:55:39.000Z",
-      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-015-F.pdf": "2026-04-06T15:07:47.000Z",
-      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-016-SP.pdf": "2026-04-09T15:12:45.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-017-S.pdf": "2026-04-09T15:12:45.000Z",
+      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-016-SP.pdf": "2026-04-09T15:12:45.000Z",
+      "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-015-F.pdf": "2026-04-06T15:07:47.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-012-F.pdf": "2026-03-25T20:46:12.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-011-F.pdf": "2026-03-25T20:46:12.000Z",
       "https://www.bce.fin.ec/storage/JPRFM/resoluciones/JPRFM-2026-009-M.pdf": "2026-03-07T02:13:49.000Z",
@@ -5445,11 +5653,11 @@
       "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-002-2026.pdf": "2026-01-19T15:03:18.000Z",
       "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-008-2026.pdf": "2026-03-17T21:27:31.000Z",
       "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-007-2026.pdf": "2026-03-10T14:11:28.000Z",
-      "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-021-2026.pdf": "2026-10-28T20:10:51.000Z",
-      "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-013-2026.pdf": "2026-05-22T19:52:05.000Z"
+      "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-013-2026.pdf": "2026-05-22T19:52:05.000Z",
+      "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-021-2026.pdf": "2026-10-28T20:10:51.000Z"
     },
     "endeavor-prensa": {
-      "cursor": 4,
+      "cursor": 8,
       "lots": 20
     }
   }
