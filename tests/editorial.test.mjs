@@ -193,6 +193,27 @@ test('capa editorial: un titular con instrucciones se trata como dato y lo que e
   for (const bad of [{ score: 101, es: '', cluster: 'x' }, { score: 50, es: '', cluster: 'Con Espacios' }, { score: 50, es: '', cluster: 'x'.repeat(41) }, null]) assert.equal(toJudgment(bad, normal, options), null);
 });
 
+test('capa editorial: la rúbrica tiene anclas por canal y distingue el Banco Central del Ecuador del Europeo', () => {
+  // Cada canal tiene sus anclas, con el mismo nombre con el que la petición presenta el canal.
+  for (const channel of ['ecuador', 'regulacion', 'latam', 'pagos', 'cripto', 'endeavor']) {
+    const request = buildRequest({ channel, batch: [story('a', 1)], context: [], now });
+    const name = request.messages[0].content.match(/^Canal: ([^:]+):/)[1];
+    assert.match(SYSTEM_PROMPT, new RegExp(`\\n- ${name}\\. `), name);
+  }
+  // Tramos de toda la escala, ejemplos calibrados de punta a punta y los casos que el modelo puntuaba mal.
+  for (const band of ['90-100', '75-89', '55-74', '35-54', '15-34', '0-14']) assert.ok(SYSTEM_PROMPT.includes(`- ${band}:`), band);
+  assert.match(SYSTEM_PROMPT, /Ejemplos calibrados[\s\S]*: 92\.[\s\S]*: 5\./);
+  assert.match(SYSTEM_PROMPT, /nombramientos de directivos de primer nivel \(CEO, CFO y similares\)/);
+  assert.match(SYSTEM_PROMPT, /sin efecto fuera de su mercado vale como mucho 55/);
+  assert.match(SYSTEM_PROMPT, /no te refugies en el centro/);
+  // «BCE»: Banco Central del Ecuador en medios ecuatorianos; Banco Central Europeo en europeos o en inglés.
+  assert.match(SYSTEM_PROMPT, /ecuatoriano[^.]*\.ec[^.]*«BCE» es el Banco Central del Ecuador/);
+  assert.match(SYSTEM_PROMPT, /En medios europeos[^.]*\.es\)[^.]*«BCE» o «ECB» es el Banco Central Europeo/);
+  // La petición dice de qué sitio es cada nota, para que el modelo sepa de qué BCE se habla.
+  const request = buildRequest({ channel: 'pagos', batch: [story('a', 1, { source: 'Expansión', sourceUrl: 'https://www.expansion.com/' }), story('b', 1)], context: [], now });
+  assert.deepEqual(notesOf(request).map(note => note.sitio), ['expansion.com', 'primicias.ec']);
+});
+
 test('capa editorial: el mismo hecho contado por varios medios queda en una nota que nombra a los demás', () => {
   const biess = [
     story('p1', 2, { title: 'Plan Credicasa del Biess: requisitos para migrantes', excerpt: '' , editorial: judged(74, 'biess-credicasa') }),
