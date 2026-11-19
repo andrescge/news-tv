@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-11-19T20:17:22.210Z",
+  "generatedAt": "2026-11-19T21:34:20.203Z",
   "stories": [
     {
       "id": "8544cc175dd901615b6f",
@@ -76,7 +76,8 @@
       "coverage": [
         "The Paypers",
         "Decrypt",
-        "PYMNTS"
+        "PYMNTS",
+        "Finextra Research"
       ]
     },
     {
@@ -121,6 +122,28 @@
         "cluster": "genius-act-senadores-licencias-estatales",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:07:31.121Z"
+      }
+    },
+    {
+      "id": "48e2bd39c4db39f4b146",
+      "sourceId": "pymnts",
+      "category": "pagos",
+      "kind": "news",
+      "title": "MoonPay Joins Wave of Crypto Firms Seeking Banking Licenses",
+      "excerpt": "Cryptocurrency payments firm MoonPay has become the latest digital asset company aiming to become a licensed U.S. bank. The company filed for a banking charter Tuesday (Nov. 17) with the Office of the Comptroller of the Currency (OCC), saying the proposed MoonPay National Trust…",
+      "url": "https://www.pymnts.com/cryptocurrency/2026/moonpay-joins-wave-of-crypto-firms-seeking-banking-licenses/",
+      "source": "PYMNTS",
+      "sourceUrl": "https://www.pymnts.com/feed/",
+      "via": "",
+      "language": "en",
+      "publishedAt": "2026-11-19T21:03:23.000Z",
+      "tier": 2,
+      "access": "open",
+      "editorial": {
+        "score": 68,
+        "cluster": "moonpay-licencia-bancaria-occ",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T21:34:20.203Z"
       }
     },
     {
@@ -211,15 +234,15 @@
       "publishedAt": "2026-11-19T13:11:00.000Z",
       "tier": 2,
       "access": "open",
-      "coverage": [
-        "The Paypers"
-      ],
       "editorial": {
         "score": 66,
         "cluster": "visa-gestion-suscripciones-asia",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T20:17:22.210Z"
-      }
+      },
+      "coverage": [
+        "The Paypers"
+      ]
     },
     {
       "id": "4441343285ad459bbb9a",
@@ -395,28 +418,6 @@
         "cluster": "monei-licencia-entidad-pago",
         "model": "claude-opus-5-5",
         "at": "2026-11-19T18:07:31.121Z"
-      }
-    },
-    {
-      "id": "c4e51564ef72d78dc3cf",
-      "sourceId": "thepaypers",
-      "category": "pagos",
-      "kind": "news",
-      "title": "SWIAT and BNY complete collateral pilot with three banks",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOMFdJTnp4WHNWbzJycmdzTUxBWG1xTl9Qb3NsMHBMbVY5YVNpQ0hJQlphR0J2Z0Q0Szl5RUVWYk4yWHFCQmtlZkpGNjNpbmYxX3BzZlNHZWU0VWY1RUFJaXNBVlNvVV83VV8wcC05SUhUYTNySjNodTNQTndfS3gtZy1EbURJOFJRck9zT3lMTEtwZVk0MDJyYzNTRHh1NGtoX2FjTXRXWWM4ZTF3WkVuSg?oc=5",
-      "source": "The Paypers",
-      "sourceUrl": "https://thepaypers.com/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-19T16:07:30.000Z",
-      "tier": 2,
-      "access": "open",
-      "editorial": {
-        "score": 55,
-        "cluster": "swiat-bny-piloto-colateral",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T18:02:44.854Z"
       }
     },
     {
@@ -3719,6 +3720,28 @@
       }
     },
     {
+      "id": "10303944cc11be24db0d",
+      "sourceId": "bce-boletines",
+      "category": "ecuador",
+      "kind": "official",
+      "title": "La actividad económica creció 4,4% en septiembre de 2026, impulsada por la agricultura y los servicios",
+      "excerpt": "En septiembre de 2026, la actividad económica creció 4,4% frente al mismo mes de 2025, impulsada principalmente por el desempeño de la agricultura, los servicios y la manufactura. Cinco de las seis grandes actividades económicas analizadas registraron resultados positivos, que…",
+      "url": "https://www.bce.fin.ec/la-actividad-economica-crecio-44-en-septiembre-de-2026-impulsada-por-la-agricultura-y-los-servicios/",
+      "source": "Banco Central del Ecuador",
+      "sourceUrl": "https://www.bce.fin.ec/banco-central-del-ecuador/boletines-de-prensa/",
+      "via": "",
+      "language": "es",
+      "publishedAt": "2026-11-19T12:00:00.000Z",
+      "tier": 1,
+      "access": "open",
+      "editorial": {
+        "score": 50,
+        "cluster": "bce-actividad-economica-septiembre",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T21:34:20.203Z"
+      }
+    },
+    {
       "id": "3701d4377d168ad7650b",
       "sourceId": "eluniverso",
       "category": "ecuador",
@@ -5596,15 +5619,15 @@
       }
     },
     {
-      "id": "1be9bb2f8b36c837b158",
-      "sourceId": "el-economista",
+      "id": "18397d8a87533ff7519c",
+      "sourceId": "bloomberg-negocios",
       "category": "latam",
       "kind": "news",
-      "title": "Nubank y Mercado Pago suspenden sus transferencias de criptomonedas por inestabilidad en el sistema",
+      "title": "Nubank suspende depósitos y retiros de criptomonedas en Brasil por problema de un proveedor externo",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPVkNPT28zWFhsTGJjczJMRXFSM2N1bEdFa1hxYTRtbFh2RGJ0VDE3d0tFVWNQM0I0elNISVoyb2NhZ3l0VGo5THhrYmJ3SlFBREdmNE0waEZLSGw5ZC01dVJvcWJfSHQzSXVnaXU0UHBDUWtCSVltQ2tFRWtpRUF3elJJdmZzSnhacWR0cnRwS0c5bW9NZlE1akZTM1FkbGxJWGNjLWVMNEJ0SlVpemVYN3hHWU45UHpGZmZwdWluZjVWOWNOWjdDbER0SzRHcmVGXzBFZzVRWXBrd9IB3wFBVV95cUxPTHZNdnBlMHJzM1JqZWF6Xy1BRlNhNGd1NTRRbmtobENBTlRRNi1WcVMxVnp2T1NWanN2NlFFRTdkN1o4cS1ZckRIWWdLYUtKcUFwY0pfNk9lazhZdjNISkJ0ZXhxc2pyc3doZXFHV2RhaVJ6NFFSTjlQeDNQLVd3a2xINmh2Yzd0WGM2V00xYVNtM3dmTVJFU1Q4NHZmdF84NngwQ1VtLVRVRk9BdVhvMUgxb2hFUWxYazJvUlhyd0xJdnhoUGtKSmxaVUJhdzJPYWhrYnNaUEZ5cnpRNWdN?oc=5",
-      "source": "El Economista",
-      "sourceUrl": "https://www.eleconomista.com.mx/",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNQ3l0N3VYNzgwRDdsaEJxVF9KMVc2Y0VhVG8zYnlQNEdMSzMtMzdxNTR0NXBCeS05Qm5IaTlsUnZwRk9jSDJhOXJaajFPc3RzLV91YmtoSGE1YUd0QzZ0ZzFGdDZhM0ZhR3E0eU9OdkRXdEdiamFTV0VSRGQ1VTRGak5oRUN6dzdYaTdMQzNCd0YzZkpvUFNmNlkzRVNyeGRuei1keWMyRldIcF9oY2tjd2p0QTN1dUhIRldYd3lMYjNSbFB4bEZZLWhLNkQzLUpWb2pDSNIB6AFBVV95cUxOMHVaM3FUai0wWnpSWWtadmNHUTdQc3c3THB2LVZKZTNvdDE0cDFmdnFXR0RhejhoU1Z0LVQyMk5NSlhNZ1d3SEdqei1nYkkxcU8tUjhXZWRwLXJqMzVfUUMtNE41bmxjMkIxb1FxbURmM0ZmR2w0bGR0bGVScS1EZmgzeUZQLUJhdHBQdkhReS0wQjNqZTJmUUNjVHhQbjNWRGwwS28ySGp1ekpzdkpTTzV6eVVmaHhWc1I4eTFEZk5QZW1xdHpDa1N0RnREMHN2QktaVUpQc0xxR3hob2NLVlpiV3NSZVN6?oc=5",
+      "source": "Bloomberg Línea",
+      "sourceUrl": "https://www.bloomberglinea.com/",
       "via": "Vía Google News",
       "language": "es",
       "publishedAt": "2026-11-06T08:00:00.000Z",
@@ -5617,17 +5640,8 @@
         "at": "2026-11-19T17:20:25.076Z"
       },
       "coverage": [
-        "EL CEO",
-        "La Jornada",
-        "Bloomberg Línea",
         "iProUP"
-      ],
-      "endeavor": {
-        "company": "MercadoLibre.com",
-        "country": "Argentina",
-        "vertical": "Marketplaces",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
-      }
+      ]
     },
     {
       "id": "eb66d1da7bd38e08e323",
@@ -6441,63 +6455,31 @@
       }
     },
     {
-      "id": "b49d6b494eae005e6a83",
+      "id": "b80d17dcb31866a16387",
       "sourceId": "endeavor-prensa",
       "category": "endeavor",
       "kind": "news",
-      "title": "Creditas raises $280M in follow-on for its Auto XII receivables fund",
+      "title": "Addi anunció una millonaria inversión en Colombia durante la ‘Milagro Week’",
       "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMEdid3ZVZW84VTRDQWRmQndzRy1rWTRLLWppNnVsRmxIeDU1bWp2eWNyenduWmI1MGxUdWpkcGhPVHVMN0pEcF92UHJhTzJzdnRnaTlQUmVkM3cwM0dhakFha2NtMGhTWXlzd2FpMW50dDlUejZNTklHNm16N1oxQWVGNHZhYy15QzlUTTNMQkJpbjN4amEtUUIwNWE2emVSOWJN?oc=5",
-      "source": "Dealroom",
-      "sourceUrl": "https://app.dealroom.co/",
-      "via": "Vía Google News",
-      "language": "en",
-      "publishedAt": "2026-11-12T20:58:25.000Z",
-      "tier": 2,
-      "access": "mixed",
-      "editorial": {
-        "score": 78,
-        "cluster": "creditas-fondo-auto-xii",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T17:20:25.076Z"
-      },
-      "endeavor": {
-        "company": "Creditas",
-        "country": "Brasil",
-        "vertical": "Fintech",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=creditas#creditas"
-      }
-    },
-    {
-      "id": "21eabbb4a343f2cae5f8",
-      "sourceId": "endeavor-prensa",
-      "category": "endeavor",
-      "kind": "news",
-      "title": "Mercado Pago sale a buscar capitales para acelerar su negocio de crédito en México",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUXlqQUdZVFEzUk5wazQzSWRfQ1dFdi1IVXRsRHdMQ3NVbUJ3XzFxQ2R3QVJBZ1EwUFZRZVlDSVNxeEdQMVZhdXJ6Y2VxaXNsNTMxRDd3dV9fcmJpMV9oc3lncDMxVzAzZ1Z5aGpyeUFCOWstVkFreEFnOUlDdzhRM1BibUQ5cVFhR1haWU5R0gGOAUFVX3lxTE5zcGxFNnhMdjVJY25YY3Jfd1JPY0t2aWZXVGZNU3NPaDdtVjdDRVdUX1dXUHpqd2otNGdiNEt5VlJBZmt5aGM4S0tIYUM5a1htZ200SDdEMklOWmRGRm5Pb1pGNG1wZV96NnRKMUZjU3JhUkxUS240X2NteU9XcnVRcW50cmJKWU9UOURDZVE?oc=5",
-      "source": "MILENIO",
-      "sourceUrl": "https://www.milenio.com/",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbU03UnJ0VFJFeUNGU3NzRUdMYzV5VDlTVVQ0dldNcllCMkZnMDhpd1o5NS1RTE90REtQUzhzNkpKSUZvbjUwY05kXzRrVjJBRjdfSUFESmF4c1Jmc2liOGxwd242TXVDN2JuLWRFb19jbE9FZjVLZmhTU0N2LXVsREtNWHVVSXJCc0Y2SlQ1bktXSmMwaDBqZC02UHdxcmFNLU9oTS0tTjdfUlF2SWZfS0VveVNadnFNT0QwRXdyQVZqOGJpME5jVldtc9IB0AFBVV95cUxPUzJIY2lYTWNzcW9fa1BudVlFZTljMmo2SE9wUURRckVHMEhvOWNaZk9FVlpoTG56SDRqYWkzWHRrRVF0UFZzSDU4NkstemFMcDdjLVVjZFpac1pndmJOTURrS29SX2J6S21JcWhsM1lrcDQySGhNaGN5WjZscUhwa1RPTUFhak9Zb2dGYWxmcjk1YXBJeUpQcVpnTmRXNlZlVGZnNThCanJBeFd6S28xcWpKc0NIaGotSFhIUkNUb09TNmptT0VvazF2SzcxcXJ4?oc=5",
+      "source": "Revista Semana",
+      "sourceUrl": "https://www.semana.com/",
       "via": "Vía Google News",
       "language": "es",
-      "publishedAt": "2026-11-12T21:34:00.000Z",
+      "publishedAt": "2026-11-18T01:06:15.000Z",
       "tier": 2,
       "access": "mixed",
       "editorial": {
-        "score": 76,
-        "cluster": "mercado-pago-deuda-biva-mexico",
+        "score": 72,
+        "cluster": "addi-inversion-colombia-toq68x",
         "model": "claude-opus-5-5",
-        "at": "2026-11-19T18:11:54.710Z"
+        "at": "2026-11-19T01:17:21.156Z"
       },
-      "coverage": [
-        "FintechExpert",
-        "El Cronista"
-      ],
       "endeavor": {
-        "company": "MercadoLibre.com",
-        "country": "Argentina",
-        "vertical": "Marketplaces",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
+        "company": "ADDI",
+        "country": "Colombia",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=addi#addi"
       }
     },
     {
@@ -6905,6 +6887,34 @@
       }
     },
     {
+      "id": "b49d6b494eae005e6a83",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Creditas raises $280M in follow-on for its Auto XII receivables fund",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQMEdid3ZVZW84VTRDQWRmQndzRy1rWTRLLWppNnVsRmxIeDU1bWp2eWNyenduWmI1MGxUdWpkcGhPVHVMN0pEcF92UHJhTzJzdnRnaTlQUmVkM3cwM0dhakFha2NtMGhTWXlzd2FpMW50dDlUejZNTklHNm16N1oxQWVGNHZhYy15QzlUTTNMQkJpbjN4amEtUUIwNWE2emVSOWJN?oc=5",
+      "source": "Dealroom",
+      "sourceUrl": "https://app.dealroom.co/",
+      "via": "Vía Google News",
+      "language": "en",
+      "publishedAt": "2026-11-12T20:58:25.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "editorial": {
+        "score": 78,
+        "cluster": "creditas-fondo-auto-xii",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T17:20:25.076Z"
+      },
+      "endeavor": {
+        "company": "Creditas",
+        "country": "Brasil",
+        "vertical": "Fintech",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=creditas#creditas"
+      }
+    },
+    {
       "id": "2f1fc4b1bb23e3108f88",
       "sourceId": "endeavor-prensa",
       "category": "endeavor",
@@ -6963,6 +6973,38 @@
         "country": "Brasil",
         "vertical": "Fintech",
         "url": "https://endeavor.org/entrepreneur-companies/?_search=mercado-bitcoin#mercado-bitcoin"
+      }
+    },
+    {
+      "id": "21eabbb4a343f2cae5f8",
+      "sourceId": "endeavor-prensa",
+      "category": "endeavor",
+      "kind": "news",
+      "title": "Mercado Pago sale a buscar capitales para acelerar su negocio de crédito en México",
+      "excerpt": "",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNUXlqQUdZVFEzUk5wazQzSWRfQ1dFdi1IVXRsRHdMQ3NVbUJ3XzFxQ2R3QVJBZ1EwUFZRZVlDSVNxeEdQMVZhdXJ6Y2VxaXNsNTMxRDd3dV9fcmJpMV9oc3lncDMxVzAzZ1Z5aGpyeUFCOWstVkFreEFnOUlDdzhRM1BibUQ5cVFhR1haWU5R0gGOAUFVX3lxTE5zcGxFNnhMdjVJY25YY3Jfd1JPY0t2aWZXVGZNU3NPaDdtVjdDRVdUX1dXUHpqd2otNGdiNEt5VlJBZmt5aGM4S0tIYUM5a1htZ200SDdEMklOWmRGRm5Pb1pGNG1wZV96NnRKMUZjU3JhUkxUS240X2NteU9XcnVRcW50cmJKWU9UOURDZVE?oc=5",
+      "source": "MILENIO",
+      "sourceUrl": "https://www.milenio.com/",
+      "via": "Vía Google News",
+      "language": "es",
+      "publishedAt": "2026-11-12T21:34:00.000Z",
+      "tier": 2,
+      "access": "mixed",
+      "editorial": {
+        "score": 76,
+        "cluster": "mercado-pago-deuda-biva-mexico",
+        "model": "claude-opus-5-5",
+        "at": "2026-11-19T18:11:54.710Z"
+      },
+      "coverage": [
+        "FintechExpert",
+        "El Cronista"
+      ],
+      "endeavor": {
+        "company": "MercadoLibre.com",
+        "country": "Argentina",
+        "vertical": "Marketplaces",
+        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
       }
     },
     {
@@ -7045,37 +7087,6 @@
       "coverage": [
         "El Economista",
         "Bloomberg"
-      ],
-      "endeavor": {
-        "company": "MercadoLibre.com",
-        "country": "Argentina",
-        "vertical": "Marketplaces",
-        "url": "https://endeavor.org/entrepreneur-companies/?_search=mercadolibre-com#mercadolibre-com"
-      }
-    },
-    {
-      "id": "af083e6638dd98ad97e5",
-      "sourceId": "endeavor-prensa",
-      "category": "endeavor",
-      "kind": "news",
-      "title": "Nu y Mercado Pago suspenden operaciones con criptomonedas en Brasil por fallas de proveedores externos",
-      "excerpt": "",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNS084MTZ4bDhjSEpabXB2RzVBWG5udUpMNkdOTjd3TmZSYjVKcXR2MmRpQlhTSHNPQWs3cEg2RGd6d1ZwOVlCZ2ptWC0xMkVkWVRNZ0ZXTm90SVdfdDh3c1lGMjcyWUI3Z0JFclVxLVNzcVlkb1pxYmFqODdnWE16Znp2UWt1Ukhvd0VQcldUVU9icnc0b3hqTHotUzdiTVJTOThvSlRUUDlramlpRlpVZEpvU1JMbWRtV2ZlSTRSczJOVWVwUDgxVng3cnh2NUt0WVJKS3NxQXpSNzTSAeABQVVfeXFMTlBsd2JuUF83TEphOVNzekZHV2FVNjZJSkhuajNSeUpTTE5PTjlNWEhSeFJHMDRZbzRnY1BiMkVkV0toUGRaRF94eTJlVmRqMDJfUU9NNVN0VlFURm1oTmVzcFdsZW1sa2txNXdvNUhHTUFSR0VWRkh5aFk4cE9ma29qZ042dE1jQ09DWHVDU2RXQnJyb3ZfS3FRa0szSEI1Skw1QTNnblRVZDh2LThsUUNCdEZxdlBVYnFhT0dMcjhORGM2X3hhQUdlMUVOQ3BBekxVUzliZTRkU0dzLWNkeDE?oc=5",
-      "source": "Portafolio.co",
-      "sourceUrl": "https://www.portafolio.co/",
-      "via": "Vía Google News",
-      "language": "es",
-      "publishedAt": "2026-11-07T08:00:00.000Z",
-      "tier": 2,
-      "access": "mixed",
-      "editorial": {
-        "score": 66,
-        "cluster": "nu-mercado-pago-cripto-suspension",
-        "model": "claude-opus-5-5",
-        "at": "2026-11-19T17:20:25.076Z"
-      },
-      "coverage": [
-        "CriptoNoticias"
       ],
       "endeavor": {
         "company": "MercadoLibre.com",
@@ -8811,9 +8822,9 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
-      "recentCount": 2,
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
+      "recentCount": 3,
       "funnel": {
         "read": 6,
         "foreign": 0,
@@ -8834,8 +8845,8 @@
       "language": "es",
       "url": "https://www.primicias.ec/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 49,
@@ -8857,16 +8868,16 @@
       "language": "es",
       "url": "https://www.eluniverso.com/economia/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
-        "read": 15,
+        "read": 14,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 11,
+        "topic": 10,
         "accepted": 4
       }
     },
@@ -8880,16 +8891,16 @@
       "language": "es",
       "url": "https://www.forbes.com.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
-        "read": 37,
+        "read": 36,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 30,
+        "topic": 29,
         "accepted": 7
       }
     },
@@ -8903,8 +8914,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 4,
       "funnel": {
         "read": 14,
@@ -8926,8 +8937,8 @@
       "language": "es",
       "url": "https://www.elcomercio.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
         "read": 67,
@@ -8949,8 +8960,8 @@
       "language": "es",
       "url": "https://www.teleamazonas.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 5,
       "funnel": {
         "read": 40,
@@ -8972,18 +8983,17 @@
       "language": "es",
       "url": "https://www.lahora.com.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 11,
       "funnel": {
-        "read": 100,
+        "read": 64,
         "foreign": 0,
         "undated": 0,
         "host": 0,
-        "normalize": 87,
+        "normalize": 53,
         "topic": 1,
-        "accepted": 12,
-        "saturated": true
+        "accepted": 10
       }
     },
     {
@@ -8996,8 +9006,8 @@
       "language": "es",
       "url": "https://www.cfn.fin.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
@@ -9019,8 +9029,8 @@
       "language": "es",
       "url": "https://contenido.bce.fin.ec/ultimas-publicaciones/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 9,
       "funnel": {
         "read": 33,
@@ -9042,8 +9052,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/junta-de-politica-y-regulacion-financiera-y-monetaria/resoluciones/resoluciones-emitidas/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 162,
@@ -9065,8 +9075,8 @@
       "language": "es",
       "url": "https://www.bce.fin.ec/banco-central-del-ecuador/resoluciones-administrativas/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
         "read": 148,
@@ -9088,16 +9098,16 @@
       "language": "es",
       "url": "https://news.google.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 4,
       "funnel": {
-        "read": 77,
+        "read": 73,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 9,
-        "topic": 62,
+        "topic": 58,
         "accepted": 6
       }
     },
@@ -9111,8 +9121,8 @@
       "language": "es",
       "url": "https://www.registroficial.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 9,
       "funnel": {
         "read": 0,
@@ -9134,8 +9144,8 @@
       "language": "es",
       "url": "https://www.seps.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9157,8 +9167,8 @@
       "language": "es",
       "url": "https://www.superbancos.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
@@ -9180,16 +9190,16 @@
       "language": "es",
       "url": "https://www.supercias.gob.ec/portalscvs/Noticias/Noticias.php",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
-        "read": 109,
+        "read": 110,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 96,
-        "topic": 12,
+        "topic": 13,
         "accepted": 1
       }
     },
@@ -9203,8 +9213,8 @@
       "language": "es",
       "url": "https://www.finanzas.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9226,16 +9236,16 @@
       "language": "es",
       "url": "https://www.uafe.gob.ec/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 1,
       "funnel": {
         "read": 10,
         "foreign": 0,
         "undated": 0,
         "host": 0,
-        "normalize": 5,
-        "topic": 4,
+        "normalize": 6,
+        "topic": 3,
         "accepted": 1
       }
     },
@@ -9249,8 +9259,8 @@
       "language": "es",
       "url": "https://iupana.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 6,
       "funnel": {
         "read": 10,
@@ -9272,16 +9282,16 @@
       "language": "es",
       "url": "https://www.eleconomista.com.mx/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
-      "recentCount": 12,
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
+      "recentCount": 11,
       "funnel": {
-        "read": 56,
+        "read": 57,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 38,
+        "topic": 39,
         "accepted": 18
       }
     },
@@ -9295,8 +9305,8 @@
       "language": "es",
       "url": "https://www.larepublica.co/finanzas",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 10,
       "funnel": {
         "read": 60,
@@ -9304,8 +9314,8 @@
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 37,
-        "accepted": 23
+        "topic": 38,
+        "accepted": 22
       }
     },
     {
@@ -9318,8 +9328,8 @@
       "language": "en",
       "url": "https://latamlist.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 8,
       "funnel": {
         "read": 10,
@@ -9341,9 +9351,9 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
-      "recentCount": 8,
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
+      "recentCount": 9,
       "funnel": {
         "read": 50,
         "foreign": 0,
@@ -9364,8 +9374,8 @@
       "language": "es",
       "url": "https://expansion.mx/economia",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 5,
       "funnel": {
         "read": 50,
@@ -9387,8 +9397,8 @@
       "language": "es",
       "url": "https://www.df.cl/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 10,
       "funnel": {
         "read": 43,
@@ -9410,16 +9420,16 @@
       "language": "es",
       "url": "https://www.iproup.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 13,
       "funnel": {
-        "read": 62,
+        "read": 61,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 10,
+        "topic": 9,
         "accepted": 52
       }
     },
@@ -9433,16 +9443,16 @@
       "language": "es",
       "url": "https://www.latamfintech.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 8,
       "funnel": {
-        "read": 50,
+        "read": 51,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 5,
-        "topic": 20,
+        "topic": 21,
         "accepted": 25
       }
     },
@@ -9456,18 +9466,17 @@
       "language": "es",
       "url": "https://endeavor.org/entrepreneur-companies/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 58,
       "funnel": {
-        "read": 296,
+        "read": 441,
         "foreign": 0,
         "undated": 0,
-        "host": 203,
-        "normalize": 2,
-        "topic": 19,
-        "accepted": 72,
-        "saturated": true
+        "host": 308,
+        "normalize": 74,
+        "topic": 5,
+        "accepted": 54
       }
     },
     {
@@ -9480,8 +9489,8 @@
       "language": "es",
       "url": "https://www.endeavor.org.ar/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9503,8 +9512,8 @@
       "language": "en",
       "url": "https://www.paymentsdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9526,8 +9535,8 @@
       "language": "es",
       "url": "https://www.expansion.com/empresas/banca.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 4,
       "funnel": {
         "read": 50,
@@ -9549,8 +9558,8 @@
       "language": "en",
       "url": "https://www.ft.com/banking",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 25,
@@ -9572,8 +9581,8 @@
       "language": "en",
       "url": "https://www.finextra.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 5,
       "funnel": {
         "read": 100,
@@ -9596,17 +9605,17 @@
       "language": "en",
       "url": "https://thepaypers.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
-      "recentCount": 5,
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
+      "recentCount": 4,
       "funnel": {
-        "read": 83,
+        "read": 82,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 1,
         "topic": 5,
-        "accepted": 77
+        "accepted": 76
       }
     },
     {
@@ -9619,8 +9628,8 @@
       "language": "en",
       "url": "https://www.fintechfutures.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 8,
       "funnel": {
         "read": 84,
@@ -9628,8 +9637,8 @@
         "undated": 0,
         "host": 0,
         "normalize": 12,
-        "topic": 12,
-        "accepted": 60
+        "topic": 11,
+        "accepted": 61
       }
     },
     {
@@ -9642,8 +9651,8 @@
       "language": "en",
       "url": "https://www.bankingdive.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9665,8 +9674,8 @@
       "language": "en",
       "url": "https://www.thebanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 9,
       "funnel": {
         "read": 67,
@@ -9688,8 +9697,8 @@
       "language": "en",
       "url": "https://www.americanbanker.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -9711,17 +9720,17 @@
       "language": "en",
       "url": "https://www.pymnts.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
-      "recentCount": 2,
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
+      "recentCount": 3,
       "funnel": {
         "read": 10,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 4,
-        "accepted": 6
+        "topic": 5,
+        "accepted": 5
       }
     },
     {
@@ -9734,8 +9743,8 @@
       "language": "en",
       "url": "https://www.ecb.europa.eu/press/html/index.en.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 15,
@@ -9757,8 +9766,8 @@
       "language": "en",
       "url": "https://www.bis.org/cbspeeches/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 7,
       "funnel": {
         "read": 50,
@@ -9780,8 +9789,8 @@
       "language": "en",
       "url": "https://www.ft.com/fintech",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 25,
@@ -9803,8 +9812,8 @@
       "language": "en",
       "url": "https://www.wsj.com/finance",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 61,
@@ -9826,8 +9835,8 @@
       "language": "en",
       "url": "https://www.fsb.org/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9849,8 +9858,8 @@
       "language": "en",
       "url": "https://www.bankofengland.co.uk/news",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 4,
       "funnel": {
         "read": 50,
@@ -9872,8 +9881,8 @@
       "language": "en",
       "url": "https://www.eba.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -9895,8 +9904,8 @@
       "language": "en",
       "url": "https://www.bankingsupervision.europa.eu/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 5,
       "funnel": {
         "read": 15,
@@ -9918,8 +9927,8 @@
       "language": "en",
       "url": "https://www.bis.org/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 20,
@@ -9941,8 +9950,8 @@
       "language": "en",
       "url": "https://fintechbusinessweekly.substack.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 20,
@@ -9964,8 +9973,8 @@
       "language": "en",
       "url": "https://www.federalreserve.gov/newsevents/pressreleases.htm",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 0,
       "funnel": {
         "read": 20,
@@ -9987,8 +9996,8 @@
       "language": "en",
       "url": "https://www.occ.gov/news-issuances/news-releases/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 3,
       "funnel": {
         "read": 10,
@@ -10010,8 +10019,8 @@
       "language": "es",
       "url": "https://cincodias.elpais.com/criptoactivos/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 12,
       "funnel": {
         "read": 25,
@@ -10033,17 +10042,17 @@
       "language": "en",
       "url": "https://www.reuters.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 18,
       "funnel": {
-        "read": 60,
+        "read": 59,
         "foreign": 0,
         "undated": 0,
         "host": 0,
         "normalize": 0,
         "topic": 11,
-        "accepted": 49
+        "accepted": 48
       }
     },
     {
@@ -10056,8 +10065,8 @@
       "language": "en",
       "url": "https://www.ft.com/cryptofinance",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 8,
       "funnel": {
         "read": 25,
@@ -10079,8 +10088,8 @@
       "language": "es",
       "url": "https://www.expansion.com/mercados/criptomonedas.html",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 9,
       "funnel": {
         "read": 50,
@@ -10102,8 +10111,8 @@
       "language": "es",
       "url": "https://www.bloomberglinea.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 6,
       "funnel": {
         "read": 38,
@@ -10125,8 +10134,8 @@
       "language": "en",
       "url": "https://www.theblock.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 8,
       "funnel": {
         "read": 20,
@@ -10134,8 +10143,8 @@
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 11,
-        "accepted": 9
+        "topic": 12,
+        "accepted": 8
       }
     },
     {
@@ -10148,8 +10157,8 @@
       "language": "en",
       "url": "https://decrypt.co/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 5,
       "funnel": {
         "read": 37,
@@ -10157,8 +10166,8 @@
         "undated": 0,
         "host": 0,
         "normalize": 0,
-        "topic": 30,
-        "accepted": 7
+        "topic": 31,
+        "accepted": 6
       }
     },
     {
@@ -10171,8 +10180,8 @@
       "language": "en",
       "url": "https://www.coindesk.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 7,
       "funnel": {
         "read": 25,
@@ -10194,8 +10203,8 @@
       "language": "es",
       "url": "https://www.criptonoticias.com/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 4,
       "funnel": {
         "read": 10,
@@ -10217,8 +10226,8 @@
       "language": "en",
       "url": "https://www.chainalysis.com/blog/",
       "status": "ok",
-      "checkedAt": "2026-11-19T20:17:22.210Z",
-      "lastSuccessAt": "2026-11-19T20:17:22.210Z",
+      "checkedAt": "2026-11-19T21:34:20.203Z",
+      "lastSuccessAt": "2026-11-19T21:34:20.203Z",
       "recentCount": 2,
       "funnel": {
         "read": 10,
@@ -10263,12 +10272,33 @@
       "https://www.bce.fin.ec/storage/BCE/resoluciones/BCE-GG-021-2026.pdf": "2026-10-28T20:10:51.000Z"
     },
     "endeavor-prensa": {
-      "cursor": 0,
+      "cursor": 10,
       "lots": 30
     },
     "editorial": {
       "version": 1,
       "notes": {
+        "d236d12f3910b495608d": {
+          "s": 40,
+          "c": "fed-barr-recorte-personal",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T21:34:20.203Z",
+          "p": "2026-11-19T21:20:22.000Z"
+        },
+        "ecbe311a7b46969d43ac": {
+          "s": 40,
+          "c": "sec-cargos-estafa-cripto-colorado",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T21:34:20.203Z",
+          "p": "2026-11-19T20:40:13.000Z"
+        },
+        "09cdcc1b78fa74eeb949": {
+          "s": 45,
+          "c": "bancos-agentes-ia-seguridad",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T21:34:20.203Z",
+          "p": "2026-11-19T20:33:45.000Z"
+        },
         "d990c080bb014851888f": {
           "s": 50,
           "c": "occ-reformas-capital-bancos-comunitarios",
@@ -10297,12 +10327,26 @@
           "at": "2026-11-19T20:17:22.210Z",
           "p": "2026-11-19T18:30:01.000Z"
         },
+        "23af1c550ae3587511af": {
+          "s": 15,
+          "c": "otoma-alison-rose-consejo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T21:34:20.203Z",
+          "p": "2026-11-19T18:20:00.000Z"
+        },
         "38cdde62d810ee001fac": {
           "s": 35,
           "c": "bigcommerce-firmly-agente-ia",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:07:31.121Z",
           "p": "2026-11-19T18:02:52.000Z"
+        },
+        "a7bfabcf51166332cadb": {
+          "s": 22,
+          "c": "lending-platform-guia-eleccion",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T21:34:20.203Z",
+          "p": "2026-11-19T18:01:32.000Z"
         },
         "6fe94d83c7169ba8f0b9": {
           "s": 40,
@@ -10367,6 +10411,13 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-11-19T16:09:22.000Z"
         },
+        "c4e51564ef72d78dc3cf": {
+          "s": 55,
+          "c": "swiat-bny-piloto-colateral",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:02:44.854Z",
+          "p": "2026-11-19T16:07:30.000Z"
+        },
         "6166e25773936189142a": {
           "s": 45,
           "c": "pine-labs-staq-stablecoins",
@@ -10402,6 +10453,13 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-11-19T15:51:24.000Z"
         },
+        "c567cb8bdc263ef45b76": {
+          "s": 12,
+          "c": "morgan-stanley-etf-europa",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:02:44.854Z",
+          "p": "2026-11-19T15:51:24.000Z"
+        },
         "1c420721f77a98414c4a": {
           "s": 45,
           "c": "lightspark-agent-accounts",
@@ -10415,13 +10473,6 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-11-19T15:32:00.000Z"
-        },
-        "c567cb8bdc263ef45b76": {
-          "s": 12,
-          "c": "morgan-stanley-etf-europa",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:02:44.854Z",
-          "p": "2026-11-19T15:29:54.000Z"
         },
         "8ca40e53f0ea70b1eb8d": {
           "s": 30,
@@ -11466,13 +11517,6 @@
           "at": "2026-11-19T13:06:26.728Z",
           "p": "2026-11-18T01:16:06.000Z"
         },
-        "b80d17dcb31866a16387": {
-          "s": 72,
-          "c": "addi-inversion-colombia-toq68x",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T01:17:21.156Z",
-          "p": "2026-11-18T01:06:15.000Z"
-        },
         "11509c577d55aa971d86": {
           "s": 52,
           "c": "afico-fiscal-crowdfunding-tor32q",
@@ -11984,13 +12028,6 @@
           "at": "2026-11-19T03:27:43.580Z",
           "p": "2026-11-17T05:53:06.000Z"
         },
-        "a429332d4ab8ac270e8c": {
-          "s": 50,
-          "c": "optimizely-ciberataque-cripto-iphone-toqca7",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:21:41.826Z",
-          "p": "2026-11-17T05:02:17.000Z"
-        },
         "9f5f45095b8ec758535f": {
           "s": 48,
           "c": "billeteras-dolar-digital-colombia-tor32q",
@@ -12011,6 +12048,13 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:21:41.826Z",
           "p": "2026-11-17T05:00:06.000Z"
+        },
+        "a429332d4ab8ac270e8c": {
+          "s": 50,
+          "c": "optimizely-ciberataque-cripto-iphone-toqca7",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:21:41.826Z",
+          "p": "2026-11-17T04:53:00.000Z"
         },
         "4054966a05a1382656b4": {
           "s": 78,
@@ -12922,11 +12966,11 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-09T08:00:00.000Z"
         },
-        "7ce4789a2d20dd868d9c": {
-          "s": 40,
-          "c": "galperin-perfil-mercado-libre",
+        "9aa7000553d0a9ab3138": {
+          "s": 30,
+          "c": "kalepa-ronda-serie-b",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
+          "at": "2026-11-19T21:34:20.203Z",
           "p": "2026-11-09T08:00:00.000Z"
         },
         "c43e6c33b29c4fef8b07": {
@@ -12934,6 +12978,13 @@
           "c": "binance-hackeo-blanqueo-memecoins",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-11-09T08:00:00.000Z"
+        },
+        "7ce4789a2d20dd868d9c": {
+          "s": 40,
+          "c": "galperin-perfil-mercado-libre",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-09T08:00:00.000Z"
         },
         "233d516b9c25c75a50cd": {
@@ -12967,6 +13018,13 @@
         "86cc6d178b621b523ea4": {
           "s": 68,
           "c": "banco-valores-compra-ppi",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-07T08:00:00.000Z"
+        },
+        "af083e6638dd98ad97e5": {
+          "s": 66,
+          "c": "nu-mercado-pago-cripto-suspension",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-07T08:00:00.000Z"
@@ -13005,13 +13063,6 @@
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-11-06T09:00:00.000Z"
-        },
-        "18397d8a87533ff7519c": {
-          "s": 65,
-          "c": "nubank-mercado-pago-suspension-cripto",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-06T08:00:00.000Z"
         },
         "d19aa3ce17347ae003a0": {
           "s": 55,
@@ -13076,6 +13127,13 @@
           "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-11-06T08:00:00.000Z"
         },
+        "1be9bb2f8b36c837b158": {
+          "s": 65,
+          "c": "nubank-mercado-pago-suspension-cripto",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-06T08:00:00.000Z"
+        },
         "ed901be01c27dd1220b3": {
           "s": 40,
           "c": "ecb-donnery-modernizacion-regulatoria",
@@ -13104,6 +13162,13 @@
           "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
+        "4c580d6a6711d74265a6": {
+          "s": 91,
+          "c": "noboa-diferimiento-creditos-nino",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-05T08:00:00.000Z"
+        },
         "e30bdce4fd6d25c99b7a": {
           "s": 62,
           "c": "bancos-facilidades-pago-lluvias",
@@ -13111,11 +13176,11 @@
           "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
-        "218d2bc09c79cd3c8ebe": {
-          "s": 25,
-          "c": "quito-robo-banco-alertas-bomba",
+        "edf8461578d6e928a94a": {
+          "s": 90,
+          "c": "noboa-decreto-diferimiento-nino",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T20:17:22.210Z",
+          "at": "2026-11-19T17:03:39.594Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
         "0c52f8a08baa74e3b661": {
@@ -13153,18 +13218,11 @@
           "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
-        "4c580d6a6711d74265a6": {
-          "s": 91,
-          "c": "noboa-diferimiento-creditos-nino",
+        "218d2bc09c79cd3c8ebe": {
+          "s": 25,
+          "c": "quito-robo-banco-alertas-bomba",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-05T08:00:00.000Z"
-        },
-        "edf8461578d6e928a94a": {
-          "s": 90,
-          "c": "noboa-decreto-diferimiento-nino",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:03:39.594Z",
+          "at": "2026-11-19T20:17:22.210Z",
           "p": "2026-11-05T08:00:00.000Z"
         },
         "7d04b5cdfc1cf336a5a4": {
@@ -13237,23 +13295,16 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-04T08:00:00.000Z"
         },
-        "e5853d237eb70862ad36": {
-          "s": 70,
-          "c": "mercado-libre-resultados-trimestre",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-04T08:00:00.000Z"
-        },
-        "b6ec5d3e5c87f2754eef": {
-          "s": 70,
-          "c": "mercado-libre-resultados-trimestre",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-04T08:00:00.000Z"
-        },
-        "9b453d4a58a9463e4f55": {
+        "6c3522e09160f54b3e47": {
           "s": 62,
-          "c": "mercado-pago-mexico-usuarios",
+          "c": "bitso-stablecoins-remesas-mexico-toq68x",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
+        "d33dfd10a6bde288b930": {
+          "s": 40,
+          "c": "cashea-venezuela-credito-analisis",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-04T08:00:00.000Z"
@@ -13279,6 +13330,27 @@
           "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-11-04T08:00:00.000Z"
         },
+        "e5853d237eb70862ad36": {
+          "s": 70,
+          "c": "mercado-libre-resultados-trimestre",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
+        "b6ec5d3e5c87f2754eef": {
+          "s": 70,
+          "c": "mercado-libre-resultados-trimestre",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
+        "9b453d4a58a9463e4f55": {
+          "s": 62,
+          "c": "mercado-pago-mexico-usuarios",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-11-04T08:00:00.000Z"
+        },
         "1ef8d05ae0d2e637b3b9": {
           "s": 65,
           "c": "mercado-bitcoin-hacker-venta-cripto",
@@ -13291,20 +13363,6 @@
           "c": "repartidores-apps-salario-minimo",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:07:31.121Z",
-          "p": "2026-11-04T08:00:00.000Z"
-        },
-        "6c3522e09160f54b3e47": {
-          "s": 62,
-          "c": "bitso-stablecoins-remesas-mexico-toq68x",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-04T08:00:00.000Z"
-        },
-        "d33dfd10a6bde288b930": {
-          "s": 40,
-          "c": "cashea-venezuela-credito-analisis",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-04T08:00:00.000Z"
         },
         "29af585d4140464bf8ad": {
@@ -13363,13 +13421,6 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-03T08:00:00.000Z"
         },
-        "dd1792e2d3f0dcd89dba": {
-          "s": 50,
-          "c": "mercado-libre-centro-robotizado-hidalgo",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-03T08:00:00.000Z"
-        },
         "5b89bb51e6e6e03d834b": {
           "s": 30,
           "c": "corea-bancos-talento-ciberseguridad",
@@ -13389,6 +13440,13 @@
           "c": "binance-hackeo-falsa-entrevista",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-03T08:00:00.000Z"
+        },
+        "dd1792e2d3f0dcd89dba": {
+          "s": 50,
+          "c": "mercado-libre-centro-robotizado-hidalgo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-03T08:00:00.000Z"
         },
         "5c514d9d4c705c42a044": {
@@ -13545,13 +13603,6 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-01T07:00:00.000Z"
         },
-        "72fb96db733e4c5a3904": {
-          "s": 50,
-          "c": "gobierno-mercado-libre-contrabando",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-11-01T07:00:00.000Z"
-        },
         "91f913b6e9639a01e792": {
           "s": 70,
           "c": "binance-recupera-fondos-retiros",
@@ -13564,6 +13615,13 @@
           "c": "binance-retiros-tras-robo",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-11-01T07:00:00.000Z"
+        },
+        "72fb96db733e4c5a3904": {
+          "s": 50,
+          "c": "gobierno-mercado-libre-contrabando",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-11-01T07:00:00.000Z"
         },
         "966db51369049aca0017": {
@@ -13643,13 +13701,6 @@
           "at": "2026-11-19T17:20:25.076Z",
           "p": "2026-10-30T07:00:00.000Z"
         },
-        "e7a111afe7cb18d7ee46": {
-          "s": 30,
-          "c": "mercado-pago-rendimientos-usuarios-2025",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T17:20:25.076Z",
-          "p": "2026-10-30T07:00:00.000Z"
-        },
         "84541c37a7735cca9235": {
           "s": 35,
           "c": "ltvco-compra-kipp",
@@ -13665,13 +13716,6 @@
           "p": "2026-10-30T07:00:00.000Z"
         },
         "0858ad388276ff497dbd": {
-          "s": 78,
-          "c": "binance-hackeo-robo",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:16:26.696Z",
-          "p": "2026-10-30T07:00:00.000Z"
-        },
-        "0f71245e38461baf2dd2": {
           "s": 78,
           "c": "binance-hackeo-robo",
           "m": "claude-opus-5-5",
@@ -13728,6 +13772,20 @@
           "p": "2026-10-30T07:00:00.000Z"
         },
         "b10f3de23e356505a2a7": {
+          "s": 78,
+          "c": "binance-hackeo-robo",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "e7a111afe7cb18d7ee46": {
+          "s": 30,
+          "c": "mercado-pago-rendimientos-usuarios-2025",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T17:20:25.076Z",
+          "p": "2026-10-30T07:00:00.000Z"
+        },
+        "0f71245e38461baf2dd2": {
           "s": 78,
           "c": "binance-hackeo-robo",
           "m": "claude-opus-5-5",
@@ -13811,41 +13869,6 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-29T07:00:00.000Z"
         },
-        "dfb9f2075c62de8ec75a": {
-          "s": 15,
-          "c": "mercado-libre-busquedas-halloween",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-29T07:00:00.000Z"
-        },
-        "83ba13dc5453910f0b6d": {
-          "s": 50,
-          "c": "mercado-pago-argentina-banco",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:02:44.854Z",
-          "p": "2026-10-29T07:00:00.000Z"
-        },
-        "2c47ab24b41dddbe71da": {
-          "s": 50,
-          "c": "mercado-pago-argentina-banco",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:02:44.854Z",
-          "p": "2026-10-29T07:00:00.000Z"
-        },
-        "07ce6b969255aa5665a1": {
-          "s": 30,
-          "c": "mercado-pago-invertir-guia",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-29T07:00:00.000Z"
-        },
-        "61e996411618b971a2e2": {
-          "s": 60,
-          "c": "fintech-argentina-negocio-bancario",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-29T07:00:00.000Z"
-        },
         "68375a024914df08ccb2": {
           "s": 15,
           "c": "metro-bank-presidente-salida",
@@ -13879,6 +13902,41 @@
           "c": "binance-venezuela-bolivares-fiscal",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "dfb9f2075c62de8ec75a": {
+          "s": 15,
+          "c": "mercado-libre-busquedas-halloween",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "83ba13dc5453910f0b6d": {
+          "s": 50,
+          "c": "mercado-pago-argentina-banco",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:02:44.854Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "2c47ab24b41dddbe71da": {
+          "s": 50,
+          "c": "mercado-pago-argentina-banco",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:02:44.854Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "07ce6b969255aa5665a1": {
+          "s": 30,
+          "c": "mercado-pago-invertir-guia",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-10-29T07:00:00.000Z"
+        },
+        "61e996411618b971a2e2": {
+          "s": 60,
+          "c": "fintech-argentina-negocio-bancario",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-10-29T07:00:00.000Z"
         },
         "11a0ddcbf44c77ff445d": {
@@ -13944,23 +14002,16 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-27T07:00:00.000Z"
         },
-        "f8e52387ee438718f013": {
-          "s": 62,
-          "c": "mercado-libre-centro-logistico-argentina",
+        "5060f05f20797c2facaa": {
+          "s": 22,
+          "c": "euroclear-eliet-nombramiento",
           "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
+          "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-10-27T07:00:00.000Z"
         },
         "dbb8d274193000444b55": {
           "s": 45,
           "c": "paytabs-compra-seapay",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:16:26.696Z",
-          "p": "2026-10-27T07:00:00.000Z"
-        },
-        "5060f05f20797c2facaa": {
-          "s": 22,
-          "c": "euroclear-eliet-nombramiento",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
           "p": "2026-10-27T07:00:00.000Z"
@@ -13991,6 +14042,13 @@
           "c": "cripto-elecciones-medio-mandato",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-27T07:00:00.000Z"
+        },
+        "f8e52387ee438718f013": {
+          "s": 62,
+          "c": "mercado-libre-centro-logistico-argentina",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-10-27T07:00:00.000Z"
         },
         "ebc66e26f87e1f80d43f": {
@@ -14042,20 +14100,6 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-26T07:00:00.000Z"
         },
-        "efe2f708e547a6e860a9": {
-          "s": 40,
-          "c": "mercado-libre-baja-sitios-contrabando",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-26T07:00:00.000Z"
-        },
-        "0e970806b82270950235": {
-          "s": 62,
-          "c": "mercado-pago-bice-inversores-chile",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-26T07:00:00.000Z"
-        },
         "47445e5a802be777a71d": {
           "s": 25,
           "c": "quirin-tuum-core",
@@ -14075,6 +14119,20 @@
           "c": "tech-mahindra-finastra-compra",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-26T07:00:00.000Z"
+        },
+        "efe2f708e547a6e860a9": {
+          "s": 40,
+          "c": "mercado-libre-baja-sitios-contrabando",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
+          "p": "2026-10-26T07:00:00.000Z"
+        },
+        "0e970806b82270950235": {
+          "s": 62,
+          "c": "mercado-pago-bice-inversores-chile",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-10-26T07:00:00.000Z"
         },
         "19b9e851dc7275dbb2e0": {
@@ -14210,13 +14268,6 @@
           "at": "2026-11-19T18:02:44.854Z",
           "p": "2026-10-22T07:00:00.000Z"
         },
-        "1f3a25f27df8a2ef9934": {
-          "s": 75,
-          "c": "mercado-pago-acciones-argentina",
-          "m": "claude-opus-5-5",
-          "at": "2026-11-19T18:11:54.710Z",
-          "p": "2026-10-22T07:00:00.000Z"
-        },
         "8885b3af0bb79984720f": {
           "s": 50,
           "c": "lseg-compra-octus",
@@ -14236,6 +14287,13 @@
           "c": "cross-river-compra-accrue",
           "m": "claude-opus-5-5",
           "at": "2026-11-19T18:16:26.696Z",
+          "p": "2026-10-22T07:00:00.000Z"
+        },
+        "1f3a25f27df8a2ef9934": {
+          "s": 75,
+          "c": "mercado-pago-acciones-argentina",
+          "m": "claude-opus-5-5",
+          "at": "2026-11-19T18:11:54.710Z",
           "p": "2026-10-22T07:00:00.000Z"
         },
         "ba2e8927ba69d6a963df": {
