@@ -6,7 +6,7 @@ import { join } from 'node:path';
 import { EDITORIAL, EVALUATION_ORDER, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, seedMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
 import { CHANNELS, accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
 import { validateEdition } from '../scripts/validate.mjs';
-import { SOURCES } from '../scripts/collect.mjs';
+import { SOURCES, editorialPass } from '../scripts/collect.mjs';
 
 // Todas las pruebas usan un cliente simulado: ninguna llama a la API ni lee una clave real.
 const now = Date.parse('2026-11-18T15:00:00Z');
@@ -356,6 +356,27 @@ test('capa editorial: una nota juzgada que el feed vuelve a traer conserva su ju
   assert.deepEqual(Object.keys(writeMemo({ pool: second.stories, edition: [], memo: nextMemo, now }).notes).sort(), ['memo', 'mostrada', 'nueva', 'otra']);
   const ignored = seedMemo(new Map(), [{ ...story('vieja', 31 * 24), editorial: judged(70, 'a') }, { ...story('rota', 1), editorial: { score: 500 } }, null, { id: '../x', editorial: judged(70, 'a') }], now);
   assert.equal(ignored.size, 0);
+});
+
+test('recopilador: editorialPass siembra los juicios de la edición anterior y los conserva aunque la capa falle', async () => {
+  const previous = [story('mostrada', 20, { editorial: judged(74, 'biess-credicasa') })];
+  const saved = writeMemo({ pool: [story('memo', 40, { editorial: judged(15, 'ruido-x') })], edition: [], now });
+  const fresh = [story('mostrada', 20), story('memo', 40), story('nueva', 1)];
+  // Con cliente: solo la nota nueva va al modelo; las otras salen con su juicio y el memo queda sembrado.
+  const client = fakeClient(everyNote(60));
+  const { pool, memo } = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client, sdk: null, reason: '' }), log: quiet() });
+  assert.equal(client.calls.length, 1);
+  assert.deepEqual(notesOf(client.calls[0].params).map(note => note.titular), ['Titular nueva']);
+  assert.deepEqual(pool.map(item => item.editorial?.score), [74, 15, 60]);
+  assert.deepEqual([...memo.keys()].sort(), ['memo', 'mostrada']);
+  // Sin credenciales: ninguna petición y los juicios conocidos se conservan.
+  const none = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client: null, sdk: null, reason: 'sin clave' }), log: quiet() });
+  assert.deepEqual(none.pool.map(item => item.editorial?.score), [74, 15, undefined]);
+  // Un error inesperado de la capa tampoco los pierde.
+  const out = quiet();
+  const broken = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client, sdk: null, reason: '' }), apply: async () => { throw new Error('fallo'); }, log: out });
+  assert.deepEqual(broken.pool.map(item => item.editorial?.score), [74, 15, undefined]);
+  assert.match(out.lines.join('\n'), /error inesperado/);
 });
 
 test('capa editorial: lotes por canal, grupos coherentes entre lotes y tope de notas por ejecución', async () => {

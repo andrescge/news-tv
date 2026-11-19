@@ -267,19 +267,21 @@ export function loadPrevious(data) {
 
 const isPrimary = story => !!SOURCE_BY_ID.get(story?.sourceId)?.primary;
 // La capa editorial nunca hace fallar la edición: ante cualquier error inesperado, las notas siguen con el juicio que ya
-// traían (saneado) y sin juicio nuevo.
+// tenían (el suyo o el del memo, saneado) y sin juicio nuevo.
 // Los juicios de la edición anterior (`carried`) se siembran en el memo antes de juzgar: al acumular gana la copia fresca del
 // feed, que no trae juicio, y sin esto la misma nota se volvería a enviar (y a pagar) en cada ejecución.
-async function editorialPass(stories, saved, now, carried = []) {
+// `connect` y `apply` solo los cambian las pruebas (cliente simulado, sin red ni credenciales).
+export async function editorialPass(stories, saved, now, carried = [], { connect = editorialClient, apply = applyEditorial, log = console } = {}) {
   const memo = readMemo(saved, now);
   try {
     seedMemo(memo, carried, now);
-    const { client, sdk, reason } = await editorialClient();
-    const { stories: pool } = await applyEditorial(stories, { client, sdk, reason, memo, now, primary: isPrimary });
+    const { client, sdk, reason } = await connect();
+    const { stories: pool } = await apply(stories, { client, sdk, reason, memo, now, primary: isPrimary, log });
     return { pool, memo };
   } catch {
-    console.warn('Capa editorial: error inesperado; la edición se publica sin juicio editorial nuevo.');
-    return { pool: stories.map(cleanStory), memo };
+    log.warn('Capa editorial: error inesperado; la edición se publica sin juicio editorial nuevo.');
+    const known = story => story?.editorial === undefined && memo.has(story?.id) ? { ...story, editorial: memo.get(story.id).judgment } : story;
+    return { pool: stories.map(story => cleanStory(known(story))), memo };
   }
 }
 
