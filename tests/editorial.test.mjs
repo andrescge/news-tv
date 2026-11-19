@@ -3,10 +3,10 @@ import assert from 'node:assert/strict';
 import { mkdtemp, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { EDITORIAL, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
-import { accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
+import { EDITORIAL, EVALUATION_ORDER, SYSTEM_PROMPT, OUTPUT_SCHEMA, validJudgment, validCoverage, cleanStory, grounded, buildRequest, readResponse, toJudgment, describeError, editorialClient, editorialCredentials, readMemo, seedMemo, writeMemo, applyEditorial, groupClusters } from '../scripts/editorial.mjs';
+import { CHANNELS, accumulate, composeChannel, composeEdition, periodIndex } from '../scripts/content.mjs';
 import { validateEdition } from '../scripts/validate.mjs';
-import { SOURCES } from '../scripts/collect.mjs';
+import { SOURCES, editorialPass } from '../scripts/collect.mjs';
 
 // Todas las pruebas usan un cliente simulado: ninguna llama a la API ni lee una clave real.
 const now = Date.parse('2026-11-18T15:00:00Z');
@@ -14,7 +14,9 @@ const HOUR = 3600 * 1000;
 const at = new Date(now).toISOString();
 const FAKE_KEY = 'sk-ant-prueba-0000-no-es-una-clave-real';
 const story = (id, hoursAgo, extra = {}) => ({ id, sourceId: 'primicias', category: 'ecuador', kind: 'news', tier: 1, access: 'open', title: `Titular ${id}`, excerpt: '', url: `https://www.primicias.ec/economia/${id}/`, source: 'Primicias', sourceUrl: 'https://www.primicias.ec/', via: '', language: 'es', publishedAt: new Date(now - hoursAgo * HOUR).toISOString(), ...extra });
-const judged = (score, cluster, why = '') => ({ score, why, cluster, model: 'claude-opus-5-5', at });
+const judged = (score, cluster, extra = {}) => ({ score, cluster, model: 'claude-opus-5-5', at, ...extra });
+// Nota en inglés (la única que puede llevar traducción automática).
+const english = (id, hoursAgo, extra = {}) => story(id, hoursAgo, { sourceId: 'finextra', category: 'pagos', source: 'Finextra', sourceUrl: 'https://www.finextra.com/', url: `https://www.finextra.com/news/${id}`, language: 'en', tier: 2, ...extra });
 const quiet = () => { const lines = []; return { lines, log: line => lines.push(String(line)), warn: line => lines.push(String(line)) }; };
 // Notas que el recopilador mandó al modelo en una petición (el bloque <notas> es JSON con < y > escapados).
 const notesOf = params => JSON.parse(params.messages[0].content.match(/<notas>\n([\s\S]*?)\n<\/notas>/)[1]);
@@ -25,60 +27,134 @@ const fakeClient = answer => {
   const calls = [];
   return { calls, beta: { messages: { create: async (params, options) => { calls.push({ params, options }); return answer(params, calls.length); } } } };
 };
-// Respuesta determinista: puntuación fija, por qué importa vacío y un grupo por nota.
-const everyNote = (score = 60) => params => reply(notesOf(params).map(note => ({ ref: note.ref, score, why: '', cluster: `hecho-${note.ref}` })));
+/// Respuesta determinista: puntuación fija, sin traducción y un grupo por nota.
+const everyNote = (score = 60) => params => reply(notesOf(params).map(note => ({ ref: note.ref, score, es: '', cluster: `hecho-${note.ref}` })));
 
 test('capa editorial: la salida del modelo se valida antes de usarla', () => {
-  assert.deepEqual(validJudgment(judged(72, 'biess-credicasa', 'El Biess abre crédito hipotecario a migrantes.')), judged(72, 'biess-credicasa', 'El Biess abre crédito hipotecario a migrantes.'));
+  // Juicio nuevo: puntuación, grupo, modelo y fecha, con traducción opcional. Ya no lleva «por qué importa».
+  assert.deepEqual(validJudgment(judged(72, 'visa-anchorage')), judged(72, 'visa-anchorage'));
+  assert.deepEqual(validJudgment(judged(72, 'visa-anchorage', { es: 'Visa amplía sus servicios de stablecoins con Anchorage' })), judged(72, 'visa-anchorage', { es: 'Visa amplía sus servicios de stablecoins con Anchorage' }));
+  // Las ediciones anteriores traen `why`: se acepta (y se conserva, aunque la pantalla no lo muestre); una traducción vacía no se guarda.
+  assert.deepEqual(validJudgment(judged(72, 'biess-credicasa', { why: 'El Biess abre crédito hipotecario a migrantes.' })), judged(72, 'biess-credicasa', { why: 'El Biess abre crédito hipotecario a migrantes.' }));
+  assert.deepEqual(validJudgment(judged(72, 'a', { es: '' })), judged(72, 'a'));
   assert.equal(validJudgment(judged(0, 'a')).score, 0);
   assert.equal(validJudgment(judged(100, 'a')).score, 100);
   const bad = [
     judged(101, 'a'), judged(-1, 'a'), judged(55.5, 'a'), { ...judged(50, 'a'), score: '80' }, { ...judged(50, 'a'), score: NaN },
-    judged(50, 'a', 'x'.repeat(181)), judged(50, 'a', 'Lee más en https://example.com'), judged(50, 'a', 'Detalles en www.example.com'),
-    judged(50, 'a', 'Visita primicias.ec para más'), judged(50, 'a', 'Importa <b>mucho</b>'), judged(50, 'a', '**Clave** para bancos'),
-    judged(50, 'a', 'Texto con [enlace](x)'), judged(50, 'a', 'Texto\u202eoculto'), { ...judged(50, 'a'), why: 42 },
+    judged(50, 'a', { why: 'x'.repeat(181) }), judged(50, 'a', { why: 'Lee más en https://example.com' }), { ...judged(50, 'a'), why: 42 },
+    judged(50, 'a', { es: 'x'.repeat(241) }), judged(50, 'a', { es: 'Detalles en www.example.com' }), judged(50, 'a', { es: 'Visita primicias.ec para más' }),
+    judged(50, 'a', { es: 'Importa <b>mucho</b>' }), judged(50, 'a', { es: '**Clave** para bancos' }), judged(50, 'a', { es: 'Texto con [enlace](x)' }),
+    judged(50, 'a', { es: 'Texto\u202eoculto' }), judged(50, 'a', { es: 'Texto\u0007con control' }), { ...judged(50, 'a'), es: 7 },
     judged(50, 'Biess CrediCasa'), judged(50, 'con espacio'), judged(50, ''), judged(50, 'a'.repeat(49)), judged(50, '-a'),
     { ...judged(50, 'a'), model: 'modelo <x>' }, { ...judged(50, 'a'), at: 'ayer' }, null, [], 'texto',
   ];
   for (const value of bad) assert.equal(validJudgment(value), null, JSON.stringify(value));
   // Los saltos de línea se reducen a espacios: texto plano de una línea.
-  assert.equal(validJudgment(judged(50, 'a', 'Una\nlínea')).why, 'Una línea');
+  assert.equal(validJudgment(judged(50, 'a', { es: 'Una\nlínea' })).es, 'Una línea');
+  assert.equal(OUTPUT_SCHEMA.properties.notas.items.properties.why, undefined);
   // Cobertura: nombres cortos de texto plano, sin repetir.
   assert.deepEqual(validCoverage(['El Universo', 'Primicias', 'primicias']), ['El Universo', 'Primicias']);
   for (const value of [[], 'El Universo', [1], ['<script>'], ['x'.repeat(81)], Array.from({ length: 9 }, (_, i) => `Medio ${i}`)]) assert.equal(validCoverage(value), null);
-  // Una nota con juicio o cobertura alterados los pierde; el resto de la nota queda igual.
-  const cleaned = cleanStory({ ...story('a', 1), editorial: { ...judged(50, 'a'), why: 'ver https://x.example' }, coverage: ['<b>'] });
+  // Una nota con puntuación alterada pierde el juicio; con solo un texto alterado, pierde ese texto y conserva la puntuación.
+  const cleaned = cleanStory({ ...story('a', 1), editorial: { ...judged(500, 'a') }, coverage: ['<b>'] });
   assert.equal(cleaned.editorial, undefined); assert.equal(cleaned.coverage, undefined); assert.equal(cleaned.title, 'Titular a');
+  assert.deepEqual(cleanStory({ ...story('a', 1), editorial: judged(50, 'a', { why: 'ver https://x.example' }) }).editorial, judged(50, 'a'));
+  // Una traducción en una nota en español, o que ya no se sostiene con su titular, se quita al sanear.
+  assert.deepEqual(cleanStory({ ...story('a', 1), editorial: judged(50, 'a', { es: 'Titular traducido' }) }).editorial, judged(50, 'a'));
+  const visa = english('v', 1, { title: 'Visa expands stablecoin services with Anchorage partnership' });
+  assert.equal(cleanStory({ ...visa, editorial: judged(70, 'v', { es: 'Visa amplía sus servicios de stablecoins con una alianza con Anchorage' }) }).editorial.es, 'Visa amplía sus servicios de stablecoins con una alianza con Anchorage');
+  assert.equal(cleanStory({ ...visa, editorial: judged(70, 'v', { es: 'Visa amplía sus servicios con 3 socios' }) }).editorial.es, undefined);
   // Respuestas: JSON con la forma pedida; rechazos, cortes por tope y texto suelto invalidan el lote.
-  assert.equal(readResponse(reply([{ ref: 'n1', score: 50, why: '', cluster: 'a' }])).items.get('n1').score, 50);
+  assert.equal(readResponse(reply([{ ref: 'n1', score: 50, es: '', cluster: 'a' }])).items.get('n1').score, 50);
   assert.equal(readResponse({ stop_reason: 'end_turn', content: [{ type: 'text', text: 'Claro, aquí tienes:' }] }).ok, false);
   assert.equal(readResponse({ stop_reason: 'end_turn', content: [{ type: 'text', text: '{"otra":1}' }] }).ok, false);
   assert.equal(readResponse(reply([], { stop_reason: 'refusal', content: [] })).ok, false);
   assert.equal(readResponse(reply([], { stop_reason: 'max_tokens' })).ok, false);
   assert.equal(readResponse(null).ok, false);
   // El esquema pide exactamente los cuatro campos, sin otros.
-  assert.deepEqual(OUTPUT_SCHEMA.properties.notas.items.required, ['ref', 'score', 'why', 'cluster']);
+  assert.deepEqual(OUTPUT_SCHEMA.properties.notas.items.required, ['ref', 'score', 'es', 'cluster']);
   assert.equal(OUTPUT_SCHEMA.properties.notas.items.additionalProperties, false);
 });
 
-test('capa editorial: «por qué importa» no puede añadir cifras que no estén en el titular o el extracto', () => {
-  const note = story('a', 1, { title: 'Biess crea plan CrediCasa con el 7 % de interés para migrantes', excerpt: 'El crédito cubre hasta USD 3.308 millones en 20,9 meses.' });
-  assert.equal(grounded('Tasa del 7 % para migrantes que compran vivienda en Ecuador.', note), true);
-  assert.equal(grounded('Hasta 3.308 millones disponibles, a 20,9 meses.', note), true);
-  assert.equal(grounded('La tasa baja del 9 % al 7 %.', note), false);
-  assert.equal(grounded('Afecta a 2 millones de migrantes.', note), false);
+test('capa editorial: la traducción automática solo existe en notas en inglés y no puede añadir cifras, nombres ni valoraciones', () => {
   const options = { known: new Set(), runTag: 'abc123', model: 'claude-opus-5-5', at };
-  // Un dato inventado vacía la línea, pero la puntuación y el grupo se conservan.
-  const invented = toJudgment({ ref: 'n1', score: 70, why: 'La tasa baja del 9 % al 7 % y llega a 2 millones de migrantes.', cluster: 'biess-credicasa' }, note, options);
-  assert.deepEqual([invented.score, invented.why, invented.cluster], [70, '', 'biess-credicasa-abc123']);
-  const faithful = toJudgment({ ref: 'n1', score: 70, why: 'El Biess abre crédito de vivienda al 7 % para migrantes.', cluster: 'biess-credicasa' }, note, options);
-  assert.equal(faithful.why, 'El Biess abre crédito de vivienda al 7 % para migrantes.');
-  // Sin base suficiente, el modelo devuelve "": la nota queda juzgada y sin línea.
-  assert.equal(toJudgment({ ref: 'n1', score: 40, why: '', cluster: 'x-y' }, note, options).why, '');
-  // El prompt fija la regla: solo titular y extracto, sin hechos añadidos, y vacío si no hay base.
-  assert.match(SYSTEM_PROMPT, /Apóyate solo en el titular y el extracto/);
-  assert.match(SYSTEM_PROMPT, /No añadas hechos, cifras, nombres, fechas/);
-  assert.match(SYSTEM_PROMPT, /no dan base suficiente.*devuelve ""/s);
+  const esOf = (note, es, score = 70) => toJudgment({ ref: 'n1', score, es, cluster: 'x-y' }, note, options);
+  // Cifras: los mismos dígitos que el original; billion es mil millones (o N.000 millones) y trillion es billón.
+  const ramp = english('r', 1, { title: 'Ramp Raising Funds at $70 Billion Valuation' });
+  assert.equal(grounded('Ramp busca fondos con una valoración de US$70 mil millones', ramp), true);
+  assert.equal(grounded('Ramp busca fondos con una valoración de US$70.000 millones', ramp), true);
+  assert.equal(grounded('Ramp busca fondos con una valoración de US$75 mil millones', ramp), false);
+  // Los mismos dígitos con otra escala son otra cifra: el falso amigo «billion» → «billones», o «millones».
+  for (const text of ['Ramp busca fondos con una valoración de US$70 billones', 'Ramp busca fondos con una valoración de US$70 millones']) assert.equal(grounded(text, ramp), false, text);
+  const ecb = english('e', 1, { title: 'ECB top wants to raise small bank threshold to €10bn' });
+  assert.equal(grounded('Un alto cargo del Banco Central Europeo quiere subir a 10.000 millones de euros el umbral de banco pequeño', ecb), true);
+  const binance = english('b', 1, { title: 'Binance freezes assets after $6.3 bln heist' });
+  assert.equal(grounded('Binance congela activos tras un robo de US$6.300 millones', binance), true);
+  assert.equal(grounded('Binance congela activos tras un robo de US$6,3 mil millones', binance), true);
+  const debt = english('d', 1, { title: 'US debt tops $1.2 trillion in card balances' });
+  for (const text of ['La deuda en tarjetas de EE. UU. supera los US$1,2 billones', 'La deuda supera los US$1.200.000 millones', 'La deuda supera los US$1.200 mil millones']) assert.equal(grounded(text, debt), true, text);
+  assert.equal(grounded('La deuda supera los US$12 billones', english('d2', 1, { title: 'US debt tops $1.2 billion' })), false);
+  // Una traducción fiel se conserva; la que añade una cifra, un nombre, un país o una valoración se omite y el puntaje queda.
+  const visa = english('v', 1, { title: 'Visa expands stablecoin services with Anchorage partnership', excerpt: 'The card network will settle in USDC with Anchorage Digital.' });
+  assert.equal(esOf(visa, 'Visa amplía sus servicios de stablecoins con una alianza con Anchorage').es, 'Visa amplía sus servicios de stablecoins con una alianza con Anchorage');
+  assert.equal(esOf(visa, 'Visa amplía sus servicios de stablecoins con Anchorage. La red liquidará en USDC con Anchorage Digital.').es, 'Visa amplía sus servicios de stablecoins con Anchorage. La red liquidará en USDC con Anchorage Digital.');
+  for (const es of [
+    'Visa amplía sus servicios de stablecoins con 3 socios',                         // cifra inventada
+    'Visa amplía sus servicios de stablecoins con Anchorage y Circle',               // nombre que no está en la nota
+    'Colombia recibe los servicios de stablecoins de Visa con Anchorage',            // país que no está en la nota
+    'Visa amplía sus servicios de stablecoins con Anchorage, una señal para el sector', // valoración añadida
+    'Visa amplía sus servicios de stablecoins con Anchorage, un avance clave',
+    'El BCE aprueba los servicios de Visa',                                          // «BCE» en una nota en inglés
+  ]) {
+    const judgment = esOf(visa, es);
+    assert.deepEqual([judgment.score, judgment.es, judgment.cluster], [70, undefined, 'x-y'], es);
+  }
+  // Los nombres traducidos de instituciones y países que sí están en el original se aceptan.
+  for (const [title, es] of [
+    ['Bank of England to tighten stablecoin rules', 'El Banco de Inglaterra endurecerá las reglas de stablecoins'],
+    ['South Korea passes crypto bill', 'Corea del Sur aprueba una ley cripto'],
+    ['OCC grants charter to crypto firm', 'La Oficina del Contralor de la Moneda (OCC) otorga licencia a una empresa cripto'],
+    ['UK Financial Conduct Authority fines bank', 'La Autoridad de Conducta Financiera del Reino Unido multa a un banco'],
+    ['White House backs AI payments push', 'La Casa Blanca respalda el impulso a los pagos con IA'],
+  ]) assert.equal(esOf(english('i', 1, { title }), es).es, es, es);
+  // Las valoraciones del propio original sí se traducen.
+  assert.equal(esOf(english('k', 1, { title: 'Key ruling for stablecoin issuers' }), 'Fallo clave para los emisores de stablecoins').es, 'Fallo clave para los emisores de stablecoins');
+  assert.equal(esOf(english('g', 1, { title: 'German parliament passes bill allowing crypto seizures' }), 'El Parlamento de Alemania aprueba una ley que permite incautar cripto').es, 'El Parlamento de Alemania aprueba una ley que permite incautar cripto');
+  // Una nota en español nunca lleva traducción, aunque el modelo la devuelva; tampoco una traducción larga o con un dominio suelto.
+  const spanish = story('s', 1, { title: 'Biess crea plan CrediCasa para migrantes' });
+  assert.equal(esOf(spanish, 'Biess crea plan CrediCasa para migrantes').es, undefined);
+  assert.equal(esOf(spanish, 'Biess crea plan CrediCasa para migrantes').score, 70);
+  for (const es of ['x'.repeat(241), 'Según Finextra.com, Visa amplía sus servicios']) assert.deepEqual([esOf(visa, es).score, esOf(visa, es).es], [70, undefined], es);
+  // Sin traducción fiel posible, el modelo devuelve "": la nota queda juzgada y sin traducción.
+  assert.equal(esOf(visa, '').es, undefined);
+  // El prompt fija la regla: traducción fiel, solo en inglés, sin valorar ni añadir datos, y vacía si no se puede.
+  assert.match(SYSTEM_PROMPT, /"es": traducción automática del titular al español, solo si la nota está en inglés/);
+  assert.match(SYSTEM_PROMPT, /Si la nota está en español, devuelve siempre ""/);
+  assert.match(SYSTEM_PROMPT, /No añadas nombres, cifras, fechas, causas ni consecuencias/);
+  assert.match(SYSTEM_PROMPT, /billion es mil millones/);
+  assert.match(SYSTEM_PROMPT, /Si no puedes traducir con fidelidad, devuelve ""/);
+  assert.doesNotMatch(SYSTEM_PROMPT, /"why"|por qué la nota le importa/);
+});
+
+test('capa editorial: las notas en inglés juzgadas antes de la traducción la piden una sola vez y conservan su juicio', async () => {
+  const old = english('vieja', 5, { title: 'Visa expands stablecoin services with Anchorage', editorial: judged(64, 'visa-anchorage', { why: 'Visa amplía sus servicios con Anchorage.' }) });
+  const spanish = story('es-vieja', 5, { editorial: judged(55, 'otra', { why: 'Línea antigua.' }) });
+  const fresh = english('nueva', 1, { title: 'Fed announces pricing for payment services' });
+  const client = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: note.titular.startsWith('Visa') ? 90 : 61, es: note.titular.startsWith('Visa') ? 'Visa amplía sus servicios de stablecoins con Anchorage' : 'La Fed anuncia precios de servicios de pago', cluster: `hecho-${note.ref}` }))));
+  const result = await applyEditorial([old, spanish, fresh], { client, now, config: { ...EDITORIAL, batchSize: 1 }, log: quiet() });
+  // La nota sin juicio va primero; la juzgada sin traducción, al final de la cola; la nota en español no se vuelve a pedir.
+  assert.deepEqual(client.calls.map(call => notesOf(call.params)[0].titular), ['Fed announces pricing for payment services', 'Visa expands stablecoin services with Anchorage']);
+  const byId = new Map(result.stories.map(item => [item.id, item]));
+  assert.deepEqual([byId.get('vieja').editorial.score, byId.get('vieja').editorial.cluster, byId.get('vieja').editorial.es, byId.get('vieja').editorial.why], [64, 'visa-anchorage', 'Visa amplía sus servicios de stablecoins con Anchorage', undefined]);
+  assert.deepEqual(byId.get('es-vieja').editorial, spanish.editorial);
+  assert.equal(byId.get('nueva').editorial.es, 'La Fed anuncia precios de servicios de pago');
+  assert.deepEqual([result.pending, result.retranslate], [1, 1]);
+  // La siguiente ejecución no pide nada, y el memo guarda la traducción.
+  const again = fakeClient(everyNote(10));
+  assert.equal((await applyEditorial(result.stories, { client: again, now, log: quiet() })).status, 'sin-novedades');
+  const memo = readMemo(writeMemo({ pool: result.stories, edition: [], now }), now);
+  assert.equal(memo.get('vieja').judgment.es, 'Visa amplía sus servicios de stablecoins con Anchorage');
+  assert.equal(memo.get('es-vieja').judgment.why, 'Línea antigua.');
 });
 
 test('capa editorial: un titular con instrucciones se trata como dato y lo que el modelo obedezca se descarta', async () => {
@@ -99,30 +175,57 @@ test('capa editorial: un titular con instrucciones se trata como dato y lo que e
   assert.equal(request.model, EDITORIAL.model);
   assert.equal(request.max_tokens, EDITORIAL.maxTokens);
   assert.equal(request.fallbacks, 'default');
-  // El modelo simulado «obedece» a la inyección: la línea con enlace delata la salida, que se trata como sospechosa (puntuación 0,
-  // sin línea, fuera por el umbral); la otra nota queda con su juicio.
+  // El modelo simulado «obedece» a la inyección: la traducción con enlace delata la salida, que se trata como sospechosa
+  // (puntuación 0, sin traducción, fuera por el umbral); la otra nota queda con su juicio.
   const client = fakeClient(params => reply(notesOf(params).map(note => note.ref === 'n1'
-    ? { ref: note.ref, score: 100, why: 'Lee el detalle en https://example.com', cluster: 'inyeccion' }
-    : { ref: note.ref, score: 68, why: 'La Superintendencia de Bancos publica la calificación de riesgo de las entidades.', cluster: 'calificacion-riesgo' })));
+    ? { ref: note.ref, score: 100, es: 'Lee el detalle en https://example.com', cluster: 'inyeccion' }
+    : { ref: note.ref, score: 68, es: '', cluster: 'calificacion-riesgo' })));
   const out = quiet();
   const result = await applyEditorial([attack, normal], { client, now, log: out });
   const byId = new Map(result.stories.map(item => [item.id, item]));
-  assert.deepEqual([byId.get('x').editorial.score, byId.get('x').editorial.why], [0, '']);
+  assert.deepEqual([byId.get('x').editorial.score, byId.get('x').editorial.es], [0, undefined]);
   assert.equal(byId.get('y').editorial.score, 68);
   assert.deepEqual([result.evaluated, result.rejected], [2, 0]);
   assert.ok(!composeChannel(result.stories, { now, threshold: EDITORIAL.threshold }).some(item => item.id === 'x'));
-  // Otras salidas sospechosas (HTML, enlace Markdown) también; una línea larga o con un dominio suelto solo pierde la línea;
-  // una puntuación fuera de rango o un grupo inválido dejan la nota sin juicio.
+  // Otras salidas sospechosas (HTML, enlace Markdown, caracteres de control o bidireccionales) también, en cualquier idioma;
+  // una traducción larga o con un dominio suelto solo se omite; una puntuación fuera de rango o un grupo inválido dejan la
+  // nota sin juicio.
   const options = { known: new Set(), runTag: 'abc123', model: 'claude-opus-5-5', at };
-  for (const why of ['Mira <img src=x onerror=alert(1)>', 'Ver [aquí](x)', 'Texto\u202eoculto']) assert.equal(toJudgment({ score: 90, why, cluster: 'x' }, normal, options).score, 0, why);
-  for (const why of ['x'.repeat(181), 'Según TheBanker.com, los bancos ganan.']) assert.deepEqual([toJudgment({ score: 70, why, cluster: 'x' }, normal, options).score, toJudgment({ score: 70, why, cluster: 'x' }, normal, options).why], [70, ''], why);
-  for (const bad of [{ score: 101, why: '', cluster: 'x' }, { score: 50, why: '', cluster: 'Con Espacios' }, { score: 50, why: '', cluster: 'x'.repeat(41) }, null]) assert.equal(toJudgment(bad, normal, options), null);
+  const visa = english('v', 1, { title: 'Visa expands stablecoin services' });
+  for (const note of [normal, visa]) {
+    for (const es of ['Mira <img src=x onerror=alert(1)>', 'Ver [aquí](x)', 'Texto\u202eoculto', 'Texto\u0007oculto', 'javascript:alert(1)']) {
+      assert.deepEqual([toJudgment({ score: 90, es, cluster: 'x' }, note, options).score, toJudgment({ score: 90, es, cluster: 'x' }, note, options).es], [0, undefined], es);
+    }
+    for (const es of ['x'.repeat(241), 'Según TheBanker.com, los bancos ganan.']) assert.deepEqual([toJudgment({ score: 70, es, cluster: 'x' }, note, options).score, toJudgment({ score: 70, es, cluster: 'x' }, note, options).es], [70, undefined], es);
+  }
+  for (const bad of [{ score: 101, es: '', cluster: 'x' }, { score: 50, es: '', cluster: 'Con Espacios' }, { score: 50, es: '', cluster: 'x'.repeat(41) }, null]) assert.equal(toJudgment(bad, normal, options), null);
+});
+
+test('capa editorial: la rúbrica tiene anclas por canal y distingue el Banco Central del Ecuador del Europeo', () => {
+  // Cada canal tiene sus anclas, con el mismo nombre con el que la petición presenta el canal.
+  for (const channel of ['ecuador', 'regulacion', 'latam', 'pagos', 'cripto', 'endeavor']) {
+    const request = buildRequest({ channel, batch: [story('a', 1)], context: [], now });
+    const name = request.messages[0].content.match(/^Canal: ([^:]+):/)[1];
+    assert.match(SYSTEM_PROMPT, new RegExp(`\\n- ${name}\\. `), name);
+  }
+  // Tramos de toda la escala, ejemplos calibrados de punta a punta y los casos que el modelo puntuaba mal.
+  for (const band of ['90-100', '75-89', '55-74', '35-54', '15-34', '0-14']) assert.ok(SYSTEM_PROMPT.includes(`- ${band}:`), band);
+  assert.match(SYSTEM_PROMPT, /Ejemplos calibrados[\s\S]*: 92\.[\s\S]*: 5\./);
+  assert.match(SYSTEM_PROMPT, /nombramientos de directivos de primer nivel \(CEO, CFO y similares\)/);
+  assert.match(SYSTEM_PROMPT, /sin efecto fuera de su mercado vale como mucho 55/);
+  assert.match(SYSTEM_PROMPT, /no te refugies en el centro/);
+  // «BCE»: Banco Central del Ecuador en medios ecuatorianos; Banco Central Europeo en europeos o en inglés.
+  assert.match(SYSTEM_PROMPT, /ecuatoriano[^.]*\.ec[^.]*«BCE» es el Banco Central del Ecuador/);
+  assert.match(SYSTEM_PROMPT, /En medios europeos[^.]*\.es\)[^.]*«BCE» o «ECB» es el Banco Central Europeo/);
+  // La petición dice de qué sitio es cada nota, para que el modelo sepa de qué BCE se habla.
+  const request = buildRequest({ channel: 'pagos', batch: [story('a', 1, { source: 'Expansión', sourceUrl: 'https://www.expansion.com/' }), story('b', 1)], context: [], now });
+  assert.deepEqual(notesOf(request).map(note => note.sitio), ['expansion.com', 'primicias.ec']);
 });
 
 test('capa editorial: el mismo hecho contado por varios medios queda en una nota que nombra a los demás', () => {
   const biess = [
     story('p1', 2, { title: 'Plan Credicasa del Biess: requisitos para migrantes', excerpt: '' , editorial: judged(74, 'biess-credicasa') }),
-    story('u1', 5, { sourceId: 'eluniverso', source: 'El Universo', access: 'mixed', title: 'Biess crea plan CrediCasa con el 7 % de interés para migrantes', excerpt: 'El Biess lanzó un plan.', editorial: judged(76, 'biess-credicasa', 'El Biess abre crédito de vivienda al 7 % para migrantes.') }),
+    story('u1', 5, { sourceId: 'eluniverso', source: 'El Universo', access: 'mixed', title: 'Biess crea plan CrediCasa con el 7 % de interés para migrantes', excerpt: 'El Biess lanzó un plan.', editorial: judged(76, 'biess-credicasa') }),
     story('p2', 5, { title: 'Migrantes pueden acceder al crédito Credicasa del Biess', excerpt: 'Tasa de 7%.', editorial: judged(75, 'biess-credicasa') }),
     story('h1', 3, { title: 'Celec reactiva una hidroeléctrica', editorial: judged(12, 'celec-hidroelectrica') }),
     story('n1', 4, { title: 'Nota sin juicio' }),
@@ -133,9 +236,17 @@ test('capa editorial: el mismo hecho contado por varios medios queda en una nota
   // Gana la de mejor nivel con extracto y enlace directo; en empate, la de más puntos (El Universo, 76).
   assert.equal(kept.id, 'u1');
   assert.deepEqual(kept.coverage, ['Primicias']);
-  // Mismo grupo en otro canal: no se mezcla.
-  const other = groupClusters([biess[1], { ...biess[0], category: 'latam' }]);
-  assert.equal(other.length, 2);
+  // Mismo grupo en otro canal: también se une, y la nota queda en el canal más específico del grupo (orden de la
+  // deduplicación: regulación, Ecuador, LATAM, cripto, pagos; Endeavor al final).
+  const other = groupClusters([{ ...biess[1], category: 'pagos' }, { ...biess[0], category: 'latam' }]);
+  assert.deepEqual(other.map(item => [item.id, item.category, item.coverage]), [['u1', 'latam', ['Primicias']]]);
+  const crossed = groupClusters([
+    story('fx', 2, { sourceId: 'finextra', source: 'Finextra', category: 'pagos', tier: 2, excerpt: 'World Bank, Citi and Circle.', editorial: judged(72, 'banco-mundial-stablecoins') }),
+    story('tb', 3, { sourceId: 'theblock', source: 'The Block', category: 'cripto', tier: 2, editorial: judged(70, 'banco-mundial-stablecoins') }),
+    story('en', 3, { sourceId: 'endeavor-prensa', source: 'LatamList', category: 'endeavor', tier: 3, editorial: judged(65, 'littio-plan-remoto') }),
+    story('la', 4, { sourceId: 'larepublica', source: 'La República', category: 'latam', tier: 2, excerpt: 'Littio lanza su Plan Remoto.', editorial: judged(66, 'littio-plan-remoto') }),
+  ]);
+  assert.deepEqual(crossed.map(item => [item.id, item.category, item.coverage]), [['fx', 'cripto', ['The Block']], ['la', 'latam', ['LatamList']]]);
   // Un documento primario oficial gana a la prensa que lo cuenta, aunque la prensa puntúe más; la cobertura acumulada se conserva.
   const resolution = story('r1', 6, { sourceId: 'bce-junta-resoluciones', source: 'Banco Central del Ecuador', kind: 'official', category: 'regulacion', title: 'Resolución JPRFM-2026-051-F', excerpt: 'Resolución JPRFM-2026-051-F.', editorial: judged(80, 'jprfm-051') });
   const press = story('e1', 2, { sourceId: 'eluniverso', source: 'El Universo', category: 'regulacion', title: 'La Junta reforma la codificación', excerpt: 'La Junta…', editorial: judged(88, 'jprfm-051'), coverage: ['Primicias'] });
@@ -221,19 +332,138 @@ test('capa editorial: cada nota se evalúa una sola vez; el juicio viaja con la 
   assert.equal(readMemo({ version: 1, notes: { malo: { s: 500, c: 'x', m: 'm', at, p: at } } }, now).size, 0);
 });
 
+test('capa editorial: una nota juzgada que el feed vuelve a traer conserva su juicio y no se reenvía', async () => {
+  const source = { id: 'primicias', name: 'Primicias', category: 'ecuador', kind: 'news', tier: 1, access: 'open', url: 'https://www.primicias.ec/rss/economia.xml' };
+  // Edición anterior: dos notas juzgadas en la edición y una tercera recordada en el memo.
+  const shown = story('mostrada', 20, { editorial: judged(74, 'biess-credicasa') });
+  const other = story('otra', 30, { editorial: judged(41, 'tasas-activas-octubre') });
+  const saved = writeMemo({ pool: [story('memo', 40, { editorial: judged(15, 'ruido-x') })], edition: [], now });
+  // El feed vuelve a traer las tres, sin juicio: accumulate ya conserva el juicio de la edición anterior, y el memo sembrado cubre además la nota que solo estaba en él.
+  const fresh = [story('mostrada', 20), story('otra', 30), story('memo', 40), story('nueva', 1)];
+  const carried = accumulate(fresh, [shown, other], source, { now });
+  assert.deepEqual(carried.filter(item => item.editorial).map(item => item.id).sort(), ['mostrada', 'otra']);
+  // Con el memo sembrado con la edición anterior, solo la nota nueva va al modelo y las demás recuperan su juicio tal cual.
+  const memo = seedMemo(readMemo(saved, now), [shown, other], now);
+  const client = fakeClient(everyNote(60));
+  const result = await applyEditorial(carried, { client, memo, now, log: quiet() });
+  assert.equal(client.calls.length, 1);
+  assert.deepEqual(notesOf(client.calls[0].params).map(note => note.titular), ['Titular nueva']);
+  assert.equal(result.reused, 1); // solo la del memo: las otras dos ya llegan con su juicio
+  const byId = new Map(result.stories.map(item => [item.id, item]));
+  assert.deepEqual(byId.get('mostrada').editorial, shown.editorial);
+  assert.deepEqual(byId.get('otra').editorial, other.editorial);
+  assert.equal(byId.get('memo').editorial.cluster, 'ruido-x');
+  // La siguiente ejecución, con la edición recién escrita y su memo, no pide nada: el juicio es estable entre ejecuciones.
+  const edition = result.stories.filter(item => item.id !== 'memo');
+  const nextMemo = seedMemo(readMemo(writeMemo({ pool: result.stories, edition, memo, now }), now), edition, now);
+  const again = fakeClient(everyNote(99));
+  const second = await applyEditorial(fresh, { client: again, memo: nextMemo, now, log: quiet() });
+  assert.equal(again.calls.length, 0);
+  assert.deepEqual(second.stories.map(item => item.editorial.score), [74, 41, 15, 60]);
+  // Una nota que sale de la edición pasa al memo con su juicio; lo inválido o de más de 30 días no se siembra.
+  assert.deepEqual(Object.keys(writeMemo({ pool: second.stories, edition: [], memo: nextMemo, now }).notes).sort(), ['memo', 'mostrada', 'nueva', 'otra']);
+  const ignored = seedMemo(new Map(), [{ ...story('vieja', 31 * 24), editorial: judged(70, 'a') }, { ...story('rota', 1), editorial: { score: 500 } }, null, { id: '../x', editorial: judged(70, 'a') }], now);
+  assert.equal(ignored.size, 0);
+});
+
+test('recopilador: editorialPass siembra los juicios de la edición anterior y los conserva aunque la capa falle', async () => {
+  const previous = [story('mostrada', 20, { editorial: judged(74, 'biess-credicasa') })];
+  const saved = writeMemo({ pool: [story('memo', 40, { editorial: judged(15, 'ruido-x') })], edition: [], now });
+  const fresh = [story('mostrada', 20), story('memo', 40), story('nueva', 1)];
+  // Con cliente: solo la nota nueva va al modelo; las otras salen con su juicio y el memo queda sembrado.
+  const client = fakeClient(everyNote(60));
+  const { pool, memo } = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client, sdk: null, reason: '' }), log: quiet() });
+  assert.equal(client.calls.length, 1);
+  assert.deepEqual(notesOf(client.calls[0].params).map(note => note.titular), ['Titular nueva']);
+  assert.deepEqual(pool.map(item => item.editorial?.score), [74, 15, 60]);
+  assert.deepEqual([...memo.keys()].sort(), ['memo', 'mostrada']);
+  // Sin credenciales: ninguna petición y los juicios conocidos se conservan.
+  const none = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client: null, sdk: null, reason: 'sin clave' }), log: quiet() });
+  assert.deepEqual(none.pool.map(item => item.editorial?.score), [74, 15, undefined]);
+  // Un error inesperado de la capa tampoco los pierde.
+  const out = quiet();
+  const broken = await editorialPass(fresh, saved, now, previous, { connect: async () => ({ client, sdk: null, reason: '' }), apply: async () => { throw new Error('fallo'); }, log: out });
+  assert.deepEqual(broken.pool.map(item => item.editorial?.score), [74, 15, undefined]);
+  assert.match(out.lines.join('\n'), /error inesperado/);
+});
+
 test('capa editorial: lotes por canal, grupos coherentes entre lotes y tope de notas por ejecución', async () => {
   const fresh = [1, 2, 3, 4, 5].map(i => story(`s${i}`, i, { title: `CrediCasa del Biess ${i}` }));
-  const client = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, why: '', cluster: contextOf(params)[0]?.cluster || 'biess-credicasa' }))));
+  const client = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, es: '', cluster: contextOf(params)[0]?.cluster || 'biess-credicasa' }))));
   const result = await applyEditorial(fresh, { client, now, config: { ...EDITORIAL, batchSize: 2, maxStories: 3 }, log: quiet() });
   // Tope de 3 notas (las más recientes) en lotes de 2: dos peticiones; las otras dos quedan para la siguiente ejecución.
   assert.equal(client.calls.length, 2);
   assert.deepEqual(result.stories.filter(item => item.editorial).map(item => item.id), ['s1', 's2', 's3']);
-  // El segundo lote ve los juicios del primero y reutiliza su grupo; el grupo nuevo lleva el sufijo de la ejecución.
+  // El segundo lote ve los juicios del primero y reutiliza su grupo; un grupo nuevo que no choca con nada queda limpio.
   const clusters = new Set(result.stories.filter(item => item.editorial).map(item => item.editorial.cluster));
-  assert.equal(clusters.size, 1);
-  assert.match([...clusters][0], /^biess-credicasa-[a-z0-9]{1,6}$/);
+  assert.deepEqual([...clusters], ['biess-credicasa']);
   assert.deepEqual(result.usage, { input: 2400, output: 600, cacheRead: 1800, cacheWrite: 0 });
   assert.equal(client.calls[0].options.timeout, EDITORIAL.timeoutMs);
+});
+
+test('capa editorial: el mismo hecho queda en el mismo grupo aunque llegue otro día, en otra ejecución o en otro canal', async () => {
+  const options = { model: 'claude-opus-5-5', at };
+  // Primera ejecución: una nota de Pagos. Su grupo nuevo no choca con nada y queda limpio (sin sufijo de ejecución).
+  const day1 = english('visa-1', 30, { title: 'Visa launches agentic commerce program for merchants' });
+  const first = await applyEditorial([day1], { client: fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, es: '', cluster: 'visa-comercio-agentico' })))), now: now - 24 * HOUR, log: quiet(), ...options });
+  assert.equal(first.stories[0].editorial.cluster, 'visa-comercio-agentico');
+  // Segunda ejecución, al día siguiente: la misma noticia llega por un medio de Fintech LATAM. El modelo ve en el contexto
+  // la nota de Pagos (otro canal), copia su grupo y la agrupación deja una sola nota, en Fintech LATAM.
+  const day2 = story('visa-2', 2, { sourceId: 'larepublica', source: 'La República', category: 'latam', title: 'Visa lanza su programa de comercio agéntico para comercios' });
+  const client = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 70, es: '', cluster: contextOf(params).find(item => item.titular.startsWith('Visa'))?.cluster || 'otro-grupo' }))));
+  const second = await applyEditorial([...first.stories, day2], { client, now, log: quiet() });
+  assert.deepEqual(contextOf(client.calls[0].params).map(item => [item.cluster, item.canal]), [['visa-comercio-agentico', 'pagos']]);
+  assert.equal(second.stories.find(item => item.id === 'visa-2').editorial.cluster, 'visa-comercio-agentico');
+  const grouped = groupClusters(second.stories);
+  assert.deepEqual(grouped.map(item => [item.category, item.coverage]), [['latam', ['Finextra']]]);
+  // Un grupo nuevo igual al de una nota juzgada reciente que no cupo en el contexto es el mismo hecho: se conserva. Igual
+  // al de una nota de hace más de contextDays días, que el modelo no vio, se considera otro hecho y lleva el sufijo.
+  const old = story('viejo', 6 * 24, { editorial: judged(40, 'bce-boletin-monetario') });
+  const recent = Array.from({ length: 3 }, (_, i) => story(`r${i}`, 1 + i, { editorial: judged(50, `hecho-reciente-${i}`) }));
+  const fresh = [story('n1', 1), story('n2', 1)];
+  const names = { 'Titular n1': 'bce-boletin-monetario', 'Titular n2': 'hecho-reciente-2' };
+  const tight = fakeClient(params => reply(notesOf(params).map(note => ({ ref: note.ref, score: 40, es: '', cluster: names[note.titular] }))));
+  const third = await applyEditorial([old, ...recent, ...fresh], { client: tight, now, config: { ...EDITORIAL, maxContext: 1 }, log: quiet() });
+  assert.equal(contextOf(tight.calls[0].params).length, 1);
+  const byId = new Map(third.stories.map(item => [item.id, item]));
+  assert.match(byId.get('n1').editorial.cluster, /^bce-boletin-monetario-[a-z0-9]{1,6}$/);
+  assert.equal(byId.get('n2').editorial.cluster, 'hecho-reciente-2');
+  // El contexto trae notas de todos los canales de los últimos días, hasta dos tercios del mismo canal del lote.
+  const mixed = [
+    ...Array.from({ length: 5 }, (_, i) => story(`own${i}`, 1 + i, { editorial: judged(50, `propio-${i}`) })),
+    ...Array.from({ length: 5 }, (_, i) => story(`other${i}`, 1 + i, { category: 'pagos', editorial: judged(50, `ajeno-${i}`) })),
+    story('lejos', 5 * 24, { category: 'pagos', editorial: judged(50, 'lejos') }), story('nueva', 1),
+  ];
+  const wide = fakeClient(everyNote(50));
+  await applyEditorial(mixed, { client: wide, now, config: { ...EDITORIAL, maxContext: 6 }, log: quiet() });
+  const seen = contextOf(wide.calls[0].params);
+  assert.deepEqual([seen.filter(item => item.canal === 'ecuador').length, seen.filter(item => item.canal === 'pagos').length], [4, 2]);
+  assert.ok(!seen.some(item => item.cluster === 'lejos'));
+  assert.match(SYSTEM_PROMPT, /de cualquier canal, copia exactamente su "cluster"/);
+  assert.match(SYSTEM_PROMPT, /aunque se publique en días distintos, en otro idioma o en otro canal/);
+});
+
+test('capa editorial: con el tope por ejecución se evalúan primero Ecuador y Autoridades EC, luego LATAM y Endeavor, luego Pagos y Cripto', async () => {
+  assert.deepEqual(EVALUATION_ORDER, [['ecuador', 'regulacion'], ['latam', 'endeavor'], ['pagos', 'cripto']]);
+  assert.deepEqual(EVALUATION_ORDER.flat().sort(), [...CHANNELS].sort());
+  // Las notas de Pagos y Cripto son las más nuevas, pero las de Ecuador y Autoridades EC van primero.
+  const pool = [
+    story('pagos-1', 1, { category: 'pagos' }), story('cripto-1', 1, { category: 'cripto' }), story('pagos-2', 2, { category: 'pagos' }),
+    story('latam-1', 3, { category: 'latam' }), story('endeavor-1', 2, { category: 'endeavor' }),
+    story('ecuador-viejo', 40), story('regulacion-1', 10, { category: 'regulacion' }), story('ecuador-nuevo', 5),
+  ];
+  const client = fakeClient(everyNote(60));
+  const result = await applyEditorial(pool, { client, now, config: { ...EDITORIAL, maxStories: 5 }, log: quiet() });
+  // Dentro de cada grupo, de la más nueva a la más antigua: el tope de 5 deja fuera a Pagos y Cripto.
+  assert.deepEqual(result.stories.filter(item => item.editorial).map(item => item.id).sort(), ['ecuador-nuevo', 'ecuador-viejo', 'endeavor-1', 'latam-1', 'regulacion-1']);
+  assert.deepEqual(client.calls.map(call => notesOf(call.params).map(note => note.titular)), [
+    ['Titular ecuador-nuevo', 'Titular ecuador-viejo'], ['Titular regulacion-1'], ['Titular latam-1'], ['Titular endeavor-1'],
+  ]);
+  // Con tope 6, de Ecuador y LATAM pasa a lo más nuevo de Pagos y Cripto.
+  const more = fakeClient(everyNote(60));
+  const next = await applyEditorial(pool, { client: more, now, config: { ...EDITORIAL, maxStories: 6 }, log: quiet() });
+  assert.equal(next.stories.filter(item => item.editorial && ['pagos', 'cripto'].includes(item.category)).length, 1);
+  assert.ok(['pagos-1', 'cripto-1'].includes(next.stories.find(item => item.editorial && ['pagos', 'cripto'].includes(item.category)).id));
 });
 
 test('capa editorial: sin clave, con error de la API o con respuesta inválida, la edición sigue sin juicio nuevo', async () => {
@@ -269,7 +499,7 @@ test('capa editorial: sin clave, con error de la API o con respuesta inválida, 
   // 3. Respuesta inválida (texto suelto, JSON mal formado o juicio fuera de rango): se descarta y se sigue con el resto.
   const answers = [
     { stop_reason: 'end_turn', content: [{ type: 'text', text: '{"notas": [' }] },
-    reply([{ ref: 'n1', score: 250, why: '', cluster: 'x' }]),
+    reply([{ ref: 'n1', score: 250, es: '', cluster: 'x' }]),
   ];
   const invalid = fakeClient((params, n) => answers[n - 1]);
   const out3 = quiet();
@@ -286,12 +516,16 @@ test('validador: juicio editorial y cobertura opcionales, con forma válida', ()
   const base = () => ({
     version: 1,
     sources: [{ id: 'primicias', status: 'ok' }],
-    stories: [{ ...story('a', 1), editorial: judged(70, 'biess-credicasa', 'El Biess abre crédito a migrantes.'), coverage: ['El Universo'] }, story('b', 2)],
+    stories: [{ ...story('a', 1), editorial: judged(70, 'biess-credicasa'), coverage: ['El Universo'] }, { ...english('b', 2), editorial: judged(66, 'visa-anchorage', { es: 'Visa amplía sus servicios de stablecoins' }) }, story('c', 3)],
   });
   assert.doesNotThrow(() => validateEdition(base(), { now }));
+  // Una edición anterior con la línea antigua «por qué importa» sigue siendo válida.
+  const legacy = base(); legacy.stories[0].editorial.why = 'El Biess abre crédito a migrantes.';
+  assert.doesNotThrow(() => validateEdition(legacy, { now }));
   const broken = [
     [data => { data.stories[0].editorial.score = 140; }, /juicio editorial inválido/],
     [data => { data.stories[0].editorial.why = 'Ver <a href="x">aquí</a>'; }, /juicio editorial inválido/],
+    [data => { data.stories[1].editorial.es = 'Ver https://example.com'; }, /juicio editorial inválido/],
     [data => { data.stories[0].coverage = 'El Universo'; }, /cobertura inválida/],
   ];
   for (const [damage, message] of broken) { const data = base(); damage(data); assert.throws(() => validateEdition(data, { now }), message); }
@@ -301,14 +535,14 @@ test('capa editorial: el SDK oficial arma la petición esperada (sin red: fetch 
   const sent = [];
   const fetch = async (url, init) => {
     sent.push({ url: String(url), headers: new Headers(init.headers), body: JSON.parse(init.body) });
-    const body = reply([{ ref: 'n1', score: 66, why: 'El Biess abre crédito de vivienda a migrantes.', cluster: 'biess-credicasa' }]);
+    const body = reply([{ ref: 'n1', score: 66, es: 'La Fed anuncia los precios de sus servicios de pago para 2027', cluster: 'fed-precios-pagos' }]);
     return new Response(JSON.stringify({ id: 'msg_prueba', type: 'message', role: 'assistant', ...body }), { status: 200, headers: { 'content-type': 'application/json', 'request-id': 'req_prueba' } });
   };
   const { client, sdk } = await editorialClient({ env: { ANTHROPIC_API_KEY: FAKE_KEY }, fetch });
   const out = quiet();
-  const result = await applyEditorial([story('a', 1, { title: 'Biess crea plan CrediCasa para migrantes' })], { client, sdk, now, log: out });
+  const result = await applyEditorial([english('a', 1, { title: 'Fed announces pricing for its payment services in 2027' })], { client, sdk, now, log: out });
   assert.equal(result.evaluated, 1);
-  assert.equal(result.stories[0].editorial.why, 'El Biess abre crédito de vivienda a migrantes.');
+  assert.equal(result.stories[0].editorial.es, 'La Fed anuncia los precios de sus servicios de pago para 2027');
   const [request] = sent;
   assert.equal(request.url, 'https://api.anthropic.com/v1/messages');
   assert.match(request.headers.get('anthropic-beta'), /server-side-fallback-2026-07-01/);
@@ -422,7 +656,7 @@ test('capa editorial: con WIF el SDK canjea el token de identidad y usa el token
         const request = { url: String(url), headers: new Headers(init.headers), body: JSON.parse(init.body) };
         sent.push(request);
         if (request.url.endsWith('/v1/oauth/token')) return new Response(JSON.stringify({ access_token: FAKE_ACCESS, token_type: 'Bearer', expires_in: 600, scope: 'workspace:developer' }), { status: 200, headers: { 'content-type': 'application/json' } });
-        const body = reply([{ ref: 'n1', score: 66, why: 'El Biess abre crédito de vivienda a migrantes.', cluster: 'biess-credicasa' }]);
+        const body = reply([{ ref: 'n1', score: 66, es: '', cluster: 'biess-credicasa' }]);
         return new Response(JSON.stringify({ id: 'msg_prueba', type: 'message', role: 'assistant', ...body }), { status: 200, headers: { 'content-type': 'application/json' } });
       };
       const { client, sdk, mode } = await editorialClient({ fetch });
