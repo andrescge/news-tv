@@ -641,6 +641,7 @@ export const ENDEAVOR_PRESS_HOSTS = [
   'bloomberg.com', 'economist.com', 'forbes.com', 'cnbc.com', 'techcrunch.com', 'restofworld.org', 'efe.com', 'americaeconomia.com', 'bnamericas.com',
   // Argentina.
   'cronista.com', 'forbesargentina.com', 'lanacion.com.ar', 'clarin.com', 'infobae.com', 'ambito.com', 'iprofesional.com', 'perfil.com', 'eleconomista.com.ar', 'iproup.com',
+  'mercado.com.ar', // Revista Mercado: revista de negocios argentina con redacción propia.
   // México.
   'eluniversal.com.mx', 'elfinanciero.com.mx', 'forbes.com.mx', 'milenio.com', 'excelsior.com.mx', 'razon.com.mx', 'elceo.com', 'reforma.com', 'jornada.com.mx',
   // Colombia.
@@ -660,11 +661,17 @@ export const ENDEAVOR_PRESS_HOSTS = [
   // Especializada: fintech, pagos, cripto, tecnología, capital de riesgo y derecho.
   'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'dplnews.com', 'cointelegraph.com', 'diariobitcoin.com', 'news.crunchbase.com', 'dealroom.co', 'lexology.com',
 ];
-// Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión o finanzas en el titular o el extracto.
+// Nombramientos y equipo directivo (español, inglés y portugués): cargos (CEO, CFO, «Chief … Officer», director financiero,
+// gerente general, country manager) y verbos de nombramiento con su complemento («ficha a», «incorpora a»; no «incorporar
+// esta fruta»). «named» y «names» sueltos no cuentan («a cat named Pomelo»), ni «head of» («Head of State visits Tala»). «Pomelo nombró a … como nuevo Chief Financial
+// Officer» y «Pomelo refuerza su equipo directivo con la incorporación de…» son notas de empresa.
+const ENDEAVOR_APPOINTMENTS = String.raw`\b(ceo|cfo|coo|cto|cmo|cio|cpo|cro)\b|\bchief [a-z]+( [a-z]+)? officer\b|country manager|general manager|managing director|gerente (general|de pa[ií]s)|\bdirec?tora? (financ|general|geral|ejecutiv|executiv|de (finanzas|operaciones|tecnolog))|\bdirectiv[oa]s?\b|equipo de liderazgo|leadership team|alta (direcci[oó]n|gerencia)|\bc-?(suite|level)\b|\bnombr(a|ó)|\bdesign(a|ó)|\bfich(aje|ó|a al?\b)|\bincorpor(aci|ó|a al?\b)|\bcontrat(a|ó|ou)|\bnome(ia|ou|ad[oa]|a[cç][aã]o)\b|\bappoint|\bnames (new|its|former|ex)\b|\bhir(es|ed|ing)\b|\basum(e|ió) (como|el cargo|la (direcci|presidencia|gerencia))|\bassume (o cargo|como)`;
+// Contexto que exige un nombre ambiguo: vocabulario de empresa, inversión, finanzas o nombramientos en el titular o el extracto.
 // No incluye importes sueltos («5 millones de toneladas de cobre» no es una ronda).
-export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b`);
-// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…»), cargos políticos.
-export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|alcald|jefa de gobierno|candidat|diputad|senador`);
+export const ENDEAVOR_CONTEXT = rx(String.raw`fintech|startups?\b|unicorn|scale-?ups?|emprendim|emprendedor|levanta|recauda|\binvert|\binvierte|\braises?\b|\braised\b|ronda|\bround\b|series? [a-e]\b|financia(ci[oó]n|miento|r)|funding|inversi[oó]n|inversionistas|investors?|\binvests?\b|adquiere|adquisici[oó]n|acquir|fusi[oó]n|merger|valuaci[oó]n|valoraci[oó]n|valuation|\bipo\b|salida a bolsa|neobanc|banco digital|billetera|wallet|\bpagos?\b|recargas|payments?|tarjetas?|cr[eé]dito|\bcredit\b|lending|pr[eé]stamos?|licencia|license|expan|\blanza\b|launch|alianza|al[ií]an?\b|partner|plataforma|platform|clientes|customers|usuarios|\busers\b|ingresos|revenue|seguros?\b|insurtech|software|\bapp\b`, ENDEAVOR_APPOINTMENTS);
+// Titulares en los que un nombre ambiguo es otra cosa: minería y materias primas («Cobre en Perú…»), cargos políticos, frutas y
+// nutrición («Pomelo: el cítrico que…», también Tangelo, Limonada, Quinoa).
+export const ENDEAVOR_NOISE = rx(String.raw`miner[ií]a|\bminer[oa]s?\b|\bmina\b|perforaci|toneladas|yacimiento|commodit|metales|\bmining\b|copper|alcald|jefa de gobierno|candidat|diputad|senador|\bfrutas?\b|\bfruits?\b|c[ií]tric|citrus|grapefruit|toronja|vitamina|nutrici[oó]n|nutrition|\bdieta?\b`);
 
 const foldText = value => String(value ?? '').normalize('NFD').replace(/\p{M}/gu, '').replace(/[’‘]/g, '\'').toLowerCase();
 const escapeRx = value => value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');

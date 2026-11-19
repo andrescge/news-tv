@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO } from '../scripts/content.mjs';
+import { normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, parseSupercias, resolutionYear, coverageSignature, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody } from '../scripts/collect.mjs';
 import { validateEdition } from '../scripts/validate.mjs';
@@ -701,6 +701,46 @@ test('Endeavor: los nombres ambiguos y cortos exigen mayúscula, titular y conte
   assert.equal(tagOf('Insider: fintech raises funding round'), null);
 });
 
+test('Endeavor: los nombramientos y el equipo directivo cuentan como contexto de un nombre ambiguo', () => {
+  const titleOnly = title => matchEndeavor({ title, excerpt: '', category: 'endeavor' }, { titleOnly: true })?.company ?? null;
+  // Titulares reales (Revista Mercado e iProUP) que antes no entraban al canal Endeavor.
+  assert.equal(titleOnly('Pomelo nombró a Martín Zanella como nuevo Chief Financial Officer en su equipo directivo'), 'Pomelo');
+  assert.equal(titleOnly('Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X'), 'Pomelo');
+  assert.equal(titleOnly('Pomelo y DiDi Shop lanzan tarjetas de pago en México'), 'Pomelo');
+  // Otros nombres ambiguos con vocabulario de nombramiento, en español, inglés y portugués.
+  assert.equal(titleOnly('Clara nombra a una nueva directora financiera'), 'Clara');
+  assert.equal(titleOnly('Bold designa nuevo gerente general para Colombia'), 'Bold');
+  assert.equal(titleOnly('Klar Appoints Former Banamex Executive as Chief Operating Officer'), 'Klar');
+  assert.equal(titleOnly('Cora contrata ex-executivo do Itaú como novo CFO'), 'Cora');
+  assert.equal(titleOnly('Pomelo: Martín Zanella asume como CFO'), 'Pomelo');
+  // El vocabulario de nombramientos no abre falsos positivos: la fruta, un verbo sin complemento, «named» y «head of» sueltos,
+  // y una persona junto al nombre siguen fuera.
+  assert.equal(titleOnly('Pomelo: el cítrico que el chef incorpora a sus postres'), null);
+  assert.equal(titleOnly('Pomelo: beneficios de incorporar esta fruta a tu dieta'), null);
+  assert.equal(titleOnly('Pomelo, la fruta rica en vitamina C que conviene comer en invierno'), null);
+  assert.equal(titleOnly('Jugo de pomelo: el CEO de una cadena explica su éxito'), null);
+  assert.equal(titleOnly('A cat named Pomelo wins hearts online'), null);
+  assert.equal(titleOnly('Head of State visits Tala region'), null);
+  assert.equal(titleOnly('Clara López asume como directora general del instituto'), null);
+  assert.equal(ENDEAVOR_NOISE.test('Pomelo: el cítrico que el chef incorpora a sus postres'), true);
+  assert.equal(ENDEAVOR_CONTEXT.test('Pomelo: beneficios de incorporar esta fruta a tu dieta'), false);
+});
+
+test('Endeavor LATAM: las notas de nombramientos de Pomelo pasan el filtro de punta a punta', () => {
+  const prensa = sourceById('endeavor-prensa');
+  const rss = '<rss><channel>'
+    + '<item><title>Pomelo nombró a Martín Zanella como nuevo Chief Financial Officer en su equipo directivo - Revista Mercado</title><link>https://news.google.com/rss/articles/p1</link><pubDate>Tue, 29 Sep 2026 10:00:00 GMT</pubDate><source url="https://mercado.com.ar">Revista Mercado</source></item>'
+    + '<item><title>Pomelo refuerza su equipo directivo con la incorporación de otro exNaranja X - iProUP</title><link>https://news.google.com/rss/articles/p2</link><pubDate>Tue, 29 Sep 2026 11:00:00 GMT</pubDate><source url="https://www.iproup.com">iProUP</source></item>'
+    + '<item><title>Pomelo: beneficios de incorporar esta fruta a tu dieta - Clarín</title><link>https://news.google.com/rss/articles/p3</link><pubDate>Tue, 29 Sep 2026 12:00:00 GMT</pubDate><source url="https://www.clarin.com">Clarín</source></item>'
+    + '</channel></rss>';
+  const stories = parseFeed(rss, prensa).map(row => normalize(row, prensa, now)).filter(story => story && allowedHost(story, prensa) && relevant(story, prensa));
+  assert.deepEqual(stories.map(story => story.source).sort(), ['Revista Mercado', 'iProUP']);
+  for (const story of stories) {
+    assert.equal(ENDEAVOR_PROMO.test(story.title) || ENDEAVOR_MARKET_NOISE.test(story.title), false, story.title);
+    assert.equal(tagEndeavor(story).endeavor.company, 'Pomelo', story.title);
+  }
+});
+
 test('Endeavor: nombres del directorio sin aclaraciones y etiqueta recalculada en cada nota', () => {
   assert.deepEqual(endeavorNames({ name: 'Galgo (formerly Migrante)', slug: 'migrante' }), ['Galgo', 'Migrante']);
   assert.deepEqual(endeavorNames({ name: 'Wellhub (fmr. GymPass)', slug: 'wellhub' }), ['Wellhub', 'GymPass']);
@@ -781,8 +821,8 @@ test('Endeavor LATAM: solo entran medios de la lista; las notas conservadas que 
   assert.equal(new Set(ENDEAVOR_PRESS_HOSTS).size, ENDEAVOR_PRESS_HOSTS.length, 'dominios repetidos');
   for (const host of ENDEAVOR_PRESS_HOSTS) assert.match(host, /^[a-z0-9.-]+\.[a-z]{2,}$/, host);
   // Dominios reales (sourceUrl de Google News) de la última edición.
-  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com'];
-  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'nada'];
+  const yes = ['https://www.cronista.com', 'https://www.forbesargentina.com', 'https://gestion.pe', 'https://www.larepublica.co', 'https://www.eluniversal.com', 'https://www.elnacional.com', 'https://www.razon.com.mx', 'https://elceo.com', 'https://www.iproup.com', 'https://mercado.com.ar', 'https://www.mercado.com.ar', 'https://dplnews.com', 'https://www.pymnts.com', 'https://thepaypers.com', 'https://www.coindesk.com', 'https://www.latamfintech.co', 'https://app.dealroom.co', 'https://www.lexology.com', 'https://www.valoraanalitik.com'];
+  const no = ['https://www.binance.com', 'https://wintorabc.com.co', 'https://portalinnova.cl', 'https://albertonews.com', 'https://tenemosnoticias.com', 'https://alnavio.es', 'https://www.tendenciainternacional.com', 'https://www.noticias24hrs.com.ve', 'https://www.globenewswire.com', 'https://pluang.com', 'https://www.tradingview.com', 'https://www.manilatimes.net', 'https://revistaq.mx', 'https://es.investing.com', 'https://www.endeavor.org.ar', 'https://endeavor.org', 'https://cronista.com.falso.example', 'https://supermercado.com.ar', 'nada'];
   for (const url of yes) assert.equal(allowedHost({ sourceUrl: url }, prensa), true, url);
   for (const url of no) assert.equal(allowedHost({ sourceUrl: url }, prensa), false, url);
   // Incluye los medios que el proyecto ya usa como fuentes de nivel 1 y 2.
