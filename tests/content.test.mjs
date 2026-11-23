@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, editionSeries, expectedScore, capPerEdition, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE } from '../scripts/content.mjs';
+import { rejectReason, hostRejection, screen, registroOficialRelevant, discardLog, MAX_DISCARDS_PER_SOURCE, normalize, parseBce, parseBcePublications, parseBceResolutions, parseRegistroOficial, parseRegistroOficialIndex, readableNorm, parseSupercias, resolutionYear, coverageSignature, coverageLexicon, editionSeries, expectedScore, capPerEdition, parseFeed, parseDate, deduplicate, safeUrl, recent, relevant, allowedHost, linkAllowed, inHosts, carryable, editionShape, passes, clipExcerpt, channelFor, limitFor, accumulate, composeChannel, composeEdition, periodIndex, spaced, shares, FILTERS, CHANNELS, matchEndeavor, tagEndeavor, endeavorIndex, endeavorNames, searchCompanies, searchTerm, searchQualifier, searchQuery, searchBatches, searchLots, searchPerRun, rotation, ENDEAVOR_COMPANIES, ENDEAVOR_AMBIGUOUS, ENDEAVOR_SEARCH, ENDEAVOR_PRESS_HOSTS, ENDEAVOR_PROMO, ENDEAVOR_MARKET_NOISE, ENDEAVOR_CONTEXT, ENDEAVOR_NOISE, EC_PRESS_HOSTS, ROUTES } from '../scripts/content.mjs';
 import { decodeEntities, toCompany, latamCompanies, endeavorUrl } from '../scripts/endeavor.mjs';
 import { SOURCES, loadPrevious, dateResolutions, readBody, discardsPath, writeJson } from '../scripts/collect.mjs';
 import { validateEdition, validateDiscards, validFunnel } from '../scripts/validate.mjs';
@@ -361,6 +361,32 @@ const SAMPLES = [
   ["forbes-ec","Estos son los bancos más grandes del mundo en 2026",null,false],
   ["forbes-ec","Jensen Huang abandona Nvidia tras escándalos",null,false],
   ["forbes-ec","El jugo de mora burbujeante del Ecuador tiene 112 años",null,false],
+  // Bancos de Ecuador por nombre (Google News, noviembre de 2026).
+  ["bancos-ec","Banco Internacional efectuó colocación de bonos",null,true],
+  ["bancos-ec","Banco del Austro impulsa proyectos sostenibles con 63,8 millones de dólares en Bonos Azules",null,true],
+  ["bancos-ec","BanEcuador ha entregado más de $ 147 millones en créditos 7x7",null,true],
+  ["bancos-ec","Nestlé Ecuador y Banco Pichincha unen esfuerzos para fortalecer el cacao ecuatoriano",null,true],
+  ["bancos-ec","Banco del Pacífico dará 90 días de gracia a afectados por lluvias en Galápagos",null,true],
+  ["bancos-ec","Banco Bolivariano promueve el ahorro navideño en Ecuador",null,true],
+  ["bancos-ec","Produbanco coloca USD 50 millones en bonos verdes",null,true],
+  ["bancos-ec","Asobanca propone facilidades de pago a los clientes afectados por las lluvias",null,true],
+  ["bancos-ec","Cooperativa JEP amplía su red de agencias en la Sierra",null,true],
+  ["bancos-ec","Grupo Pichincha y Banco General Rumiñahui lideran el ranking de solvencia",null,true],
+  ["bancos-ec","Banco Pichincha Colombia espera llegar a punto de equilibrio en primer semestre de 2027",null,false],
+  ["bancos-ec","Teléfono de atención al cliente Banco Pichincha España: todos los canales",null,false],
+  ["bancos-ec","Pibank Perú, la apuesta cross-sell interna del Banco Pichincha",null,false],
+  ["bancos-ec","Price to earnings forward de Banco Internacional del Peru SAA Interbank",null,false],
+  ["bancos-ec","EE.UU. sanciona al Banco Internacional de Comercio de Cuba por colaborar con banco iraní",null,false],
+  ["bancos-ec","Un banco internacional proyecta una suba del 87% para una acción argentina en Wall Street",null,false],
+  ["bancos-ec","Socios de Diners Club se suman a la elección de las mejores cocinas del Perú",null,false],
+  ["bancos-ec","la masacre del diners club en cali en el año 1984",null,false],
+  ["bancos-ec","El Banco Solidario de Medicamentos de Pergamino cumple 25 años",null,false],
+  ["bancos-ec","Superintendencia de Bancos de República Dominicana advierte sobre fraudes",null,false],
+  ["bancos-ec","La hinchada de Independiente del Valle responde: el estadio Banco Guayaquil luce casi lleno ante Macará",null,false],
+  ["bancos-ec","Estas son las calificaciones tras el Ecuador vs. Bolivia en el estadio Banco Pichincha",null,false],
+  ["bancos-ec","(VIDEO) Noticia Banco Guayaquil | Cuenca será la sede de la final de la Copa Ecuador 2026",null,false],
+  ["bancos-ec","Sandra Ramírez y su reclamo ante la JEP por las preguntas en el caso de reclutamiento de menores",null,false],
+  ["bancos-ec","Guayaquil y Pichincha concentran la inversión en vivienda",null,false],
   ["seps","La SEPS alerta sobre 134 entidades no autorizadas y llama a prevenir el fraude financiero",null,true],
   ["seps","Corte Provincial respalda la actuación de la SEPS y descarta vulneración de derechos",null,true],
   ["superbancos","Calificación de Riesgo Instituciones Financieras 2026",null,true],
@@ -769,7 +795,7 @@ test('cada filtro deja pasar las muestras pertinentes del informe y descarta su 
   }
   // Todas las fuentes aceptadas con muestras en el informe tienen casos.
   const covered = new Set(SAMPLES.map(([id]) => id));
-  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'thepaypers', 'fintechfutures', 'occ', 'decrypt', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
+  for (const id of ['bce-boletines', 'bce-publicaciones', 'primicias', 'eluniverso', 'forbes-ec', 'bloomberg-ecuador', 'elcomercio-ec', 'teleamazonas', 'lahora', 'bancos-ec', 'cfn', 'reguladores-prensa', 'seps', 'uafe', 'superbancos', 'mef', 'supercias', 'iupana', 'el-economista', 'la-republica', 'latamlist', 'bloomberg-negocios', 'expansion-mx', 'diario-financiero', 'iproup', 'latamfintech', 'paymentsdive', 'expansion-banca', 'ft-banking', 'finextra', 'thepaypers', 'fintechfutures', 'occ', 'decrypt', 'bankingdive', 'thebanker', 'americanbanker', 'pymnts', 'ecb', 'ft-fintech', 'wsj-markets', 'fsb', 'boe', 'eba', 'ecb-supervision', 'bis-investigacion', 'fintech-business-weekly', 'cinco-dias-cripto', 'reuters-cripto', 'ft-cripto', 'expansion-cripto', 'bloomberg-cripto', 'theblock', 'coindesk', 'criptonoticias', 'chainalysis', 'fed', 'endeavor-ar', 'endeavor-prensa']) assert.ok(covered.has(id), `sin muestras: ${id}`);
 });
 
 test('las reglas de ruta y las exclusiones añadidas se aplican', () => {
@@ -818,6 +844,40 @@ test('Google News: las consultas con intitle: no pasan de 9 términos y todas pi
   assert.doesNotMatch(q('bloomberg-ecuador'), /expreso/);
   assert.match(q('reuters-cripto'), /intitle:crypto/);
   assert.match(q('reguladores-prensa'), /when:7d/);
+});
+
+test('bancos de Ecuador: consultas, medios ecuatorianos, ruta al supervisor y una sola copia por nota', () => {
+  const bancos = sourceById('bancos-ec');
+  assert.deepEqual([bancos.category, bancos.kind, bancos.tier, bancos.adapter, bancos.limit], ['ecuador', 'news', 2, 'google', 3]);
+  // Sin intitle: (con nombres de varias palabras Google lo aplica mal e ignora when:): cada consulta pide 30 días y lleva
+  // como mucho 9 términos.
+  for (const url of [bancos.url, ...bancos.extraUrls]) {
+    const query = new URL(url).searchParams.get('q');
+    assert.match(query, / when:30d$/, query);
+    assert.doesNotMatch(query, /intitle:/, query);
+    assert.ok(query.replace(/ when:30d$/, '').split(/ OR /).length <= 9, query);
+  }
+  // Medios: prensa ecuatoriana con redacción propia, con sus subdominios; fuera homónimos extranjeros, fútbol, revistas de marca.
+  assert.equal(bancos.allowHosts, EC_PRESS_HOSTS);
+  assert.equal(new Set(EC_PRESS_HOSTS).size, EC_PRESS_HOSTS.length, 'dominios repetidos');
+  const yes = ['https://www.eluniverso.com', 'https://www.elcomercio.com', 'https://www.primicias.ec', 'https://www.lahora.com.ec', 'https://www.teleamazonas.com', 'https://www.eltelegrafo.com.ec', 'https://www.vistazo.com', 'https://www.expreso.ec', 'https://elmercurio.com.ec', 'https://www.forbes.com.ec', 'https://www.ecuavisa.com', 'https://www.eldiario.ec', 'https://www.revistagestion.ec', 'https://www.ekosnegocios.com', 'https://www.larepublica.ec', 'https://laprensa.com.ec'];
+  const no = ['https://www.primicias.net', 'https://elcomercio.pe', 'https://www.larepublica.co', 'https://andina.pe', 'https://www.diarioestrategia.cl', 'https://revistamundodiners.com', 'https://studiofutbol.com.ec', 'https://www.elfutbolero.com.ec', 'https://www.barcelonasc.com.ec', 'https://www.cosas.com.ec', 'https://www.marketersbyadlatina.com', 'https://fmmundo.com', 'https://www.metroecuador.com.ec', 'https://roams.es', 'https://es.tradingview.com', 'https://elimpulso.com', 'https://infonegocios.biz', 'https://presidencia.gob.do', 'https://eluniverso.com.falso.example'];
+  for (const url of yes) assert.equal(allowedHost({ sourceUrl: url }, bancos), true, url);
+  for (const url of no) assert.equal(allowedHost({ sourceUrl: url }, bancos), false, url);
+  // Lo que nombra a la Superintendencia de Bancos va a Regulación; el resto se queda en Ecuador.
+  assert.equal(channelFor({ title: 'Superintendencia de Bancos fija nuevas reglas para tarjetas' }, bancos), 'regulacion');
+  assert.equal(channelFor({ title: 'BanEcuador ha entregado más de $ 147 millones en créditos 7x7' }, bancos), 'ecuador');
+  assert.ok(ROUTES['bancos-ec']);
+  // La misma nota de El Universo por su feed y por la búsqueda de bancos queda en una sola, con el enlace directo.
+  const nota = (sourceId, extra) => ({ id: `${sourceId}-1`, sourceId, category: 'ecuador', kind: 'news', tier: sourceId === 'eluniverso' ? 1 : 2, title: 'BanEcuador ha entregado más de $ 147 millones en créditos 7x7', excerpt: '', source: 'El Universo', sourceUrl: 'https://www.eluniverso.com', language: 'es', publishedAt: '2026-11-21T12:00:00Z', ...extra });
+  const directa = nota('eluniverso', { url: 'https://www.eluniverso.com/noticias/economia/banecuador-creditos-7x7-nota/', via: '' });
+  const google = nota('bancos-ec', { url: 'https://news.google.com/rss/articles/CBMiabc?oc=5', via: 'Vía Google News' });
+  const kept = deduplicate([google, directa]);
+  assert.equal(kept.length, 1);
+  assert.equal(kept[0].sourceId, 'eluniverso');
+  // Otro medio con otro titular sobre el mismo hecho se agrupa como cobertura (sameFact), no se repite.
+  const vistazo = nota('bancos-ec', { id: 'bancos-ec-2', title: 'BanEcuador supera los $ 147 millones en créditos 7x7 para emprendedores', source: 'Vistazo', sourceUrl: 'https://www.vistazo.com', url: 'https://news.google.com/rss/articles/CBMixyz?oc=5', via: 'Vía Google News' });
+  assert.equal(deduplicate([directa, vistazo]).length, 1);
 });
 
 test('el catálogo de fuentes cumple el contrato y no quedan filtros de fuentes retiradas', () => {
@@ -1259,11 +1319,11 @@ test('Endeavor: lotes de búsqueda por nombres con OR, rotación entre ejecucion
   assert.equal(new URL(lots[3].url).searchParams.get('hl'), 'en-US');
   assert.deepEqual(searchLots([{ terms: ['intitle:"Tipti"'], qualifier: '', languages: ['es'] }]).map(lot => lot.language), ['es']);
   // Presupuesto de Google: la vuelta completa en un día (3 ejecuciones reales) y no más de 30 consultas por ejecución,
-  // contando las demás fuentes de Google News.
+  // contando las demás fuentes de Google News con sus consultas secundarias (`extraUrls`).
   const all = searchLots(batches);
   assert.ok(searchPerRun(all) * ENDEAVOR_SEARCH.runsPerDay >= all.length);
   assert.equal(rotation(all, 0).picked.length, searchPerRun(all));
-  const googleQueries = SOURCES.filter(item => item.adapter === 'google' && !item.search).length + searchPerRun(all);
+  const googleQueries = SOURCES.filter(item => item.adapter === 'google' && !item.search).reduce((sum, item) => sum + 1 + (item.extraUrls?.length || 0), 0) + searchPerRun(all);
   assert.ok(googleQueries <= 30, `${googleQueries} consultas a Google por ejecución`);
   // La rotación toma `count` lotes desde el cursor, da la vuelta y no repite un lote en la misma ejecución.
   assert.deepEqual(rotation(lots, 0, 3).picked.map(lot => lot.index), [0, 1, 2]);
