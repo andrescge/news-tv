@@ -320,6 +320,32 @@ const EC_NOT_BANKING = String.raw`banco de (alimentos|sangre|leche|semillas|ojos
 const EC_CONSUMER_NOISE = String.raw`black friday|cyber ?(day|monday)|concurso|competencia econ[oó]mica|brigadas`;
 // Prensa ecuatoriana general por búsqueda (El Comercio, Teleamazonas, La Hora): la banca de otros países y los avisos de feriado.
 const EC_PRESS_ABROAD = String.raw`estados unidos|ee\.? ?uu|\basia|europe|paraguay|brasile|\blula\b|del mundo|feriado`;
+// Bancos y entidades financieras de Ecuador por nombre (fuente `bancos-ec`). «Pichincha» y «Guayaquil» solos son provincia y
+// ciudad: cuentan con «Banco» o «Grupo» delante. «JEP» sola es la Jurisdicción Especial para la Paz de Colombia: solo con
+// «Cooperativa». «Banco Internacional» y «Diners Club» existen en otros países: lo separan el medio (EC_PRESS_HOSTS) y
+// EC_BANKS_ABROAD.
+const EC_BANKS = String.raw`\bbanco (del? )?pichincha\b|\bgrupo pichincha\b|\bbanco (de )?guayaquil\b|\bbanco (del )?pac[ií]fico\b|\bproduban(co|ca)\b|\bbanco bolivariano\b|\bbanco internacional\b|\bbanco (del )?austro\b|\bdiners club\b|\bbanecuador\b|\bbanco de machala\b|\bbanco de loja\b|\bbanco solidario\b|\bbanco general rumi[ñn]ahui\b|\bbanco amazonas\b|\bprocredit\b|\bcooperativa jep\b|\basobanca\b|\bsuperintendencia de bancos\b|\bsuperbancos\b`;
+// Lo que nombra a esos bancos sin ser banca: el fútbol (estadios Banco Guayaquil y Banco Pichincha, la sección «Noticia Banco
+// Guayaquil» de Studiofutbol) y, si el titular no menciona a Ecuador, las filiales y homónimos de otros países (Banco Pichincha
+// España, Colombia y Perú; Banco Internacional de Chile, Perú y Cuba; Diners Club de Uruguay, Perú y Colombia; la Asobanca
+// venezolana; el «Banco Solidario de Medicamentos» argentino).
+const EC_BANKS_SPORTS = String.raw`f[uú]tbol|futbol|\bestadios?\b|\bpartidos?\b|\bcopa\b|hinchada|\bgol(es)?\b|\btorneo\b|\bliga ?pro\b|selecci[oó]n (nacional|ecuatoriana|de ecuador)|\bla tri\b|noticia banco guayaquil`;
+const EC_BANKS_ABROAD = String.raw`^(?!.*(ecuador|ecuatorian)).*(espa[ñn]a|\bper[uú](?![a-z])|peruan|colombia|\bcali\b|bogot[aá]|uruguay|paraguay|rep[uú]blica dominicana|dominican|guatemala|venezuela|argentin|chile\b|chilen|\bcuba\b|cubano|m[eé]xico|panam[aá]|bolivia|medicamentos)`;
+// Prensa ecuatoriana con redacción propia (allowHosts de `bancos-ec`, ver collect.mjs; también en ENDEAVOR_PRESS_HOSTS). Vale el
+// dominio y sus subdominios, comprobado sobre el medio real que da Google News. Quedan fuera las revistas de la propia empresa
+// (revistamundodiners.com), los sitios de fútbol (studiofutbol, elfutbolero, barcelonasc), las revistas sociales (cosas.com.ec),
+// los medios de marketing (marketersbyadlatina), las radios con notas de marca (fmmundo), Metro Ecuador (notas de servicio y de
+// marca), los agregadores y la prensa extranjera sin redacción en Ecuador (Andina, Diario Estrategia, La República de
+// Colombia). Ojo con los homónimos: primicias.net es dominicano y elcomercio.pe peruano; la comparación es por dominio exacto.
+export const EC_PRESS_HOSTS = [
+  // Diarios y medios nacionales (los que el proyecto ya usa como fuentes de nivel 1 y 2 van primero).
+  'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'elcomercio.com', 'teleamazonas.com', 'lahora.com.ec', 'expreso.ec',
+  'vistazo.com', 'eltelegrafo.com.ec', 'ecuavisa.com', 'extra.ec',
+  // Diarios regionales: El Mercurio (Cuenca), El Diario (Manabí), La Prensa (Riobamba).
+  'elmercurio.com.ec', 'eldiario.ec', 'laprensa.com.ec',
+  // Revistas de economía y negocios con redacción propia, y La República (digital).
+  'revistagestion.ec', 'ekosnegocios.com', 'larepublica.ec',
+];
 // Supervisores de Ecuador (SEPS, Superintendencia de Bancos, Supercias): actos de control y actos protocolarios.
 const EC_SUPERVISOR_ACTS = String.raw`resoluci[oó]n|sanci|intervenci|liquidaci|alerta|advierte`;
 const EC_INSTITUTIONAL_NOISE = String.raw`capacit|aniversario`;
@@ -384,6 +410,9 @@ export const FILTERS = {
   'elcomercio-ec': { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
   teleamazonas: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
   lahora: { include: rx(EC_FINANCE), exclude: rx(EC_CONSUMER_NOISE, EC_NOT_BANKING, EC_PRESS_ABROAD) },
+  // Prensa sobre bancos de Ecuador (búsqueda por nombres en toda la prensa ecuatoriana): el titular nombra a un banco o entidad
+  // de la lista; fuera el fútbol, las filiales y homónimos de otros países y los avisos de feriado.
+  'bancos-ec': { include: rx(EC_BANKS), exclude: rx(EC_BANKS_SPORTS, EC_BANKS_ABROAD, EC_NOT_BANKING, EC_CONSUMER_NOISE, 'feriado') },
   // CFN: productos de crédito y calificaciones de riesgo; fuera compras públicas, subastas, certificaciones y lemas.
   cfn: { include: rx(String.raw`cr[eé]ditos?|financiamiento|tasas?|calificaci[oó]n de riesgo|producto financiero|cartera|microcr[eé]dito|garant[ií]as`), exclude: rx(String.raw`convocatoria|solicitud de ofertas|cotizaciones|alquiler|contrataci|adquisici|subasta|\biso\b|selecci[oó]n`) },
   // Bloomberg Línea llega por una búsqueda: el titular debe nombrar a Ecuador y un tema financiero o fiscal.
@@ -543,6 +572,8 @@ export function discardLog(discards, { generatedAt, perSource = MAX_DISCARDS_PER
 export const ROUTES = {
   'bce-boletines': [{ pattern: /\bJPRFM\b|Junta de Pol[ií]tica/i, category: 'regulacion' }],
   'bis-discursos': [{ pattern: BIS_CRYPTO_CHANNEL, category: 'cripto' }],
+  // Prensa sobre bancos de Ecuador: lo que nombra al supervisor (Superintendencia de Bancos) es regulación.
+  'bancos-ec': [{ pattern: /superintendencia de bancos|superbancos/i, category: 'regulacion' }],
   // Reuters · Cripto también trae la supervisión de fintech y neobancos (Revolut): si el titular no nombra nada cripto, va a Pagos.
   'reuters-cripto': [{ pattern: /^(?!.*(crypto|stablecoin|tokeni[sz]|digital asset|bitcoin|\bether\b|binance|coinbase|tether|blockchain|CBDC|North Korean hackers))/i, category: 'pagos' }],
 };
@@ -980,8 +1011,9 @@ export const ENDEAVOR_PROMO = rx(String.raw`cup[oó]n(es)?\b|\bcoupons?\b|c[oó]
 // y las páginas de cotizaciones (TradingView, Investing.com, Pluang). Un medio que no está en la lista no entra: para sumar uno,
 // añade su dominio en el grupo que corresponda y un caso en las pruebas.
 export const ENDEAVOR_PRESS_HOSTS = [
-  // Medios que el proyecto ya usa como fuentes de nivel 1 y 2 (las pruebas comprueban que estén todos).
-  'primicias.ec', 'eluniverso.com', 'forbes.com.ec', 'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
+  // Medios que el proyecto ya usa como fuentes de nivel 1 y 2 (las pruebas comprueban que estén todos; los ecuatorianos van en
+  // EC_PRESS_HOSTS, más abajo).
+  'bloomberglinea.com', 'iupana.com', 'eleconomista.com.mx', 'larepublica.co',
   'latamlist.com', 'expansion.mx', 'df.cl', 'paymentsdive.com', 'bankingdive.com', 'expansion.com', 'ft.com',
   'finextra.com', 'thebanker.com', 'americanbanker.com', 'pymnts.com', 'wsj.com', 'elpais.com', 'reuters.com', 'theblock.co',
   'coindesk.com', 'criptonoticias.com', 'decrypt.co', 'thepaypers.com', 'fintechfutures.com', 'latamfintech.co', 'iproup.com',
@@ -1000,8 +1032,8 @@ export const ENDEAVOR_PRESS_HOSTS = [
   'emol.com', 'elmercurio.com', 'latercera.com', 'biobiochile.cl',
   // Uruguay.
   'elpais.com.uy', 'elobservador.com.uy',
-  // Ecuador.
-  'expreso.ec', 'elcomercio.com', 'vistazo.com', 'teleamazonas.com', 'lahora.com.ec',
+  // Ecuador: la misma lista de prensa con redacción propia que usa la fuente de bancos de Ecuador.
+  ...EC_PRESS_HOSTS,
   // Venezuela.
   'eluniversal.com', 'elnacional.com', 'eldiario.com', 'bancaynegocios.com',
   // Brasil.
